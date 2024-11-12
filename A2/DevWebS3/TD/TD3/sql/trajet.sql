@@ -1,1 +1,0 @@
-CREATE TABLE `covoiturage2`.`trajet` (`id` INT NOT NULL AUTO_INCREMENT , `depart` VARCHAR(64) NOT NULL , `arrivee` VARCHAR(64) NOT NULL , `date` VARCHAR(64) NOT NULL , `prix` VARCHAR(64) NOT NULL , `conducteurLogin` VARCHAR(64) NOT NULL , `nonFumeur` BOOLEAN NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8mb3 COLLATE utf8mb3_general_ci;
