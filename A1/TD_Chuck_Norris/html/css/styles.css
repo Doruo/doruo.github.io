@@ -1,0 +1,252 @@
+/* PAGE CSS DU SITE NON OFFICIEL DE CHUCK NORRIS */
+
+body{
+  background-color:#838892;
+  width: 100%;
+  margin:auto;
+}
+
+main{
+  display:flex;
+  justify-content: center;
+}
+
+article{
+  width: 67%;
+
+  min-width: 200px;
+  max-width: 500px;
+
+  flex-grow: 3;
+  flex-shrink: 2;
+}
+
+aside{
+  width: 33%;
+
+  min-width: 150px;
+  max-width: 250px;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+article,aside {
+
+  background-color: #CCC;
+}
+
+/*header*/
+
+header{
+  display: flex;
+  flex-direction: row;
+
+  background-color: white;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: stretch;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header nav{
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  width:100px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* menu deroulant */
+
+.submenu{
+  display:none;
+  position:absolute;
+  top:50px;
+  left:0;
+}
+
+div{
+  position:relative;
+}
+
+div:not(.submenu){
+  border-left: 2px solid black;
+}
+
+.submenu div {
+  border-left: none;
+  background-color: #aca;
+}
+
+nav div:hover .submenu{
+  display: block;
+}
+
+/* section */
+h2
+{
+  text-align: center;
+  line-height: 150%;
+  padding : 10px;
+}
+
+/* sous-section */
+h3
+{
+  text-align: center;
+  font-style:italic;
+  color:blue;
+  border: 1px solid #CCCCCC;
+}
+
+.pair
+{
+  background-color:#FF5850;
+}
+
+.impair{
+  background-color: #5BBDBF;
+}
+
+.skill{
+  color:rebeccapurple;
+  font-family: italic, serif;
+}
+
+/* images */
+
+#chuckJeune{
+  float:left;
+  height: 150px;
+  margin-right: 5px;
+}
+
+#beware{
+  height: 300px;
+  float:right;
+  margin-left: 5px;
+}
+
+#facebook{
+  position: fixed; right:50px; bottom:60px;
+}
+
+#twitter{
+  position: fixed; right:50px; bottom:20px;
+}
+
+/* liens */
+
+div a{
+  text-decoration: none;
+  color:#0088FF;
+  padding : 0 10px 0 10px;
+}
+
+nav div:first-child{
+  border-left: none;
+}
+
+a:hover{
+  color:orange;
+}
+
+.puce {
+  visibility: hidden;
+}
+
+.submenu div:hover .puce {
+  visibility: visible;
+}
+
+/* mon ancre (retour au début)*/
+
+#ancreRetour{
+  border: 3px solid #1e787c;
+  border-radius: 2px;
+  text-decoration: none;
+  background: #07ab5a;
+}
+
+/* paragraphes */
+p{
+  text-indent: 5px;
+  margin: 30px;
+}
+
+/* Tableau */
+
+table{
+	display:block;
+	text-align: center;
+	overflow-x:scroll;
+	white-space: nowrap;
+	border-spacing:0px;
+
+}
+
+thead {
+  background-color: #00AAFF;
+  padding:10px 0px;
+}
+
+thead .skill{
+  backgroundcolor: #640051;
+  padding : 5px;
+}
+
+table > thead > tr th:first-child, table > tbody > tr th:first-child
+{
+	position: sticky;
+	left:0px;
+	border-right:2px solid black;
+}
+
+tbody > tr:nth-child(odd)
+{
+	background-color:white;
+}
+
+tbody > tr:nth-child(even)
+{
+	background-color:#CCC;
+}
+
+/* FORMULAIRE INSCRIPTION */
+
+.mainInsc{
+  margin-left: 250px;
+
+}
+
+fieldset > input, fieldset > label{
+	display:block;
+}
+
+fieldset > input {
+	border: 3px solid black;
+	right:1000px;
+    background-color: #CCC;
+}
+
+.titreLabel, .radio
+{
+	display:inline;
+}
+
+/* footer */
+
+footer{
+  justify-content: center;
+}

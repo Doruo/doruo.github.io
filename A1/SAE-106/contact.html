@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <meta charset="utf-8">
+      <title>Contactez nous</title>
+      <link href="styles.css" rel="stylesheet">
+      <link rel="icon" type="images/png" href="./images/bitcoinlogo.png">
+   </head>
+   <body>
+      <header>
+         <nav id="navAccueil">
+            <div>
+               <a href="./accueil.html">Accueil</a>
+            </div>
+            <div class="deroulant">
+               <a href="">
+               Annexes
+               </a>
+               <div class="sous">
+                  <div>
+                     <a href="./accueil.html#pestel">Analyse PESTEL</a>
+                  </div>
+                  <div>
+                     <a href="./accueil.html#podcast">Podcast</a>
+                  </div>
+               </div>
+            </div>
+            <div class="deroulant">
+               <a href="#">Notre controverse</a> 
+               <div class="sous">
+                  <div>
+                     <a href="./la_blockchain.html">La Blockchain</a>
+                  </div>
+                  <div>
+                     <a href="./La_BlockChain_Ecologique.html">La BlockChain / Écologique</a>
+                  </div>
+                  <div>
+                     <a href="./en_quoi_la_crypto_pollue.html">Comment la crypto pollue</a>
+                  </div>
+                  <div>
+                     <a href="./pos.html">Le Proof of Stake (PoS)</a>              
+                  </div>
+               </div>
+            </div>
+            <div>
+               <a href="./contact.html">Contactez-nous</a>
+            </div>
+         </nav>
+         <img id="imgBurger" src="images/burger.png" alt="burger">
+         <nav id="navBurger">
+            <div>
+               <a href="./accueil.html">Accueil</a>
+            </div>
+            <div class="deroulant">
+               <a href="">
+               Annexes
+               </a>
+               <div class="sous">
+                  <div>
+                     <a href="./accueil.html#pestel">Analyse PESTEL</a>
+                  </div>
+                  <div>
+                     <a href="./accueil.html#podcast">Podcast</a>
+                  </div>
+               </div>
+            </div>
+            <div class="deroulant">
+               <a href="#">Notre controverse</a> 
+               <div class="sous">
+                  <div>
+                     <a href="./la_blockchain.html">La Blockchain</a>
+                  </div>
+                  <div>
+                     <a href="./La_BlockChain_Ecologique.html">La BlockChain / Écologique</a>
+                  </div>
+                  <div>
+                     <a href="./en_quoi_la_crypto_pollue.html">Comment la crypto pollue</a>
+                  </div>
+                  <div>
+                     <a href="./pos.html">Le Proof of Stake (PoS)</a>              
+                  </div>
+               </div>
+            </div>
+            <div>
+               <a href="./contact.html">Contactez-nous</a>
+            </div>
+         </nav>
+      </header>
+      <div class="body2">
+         <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Labouret" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ -']+" title="Veuillez entrer un nom valide">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Jean" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ -']+" title="Veuillez entrer un prénom valide">
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="Jean.Labouret@gmail.com" required>
+            <label for="codePostal">Code Postal :</label>
+            <input type="text" id="codePostal" name="codePostal" placeholder="34090" required pattern="[0-9]{5}" title="Veuillez entrer un code postal valide à 5 chiffres">
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays">
+               <option value="france" selected>France</option>
+               <option value="belgique">Belgique</option>
+               <option value="canada">Canada</option>
+            </select>
+            <label for="entendu">Vous avez entendu parlé de nous via ?</label>
+            <select id="entendu" name="entendu">
+               <option value="Internet" selected>Internet</option>
+               <option value="Ami(e)">Ami(e)</option>
+               <option value="Autres">Autres</option>
+            </select>
+            <label for="dateContact">Date à laquelle vous souhaitez être recontacté :</label>
+            <input type="date" id="dateContact" name="dateContact">
+            <label for="commentaire">Commentaires :</label>
+            <textarea id="commentaire" name="commentaire" rows="4" placeholder="Entrez votre commentaire ici..."></textarea>
+            <button type="submit">Soumettre</button>
+         </form>
+      </div>
+      <footer>
+         <p id="suiveznous">Suivez-nous sur nos réseaux</p>
+         <div class="reseaux">
+            <a href="https://www.instagram.com/" target="_blank">
+            <img class="logoreseaux" src="./images/instagram.png" alt="logo instagram">
+            </a>
+            <a href="https://fr-fr.facebook.com/" target="_blank">
+            <img class="logoreseaux" src="./images/facebook.png" alt="logo facebook">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img class="logoreseaux" src="./images/youtube.png" alt="logo youtube">
+            </a>
+         </div>
+      </footer>
+   </body>
+</html>

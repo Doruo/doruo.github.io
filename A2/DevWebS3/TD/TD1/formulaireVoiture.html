@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8" />
+      <title> TD1 - Formulaire Voiture </title>
+      <link rel="stylesheet" type="text/css" href="../../../../ressources/css/styles.css">
+      <link rel="icon" type="image/x-icon" href="../TDCOVOITURAGE/ressources/images/favicon.png">
+    </head>
+
+    <body>
+
+      <h1> HAYE - TD1 - Formulaire Voiture </h1>
+
+        <form method="post" action="creerVoiture.php">
+            <fieldset>
+              <legend><h1>Mon formulaire :</h1></legend>
+
+              <p>
+                <label for="prenom_id">Prenom</label> :
+                <input type="text" placeholder="Marco" name="prenom" id="prenom_id" required/>
+              </p>
+
+              <p>
+                <label for="marque_id">Marque</label> :
+                <input type="text" placeholder="Tesla" name="marque" id="marque_id" required/>
+              </p>
+              
+              <p>
+                <label for="couleur_id">Couleur</label> :
+                <input type="text" placeholder="rouge" name="couleur" id="couleur_id" required/>
+              </p>
+              
+              <p>
+                <label for="immatriculation_id">Immatriculation</label> :
+                <input type="text" placeholder="256AB34" name="immatriculation" id="immatriculation_id" required/>
+              </p>
+
+              <p>
+                <label for="nbSieges_id">Nombre de Sièges</label> :
+                <input type="number" placeholder="25" name="nbSieges" id="nbSieges_id" required/>
+              </p>
+
+              <p>
+                <input type="submit" value="Envoyer" />
+              </p>
+            </fieldset> 
+          </form>
+          
+
+
+          <form method="post" action="creerVoiture.php">
+            <fieldset>
+              <legend>Inscrisption :</legend>
+
+              <p>
+                <label for="prenom_id">c</label> :
+                <input type="text" placeholder="Marco" name="prenom" />
+              </p>
+
+              <p>
+                <label for="marque_id">Nom de famille</label> :
+                <input type="text" placeholder="Tesla" name="marque"/>
+              </p>
+              
+              <p>
+                <label for="couleur_id">Mot de Passe</label> :
+                <input type="password" name="couleur" />
+              </p>
+              
+              <p>
+                <label for="immatriculation_id">Date de naissance</label> :
+                <input type="date" name="immatriculation" />
+              </p>
+
+              <p>
+                <label for="nbSieges_id">Adresse</label> :
+                <input type="text" placeholder="25" name="nbSieges"/>
+              </p>
+
+              <p></p><input type="submit" value="Envoyer" /></p>
+            </fieldset> 
+          </form>
+
+    </body>
+</html> 

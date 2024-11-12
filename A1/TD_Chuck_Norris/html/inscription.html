@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+     
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel = "icon" href = "images/chuck-tete.png" 
+        type = "image/x-icon">
+
+        <title>
+            Le site non officiel de Chuck Norris 
+        </title>
+    </head>
+
+    <body>
+    <header id="monancre">
+
+        <blockquote>
+            "Little John: Braddock ! Je vous préviens, attention où vous mettez les pieds !
+            Braddock : Je mets les pieds où je veux, Little John… et c'est souvent dans la gueule."
+
+            Chuck Norris, Portés disparus 3 (1988), écrit par Arthur Silver, Larry Levinson, James Bruner, Chuck Norris, Steve Bing
+        </blockquote>
+
+        <nav>
+            <div>
+                <a href="./index.html">
+                    Accueil
+                </a>
+
+                <div class="submenu">
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./one.html">one</a>
+                    </div>
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./two.html">two</a>
+                    </div>
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./three.html">three</a>
+                    </div>
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./inscription.html">TD5</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <a href="./facts.html">
+                    Facts
+                </a>
+            </div>
+
+            <div>
+                <a href="./news.html">
+                    Actualités
+                </a>
+            </div>
+
+            <div>
+                <a href="./contact.html">
+                    Contact
+                </a>
+
+                <div class="submenu">
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./other.html">other</a>
+                    </div>
+                    <div>
+                        <span class="puce">■</span>
+                        <a href="./another.html">another</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+        <main class="mainInsc">
+            
+			<form action="sendToMySecondYearInIut.php" method="get">
+
+                <p></p>
+                <fieldset>
+                    <legend>Tes Infos Persos (on veut tout savoir)</legend> 
+
+                    <p></p>
+                    <label for="surname" required>Nom</label>
+                    <input id="surname" name="uname" type="text" placeholder="chuck"> <p></p>
+    
+                    
+                    <label for="firstname">Prenom</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="norris"><p></p>
+                    
+                    <label>Sexe</label><p></p>
+                    
+                     <input type="radio" id="man" name="sex" value="man" class="radio">
+                     <label for="man" class="titreLabel">Homme</label><p></p>
+    
+                     <input type="radio" id="woman" name="sex" value="woman" class="radio">
+                    <label for="man" class="titreLabel">Femme [avec testostérone]</label><p></p>
+    
+                    <label for="date">Date de naissance</label>
+                    <input id="date" name="date" type="date" ><p></p>
+
+                    <label for="country-select">Pays d'origine</label>
+                    <select name="country" id="country-select">
+                        <option value="fr">France</option>
+                        <option value="usa">USA</option>
+                        <option value="ch">Chine</option>
+                        <option value="viet">Vietnam</option>
+                        <option value="null" disabled>Corée du Nord</option>			
+                    </select> <p></p>
+    
+                    <label for="pwd" >Mot de passe</label>
+                    <input id="pwd" name="pwd" type="password" required ><p></p>
+                    
+                    <label for="mail">Email</label>
+                    <input id="mail" name="mail" type="email" placeholder="chuck.norris@mail.com" required><p></p>
+
+                </fieldset>
+
+                <p></p>
+
+                <fieldset>
+                    <legend>Tes Talents</legend> 
+
+                    <p></p>
+                    <label for="numberkarate">Niveau en karaté</label>
+                    <input type="number"  id="numberkarate" name="numberkarate" min ="0" max="5" placeholder="0-5"><p></p>
+
+                    <label>Arts-martiaux préférés : <p></p>
+                        <select name="artsmartiaux" multiple size="4">
+                            <optgroup label="Principal art-martial préféré">
+                                <option value="kungfu">Kung fu</option>
+                                <option value="karate">Karaté</option>
+                                <option value="full-contact" >Full-contact</option>
+                                <option value="null" disabled>Pas d'art martial préféré (c'est pour les tapettes)</option>
+                            </optgroup>
+                            <optgroup label="Second art-martial préféré ">
+                                <option value="kungfu">Kung fu</option>
+                                <option value="karate">Karaté</option>
+                                <option value="full-contact">Full-contact</option>
+                                <option value="null" disabled>Pas de second choix (c'est aussi pour les tapettes)</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    </select> <p></p>
+                </fieldset>
+
+                <p></p>
+
+                <fieldset>
+                    <legend>Ton appartenance à la sect.. au club</legend> 
+
+                    <p></p>
+                    <label for="numberEngagement">Niveau d'engagement</label> <p></p>
+				
+                    <select name="engagement" id="numberEngagement">
+                        <option value="">Offre un sacrifice à notre Saint Chuck</option>
+                        <option value="basic" class="titreLabel">Basique (5€)</option>
+                        <option value="gold"class="titreLabel">Gold (15€)</option>
+                        <option value="diamond"class="titreLabel">Tatane in your face (50€) [Choix favori de Chuck]</option> 
+                    </select> <p></p>
+
+                    <label for="fan-story">Message pour Chuck:</label><p></p>
+
+                    <textarea id="fan-story" name="fan-story" rows="10" cols="50">Fais bouillir tes molécules et utilise ce qui reste pour écrire ton plus beau message...
+                    </textarea> <p></p>
+    
+                    <input type="checkbox" id="readConditions" name="readConditionsChecked" value="readConditions" class="radio" required>
+                    <label for="readConditions" class="titreLabel">J’ai bien lu les clauses que je n’ai pas lues.</label><p></p>
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+                <p></p>
+			</form>
+              
+        </main>
+
+        <footer>
+
+            <img src="./images/facebook.png" alt="facebook" id="facebook">
+
+            <img src="./images/twitter.png" alt="twitter" id="twitter">
+
+            <a href="#monancre" id="ancreRetour">
+                Retour au début
+            </a>
+
+        </footer>
+
+    </body>
+
+</html>
