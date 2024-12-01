@@ -20,12 +20,13 @@ h1,span {
     color: #2c3e50;
     text-align: center;
     margin-top: 20px;
-    font-size: 1.1em;
+    font-size: 1.4em;
     position: relative;
 
 }
 
 h2 {
+    text-align: center;
     color: #34495e;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -105,4 +106,8 @@ li h2 {
         text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
     }
     4%, 100% {  text-shadow: none; transform: none; }
+}
+
+fieldset{
+    box-shadow: 5px 10px #888888;
 }
