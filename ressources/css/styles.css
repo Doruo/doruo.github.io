@@ -28,7 +28,7 @@ h1,span {
 h2 {
     text-align: center;
     color: #34495e;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 10px;
     text-shadow: 5px 10px 3px rgba(0, 0, 0, 0.1);
 }
@@ -50,6 +50,7 @@ fieldset {
     padding: 20px;
     max-width: 600px;
     background-color: #fff;
+    box-shadow: 5px 10px #888888;
 }
 
 legend h1 {
@@ -67,9 +68,12 @@ li {
     margin: 10px 0;
 }
 
-li h2 {
-    font-size: 1.2em;
+p{
+    border-collapse: separate;
+    border-spacing: 15px 50px;
 }
+
+/* ANIMATION GLITCH ENTÊTE */
 
 .right {
     text-align: right;
@@ -106,8 +110,4 @@ li h2 {
         text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
     }
     4%, 100% {  text-shadow: none; transform: none; }
-}
-
-fieldset{
-    box-shadow: 5px 10px #888888;
 }
