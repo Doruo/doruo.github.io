@@ -22,23 +22,42 @@ header {
     text-align: center;
 }
 
+/* TEXTES */
+
+p{
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
 /* SECTIONS */
 
 section:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* and */
-
 section:nth-child(odd) {
     background-color: white;
 }
 
 .entete{
-
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.entete p {
+    color: white;
 }
 
 .contenu-intro, .container, .contenu-projets{
@@ -82,6 +101,10 @@ section:nth-child(odd) {
     border: 1px solid #eaeaea;
 }
 
+.projet-card:hover{
+    transform: scale(1.1);
+}
+
 /* COMPETENCES */
 
 .competences {
@@ -104,23 +127,10 @@ footer {
     padding: 1rem 0;
 }
 
-/* TEXTES */
-
-p{
-    color: #666;
-    margin-bottom: 1rem;
+footer .containter p{
+    color: white;
 }
 
-h2 {
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
-}
-
-h3{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
 
 /* LIENS */
 
@@ -136,7 +146,7 @@ h3{
 
 /* IMAGES*/
 
-.conteneur-portrait .portrait{
-    max-width: 35%;
+.portrait{
+    max-width: 45%;
     border-radius: 40%;
 }
