@@ -108,6 +108,7 @@ section:nth-child(odd) {
 
 .projet-card:hover{
     transform: scale(1.1);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
 }
 
 .projet-liens a{
