@@ -1,0 +1,142 @@
+
+/* HAYE MARC - PORTFOLIO 2E ANNEE STYLES */
+
+/* STRUCTURE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* SECTIONS */
+
+section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* and */
+
+section:nth-child(odd) {
+    background-color: white;
+}
+
+.entete{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contenu-intro, .container, .contenu-projets{
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* INTRO */
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/* PROJETS */
+
+.projets {
+    padding: 4rem 0;
+}
+
+.contenu-projets{
+    max-width: 75%;
+}
+
+.projet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.projet-card {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+}
+
+/* COMPETENCES */
+
+.competences {
+    padding: 4rem 0;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* TEXTES */
+
+p{
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* LIENS */
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    margin: 0 1rem;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+/* IMAGES*/
+
+.conteneur-portrait .portrait{
+    max-width: 35%;
+    border-radius: 40%;
+}
