@@ -18,7 +18,7 @@ body {
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 2rem 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -81,13 +81,13 @@ section:nth-child(odd) {
 }
 
 .contenu-projets{
-    max-width: 75%;
+    max-width: 55%;
 }
 
 .projet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
@@ -103,6 +103,25 @@ section:nth-child(odd) {
 
 .projet-card:hover{
     transform: scale(1.1);
+}
+
+.projet-liens a, .contenu-intro h1{
+    color: rgb(31, 199, 218);
+}
+
+.projet-liens a{
+    
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
 }
 
 /* COMPETENCES */
