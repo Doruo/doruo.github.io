@@ -24,7 +24,7 @@ header {
 
 /* TEXTES */
 
-p:not(footer .container p){
+p:not(footer .container p):not(.entete p){
     color: #666;
     margin-bottom: 1rem;
 }
