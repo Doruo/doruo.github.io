@@ -159,6 +159,11 @@ a{
     color: rgb(31, 199, 218);
 }
 
+a:hover {
+    color: rgb(6, 136, 175);
+    text-decoration:underline;
+}
+
 .social-links {
     margin-top: 2rem;
 }
