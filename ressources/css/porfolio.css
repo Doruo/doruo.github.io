@@ -24,7 +24,7 @@ header {
 
 /* TEXTES */
 
-p{
+p:not(footer .container p){
     color: #666;
     margin-bottom: 1rem;
 }
@@ -40,7 +40,12 @@ h3{
     font-weight: bold;
 }
 
+
 /* SECTIONS */
+section{
+    text-align: center;
+    margin: 0 auto;
+}
 
 section:nth-child(even) {
     background-color: #f9f9f9;
@@ -105,10 +110,6 @@ section:nth-child(odd) {
     transform: scale(1.1);
 }
 
-.projet-liens a, .contenu-intro h1 a{
-    color: rgb(31, 199, 218);
-}
-
 .projet-liens a{
     
     padding: 12px 24px;
@@ -146,12 +147,16 @@ footer {
     padding: 1rem 0;
 }
 
-footer .containter p{
+footer .containter {
     color: white;
 }
 
 
 /* LIENS */
+
+a{
+    color: rgb(31, 199, 218);
+}
 
 .social-links {
     margin-top: 2rem;
@@ -169,3 +174,4 @@ footer .containter p{
     max-width: 45%;
     border-radius: 40%;
 }
+
