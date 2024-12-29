@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -16,6 +17,11 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
     background-color: #2c3e50;
     color: white;
     padding: 10px 0;
@@ -56,9 +62,12 @@ section:nth-child(odd) {
 }
 
 .entete{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 20%;
     padding: 0 2rem;
+}
+
+.entete h1 a{
+    text-decoration: none;
 }
 
 .entete p {
@@ -152,11 +161,10 @@ footer .containter {
     color: white;
 }
 
-
 /* LIENS */
 
 a{
-    color: rgb(31, 199, 218);
+    color: rgb(39, 183, 199);
 }
 
 a:hover {
@@ -170,14 +178,12 @@ a:hover {
 
 .social-links a {
     margin: 0 1rem;
-    color: #2c3e50;
     text-decoration: none;
 }
 
 /* IMAGES*/
 
 .portrait{
-    max-width: 45%;
+    width: 45%;
     border-radius: 10%;
 }
-
