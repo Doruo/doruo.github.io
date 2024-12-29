@@ -24,7 +24,7 @@ header {
 
 /* TEXTES */
 
-p:not(footer .container p):not(.entete p){
+p:not(footer .conteneur p):not(.entete p){
     color: #666;
     margin-bottom: 1rem;
 }
@@ -65,7 +65,7 @@ section:nth-child(odd) {
     color: white;
 }
 
-.contenu-intro, .container, .contenu-projets{
+.contenu-intro, .conteneur, .contenu-projets{
     max-width: 35%;
     margin: 0 auto;
     padding: 0 2rem;
