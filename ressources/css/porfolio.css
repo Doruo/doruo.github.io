@@ -39,9 +39,7 @@ header {
     text-decoration:underline;
 }
 
-.competences .conteneur p a{
-    text-decoration: none;
-}
+
 
 p:not(footer .conteneur p):not(.entete p){
     color: #666;
@@ -79,9 +77,6 @@ section:nth-child(odd) {
     padding: 0 2rem;
 }
 
-.entete h1 a{
-    text-decoration: none;
-}
 
 .entete p {
     color: white;
@@ -155,7 +150,6 @@ section:nth-child(odd) {
 .projet-liens a{
     
     padding: 12px 24px;
-    text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
@@ -193,6 +187,12 @@ footer .containter {
     color: white;
 }
 
+/* LIENS */
+
+.social-links a, .competences .conteneur p a, .entete h1 a, .projet-liens a{
+    text-decoration: none;
+}
+
 /* LIENS RESEAUX*/
 
 .social-links {
@@ -201,7 +201,6 @@ footer .containter {
 
 .social-links a {
     margin: 0 1rem;
-    text-decoration: none;
 }
 
 /* IMAGES*/
