@@ -30,6 +30,15 @@ header {
 
 /* TEXTES */
 
+* a{
+    color: rgb(39, 183, 199);
+}
+
+* a:hover {
+    color: rgb(6, 136, 175);
+    text-decoration:underline;
+}
+
 p:not(footer .conteneur p):not(.entete p){
     color: #666;
     margin-bottom: 1rem;
@@ -161,16 +170,7 @@ footer .containter {
     color: white;
 }
 
-/* LIENS */
-
-a{
-    color: rgb(39, 183, 199);
-}
-
-a:hover {
-    color: rgb(6, 136, 175);
-    text-decoration:underline;
-}
+/* LIENS RESEAUX*/
 
 .social-links {
     margin-top: 2rem;
