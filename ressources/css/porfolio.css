@@ -135,6 +135,7 @@ section:nth-child(odd) {
 
 .projet-images{
     padding: 0;
+    max-height: 200px;
 }
 
 .projet-images img{
