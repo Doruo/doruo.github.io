@@ -39,6 +39,10 @@ header {
     text-decoration:underline;
 }
 
+.competences .conteneur p a{
+    text-decoration: none;
+}
+
 p:not(footer .conteneur p):not(.entete p){
     color: #666;
     margin-bottom: 1rem;
