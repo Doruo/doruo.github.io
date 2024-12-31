@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    
 }
 
 body {
@@ -96,12 +97,18 @@ section:nth-child(odd) {
     max-width: 35%;
 }
 
-/* INTRO */
+/* INTRO & FUTUR */
 
-.intro {
+.intro, .futur{
     display: flex;
     align-items: center;
     padding: 4rem 0;
+}
+
+.intro{
+    background: linear-gradient(-45deg, #bef0ff, #d1d6db, #cbdef0, #bde0ff);
+    background-size: 200% 200%;
+    height: 90vh;
 }
 
 /* PROJETS */
@@ -203,7 +210,7 @@ footer .containter {
     margin: 0 1rem;
 }
 
-/* IMAGES*/
+/* IMAGES */
 
 .portrait{
     width: 45%;
@@ -211,5 +218,6 @@ footer .containter {
 }
 
 .contenu-intro img{
-    width:40%;
+    width:35%;
 }
+
