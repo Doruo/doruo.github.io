@@ -39,7 +39,9 @@ header {
     text-decoration:underline;
 }
 
-
+p{
+    text-align: justify;
+}
 
 p:not(footer .conteneur p):not(.entete p){
     color: #666;
