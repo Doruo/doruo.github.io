@@ -147,6 +147,10 @@ section:nth-child(odd) {
     border: 1px solid #eaeaea;
 }
 
+.projet-card p{
+    text-align: center;
+}
+
 
 .projet-images{
     padding: 0;
