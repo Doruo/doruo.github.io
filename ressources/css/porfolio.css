@@ -83,12 +83,12 @@ section:nth-child(odd) {
     color: white;
 }
 
-.contenu-intro, .conteneur, .contenu-projets, .projet-contenu-images{
+.contenu-intro, .conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.conteneur, .contenu-projets, .projet-contenu-images{
+.conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
     max-width: 65%;
 }
 
@@ -121,14 +121,23 @@ section:nth-child(odd) {
     max-width: 55%;
 }
 
-.projet-grid {
+/* TABLEAUX */
+
+.projet-grid, .competences-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     margin-top: 2rem;
 }
 
-.projet-card, .projet-images {
+.competences-grid{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+/* --------- */
+
+.projet-card, .projet-images, .competence-card {
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     padding: 1.5rem;
@@ -152,6 +161,10 @@ section:nth-child(odd) {
 .projet-card:hover, .projet-images:hover{
     transform: scale(1.04);
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+.projet-card a img:hover{
+    transform: scale(1.3);
 }
 
 .projet-liens a{
@@ -217,7 +230,7 @@ footer .containter {
     border-radius: 10%;
 }
 
-.contenu-intro img{
-    width:35%;
+.contenu-intro img, .projet-card a img{
+    width:45%;
 }
 
