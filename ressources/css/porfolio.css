@@ -97,9 +97,9 @@ section:nth-child(odd) {
     max-width: 35%;
 }
 
-/* INTRO & FUTUR */
+/* INTRO, BIO & FUTUR */
 
-.intro, .futur{
+.intro, .biographie ,.futur{
     display: flex;
     align-items: center;
     padding: 4rem 0;
