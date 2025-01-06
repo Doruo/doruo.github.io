@@ -234,7 +234,12 @@ footer .containter {
     border-radius: 10%;
 }
 
-.contenu-intro img, .projet-card a img{
+.contenu-intro img{
+    width: 35%;
+}
+
+
+.projet-card a img{
     width:90px;
 }
 
