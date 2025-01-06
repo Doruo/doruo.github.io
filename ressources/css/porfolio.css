@@ -40,11 +40,13 @@ header {
     text-decoration:underline;
 }
 
-
 p:not(footer .conteneur p):not(.entete p){
-    text-align: justify;
     color: #666;
     margin-bottom: 1rem;
+}
+
+.contenu-intro p{
+    text-align: justify;
 }
 
 h2 {
