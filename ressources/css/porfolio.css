@@ -247,7 +247,7 @@ footer .containter {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1200px) {
+@media (max-width:1820px){
 
     #accueil, .projets-grid {
         flex-direction: column;
@@ -258,6 +258,10 @@ footer .containter {
         display: none;
         width: 5%;
         max-height: 2%;
+    }
+
+    .intro{
+        height: 100%;
     }
 
     .conteneur {
