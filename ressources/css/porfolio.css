@@ -245,3 +245,72 @@ footer .containter {
     width:90px;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+
+    #accueil, .projets-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .portrait{
+        display: none;
+        width: 5%;
+        max-height: 2%;
+    }
+
+    .conteneur {
+        flex-direction: column !important;
+        padding: 20px;
+    }
+
+    .contenu-intro {
+        max-width: 98%;
+        max-height: 100%;
+    }
+
+    .contenu-intro p{
+        font-size: 1.2rem;
+    }
+
+    .contenu-intro h1, .contenu-intro h2 {
+        font-size: 2.2rem;
+    }
+
+    header{
+        display: flex;
+    }
+
+    .entete {
+        max-width: 100%;
+    }
+
+    .entete h1{
+        font-size: 3rem;
+    }
+
+    .entete p{
+        font-size: 2.2rem;
+    }
+
+    .biographie .conteneur h2, .futur .conteneur h2, .projet-card h3, .contenu-projets h2{
+        font-size: 2.2rem;
+    }
+
+    .biographie .conteneur p, .futur .conteneur p, footer .conteneur p, .projet-card p, .projet-card a{
+        font-size: 1.6rem;
+    }
+
+    .contact .conteneur h2{
+        font-size: 2.6rem;
+    }
+
+    .contact .conteneur p{
+        font-size: 1.6rem;
+    }
+
+    .social-links a{
+        font-size: 1.6rem;
+    }
+}
