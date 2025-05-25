@@ -1,60 +1,10 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string,
-  requiered: false
-}>()
+import PortfolioIntro from '@/components/portfolio/PortfolioIntro.vue';
 </script>
 
 <template>
-  <!DOCTYPE html>
-  <html lang="fr">
 
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../ressources/css/porfolio.css">
-
-    <title>Marc Haye</title>
-  </head>
-
-  <body>
-  <!-- ENTETE -->
-  <header>
-    <nav class="entete">
-      <h1><a href="./portfolio.html">Marc Haye</a></h1>
-      <p>Futur Développeur Full-Stack</p>
-    </nav>
-  </header>
-
-  <!-- INTRO -->
-
-  <section class="intro">
-
-    <div class="contenu-intro">
-
-      <h2>Bonjour, je suis Marc Haye !</h2>
-
-      <p>
-        Etudiant en Informatique à l'Université de Montpellier,
-        je suis passionné depuis toujours par la <b>création de solutions robustes et évolutives</b>.
-      </p>
-      <p>
-        Actuellement en 2ème année, je me suis spécialisé dans le <b>le parcours RACDV:
-        Réalisation d'Application - Conception & Déploiement</b>.
-      </p>
-      <p>
-        Souhaitant continuer mes apprentissages dans le réseau et la conception de serveurs webs,
-        mon objectif professionel est de <b>devenir développeur Full-Stack</b>.
-      </p>
-
-      <h1><a href="../ressources/CV/CV-HAYE.pdf">Voir mon CV</a></h1>
-    </div>
-
-    <div class="conteneur-portrait">
-      <img class="portrait" src="../ressources/images/portrait/Marc_Haye.webp" alt="Portrait-Haye">
-    </div>
-
-  </section>
-
+  <PortfolioIntro/>
   <!-- PROJETS -->
 
   <section class="projets">
@@ -240,14 +190,9 @@ defineProps<{
       <p>&copy; 2025 Haye Marc</p>
     </div>
   </footer>
-  </body>
-
-  </html>
 </template>
 
-<style scoped>
-
-/* HAYE MARC - PORTFOLIO 2E ANNEE STYLES */
+<style>
 
 /* STRUCTURE */
 
@@ -263,18 +208,6 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-
-  background-color: #2c3e50;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
 }
 
 /* TEXTES */
