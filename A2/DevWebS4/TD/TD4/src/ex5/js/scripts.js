@@ -83,7 +83,7 @@ function callback() {
  * @param {String} type Type de recherche ('seq' ou 'init') */
 function charger_verbes(lettre,type) {
 
-  let url = "http://marchaye.freeboxos.fr/A2/DevWebS4/TD/TD4/src/ex5/php/recherche.php";
+  let url = "https:/doruo.github.io/A2/DevWebS4/TD/TD4/src/ex5/php/recherche.php";
   let lettreURL = encodeURIComponent(lettre);
   let typeURL = encodeURIComponent(type);
 
