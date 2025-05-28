@@ -5,191 +5,17 @@ import PortfolioIntro from '@/components/portfolio/PortfolioIntro.vue';
 <template>
 
   <PortfolioIntro/>
-  <!-- PROJETS -->
 
-  <section class="projets">
-    <div class="contenu-projets">
+  <PortfolioProjects/>
 
-      <h2>- Projets Réalisés -</h2>
+  <PortfolioBio/>
 
-      <div class="projet-grid">
+  <PortfolioFuture/>
 
-        <!-- Application de Poursuite d'Etude -->
+  <PortfolioContact/>
 
-        <div class="projet-card">
-          <h3>Application d'avis de poursuite d'étude</h3>
-          <p>Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.
-          </p>
-          <p><b>Technologies:</b> MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP</p>
+  <Footer/>
 
-          <div class="projet-liens">
-            <a href="./projets/poursuiteEtude.html">En savoir plus</a>
-            <a href="https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php">Visiter le site</a>
-          </div>
-        </div>
-
-        <!-- Trains -->
-
-        <div class="projet-card">
-          <h3>Jeu de plateau Trains</h3>
-          <p>Portage digital du jeu de deck building japonais "Trains" d'Hisashi Hayashi, jouable à 4 joueurs.
-          </p>
-          <p>Fonctionnement du jeu fait en java, et interface du plateau en JavaFX.</p>
-          <p><b>Technologies:</b> POO, Java, JavaFX</p>
-
-          <div class="projet-liens">
-            <a href="./projets/trains.html">En savoir plus</a>
-            <a href="https://github.com/Doruo/Trains">Page Github</a>
-          </div>
-        </div>
-
-        <!-- Elden Build -->
-
-        <div class="projet-card">
-          <h3>Elden Build</h3>
-
-          <p>
-            Site web de gestion de build à but communautaire du jeu <a
-            href=" https://fr.bandainamcoent.eu/elden-ring/elden-ring">Elden Ring</a>,
-            avec requêtes asynchrones à l'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.
-          </p>
-
-          <p>Exercice ludique pour comprendre PHP, JS, et l'architecture MVC.</p>
-
-          <p><b>Technologies:</b> PHP, JavaScript, HTML, CSS, JSON</p>
-
-          <div class="projet-liens">
-            <a href="./projets/eldenbuild.html">En savoir plus</a>
-            <a href="https://github.com/Doruo/EldenBuild">Page GitHub</a>
-          </div>
-        </div>
-
-        <!-- Nuit de L'Info 2024 - RaceForWater -->
-
-        <div class="projet-card">
-          <h3>Nuit de L'Info 2024 - Race For Water</h3>
-          <p>Application ludique réalisée en 16h lors de l'évenement nationale de la <a
-            href="https://nuitdelinfo.com/">Nuit de l'Info 2024</a>.</p>
-          <p>Océan interactif, avec dessins en pixel art décrivant l'écosystème marin et leur équivalent du
-            corps humain.</p>
-          <p><b>Technologies:</b> HTML, JavaScript, ExpressJS</p>
-
-          <div class="projet-liens">
-            <a href="./projets/ndi2024.html">En savoir plus</a>
-            <a href="https://github.com/Doruo/NDI-2024-RaceForWater">Page GitHub</a>
-          </div>
-        </div>
-
-        <!-- Code Game Jam 2023-2024 -->
-
-        <div class="projet-card">
-          <h3>CGJ 2023 - Time Mage Tournament</h3>
-
-          <p>
-            Jeu vidéo de tir en 2D isométrique réalisé en 24h à l'occasion de la 7ème édition de la <a href="https://codegamejam.extragames.fr/">Code Game Jam de l'IUT
-            Montpellier-Sête</a>.
-          </p>
-          <p>
-            Gagnant du Prix Design.
-          </p>
-
-          <p><b>Technologies:</b> LUA, PICO-8</p>
-
-          <div class="projet-liens">
-            <a href="https://doruo.itch.io/time-mage-tournament">En savoir plus</a>
-          </div>
-        </div>
-
-        <h1><a href="https://github.com/Doruo?tab=repositories">Voir tous mes autres projets</a></h1>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- BIOGRAPHIE -->
-
-  <section class="biographie">
-    <div class="conteneur">
-      <h2>- Biographie -</h2>
-      <p>
-        Depuis toujours, je suis passionnée pour l'informatique, au départ par le jeu vidéo, puis par le <b>domaine web</b>.
-      </p>
-      <p>
-        J'ai d'abord obtenu mon <b>Baccalauréat STI2D</b>, option Systèmes d'Information et Numérique (SIN).
-        J'ai pus y apprendre les bases de l’électronique, de la programmation lié aux systèmes embarqués,
-        ainsi que l'étude des forces sur des projets architecturaux (Principe Fondamental de la Dynamique).
-      </p>
-
-      <p>
-        Afin d'approfondir ce parcours, je choisis d'intégrer l'Université de Montpellier en
-        rejoignant le <b>BUT Informatique de l'IUT Montpellier-Sête</b>.
-        Durant ma formation j'ai été amené à maitriser les différentes notions de <b>développement full-stack efficace</b>,
-        donc coté serveur mais également côté interface client fonctionnel et ergonomique.
-      </p>
-
-      <p>
-        D’un point de vue managériale, j'ai été amené à <b>gérer des équipes pour différents projets informatiques</b>,
-        les coacher, proposer des solutions efficaces face aux obstacles,
-        afin de permettre de <b>satisfaire au maximum les exigences du client</b>, et dans les délais imposés.
-      </p>
-    </div>
-  </section>
-
-  <!-- FUTUR -->
-
-  <section class="futur">
-    <div class="conteneur">
-      <h2>- Objectifs Futurs -</h2>
-      <p>
-        Je compte tout d'abord entamer après mes études une carrière en <b>développement web back-end</b>,
-        puis envisage ensuite de prolonger mes acquis en <b>systèmes réseaux</b>.
-        Me passionant de plus en plus pour <b>les sciences et les mathématiques informatiques</b>,
-        je continuerais d'étudier, après le BUT, de nouveau domaines scientifiques.
-      </p>
-
-      <p>
-        Cela s'effectuera soi en intégrant une <b>école d'ingénieur</b> si j'obtiens mon diplôme du BUT Informatique,
-        sinon j'étudierais plus concrêtement dans mon temps libre différents domaines informatiques
-        auquelles je m'interesse déjà, comme les systèmes réseaux, la théorie des graphes,
-        l'intelligence artificiel, ou la physique quantique.
-      </p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-
-  <section class="contact">
-
-    <div class="conteneur">
-
-      <h2>Contact</h2>
-
-      <p>
-        Si mon profil correspond à ce que vous recherchez, contactez-moi !
-      </p>
-
-      <div class="social-links">
-        <a href="mailto:marc.antonio.haye@gmail.com">Mail</a>
-        <a href="https://github.com/Doruo">GitHub</a>
-        <a href="https://www.linkedin.com/in/marc-haye/">LinkedIn</a>
-        <a href="https://fr.gravatar.com/marcantoniohaye">Gravatar</a>
-        <a href="https://doruo.itch.io/time-mage-tournament">Itch.io</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer>
-    <div class="conteneur">
-      <p>Design réalisé avec l'aide amicale de <a href="https://estebanremond.github.io/portfolio/">Esteban
-        Rémond</a></p>
-      <p>&copy; 2025 Haye Marc</p>
-    </div>
-  </footer>
 </template>
 
 <style>
@@ -224,10 +50,6 @@ body {
 p:not(footer .conteneur p):not(.entete p){
   color: #666;
   margin-bottom: 1rem;
-}
-
-.contenu-intro p{
-  text-align: justify;
 }
 
 h2 {
@@ -276,124 +98,6 @@ section:nth-child(odd) {
 }
 
 
-.contenu-intro{
-  max-width: 35%;
-}
-
-/* INTRO, BIO & FUTUR */
-
-.intro, .biographie ,.futur{
-  display: flex;
-  align-items: center;
-  padding: 4rem 0;
-}
-
-.intro{
-  background: linear-gradient(-45deg, #bef0ff, #d1d6db, #cbdef0, #bde0ff);
-  background-size: 200% 200%;
-  height: 90vh;
-}
-
-/* PROJETS */
-
-.projets {
-  padding: 4rem 0;
-}
-
-.contenu-projets{
-  max-width: 55%;
-}
-
-/* TABLEAUX */
-
-.projet-grid, .competences-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-.competences-grid{
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-
-/* --------- */
-
-.projet-card, .projet-images, .competence-card {
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #eaeaea;
-}
-
-.projet-card p{
-  text-align: center;
-}
-
-
-.projet-images{
-  padding: 0;
-  max-height: 200px;
-}
-
-.projet-images img{
-  width:100%;
-  height:100%;
-}
-
-.projet-card:hover, .projet-images:hover{
-  transform: scale(1.04);
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
-}
-
-.projet-card a img:hover{
-  transform: scale(1.3);
-}
-
-.projet-liens a{
-
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  z-index: 1;
-}
-
-/* COMPETENCES */
-
-.competences {
-  padding: 4rem 0;
-}
-
-/* CONTACT */
-
-.contact {
-  padding: 4rem 0;
-  text-align: center;
-}
-
-/* FOOTER */
-
-footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-footer .containter {
-  color: white;
-}
-
 /* LIENS */
 
 .social-links a, .competences .conteneur p a, .entete h1 a, .projet-liens a{
@@ -411,15 +115,6 @@ footer .containter {
 }
 
 /* IMAGES */
-
-.portrait{
-  width: 45%;
-  border-radius: 10%;
-}
-
-.contenu-intro img{
-  width: 35%;
-}
 
 
 .projet-card a img{
