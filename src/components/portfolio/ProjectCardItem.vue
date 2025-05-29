@@ -4,10 +4,6 @@ defineProps({
     type: String,
     required: true,
   },
-  techs: {
-    type: String,
-    required: true,
-  },
   moreInfoLink:{
     type: String,
     required: true,
@@ -18,16 +14,14 @@ defineProps({
   },
 })
 </script>
-
 <template>
   <div class="projet-card">
-    <h3>{{ title }}</h3>
-
+    <h3>{{title}}</h3>
     <p>
       <slot name="description"></slot>
     </p>
     <p>
-      <b>Technologies:</b> {{ techs }}
+      <b>Technologies:</b> <slot name="techs"></slot>
     </p>
 
     <div class="projet-liens">
