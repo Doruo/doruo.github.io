@@ -1,11 +1,11 @@
-import Portfolio from '@/views/Portfolio.vue';
+import BasePortfolio from '@/views/BasePortfolio.vue';
 import { createWebHistory, createRouter } from 'vue-router';
 
 const routes = [
     {
-      path: '/',
+      path: '/portfolio',
       name: 'portfolio',
-      component: Portfolio,
+      component: BasePortfolio,
     }
 ]
 

@@ -1,33 +1,33 @@
-<script setup lang="ts">
-import PortfolioIntro from '@/components/portfolio/PortfolioIntro.vue';
+<script lang="ts" setup>
+import PortfolioIntro from '@/components/portfolio/PortfolioIntro.vue'
+import ProjectsCard from '@/components/portfolio/ProjectsCard.vue'
+import PortfolioBio from '@/components/portfolio/PortfolioBio.vue'
+import PortfolioFuture from '@/components/portfolio/PortfolioFuture.vue'
+import PortfolioContact from '@/components/portfolio/PortfolioContact.vue'
+import BaseFooter from '@/components/BaseFooter.vue'
 </script>
 
 <template>
+  <PortfolioIntro />
 
-  <PortfolioIntro/>
+  <ProjectsCard />
 
-  <PortfolioProjects/>
+  <PortfolioBio />
 
-  <PortfolioBio/>
+  <PortfolioFuture />
 
-  <PortfolioFuture/>
+  <PortfolioContact />
 
-  <PortfolioContact/>
-
-  <Footer/>
-
+  <BaseFooter />
 </template>
 
 <style>
-
-/* STRUCTURE */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease;
-
 }
 
 body {
@@ -38,16 +38,16 @@ body {
 
 /* TEXTES */
 
-* a{
+* a {
   color: rgb(39, 183, 199);
 }
 
 * a:hover {
   color: rgb(6, 136, 175);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-p:not(footer .conteneur p):not(.entete p){
+p:not(base-footer .conteneur p):not(.entete p) {
   color: #666;
   margin-bottom: 1rem;
 }
@@ -57,15 +57,14 @@ h2 {
   color: #2c3e50;
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
-
 /* SECTIONS */
-section{
+section {
   text-align: center;
   margin: 0 auto;
 }
@@ -78,29 +77,37 @@ section:nth-child(odd) {
   background-color: white;
 }
 
-.entete{
+.entete {
   max-width: 20%;
   padding: 0 2rem;
 }
-
 
 .entete p {
   color: white;
 }
 
-.contenu-intro, .conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
+.contenu-intro,
+.conteneur,
+.contenu-projets,
+.projet-contenu-images,
+.contenu-competences {
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-.conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
+.conteneur,
+.contenu-projets,
+.projet-contenu-images,
+.contenu-competences {
   max-width: 65%;
 }
 
-
 /* LIENS */
 
-.social-links a, .competences .conteneur p a, .entete h1 a, .projet-liens a{
+.social-links a,
+.competences .conteneur p a,
+.entete h1 a,
+.projet-liens a {
   text-decoration: none;
 }
 
@@ -116,27 +123,26 @@ section:nth-child(odd) {
 
 /* IMAGES */
 
-
-.projet-card a img{
-  width:90px;
+.projet-card a img {
+  width: 90px;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width:1820px){
-
-  #accueil, .projets-grid {
+@media (max-width: 1820px) {
+  #accueil,
+  .projets-grid {
     flex-direction: column;
     grid-template-columns: 1fr;
   }
 
-  .portrait{
+  .portrait {
     display: none;
     width: 5%;
     max-height: 2%;
   }
 
-  .intro{
+  .intro {
     height: 100%;
   }
 
@@ -150,15 +156,16 @@ section:nth-child(odd) {
     max-height: 100%;
   }
 
-  .contenu-intro p{
+  .contenu-intro p {
     font-size: 1.2rem;
   }
 
-  .contenu-intro h1, .contenu-intro h2 {
+  .contenu-intro h1,
+  .contenu-intro h2 {
     font-size: 2.2rem;
   }
 
-  header{
+  header {
     display: flex;
   }
 
@@ -166,31 +173,38 @@ section:nth-child(odd) {
     max-width: 100%;
   }
 
-  .entete h1{
+  .entete h1 {
     font-size: 3rem;
   }
 
-  .entete p{
+  .entete p {
     font-size: 2.2rem;
   }
 
-  .biographie .conteneur h2, .futur .conteneur h2, .projet-card h3, .contenu-projets h2{
+  .biographie .conteneur h2,
+  .futur .conteneur h2,
+  .projet-card h3,
+  .contenu-projets h2 {
     font-size: 2.2rem;
   }
 
-  .biographie .conteneur p, .futur .conteneur p, footer .conteneur p, .projet-card p, .projet-card a{
+  .biographie .conteneur p,
+  .futur .conteneur p,
+  base-footer .conteneur p,
+  .projet-card p,
+  .projet-card a {
     font-size: 1.6rem;
   }
 
-  .contact .conteneur h2{
+  .contact .conteneur h2 {
     font-size: 2.6rem;
   }
 
-  .contact .conteneur p{
+  .contact .conteneur p {
     font-size: 1.6rem;
   }
 
-  .social-links a{
+  .social-links a {
     font-size: 1.6rem;
   }
 }
