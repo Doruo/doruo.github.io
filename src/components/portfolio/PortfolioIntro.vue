@@ -10,11 +10,11 @@ import portrait from '@/assets/images/portrait/Marc_Haye.webp';
       <h2>Marc Haye</h2>
 
       <p>
-        Etudiant en Informatique à l'Université de Montpellier,
+        Etudiant à l'Université de Montpellier,
         je suis passionné par <b>l'informatique, la musique et le sport.</b>
       </p>
       <p>
-        Souhaitant faire de l'information ma carrière, je suis actuellement en 2ème année, spécialisé dans le <b> parcours
+        Souhaitant faire de l'informatique ma carrière, je suis actuellement en <b>2ème Année de DUT Informatique</b>, spécialisé dans le <b> parcours
         Réalisation d'Application - Conception & Déploiement</b>.
       </p>
       <p>

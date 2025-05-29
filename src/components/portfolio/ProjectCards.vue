@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import ProjectCardItem from '@/components/portfolio/ProjectCardItem.vue'
-import { projectsData } from '@/data/projectsData.ts';
+import { ProjectsData } from '@/data/projectsData.ts';
+const { mainProjects } = ProjectsData;
 
 defineProps({
   title: {
@@ -32,8 +33,9 @@ defineProps({
       <h2>- {{ title }} -</h2>
 
       <div class="projet-grid">
+
         <ProjectCardItem
-          v-for="project in projectsData.mainProjects.projects"
+          v-for="project in mainProjects.projects"
           :key="project.id"
           :title="project.title"
           :more-info-link="project.moreInfoLink"

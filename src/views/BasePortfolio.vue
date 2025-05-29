@@ -4,9 +4,9 @@ import ProjectCards from '@/components/portfolio/ProjectCards.vue'
 import PortfolioBio from '@/components/portfolio/PortfolioBio.vue'
 import PortfolioFuture from '@/components/portfolio/PortfolioFuture.vue'
 import PortfolioContact from '@/components/portfolio/PortfolioContact.vue'
-import { projectsData } from '@/data/projectsData.ts';
 
-const { mainProjects } = projectsData;
+import { ProjectsData } from '@/data/projectsData.ts';
+const { mainProjects } = ProjectsData;
 
 </script>
 

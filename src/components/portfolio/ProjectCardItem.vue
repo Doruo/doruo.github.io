@@ -13,6 +13,7 @@ defineProps({
     required: true,
   },
 })
+
 </script>
 <template>
   <div class="projet-card">

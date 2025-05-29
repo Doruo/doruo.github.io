@@ -16,7 +16,7 @@
       </p>
 
       <p>
-        Afin d'approfondir ce parcours, je choisis d'intégrer l'Université de Montpellier en
+        Afin d'approfondir ce parcours, je décide d'intégrer l'Université de Montpellier en
         rejoignant le <b>BUT Informatique de l'IUT Montpellier-Sête</b>.
         Durant ma formation j'ai été amené à maitriser les différentes notions de <b>développement full-stack efficace</b>,
         donc coté serveur mais également côté interface client fonctionnel et ergonomique.

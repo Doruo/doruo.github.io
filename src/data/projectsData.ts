@@ -1,6 +1,20 @@
-export const projectsData = {
+export interface Project {
+  id: string;
+  title: string;
+  moreInfoLink: string;
+  websiteLink: string;
+  description: string;
+  techs: string;
+}
 
-  mainProjects: {
+export interface ProjectCategory {
+  title: string;
+  projects: Project[];
+}
+
+export class ProjectsData {
+
+  public static readonly mainProjects: ProjectCategory = {
     title: "Mes Projets",
     projects: [
       {
@@ -44,9 +58,9 @@ export const projectsData = {
         techs: "LUA, PICO-8"
       }
     ]
-  },
+  };
 
-  webDev: {
+  public static readonly webDev: ProjectCategory = {
     title: "Projets Web & Applications",
     projects: [
       {
@@ -74,9 +88,9 @@ export const projectsData = {
         techs: "HTML, JavaScript, ExpressJS"
       }
     ]
-  },
+  };
 
-  gamesDev: {
+  public static readonly gamesDev: ProjectCategory = {
     title: "Développement de Jeux",
     projects: [
       {
@@ -96,9 +110,9 @@ export const projectsData = {
         techs: "LUA, PICO-8"
       }
     ]
-  },
+  };
 
-  competitions: {
+  public static readonly competitions: ProjectCategory = {
     title: "Compétitions",
     projects: [
       {
@@ -118,5 +132,5 @@ export const projectsData = {
         techs: "LUA, PICO-8"
       }
     ]
-  }
-};
+  };
+}
