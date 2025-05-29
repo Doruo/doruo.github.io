@@ -25,9 +25,4 @@
 </template>
 
 <style scoped>
-.future{
-    display: flex;
-  align-items: center;
-  padding: 4rem 0;
-}
 </style>

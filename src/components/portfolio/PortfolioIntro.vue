@@ -35,32 +35,4 @@
 
 <style scoped>
 
-.intro{
-
-display: flex;
-align-items: center;
-padding: 4rem 0;
-
-background: linear-gradient(-45deg, #bef0ff, #d1d6db, #cbdef0, #bde0ff);
-background-size: 200% 200%;
-height: 90vh;
-}
-
-.contenu-intro{
-  max-width: 35%;
-}
-
-.contenu-intro p{
-  text-align: justify;
-}
-
-.contenu-intro img{
-  width: 35%;
-}
-
-
-.portrait{
-  width: 45%;
-  border-radius: 10%;
-}
 </style>

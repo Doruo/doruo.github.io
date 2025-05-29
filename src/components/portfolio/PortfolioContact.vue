@@ -26,11 +26,4 @@
 </template>
 
 <style scoped>
-
-/* CONTACT */
-
-.contact {
-  padding: 4rem 0;
-  text-align: center;
-}
 </style>

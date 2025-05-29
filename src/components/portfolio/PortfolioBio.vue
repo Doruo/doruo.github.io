@@ -32,9 +32,4 @@
 </template>
 
 <style scoped>
-.biographie{
-    display: flex;
-  align-items: center;
-  padding: 4rem 0;
-}
 </style>
