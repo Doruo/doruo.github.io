@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ProjectCardItem from '@/components/portfolio/ProjectCardItem.vue'
-import { type ProjectCategory } from '@/data/projectsData.ts'
+import ProjectCardItem from '@/components/projects/ProjectCardItem.vue'
+import { type ProjectCategory } from '@/data/ProjectsData.ts'
 import type { PropType } from 'vue'
 
 defineProps({
@@ -22,13 +22,13 @@ defineProps({
   },
   allProjectsText: {
     type: String,
-    default: 'Voir tous mes autres projets'
+    default: 'Voir mes autres projets'
   }
 })
 </script>
 
 <template>
-  <section class="projets">
+  <section id="projets" class="projets">
     <div class="contenu-projets">
       <h2>- {{ title }} -</h2>
 

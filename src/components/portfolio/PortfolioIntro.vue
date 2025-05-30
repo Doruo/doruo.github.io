@@ -7,19 +7,19 @@ import portrait from '@/assets/images/portrait/Marc_Haye.webp';
 
     <div class="contenu-intro">
 
-      <h2>Marc Haye</h2>
+      <h2 id="titre">Marc Haye</h2>
 
       <p>
         Etudiant à l'Université de Montpellier,
-        je suis passionné par <b>l'informatique, la musique et le sport.</b>
+        je suis passionné par <b>l'informatique, la guitare et le sport.</b>
       </p>
       <p>
         Souhaitant faire de l'informatique ma carrière, je suis actuellement en <b>2ème Année de DUT Informatique</b>, spécialisé dans le <b> parcours
         Réalisation d'Application - Conception & Déploiement</b>.
       </p>
       <p>
-        Souhaitant continuer mes apprentissages en particulier dans le réseau et la conception de serveurs webs,
-        mon objectif professionel est de <b>devenir développeur Full-Stack</b>.
+        J'envisage à l'avenir de continuer mes apprentissages dans le réseau et la conception de serveurs webs,
+        mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
       </p>
 
       <h1><a href="">Téléchargez mon CV</a></h1>

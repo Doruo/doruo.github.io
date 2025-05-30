@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="biographie">
+  <section id="biographie" class="biographie">
     <div class="conteneur">
       <h2>- Biographie -</h2>
       <p>

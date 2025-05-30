@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import ProjectCards from '@/components/portfolio/ProjectCards.vue'
-import { ProjectsData } from '@/data/projectsData.ts'
+import ProjectCards from '@/components/projects/ProjectCards.vue'
+import { ProjectsData } from '@/data/ProjectsData.ts'
 </script>
 
 <template>
 
   <ProjectCards
-    title="Tout mes projets"
+    :title=ProjectsData.getAllProjectsCategory().title
     :projectsCategory=ProjectsData.getAllProjectsCategory()
     :show-all-projects-link=false
   />

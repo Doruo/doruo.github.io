@@ -3,13 +3,23 @@
 </script>
 
 <template>
-  <header>
-    <nav class="entete">
-      <h1><a href="/">Marc Haye</a></h1>
-      <p>Futur Développeur Full-Stack</p>
+  <header class="header">
+    <nav class="nav">
+      <div class="branding">
+        <h1><a href="/">Marc Haye</a></h1>
+        <p>Futur Développeur Full-Stack</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Accueil</a></li>
+        <li>|</li>
+        <li><a href="/projets">Projets</a></li>
+        <li>|</li>
+        <li><a href="/apprentissages">Apprentissages</a></li>
+        <li>|</li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
-
 </template>
 
 <style scoped>

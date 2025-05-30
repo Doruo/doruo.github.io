@@ -17,7 +17,9 @@ defineProps({
 </script>
 <template>
   <div class="projet-card">
-    <h3>{{title}}</h3>
+    <h3>
+      <u>{{title}}</u>
+    </h3>
     <p>
       <slot name="description"></slot>
     </p>

@@ -1,5 +1,15 @@
 
+<template>
+  <section id="eldenbuild-intro" class="intro">
 
-<style scoped>
+    <div class="contenu-intro">
 
-</style>
+      <img alt="logo_projet" src="">
+
+      <h2><slot name="title"></slot></h2>
+
+      <slot name="description"></slot>
+    </div>
+
+  </section>
+</template>
