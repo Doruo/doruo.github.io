@@ -4,29 +4,20 @@ import ProjectCards from '@/components/portfolio/ProjectCards.vue'
 import PortfolioBio from '@/components/portfolio/PortfolioBio.vue'
 import PortfolioFuture from '@/components/portfolio/PortfolioFuture.vue'
 import PortfolioContact from '@/components/portfolio/PortfolioContact.vue'
-
-import { ProjectsData } from '@/data/projectsData.ts';
-const { mainProjects } = ProjectsData;
-
+import { ProjectsData } from '@/data/projectsData.ts'
 </script>
 
 <template>
   <PortfolioIntro />
 
   <ProjectCards
-    :title=mainProjects.title
-    :projects=mainProjects.projects
+    :title=ProjectsData.getMainProjectsCategory().title
+    :projectsCategory=ProjectsData.getMainProjectsCategory()
     :show-all-projects-link=false
   />
 
   <PortfolioBio />
-
   <PortfolioFuture />
-
   <PortfolioContact />
-
 </template>
 
-<style>
-
-</style>

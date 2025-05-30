@@ -1,12 +1,23 @@
-import BasePortfolio from '@/views/BasePortfolio.vue';
+import ViewPortfolio from '@/views/ViewPortfolio.vue';
 import { createWebHistory, createRouter } from 'vue-router';
+import ViewProjects from '@/views/ViewProjects.vue'
 
 const routes = [
-    {
-      path: '/',
-      name: 'portfolio',
-      component: BasePortfolio,
-    }
+  {
+    path: '/',
+    name: 'default',
+    component: ViewPortfolio,
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: ViewPortfolio,
+  },
+  {
+    path: '/projets',
+    name: 'projects',
+    component: ViewProjects,
+  }
 ]
 
 const router = createRouter({

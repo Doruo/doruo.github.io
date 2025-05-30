@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import ProjectCardItem from '@/components/portfolio/ProjectCardItem.vue'
-import { ProjectsData } from '@/data/projectsData.ts';
-const { mainProjects } = ProjectsData;
+import { type ProjectCategory } from '@/data/projectsData.ts'
+import type { PropType } from 'vue'
 
 defineProps({
   title: {
     type: String,
     required: true
   },
-  projects: {
-    type: Array,
+  projectsCategory: {
+    type: Object as PropType<ProjectCategory>,
     required: true
   },
   showAllProjectsLink: {
@@ -35,7 +35,7 @@ defineProps({
       <div class="projet-grid">
 
         <ProjectCardItem
-          v-for="project in mainProjects.projects"
+          v-for="project in projectsCategory.projects"
           :key="project.id"
           :title="project.title"
           :more-info-link="project.moreInfoLink"
