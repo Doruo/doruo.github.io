@@ -168,6 +168,13 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           </ul>
 
           <h2>AC2: Mettre en place les outils de gestion de projet</h2>
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              <a href="/IUT/SAE/SAE2.04-livrable-de-gestion.pdf">Gestion - SAE 2.04</a>
+            </li>
+          </ul>
 
           <h2>AC3: Identifier les acteurs et les différentes phases d’un cycle de développement</h2>
           <h4>Status: Validée</h4>
@@ -198,8 +205,7 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           <h4>Traces et explications:</h4>
           <ul>
             <li>
-              <a href="/projets/poursuite-etude">SAE Application de poursuite d'étude</a>,
-              authentification par mail et <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">protocole LDAP</a>.
+              <a href="/IUT/SAE/Q2-UNITECH-SAE-Rétrospective-Sprint4-1.pdf">Retrospective Agile - SAE Application de poursuite d'étude</a>
             </li>
           </ul>
 

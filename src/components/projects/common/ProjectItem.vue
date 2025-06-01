@@ -4,8 +4,6 @@
 
     <div class="contenu-intro">
 
-      <img alt="logo_projet" src="">
-
       <slot name="logo_projet"></slot>
 
       <h2><slot name="title"></slot></h2>
