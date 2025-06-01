@@ -19,9 +19,9 @@ export class ProjectsData {
   private static readonly allProjects: Project[] = [
     {
       id: 'poursuite-etude',
-      title: "Application d'avis de poursuite d'étude",
-      moreInfoLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
-      websiteLink: "./projets/poursuiteEtude.html",
+      title: "Avis de poursuite d'étude",
+      moreInfoLink: "/projets/poursuite-etude",
+      websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
       tags: ['web', 'application', 'academic','main']
@@ -29,7 +29,7 @@ export class ProjectsData {
     {
       id: 'stage-itesoft',
       title: 'Stage chez ITESOFT',
-      moreInfoLink: "",
+      moreInfoLink: "/projets/stage-itesoft",
       websiteLink: "",
       description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec NestJS.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
@@ -37,27 +37,27 @@ export class ProjectsData {
     },
     {
       id: 'trains',
-      title: "Jeu de plateau Trains",
-      moreInfoLink: "./projets/trains.html",
+      title: "Trains",
+      moreInfoLink: "/projets/trains",
       websiteLink: "https://github.com/Doruo/Trains",
-      description: 'Portage digital du jeu de deck building japonais "Trains" d\'Hisashi Hayashi, jouable à 4 joueurs.',
+      description: 'Portage digital du jeu de plateau japonais "Trains" d\'Hisashi Hayashi, jouable à 4 joueurs.',
       techs: "POO, Java, JavaFX",
       tags: ['game', 'java','academic','main']
     },
     {
       id: 'elden-build',
       title: "Elden Build",
-      moreInfoLink: "./projets/eldenbuild.html",
+      moreInfoLink: "/projets/elden-build",
       websiteLink: "https://github.com/Doruo/EldenBuild",
       description: 'Site web de gestion de build communautaire du <a href=https://google.com>jeu Elden Ring</a>, ' +
-        'avec requêtes asynchrones à <a href="https://eldenring.fanapis.com/">API Elden Ring</a>',
+        'avec requêtes asynchrones à <a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
       tags: ['web', 'api', 'community','main']
     },
     {
       id: 'fan-site-chuck-norris',
-      title: "Fan-Site Chuck Norris",
-      moreInfoLink: "",
+      title: "Fan-Club Chuck Norris",
+      moreInfoLink: "/projets/chuck-norris",
       websiteLink: "",
       description: '',
       techs: "HTML, CSS",
@@ -65,8 +65,8 @@ export class ProjectsData {
     },
     {
       id: 'escape-game-mind-spies',
-      title: "Escape Game - The Mind Spies",
-      moreInfoLink: " ",
+      title: "The Mind Spies",
+      moreInfoLink: "/projets/mind-spies",
       websiteLink: "",
       description: '',
       techs: "HTML, CSS",
@@ -75,7 +75,7 @@ export class ProjectsData {
     {
       id: 'ndi-2024',
       title: "Nuit de L'Info 2024 - Race For Water",
-      moreInfoLink: "./projets/ndi2024.html",
+      moreInfoLink: "/projets/nuitdelinfo",
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML, JavaScript, ExpressJS",
@@ -84,12 +84,38 @@ export class ProjectsData {
     {
       id: 'cgj-2023',
       title: "CGJ 2023 - Time Mage Tournament",
-      moreInfoLink: "",
+      moreInfoLink: "https://codegamejam.extragames.fr/",
       websiteLink: "https://doruo.itch.io/time-mage-tournament",
-      description: 'Jeu de tir 2D isométrique réalisé en 24h. Gagnant du Prix Design de la <a href="https://codegamejam.extragames.fr/">Code Game Jam de l\'IUT\n' +
-        '                        Montpellier-Sête</a>.',
+      description: 'Jeu de tir 2D isométrique réalisé en 24h. Gagnant du Prix Design de la Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
       tags: ['game', 'competition','main']
+    },
+    {
+      id: 'jellybot',
+      title: "Jellybot",
+      moreInfoLink: "https://github.com/Doruo/JellyBot",
+      websiteLink: "",
+      description: 'Bot discord qui notifie le statut d\'un serveur multimédia Jellyfin et de ses nouveaux contenus. Jellyfin est un serveur multimedia open source que vous pouvez hébergez chez vous !',
+      techs: "Python, discord.py",
+      tags: ['community']
+    },
+    {
+      id: 'mastermind',
+      title: "Mastermind",
+      moreInfoLink: "https://github.com/Doruo/mastermind",
+      websiteLink: "",
+      description: '',
+      techs: "Java",
+      tags: ['game','academic']
+    },
+    {
+      id: 'marin-ivre',
+      title: "Marin Ivre",
+      moreInfoLink: "https://github.com/Doruo/marinIvre",
+      websiteLink: "",
+      description: '',
+      techs: "Java",
+      tags: ['game','academic']
     },
   ];
 

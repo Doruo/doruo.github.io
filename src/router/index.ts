@@ -2,11 +2,16 @@ import ViewPortfolio from '@/views/ViewPortfolio.vue';
 import { createWebHistory, createRouter } from 'vue-router';
 import ViewProjects from '@/views/ViewProjects.vue'
 import ViewApprentissages from '@/views/ViewApprentissages.vue'
+import ViewCV from '@/views/ViewCV.vue'
+import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
+import ProjectNDI from '@/components/projects/ProjectNDI.vue'
+import ProjectPoursuiteEtude from '@/components/projects/ProjectPoursuiteEtude.vue'
+import ProjectTrains from '@/components/projects/ProjectTrains.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'default',
+    name: 'portfolio',
     component: ViewPortfolio,
   },
   {
@@ -18,6 +23,32 @@ const routes = [
     path: '/apprentissages',
     name: 'apprentissages',
     component: ViewApprentissages,
+  },
+  {
+    path: '/CV',
+    name: 'CV',
+    component: ViewCV,
+  },
+  // Routes des projets (à l'avenir automatiser avec "/projets/{id}")
+  {
+    path: '/projets/poursuite-etude',
+    name: 'poursuite-etude',
+    component: ProjectPoursuiteEtude,
+  },
+  {
+    path: '/projets/trains',
+    name: 'trains',
+    component: ProjectTrains,
+  },
+  {
+    path: '/projets/elden-build',
+    name: 'elden-build',
+    component: ProjectEldenBuild,
+  },
+  {
+    path: '/projets/nuitdelinfo',
+    name: 'ndi2024',
+    component: ProjectNDI,
   },
 ]
 

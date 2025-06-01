@@ -22,7 +22,7 @@ import portrait from '@/assets/images/portrait/Marc_Haye.webp';
         mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
       </p>
 
-      <h1><a href="">Téléchargez mon CV</a></h1>
+      <h1><a href="/CV">Téléchargez mon CV ici !</a></h1>
     </div>
 
     <div class="conteneur-portrait">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectCardItem from '@/components/projects/ProjectCardItem.vue'
+import ProjectCardItem from '@/components/projects/common/ProjectCardItem.vue'
 import { type ProjectCategory } from '@/data/ProjectsData.ts'
 import type { PropType } from 'vue'
 
@@ -18,11 +18,11 @@ defineProps({
   },
   allProjectsLink: {
     type: String,
-    default: 'https://github.com/Doruo?tab=repositories'
+    default: '/projets'
   },
   allProjectsText: {
     type: String,
-    default: 'Voir mes autres projets'
+    default: 'Voir tous mes projets'
   }
 })
 </script>

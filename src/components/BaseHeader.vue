@@ -7,7 +7,7 @@
     <nav class="nav">
       <div class="branding">
         <h1><a href="/">Marc Haye</a></h1>
-        <p>Futur Développeur Full-Stack</p>
+        <p>Développeur Informatique</p>
       </div>
       <ul class="nav-links">
         <li><a href="/">Accueil</a></li>
