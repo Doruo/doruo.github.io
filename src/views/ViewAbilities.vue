@@ -9,7 +9,7 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
       <h1>- Apprentissages -</h1>
 
       <h4>
-        Toutes les compétences sont décrites par un status ("non validée"->"en cours de validation"->"validée"),
+        Toutes les compétences sont décrites par un status (Validée -> En cours d'acquisition -> Non validée),
         et redirigent vers les traces et les pages contenants les explications.
       </h4>
 
@@ -25,7 +25,7 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           <h4>Traces et explications:</h4>
           <ul>
             <li>
-              TDs de réseaux, systèmes et de virtualisation
+              <a href="/IUT/Reseau/RenduTDsReseau.pdf">TDs de réseaux</a>, systèmes et de <a href="/IUT/Virtualisation/Haye-Marc-Virtualisation-TP1-Docker-1.pdf">virtualisation</a>
             </li>
             <li>
               Stage chez ITESOFT (traces confidentielles)
@@ -51,7 +51,7 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           <h4>Traces et explications:</h4>
           <ul>
             <li>
-              <a href="/IUT/Haye-Marc-Virtualisation-TP1-Docker-1.pdf">TPs de Virtualisation (Docker)</a>
+              <a href="/IUT/Virtualisation/Haye-Marc-Virtualisation-TP1-Docker-1.pdf">TPs de Virtualisation (Docker)</a>
             </li>
           </ul>
 
@@ -72,11 +72,19 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           <h4>Traces et explications:</h4>
           <ul>
             <li>
-              <a href="/IUT/TD4–Réseau-Sujet-de-synthèse.pdf">TD4 de réseau avancé</a>
+              <a href="/IUT/Reseau/TD4–Réseau-Sujet-de-synthèse.pdf">TD4 de réseau avancé</a>
             </li>
           </ul>
 
           <h2>AC2: Utiliser des serveurs et des services réseaux virtualisés</h2>
+
+          <h4>Status: Validée</h4>
+          <h4>Traces:</h4>
+          <ul>
+            <li>
+              TDs de virtualisation avec Docker.
+            </li>
+          </ul>
 
           <h2>AC3: Sécuriser les services et données d’un système</h2>
 
@@ -105,7 +113,7 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
 
           <h2>Niveau 2:</h2>
           <h2>AC1: Optimiser les modèles de données de l’entreprise</h2>
-
+          <h4>Status: En cours d'acquisition</h4>
 
           <h2>AC2: Assurer la confidentialité des données (intégrité et sécurité)</h2>
           <h4>Status: Validée</h4>
@@ -114,6 +122,9 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
             <li>
               <a href="/projets/poursuite-etude">SAE Application de poursuite d'étude</a>,
               authentification par mail et <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">protocole LDAP</a>.
+            </li>
+            <li>
+              <a href="/projets/elden-build">Réalisation du site Elden Build</a>
             </li>
           </ul>
 
@@ -127,12 +138,13 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
           </ul>
 
           <h2>AC4: Manipuler des données hétérogènes</h2>
-
-          <p>
-            Status:
-            Traces:
-          </p>
-
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              <a href="/IUT/BD/S5-HAYE-BENHALIMA-DAOUDI-FUCHS-SAE2.04-Livrable2.pdf">SAE 2.04</a>
+            </li>
+          </ul>
 
         </template>
       </AbilityItem>
@@ -143,20 +155,54 @@ import AbilityItem from '@/components/abilities/common/AbilityItem.vue'
 
         <template #description>
           <h2>AC1: Appréhender les besoins du client et de l’utilisateur</h2>
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              <a href="/projets/poursuite-etude">SAE Application de poursuite d'étude</a>,
+              authentification par mail et <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">protocole LDAP</a>.
+            </li>
+            <li>
+              Stage chez ITESOFT (traces confidentielles)
+            </li>
+          </ul>
 
           <h2>AC2: Mettre en place les outils de gestion de projet</h2>
 
           <h2>AC3: Identifier les acteurs et les différentes phases d’un cycle de développement</h2>
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              Stage chez ITESOFT (traces confidentielles)
+            </li>
+          </ul>
 
           <h2>Niveau 2:</h2>
 
           <h2>AC1: Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</h2>
 
           <h2>AC2: Formaliser les besoins du client et de l’utilisateur</h2>
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              Stage chez ITESOFT (traces confidentielles)
+            </li>
+          </ul>
 
           <h2>AC3: Identifier les critères de faisabilité d’un projet informatique</h2>
 
           <h2>AC4: Définir et mettre en œuvre une démarche de suivi de projet</h2>
+          <h4>Status: Validée</h4>
+          <h4>Traces et explications:</h4>
+          <ul>
+            <li>
+              <a href="/projets/poursuite-etude">SAE Application de poursuite d'étude</a>,
+              authentification par mail et <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">protocole LDAP</a>.
+            </li>
+          </ul>
+
         </template>
       </AbilityItem>
     </div>

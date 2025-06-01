@@ -1,4 +1,4 @@
-import ViewPortfolio from '@/views/ViewPortfolio.vue';
+
 import { createWebHistory, createRouter } from 'vue-router';
 import ViewProjects from '@/views/ViewProjects.vue'
 import ViewAbilities from '@/views/ViewAbilities.vue'
@@ -6,6 +6,7 @@ import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/ProjectNDI.vue'
 import ProjectPoursuiteEtude from '@/components/projects/ProjectPoursuiteEtude.vue'
 import ProjectTrains from '@/components/projects/ProjectTrains.vue'
+import ViewPortfolio from '@/views/ViewPortfolio.vue'
 
 const routes = [
   {
