@@ -28,26 +28,24 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
         Le projet a été réalisé en binome, et de façon incrémentale en 3 phases :
       </p>
 
-      <p>
-        <ul>
-          <li>
-            <p>
-              <u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.
-            </p>
-          </li>
-          <li>
-            <p>
-              <u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.
-            </p>
-          </li>
-          <li>
-            <p>
-              <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a
-              href="https://openjfx.io/">JavaFX</a>.
-            </p>
-          </li>
-        </ul>
-      </p>
+      <ul>
+        <li>
+          <p>
+            <u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.
+          </p>
+        </li>
+        <li>
+          <p>
+            <u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.
+          </p>
+        </li>
+        <li>
+          <p>
+            <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a
+            href="https://openjfx.io/">JavaFX</a>.
+          </p>
+        </li>
+      </ul>
 
       <p>
         Il fait intervenir plusieurs compétences acquises durant le Semestre 2:
@@ -106,8 +104,6 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
     </template>
 
     <template #assets>
-
-      <div class="projet-grid">
         <div class="projet-images">
           <a href="../../ressources/images/trains/trains_initialisation.webp">
             <img alt="trains_initialisation" src="../../ressources/images/trains/trains_initialisation.webp">
@@ -131,7 +127,6 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
             <img alt="trains_partie3" src="../../ressources/images/trains/trains_partie3.webp">
           </a>
         </div>
-      </div>
     </template>
 
     <template #liens>

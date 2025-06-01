@@ -2,7 +2,7 @@
 import { VPdfViewer } from "@vue-pdf-viewer/viewer";
 import { ref } from 'vue'
 
-const CV_FILE_PATH = "/CV-MARC-HAYE.pdf";
+const CV_FILE_PATH = "/CV/CV-MARC-HAYE.pdf";
 const pdfFile = ref<string>(CV_FILE_PATH);
 </script>
 

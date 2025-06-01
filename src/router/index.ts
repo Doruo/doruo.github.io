@@ -1,8 +1,7 @@
 import ViewPortfolio from '@/views/ViewPortfolio.vue';
 import { createWebHistory, createRouter } from 'vue-router';
 import ViewProjects from '@/views/ViewProjects.vue'
-import ViewApprentissages from '@/views/ViewApprentissages.vue'
-import ViewCV from '@/views/ViewCV.vue'
+import ViewAbilities from '@/views/ViewAbilities.vue'
 import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/ProjectNDI.vue'
 import ProjectPoursuiteEtude from '@/components/projects/ProjectPoursuiteEtude.vue'
@@ -22,12 +21,7 @@ const routes = [
   {
     path: '/apprentissages',
     name: 'apprentissages',
-    component: ViewApprentissages,
-  },
-  {
-    path: '/CV',
-    name: 'CV',
-    component: ViewCV,
+    component: ViewAbilities,
   },
   // Routes des projets (à l'avenir automatiser avec "/projets/{id}")
   {
