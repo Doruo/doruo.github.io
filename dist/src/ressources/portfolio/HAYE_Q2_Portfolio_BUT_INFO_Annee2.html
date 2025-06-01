@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Marc Haye</title>
+    <link rel="stylesheet" type="text/css" href="/ressources/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+
+<header>
+    <div id="entete" class="container">
+        <h1>Voici mon</h1>
+        <div class="stack" style="--stacks: 3;">
+            <span style="--index: 0;">PORTFOLIO</span>
+            <span style="--index: 1;">PORTFOLIO</span>
+            <span style="--index: 2;">PORTFOLIO</span>
+        </div>
+
+        <span class="right">
+           <h2>Marc Haye</h2> 
+           <h2>2ème Année de BUT Informatique - Université de Montpellier-Sête</h2>
+        </span>
+        
+        <h2><a href="../CV/CV-HAYE.pdf">Curriculum Vitæ (CV)</a></h2>
+          
+    </div>
+</header>
+<main>
+
+    <h1 id="semestre3"><u></u></h1>
+
+    <fieldset id="introduction">
+        <legend><h1>Introduction</h1></legend>
+
+        <p>
+            Bonjour, je suis Marc Haye.
+        </p>
+        <br>
+        <p>
+            Durant ma scolarité, je n'ai eu <b>qu'un objectif</b>: devenir developpeur logiciel.
+        </p>
+        <br>
+        <p>
+            Après avoir réussi à intégrer l'IUT Informatique, j'ai redoublé ma 1ère année. <b>Je n'ai rien laché pour autant et perséverer</b>.
+        </p>
+        <br>
+        <p>
+            Aujourd'hui, en 2024, je suis actuellement en 2ème année 
+            de BUT Informatique, et je vais vous présenter tout ce que j'ai mis en place 
+            cette année pour <b>valider</b> cette année universitaire.
+        </p>
+        <br>
+        <p>
+        <p>
+            Ce document présente un bilan qui justifie tout ce que j’ai pu acquérir
+            durant ce troisième semestre, en deuxième année de BUT Informatique au
+            Département Informatique de l’IUT Montpellier-Sète.
+        </p>
+        <br>
+        <p>
+            J'ai choisi d'integrer cette année <b>le parcours RACDV: 
+            Réalisation d'Application - Conception & Déploiement</b>.
+            Le projet de SAE réalisé tout le long de ce semestre 
+            justifie toutes les compétences acquises durant cette période.
+        </p>
+        <br>
+        <p>
+            Ce document sera structuré de sorte à représenter chacune
+            des six compétences respectives qui me seront nécessaires au
+            passage de ma deuxième année de DUT Informatique.      
+        </p>
+    </fieldset>
+
+    
+    <fieldset id="sommaire">
+        <legend><h1>Sommaire</h1></legend>
+        <ul>
+            <li>
+                <h2><a href="#introduction">- Introduction -</a></h2>
+            </li>
+            <li>
+                <h2><a href="#ue3.1">Site de Covoiturage</a></h2>
+            </li>
+            <li>
+                <h2><a href="#sae3a">Application de Poursuite d'Etude</a></h2>
+            </li>
+            <li>
+                <h2><a href="#ndi2024">Nuit de L'Info 2024 - RaceForWater</a></h2>
+            </li>
+            <li>
+                <h2><a href="#cgj2024">Code Game Jam 2023-2024</a></h2>
+            </li>
+            <li>
+                <h2><a href="#conclusion">- Conclusion -</a></h2>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset id="ue3.1">
+        <legend><h1>Site de Covoiturage</h1></legend>
+
+        <img alt="site covoiturage" src="../images/covoiturage/siteCovoiturage.png" width="95%">
+
+        <br><br>
+        <p>   
+            Il vous permet de vous inscrire, et d'acceder en tant qu'utilisateur et de 
+            <b>consulter des offres de covoiturage proposées par d'autres consultants du site</b>. 
+            Vous pouvez vous renseigner sur la ville de départ et d'arrivée du trajet, de la 
+            date, et si le conducteur est fumeur ou non. 
+        </p>
+        <br>
+        <p>
+            En parallèle, j'ai pus apprendre à concevoir des logiciels de façon plus professionel
+            et proche du travail d'un <b>ingénieur web</b>. J'ai explorer plusieurs méthodes de 
+            <b>qualité de developpement</b>, comme <b>les principes SOLID</b>, qui prend en compte 
+            "Qualité, Interface, Abstraction, Héritage, Composition, Injection de dépendances", 
+            ainsi que les <b>design patterns créateurs</b>.
+        </p>
+        <br>  
+
+        <p>            
+            Un exemple de pattern que j'ai utilisé fut le pattern Singleton. 
+            <br>
+            Voici un apercu technique de l'implémentation de Singleton dans une application :
+        </p>
+        <br><br>
+
+        <img alt="singleton" src="../images/qualiteDev/singleton.png" width="95%">
+
+        <br><br>
+        <p>
+            L'idée de ce pattern est très simple : 
+            on souhaite garantir qu’il n’existe <b>qu’une seule instance d’une classe dans le programme</b> 
+            et fournir un point d’accès global à cette instance.
+        </p>
+        <br>
+        <p>   
+            Dans le cas de notre <b>SAE</b>, ils nous a permit de n'avoir 
+            <b>qu'une seule connexion possible faite à notre base de données à la fois</b>, 
+            ce qui permet d'éviter une surchage de communication inutile, 
+            ainsi que de <b>sécuriser</b> cette dernière. 
+        </p>
+        <br>
+        <p>       
+            Outre cela, la réalisation de 
+            ce projet a demandé une structure importante; pour vous le justifier, voici le diagramme
+            de classe UML :
+        </p>
+
+        <br><br>
+
+        <img alt="sae-diagramme-classes" src="../images/poursuiteEtude/poursuite_etude_diagramme_classes.png" width="95%">
+        <br><br>
+        <p>   
+            Ce diagramme ne représente le projet que durant le milieu du développement.
+        </p>
+        <br>
+        <p>     
+            Comme vous pouvez donc le constater, il est relativement excessif 
+            et vous donne visuellement une idée de son envergure.
+        </p>
+    </fieldset>
+
+    <fieldset id="ue3.3">
+        <legend><h1>Application de Poursuite d'Etude</h1></legend>
+    </fieldset>
+
+    <fieldset id="ndi2024">
+        <legend><h1>Nuit de L'Info 2024 - RaceForWater</h1></legend>
+
+        <p>
+            Durant ce semestre, j'ai participé à la Nuit de l'info 2024.
+        </p>
+
+        <br><br>
+
+        <img alt="ndi2024" src="../images/ndi2024/logo-n2i-2024.png" width="95%">
+
+        <br><br>
+        
+        <p>
+            Nous avons réalisé avec mon équipe une application ludique faite avec Node.js et 
+            le framework Express, pour la fondation Race for Water, qui a pour mission de 
+            préserver l'eau et les océans en particulier face à la pollution plastique.
+        </p>
+        <br>
+        <p>   
+            Le concept de l'application est un océan navigable, similaire au
+            fonctionnement de Google Maps, dans laquelle se trouve différents organes interactifs. 
+            Notre objectif était de sensibiliser sur l'état actuel des océans et leurs lien méconnu et
+            particulier avec notre corps humain.
+        </p>
+        <br>
+        <p>
+            Mon rôle fut de concevoir le serveur chargé de récuperer 
+            les réquetes et de renvoyer la page web demandée. J'ai donc du concevoir
+            cela de façon optimisé de sorte à eviter la surcharge de rêquetes lorsque 
+            l'utilisateur souhaite accéder aux différentes pages que renvoie les organes.
+        </p>
+
+        <br>
+        <p>
+            Le code source de l'application est disponible sur <a href="https://github.com/Doruo/NDI-2024-RaceForWater">cette page</a>.  
+        </p>
+
+    </fieldset>
+
+    <fieldset id="cgj2024">
+        <legend><h1>Code Game Jam 2023-2024</h1></legend>
+        <p>
+            En dehors du parcours universitaire cette année, j'ai également
+            participé à la 7 et 8e édition de la Code Game Jam organisée
+            par Antoine Chollet, et mon équipe s'est vu décerner le Prix Design
+            de la 7e édition. 
+        </p>
+        <br>
+        <p>    
+            Ces projets m’ont demandé de réaliser un jeu
+            vidéo respectivement en LUA et avec le framework libGDX, en
+            équipe dans un délai très restreint. 
+            
+            Le projet de la est accessible via la plateforme itch.io et vous pouvez directement tester le jeu sur la page : 
+        </p>
+        <br>
+        <p>  
+            <a href="https://doruo.itch.io/time-mage-tournament">Time Mage Tournament</a>
+                (Page web réalisé par moi-même).
+            
+        </p>
+    </fieldset>
+
+    <fieldset id="conclusion">
+        <legend><h1>Conclusion</h1></legend>
+    </fieldset>
+</main>
+<footer>
+    <a href="#entete"><h1>Retour au début</h1></a>
+    <a href="/../../"><h1>Retour à l'accueil</h1></a>
+</footer>
+</body>
+</html>
