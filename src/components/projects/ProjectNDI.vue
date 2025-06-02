@@ -7,7 +7,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi2024" src="../../ressources/images/ndi2024/logo-n2i-2024.webp">
+      <img alt="ndi2024" src="/src/ressources/images/ndi2024/logo-n2i-2024.webp">
     </template>
 
     <template #title>NUIT DE L'INFO 2024 - Race For Water</template>
@@ -45,7 +45,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://git-scm.com/">
-          <img alt="GIT" src="../../ressources/images/outils/git.webp">
+          <img alt="GIT" src="/src/ressources/images/outils/git.webp">
         </a>
         <h1>Git</h1>
         <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
@@ -53,7 +53,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.w3schools.com/html/">
-          <img alt="HTML" src="../../ressources/images/outils/html.webp">
+          <img alt="HTML" src="/src/ressources/images/outils/html.webp">
         </a>
         <h1>HTML</h1>
         <p>Réalisation du contenu rédigé des articles.</p>
@@ -61,7 +61,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a alt="bootstrap" href="https://getbootstrap.com/">
-          <img alt="Bootstrap" src="../../ressources/images/outils/bootstrap.webp">
+          <img alt="Bootstrap" src="/src/ressources/images/outils/bootstrap.webp">
         </a>
         <h1>Bootstrap</h1>
         <p>Mise en page visuelles des articles.</p>
@@ -69,7 +69,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
-          <img alt="JavaScript" src="../../ressources/images/outils/js.webp">
+          <img alt="JavaScript" src="/src/ressources/images/outils/js.webp">
         </a>
         <h1>JavaScript</h1>
         <p>Implémentation de l'océan naviguable.</p>
@@ -77,7 +77,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://nodejs.org/fr">
-          <img alt="Node" src="../../ressources/images/outils/node.webp">
+          <img alt="Node" src="/src/ressources/images/outils/node.webp">
         </a>
         <h1>Node.js</h1>
         <p>Réalisation du serveur HTTP.</p>
@@ -85,7 +85,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://expressjs.com/">
-          <img alt="Express.js" src="../../ressources/images/outils/express-js.webp">
+          <img alt="Express.js" src="/src/ressources/images/outils/express-js.webp">
         </a>
         <h1>Express.js</h1>
         <p>Routage et Gestion des dépendances de l'API.</p>
@@ -98,57 +98,57 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
       <div class="projet-grid">
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_ocean.webp">
-            <img alt="ndi_ocean" src="../../ressources/images/ndi2024/ndi_ocean.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_ocean.webp">
+            <img alt="ndi_ocean" src="/src/ressources/images/ndi2024/ndi_ocean.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_page.webp">
-            <img alt="ndi_page" src="../../ressources/images/ndi2024/ndi_page.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_page.webp">
+            <img alt="ndi_page" src="/src/ressources/images/ndi2024/ndi_page.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo_groupe.webp">
-            <img alt="ndi_photo_groupe" src="../../ressources/images/ndi2024/ndi_photo_groupe.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo_groupe.webp">
+            <img alt="ndi_photo_groupe" src="/src/ressources/images/ndi2024/ndi_photo_groupe.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo1.webp">
-            <img alt="ndi_photo1" src="../../ressources/images/ndi2024/ndi_photo1.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo1.webp">
+            <img alt="ndi_photo1" src="/src/ressources/images/ndi2024/ndi_photo1.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo2.webp">
-            <img alt="ndi_photo2" src="../../ressources/images/ndi2024/ndi_photo2.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo2.webp">
+            <img alt="ndi_photo2" src="/src/ressources/images/ndi2024/ndi_photo2.webp">
           </a>
         </div>
 
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo3.webp">
-            <img alt="ndi_photo3" src="../../ressources/images/ndi2024/ndi_photo3.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo3.webp">
+            <img alt="ndi_photo3" src="/src/ressources/images/ndi2024/ndi_photo3.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo4.webp">
-            <img alt="ndi_photo4" src="../../ressources/images/ndi2024/ndi_photo4.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo4.webp">
+            <img alt="ndi_photo4" src="/src/ressources/images/ndi2024/ndi_photo4.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo5.webp">
-            <img alt="ndi_photo5" src="../../ressources/images/ndi2024/ndi_photo5.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo5.webp">
+            <img alt="ndi_photo5" src="/src/ressources/images/ndi2024/ndi_photo5.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/ndi2024/ndi_photo6.webp">
-            <img alt="ndi_photo6" src="../../ressources/images/ndi2024/ndi_photo6.webp">
+          <a href="/src/ressources/images/ndi2024/ndi_photo6.webp">
+            <img alt="ndi_photo6" src="/src/ressources/images/ndi2024/ndi_photo6.webp">
           </a>
         </div>
       </div>

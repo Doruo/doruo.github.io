@@ -7,7 +7,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
   <ProjectItem>
     <template #logo_projet>
-      <img alt="eldenbuild_logo" src="../../ressources/images/eldenbuild/eldenring_ranni.webp">
+      <img alt="eldenbuild_logo" src="/src/ressources/images/eldenbuild/eldenring_ranni.webp">
     </template>
 
     <template #title>Elden Build</template>
@@ -48,7 +48,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://git-scm.com/">
-          <img alt="GIT" src="../../ressources/images/outils/git.webp">
+          <img alt="GIT" src="/src/ressources/images/outils/git.webp">
         </a>
         <h1>Git</h1>
         <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
@@ -56,7 +56,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.docker.com/">
-          <img alt="Docker" src="../../ressources/images/outils/docker.webp">
+          <img alt="Docker" src="/src/ressources/images/outils/docker.webp">
         </a>
         <h1>Docker</h1>
         <p>Aide au déploiement de l'application.</p>
@@ -64,7 +64,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="Architecture MVC" src="../../ressources/images/outils/mvc.webp">
+          <img alt="Architecture MVC" src="/src/ressources/images/outils/mvc.webp">
         </a>
         <h1>Architecture MVC</h1>
         <p>Structure globale et pattern architecturale du projet.</p>
@@ -72,7 +72,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.php.net/">
-          <img alt="PHP" src="../../ressources/images/outils/php.webp">
+          <img alt="PHP" src="/src/ressources/images/outils/php.webp">
         </a>
         <h1>PHP</h1>
         <p>Développement coté serveur de l'application.</p>
@@ -80,7 +80,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.w3schools.com/html/">
-          <img alt="HTML" src="../../ressources/images/outils/html.webp">
+          <img alt="HTML" src="/src/ressources/images/outils/html.webp">
         </a>
         <h1>HTML</h1>
         <p>Développement de l'interface utilisateur.</p>
@@ -88,7 +88,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a alt="bootstrap" href="https://getbootstrap.com/">
-          <img alt="Bootstrap" src="../../ressources/images/outils/bootstrap.webp">
+          <img alt="Bootstrap" src="/src/ressources/images/outils/bootstrap.webp">
         </a>
         <h1>Bootstrap</h1>
         <p>Mise en page responsive de l'interface graphique de l'application.</p>
@@ -96,7 +96,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
-          <img alt="JavaScript" src="../../ressources/images/outils/js.webp">
+          <img alt="JavaScript" src="/src/ressources/images/outils/js.webp">
         </a>
         <h1>JavaScript</h1>
         <p>Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones.</p>
@@ -104,7 +104,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="Programmation orientée objet" src="../../ressources/images/outils/oop.webp">
+          <img alt="Programmation orientée objet" src="/src/ressources/images/outils/oop.webp">
         </a>
 
         <h1>Programmation Orientée Objet</h1>
@@ -113,7 +113,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.mysql.com/fr/">
-          <img alt="MySQL" src="../../ressources/images/outils/mysql.webp">
+          <img alt="MySQL" src="/src/ressources/images/outils/mysql.webp">
         </a>
         <h1>MySQL</h1>
         <p>Déploiement de la base de donnée sécurisée.</p>
@@ -121,7 +121,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="ApiREST" src="../../ressources/images/outils/apirest.webp">
+          <img alt="ApiREST" src="/src/ressources/images/outils/apirest.webp">
         </a>
         <h1>API REST</h1>
         <p>Norme de communication avec l'interface de programmation de l'<a href="https://eldenring.fanapis.com/">API
@@ -130,7 +130,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="JSON" src="../../ressources/images/outils/json.webp">
+          <img alt="JSON" src="/src/ressources/images/outils/json.webp">
         </a>
         <h1>JSON</h1>
         <p>Format de données utilisées lors des communications faites à l'API via des requêtes HTTP.</p>
@@ -143,40 +143,40 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
       <div class="projet-grid">
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_accueil.webp">
-            <img alt="eldenbuild_accueil" src="../../ressources/images/eldenbuild/eldenbuild_accueil.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_accueil.webp">
+            <img alt="eldenbuild_accueil" src="/src/ressources/images/eldenbuild/eldenbuild_accueil.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_inscription.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_inscription.webp">
             <img alt="eldenbuild_inscription"
-                 src="../../ressources/images/eldenbuild/eldenbuild_inscription.webp">
+                 src="/src/ressources/images/eldenbuild/eldenbuild_inscription.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_build.webp">
-            <img alt="eldenbuild_build" src="../../ressources/images/eldenbuild/eldenbuild_build.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_build.webp">
+            <img alt="eldenbuild_build" src="/src/ressources/images/eldenbuild/eldenbuild_build.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_testapi.webp">
-            <img alt="eldenbuild_testapi" src="../../ressources/images/eldenbuild/eldenbuild_testapi.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_testapi.webp">
+            <img alt="eldenbuild_testapi" src="/src/ressources/images/eldenbuild/eldenbuild_testapi.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_profile.webp">
-            <img alt="eldenbuild_profile" src="../../ressources/images/eldenbuild/eldenbuild_profile.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_profile.webp">
+            <img alt="eldenbuild_profile" src="/src/ressources/images/eldenbuild/eldenbuild_profile.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/eldenbuild/eldenbuild_getEquipement.webp">
+          <a href="/src/ressources/images/eldenbuild/eldenbuild_getEquipement.webp">
             <img alt="eldenbuild_getEquipement"
-                 src="../../ressources/images/eldenbuild/eldenbuild_getEquipement.webp">
+                 src="/src/ressources/images/eldenbuild/eldenbuild_getEquipement.webp">
           </a>
         </div>
       </div>

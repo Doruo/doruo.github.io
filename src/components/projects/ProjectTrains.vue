@@ -7,7 +7,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" src="../../ressources/images/trains/logoTrains.webp">
+      <img alt="logoIUT" src="/src/ressources/images/trains/logoTrains.webp">
     </template>
 
     <template #title>Jeu de plateau Trains</template>
@@ -16,7 +16,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
       <p>
         Trains est un jeu de deck building japonais Trains d'Hisashi Hayashi.
         Si le jeu vous intéresse, vous pouvez consulter <a
-        href="../../ressources/portfolio/trains/regles.pdf">les règles</a>.
+        href="/src/ressources/portfolio/trains/regles.pdf">les règles</a>.
       </p>
 
       <p>
@@ -70,7 +70,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
     <template #abilities>
       <div class="projet-card">
         <a>
-          <img alt="Programmation orientée objet" src="../../ressources/images/outils/oop.webp">
+          <img alt="Programmation orientée objet" src="/src/ressources/images/outils/oop.webp">
         </a>
 
         <h1>Programmation Orientée Objet</h1>
@@ -79,7 +79,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.java.com/">
-          <img alt="Java" src="../../ressources/images/outils/java.webp">
+          <img alt="Java" src="/src/ressources/images/outils/java.webp">
         </a>
         <h1>Java</h1>
         <p>Implémentation du fonctionnement du jeu.</p>
@@ -87,7 +87,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://openjfx.io/">
-          <img alt="JavaFX" src="../../ressources/images/outils/javafx.webp">
+          <img alt="JavaFX" src="/src/ressources/images/outils/javafx.webp">
         </a>
         <h1>JavaFX</h1>
         <p>Réalisation de l'interface graphique.</p>
@@ -95,7 +95,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://gluonhq.com/products/scene-builder/">
-          <img alt="Scene Builder" src="../../ressources/images/outils/scenebuilder.webp">
+          <img alt="Scene Builder" src="/src/ressources/images/outils/scenebuilder.webp">
         </a>
         <h1>Scene Builder</h1>
         <p>Outil d'aide à la réalisation de l'interface graphique.</p>
@@ -105,32 +105,32 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
     <template #assets>
         <div class="projet-images">
-          <a href="../../ressources/images/trains/trains_initialisation.webp">
-            <img alt="trains_initialisation" src="../../ressources/images/trains/trains_initialisation.webp">
+          <a href="/src/ressources/images/trains/trains_initialisation.webp">
+            <img alt="trains_initialisation" src="/src/ressources/images/trains/trains_initialisation.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/trains/trains_partie1.webp">
-            <img alt="trains_partie1" src="../../ressources/images/trains/trains_partie1.webp">
+          <a href="/src/ressources/images/trains/trains_partie1.webp">
+            <img alt="trains_partie1" src="/src/ressources/images/trains/trains_partie1.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/trains/trains_partie2.webp">
-            <img alt="trains_partie2" src="../../ressources/images/trains/trains_partie2.webp">
+          <a href="/src/ressources/images/trains/trains_partie2.webp">
+            <img alt="trains_partie2" src="/src/ressources/images/trains/trains_partie2.webp">
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/trains/trains_partie3.webp">
-            <img alt="trains_partie3" src="../../ressources/images/trains/trains_partie3.webp">
+          <a href="/src/ressources/images/trains/trains_partie3.webp">
+            <img alt="trains_partie3" src="/src/ressources/images/trains/trains_partie3.webp">
           </a>
         </div>
     </template>
 
     <template #liens>
-      <a href="../../ressources/portfolio/trains/regles.pdf">Règles du jeu</a>
+      <a href="/src/ressources/portfolio/trains/regles.pdf">Règles du jeu</a>
       <a href="https://github.com/Doruo/Trains">Page Github</a>
     </template>
   </ProjectItem>
