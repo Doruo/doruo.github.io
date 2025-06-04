@@ -73,6 +73,11 @@ p{
     border-spacing: 15px 50px;
 }
 
+/* APPRENTISSAGES */
+.apprentissage, .conteneur-apprentissage p{
+    text-align: center;
+}
+
 /* ANIMATION GLITCH ENTÊTE */
 
 .right {
