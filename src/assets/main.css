@@ -6,8 +6,6 @@
   font-weight: normal;
 }
 
-/* HAYE MARC - PORTFOLIO STYLES */
-
 /* STRUCTURE */
 
 * {
@@ -215,7 +213,7 @@ section:nth-child(odd) {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
 }
 
-.projet-card a img:hover{
+.projet-card a img:hover,  .social-link-img:hover{
   transform: scale(1.3);
 }
 
@@ -270,10 +268,16 @@ footer .containter {
 
 .social-links {
   margin-top: 2rem;
+  display: flex;
 }
 
 .social-links a {
   margin: 0 1rem;
+}
+
+.social-links div a img{
+  max-height: 80px;
+  max-height: 80px;
 }
 
 /* IMAGES */
