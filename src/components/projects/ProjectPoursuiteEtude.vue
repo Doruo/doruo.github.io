@@ -1,12 +1,32 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/common/ProjectItem.vue'
+
+import logoIUT from '@/assets/images/projets/IUT/logoIUT.webp'
+import accueil from '@/assets/images/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
+import agregation from '@/assets/images/projets/poursuiteEtude/poursuite_etude_agregation.webp'
+import connexion from '@/assets/images/projets/poursuiteEtude/poursuite_etude_connexion.webp'
+import csv from '@/assets/images/projets/poursuiteEtude/poursuite_etude_csv.webp'
+import diagramme from '@/assets/images/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
+import notes from '@/assets/images/projets/poursuiteEtude/poursuite_etude_notes.webp'
+
+import git from '@/assets/images/projets/outils/git.webp'
+import docker from '@/assets/images/projets/outils/docker.webp'
+import mvc from '@/assets/images/projets/outils/mvc.webp'
+import ldap from '@/assets/images/projets/outils/ldap.webp'
+import php from '@/assets/images/projets/outils/php.webp'
+import html from '@/assets/images/projets/outils/html.webp'
+import bootstrap from '@/assets/images/projets/outils/bootstrap.webp'
+import oop from '@/assets/images/projets/outils/oop.webp'
+import postgresql from '@/assets/images/projets/outils/postgresql.webp'
+import plsql from '@/assets/images/projets/outils/plsql.webp'
+import chartjs from '@/assets/images/projets/outils/chartjs.webp'
 </script>
 
 <template>
 
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" src="../../ressources/images/IUT/logoIUT.webp">
+      <img alt="logoIUT" :src=logoIUT>
     </template>
 
     <template #title>Application d'avis de poursuite d'étude</template>
@@ -30,6 +50,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
         Ce projet a pour but de formaliser tous ces résultats pour faire ressortir les
         compétences les plus/moins acquises pour un étudiant donné,
         et de pouvoir le comparer à d’autres peu importe leur parcours.
+        Ce projet a eu lieu dans le cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.
       </p>
 
       <p>
@@ -40,7 +61,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
       </p>
 
       <p>
-        Mon rôle fut de superviser le développement du projet,
+        Mon rôle fut de concevoir, développer en équipe, et superviser le déroulement du projet, et
         animer la mêlée (<a href="https://chef-de-projet.fr/methodologie-scrum/">Scrum</a>) pour l'équipe dans son ensemble en s'assurant que le framework Scrum est
         respecté.
         Mon travail consistait à aider à devenir autonome grâce à des techniques comme l’auto-organisation et la
@@ -56,7 +77,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
     <template #abilities>
       <div class="projet-card">
         <a href="https://git-scm.com/">
-          <img alt="GIT" src="../../ressources/images/outils/git.webp">
+          <img alt="GIT" :src=git>
         </a>
         <h1>Git</h1>
         <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
@@ -64,7 +85,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.docker.com/">
-          <img alt="Docker" src="../../ressources/images/outils/docker.webp">
+          <img alt="Docker" :src=docker>
         </a>
         <h1>Docker</h1>
         <p>Aide au deploiement de l'application.</p>
@@ -72,7 +93,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="Architecture MVC" src="../../ressources/images/outils/mvc.webp">
+          <img alt="Architecture MVC" :src=mvc>
         </a>
         <h1>Architecture MVC</h1>
         <p>Structure globale et pattern architecturale du projet.</p>
@@ -80,7 +101,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">
-          <img alt="LDAP" src="../../ressources/images/outils/ldap.webp">
+          <img alt="LDAP" :src=ldap>
         </a>
         <h1>Protocole LDAP</h1>
         <p>Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète.</p>
@@ -88,7 +109,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.php.net/">
-          <img alt="PHP" src="../../ressources/images/outils/php.webp">
+          <img alt="PHP" :src=php>
         </a>
         <h1>PHP</h1>
         <p>Développement coté serveur de l'application.</p>
@@ -96,7 +117,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.w3schools.com/html/">
-          <img alt="HTML" src="../../ressources/images/outils/html.webp">
+          <img alt="HTML" :src=html>
         </a>
         <h1>HTML</h1>
         <p>Développement de l'interface utilisateur.</p>
@@ -104,7 +125,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a alt="bootstrap" href="https://getbootstrap.com/">
-          <img alt="Bootstrap" src="../../ressources/images/outils/bootstrap.webp">
+          <img alt="Bootstrap" :src=bootstrap>
         </a>
         <h1>Bootstrap</h1>
         <p>Mise en page de l'interface visuelle.</p>
@@ -112,7 +133,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a>
-          <img alt="Programmation orientée objet" src="../../ressources/images/outils/oop.webp">
+          <img alt="Programmation orientée objet" :src=oop>
         </a>
 
         <h1>Programmation Orientée Objet</h1>
@@ -121,7 +142,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.postgresql.org/">
-          <img alt="PostgreSQL" src="../../ressources/images/outils/postgresql.webp">
+          <img alt="PostgreSQL" :src=postgresql>
         </a>
         <h1>PostgreSQL</h1>
         <p>Réalisation de la base de donnée de l'application.</p>
@@ -129,7 +150,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.oracle.com/fr/database/technologies/appdev/plsql.html">
-          <img alt="PL/SQL" src="../../ressources/images/outils/plsql.webp">
+          <img alt="PL/SQL" :src=plsql>
         </a>
         <h1>PL/SQL</h1>
         <p>Fonctionnement dynamique de la base de donnée.</p>
@@ -139,7 +160,7 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
       <div class="projet-card">
         <a href="https://www.chartjs.org/">
-          <img alt="Chart.JS" src="../../ressources/images/outils/chartjs.webp">
+          <img alt="Chart.JS" :src=chartjs>
         </a>
         <h1>Chart.JS</h1>
         <p>Graphiques comparatifs (Radar Chart) des résultats des étudiants et des médianes.</p>
@@ -152,44 +173,38 @@ import ProjectItem from '@/components/projects/common/ProjectItem.vue'
       <div class="projet-grid">
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_accueil_responsable.webp">
-            <img alt="poursuiteEtude_accueil"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_accueil_responsable.webp">
+          <a :href=accueil>
+            <img alt="poursuiteEtude_accueil" :src=accueil>
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_connexion.webp">
-            <img alt="poursuiteEtude_connexion"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_connexion.webp">
+          <a :href=connexion>
+            <img alt="poursuiteEtude_connexion" :src=connexion>
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_notes.webp">
-            <img alt="poursuiteEtude_notes"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_notes.webp">
+          <a :href=notes>
+            <img alt="poursuiteEtude_notes" :src=notes>
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_agregation.webp">
-            <img alt="poursuite_etude_agregation"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_agregation.webp">
+          <a :href=agregation>
+            <img alt="poursuite_etude_agregation" :src=agregation>
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_csv.webp">
-            <img alt="poursuiteEtude_csv"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_csv.webp">
+          <a :href=csv>
+            <img alt="poursuiteEtude_csv" :src=csv>
           </a>
         </div>
 
         <div class="projet-images">
-          <a href="../../ressources/images/poursuiteEtude/poursuite_etude_diagramme_classes.webp">
-            <img alt="poursuite_etude_diagramme_classes"
-                 src="../../ressources/images/poursuiteEtude/poursuite_etude_diagramme_classes.webp">
+          <a :href=diagramme>
+            <img alt="poursuite_etude_diagramme_classes" :src=diagramme>
           </a>
         </div>
       </div>

@@ -14,8 +14,6 @@
         <li>|</li>
         <li><a href="/projets">Projets</a></li>
         <li>|</li>
-        <li><a href="/apprentissages">Apprentissages</a></li>
-        <li>|</li>
         <li><a href="/#contact">Contact</a></li>
       </ul>
     </nav>
