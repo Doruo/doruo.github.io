@@ -28,7 +28,7 @@ defineProps({
     </p>
 
     <div class="projet-liens">
-      <a :href="moreInfoLink">En savoir plus</a>
+      <router-link :to="moreInfoLink">En savoir plus</router-link>
       <a :href="websiteLink">Visiter le site</a>
     </div>
   </div>

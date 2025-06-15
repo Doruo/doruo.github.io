@@ -10,11 +10,11 @@
         <p>Développeur Informatique</p>
       </div>
       <ul class="nav-links">
-        <li><a href="/">Accueil</a></li>
+        <li><router-link to="/">Accueil</router-link></li>
         <li>|</li>
-        <li><a href="/projets">Projets</a></li>
+        <li><router-link to="/projets">Projets</router-link></li>
         <li>|</li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><router-link to="/#contact">Contact</router-link></li>
       </ul>
     </nav>
   </header>
