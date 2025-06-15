@@ -11,11 +11,11 @@ cd dist
 
 # Initialisation d'un repo git dans dist
 git init
-git checkout -b main
+git checkout -b pages
 git add -A
 git commit -m 'deploy'
 
 # Push vers la branche gh-pages
-git push -f git@github.com:doruo/doruo.github.io.git main:gh-pages
+git push -f git@github.com:doruo/doruo.github.io.git pages:gh-pages
 
 cd -
