@@ -38,7 +38,7 @@ defineProps({
           v-for="project in projectsCategory.projects"
           :key="project.id"
           :title="project.title"
-          :more-info-link="project.moreInfoLink"
+          :more-info-link="project.moreInfoLink + '#intro'"
           :website-link="project.websiteLink"
         >
           <template #description>
@@ -51,7 +51,7 @@ defineProps({
         </ProjectCardItem>
 
         <h1 v-if="showAllProjectsLink">
-          <a :href="allProjectsLink">{{ allProjectsText }}</a>
+          <router-link :to="allProjectsLink">{{ allProjectsText }}</router-link>
         </h1>
       </div>
     </div>

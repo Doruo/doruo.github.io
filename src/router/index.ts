@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHashHistory } from 'vue-router';
 import ViewProjects from '@/views/ViewProjects.vue'
 import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
@@ -50,11 +49,31 @@ const routes = [
 ]
 
 const router = createRouter({
+
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
+
+  // Configuration du scroll behavior pour gérer les ancres
+  scrollBehavior(to, from, savedPosition) {
+
+    // Si l'utilisateur utilise les boutons précédent/suivant
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    // Si il y a une ancre dans l'URL
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      }
+    }
+    // Sinon retourner en haut de la page
+    return { top: 0 }
+  }
 })
 
-// Guard global pour gérer les erreurs
+// gérer les erreurs
 router.onError((error) => {
   console.error('Erreur de navigation:', error)
   router.push({ name: 'Error', params: { error: error.message } })

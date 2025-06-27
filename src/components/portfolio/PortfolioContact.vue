@@ -40,7 +40,7 @@ import itchio  from '@/assets/images/contact/itchio.webp'
         </div>
 
         <div class="social-link-img">
-          <a href="https://doruo.itch.io/time-mage-tournament">
+          <a href="https://doruo.itch.io/">
             <img alt="itchio" :src=itchio>
           </a>
         </div>
