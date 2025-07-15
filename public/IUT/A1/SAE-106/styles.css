@@ -1,0 +1,527 @@
+/* ------- Polices (font) ------- */
+
+@font-face {
+  font-family: Mluvka-Bold;
+  src: url(mluvka/fonts/Desktop/Mluvka-Bold.otf);
+}
+
+@font-face {
+  font-family: Mluvka;
+  src: url(mluvka/fonts/Desktop/Mluvka.otf);
+}
+
+/* ------- Body ------- */
+
+body{
+  width:100%;
+  
+  font-family: 'Mluvka-Bold', "Arial", "sans-serif";
+  
+  background-image: url('./images/imagefond.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  margin: 0px;
+}
+
+/* ------- Header ------- */
+
+header {
+  position: fixed;
+  left:0;
+  top:0;
+  
+  width: 100%;
+  
+  font-family: 'Mluvka-Bold', "Arial", "sans-serif";
+}
+
+/* ------- Menu Deroulant ------- */
+
+/* 
+    Cette partie contient des éléments communs 
+    au Menu Déroulant et au Menu Burger (nav).
+*/
+
+#navAccueil {
+  width: 100%;
+  height:100%;
+  
+  display: flex;
+  
+  margin: 0 auto;
+  
+  background-color: rgb(238, 238, 238);
+  
+  position: sticky;
+  top: 0px;
+  
+  font-size: 1.3em;
+  box-shadow: 0px 16px 22px 9px rgba(0,0,0,0.8);
+}
+
+nav div {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+nav > div::after {
+  content: "";
+  clear: both;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+
+#navAccueil a {
+  border-bottom: 4px solid transparent;
+}
+
+nav > div:not(.deroulant):hover {
+  color: #00ad09;
+  border-bottom: 4px solid #059900;
+}
+
+.sous {
+  display: none;
+  width: 100%;
+  
+  box-shadow: 0px 1px 2px #CCC;
+  background-color: rgb(255, 255, 255);
+  
+  position: absolute;
+  top:100%;
+  
+  z-index: 1000;
+}
+
+#navAccueil > div:hover .sous {
+  display: block;
+}
+
+#navAccueil > div > .sous > div {
+  width: 100%;
+  text-align: left;
+}
+
+#navAccueil > div > .sous a {
+  padding: 10px;
+  border-bottom: none;
+}
+
+#navAccueil > div > .sous a:hover, #navBurger > div > .sous a:hover{
+  
+  background-color: #eeeeee;
+  color: #00ad09;
+  border-bottom: 4px solid #059900;
+}
+
+
+nav .deroulant a:hover{
+  color: #00ad09;
+  border-bottom: 4px solid #059900;
+}
+
+.deroulant > a:after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+.conteneur {
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+.logoaccueil {
+  width: 30%;
+  height: 30%;
+}
+
+/* ------- Menu Burger ------- */
+
+#navBurger {
+  width: 25%;
+  height:70%;
+  background-color: rgb(238, 238, 238);
+  
+  font-size:70%;
+  box-shadow: 0px 16px 22px 9px rgba(0,0,0,0.8);
+}
+
+#navBurger, #imgBurger{
+  display:none;
+}
+
+#navBurger a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+
+#navBurger > div:hover .sous {
+  display: flex;
+  flex-direction:column;
+  
+  position:absolute;
+  left:100%;
+  top:0;
+}
+
+#navBurger > div > .sous > div > a {
+  font-size: 100%;
+}
+
+#imgBurger{
+  width:50px;
+}
+
+/* ------- Conteneurs Principaux Accueil ------- */
+
+#partieune {
+  margin-top: 10%;
+  width: 70%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#partiedeux,#partietrois {
+  width:100%;
+  height:40%;
+  display:flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  background-color: #101010;
+  color: white;
+  
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* ------- Articles ------- */
+
+.articles {
+  display: flex; 
+  
+  flex-direction:column;  
+  
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+
+.sousarticles 
+{  
+  flex: 1 1 30%;
+  border-radius: 32px;
+  background: #232323;
+  box-shadow: 0px 0px 33px 4px rgba(0,0,0,1);
+  padding: 30px 40px 20px 25px;
+  margin: 2%;
+  min-width:20%;
+}
+
+.ligne1, .ligne2{
+  display:flex;
+  width: 100%;
+}
+
+.titre_article {
+
+  width:100%;
+  
+  color: #1b831b;
+  background: #232323;
+  
+  font-size: 2em;
+  
+  border-radius: 32px;
+  
+  margin-block-start: 0.1em;
+  margin-block-end: 1em;
+  
+  padding: 0px 40px 10px 0px;
+}
+
+.logoarticles {
+  width: 58px;
+  height: 58px;
+}
+
+/* ------- PESTEL ------- */
+
+#pestel {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 2px solid #16bd00;
+  border-collapse: collapse;
+}
+
+th {
+  text-align:justify;
+}
+
+th, td {
+  padding: 8px;
+}
+
+/* ------- Podcast ------- */
+
+#podcast {
+  margin-bottom: 5%;
+}
+
+audio {
+  margin-top: 5%;
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ------- Contenu Textes & Titres ------- */
+
+#titreAccueil,h1{
+  color: white;
+  text-shadow: 0px 4px 13px rgba(0,0,0,0.77);
+  margin-bottom: 15%;
+}
+
+p {
+  font-family: 'Mkluva', sans-serif;
+  text-align: justify;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+.articles a:link {
+  color: #00ff00;
+}
+
+.articles a:visited {
+  color: #0b8609;
+}
+
+.articles a:hover {
+  color: #98fe8b;
+}
+
+.articles a:active {
+  color: #cfffcc;
+}
+
+#titreAccueil{
+  font-size: 350%;
+  height:50%;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+  margin-top:7%;
+  font-size: 2em;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h5 {
+  font-size: 1.27em;
+  margin-block-start: 1.8em;
+  margin-block-end: 0.5em;
+}
+
+.texte_article {
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 21px;
+  font-family: 'Mluvka-Bold', "Arial", "sans-serif";
+}
+
+
+/* ------- Footer ------- */
+
+footer {
+  background-color: #17de1b;
+  color: black;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#suiveznous {
+  font-family: 'Mluvka-Bold', "Arial", "sans-serif";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-size: 1.2em;
+  
+}
+
+.logoreseaux {
+  width: 45px;
+  height: 45px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+/* ------- style des sous question ------- */
+
+.BlockChain{
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logob {
+
+  width: 200%;
+  display: flex;
+  justify-content: start;
+  margin-right: 100%;
+}
+
+.positiontitre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000%;
+}
+.titreparagraphe{
+
+  display: flex;
+  width: 205px;
+  
+  background-color: #232323;
+  border-radius: 32px;
+  margin: 5px;
+  padding: 30px 40px;
+  
+}
+
+/* ------- Contacts ------- */
+
+.body2 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #07781a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #2bff00;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1a231b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ------- Constacts ------- */
+
+/* ------- Media Queries ------- */
+/* ------- (DOIT TJR ETRE A LA FIN DU CSS) ------- */
+
+@media (max-width: 600px) 
+{
+
+  #navAccueil {
+    display: none; 
+  }
+
+  #imgBurger {
+    display: block;
+  }
+
+  #imgBurger:hover + #navBurger, #navBurger:hover {
+    display: flex;
+    flex-direction:column;
+  }
+
+  #partieune {
+    margin-top: 5%;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+  }
+
+  #partiedeux, #partietrois {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+  }
+
+  .logoaccueil {
+    margin-top:20%;
+  }
+
+  #titreAccueil{
+    font-size: 200%;
+    height:50%;
+  }
+
+  .titre_article{
+    font-size:100%;
+  }
+
+  .texte_article{
+    font-size:70%;
+  }
+
+  h2{
+    font-size:100%;
+  }
+}

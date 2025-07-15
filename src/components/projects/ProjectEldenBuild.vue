@@ -33,8 +33,8 @@ import json from '@/assets/images/projets/outils/json.webp'
 
     <template #description>
       <p>
-        Site web de gestion de build à but communautaire du jeu <a
-        href=" https://fr.bandainamcoent.eu/elden-ring/elden-ring">Elden Ring</a>.
+        Site web de gestion de build à but communautaire du jeu 
+        <a href="https://fr.bandainamcoent.eu/elden-ring/elden-ring">Elden Ring</a>.
       </p>
       <p>
         Un build est par définition la construction et l'évolution d'un ensemble d'équipement du personnage

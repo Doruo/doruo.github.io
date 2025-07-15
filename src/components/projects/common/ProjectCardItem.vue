@@ -4,6 +4,10 @@ defineProps({
     type: String,
     required: true,
   },
+  showMoreInfoLink:{
+    type: Boolean,
+    required: true,
+  },
   moreInfoLink:{
     type: String,
     required: true,
@@ -15,6 +19,7 @@ defineProps({
 })
 
 </script>
+
 <template>
   <div class="projet-card">
     <h3>
@@ -28,8 +33,8 @@ defineProps({
     </p>
 
     <div class="projet-liens">
-      <router-link :to="moreInfoLink">En savoir plus</router-link>
-      <a :href="websiteLink">Visiter le site</a>
+      <router-link v-if="showMoreInfoLink" :to="moreInfoLink">En savoir plus</router-link>
+      <a :href="websiteLink">Visiter la page</a>
     </div>
   </div>
 </template>

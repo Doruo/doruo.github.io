@@ -38,6 +38,7 @@ defineProps({
           v-for="project in projectsCategory.projects"
           :key="project.id"
           :title="project.title"
+          :show-more-info-link="project.showMoreInfoLink"
           :more-info-link="project.moreInfoLink + '#intro'"
           :website-link="project.websiteLink"
         >

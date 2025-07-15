@@ -1,0 +1,238 @@
+@font-face {
+    font-family: TheUnknown ;
+    src: url(Dead\ Font\ Walking.otf);
+}
+
+body{
+    background-color: rgb(142, 142, 144);
+    margin: 0px;
+}
+                                                                        /*header*/
+header{
+    background-color: rgb(97, 97, 97);
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    height: 100px;
+}
+
+nav > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 20%;
+    background-color: rgb(125, 33, 33);
+    border-radius: 15px 0px;
+    margin: auto;
+}
+
+
+
+span{
+    display: none;
+    position: absolute;
+    width: 16%;
+    height: 120px;
+    top: 90px;
+    margin-left: 20%;
+    background-color: rgb(148, 39, 39);
+}
+#histoire:hover~span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+span:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav a{
+    font-family: TheUnknown;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+                                                                    /*articles*/
+
+article {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px ;
+    background-color:rgb(88, 88, 88);    
+
+}
+
+h2{
+    font-family: TheUnknown;
+    font-size: 35px;
+    color: white;
+}
+
+article:nth-child(odd){
+    box-shadow: 5px 10px 10px rgb(180, 1, 1);
+}
+
+article:nth-child(even){
+    box-shadow: -5px 10px 10px rgb(180, 1, 1);
+}
+
+                                                                                /*article 1*/
+
+#art1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#p1{
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#art1 > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.img1{
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+                                                                                /*article 2*/
+
+#art2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#art2 > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img2{
+    width: 43%;
+    margin: 3%;
+}
+
+#p2{
+    width: 40%;
+    margin: 5%;
+    color: white;
+}
+
+                                                                                /*article 3*/
+
+#art3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+                                                                                
+#art3 > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img3{
+    margin: 2%;
+    width: 35%;
+}
+
+#p3{
+    width: 50%;
+    margin: 5%;
+    color: white;
+}
+
+                                                                                /*article 4*/
+
+#art4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p4{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    text-align: center;
+}
+
+.img4{
+    width: 60%;
+    margin-bottom:10px ;
+}
+                                                                                /*footer*/
+
+footer{
+    background-color: rgb(59, 59, 59);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+footer p{
+    width: 30%;
+    margin: 4px;
+    color: white;
+    text-align: center;
+    
+}
+
+button {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 15px;
+    background-color: gray;
+}
