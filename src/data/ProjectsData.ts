@@ -34,7 +34,8 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "https://github.com/Doruo/JellyBot",
-      description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
+      '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py",
       tags: ['community','main']
     },
@@ -44,7 +45,8 @@ export class ProjectsData {
       showMoreInfoLink: true,
       moreInfoLink: "/projets/trains",
       websiteLink: "https://github.com/Doruo/Trains",
-      description: 'Portage numérique du jeu de plateau japonais Trains d\'Hisashi Hayashi, jouable jusqu\'à 4 joueurs.',
+      description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
+      'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
       tags: ['game', 'java','academic','main']
     }, 
@@ -54,7 +56,8 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "/projets/stage-itesoft",
       websiteLink: "",
-      description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec NestJS.',
+      description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, '+
+      'qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
       techs: "NestJS, TypeScript, JSON, SQL",
       tags: ['web', 'api', 'community']
     },
@@ -64,7 +67,8 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "/IUT/A1/SAE-106/accueil.html",
-      description: 'Site web representant le travail de recherche et de rédaction sur la problématique suivante: Les crypto-monnaies peuvent-elles être écologiques ?',
+      description: 'Site web présentant le travail de recherche et de rédaction réalisée '+
+      'sur la controverse suivante: Les crypto-monnaies peuvent-elles être écologiques ?',
       techs: "HTML, CSS",
       tags: ['web', 'academic','main']
     },
@@ -74,7 +78,7 @@ export class ProjectsData {
       showMoreInfoLink: true,
       moreInfoLink: "/projets/elden-build",
       websiteLink: "https://github.com/Doruo/EldenBuild",
-      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://google.com>Elden Ring</a>, ' +
+      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://google.com>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
       tags: ['web', 'api', 'community','main']
@@ -85,7 +89,8 @@ export class ProjectsData {
       showMoreInfoLink: true,
       moreInfoLink: "/projets/nuitdelinfo",
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
-      description: 'Océan interactif fait à la main décrivant l\'écosystème marin. Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
+      description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
+      'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML,CSS, JavaScript, ExpressJS",
       tags: ['web', 'competition', 'interactive','main']
     },
@@ -95,7 +100,8 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "https://doruo.itch.io/time-mage-tournament",
-      description: 'Jeu de tir 2D isométrique réalisé en 24h. Gagnant du Prix Design de la Code Game Jam de l\'IUT Montpellier-Sête</a>.',
+      description: 'Jeu de tir 2D isométrique réalisé en 24h. '+
+      'Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
       tags: ['game', 'competition','main']
     },
