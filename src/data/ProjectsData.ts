@@ -74,7 +74,7 @@ export class ProjectsData {
     },
     {
       id: 'escape-game-mind-spies',
-      title: "The Mind Spies",
+      title: "Escape Game - The Mind Spies",
       moreInfoLink: "/projets/mind-spies",
       websiteLink: "",
       description: '',
@@ -83,7 +83,7 @@ export class ProjectsData {
     },
     {
       id: 'ndi-2024',
-      title: "Nuit de L'Info 2024 - Race For Water",
+      title: "Nuit De l'Info 2024 - Race For Water",
       moreInfoLink: "/projets/nuitdelinfo",
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
@@ -93,7 +93,7 @@ export class ProjectsData {
     {
       id: 'cgj-2023',
       title: "CGJ 2023 - Time Mage Tournament",
-      moreInfoLink: "https://codegamejam.extragames.fr/",
+      moreInfoLink: "",
       websiteLink: "https://doruo.itch.io/time-mage-tournament",
       description: 'Jeu de tir 2D isométrique réalisé en 24h. Gagnant du Prix Design de la Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
@@ -101,9 +101,9 @@ export class ProjectsData {
     },
     {
       id: 'mastermind',
-      title: "Mastermind",
-      moreInfoLink: "https://github.com/Doruo/mastermind",
-      websiteLink: "",
+      title: "Jeu du Mastermind",
+      moreInfoLink: "",
+      websiteLink: "https://github.com/Doruo/mastermind",
       description: '',
       techs: "Java",
       tags: ['game','academic']
