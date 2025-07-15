@@ -29,10 +29,9 @@ import itchio  from '@/assets/images/contact/itchio.webp'
 
         <div class="social-link-img">
           <a href="https://www.linkedin.com/in/marc-haye/">
-            <img alt="LinkedIn" :src=linkedin>
+            <img alt="linkedIn" :src=linkedin>
           </a>
         </div>
-
         <div class="social-link-img">
           <a href="https://fr.gravatar.com/marcantoniohaye">
             <img alt="gravatar" :src=gravatar>

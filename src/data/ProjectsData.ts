@@ -27,13 +27,22 @@ export class ProjectsData {
       tags: ['web', 'application', 'academic','main']
     },
     {
+      id: 'jellybot',
+      title: "Jellybot",
+      moreInfoLink: "",
+      websiteLink: "https://github.com/Doruo/JellyBot",
+      description: 'Bot discord qui notifie le statut d\'un serveur multimédia Jellyfin et de ses nouveaux contenus. Jellyfin est un serveur multimedia open source que vous pouvez hébergez chez vous !',
+      techs: "Python, discord.py",
+      tags: ['community','main']
+    },
+    {
       id: 'stage-itesoft',
       title: 'Stage chez ITESOFT',
       moreInfoLink: "/projets/stage-itesoft",
       websiteLink: "",
       description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec NestJS.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
-      tags: ['web', 'api', 'community','main']
+      tags: ['web', 'api', 'community']
     },
     {
       id: 'trains',
@@ -89,15 +98,6 @@ export class ProjectsData {
       description: 'Jeu de tir 2D isométrique réalisé en 24h. Gagnant du Prix Design de la Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
       tags: ['game', 'competition','main']
-    },
-    {
-      id: 'jellybot',
-      title: "Jellybot",
-      moreInfoLink: "https://github.com/Doruo/JellyBot",
-      websiteLink: "",
-      description: 'Bot discord qui notifie le statut d\'un serveur multimédia Jellyfin et de ses nouveaux contenus. Jellyfin est un serveur multimedia open source que vous pouvez hébergez chez vous !',
-      techs: "Python, discord.py",
-      tags: ['community']
     },
     {
       id: 'mastermind',
