@@ -20,7 +20,7 @@ export class ProjectsData {
   private static readonly allProjects: Project[] = [
     {
       id: 'poursuite-etude',
-      title: "Avis de poursuite d'étude",
+      title: "Application de poursuite d'étude",
       showMoreInfoLink: true,
       moreInfoLink: "/projets/poursuite-etude",
       websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
@@ -34,7 +34,7 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "https://github.com/Doruo/JellyBot",
-      description: 'Bot discord qui notifie le statut d\'un serveur multimédia Jellyfin et de ses nouveaux contenus. Jellyfin est un serveur multimedia open source que vous pouvez hébergez chez vous !',
+      description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py",
       tags: ['community','main']
     },
@@ -44,31 +44,10 @@ export class ProjectsData {
       showMoreInfoLink: true,
       moreInfoLink: "/projets/trains",
       websiteLink: "https://github.com/Doruo/Trains",
-      description: 'Portage digital du jeu de plateau japonais "Trains" d\'Hisashi Hayashi, jouable à 4 joueurs.',
+      description: 'Portage numérique du jeu de plateau japonais Trains d\'Hisashi Hayashi, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
       tags: ['game', 'java','academic','main']
-    },
-    {
-      id: 'elden-build',
-      title: "Elden Build",
-      showMoreInfoLink: true,
-      moreInfoLink: "/projets/elden-build",
-      websiteLink: "https://github.com/Doruo/EldenBuild",
-      description: 'Site web de gestion de build communautaire du <a href=https://google.com>jeu Elden Ring</a>, ' +
-        'avec requêtes asynchrones à <a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
-      techs: "PHP, JavaScript, HTML, CSS, JSON",
-      tags: ['web', 'api', 'community','main']
-    },
-    {
-      id: 'escape-game-mind-spies',
-      title: "Escape Game - The Mind Spies",
-      showMoreInfoLink: false,
-      moreInfoLink: "/projets/mind-spies",
-      websiteLink: "",
-      description: 'Site web vitrine pour un escape game de science fiction nommé The Mind Spies.',
-      techs: "HTML, CSS",
-      tags: ['web', 'academic']
-    },    
+    }, 
     {
       id: 'stage-itesoft',
       title: 'Stage chez ITESOFT',
@@ -76,8 +55,29 @@ export class ProjectsData {
       moreInfoLink: "/projets/stage-itesoft",
       websiteLink: "",
       description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec NestJS.',
-      techs: "PHP, JavaScript, HTML, CSS, JSON",
+      techs: "NestJS, TypeScript, JSON, SQL",
       tags: ['web', 'api', 'community']
+    },
+    {
+      id: 'controverse-crypto',
+      title: "Controverse des cryptomonnaies",
+      showMoreInfoLink: false,
+      moreInfoLink: "",
+      websiteLink: "/IUT/A1/SAE-106/accueil.html",
+      description: 'Site web representant le travail de recherche et de rédaction sur la problématique suivante: Les crypto-monnaies peuvent-elles être écologiques ?',
+      techs: "HTML, CSS",
+      tags: ['web', 'academic','main']
+    },
+    {
+      id: 'elden-build',
+      title: "Elden Build",
+      showMoreInfoLink: true,
+      moreInfoLink: "/projets/elden-build",
+      websiteLink: "https://github.com/Doruo/EldenBuild",
+      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://google.com>Elden Ring</a>, ' +
+        'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
+      techs: "PHP, JavaScript, HTML, CSS, JSON",
+      tags: ['web', 'api', 'community','main']
     },
     {
       id: 'ndi-2024',
@@ -86,7 +86,7 @@ export class ProjectsData {
       moreInfoLink: "/projets/nuitdelinfo",
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
-      techs: "HTML, JavaScript, ExpressJS",
+      techs: "HTML,CSS, JavaScript, ExpressJS",
       tags: ['web', 'competition', 'interactive','main']
     },
     {
@@ -100,6 +100,36 @@ export class ProjectsData {
       tags: ['game', 'competition','main']
     },
     {
+      id: 'escape-game-mind-spies',
+      title: "Escape game - The Mind Spies",
+      showMoreInfoLink: false,
+      moreInfoLink: "",
+      websiteLink: "/IUT/A1/SAE-EscapeGame-MindSpies/page.html",
+      description: 'Site web vitrine pour un escape game de science fiction nommé The Mind Spies.',
+      techs: "HTML, CSS",
+      tags: ['web', 'academic']
+    },   
+    {
+      id: 'metro-post-apo',
+      title: "Escape game - Métro post-apocalyptique",
+      showMoreInfoLink: false,
+      moreInfoLink: "",
+      websiteLink: "/IUT/A1/SAE-EscapeGame-PostApo/index.html",
+      description: 'Site web vitrine pour un escape game dans un métro post-apocalyptique.',
+      techs: "HTML, CSS",
+      tags: ['web', 'academic']
+    },
+    {
+      id: 'fan-site-chuck-norris',
+      title: "Fan-club Chuck Norris",
+      showMoreInfoLink: false,
+      moreInfoLink: "",
+      websiteLink: "/IUT/A1/TD_Chuck_Norris/html/index.html",
+      description: '',
+      techs: "HTML, CSS",
+      tags: ['web', 'java', 'academic']
+    },
+    {
       id: 'mastermind',
       title: "Jeu du Mastermind",
       showMoreInfoLink: false,
@@ -110,18 +140,8 @@ export class ProjectsData {
       tags: ['game','academic']
     },
     {
-      id: 'fan-site-chuck-norris',
-      title: "Fan-Club Chuck Norris",
-      showMoreInfoLink: false,
-      moreInfoLink: "",
-      websiteLink: "/IUT/A1/TD_Chuck_Norris/html/index.html",
-      description: '',
-      techs: "HTML, CSS",
-      tags: ['web', 'java', 'academic']
-    },
-    {
       id: 'marin-ivre',
-      title: "Marin Ivre",
+      title: "Marin ivre",
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "https://github.com/Doruo/marinIvre",
