@@ -39,7 +39,7 @@ defineProps({
           :key="project.id"
           :title="project.title"
           :show-more-info-link="project.showMoreInfoLink"
-          :more-info-link="project.moreInfoLink + '#intro'"
+          :more-info-link="project.moreInfoLink"
           :website-link="project.websiteLink"
         >
           <template #description>
