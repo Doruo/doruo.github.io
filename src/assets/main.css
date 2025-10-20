@@ -130,6 +130,8 @@ section:nth-child(odd) {
   color: white;
 }
 
+/* CONTAINERS */
+
 .contenu-intro, .conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
   margin: 0 auto;
   padding: 0 2rem;
@@ -139,9 +141,12 @@ section:nth-child(odd) {
   max-width: 65%;
 }
 
-
 .contenu-intro{
-  max-width: 35%;
+  width: 50%;
+}
+
+.conteneur-portrait{
+  width: 50%;
 }
 
 /* INTRO, BIO & FUTURE */
@@ -181,10 +186,9 @@ section:nth-child(odd) {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-
 /* --------- */
 
-.projet-card, .projet-images, .competence-card {
+.projet-card, .projet-images, .competence-card, .erreur {
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   padding: 1.5rem;
@@ -283,7 +287,8 @@ footer .containter {
 /* IMAGES */
 
 .portrait{
-  width: 45%;
+  width: auto;
+  height: auto;
   border-radius: 50%;
 }
 
