@@ -34,7 +34,7 @@ defineProps({
 
     <div class="projet-liens">
       <router-link v-if="showMoreInfoLink" :to="moreInfoLink">En savoir plus</router-link>
-      <a :href="websiteLink">Visiter la page</a>
+      <a :href="websiteLink">Lien</a>
     </div>
   </div>
 </template>

@@ -12,18 +12,6 @@ defineProps({
     type: Object as PropType<ProjectCategory>,
     required: true
   },
-  showAllProjectsLink: {
-    type: Boolean,
-    default: false
-  },
-  allProjectsLink: {
-    type: String,
-    default: '/projects'
-  },
-  allProjectsText: {
-    type: String,
-    default: 'Voir tous mes projets'
-  }
 })
 </script>
 
@@ -51,9 +39,6 @@ defineProps({
           </template>
         </ProjectCardItem>
 
-        <h1 v-if="showAllProjectsLink">
-          <router-link :to="allProjectsLink">{{ allProjectsText }}</router-link>
-        </h1>
       </div>
     </div>
   </section>
