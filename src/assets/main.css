@@ -138,7 +138,7 @@ section:nth-child(odd) {
 }
 
 .conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
-  max-width: 65%;
+  max-width: 72%;
 }
 
 .contenu-intro{
@@ -169,16 +169,12 @@ section:nth-child(odd) {
   padding: 4rem 0;
 }
 
-.contenu-projets{
-  max-width: 55%;
-}
-
 /* TABLEAUX */
 
 .projet-grid, .competences-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  gap: 1.8rem;
   margin-top: 2rem;
 }
 
@@ -271,8 +267,9 @@ footer .containter {
 /* LIENS RESEAUX*/
 
 .social-links {
-  margin-top: 2rem;
   display: flex;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 .social-links a {
