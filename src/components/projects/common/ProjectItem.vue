@@ -2,7 +2,7 @@
 <template>
   <!-- PROJECT ITEM -->
   <section id="eldenbuild-intro" class="intro">
-
+    <!-- PROJECT INTRO -->
     <div class="contenu-intro">
 
       <slot name="logo_projet"></slot>
@@ -11,10 +11,10 @@
 
       <slot name="description"></slot>
     </div>
-
   </section>
 
   <section class="competences">
+    <!-- PROJECT SKILLS -->
     <section class="competences">
       <div class="contenu-competences">
 
@@ -29,6 +29,7 @@
   </section>
 
   <section class="projets">
+    <!-- PROJECT ASSETS -->
     <div class="projet-contenu-images">
 
       <h2>- Illustrations -</h2>
@@ -40,6 +41,7 @@
   </section>
 
   <section class="contact">
+    <!-- PROJECT LINKS -->
     <div class="projet-liens">
       <slot name="liens"></slot>
     </div>
