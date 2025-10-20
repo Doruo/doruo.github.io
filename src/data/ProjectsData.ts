@@ -1,8 +1,10 @@
+import type { RouteLocationAsRelativeGeneric } from "vue-router";
+
 export interface Project {
   id: string;
   title: string;
   showMoreInfoLink:boolean;
-  moreInfoLink: string;
+  moreInfoLink: RouteLocationAsRelativeGeneric;
   websiteLink: string;
   description: string;
   techs: string;
@@ -22,148 +24,149 @@ export class ProjectsData {
       id: 'poursuite-etude',
       title: "Application de Poursuite d'Etude",
       showMoreInfoLink: true,
-      moreInfoLink: "/projects/poursuite-etude",
+      moreInfoLink: { name: 'projects-poursuite-etude' },
       websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
-      tags: ['web', 'application', 'academic','main']
+      tags: ['academic']
     },
     {
       id: 'jellybot',
       title: "Jellybot",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "https://github.com/Doruo/JellyBot",
       description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
       '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py, Jellyfin API, Discord",
-      tags: ['community','main']
+      tags: ['community']
     },
     {
       id: 'trains',
       title: "Trains",
       showMoreInfoLink: true,
-      moreInfoLink: "/projects/trains",
+      moreInfoLink: { name: 'projects-trains' },
       websiteLink: "https://github.com/Doruo/Trains",
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
-      tags: ['game', 'java','academic','main']
+      tags: ['main','game','academic']
     },
     {
       id: 'stage-itesoft',
       title: 'Stage chez ITESOFT',
       showMoreInfoLink: false,
-      moreInfoLink: "/projects/stage-itesoft",
-      websiteLink: "",
-      description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, '+
+      moreInfoLink: { name: '' },
+      websiteLink: "https://www.itesoft.com/fr/besoins/dematerialisation-factures/",
+      description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, '+
       'qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
-      techs: "NestJS, TypeScript, JSON, SQL",
-      tags: ['web', 'api', 'community']
+      techs: "NestJS, JSON, SQL",
+      tags: ['academic']
     },
     {
       id: 'controverse-crypto',
       title: "Contrôverse des Cryptomonnaies",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-106/accueil.html",
       description: 'Site web présentant le travail de recherche et de rédaction réalisée '+
       'sur la controverse suivante: Les crypto-monnaies peuvent-elles être écologiques ?',
       techs: "HTML, CSS",
-      tags: ['web', 'academic','main']
+      tags: ['academic']
     },
     {
       id: 'elden-build',
       title: "Elden Build",
       showMoreInfoLink: true,
-      moreInfoLink: "/projects/elden-build",
+      moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: "https://github.com/Doruo/EldenBuild",
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
-      tags: ['web', 'api', 'community','main']
+      tags: ['community']
     },
     {
       id: 'ndi-2024',
       title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
-      moreInfoLink: "/projects/nuitdelinfo",
+      moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
       'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML,CSS, JavaScript, ExpressJS",
-      tags: ['web', 'competition', 'interactive','main']
+      tags: ['competition']
     },
     {
       id: 'cgj-2023',
       title: "CGJ 2023 - Time Mage Tournament",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "https://doruo.itch.io/time-mage-tournament",
       description: 'Jeu de tir 2D isométrique réalisé en 24h. '+
       'Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
-      tags: ['game', 'competition','main']
+      tags: ['competition']
     },
     {
       id: 'escape-game-mind-spies',
       title: "Escape game - The Mind Spies",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-EscapeGame-MindSpies/page.html",
       description: 'Escape game de science fiction nommé The Mind Spies.',
       techs: "HTML, CSS",
-      tags: ['web', 'academic']
+      tags: ['academic']
     },
     {
       id: 'metro-post-apo',
       title: "Escape game - Métro post-apocalyptique",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-EscapeGame-PostApo/index.html",
       description: 'Escape game dans un métro post-apocalyptique.',
       techs: "HTML, CSS",
-      tags: ['web', 'academic']
+      tags: ['academic']
     },
     {
       id: 'fan-site-chuck-norris',
       title: "Fan-club Chuck Norris",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/TD_Chuck_Norris/html/index.html",
       description: '',
       techs: "HTML, CSS",
-      tags: ['web', 'java', 'academic']
+      tags: ['academic']
     },
     {
       id: 'mastermind',
       title: "Jeu du Mastermind",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "https://github.com/Doruo/mastermind",
       description: '',
       techs: "Java",
-      tags: ['game','academic']
+      tags: ['academic']
     },
     {
       id: 'marin-ivre',
       title: "Marin ivre",
       showMoreInfoLink: false,
-      moreInfoLink: "",
+      moreInfoLink: { name: '' },
       websiteLink: "https://github.com/Doruo/marinIvre",
       description: '',
       techs: "Java",
-      tags: ['game','academic']
+      tags: ['academic']
     },
     {
       id: 'game-of-life',
       title: "Conway's Game of Life",
       showMoreInfoLink: false,
-      moreInfoLink: "",
-      websiteLink: "https://fr.wikipedia.org/wiki/Jeu_de_la_vie",
-      description: '',
+      moreInfoLink: { name: '' },
+      websiteLink: "https://github.com/Doruo/GameOfLife",
+      description: 'Implémentation d\'un jeu de simulation mathématique datant de 1970, avec interface terminal.'+
+      ' C\'est un automate cellulaire utilisé dans la recherche biologique.',
       techs: "Go, Ebitengine",
-      tags: ['game','academic','main']
+      tags: ['main','game']
     },
   ];
 
@@ -184,7 +187,7 @@ export class ProjectsData {
   public static getAllProjectsCategory (): ProjectCategory {
     return {
       id: 'all',
-      title: "Tous Mes Projets",
+      title: "Tous Les Projets",
       projects: this.allProjects
     };
   }
@@ -192,7 +195,7 @@ export class ProjectsData {
   public static getMainProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: "Mes Projets Principaux",
+      title: "Principaux",
       projects: this.getProjectsByTag('main')
     };
   }
@@ -200,7 +203,7 @@ export class ProjectsData {
   public static getAcademicProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: "Mes Projets Académiques",
+      title: "Académiques",
       projects: this.getProjectsByTag('academic')
     };
   }
@@ -208,7 +211,7 @@ export class ProjectsData {
   public static getWebDevProjectsCategory(): ProjectCategory {
     return {
       id: 'web-dev',
-      title: "Projets Web & Applications",
+      title: "Web & Applications",
       projects: this.getProjectsByTag('web')
     };
   }
@@ -216,8 +219,16 @@ export class ProjectsData {
   public static getGameDevProjectsCategory(): ProjectCategory {
     return {
       id: 'game-dev',
-      title: "Projets liés aux Jeux Video",
+      title: "Jeux",
       projects: this.getProjectsByTag('game')
+    };
+  }
+
+  public static getCommunityProjectsCategory(): ProjectCategory {
+    return {
+      id: 'community',
+      title: "Communautaires",
+      projects: this.getProjectsByTag('community')
     };
   }
 
@@ -228,5 +239,4 @@ export class ProjectsData {
       projects: this.getProjectsByTag('competition')
     };
   }
-
 }
