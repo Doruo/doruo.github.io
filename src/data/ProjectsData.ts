@@ -20,9 +20,9 @@ export class ProjectsData {
   private static readonly allProjects: Project[] = [
     {
       id: 'poursuite-etude',
-      title: "Application de poursuite d'étude",
+      title: "Application de Poursuite d'Etude",
       showMoreInfoLink: true,
-      moreInfoLink: "/projets/poursuite-etude",
+      moreInfoLink: "/projects/poursuite-etude",
       websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
@@ -36,25 +36,25 @@ export class ProjectsData {
       websiteLink: "https://github.com/Doruo/JellyBot",
       description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
       '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: "Python, discord.py",
+      techs: "Python, discord.py, Jellyfin API, Discord",
       tags: ['community','main']
     },
     {
       id: 'trains',
       title: "Trains",
       showMoreInfoLink: true,
-      moreInfoLink: "/projets/trains",
+      moreInfoLink: "/projects/trains",
       websiteLink: "https://github.com/Doruo/Trains",
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
       tags: ['game', 'java','academic','main']
-    }, 
+    },
     {
       id: 'stage-itesoft',
       title: 'Stage chez ITESOFT',
       showMoreInfoLink: false,
-      moreInfoLink: "/projets/stage-itesoft",
+      moreInfoLink: "/projects/stage-itesoft",
       websiteLink: "",
       description: 'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com/fr">ITESOFT</a>, '+
       'qui effectue des exports de factures électroniques, au travers d\'une API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
@@ -63,7 +63,7 @@ export class ProjectsData {
     },
     {
       id: 'controverse-crypto',
-      title: "Controverse des cryptomonnaies",
+      title: "Contrôverse des Cryptomonnaies",
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "/IUT/A1/SAE-106/accueil.html",
@@ -76,18 +76,18 @@ export class ProjectsData {
       id: 'elden-build',
       title: "Elden Build",
       showMoreInfoLink: true,
-      moreInfoLink: "/projets/elden-build",
+      moreInfoLink: "/projects/elden-build",
       websiteLink: "https://github.com/Doruo/EldenBuild",
-      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://google.com>Elden Ring</a>, '+
+      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
       tags: ['web', 'api', 'community','main']
     },
     {
       id: 'ndi-2024',
-      title: "Nuit De l'Info 2024 - Race For Water",
+      title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
-      moreInfoLink: "/projets/nuitdelinfo",
+      moreInfoLink: "/projects/nuitdelinfo",
       websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
       'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
@@ -111,17 +111,17 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "/IUT/A1/SAE-EscapeGame-MindSpies/page.html",
-      description: 'Site web vitrine pour un escape game de science fiction nommé The Mind Spies.',
+      description: 'Escape game de science fiction nommé The Mind Spies.',
       techs: "HTML, CSS",
       tags: ['web', 'academic']
-    },   
+    },
     {
       id: 'metro-post-apo',
       title: "Escape game - Métro post-apocalyptique",
       showMoreInfoLink: false,
       moreInfoLink: "",
       websiteLink: "/IUT/A1/SAE-EscapeGame-PostApo/index.html",
-      description: 'Site web vitrine pour un escape game dans un métro post-apocalyptique.',
+      description: 'Escape game dans un métro post-apocalyptique.',
       techs: "HTML, CSS",
       tags: ['web', 'academic']
     },
@@ -154,6 +154,16 @@ export class ProjectsData {
       description: '',
       techs: "Java",
       tags: ['game','academic']
+    },
+    {
+      id: 'game-of-life',
+      title: "Conway's Game of Life",
+      showMoreInfoLink: false,
+      moreInfoLink: "",
+      websiteLink: "https://fr.wikipedia.org/wiki/Jeu_de_la_vie",
+      description: '',
+      techs: "Go, Ebitengine",
+      tags: ['game','academic','main']
     },
   ];
 
@@ -190,7 +200,7 @@ export class ProjectsData {
   public static getAcademicProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: "Mes Projets Academiques",
+      title: "Mes Projets Académiques",
       projects: this.getProjectsByTag('academic')
     };
   }
@@ -206,7 +216,7 @@ export class ProjectsData {
   public static getGameDevProjectsCategory(): ProjectCategory {
     return {
       id: 'game-dev',
-      title: "Projets liés aux jeux Video",
+      title: "Projets liés aux Jeux Video",
       projects: this.getProjectsByTag('game')
     };
   }
