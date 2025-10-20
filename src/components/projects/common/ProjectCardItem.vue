@@ -21,6 +21,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- PROJECT CARD -->
   <div class="projet-card">
     <h3>
       <u>{{title}}</u>
@@ -33,7 +34,7 @@ defineProps({
     </p>
 
     <div class="projet-liens">
-      <router-link v-if="showMoreInfoLink" :to="moreInfoLink">En savoir plus</router-link>
+      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>En savoir plus</router-link>
       <a :href="websiteLink">Lien</a>
     </div>
   </div>

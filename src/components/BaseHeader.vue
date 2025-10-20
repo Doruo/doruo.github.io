@@ -2,11 +2,12 @@
 </script>
 
 <template>
+  <!-- HEADER -->
   <header class="header">
     <nav class="nav">
       <div class="branding">
         <h1><router-link :to="{ name: 'home' }">Marc Haye</router-link></h1>
-        <h4>Développeur Informatique</h4>
+        <h4>Développeur Professionel</h4>
       </div>
 
       <ul class="nav-links">

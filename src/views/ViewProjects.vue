@@ -4,28 +4,23 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
 </script>
 
 <template>
-
-  <!-- main -->
+  <!-- VIEW ABOUT -->
   <ProjectCards
     :title=ProjectsData.getMainProjectsCategory().title
     :projectsCategory=ProjectsData.getMainProjectsCategory()
   />
-  <!-- academic -->
   <ProjectCards
     :title=ProjectsData.getAcademicProjectsCategory().title
     :projectsCategory=ProjectsData.getAcademicProjectsCategory()
   />
-  <!-- video games -->
   <ProjectCards
     :title=ProjectsData.getCommunityProjectsCategory().title
     :projectsCategory=ProjectsData.getCommunityProjectsCategory()
   />
-  <!-- video games -->
   <ProjectCards
     :title=ProjectsData.getGameDevProjectsCategory().title
     :projectsCategory=ProjectsData.getGameDevProjectsCategory()
   />
-  <!-- competitive -->
   <ProjectCards
     :title=ProjectsData.getCompetitionProjectsCategory().title
     :projectsCategory=ProjectsData.getCompetitionProjectsCategory()

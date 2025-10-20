@@ -7,6 +7,7 @@ import itchio  from '@/assets/images/contact/itchio.webp'
 </script>
 
 <template>
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="conteneur">
 

@@ -5,6 +5,7 @@ import AboutFuture from '@/components/about/AboutFuture.vue';
 </script>
 
 <template>
+  <!-- VIEW ABOUT -->
   <AboutBio/>
   <AboutFuture/>
   <AboutContact/>

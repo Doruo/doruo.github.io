@@ -5,6 +5,7 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
 </script>
 
 <template>
+  <!-- VIEW HOME -->
   <AboutIntro/>
   <ProjectCards
     :title=ProjectsData.getMainProjectsCategory().title

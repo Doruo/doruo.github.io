@@ -1,5 +1,6 @@
 
 <template>
+  <!-- PROJECT ITEM -->
   <section id="eldenbuild-intro" class="intro">
 
     <div class="contenu-intro">

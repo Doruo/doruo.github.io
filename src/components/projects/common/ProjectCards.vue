@@ -16,6 +16,7 @@ defineProps({
 </script>
 
 <template>
+  <!-- PROJECTS -->
   <section id="projets" class="projets">
     <div class="contenu-projets">
       <h2>- {{ title }} -</h2>
