@@ -4,39 +4,45 @@ import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/ProjectNDI.vue'
 import ProjectPoursuiteEtude from '@/components/projects/ProjectPoursuiteEtude.vue'
 import ProjectTrains from '@/components/projects/ProjectTrains.vue'
-import ViewPortfolio from '@/views/ViewPortfolio.vue'
+import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
+import ViewAbout from '@/views/ViewAbout.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'portfolio',
-    component: ViewPortfolio,
+    name: 'home',
+    component: ViewHome,
   },
   {
-    path: '/projets',
+    path: '/about',
+    name: 'about',
+    component: ViewAbout,
+  },
+  {
+    path: '/projects',
     name: 'projects',
     component: ViewProjects,
   },
   // Routes des projets (à l'avenir automatiser avec "/projets/{id}")
   {
-    path: '/projets/poursuite-etude',
-    name: 'poursuite-etude',
+    path: '/projects/poursuite-etude',
+    name: 'projects-poursuite-etude',
     component: ProjectPoursuiteEtude,
   },
   {
-    path: '/projets/trains',
-    name: 'trains',
+    path: '/projects/trains',
+    name: 'projects-trains',
     component: ProjectTrains,
   },
   {
-    path: '/projets/elden-build',
-    name: 'elden-build',
+    path: '/projects/elden-build',
+    name: 'projects-elden-build',
     component: ProjectEldenBuild,
   },
   {
-    path: '/projets/nuitdelinfo',
-    name: 'ndi2024',
+    path: '/projects/nuitdelinfo',
+    name: 'projects-ndi2024',
     component: ProjectNDI,
   },
   // route catch-all pour les 404
