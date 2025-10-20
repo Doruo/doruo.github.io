@@ -27,9 +27,10 @@ import express from '@/assets/images/projets/outils/express-js.webp'
       <img alt="ndi2024" :src=logoNDI>
     </template>
 
-    <template #title>NUIT DE L'INFO 2024 - Race For Water</template>
+    <template #title>NUIT DE L'INFO 2024</template>
 
     <template #description>
+      <h3>Race For Water</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a href="https://nuitdelinfo.com/">Nuit de l'Info 2024</a>.

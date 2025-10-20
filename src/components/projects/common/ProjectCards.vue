@@ -18,7 +18,7 @@ defineProps({
   },
   allProjectsLink: {
     type: String,
-    default: '/projets'
+    default: '/projects'
   },
   allProjectsText: {
     type: String,
