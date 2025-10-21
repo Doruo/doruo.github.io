@@ -26,7 +26,7 @@ import { Links } from '@/data/Links'
     <template #description>
       <p>
         Site web de gestion de build à but communautaire du jeu
-        <a href="https://fr.bandainamcoent.eu/elden-ring/elden-ring">Elden Ring</a>.
+        <a :href=Links.ELDENRING>Elden Ring</a>.
       </p>
       <p>
         Un build est par définition la construction et l'évolution d'un ensemble d'équipement du personnage
@@ -43,8 +43,7 @@ import { Links } from '@/data/Links'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript, les requêtes
         AJAX, l'architecture MVC et ses limites.
-        L'application communique via des requêtes HTTP asynchrones à l'<a href="https://eldenring.fanapis.com/">API
-        Elden Ring</a>.
+        L'application communique via des requêtes HTTP asynchrones à une<a :href=Links.ELDENRINGAPI>fan API Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie serveur avec
@@ -123,7 +122,7 @@ import { Links } from '@/data/Links'
       </div>
 
       <div class="projet-card">
-        <a href="https://www.mysql.com/fr/">
+        <a :href=Links.MYSQL>
           <img alt="MySQL" :src=Pictures.MYSQL>
         </a>
         <h1>MySQL</h1>
@@ -135,8 +134,7 @@ import { Links } from '@/data/Links'
           <img alt="ApiREST" :src=Pictures.REST>
         </a>
         <h1>API REST</h1>
-        <p>Norme de communication avec l'interface de programmation de l'<a href="https://eldenring.fanapis.com/">API
-          Elden Ring</a>.</p>
+        <p>Norme de communication avec <a :href=Links.ELDENRINGAPI>l'API Elden Ring</a>.</p>
       </div>
 
       <div class="projet-card">

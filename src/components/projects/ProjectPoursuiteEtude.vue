@@ -26,7 +26,7 @@ import { Pictures } from '@/data/Pictures'
     <template #description>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de Montpellier-Sète,
-        le logiciel libre <a href="https://scodoc.org/">Scodoc</a> est utilisé pour gérer les absences et les notes
+        le logiciel libre <a :href=Links.SCODOC>Scodoc</a> est utilisé pour gérer les absences et les notes
         des étudiants tout au long de leur scolarité à l’IUT.
       </p>
 

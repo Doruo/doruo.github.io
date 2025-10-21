@@ -1,6 +1,10 @@
 export class Links {
+
   // Websites
   static readonly NDI="https://nuitdelinfo.com/"
+  static readonly ELDENRING="https://fr.bandainamcoent.eu/elden-ring/elden-ring"
+  static readonly ELDENRINGAPI="https://eldenring.fanapis.com/"
+  static readonly SCODOC="https://scodoc.org/"
 
   // Social
   static readonly MAIL="mailto:marc.antonio.haye@gmail.com"
@@ -28,6 +32,7 @@ export class Links {
   static readonly JAVAFX="https://openjfx.io/"
   static readonly SCENEBUILDER="https://gluonhq.com/products/scene-builder/"
   static readonly VUE="https://vuejs.org/"
+  static readonly MYSQL="https://www.mysql.com/fr/"
 
   // Projects
   static readonly GITHUBIO="https://github.com/Doruo/doruo.github.io"
