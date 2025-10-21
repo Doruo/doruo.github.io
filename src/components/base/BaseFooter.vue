@@ -13,7 +13,7 @@ import { Links } from '@/data/Links';
         <a :href=Links.GITHUBIO>Code source</a>
       </p>
       <p>
-        <router-link :to="{ name: 'archives' }">Anciennes versions</router-link>
+        <router-link :to="{ name: 'archives' }">Archives</router-link>
       </p>
       <p>&copy; 2026 - Work In Progress</p>
     </div>
