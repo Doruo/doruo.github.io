@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <!-- HEADER -->
+  <!--HEADER-->
   <header class="header">
     <nav class="nav">
       <div class="branding">

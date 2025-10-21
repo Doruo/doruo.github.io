@@ -3,7 +3,7 @@ import { Links } from '@/data/Links';
 </script>
 
 <template>
-  <!-- FOOTER -->
+  <!--FOOTER-->
   <footer>
     <div class="conteneur">
       <p>
