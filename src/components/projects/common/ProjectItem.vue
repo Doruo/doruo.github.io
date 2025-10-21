@@ -1,42 +1,31 @@
 
 <template>
   <!-- PROJECT ITEM -->
-  <section id="eldenbuild-intro" class="intro">
+
+  <section class="intro">
     <!-- PROJECT INTRO -->
     <div class="contenu-intro">
-
       <slot name="logo_projet"></slot>
-
       <h2><slot name="title"></slot></h2>
-
       <slot name="description"></slot>
     </div>
   </section>
 
   <section class="competences">
     <!-- PROJECT SKILLS -->
-    <section class="competences">
-      <div class="contenu-competences">
-
-        <h2>Compétences techniques</h2>
-
-        <div class="competences-grid">
-          <slot name="abilities"></slot>
-        </div>
+    <div class="contenu-competences">
+      <h2>Compétences techniques</h2>
+      <div class="competences-grid">
+        <slot name="abilities"></slot>
       </div>
-
-    </section>
+    </div>
   </section>
 
   <section class="projets">
     <!-- PROJECT ASSETS -->
     <div class="projet-contenu-images">
-
       <h2>Illustrations</h2>
-
-      <slot name="assets">
-
-      </slot>
+      <slot name="assets"></slot>
     </div>
   </section>
 

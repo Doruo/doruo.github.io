@@ -11,6 +11,7 @@ import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
 
 import { Pictures } from '@/data/Pictures'
 import { Links } from '@/data/Links'
+import SkillGit from '../skills/tools/SkillGit.vue'
 
 </script>
 
@@ -56,13 +57,7 @@ import { Links } from '@/data/Links'
 
     <template #abilities>
 
-      <div class="projet-card">
-        <a :href=Links.GIT>
-          <img alt="GIT" :src=Pictures.GIT>
-        </a>
-        <h1>Git</h1>
-        <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
-      </div>
+      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe."/>
 
       <div class="projet-card">
         <a :href=Links.DOCKER>
