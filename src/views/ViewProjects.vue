@@ -15,17 +15,17 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     :title=ProjectsData.getAcademicProjectsCategory().title
     :projectsCategory=ProjectsData.getAcademicProjectsCategory()
   />
-  <!-- COMMUNITY PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getCommunityProjectsCategory().title
-    :projectsCategory=ProjectsData.getCommunityProjectsCategory()
-  />
   <!-- GAME PROJECTS -->
   <ProjectCards
     :title=ProjectsData.getGameDevProjectsCategory().title
     :projectsCategory=ProjectsData.getGameDevProjectsCategory()
   />
-  <!-- WEB PROJECTS -->
+  <!-- COMMUNITY PROJECTS -->
+  <ProjectCards
+    :title=ProjectsData.getCommunityProjectsCategory().title
+    :projectsCategory=ProjectsData.getCommunityProjectsCategory()
+  />
+  <!-- COMPETITIONS PROJECTS -->
   <ProjectCards
     :title=ProjectsData.getCompetitionProjectsCategory().title
     :projectsCategory=ProjectsData.getCompetitionProjectsCategory()

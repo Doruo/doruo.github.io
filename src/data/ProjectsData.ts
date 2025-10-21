@@ -179,6 +179,16 @@ export class ProjectsData {
       techs: "Go, Web Scraping, API, JSON",
       tags: ['game']
     },
+    {
+      id: 'mesh',
+      title: "Mesh",
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB+"/Mesh",
+      description: 'Lightweight messaging app written in Go, with Peer to Peer networking',
+      techs: "Go, Peer2Peer, TCP/IP, DNS",
+      tags: ['community']
+    },
   ];
 
   // Filters
