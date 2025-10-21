@@ -7,8 +7,10 @@ import ProjectTrains from '@/components/projects/ProjectTrains.vue'
 import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
 import ViewAbout from '@/views/ViewAbout.vue';
+import ViewPrevious from '@/views/ViewPrevious.vue';
 
 const routes = [
+  // main
   {
     path: '/',
     name: 'home',
@@ -24,7 +26,12 @@ const routes = [
     name: 'projects',
     component: ViewProjects,
   },
-  // Routes des projets (à l'avenir automatiser avec "/projets/{id}")
+  {
+    path: '/previous',
+    name: 'previous',
+    component: ViewPrevious,
+  },
+  // projects
   {
     path: '/projects/poursuite-etude',
     name: 'projects-poursuite-etude',
@@ -59,27 +66,26 @@ const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 
-  // Configuration du scroll behavior pour gérer les ancres
+  // hook handling
   scrollBehavior(to, from, savedPosition) {
 
-    // Si l'utilisateur utilise les boutons précédent/suivant
+    // if previous/next used
     if (savedPosition) {
       return savedPosition
     }
 
-    // Si il y a une ancre dans l'URL
     if (to.hash) {
       return {
         el: to.hash,
         behavior: 'smooth',
       }
     }
-    // Sinon retourner en haut de la page
+    // return at the top
     return { top: 0 }
   }
 })
 
-// gérer les erreurs
+// error handling
 router.onError((error) => {
   console.error('Erreur de navigation:', error)
   router.push({ name: 'Error', params: { error: error.message } })
