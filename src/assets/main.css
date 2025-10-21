@@ -27,19 +27,7 @@
 
 /* TEXTES */
 
-a{
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--primary-hover-color);
-  transition:
-    all 0.3s ease-out,
-    color 0.3s;
-}
-
-p:not(.branding p){
+p:not(.branding p):not(footer .conteneur p){
   color: var(--primary-text-color);
   margin-bottom: 1rem;
 }
@@ -69,6 +57,10 @@ h3{
   margin: 0;
   font-size: 0.9em;
   color:var(--primary-color);
+}
+
+.branding h4 {
+  color:#eaeaea
 }
 
 /* SECTIONS */
@@ -206,13 +198,25 @@ section:nth-child(odd) {
   text-align: center;
 }
 
-/* LIENS */
+/* LINK */
 
-.social-links a, .competences .conteneur p a, .entete h1 a, .projet-liens a{
+a, .projet-liens a{
+  color: rgb(78, 121, 134);
   text-decoration: none;
 }
 
-/* LIENS RESEAUX*/
+a:hover, .branding h1 a:hover{
+  color: var(--primary-hover-color);
+  transition:
+    all 0.3s ease-out,
+    color 0.3s;
+}
+
+.social-links a, .competences .conteneur p a, .entete h1 a{
+  text-decoration: none;
+}
+
+/* LINK SOCIAL MEDIA*/
 
 .social-links {
   display: flex;
@@ -272,7 +276,6 @@ section:nth-child(odd) {
 
   .contenu-intro {
     max-width: 98%;
-    max-height: 100%;
   }
 
   .contenu-intro p{

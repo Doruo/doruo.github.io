@@ -14,7 +14,7 @@
           je suis passionné par <b>l'informatique, la guitare et le sport.</b>
         </p>
         <p>
-          Souhaitant faire de l'informatique ma carrière, je suis actuellement en <b>3ème Année de DUT Informatique</b>, spécialisé dans le <b> parcours
+          Souhaitant faire de l'informatique ma carrière, je suis actuellement en <b>3ème année de BUT informatique</b>, spécialisé dans le <b> parcours
           Réalisation d'Application - Conception & Déploiement</b>.
         </p>
         <p>

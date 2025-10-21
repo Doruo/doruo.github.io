@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import github from '@/assets/images/contact/github.webp'
-import mail  from '@/assets/images/contact/mail.webp'
-import gravatar  from '@/assets/images/contact/gravatar.webp'
-import linkedin  from '@/assets/images/contact/linkedin.webp'
-import itchio  from '@/assets/images/contact/itchio.webp'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
@@ -17,31 +14,31 @@ import itchio  from '@/assets/images/contact/itchio.webp'
       <div class="social-links">
 
         <div class="social-link-img">
-          <a href="mailto:marc.antonio.haye@gmail.com">
-            <img alt="mail" :src=mail>
+          <a :href=Links.MAIL>
+            <img alt="mail" :src=Pictures.MAIL>
           </a>
         </div>
 
         <div class="social-link-img">
-          <a href="https://github.com/Doruo">
-            <img alt="github" :src=github>
+          <a :href=Links.GITHUB>
+            <img alt="github" :src=Pictures.GITHUB>
           </a>
         </div>
 
         <div class="social-link-img">
-          <a href="https://www.linkedin.com/in/marc-haye/">
-            <img alt="linkedIn" :src=linkedin>
+          <a :href=Links.LINKEDIN>
+            <img alt="linkedIn" :src=Pictures.LINKEDIN>
           </a>
         </div>
         <div class="social-link-img">
-          <a href="https://fr.gravatar.com/marcantoniohaye">
-            <img alt="gravatar" :src=gravatar>
+          <a :href=Links.GRAVATAR>
+            <img alt="gravatar" :src=Pictures.GRAVATAR>
           </a>
         </div>
 
         <div class="social-link-img">
-          <a href="https://doruo.itch.io/">
-            <img alt="itchio" :src=itchio>
+          <a :href=Links.ITCHIO>
+            <img alt="itchio" :src=Pictures.ITCHIO>
           </a>
         </div>
 

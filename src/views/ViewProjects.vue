@@ -10,11 +10,6 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     :title=ProjectsData.getMainProjectsCategory().title
     :projectsCategory=ProjectsData.getMainProjectsCategory()
   />
-  <!-- GAME PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getGameDevProjectsCategory().title
-    :projectsCategory=ProjectsData.getGameDevProjectsCategory()
-  />
   <!-- ACADEMIC PROJECTS -->
   <ProjectCards
     :title=ProjectsData.getAcademicProjectsCategory().title
@@ -25,7 +20,11 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     :title=ProjectsData.getCommunityProjectsCategory().title
     :projectsCategory=ProjectsData.getCommunityProjectsCategory()
   />
-
+  <!-- GAME PROJECTS -->
+  <ProjectCards
+    :title=ProjectsData.getGameDevProjectsCategory().title
+    :projectsCategory=ProjectsData.getGameDevProjectsCategory()
+  />
   <!-- WEB PROJECTS -->
   <ProjectCards
     :title=ProjectsData.getCompetitionProjectsCategory().title

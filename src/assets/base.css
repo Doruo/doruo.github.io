@@ -38,13 +38,17 @@ body {
 /* FOOTER */
 
 footer {
+  position:static;
+  bottom: 0px;
+  width: 100%;
+  padding: 1rem 0;
+
   font-size: 0.8rem;
+  text-align: center;
   background-color: var(--primary-color);
   color: var(--primary-font-color);
-  text-align: center;
-  padding: 1rem 0;
 }
 
-footer .containter {
-  color: var(--primary-color);
+footer .conteneur{
+  color: white;
 }

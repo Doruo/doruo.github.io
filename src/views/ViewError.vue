@@ -4,9 +4,9 @@
 <template>
   <!-- VIEW ERROR -->
   <div class="erreur">
-    <h1>Error 404</h1>
-    <h3>
+    <h1>
       No page found !
-    </h3>
+    </h1>
+    <router-link :to="{ name: 'home' }"><h2>Return home</h2></router-link>
   </div>
 </template>

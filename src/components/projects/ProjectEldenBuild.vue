@@ -9,17 +9,10 @@ import profile from '@/assets/images/projets/eldenbuild/eldenbuild_profile.webp'
 import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscription.webp'
 import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
 
+import { Pictures } from '@/data/Pictures'
+
 import git from '@/assets/images/projets/outils/git.webp'
-import docker from '@/assets/images/projets/outils/docker.webp'
-import mvc from '@/assets/images/projets/outils/mvc.webp'
-import php from '@/assets/images/projets/outils/php.webp'
-import html from '@/assets/images/projets/outils/html.webp'
-import bootstrap from '@/assets/images/projets/outils/bootstrap.webp'
-import js from '@/assets/images/projets/outils/js.webp'
-import oop from '@/assets/images/projets/outils/oop.webp'
-import mysql from '@/assets/images/projets/outils/mysql.webp'
-import rest from '@/assets/images/projets/outils/apirest.webp'
-import json from '@/assets/images/projets/outils/json.webp'
+
 </script>
 
 <template>
@@ -33,7 +26,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
     <template #description>
       <p>
-        Site web de gestion de build à but communautaire du jeu 
+        Site web de gestion de build à but communautaire du jeu
         <a href="https://fr.bandainamcoent.eu/elden-ring/elden-ring">Elden Ring</a>.
       </p>
       <p>
@@ -75,7 +68,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a href="https://www.docker.com/">
-          <img alt="Docker" :src=docker>
+          <img alt="Docker" :src=Pictures.DOCKER>
         </a>
         <h1>Docker</h1>
         <p>Aide au déploiement de l'application.</p>
@@ -83,7 +76,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a>
-          <img alt="Architecture MVC" :src=mvc>
+          <img alt="Architecture MVC" :src=Pictures.MVC>
         </a>
         <h1>Architecture MVC</h1>
         <p>Structure globale et pattern architecturale du projet.</p>
@@ -91,7 +84,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a href="https://www.php.net/">
-          <img alt="PHP" :src=php>
+          <img alt="PHP" :src=Pictures.PHP>
         </a>
         <h1>PHP</h1>
         <p>Développement coté serveur de l'application.</p>
@@ -99,7 +92,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a href="https://www.w3schools.com/html/">
-          <img alt="HTML" :src=html>
+          <img alt="HTML" :src=Pictures.HTML>
         </a>
         <h1>HTML</h1>
         <p>Développement de l'interface utilisateur.</p>
@@ -107,7 +100,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a alt="bootstrap" href="https://getbootstrap.com/">
-          <img alt="Bootstrap" :src=bootstrap>
+          <img alt="Bootstrap" :src=Pictures.BOOTSTRAP>
         </a>
         <h1>Bootstrap</h1>
         <p>Mise en page responsive de l'interface graphique de l'application.</p>
@@ -115,7 +108,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
-          <img alt="JavaScript" :src=js>
+          <img alt="JavaScript" :src=Pictures.JS>
         </a>
         <h1>JavaScript</h1>
         <p>Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones.</p>
@@ -123,7 +116,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a>
-          <img alt="Programmation orientée objet" :src=oop>
+          <img alt="Programmation orientée objet" :src=Pictures.OOP>
         </a>
 
         <h1>Programmation Orientée Objet</h1>
@@ -132,7 +125,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a href="https://www.mysql.com/fr/">
-          <img alt="MySQL" :src=mysql>
+          <img alt="MySQL" :src=Pictures.MYSQL>
         </a>
         <h1>MySQL</h1>
         <p>Déploiement de la base de donnée sécurisée.</p>
@@ -140,7 +133,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a>
-          <img alt="ApiREST" :src=rest>
+          <img alt="ApiREST" :src=Pictures.REST>
         </a>
         <h1>API REST</h1>
         <p>Norme de communication avec l'interface de programmation de l'<a href="https://eldenring.fanapis.com/">API
@@ -149,7 +142,7 @@ import json from '@/assets/images/projets/outils/json.webp'
 
       <div class="projet-card">
         <a>
-          <img alt="JSON" :src=json>
+          <img alt="JSON" :src=Pictures.JSON>
         </a>
         <h1>JSON</h1>
         <p>Format de données utilisées lors des communications faites à l'API via des requêtes HTTP.</p>
