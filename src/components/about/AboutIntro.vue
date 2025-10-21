@@ -4,7 +4,6 @@
 </script>
 
 <template>
-
   <!-- BIO -->
   <section class="intro">
 

@@ -16,10 +16,10 @@ defineProps({
 </script>
 
 <template>
-  <!-- PROJECTS -->
+  <!-- PROJECTS CARDS -->
   <section id="projets" class="projets">
     <div class="contenu-projets">
-      <h2>- {{ title }} -</h2>
+      <h2>{{ title }}</h2>
 
       <div class="projet-grid">
 
@@ -28,7 +28,7 @@ defineProps({
           :key="project.id"
           :title="project.title"
           :show-more-info-link="project.showMoreInfoLink"
-          :more-info-link="project.moreInfoLink"
+          :more-info-link=project.moreInfoLink
           :website-link="project.websiteLink"
         >
           <template #description>

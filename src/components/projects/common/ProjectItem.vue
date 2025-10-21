@@ -18,7 +18,7 @@
     <section class="competences">
       <div class="contenu-competences">
 
-        <h2>- Compétences techniques -</h2>
+        <h2>Compétences techniques</h2>
 
         <div class="competences-grid">
           <slot name="abilities"></slot>
@@ -32,7 +32,7 @@
     <!-- PROJECT ASSETS -->
     <div class="projet-contenu-images">
 
-      <h2>- Illustrations -</h2>
+      <h2>Illustrations</h2>
 
       <slot name="assets">
 

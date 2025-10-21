@@ -6,7 +6,7 @@
   <!-- BIO -->
   <section id="biographie" class="biographie">
     <div class="conteneur">
-      <h2>- Biographie -</h2>
+      <h2>Biographie</h2>
       <p>
         Depuis toujours, je suis passionnée pour l'informatique, au départ par le jeu vidéo, puis par le <b>domaine web</b>.
       </p>

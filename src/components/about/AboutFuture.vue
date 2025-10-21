@@ -6,7 +6,7 @@
 <!-- FUTUR -->
 <section class="future">
     <div class="conteneur">
-      <h2>- Objectifs Futurs -</h2>
+      <h2>Objectifs Futurs</h2>
       <p>
         Je compte tout d'abord entamer après mes études une carrière en <b>développement web back-end</b>,
         puis envisage ensuite de prolonger mes acquis en <b>systèmes réseaux</b>.
