@@ -2,19 +2,16 @@
 
 import ProjectItem from '@/components/projects/common/ProjectItem.vue'
 
-
 import logoTrains from '@/assets/images/projets/trains/logoTrains.webp'
 import regles from '@/assets/portfolio/trains/regles.pdf'
-
-import oop from '@/assets/images/projets/outils/oop.webp'
-import java from '@/assets/images/projets/outils/java.webp'
-import javafx from '@/assets/images/projets/outils/javafx.webp'
-import sceneBuilder from '@/assets/images/projets/outils/scenebuilder.webp'
 
 import init from '@/assets/images/projets/trains/trains_initialisation.webp'
 import partie1 from '@/assets/images/projets/trains/trains_partie1.webp'
 import partie2 from '@/assets/images/projets/trains/trains_partie2.webp'
 import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
+
+import { Links } from '@/data/Links'
+import { Pictures } from '@/data/Pictures'
 </script>
 
 <template>
@@ -33,7 +30,6 @@ import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
         Il a eu lieu dans le cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.
       </p>
 
-
       <p>
         Le projet a été réalisé en binome, et de façon incrémentale en 3 phases :
       </p>
@@ -51,8 +47,7 @@ import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
         </li>
         <li>
           <p>
-            <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a
-            href="https://openjfx.io/">JavaFX</a>.
+            <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href=Links.JAVAFX>JavaFX</a>.
           </p>
         </li>
       </ul>
@@ -80,7 +75,7 @@ import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
     <template #abilities>
       <div class="projet-card">
         <a>
-          <img alt="Programmation orientée objet" :src=oop>
+          <img alt="Programmation orientée objet" :src=Pictures.OOP>
         </a>
 
         <h1>Programmation Orientée Objet</h1>
@@ -88,24 +83,24 @@ import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
       </div>
 
       <div class="projet-card">
-        <a href="https://www.java.com/">
-          <img alt="Java" :src=java>
+        <a :href=Links.JAVA>
+          <img alt="Java" :src=Pictures.JAVA>
         </a>
         <h1>Java</h1>
         <p>Implémentation du fonctionnement du jeu.</p>
       </div>
 
       <div class="projet-card">
-        <a href="https://openjfx.io/">
-          <img alt="JavaFX" :src=javafx>
+        <a :href=Links.JAVAFX>
+          <img alt="JavaFX" :src=Pictures.JAVAFX>
         </a>
         <h1>JavaFX</h1>
         <p>Réalisation de l'interface graphique.</p>
       </div>
 
       <div class="projet-card">
-        <a href="https://gluonhq.com/products/scene-builder/">
-          <img alt="Scene Builder" :src=sceneBuilder>
+        <a :href=Links.SCENEBUILDER>
+          <img alt="Scene Builder" :src=Pictures.SCENEBUILDER>
         </a>
         <h1>Scene Builder</h1>
         <p>Outil d'aide à la réalisation de l'interface graphique.</p>

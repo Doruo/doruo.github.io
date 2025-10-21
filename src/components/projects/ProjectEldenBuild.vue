@@ -10,8 +10,7 @@ import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscripti
 import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
 
 import { Pictures } from '@/data/Pictures'
-
-import git from '@/assets/images/projets/outils/git.webp'
+import { Links } from '@/data/Links'
 
 </script>
 
@@ -59,15 +58,15 @@ import git from '@/assets/images/projets/outils/git.webp'
     <template #abilities>
 
       <div class="projet-card">
-        <a href="https://git-scm.com/">
-          <img alt="GIT" :src=git>
+        <a :href=Links.GIT>
+          <img alt="GIT" :src=Pictures.GIT>
         </a>
         <h1>Git</h1>
         <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
       </div>
 
       <div class="projet-card">
-        <a href="https://www.docker.com/">
+        <a :href=Links.DOCKER>
           <img alt="Docker" :src=Pictures.DOCKER>
         </a>
         <h1>Docker</h1>
@@ -83,7 +82,7 @@ import git from '@/assets/images/projets/outils/git.webp'
       </div>
 
       <div class="projet-card">
-        <a href="https://www.php.net/">
+        <a :href=Links.PHP>
           <img alt="PHP" :src=Pictures.PHP>
         </a>
         <h1>PHP</h1>
@@ -91,7 +90,7 @@ import git from '@/assets/images/projets/outils/git.webp'
       </div>
 
       <div class="projet-card">
-        <a href="https://www.w3schools.com/html/">
+        <a :href=Links.HTML>
           <img alt="HTML" :src=Pictures.HTML>
         </a>
         <h1>HTML</h1>
@@ -99,7 +98,7 @@ import git from '@/assets/images/projets/outils/git.webp'
       </div>
 
       <div class="projet-card">
-        <a alt="bootstrap" href="https://getbootstrap.com/">
+        <a alt="bootstrap" :href=Links.BOOTSTRAP>
           <img alt="Bootstrap" :src=Pictures.BOOTSTRAP>
         </a>
         <h1>Bootstrap</h1>
@@ -107,7 +106,7 @@ import git from '@/assets/images/projets/outils/git.webp'
       </div>
 
       <div class="projet-card">
-        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+        <a :href=Links.JS>
           <img alt="JavaScript" :src=Pictures.JS>
         </a>
         <h1>JavaScript</h1>

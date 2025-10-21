@@ -183,6 +183,10 @@ export class ProjectsData {
 
   // Filters
 
+  public static getProjectById(id: string): Project | undefined {
+    return this.allProjects.find(project => project.id === id);
+  }
+
   public static getProjectsByIds(ids: string[]): Project[] {
     return this.allProjects.filter(project => ids.includes(project.id));
   }
