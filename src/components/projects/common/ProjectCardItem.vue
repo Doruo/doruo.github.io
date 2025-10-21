@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import type { PropType } from "vue";
+import type { RouteLocationAsRelativeGeneric } from "vue-router";
+
 defineProps({
   title: {
     type: String,
@@ -9,7 +12,7 @@ defineProps({
     required: true,
   },
   moreInfoLink:{
-    type: String,
+    type: Object as PropType<RouteLocationAsRelativeGeneric>,
     required: true,
   },
   websiteLink: {
@@ -23,18 +26,17 @@ defineProps({
 <template>
   <!-- PROJECT CARD -->
   <div class="projet-card">
-    <h3>
-      <u>{{title}}</u>
-    </h3>
+
+    <h3>{{title}}</h3>
     <p>
       <slot name="description"></slot>
     </p>
     <p>
-      <b>Technologies:</b> <slot name="techs"></slot>
+      <b>Compétences:</b> <slot name="techs"></slot>
     </p>
 
     <div class="projet-liens">
-      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>En savoir plus</router-link>
+      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>A Propos</router-link>
       <a :href="websiteLink">Lien</a>
     </div>
   </div>
