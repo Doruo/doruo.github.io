@@ -1,1 +1,50 @@
 /* color palette from <https://github.com/vuejs/theme> */
+
+/* VARS */
+
+:root {
+  --primary-bg-color: #f1f1f1;
+  --primary-color: #34495E;
+
+  --primary-text-color: #505354;
+  --primary-hover-color: #aaa;
+
+  --main-font-family: 'Arial';
+}
+
+/* STRUCTURE */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font-family), sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .containter {
+  color: var(--primary-color);
+}
