@@ -13,11 +13,11 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.GIT>
-        <img alt="GIT" :src=Pictures.GIT>
+      <a :href=Links.DOCKER>
+        <img alt="DOCKER" :src=Pictures.DOCKER>
       </a>
     </template>
-    <template #title>Git</template>
+    <template #title>Docker</template>
     <template #description>{{ description }}</template>
   </SkillItem>
 </template>

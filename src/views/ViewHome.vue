@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import AboutIntro from '@/components/about/AboutIntro.vue';
-import ProjectCards from '@/components/projects/common/ProjectCards.vue'
+import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
 import { ProjectsData } from '@/data/ProjectsData.ts'
 </script>
 

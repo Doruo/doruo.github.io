@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Links } from '@/data/Links';
 import SkillItem from '../abstract/SkillItem.vue';
 import { Pictures } from '@/data/Pictures';
 defineProps({
@@ -13,11 +12,11 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.GIT>
-        <img alt="GIT" :src=Pictures.GIT>
+      <a>
+        <img alt="JSON" :src=Pictures.JSON>
       </a>
     </template>
-    <template #title>Git</template>
+    <template #title>JSON</template>
     <template #description>{{ description }}</template>
   </SkillItem>
 </template>

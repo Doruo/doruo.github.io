@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/common/ProjectItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import logoIUT from '@/assets/images/projets/IUT/logoIUT.webp'
 import accueil from '@/assets/images/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
@@ -10,7 +10,17 @@ import diagramme from '@/assets/images/projets/poursuiteEtude/poursuite_etude_di
 import notes from '@/assets/images/projets/poursuiteEtude/poursuite_etude_notes.webp'
 
 import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
+import SkillGit from '../skills/tools/SkillGit.vue'
+import SkillDocker from '../skills/tools/SkillDocker.vue'
+import SkillMvc from '../skills/tools/SkillMvc.vue'
+import SkillLDAP from '../skills/backend/SkillLDAP.vue'
+import SkillPHP from '../skills/backend/SkillPHP.vue'
+import SkillHTML from '../skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
+import SkillOOP from '../skills/tools/SkillOOP.vue'
+import SkillPostgre from '../skills/database/SkillPostgre.vue'
+import SkillPLSql from '../skills/database/SkillPLSql.vue'
+import SkillChartJS from '../skills/tools/SkillChartJS.vue'
 
 </script>
 
@@ -67,95 +77,27 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
-      <div class="projet-card">
-        <a :href=Links.GIT>
-          <img alt="GIT" :src=Pictures.GIT>
-        </a>
-        <h1>Git</h1>
-        <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
-      </div>
+      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
 
-      <div class="projet-card">
-        <a  :href=Links.DOCKER>
-          <img alt="Docker" :src=Pictures.DOCKER>
-        </a>
-        <h1>Docker</h1>
-        <p>Aide au deploiement de l'application.</p>
-      </div>
+      <SkillDocker description="Aide au deploiement de l'application"/>
 
-      <div class="projet-card">
-        <a>
-          <img alt="Architecture MVC" :src=Pictures.MVC>
-        </a>
-        <h1>Architecture MVC</h1>
-        <p>Structure globale et pattern architecturale du projet.</p>
-      </div>
+      <SkillMvc description="Structure globale et pattern architecturale du projet"/>
 
-      <div class="projet-card">
-        <a :href=Links.LDAP>
-          <img alt="LDAP" :src=Pictures.LDAP>
-        </a>
-        <h1>Protocole LDAP</h1>
-        <p>Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète.</p>
-      </div>
+      <SkillLDAP description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"/>
 
-      <div class="projet-card">
-        <a :href=Links.PHP>
-          <img alt="PHP" :src=Pictures.PHP>
-        </a>
-        <h1>PHP</h1>
-        <p>Développement coté serveur de l'application.</p>
-      </div>
+      <SkillPHP description="Développement coté serveur de l'application"/>
 
-      <div class="projet-card">
-        <a :href=Links.HTML>
-          <img alt="HTML" :src=Pictures.HTML>
-        </a>
-        <h1>HTML</h1>
-        <p>Développement de l'interface utilisateur.</p>
-      </div>
+      <SkillHTML description="Développement de l'interface utilisateur"/>
 
-      <div class="projet-card">
-        <a alt="bootstrap" :href=Links.BOOTSTRAP>
-          <img alt="Bootstrap" :src=Pictures.BOOTSTRAP>
-        </a>
-        <h1>Bootstrap</h1>
-        <p>Mise en page de l'interface visuelle.</p>
-      </div>
+      <SkillBootstrap description="Mise en page de l'interface visuelle"/>
 
-      <div class="projet-card">
-        <a>
-          <img alt="Programmation orientée objet" :src=Pictures.OOP>
-        </a>
+      <SkillOOP description="Pattern de développement de l'application"/>
 
-        <h1>Programmation Orientée Objet</h1>
-        <p>Pattern de développement de l'application.</p>
-      </div>
+      <SkillPostgre description="Réalisation de la base de donnée de l'application"/>
 
-      <div class="projet-card">
-        <a :href=Links.POSTGRE>
-          <img alt="PostgreSQL" :src=Pictures.POSTGRE>
-        </a>
-        <h1>PostgreSQL</h1>
-        <p>Réalisation de la base de donnée de l'application.</p>
-      </div>
+      <SkillPLSql description="Fonctions et triggers dynamiques dans la base de donnée"/>
 
-      <div class="projet-card">
-        <a :href=Links.PLSQL>
-          <img alt="PL/SQL" :src=Pictures.PLSQL>
-        </a>
-        <h1>PL/SQL</h1>
-        <p>Fonctionnement dynamique de la base de donnée.</p>
-      </div>
-
-      <div class="projet-card">
-        <a :href=Links.CHARTJS>
-          <img alt="Chart.JS" :src=Pictures.CHARTJS>
-        </a>
-        <h1>Chart.JS</h1>
-        <p>Graphiques comparatifs (Radar Chart) des résultats des étudiants et des médianes.</p>
-      </div>
-
+      <SkillChartJS description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants"/>
     </template>
 
     <template #assets>

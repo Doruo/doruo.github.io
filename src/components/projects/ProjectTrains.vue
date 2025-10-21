@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import ProjectItem from '@/components/projects/common/ProjectItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import logoTrains from '@/assets/images/projets/trains/logoTrains.webp'
 import regles from '@/assets/portfolio/trains/regles.pdf'
@@ -11,7 +11,10 @@ import partie2 from '@/assets/images/projets/trains/trains_partie2.webp'
 import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
 
 import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
+import SkillOOP from '../skills/tools/SkillOOP.vue'
+import SkillJava from '../skills/backend/SkillJava.vue'
+import SkillJavaFX from '../skills/frontend/SkillJavaFX.vue'
+import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
 </script>
 
 <template>
@@ -73,39 +76,13 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
-      <div class="projet-card">
-        <a>
-          <img alt="Programmation orientée objet" :src=Pictures.OOP>
-        </a>
+      <SkillOOP description="Pattern de développement du jeu"/>
 
-        <h1>Programmation Orientée Objet</h1>
-        <p>Pattern de développement du jeu.</p>
-      </div>
+      <SkillJava description="Implémentation de la logique du jeu"/>
 
-      <div class="projet-card">
-        <a :href=Links.JAVA>
-          <img alt="Java" :src=Pictures.JAVA>
-        </a>
-        <h1>Java</h1>
-        <p>Implémentation du fonctionnement du jeu.</p>
-      </div>
+      <SkillJavaFX description="Réalisation de l'interface graphique"/>
 
-      <div class="projet-card">
-        <a :href=Links.JAVAFX>
-          <img alt="JavaFX" :src=Pictures.JAVAFX>
-        </a>
-        <h1>JavaFX</h1>
-        <p>Réalisation de l'interface graphique.</p>
-      </div>
-
-      <div class="projet-card">
-        <a :href=Links.SCENEBUILDER>
-          <img alt="Scene Builder" :src=Pictures.SCENEBUILDER>
-        </a>
-        <h1>Scene Builder</h1>
-        <p>Outil d'aide à la réalisation de l'interface graphique.</p>
-      </div>
-
+      <SkillSceneBuilder description="Aide à la réalisation de l'interface graphique"/>
     </template>
 
     <template #assets>

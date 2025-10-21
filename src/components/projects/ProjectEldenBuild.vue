@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/common/ProjectItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import ranni from '@/assets/images/projets/eldenbuild/eldenring_ranni.webp'
 import accueil from '@/assets/images/projets/eldenbuild/eldenbuild_accueil.webp'
@@ -9,9 +9,18 @@ import profile from '@/assets/images/projets/eldenbuild/eldenbuild_profile.webp'
 import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscription.webp'
 import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
 
-import { Pictures } from '@/data/Pictures'
 import { Links } from '@/data/Links'
 import SkillGit from '../skills/tools/SkillGit.vue'
+import SkillPHP from '../skills/backend/SkillPHP.vue'
+import SkillDocker from '../skills/tools/SkillDocker.vue'
+import SkillMvc from '../skills/tools/SkillMvc.vue'
+import SkillHTML from '../skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
+import SkillJS from '../skills/frontend/SkillJS.vue'
+import SkillOOP from '../skills/tools/SkillOOP.vue'
+import SkillMySql from '../skills/database/SkillMySql.vue'
+import SkillAPI from '../skills/backend/SkillAPI.vue'
+import SkillJSON from '../skills/tools/SkillJSON.vue'
 
 </script>
 
@@ -56,90 +65,27 @@ import SkillGit from '../skills/tools/SkillGit.vue'
     </template>
 
     <template #abilities>
+      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
 
-      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe."/>
+      <SkillPHP description="Développement coté serveur de l'application"/>
 
-      <div class="projet-card">
-        <a :href=Links.DOCKER>
-          <img alt="Docker" :src=Pictures.DOCKER>
-        </a>
-        <h1>Docker</h1>
-        <p>Aide au déploiement de l'application.</p>
-      </div>
+      <SkillDocker description="Aide au déploiement de l'application"/>
 
-      <div class="projet-card">
-        <a>
-          <img alt="Architecture MVC" :src=Pictures.MVC>
-        </a>
-        <h1>Architecture MVC</h1>
-        <p>Structure globale et pattern architecturale du projet.</p>
-      </div>
+      <SkillMvc description="Structure globale et pattern architecturale du projet"/>
 
-      <div class="projet-card">
-        <a :href=Links.PHP>
-          <img alt="PHP" :src=Pictures.PHP>
-        </a>
-        <h1>PHP</h1>
-        <p>Développement coté serveur de l'application.</p>
-      </div>
+      <SkillHTML description="Développement de l'interface utilisateur"/>
 
-      <div class="projet-card">
-        <a :href=Links.HTML>
-          <img alt="HTML" :src=Pictures.HTML>
-        </a>
-        <h1>HTML</h1>
-        <p>Développement de l'interface utilisateur.</p>
-      </div>
+      <SkillBootstrap description="Mise en page responsive de l'interface graphique de l'application"/>
 
-      <div class="projet-card">
-        <a alt="bootstrap" :href=Links.BOOTSTRAP>
-          <img alt="Bootstrap" :src=Pictures.BOOTSTRAP>
-        </a>
-        <h1>Bootstrap</h1>
-        <p>Mise en page responsive de l'interface graphique de l'application.</p>
-      </div>
+      <SkillJS description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones"/>
 
-      <div class="projet-card">
-        <a :href=Links.JS>
-          <img alt="JavaScript" :src=Pictures.JS>
-        </a>
-        <h1>JavaScript</h1>
-        <p>Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones.</p>
-      </div>
+      <SkillOOP description="Pattern de développement de l'application"/>
 
-      <div class="projet-card">
-        <a>
-          <img alt="Programmation orientée objet" :src=Pictures.OOP>
-        </a>
+      <SkillMySql description="Déploiement de la base de donnée sécurisée"/>
 
-        <h1>Programmation Orientée Objet</h1>
-        <p>Pattern de développement de l'application.</p>
-      </div>
+      <SkillAPI description="Norme de communication avec l'API Elden Ring"/>
 
-      <div class="projet-card">
-        <a :href=Links.MYSQL>
-          <img alt="MySQL" :src=Pictures.MYSQL>
-        </a>
-        <h1>MySQL</h1>
-        <p>Déploiement de la base de donnée sécurisée.</p>
-      </div>
-
-      <div class="projet-card">
-        <a>
-          <img alt="ApiREST" :src=Pictures.REST>
-        </a>
-        <h1>API REST</h1>
-        <p>Norme de communication avec <a :href=Links.ELDENRINGAPI>l'API Elden Ring</a>.</p>
-      </div>
-
-      <div class="projet-card">
-        <a>
-          <img alt="JSON" :src=Pictures.JSON>
-        </a>
-        <h1>JSON</h1>
-        <p>Format de données utilisées lors des communications faites à l'API via des requêtes HTTP.</p>
-      </div>
-
+      <SkillJSON description="Format de données utilisées lors des communications faites à l'API via des requêtes HTTP"/>
     </template>
 
     <template #assets>

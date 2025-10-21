@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/common/ProjectItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import logoNDI from '@/assets/images/projets/ndi2024/logo-n2i-2024.webp'
 import ocean from '@/assets/images/projets/ndi2024/ndi_ocean.webp'
@@ -13,7 +13,11 @@ import photo5 from '@/assets/images/projets/ndi2024/ndi_photo5.webp'
 import photo6 from '@/assets/images/projets/ndi2024/ndi_photo6.webp'
 
 import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
+import SkillHTML from '../skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
+import SkillJS from '../skills/frontend/SkillJS.vue'
+import SkillNode from '../skills/backend/SkillNode.vue'
+import SkillExpress from '../skills/backend/SkillExpress.vue'
 </script>
 
 <template>
@@ -56,55 +60,17 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
+      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
 
-      <div class="projet-card">
-        <a :href=Links.GIT>
-          <img alt="GIT" :src=Pictures.GIT>
-        </a>
-        <h1>Git</h1>
-        <p>Versioning (gestion des versions) du projet, et collaboration en équipe.</p>
-      </div>
+      <SkillHTML description="Redaction des articles"/>
 
-      <div class="projet-card">
-        <a :href=Links.HTML>
-          <img alt="HTML" :src=Pictures.HTML>
-        </a>
-        <h1>HTML</h1>
-        <p>Réalisation du contenu rédigé des articles.</p>
-      </div>
+      <SkillBootstrap description="Mise en page visuelle des articles"/>
 
-      <div class="projet-card">
-        <a alt="bootstrap" :href=Links.BOOTSTRAP>
-          <img alt="Bootstrap" :src=Pictures.BOOTSTRAP>
-        </a>
-        <h1>Bootstrap</h1>
-        <p>Mise en page visuelles des articles.</p>
-      </div>
+      <SkillJS description="Implémentation de l'océan naviguable"/>
 
-      <div class="projet-card">
-        <a :href=Links.JS>
-          <img alt="JavaScript" :src=Pictures.JS>
-        </a>
-        <h1>JavaScript</h1>
-        <p>Implémentation de l'océan naviguable.</p>
-      </div>
+      <SkillNode description="Réalisation du serveur HTTP"/>
 
-      <div class="projet-card">
-        <a :href=Links.NODE>
-          <img alt="Node" :src=Pictures.NODE>
-        </a>
-        <h1>Node.js</h1>
-        <p>Réalisation du serveur HTTP.</p>
-      </div>
-
-      <div class="projet-card">
-        <a :href=Links.EXPRESS>
-          <img alt="Express" :src=Pictures.EXPRESS>
-        </a>
-        <h1>Express.js</h1>
-        <p>Routage et Gestion des dépendances de l'API.</p>
-      </div>
-
+      <SkillExpress description="Routage et gestion des dépendances de l'API"/>
     </template>
 
     <template #assets>
