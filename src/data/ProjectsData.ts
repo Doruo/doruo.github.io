@@ -1,5 +1,7 @@
 import type { RouteLocationAsRelativeGeneric } from "vue-router";
 
+const githubPath="https://github/doruo";
+
 export interface Project {
   id: string;
   title: string;
@@ -28,14 +30,14 @@ export class ProjectsData {
       websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
-      tags: ['academic']
+      tags: ['main','academic']
     },
     {
       id: 'jellybot',
       title: "Jellybot",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: "https://github.com/Doruo/JellyBot",
+      websiteLink: githubPath+"/JellyBot",
       description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
       '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py, Jellyfin API, Discord",
@@ -43,10 +45,10 @@ export class ProjectsData {
     },
     {
       id: 'trains',
-      title: "Trains",
+      title: "Jeu de plateau Trains",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: "https://github.com/Doruo/Trains",
+      websiteLink: githubPath+"/Trains",
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
@@ -54,7 +56,7 @@ export class ProjectsData {
     },
     {
       id: 'stage-itesoft',
-      title: 'Stage chez ITESOFT',
+      title: 'Stage chez ITESOFT (CONFIDENTIEL)',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: "https://www.itesoft.com/fr/besoins/dematerialisation-factures/",
@@ -79,7 +81,7 @@ export class ProjectsData {
       title: "Elden Build",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: "https://github.com/Doruo/EldenBuild",
+      websiteLink: githubPath+"/EldenBuild",
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
@@ -90,7 +92,7 @@ export class ProjectsData {
       title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: "https://github.com/Doruo/NDI-2024-RaceForWater",
+      websiteLink: githubPath+"/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
       'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML,CSS, JavaScript, ExpressJS",
@@ -142,7 +144,7 @@ export class ProjectsData {
       title: "Jeu du Mastermind",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: "https://github.com/Doruo/mastermind",
+      websiteLink: githubPath+"/mastermind",
       description: '',
       techs: "Java",
       tags: ['academic']
@@ -152,7 +154,7 @@ export class ProjectsData {
       title: "Marin ivre",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: "https://github.com/Doruo/marinIvre",
+      websiteLink: githubPath+"/marinIvre",
       description: '',
       techs: "Java",
       tags: ['academic']
@@ -162,13 +164,25 @@ export class ProjectsData {
       title: "Conway's Game of Life",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: "https://github.com/Doruo/GameOfLife",
+      websiteLink: githubPath+"/GameOfLife",
       description: 'Implémentation d\'un jeu de simulation mathématique datant de 1970, avec interface terminal.'+
       ' C\'est un automate cellulaire utilisé dans la recherche biologique.',
       techs: "Go, Ebitengine",
       tags: ['main','game']
     },
+    {
+      id: 'falloutdle',
+      title: "Falloutdle",
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: githubPath+"/falloutdle",
+      description: 'Jeu web inspiré de Wordle dans l\'univers de Fallout. Devinez un nouveau perso tous les jours.',
+      techs: "Go, Web Scraping, API, JSON",
+      tags: ['game']
+    },
   ];
+
+  // Filters
 
   public static getProjectsByIds(ids: string[]): Project[] {
     return this.allProjects.filter(project => ids.includes(project.id));
@@ -184,18 +198,12 @@ export class ProjectsData {
     );
   }
 
-  public static getAllProjectsCategory (): ProjectCategory {
-    return {
-      id: 'all',
-      title: "Tous Les Projets",
-      projects: this.allProjects
-    };
-  }
+  // Main getters
 
   public static getMainProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: "Principaux",
+      title: "Principaux projets",
       projects: this.getProjectsByTag('main')
     };
   }
