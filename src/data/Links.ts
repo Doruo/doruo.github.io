@@ -24,9 +24,14 @@ export class Links {
   static readonly POSTGRE="https://www.postgresql.org/"
   static readonly PLSQL="https://www.oracle.com/fr/database/technologies/appdev/plsql.html"
   static readonly CHARTJS="https://www.chartjs.org/"
-
   static readonly JAVA="https://dev.java"
   static readonly JAVAFX="https://openjfx.io/"
   static readonly SCENEBUILDER="https://gluonhq.com/products/scene-builder/"
+  static readonly VUE="https://vuejs.org/"
 
+  // Projects
+  static readonly GITHUBIO="https://github.com/Doruo/doruo.github.io"
+
+  // Archives
+  static readonly ARCHIVES_PORTFOLIO='@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf';
 }

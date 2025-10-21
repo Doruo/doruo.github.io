@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import oldPortfolio from '@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf';
+import { Links } from '@/data/Links';
 </script>
 
 <template>
@@ -9,7 +9,11 @@ import oldPortfolio from '@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.p
     <a href='src/assets/portfolio/HAYE_Q2_Portfolio_BUT_INFO_Annee2.html'>Première version du site</a>
     </p>
     <p>
-      <a :href=oldPortfolio>Ancien portfolio</a>
+      <a :href=Links.ARCHIVES_PORTFOLIO>Ancien portfolio</a>
     </p>
+    <p>
+      <a href='public/IUT/A2/DevWebS4/indexDevWebS4.html'>TDs de Développement Web JavaScript</a>
+    </p>
+
   </section>
 </template>

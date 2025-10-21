@@ -7,7 +7,7 @@ import ProjectTrains from '@/components/projects/ProjectTrains.vue'
 import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
 import ViewAbout from '@/views/ViewAbout.vue';
-import ViewPrevious from '@/views/ViewPrevious.vue';
+import ViewArchives from '@/views/ViewArchives.vue';
 
 const routes = [
   // main
@@ -27,9 +27,9 @@ const routes = [
     component: ViewProjects,
   },
   {
-    path: '/previous',
-    name: 'previous',
-    component: ViewPrevious,
+    path: '/archives',
+    name: 'archives',
+    component: ViewArchives,
   },
   // projects
   {
