@@ -67,13 +67,6 @@ h3{
 section{
   text-align: center;
   margin: 0 auto;
-}
-
-section:nth-child(even) {
-  background-color: var(--primary-bg-color);
-}
-
-section:nth-child(odd) {
   background-color: var(--primary-bg-color);
 }
 
@@ -111,10 +104,6 @@ section:nth-child(odd) {
   display: flex;
   align-items: center;
   padding: 4rem 0;
-}
-
-.intro{
-  height: 90vh;
 }
 
 /* PROJETS */

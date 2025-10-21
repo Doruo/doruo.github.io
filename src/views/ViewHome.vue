@@ -12,8 +12,10 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     :projectsCategory=ProjectsData.getMainProjectsCategory()
     :show-all-projects-link=true
   />
-  <h1>
-    <router-link :to="{ name: 'projects' }">Tous les projets</router-link>
-  </h1>
+  <section class="contact">
+    <h1>
+      <router-link :to="{ name: 'projects' }">Voir plus de projets</router-link>
+    </h1>
+  </section>
 </template>
 

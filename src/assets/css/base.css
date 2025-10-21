@@ -49,6 +49,7 @@ footer {
   color: var(--primary-font-color);
 }
 
-footer .conteneur{
+footer ul li {
   color: white;
+  list-style-type: none;
 }

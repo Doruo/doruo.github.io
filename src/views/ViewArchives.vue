@@ -12,7 +12,7 @@ import { Links } from '@/data/Links';
       <a :href=Links.ARCHIVES_PORTFOLIO>Ancien portfolio</a>
     </p>
     <p>
-      <a href='public/IUT/A2/DevWebS4/indexDevWebS4.html'>TDs de Développement Web JavaScript</a>
+      <a href='/IUT/A2/DevWebS4/indexDevWebS4.html'>TDs de Développement Web JavaScript</a>
     </p>
 
   </section>

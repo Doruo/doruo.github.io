@@ -32,26 +32,19 @@ import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
         Si le jeu vous intéresse, vous pouvez consulter <a :href=regles>les règles</a>.
         Il a eu lieu dans le cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.
       </p>
-
       <p>
         Le projet a été réalisé en binome, et de façon incrémentale en 3 phases :
       </p>
 
       <ul>
         <li>
-          <p>
-            <u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.
-          </p>
+          <p><u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.</p>
         </li>
         <li>
-          <p>
-            <u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.
-          </p>
+          <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p>
-            <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href=Links.JAVAFX>JavaFX</a>.
-          </p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href=Links.JAVAFX>JavaFX</a>.</p>
         </li>
       </ul>
 
@@ -61,13 +54,11 @@ import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
         (tests unitaires, gestion de version, etc.),
         les algorithmes de graphes et les interfaces homme-machine.
       </p>
-
       <p>
         Concrètement, mon rôle a été de développer l'ensemble du fonctionnement du jeu (visuel et technique),
         mais également l'élaboration
         d'algorithmes permettant de jouer contre l'ordinateur.
       </p>
-
       <p>
         J'ai donc dû utiliser des notions de la théorie des graphes, comme l'algorithme de Dijkstra,
         afin de déterminer en temps réel et de façon efficace le chemin le plus court
