@@ -8,7 +8,7 @@
     <div class="conteneur">
       <h2>Biographie</h2>
       <p>
-        Depuis toujours, je suis passionnée pour l'informatique, au départ par le jeu vidéo, puis par le <b>domaine web</b>.
+        Depuis toujours, je suis passionné pour l'informatique, au départ par le jeu vidéo, puis par le <b>domaine web</b>.
       </p>
       <p>
         J'ai d'abord obtenu mon <b>Baccalauréat STI2D</b>, option Systèmes d'Information et Numérique (SIN).
