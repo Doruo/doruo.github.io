@@ -1,21 +1,20 @@
 bash#!/usr/bin/env sh
 
-# Arrêt en cas d'erreur
+# Error handling
 set -e
 
-# Build du projet
+# Build
+rm -rf dist
 npm run build
-
-# Navigation dans le dossier de build
 cd dist
 
-# Initialisation d'un repo git dans dist
+# Staging
 git init
 git checkout -b pages
 git add -A
 git commit -m 'deploy'
 
-# Push vers la branche gh-pages
+# Deploy
 git push -f git@github.com:doruo/doruo.github.io.git pages:gh-pages
 
 cd -
