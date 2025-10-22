@@ -58,7 +58,9 @@ import SkillGit from '../skills/tools/SkillGit.vue'
     </template>
 
     <template #abilities>
+
       <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
+
       <SkillHTML description="Redaction des articles"/>
       <SkillBootstrap description="Mise en page visuelle des articles"/>
       <SkillJS description="Implémentation de l'océan naviguable"/>
@@ -129,7 +131,6 @@ import SkillGit from '../skills/tools/SkillGit.vue'
 
     <template #liens>
       <LinkGithub :link=Links.githubNdi />
-      <a href="https://evanattack.fr/feature/nuitInfo.html">Page d'un membre de mon équipe</a>
     </template>
   </ProjectItem>
 </template>
