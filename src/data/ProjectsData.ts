@@ -36,7 +36,7 @@ export class ProjectsData {
       title: "Jellybot",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/JellyBot",
+      websiteLink: Links.githubJellybot,
       description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
       '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py, Jellyfin API, Discord",
@@ -47,7 +47,7 @@ export class ProjectsData {
       title: "Jeu de plateau Trains",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: Links.github+"/Trains",
+      websiteLink: Links.githubTrains,
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
@@ -70,8 +70,8 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-106/accueil.html",
-      description: 'Site web présentant le travail de recherche et de rédaction réalisée '+
-      'sur la controverse suivante: Les crypto-monnaies peuvent-elles être écologiques ?',
+      description: 'Vitrine présentant mon travail de recherche et de rédaction '+
+      'sur la controverse suivante: \'Les crypto-monnaies peuvent-elles être écologiques ?\'',
       techs: "HTML, CSS",
       tags: ['academic']
     },
@@ -80,7 +80,7 @@ export class ProjectsData {
       title: "Elden Build",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: Links.github+"/EldenBuild",
+      websiteLink: Links.githubEldenbuild,
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
@@ -91,7 +91,7 @@ export class ProjectsData {
       title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: Links.github+"/NDI-2024-RaceForWater",
+      websiteLink: Links.githubNdi,
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
       'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML,CSS, JavaScript, ExpressJS",
@@ -102,7 +102,7 @@ export class ProjectsData {
       title: "CGJ 2023 - Time Mage Tournament",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: "https://doruo.itch.io/time-mage-tournament",
+      websiteLink: Links.timemagetournament,
       description: 'Jeu de tir 2D isométrique réalisé en 24h. '+
       'Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l\'IUT Montpellier-Sête</a>.',
       techs: "LUA, PICO-8",
@@ -114,7 +114,7 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-EscapeGame-MindSpies/page.html",
-      description: 'Escape game de science fiction nommé The Mind Spies.',
+      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: "HTML, CSS",
       tags: ['academic']
     },
@@ -124,48 +124,48 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: "/IUT/A1/SAE-EscapeGame-PostApo/index.html",
-      description: 'Escape game dans un métro post-apocalyptique.',
-      techs: "HTML, CSS",
-      tags: ['academic']
-    },
-    {
-      id: 'fan-site-chuck-norris',
-      title: "Fan-club Chuck Norris",
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: "/IUT/A1/TD_Chuck_Norris/html/index.html",
-      description: '',
+      description: 'Vitrine d\'un escape game dans un métro post-apocalyptique.',
       techs: "HTML, CSS",
       tags: ['academic']
     },
     {
       id: 'mastermind',
-      title: "Jeu du Mastermind",
+      title: "Mastermind",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/mastermind",
-      description: '',
+      websiteLink: Links.githubMastermind,
+      description: 'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur.',
       techs: "Java",
-      tags: ['academic']
+      tags: ['game']
+    },
+    {
+      id: 'sudoku',
+      title: "Sudoku",
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.githubSudoku,
+      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur.',
+      techs: "Java",
+      tags: ['game']
     },
     {
       id: 'marin-ivre',
-      title: "Marin ivre",
+      title: "Le Marin Ivre",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/marinIvre",
-      description: '',
+      websiteLink: Links.githubMarinIvre,
+      description: 'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
       techs: "Java",
-      tags: ['academic']
+      tags: ['game']
     },
     {
       id: 'game-of-life',
       title: "Conway's Game of Life",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/GameOfLife",
-      description: 'Implémentation d\'un jeu de simulation mathématique datant de 1970, avec interface terminal.'+
-      ' C\'est un automate cellulaire utilisé dans la recherche biologique.',
+      websiteLink: Links.githubGol,
+      description: 'Implémentation d\'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.'+
+      ' C\'est un automate cellulaire utilisé dans la recherche biologique pour simuler la vie.',
       techs: "Go, Ebitengine",
       tags: ['main','game']
     },
@@ -174,7 +174,7 @@ export class ProjectsData {
       title: "Falloutdle",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/falloutdle",
+      websiteLink: Links.githubFalloutdle,
       description: 'Jeu web inspiré de Wordle dans l\'univers de Fallout. Devinez un nouveau perso tous les jours.',
       techs: "Go, Web Scraping, API, JSON",
       tags: ['game']
@@ -184,7 +184,7 @@ export class ProjectsData {
       title: "Mesh",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.github+"/Mesh",
+      websiteLink: Links.githubMesh,
       description: 'Lightweight messaging app written in Go, with Peer to Peer networking',
       techs: "Go, Peer2Peer, TCP/IP, DNS",
       tags: ['community']

@@ -32,12 +32,12 @@ defineProps({
       <slot name="description"></slot>
     </p>
     <p>
-      <b>Compétences:</b> <slot name="techs"></slot>
+      <b>Technologies:</b> <slot name="techs"></slot>
     </p>
 
     <div class="projet-liens">
-      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>A Propos</router-link>
-      <a :href="websiteLink">Lien</a>
+      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>À Propos</router-link>
+      <a :href="websiteLink">Voir</a>
     </div>
   </div>
 </template>

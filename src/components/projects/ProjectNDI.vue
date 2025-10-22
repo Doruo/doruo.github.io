@@ -18,6 +18,7 @@ import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
 import SkillJS from '../skills/frontend/SkillJS.vue'
 import SkillNode from '../skills/backend/SkillNode.vue'
 import SkillExpress from '../skills/backend/SkillExpress.vue'
+import LinkGithub from '../links/LinkGithub.vue'
 </script>
 
 <template>
@@ -135,8 +136,8 @@ import SkillExpress from '../skills/backend/SkillExpress.vue'
     </template>
 
     <template #liens>
-      <a href="https://evanattack.fr/feature/nuitInfo.html">Plus d'informations</a>
-      <a href="https://github.com/Doruo/NDI-2024-RaceForWater">Page GitHub</a>
+      <LinkGithub :link=Links.githubNdi />
+      <a href="https://evanattack.fr/feature/nuitInfo.html">Page d'un membre de mon équipe</a>
     </template>
   </ProjectItem>
 </template>

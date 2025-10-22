@@ -22,10 +22,7 @@ import SkillMySql from '../skills/database/SkillMySql.vue'
 import SkillAPI from '../skills/backend/SkillAPI.vue'
 import SkillJSON from '../skills/tools/SkillJSON.vue'
 
-import { ProjectsData } from '@/data/ProjectsData'
-import { Pictures } from '@/data/Pictures'
-
-const project = ProjectsData.getProjectById('elden-build')
+import LinkGithub from '../links/LinkGithub.vue'
 </script>
 
 <template>
@@ -89,13 +86,11 @@ const project = ProjectsData.getProjectById('elden-build')
 
       <SkillAPI description="Norme de communication avec l'API Elden Ring"/>
 
-      <SkillJSON description="Format de données utilisées lors des communications faites à l'API via des requêtes HTTP"/>
+      <SkillJSON description="Format de données utilisées pour les requêtes HTTP faites à l'API"/>
     </template>
 
     <template #assets>
-
       <div class="projet-grid">
-
         <div class="projet-images">
           <a :href=accueil>
             <img alt="eldenbuild_accueil" :src=accueil>
@@ -135,9 +130,8 @@ const project = ProjectsData.getProjectById('elden-build')
     </template>
 
     <template #liens>
-      <a :href=project?.websiteLink>
-        <img alt="GIT" :src=Pictures.GITHUB>
-      </a>
+      <LinkGithub :link=Links.githubEldenbuild />
     </template>
   </ProjectItem>
+
 </template>

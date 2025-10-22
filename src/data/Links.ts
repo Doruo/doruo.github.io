@@ -7,11 +7,27 @@ export class Links {
   static readonly scodoc="https://scodoc.org/"
 
   // Social
-  static readonly mail="mailto:marc.antonio.haye@gmail.com"
   static readonly github="https://github.com/doruo"
+  static readonly mail="mailto:marc.antonio.haye@gmail.com"
   static readonly linkedin="https://www.linkedin.com/in/marc-haye/"
   static readonly gravatar="https://fr.gravatar.com/marcantoniohaye"
   static readonly itchio="https://doruo.itch.io/"
+
+  // Projects
+  static readonly githubPages=this.github+"/doruo.github.io"
+  static readonly githubEldenbuild=this.github+"/EldenBuild"
+  static readonly githubNdi=this.github+"/NDI-2024-RaceForWater"
+  static readonly githubTrains=this.github+"/Trains"
+  static readonly githubMesh=this.github+"/Mesh"
+  static readonly githubMastermind=this.github+"/mastermind"
+  static readonly githubFalloutdle=this.github+"/falloutdle"
+  static readonly githubGol=this.github+"/GameOfLife"
+  static readonly githubMarinIvre=this.github+"/marinIvre"
+  static readonly githubSudoku=this.github+"/Sudoku"
+  static readonly githubJellybot=this.github+"/JellyBot"
+  static readonly githubPoursuiteEtudes=this.github+"/PoursuiteEtudes"
+
+  static readonly timemagetournament=this.itchio+"/time-mage-tournament"
 
   // Dev
   static readonly git="https://git-scm.com/"
@@ -34,9 +50,6 @@ export class Links {
   static readonly vue="https://vuejs.org/"
   static readonly mysql="https://www.mysql.com/fr/"
 
-  // Projects
-  static readonly website="https://github.com/Doruo/doruo.github.io"
-
   // Archives
-  static readonly archives_portfolio='@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf';
+  static readonly archivesPortfolio='@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf';
 }

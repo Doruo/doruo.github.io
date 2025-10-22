@@ -15,6 +15,7 @@ import SkillOOP from '../skills/tools/SkillOOP.vue'
 import SkillJava from '../skills/backend/SkillJava.vue'
 import SkillJavaFX from '../skills/frontend/SkillJavaFX.vue'
 import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
+import LinkGithub from '../links/LinkGithub.vue'
 </script>
 
 <template>
@@ -103,8 +104,8 @@ import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
     </template>
 
     <template #liens>
+      <LinkGithub :link=Links.githubTrains />
       <a :href=regles>Règles du jeu</a>
-      <a href="https://github.com/Doruo/Trains">Page Github</a>
     </template>
   </ProjectItem>
 </template>

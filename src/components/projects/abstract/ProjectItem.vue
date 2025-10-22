@@ -32,6 +32,7 @@
   <section class="contact">
     <!-- PROJECT LINKS -->
     <div class="projet-liens">
+      <h2>Liens</h2>
       <slot name="liens"></slot>
     </div>
   </section>

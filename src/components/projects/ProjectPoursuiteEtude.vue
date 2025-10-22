@@ -21,6 +21,7 @@ import SkillOOP from '../skills/tools/SkillOOP.vue'
 import SkillPostgre from '../skills/database/SkillPostgre.vue'
 import SkillPLSql from '../skills/database/SkillPLSql.vue'
 import SkillChartJS from '../skills/tools/SkillChartJS.vue'
+import LinkGithub from '../links/LinkGithub.vue'
 
 </script>
 
@@ -143,6 +144,7 @@ import SkillChartJS from '../skills/tools/SkillChartJS.vue'
     </template>
 
     <template #liens>
+      <LinkGithub :link=Links.githubPoursuiteEtudes />
       <a href="https://webinfo.iutmontp.univ-montp2.fr/~hayem/web/controleurFrontal.php">Visiter le site</a>
     </template>
   </ProjectItem>
