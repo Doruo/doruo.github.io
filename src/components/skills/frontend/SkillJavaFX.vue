@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.JAVAFX>
+      <a :href=Links.javafx>
         <img alt="JAVAFX" :src=Pictures.JAVAFX>
       </a>
     </template>

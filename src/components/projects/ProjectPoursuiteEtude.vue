@@ -36,7 +36,7 @@ import SkillChartJS from '../skills/tools/SkillChartJS.vue'
     <template #description>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de Montpellier-Sète,
-        le logiciel libre <a :href=Links.SCODOC>Scodoc</a> est utilisé pour gérer les absences et les notes
+        le logiciel libre <a :href=Links.scodoc>Scodoc</a> est utilisé pour gérer les absences et les notes
         des étudiants tout au long de leur scolarité à l’IUT.
       </p>
 
@@ -64,7 +64,7 @@ import SkillChartJS from '../skills/tools/SkillChartJS.vue'
 
       <p>
         Mon rôle fut de concevoir, développer en équipe, et superviser le déroulement du projet, et
-        animer la mêlée (<a :href=Links.SCRUM>Scrum</a>) pour l'équipe dans son ensemble en s'assurant que le framework Scrum est
+        animer la mêlée (<a :href=Links.scrum>Scrum</a>) pour l'équipe dans son ensemble en s'assurant que le framework Scrum est
         respecté.
         Mon travail consistait à aider à devenir autonome grâce à des techniques comme l’auto-organisation et la
         résolution des conflits.

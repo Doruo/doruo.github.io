@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.LDAP>
+      <a :href=Links.ldap>
         <img alt="LDAP" :src=Pictures.LDAP>
       </a>
     </template>

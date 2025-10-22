@@ -36,7 +36,7 @@ export class ProjectsData {
       title: "Jellybot",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/JellyBot",
+      websiteLink: Links.github+"/JellyBot",
       description: 'Bot discord qui notifie le statut d\'un serveur Jellyfin et de ses nouveaux contenus. '+
       '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: "Python, discord.py, Jellyfin API, Discord",
@@ -47,7 +47,7 @@ export class ProjectsData {
       title: "Jeu de plateau Trains",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: Links.GITHUB+"/Trains",
+      websiteLink: Links.github+"/Trains",
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
@@ -80,7 +80,7 @@ export class ProjectsData {
       title: "Elden Build",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: Links.GITHUB+"/EldenBuild",
+      websiteLink: Links.github+"/EldenBuild",
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
@@ -91,7 +91,7 @@ export class ProjectsData {
       title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: Links.GITHUB+"/NDI-2024-RaceForWater",
+      websiteLink: Links.github+"/NDI-2024-RaceForWater",
       description: 'Océan interactif fait à la main décrivant l\'écosystème marin. '+
       'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
       techs: "HTML,CSS, JavaScript, ExpressJS",
@@ -143,7 +143,7 @@ export class ProjectsData {
       title: "Jeu du Mastermind",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/mastermind",
+      websiteLink: Links.github+"/mastermind",
       description: '',
       techs: "Java",
       tags: ['academic']
@@ -153,7 +153,7 @@ export class ProjectsData {
       title: "Marin ivre",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/marinIvre",
+      websiteLink: Links.github+"/marinIvre",
       description: '',
       techs: "Java",
       tags: ['academic']
@@ -163,7 +163,7 @@ export class ProjectsData {
       title: "Conway's Game of Life",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/GameOfLife",
+      websiteLink: Links.github+"/GameOfLife",
       description: 'Implémentation d\'un jeu de simulation mathématique datant de 1970, avec interface terminal.'+
       ' C\'est un automate cellulaire utilisé dans la recherche biologique.',
       techs: "Go, Ebitengine",
@@ -174,7 +174,7 @@ export class ProjectsData {
       title: "Falloutdle",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/falloutdle",
+      websiteLink: Links.github+"/falloutdle",
       description: 'Jeu web inspiré de Wordle dans l\'univers de Fallout. Devinez un nouveau perso tous les jours.',
       techs: "Go, Web Scraping, API, JSON",
       tags: ['game']
@@ -184,7 +184,7 @@ export class ProjectsData {
       title: "Mesh",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB+"/Mesh",
+      websiteLink: Links.github+"/Mesh",
       description: 'Lightweight messaging app written in Go, with Peer to Peer networking',
       techs: "Go, Peer2Peer, TCP/IP, DNS",
       tags: ['community']

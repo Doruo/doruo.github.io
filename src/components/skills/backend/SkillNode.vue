@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.NODE>
+      <a :href=Links.node>
         <img alt="NODE" :src=Pictures.NODE>
       </a>
     </template>

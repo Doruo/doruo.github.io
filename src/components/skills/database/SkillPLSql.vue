@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.PLSQL>
+      <a :href=Links.plsql>
         <img alt="PLSQL" :src=Pictures.PLSQL>
       </a>
     </template>

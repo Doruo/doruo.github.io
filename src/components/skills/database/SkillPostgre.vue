@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.POSTGRE>
+      <a :href=Links.postgre>
         <img alt="POSTGRE" :src=Pictures.POSTGRE>
       </a>
     </template>

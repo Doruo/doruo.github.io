@@ -5,15 +5,11 @@ import { Links } from '@/data/Links';
 
 <template>
   <section>
-    <p>
-    <a href='src/assets/portfolio/HAYE_Q2_Portfolio_BUT_INFO_Annee2.html'>Première version du site</a>
-    </p>
-    <p>
-      <a :href=Links.ARCHIVES_PORTFOLIO>Ancien portfolio</a>
-    </p>
-    <p>
-      <a href='/IUT/A2/DevWebS4/indexDevWebS4.html'>TDs de Développement Web JavaScript</a>
-    </p>
-
+    <ul>
+        <li><a :href=Links.archives_portfolio>Ancien portfolio</a></li>
+        <li><a href='src/assets/portfolio/HAYE_Q2_Portfolio_BUT_INFO_Annee2.html'>Première version du site</a></li>
+        <li><a href='/IUT/A2/DevWebS4/indexDevWebS4.html'>Developpement Web JavaScript</a></li>
+        <li><p>Programmation graphique 3D WebGL et JS (COMING SOON)</p></li>
+      </ul>
   </section>
 </template>

@@ -33,12 +33,12 @@ import SkillExpress from '../skills/backend/SkillExpress.vue'
       <h3>Race For Water</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
-        <a :href=Links.NDI>Nuit de l'Info 2024</a>.
+        <a :href=Links.ndi>Nuit de l'Info 2024</a>.
       </p>
 
       <p>
         Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et
-        le framework <a :href=Links.EXPRESS>Express.js</a>, pour la fondation Race for Water, qui a pour mission de
+        le framework <a :href=Links.express>Express.js</a>, pour la fondation Race for Water, qui a pour mission de
         préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
 
@@ -51,7 +51,7 @@ import SkillExpress from '../skills/backend/SkillExpress.vue'
       </p>
 
       <p>
-        Mon rôle fut de concevoir le router et l'API REST avec <a :href=Links.EXPRESS>Express.js</a>, chargé de récupérer
+        Mon rôle fut de concevoir le router et l'API REST avec <a :href=Links.express>Express.js</a>, chargé de récupérer
         les réquêtes et de renvoyer la page web demandée. J'ai donc dû concevoir
         cela de façon optimisé, en utilisant les différentes notions vus en cours en
         développement web de sorte d'éviter la surcharge de requêtes lorsque l'utilisateur

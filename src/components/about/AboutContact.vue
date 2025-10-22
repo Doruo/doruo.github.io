@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Pictures } from '@/data/Pictures'
 import { Links } from '@/data/Links'
+import LinkMail from '../links/LinkMail.vue';
 </script>
 
 <template>
@@ -13,31 +14,27 @@ import { Links } from '@/data/Links'
 
       <div class="social-links">
 
-        <div class="social-link-img">
-          <a :href=Links.MAIL>
-            <img alt="mail" :src=Pictures.MAIL>
-          </a>
-        </div>
+        <LinkMail :link=Links.mail />
 
         <div class="social-link-img">
-          <a :href=Links.GITHUB>
+          <a :href=Links.github>
             <img alt="github" :src=Pictures.GITHUB>
           </a>
         </div>
 
         <div class="social-link-img">
-          <a :href=Links.LINKEDIN>
+          <a :href=Links.linkedin>
             <img alt="linkedIn" :src=Pictures.LINKEDIN>
           </a>
         </div>
         <div class="social-link-img">
-          <a :href=Links.GRAVATAR>
+          <a :href=Links.gravatar>
             <img alt="gravatar" :src=Pictures.GRAVATAR>
           </a>
         </div>
 
         <div class="social-link-img">
-          <a :href=Links.ITCHIO>
+          <a :href=Links.itchio>
             <img alt="itchio" :src=Pictures.ITCHIO>
           </a>
         </div>

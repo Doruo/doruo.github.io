@@ -22,6 +22,10 @@ import SkillMySql from '../skills/database/SkillMySql.vue'
 import SkillAPI from '../skills/backend/SkillAPI.vue'
 import SkillJSON from '../skills/tools/SkillJSON.vue'
 
+import { ProjectsData } from '@/data/ProjectsData'
+import { Pictures } from '@/data/Pictures'
+
+const project = ProjectsData.getProjectById('elden-build')
 </script>
 
 <template>
@@ -36,7 +40,7 @@ import SkillJSON from '../skills/tools/SkillJSON.vue'
     <template #description>
       <p>
         Site web de gestion de build à but communautaire du jeu
-        <a :href=Links.ELDENRING>Elden Ring</a>.
+        <a :href=Links.eldenring>Elden Ring</a>.
       </p>
       <p>
         Un build est par définition la construction et l'évolution d'un ensemble d'équipement du personnage
@@ -53,7 +57,7 @@ import SkillJSON from '../skills/tools/SkillJSON.vue'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript, les requêtes
         AJAX, l'architecture MVC et ses limites.
-        L'application communique via des requêtes HTTP asynchrones à une<a :href=Links.ELDENRINGAPI>fan API Elden Ring</a>.
+        L'application communique via des requêtes HTTP asynchrones à une<a :href=Links.eldenringapi>fan API Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie serveur avec
@@ -131,7 +135,9 @@ import SkillJSON from '../skills/tools/SkillJSON.vue'
     </template>
 
     <template #liens>
-      <a href="https://github.com/Doruo/EldenBuild">Page GitHub</a>
+      <a :href=project?.websiteLink>
+        <img alt="GIT" :src=Pictures.GITHUB>
+      </a>
     </template>
   </ProjectItem>
 </template>

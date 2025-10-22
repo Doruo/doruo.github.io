@@ -13,7 +13,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a :href=Links.MYSQL>
+      <a :href=Links.mysql>
         <img alt="MYSQL" :src=Pictures.MYSQL>
       </a>
     </template>
