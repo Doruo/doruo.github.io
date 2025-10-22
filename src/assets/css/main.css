@@ -138,6 +138,10 @@ section{
   border: 1px solid var(--border-color);
 }
 
+.projet-card h1{
+  color: var(--h1-color);
+}
+
 .projet-card p{
   text-align: center;
 }
