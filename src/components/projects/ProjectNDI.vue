@@ -19,10 +19,10 @@ import SkillJS from '../skills/frontend/SkillJS.vue'
 import SkillNode from '../skills/backend/SkillNode.vue'
 import SkillExpress from '../skills/backend/SkillExpress.vue'
 import LinkGithub from '../links/LinkGithub.vue'
+import SkillGit from '../skills/tools/SkillGit.vue'
 </script>
 
 <template>
-
   <ProjectItem>
     <template #logo_projet>
       <img alt="ndi2024" :src=logoNDI>
@@ -36,13 +36,11 @@ import LinkGithub from '../links/LinkGithub.vue'
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href=Links.ndi>Nuit de l'Info 2024</a>.
       </p>
-
       <p>
         Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et
         le framework <a :href=Links.express>Express.js</a>, pour la fondation Race for Water, qui a pour mission de
         préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
-
       <p>
         Le concept de l'application est un océan navigable, similaire au
         fonctionnement de Google Maps, dans laquelle se trouve différents organes interactifs qu'il faut
@@ -50,7 +48,6 @@ import LinkGithub from '../links/LinkGithub.vue'
         Notre objectif était de sensibiliser sur l'état actuel des océans et leurs lien méconnu et
         particulier avec notre corps humain.
       </p>
-
       <p>
         Mon rôle fut de concevoir le router et l'API REST avec <a :href=Links.express>Express.js</a>, chargé de récupérer
         les réquêtes et de renvoyer la page web demandée. J'ai donc dû concevoir
@@ -62,15 +59,10 @@ import LinkGithub from '../links/LinkGithub.vue'
 
     <template #abilities>
       <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
-
       <SkillHTML description="Redaction des articles"/>
-
       <SkillBootstrap description="Mise en page visuelle des articles"/>
-
       <SkillJS description="Implémentation de l'océan naviguable"/>
-
       <SkillNode description="Réalisation du serveur HTTP"/>
-
       <SkillExpress description="Routage et gestion des dépendances de l'API"/>
     </template>
 
