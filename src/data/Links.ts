@@ -50,7 +50,4 @@ export class Links {
   static readonly scenebuilder="https://gluonhq.com/products/scene-builder/"
   static readonly vue="https://vuejs.org/"
   static readonly mysql="https://www.mysql.com/fr/"
-
-  // Archives
-  static readonly archivesPortfolio='@/assets/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf';
 }
