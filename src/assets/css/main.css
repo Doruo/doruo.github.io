@@ -38,13 +38,14 @@ p:not(.branding p):not(footer .conteneur p){
 
 h2 {
   margin-bottom: 1.5rem;
-  color: var(--primary-color);
+  color: var(--h2-color);
 }
 
 h3{
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  color: var(--h3-color);
 }
 
 /* BRANDING ENTETE */
@@ -129,12 +130,12 @@ section{
 
 .projet-card, .projet-images, .competence-card, .erreur {
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 20px var(--box-shadow-color);
   padding: 1.5rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--border-color);
 }
 
 .projet-card p{
@@ -153,15 +154,14 @@ section{
 
 .projet-card:hover, .projet-images:hover{
   transform: scale(1.04);
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.329);
+  box-shadow: 10px 5px 5px var(--box-shadow-color);
 }
 
 .projet-card a img:hover,  .social-link-img:hover{
-  transform: scale(1.3);
+  transform: scale(1.04);
 }
 
 .projet-liens a{
-
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 600;
@@ -190,7 +190,7 @@ section{
 /* LINK */
 
 a, .projet-liens a{
-  color: rgb(78, 121, 134);
+  color: var(--primary-link-color);
   text-decoration: none;
 }
 

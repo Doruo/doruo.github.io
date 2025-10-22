@@ -3,13 +3,17 @@
 /* VARS */
 
 :root {
-  --primary-bg-color: #f1f1f1;
-  --primary-color: #34495E;
-
-  --primary-text-color: #505354;
+  --primary-bg-color: rgb(35, 38, 39);
+  --primary-headers-color: #2a3a4b;
+  --primary-text-color: rgb(232, 230, 227);
+  --primary-link-color:rgb(160, 183, 190);
   --primary-hover-color: #aaa;
-
   --main-font-family: 'Arial';
+  --h2-color: #a6bcce;
+  --h3-color:#e8e6e3;
+
+  --border-color: #eaeaea;
+  --box-shadow-color: rgba(0,0,0,0.08);
 }
 
 /* STRUCTURE */
@@ -29,7 +33,7 @@ body {
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--primary-color);
+  background-color: var(--primary-headers-color);
   color: var(--primary-text-color);
   padding: 10px 0;
   z-index: 100;
@@ -45,7 +49,7 @@ footer {
 
   font-size: 0.8rem;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--primary-headers-color);
   color: var(--primary-font-color);
 }
 
