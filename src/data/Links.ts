@@ -13,7 +13,7 @@ export class Links {
   static readonly gravatar="https://fr.gravatar.com/marcantoniohaye"
   static readonly itchio="https://doruo.itch.io/"
 
-  // Projects
+  // Github projects
   static readonly githubPages=this.github+"/doruo.github.io"
   static readonly githubEldenbuild=this.github+"/EldenBuild"
   static readonly githubNdi=this.github+"/NDI-2024-RaceForWater"
@@ -27,6 +27,7 @@ export class Links {
   static readonly githubJellybot=this.github+"/JellyBot"
   static readonly githubPoursuiteEtudes=this.github+"/PoursuiteEtudes"
 
+  // Other projects
   static readonly timemagetournament=this.itchio+"/time-mage-tournament"
 
   // Dev
