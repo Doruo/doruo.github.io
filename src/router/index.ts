@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 import ViewProjects from '@/views/ViewProjects.vue'
 import ProjectEldenBuild from '@/components/projects/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/ProjectNDI.vue'
@@ -10,7 +10,7 @@ import ViewAbout from '@/views/ViewAbout.vue';
 import ViewArchives from '@/views/ViewArchives.vue';
 
 const routes = [
-  // main
+  // views
   {
     path: '/',
     name: 'home',
@@ -52,7 +52,7 @@ const routes = [
     name: 'projects-ndi2024',
     component: ProjectNDI,
   },
-  // route catch-all pour les 404
+  // error
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
@@ -63,31 +63,24 @@ const routes = [
 
 const router = createRouter({
 
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 
   // hook handling
-  scrollBehavior(to, from, savedPosition) {
-
-    // if previous/next used
-    if (savedPosition) {
-      return savedPosition
-    }
-
+  scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
         behavior: 'smooth',
       }
     }
-    // return at the top
     return { top: 0 }
   }
 })
 
 // error handling
 router.onError((error) => {
-  console.error('Erreur de navigation:', error)
+  console.error('Error:', error)
   router.push({ name: 'Error', params: { error: error.message } })
 })
 
