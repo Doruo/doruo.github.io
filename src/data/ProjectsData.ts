@@ -28,7 +28,7 @@ export class ProjectsData {
       moreInfoLink: { name: 'projects-poursuite-etude' },
       websiteLink: Links.githubPoursuiteEtudes,
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
-      techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
+      techs: "PHP, JavaScript, PL/SQL, ChartJS, LDAP",
       tags: ['main','academic']
     },
     {
@@ -50,7 +50,7 @@ export class ProjectsData {
       websiteLink: Links.githubTrains,
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
-      techs: "POO, Java, JavaFX",
+      techs: "Java, JavaFX",
       tags: ['game','academic']
     },
     {

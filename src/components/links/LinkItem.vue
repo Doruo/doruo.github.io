@@ -14,7 +14,7 @@ defineProps({
 <template>
   <!--LINK-->
   <div class="social-link-img">
-    <a :href="link">
+    <a :href="link" target="blank">
       <img alt="mail" :src="img">
     </a>
   </div>

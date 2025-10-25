@@ -1,7 +1,10 @@
 <script setup lang="ts">
-  import cv_path from '/CV/CV-MARC-HAYE.pdf';
+  import LinkItem from '../links/LinkItem.vue';
+import img from '/CV/CV-MARC-HAYE.pdf';
 </script>
 
 <template>
-    <h1><a :href="cv_path" target="_blank">Téléchargez mon CV</a></h1>
+    <h1>
+      <LinkItem :link="img" :img=img />
+    </h1>
 </template>

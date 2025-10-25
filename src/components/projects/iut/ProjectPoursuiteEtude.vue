@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
-import logoIUT from '@/assets/images/projets/IUT/logoIUT.webp'
-import accueil from '@/assets/images/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
-import agregation from '@/assets/images/projets/poursuiteEtude/poursuite_etude_agregation.webp'
-import connexion from '@/assets/images/projets/poursuiteEtude/poursuite_etude_connexion.webp'
-import csv from '@/assets/images/projets/poursuiteEtude/poursuite_etude_csv.webp'
-import diagramme from '@/assets/images/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
-import notes from '@/assets/images/projets/poursuiteEtude/poursuite_etude_notes.webp'
+import logoIUT from '@/assets/img/projets/IUT/logoIUT.webp'
+import accueil from '@/assets/img/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
+import agregation from '@/assets/img/projets/poursuiteEtude/poursuite_etude_agregation.webp'
+import connexion from '@/assets/img/projets/poursuiteEtude/poursuite_etude_connexion.webp'
+import csv from '@/assets/img/projets/poursuiteEtude/poursuite_etude_csv.webp'
+import diagramme from '@/assets/img/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
+import notes from '@/assets/img/projets/poursuiteEtude/poursuite_etude_notes.webp'
+import sujet from '@/assets/pdf/lancement_SAE3A_poursuiteEtudes.pdf'
 
 import { Links } from '@/data/Links'
 import SkillGit from '@/components/skills/tools/SkillGit.vue'
@@ -140,6 +141,7 @@ import { Pictures } from '@/data/Pictures'
 
     <template #liens>
       <LinkItem :link=Links.githubPoursuiteEtudes :img=Pictures.GITHUB />
+      <a :href=sujet target="blank">Sujet du projet</a>
     </template>
   </ProjectItem>
 </template>

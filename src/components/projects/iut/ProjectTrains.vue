@@ -2,13 +2,13 @@
 
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
-import logoTrains from '@/assets/images/projets/trains/logoTrains.webp'
-import regles from '@/assets/portfolio/trains/regles.pdf'
+import logoTrains from '@/assets/img/projets/trains/logoTrains.webp'
+import regles from '@/assets/pdf/regles.pdf'
 
-import init from '@/assets/images/projets/trains/trains_initialisation.webp'
-import partie1 from '@/assets/images/projets/trains/trains_partie1.webp'
-import partie2 from '@/assets/images/projets/trains/trains_partie2.webp'
-import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
+import init from '@/assets/img/projets/trains/trains_initialisation.webp'
+import partie1 from '@/assets/img/projets/trains/trains_partie1.webp'
+import partie2 from '@/assets/img/projets/trains/trains_partie2.webp'
+import partie3 from '@/assets/img/projets/trains/trains_partie2.webp'
 
 import { Links } from '@/data/Links'
 import SkillJava from '@/components/skills/backend/SkillJava.vue'
@@ -103,7 +103,7 @@ import { Pictures } from '@/data/Pictures'
 
     <template #liens>
       <LinkItem :link=Links.githubTrains :img=Pictures.GITHUB />
-      <a :href=regles>Règles du jeu</a>
+      <a :href=regles target="blank">Règles du jeu</a>
     </template>
   </ProjectItem>
 </template>

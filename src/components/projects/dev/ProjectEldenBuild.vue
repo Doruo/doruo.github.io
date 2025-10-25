@@ -10,13 +10,13 @@ import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
 import SkillJS from '@/components/skills/frontend/SkillJS.vue'
 import SkillMySql from '@/components/skills/database/SkillMySql.vue'
 import SkillAPI from '@/components/skills/backend/SkillAPI.vue'
-import ranni from '@/assets/images/projets/eldenbuild/eldenring_ranni.webp'
-import accueil from '@/assets/images/projets/eldenbuild/eldenbuild_accueil.webp'
-import build from '@/assets/images/projets/eldenbuild/eldenbuild_build.webp'
-import equipement from '@/assets/images/projets/eldenbuild/eldenbuild_getEquipement.webp'
-import profile from '@/assets/images/projets/eldenbuild/eldenbuild_profile.webp'
-import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscription.webp'
-import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
+import ranni from '@/assets/img//projets/eldenbuild/eldenring_ranni.webp'
+import accueil from '@/assets/img//projets/eldenbuild/eldenbuild_accueil.webp'
+import build from '@/assets/img//projets/eldenbuild/eldenbuild_build.webp'
+import equipement from '@/assets/img//projets/eldenbuild/eldenbuild_getEquipement.webp'
+import profile from '@/assets/img//projets/eldenbuild/eldenbuild_profile.webp'
+import inscription from '@/assets/img//projets/eldenbuild/eldenbuild_inscription.webp'
+import testAPI from '@/assets/img//projets/eldenbuild/eldenbuild_testapi.webp'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 </script>
@@ -81,37 +81,37 @@ import { Pictures } from '@/data/Pictures'
 
     <template #assets>
       <div class="projet-grid">
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=accueil>
             <img alt="eldenbuild_accueil" :src=accueil>
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=inscription>
             <img alt="eldenbuild_inscription" :src=inscription>
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=build>
             <img alt="eldenbuild_build" :src=build>
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=testAPI>
             <img alt="eldenbuild_testapi" :src=testAPI>
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=profile>
             <img alt="eldenbuild_profile" :src=profile>
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="projet-img/">
           <a :href=equipement>
             <img alt="eldenbuild_getEquipement" :src=equipement>
           </a>

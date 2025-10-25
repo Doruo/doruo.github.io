@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import portrait from '@/assets/images/portrait/portrait.webp';
+  import portrait from '@/assets/img/portrait/portrait.webp';
 </script>
 
 <template>
