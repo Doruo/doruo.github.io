@@ -11,15 +11,6 @@ import notes from '@/assets/img/projets/poursuiteEtude/poursuite_etude_notes.web
 import sujet from '@/assets/pdf/lancement_SAE3A_poursuiteEtudes.pdf'
 
 import { Links } from '@/data/Links'
-import SkillGit from '@/components/skills/tools/SkillGit.vue'
-import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
-import SkillLDAP from '@/components/skills/backend/SkillLDAP.vue'
-import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
-import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
-import SkillPostgre from '@/components/skills/database/SkillPostgre.vue'
-import SkillPLSql from '@/components/skills/database/SkillPLSql.vue'
-import SkillChartJS from '@/components/skills/tools/SkillChartJS.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 
@@ -78,23 +69,21 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
-      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
+      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
 
-      <SkillDocker description="Aide au deploiement de l'application"/>
+      <SkillItem :img="Pictures.DOCKER" :link="Links.docker" description="Aide au deploiement de l'application"/>
 
-      <SkillLDAP description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"/>
+      <SkillItem :img="Pictures.LDAP" :link="Links.ldap" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"/>
 
-      <SkillPHP description="Développement coté serveur de l'application"/>
+      <SkillItem :img="Pictures.PHP" :link="Links.php" description="Développement coté serveur de l'application"/>
 
-      <SkillHTML description="Développement de l'interface utilisateur"/>
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.bootstrap" description="Mise en page de l'interface visuelle"/>
 
-      <SkillBootstrap description="Mise en page de l'interface visuelle"/>
+      <SkillItem :img="Pictures.POSTGRE" :link="Links.postgre" description="Base de donnée de l'application"/>
 
-      <SkillPostgre description="Réalisation de la base de donnée de l'application"/>
+      <SkillItem :img="Pictures.PLSQL" :link="Links.plsql" description="Fonctions et triggers dynamiques dans la base de donnée"/>
 
-      <SkillPLSql description="Fonctions et triggers dynamiques dans la base de donnée"/>
-
-      <SkillChartJS description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants"/>
+      <SkillItem :img="Pictures.CHARTJS" :link="Links.chartjs" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants"/>
     </template>
 
     <template #assets>

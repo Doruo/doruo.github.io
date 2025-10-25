@@ -13,12 +13,6 @@ import photo5 from '@/assets/img/projets/ndi2024/ndi_photo5.webp'
 import photo6 from '@/assets/img/projets/ndi2024/ndi_photo6.webp'
 
 import { Links } from '@/data/Links'
-import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
-import SkillJS from '@/components/skills/frontend/SkillJS.vue'
-import SkillNode from '@/components/skills/backend/SkillNode.vue'
-import SkillExpress from '@/components/skills/backend/SkillExpress.vue'
-import SkillGit from '@/components/skills/tools/SkillGit.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 </script>
@@ -60,13 +54,12 @@ import { Pictures } from '@/data/Pictures'
 
     <template #abilities>
 
-      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
-
-      <SkillHTML description="Redaction des articles"/>
-      <SkillBootstrap description="Mise en page visuelle des articles"/>
-      <SkillJS description="Implémentation de l'océan naviguable"/>
-      <SkillNode description="Réalisation du serveur HTTP"/>
-      <SkillExpress description="Routage et gestion des dépendances de l'API"/>
+      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
+      <SkillItem :img="Pictures.HTML" :link="Links.html" description="Redaction des articles"/>
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.bootstrap" description="Mise en page visuelle des articles"/>
+      <SkillItem :img="Pictures.JS" :link="Links.js" description="Implémentation de l'océan naviguable"/>
+      <SkillItem :img="Pictures.NODE" :link="Links.node" description="Réalisation du serveur HTTP"/>
+      <SkillItem :img="Pictures.EXPRESS" :link="Links.express" description="Routage et gestion des dépendances de l'API"/>
     </template>
 
     <template #assets>

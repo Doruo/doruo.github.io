@@ -2,14 +2,6 @@
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import { Links } from '@/data/Links'
-import SkillGit from '@/components/skills/tools/SkillGit.vue'
-import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
-import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
-import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
-import SkillJS from '@/components/skills/frontend/SkillJS.vue'
-import SkillMySql from '@/components/skills/database/SkillMySql.vue'
-import SkillAPI from '@/components/skills/backend/SkillAPI.vue'
 
 import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import accueil from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
@@ -21,6 +13,7 @@ import inscription from '@/assets/img/projets/eldenbuild/eldenbuild_inscription.
 import testAPI from '@/assets/img/projets/eldenbuild/eldenbuild_testapi.webp'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
+import SkillItem from '@/components/skills/SkillItem.vue'
 </script>
 
 <template>
@@ -66,21 +59,21 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
-      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
 
-      <SkillPHP description="Développement coté serveur de l'application" />
+      <SkillItem :img="Pictures.PHP" :link="Links.php" description="Développement coté serveur de l'application" />
 
-      <SkillDocker description="Aide au déploiement de l'application" />
+      <SkillItem :img="Pictures.DOCKER" :link="Links.docker" description="Aide au déploiement de l'application" />
 
-      <SkillHTML description="Développement de l'interface utilisateur" />
+      <SkillItem :img="Pictures.HTML" :link="Links.html" description="Développement de l'interface utilisateur" />
 
-      <SkillBootstrap description="Mise en page responsive de l'interface graphique de l'application" />
+      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Mise en page responsive de l'interface graphique de l'application" />
 
-      <SkillJS description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
+      <SkillItem :img="Pictures.JS" :link="Links.js" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
 
-      <SkillMySql description="Déploiement de la base de donnée sécurisée" />
-
-      <SkillAPI description="Norme de communication avec l'API Elden Ring" />
+      <SkillItem :img="Pictures.MYSQL" :link="Links.mysql" description="Déploiement de la base de donnée sécurisée" />
+a" 
+      <SkillItem :img="Pictures.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>

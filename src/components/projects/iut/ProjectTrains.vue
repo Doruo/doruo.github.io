@@ -11,9 +11,6 @@ import partie2 from '@/assets/img/projets/trains/trains_partie2.webp'
 import partie3 from '@/assets/img/projets/trains/trains_partie2.webp'
 
 import { Links } from '@/data/Links'
-import SkillJava from '@/components/skills/backend/SkillJava.vue'
-import SkillJavaFX from '@/components/skills/frontend/SkillJavaFX.vue'
-import SkillSceneBuilder from '@/components/skills/tools/SkillSceneBuilder.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 </script>
@@ -68,11 +65,11 @@ import { Pictures } from '@/data/Pictures'
     </template>
 
     <template #abilities>
-      <SkillJava description="Implémentation de la logique du jeu"/>
+      <SkillItem :img="Pictures.JAVA" :link="Links.java" description="Implémentation de la logique du jeu"/>
 
-      <SkillJavaFX description="Réalisation de l'interface graphique"/>
+      <SkillItem :img="Pictures.JAVAFX" :link="Links.javafx" description="Réalisation de l'interface graphique"/>
 
-      <SkillSceneBuilder description="Aide à la réalisation de l'interface graphique"/>
+      <SkillItem :img="Pictures.SCENEBUILDER" :link="Links.scenebuilder" description="Aide à la réalisation de l'interface graphique"/>
     </template>
 
     <template #assets>
