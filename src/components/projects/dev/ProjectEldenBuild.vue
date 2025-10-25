@@ -10,13 +10,15 @@ import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
 import SkillJS from '@/components/skills/frontend/SkillJS.vue'
 import SkillMySql from '@/components/skills/database/SkillMySql.vue'
 import SkillAPI from '@/components/skills/backend/SkillAPI.vue'
-import ranni from '@/assets/img//projets/eldenbuild/eldenring_ranni.webp'
-import accueil from '@/assets/img//projets/eldenbuild/eldenbuild_accueil.webp'
-import build from '@/assets/img//projets/eldenbuild/eldenbuild_build.webp'
-import equipement from '@/assets/img//projets/eldenbuild/eldenbuild_getEquipement.webp'
-import profile from '@/assets/img//projets/eldenbuild/eldenbuild_profile.webp'
-import inscription from '@/assets/img//projets/eldenbuild/eldenbuild_inscription.webp'
-import testAPI from '@/assets/img//projets/eldenbuild/eldenbuild_testapi.webp'
+
+import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
+import accueil from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
+import build from '@/assets/img/projets/eldenbuild/eldenbuild_build.webp'
+import equipement from '@/assets/img/projets/eldenbuild/eldenbuild_getEquipement.webp'
+import profile from '@/assets/img/projets/eldenbuild/eldenbuild_profile.webp'
+import inscription from '@/assets/img/projets/eldenbuild/eldenbuild_inscription.webp'
+
+import testAPI from '@/assets/img/projets/eldenbuild/eldenbuild_testapi.webp'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 </script>
@@ -50,75 +52,76 @@ import { Pictures } from '@/data/Pictures'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript, les requêtes
         AJAX, l'architecture MVC et ses limites.
-        L'application communique via des requêtes HTTP asynchrones à une<a :href=Links.eldenringapi>fan API Elden Ring</a>.
+        L'application communique via des requêtes HTTP asynchrones à une<a :href=Links.eldenringapi>fan API Elden
+          Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie serveur avec
         Node.JS,
-        ce qui facilitera l'amélioration du projet, l'optimisation de l'asynchronisme des requêtes, optimisera et améliorera son utilisation.
+        ce qui facilitera l'amélioration du projet, l'optimisation de l'asynchronisme des requêtes, optimisera et
+        améliorera son utilisation.
         Ce dernier pourrait également utiliser un système de forum en ligne où chacun pourrait débattre sur des
         sujets au thème du jeu.
       </p>
     </template>
 
     <template #abilities>
-      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
+      <SkillGit description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
 
-      <SkillPHP description="Développement coté serveur de l'application"/>
+      <SkillPHP description="Développement coté serveur de l'application" />
 
-      <SkillDocker description="Aide au déploiement de l'application"/>
+      <SkillDocker description="Aide au déploiement de l'application" />
 
-      <SkillHTML description="Développement de l'interface utilisateur"/>
+      <SkillHTML description="Développement de l'interface utilisateur" />
 
-      <SkillBootstrap description="Mise en page responsive de l'interface graphique de l'application"/>
+      <SkillBootstrap description="Mise en page responsive de l'interface graphique de l'application" />
 
-      <SkillJS description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones"/>
+      <SkillJS description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
 
-      <SkillMySql description="Déploiement de la base de donnée sécurisée"/>
+      <SkillMySql description="Déploiement de la base de donnée sécurisée" />
 
-      <SkillAPI description="Norme de communication avec l'API Elden Ring"/>
+      <SkillAPI description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>
       <div class="projet-grid">
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=accueil>
             <img alt="eldenbuild_accueil" :src=accueil>
           </a>
         </div>
 
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=inscription>
             <img alt="eldenbuild_inscription" :src=inscription>
           </a>
         </div>
 
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=build>
             <img alt="eldenbuild_build" :src=build>
           </a>
         </div>
 
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=testAPI>
             <img alt="eldenbuild_testapi" :src=testAPI>
           </a>
         </div>
 
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=profile>
             <img alt="eldenbuild_profile" :src=profile>
           </a>
         </div>
 
-        <div class="projet-img/">
+        <div class="projet-images">
           <a :href=equipement>
             <img alt="eldenbuild_getEquipement" :src=equipement>
           </a>
         </div>
       </div>
     </template>
-
     <template #liens>
       <LinkItem :link=Links.githubEldenbuild :img=Pictures.GITHUB />
     </template>
