@@ -125,9 +125,20 @@ section{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* ERROR */
+
+.error{
+  margin:19%;
+  text-align: center;
+}
+
+.error h1 {
+  color: var(--primary-text-color);
+}
+
 /* --------- */
 
-.projet-card, .projet-images, .competence-card, .erreur {
+.projet-card, .projet-images, .competence-card, .error {
   border-radius: 15px;
   box-shadow: 0 10px 20px var(--box-shadow-color);
   padding: 1.5rem;
@@ -197,7 +208,7 @@ a, .projet-liens a{
   text-decoration: none;
 }
 
-a:hover, .branding h1 a:hover{
+* a:hover, .branding h1 a:hover{
   color: var(--primary-hover-color);
   transition:
     all 0.3s ease-out,

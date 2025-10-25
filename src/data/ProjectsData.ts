@@ -51,7 +51,7 @@ export class ProjectsData {
       description: 'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>'+
       'Trains d\'Hisashi Hayashi</a>, jouable jusqu\'à 4 joueurs.',
       techs: "POO, Java, JavaFX",
-      tags: ['main','game','academic']
+      tags: ['game','academic']
     },
     {
       id: 'stage-itesoft',
@@ -84,7 +84,7 @@ export class ProjectsData {
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, '+
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
       techs: "PHP, JavaScript, HTML, CSS, JSON",
-      tags: ['community']
+      tags: ['main','community']
     },
     {
       id: 'ndi-2024',
@@ -174,7 +174,7 @@ export class ProjectsData {
       title: "Falloutdle",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubFalloutdle,
+      websiteLink: Links.falloutdle,
       description: 'Jeu web inspiré de Wordle dans l\'univers de Fallout. Devinez un nouveau perso tous les jours.',
       techs: "Go, Web Scraping, API, JSON",
       tags: ['game']

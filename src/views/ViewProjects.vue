@@ -5,29 +5,9 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
 
 <template>
   <!-- VIEW PROJECTS -->
-  <!-- MAIN PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getMainProjectsCategory().title
-    :projectsCategory=ProjectsData.getMainProjectsCategory()
-  />
-  <!-- ACADEMIC PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getAcademicProjectsCategory().title
-    :projectsCategory=ProjectsData.getAcademicProjectsCategory()
-  />
-  <!-- GAME PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getGameDevProjectsCategory().title
-    :projectsCategory=ProjectsData.getGameDevProjectsCategory()
-  />
-  <!-- COMMUNITY PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getCommunityProjectsCategory().title
-    :projectsCategory=ProjectsData.getCommunityProjectsCategory()
-  />
-  <!-- COMPETITIONS PROJECTS -->
-  <ProjectCards
-    :title=ProjectsData.getCompetitionProjectsCategory().title
-    :projectsCategory=ProjectsData.getCompetitionProjectsCategory()
-  />
+  <ProjectCards :title=ProjectsData.getMainProjectsCategory().title :projectsCategory=ProjectsData.getMainProjectsCategory() />
+  <ProjectCards :title=ProjectsData.getAcademicProjectsCategory().title :projectsCategory=ProjectsData.getAcademicProjectsCategory() />
+  <ProjectCards :title=ProjectsData.getGameDevProjectsCategory().title :projectsCategory=ProjectsData.getGameDevProjectsCategory() />
+  <ProjectCards :title=ProjectsData.getCommunityProjectsCategory().title :projectsCategory=ProjectsData.getCommunityProjectsCategory() />
+  <ProjectCards :title=ProjectsData.getCompetitionProjectsCategory().title :projectsCategory=ProjectsData.getCompetitionProjectsCategory() />
 </template>
