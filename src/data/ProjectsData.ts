@@ -174,7 +174,7 @@ export class ProjectsData {
       title: "Falloutdle",
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.falloutdle,
+      websiteLink: Links.githubFalloutdle,
       description: 'Jeu web inspiré de Wordle dans l\'univers de Fallout. Devinez un nouveau perso tous les jours.',
       techs: "Go, Web Scraping, API, JSON",
       tags: ['game']
