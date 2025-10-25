@@ -21,7 +21,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi2024" :src=logoNDI>
+      <img alt="ndi2024" :src="logoNDI" />
     </template>
 
     <template #title>NUIT DE L'INFO 2024</template>
@@ -30,102 +30,118 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <h3>Race For Water</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
-        <a :href=Links.ndi>Nuit de l'Info 2024</a>.
+        <a :href="Links.ndi">Nuit de l'Info 2024</a>.
       </p>
       <p>
-        Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et
-        le framework <a :href=Links.express>Express.js</a>, pour la fondation Race for Water, qui a pour mission de
-        préserver l'eau et les océans, en particulier face à la pollution plastique.
+        Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et le
+        framework <a :href="Links.express">Express.js</a>, pour la fondation Race for Water, qui a
+        pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
       <p>
-        Le concept de l'application est un océan navigable, similaire au
-        fonctionnement de Google Maps, dans laquelle se trouve différents organes interactifs qu'il faut
-        trouver.
-        Notre objectif était de sensibiliser sur l'état actuel des océans et leurs lien méconnu et
+        Le concept de l'application est un océan navigable, similaire au fonctionnement de Google
+        Maps, dans laquelle se trouve différents organes interactifs qu'il faut trouver. Notre
+        objectif était de sensibiliser sur l'état actuel des océans et leurs lien méconnu et
         particulier avec notre corps humain.
       </p>
       <p>
-        Mon rôle fut de concevoir le router et l'API REST avec <a :href=Links.express>Express.js</a>, chargé de récupérer
-        les réquêtes et de renvoyer la page web demandée. J'ai donc dû concevoir
-        cela de façon optimisé, en utilisant les différentes notions vus en cours en
-        développement web de sorte d'éviter la surcharge de requêtes lorsque l'utilisateur
-        souhaite accéder aux différentes pages lorsqu'il clique sur les différents organes.
+        Mon rôle fut de concevoir le router et l'API REST avec
+        <a :href="Links.express">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
+        page web demandée. J'ai donc dû concevoir cela de façon optimisé, en utilisant les
+        différentes notions vus en cours en développement web de sorte d'éviter la surcharge de
+        requêtes lorsque l'utilisateur souhaite accéder aux différentes pages lorsqu'il clique sur
+        les différents organes.
       </p>
     </template>
 
     <template #abilities>
-
-      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Versioning (gestion des versions) du projet, et collaboration en équipe"/>
-      <SkillItem :img="Pictures.HTML" :link="Links.html" description="Redaction des articles"/>
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.bootstrap" description="Mise en page visuelle des articles"/>
-      <SkillItem :img="Pictures.JS" :link="Links.js" description="Implémentation de l'océan naviguable"/>
-      <SkillItem :img="Pictures.NODE" :link="Links.node" description="Réalisation du serveur HTTP"/>
-      <SkillItem :img="Pictures.EXPRESS" :link="Links.express" description="Routage et gestion des dépendances de l'API"/>
+      <SkillItem
+        :img="Pictures.GIT"
+        :link="Links.git"
+        description="Versioning (gestion des versions) du projet, et collaboration en équipe"
+      />
+      <SkillItem :img="Pictures.HTML" :link="Links.html" description="Redaction des articles" />
+      <SkillItem
+        :img="Pictures.BOOTSTRAP"
+        :link="Links.bootstrap"
+        description="Mise en page visuelle des articles"
+      />
+      <SkillItem
+        :img="Pictures.JS"
+        :link="Links.js"
+        description="Implémentation de l'océan naviguable"
+      />
+      <SkillItem
+        :img="Pictures.NODE"
+        :link="Links.node"
+        description="Réalisation du serveur HTTP"
+      />
+      <SkillItem
+        :img="Pictures.EXPRESS"
+        :link="Links.express"
+        description="Routage et gestion des dépendances de l'API"
+      />
     </template>
 
     <template #assets>
-
       <div class="projet-grid">
-
         <div class="projet-images">
-          <a :href=ocean>
-            <img alt="ndi_ocean" :src=ocean>
+          <a :href="ocean">
+            <img alt="ndi_ocean" :src="ocean" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=page>
-            <img alt="ndi_page" :src=page>
+          <a :href="page">
+            <img alt="ndi_page" :src="page" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photoGroupe>
-            <img alt="ndi_photo_groupe" :src=photoGroupe>
+          <a :href="photoGroupe">
+            <img alt="ndi_photo_groupe" :src="photoGroupe" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photo1>
-            <img alt="ndi_photo1" :src=photo1>
+          <a :href="photo1">
+            <img alt="ndi_photo1" :src="photo1" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photo2>
-            <img alt="ndi_photo2" :src=photo2>
-          </a>
-        </div>
-
-
-        <div class="projet-images">
-          <a :href=photo3>
-            <img alt="ndi_photo3" :src=photo3>
+          <a :href="photo2">
+            <img alt="ndi_photo2" :src="photo2" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photo4>
-            <img alt="ndi_photo4" :src=photo4>
+          <a :href="photo3">
+            <img alt="ndi_photo3" :src="photo3" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photo5>
-            <img alt="ndi_photo5" :src=photo5>
+          <a :href="photo4">
+            <img alt="ndi_photo4" :src="photo4" />
           </a>
         </div>
 
         <div class="projet-images">
-          <a :href=photo6>
-            <img alt="ndi_photo6" :src=photo6>
+          <a :href="photo5">
+            <img alt="ndi_photo5" :src="photo5" />
+          </a>
+        </div>
+
+        <div class="projet-images">
+          <a :href="photo6">
+            <img alt="ndi_photo6" :src="photo6" />
           </a>
         </div>
       </div>
     </template>
 
     <template #liens>
-      <LinkItem :link=Links.githubNdi :img=Pictures.GITHUB />
+      <LinkItem :link="Links.githubNdi" :img="Pictures.GITHUB" />
     </template>
   </ProjectItem>
 </template>

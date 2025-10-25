@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <!--HEADER-->
@@ -21,6 +20,3 @@
   </header>
 </template>
 
-<style scoped>
-
-</style>

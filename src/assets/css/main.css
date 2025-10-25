@@ -1,6 +1,6 @@
 @import './base.css';
 
-#titre{
+#titre {
   font-size: 200%;
 }
 
@@ -27,12 +27,12 @@
 
 /* TEXTES */
 
-p:not(.branding p):not(footer .conteneur p){
+p:not(.branding p):not(footer .conteneur p) {
   color: var(--primary-text-color);
   margin-bottom: 1rem;
 }
 
-.contenu-intro p{
+.contenu-intro p {
   text-align: justify;
 }
 
@@ -41,7 +41,7 @@ h2 {
   color: var(--h2-color);
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
@@ -57,20 +57,20 @@ h3{
 .branding p {
   margin: 0;
   font-size: 0.9em;
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 .branding h4 {
-  color:#eaeaea
+  color: #eaeaea;
 }
 
 /* SECTIONS */
-section{
+section {
   text-align: center;
   margin: 0 auto;
 }
 
-.entete{
+.entete {
   max-width: 20%;
   padding: 0 2rem;
 }
@@ -81,26 +81,35 @@ section{
 
 /* CONTAINERS */
 
-.contenu-intro, .conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
+.contenu-intro,
+.conteneur,
+.contenu-projets,
+.projet-contenu-images,
+.contenu-competences {
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-.conteneur, .contenu-projets, .projet-contenu-images, .contenu-competences{
+.conteneur,
+.contenu-projets,
+.projet-contenu-images,
+.contenu-competences {
   max-width: 70%;
 }
 
-.contenu-intro{
+.contenu-intro {
   width: 50%;
 }
 
-.conteneur-portrait{
+.conteneur-portrait {
   width: 40%;
 }
 
 /* INTRO, BIO & FUTURE */
 
-.intro, .biographie ,.future{
+.intro,
+.biographie,
+.future {
   display: flex;
   align-items: center;
   padding: 4rem 0;
@@ -114,21 +123,22 @@ section{
 
 /* TABLEAUX */
 
-.projet-grid, .competences-grid {
+.projet-grid,
+.competences-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.8rem;
   margin-top: 2rem;
 }
 
-.competences-grid{
+.competences-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /* ERROR */
 
-.error{
-  margin:19%;
+.error {
+  margin: 19%;
   text-align: center;
 }
 
@@ -138,7 +148,10 @@ section{
 
 /* --------- */
 
-.projet-card, .projet-images, .competence-card, .error {
+.projet-card,
+.projet-images,
+.competence-card,
+.error {
   border-radius: 15px;
   box-shadow: 0 10px 20px var(--box-shadow-color);
   padding: 1.5rem;
@@ -149,34 +162,36 @@ section{
   align-content: center;
 }
 
-.projet-card h1{
+.projet-card h1 {
   color: var(--h1-color);
 }
 
-.projet-card p{
+.projet-card p {
   text-align: center;
 }
 
-.projet-images{
+.projet-images {
   padding: 0;
   max-height: 200px;
 }
 
-.projet-images img{
-  width:100%;
-  height:100%;
+.projet-images img {
+  width: 100%;
+  height: 100%;
 }
 
-.projet-card:hover, .projet-images:hover{
+.projet-card:hover,
+.projet-images:hover {
   transform: scale(1.04);
   box-shadow: 10px 5px 5px var(--box-shadow-color);
 }
 
-.projet-card a img:hover,  .social-link-img:hover{
+.projet-card a img:hover,
+.social-link-img:hover {
   transform: scale(1.04);
 }
 
-.projet-liens a{
+.projet-liens a {
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 600;
@@ -204,19 +219,23 @@ section{
 
 /* LINK */
 
-a, .projet-liens a{
+a,
+.projet-liens a {
   color: var(--primary-link-color);
   text-decoration: none;
 }
 
-* a:hover, .branding h1 a:hover{
+* a:hover,
+.branding h1 a:hover {
   color: var(--primary-hover-color);
   transition:
     all 0.3s ease-out,
     color 0.3s;
 }
 
-.social-links a, .competences .conteneur p a, .entete h1 a{
+.social-links a,
+.competences .conteneur p a,
+.entete h1 a {
   text-decoration: none;
 }
 
@@ -232,44 +251,44 @@ a, .projet-liens a{
   margin: 0 1rem;
 }
 
-.social-links div a img, .projet-liens div a img{
+.social-links div a img,
+.projet-liens div a img {
   max-height: 80px;
   max-height: 80px;
 }
 
 /* IMAGES */
 
-.portrait{
+.portrait {
   width: auto;
   height: auto;
   border-radius: 50%;
 }
 
-.contenu-intro img{
+.contenu-intro img {
   width: 35%;
 }
 
-
-.projet-card a img{
-  width:90px;
+.projet-card a img {
+  width: 90px;
 }
 
 /* MEDIA QUERIES */
 
-@media (max-width:1820px){
-
-  #accueil, .projets-grid {
+@media (max-width: 1820px) {
+  #accueil,
+  .projets-grid {
     flex-direction: column;
     grid-template-columns: 1fr;
   }
 
-  .portrait{
+  .portrait {
     display: none;
     width: 5%;
     max-height: 2%;
   }
 
-  .intro{
+  .intro {
     height: 100%;
   }
 
@@ -282,11 +301,12 @@ a, .projet-liens a{
     max-width: 98%;
   }
 
-  .contenu-intro p{
+  .contenu-intro p {
     font-size: 1.2rem;
   }
 
-  .contenu-intro h1, .contenu-intro h2 {
+  .contenu-intro h1,
+  .contenu-intro h2 {
     font-size: 2.2rem;
   }
 
@@ -294,31 +314,38 @@ a, .projet-liens a{
     max-width: 100%;
   }
 
-  .entete h1{
+  .entete h1 {
     font-size: 3rem;
   }
 
-  .entete p{
+  .entete p {
     font-size: 2.2rem;
   }
 
-  .biographie .conteneur h2, .future .conteneur h2, .projet-card h3, .contenu-projets h2{
+  .biographie .conteneur h2,
+  .future .conteneur h2,
+  .projet-card h3,
+  .contenu-projets h2 {
     font-size: 2.2rem;
   }
 
-  .biographie .conteneur p, .future .conteneur p, footer .conteneur p, .projet-card p, .projet-card a{
+  .biographie .conteneur p,
+  .future .conteneur p,
+  footer .conteneur p,
+  .projet-card p,
+  .projet-card a {
     font-size: 1.6rem;
   }
 
-  .contact .conteneur h2{
+  .contact .conteneur h2 {
     font-size: 2.6rem;
   }
 
-  .contact .conteneur p{
+  .contact .conteneur p {
     font-size: 1.6rem;
   }
 
-  .social-links a{
+  .social-links a {
     font-size: 1.6rem;
   }
 }

@@ -6,16 +6,16 @@
   --primary-bg-color: rgb(35, 38, 39);
   --primary-headers-color: #2a3a4b;
   --primary-text-color: rgb(232, 230, 227);
-  --primary-link-color:rgb(160, 183, 190);
+  --primary-link-color: rgb(160, 183, 190);
   --primary-hover-color: #aaa;
   --main-font-family: 'Arial';
 
   --h1-color: var(--h3-color);
   --h2-color: #a6bcce;
-  --h3-color:#e8e6e3;
+  --h3-color: #e8e6e3;
 
   --border-color: #eaeaea;
-  --box-shadow-color: rgba(0,0,0,0.08);
+  --box-shadow-color: rgba(0, 0, 0, 0.08);
 }
 
 #app {
@@ -25,7 +25,7 @@
   background-color: var(--primary-bg-color);
 }
 
-html{
+html {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
 }
@@ -56,7 +56,7 @@ body {
 /* FOOTER */
 
 footer {
-  position:static;
+  position: static;
   bottom: 0px;
   width: 100%;
   padding: 1rem 0;

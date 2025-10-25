@@ -6,11 +6,11 @@ import type { PropType } from 'vue'
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   projectsCategory: {
     type: Object as PropType<ProjectCategory>,
-    required: true
+    required: true,
   },
 })
 </script>
@@ -27,7 +27,7 @@ defineProps({
           :key="project.id"
           :title="project.title"
           :show-more-info-link="project.showMoreInfoLink"
-          :more-info-link=project.moreInfoLink
+          :more-info-link="project.moreInfoLink"
           :website-link="project.websiteLink"
         >
           <template #description>

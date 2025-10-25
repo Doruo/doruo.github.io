@@ -15,7 +15,7 @@ defineProps({
   <!--LINK-->
   <div class="social-link-img">
     <a :href="link" target="blank">
-      <img alt="image with link" :src="img">
+      <img alt="image with link" :src="img" />
     </a>
   </div>
 </template>

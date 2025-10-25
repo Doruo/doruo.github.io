@@ -4,7 +4,7 @@ import BaseHeader from '@/components/base/BaseHeader.vue'
 </script>
 
 <template>
-  <BaseHeader/>
+  <BaseHeader />
   <router-view />
-  <BaseFooter/>
+  <BaseFooter />
 </template>

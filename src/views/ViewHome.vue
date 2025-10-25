@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-import AboutIntro from '@/components/about/AboutIntro.vue';
+import AboutIntro from '@/components/about/AboutIntro.vue'
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
 import { ProjectsData } from '@/data/ProjectsData.ts'
 </script>
 
 <template>
   <!-- VIEW HOME -->
-  <AboutIntro/>
+  <AboutIntro />
   <ProjectCards
-    :title=ProjectsData.getMainProjectsCategory().title
-    :projectsCategory=ProjectsData.getMainProjectsCategory()
-    :show-all-projects-link=true
+    :title="ProjectsData.getMainProjectsCategory().title"
+    :projectsCategory="ProjectsData.getMainProjectsCategory()"
+    :show-all-projects-link="true"
   />
   <section class="contact">
     <h1>
@@ -18,4 +18,3 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     </h1>
   </section>
 </template>
-

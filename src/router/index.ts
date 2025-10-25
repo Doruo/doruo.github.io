@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import ViewProjects from '@/views/ViewProjects.vue'
 import ProjectEldenBuild from '@/components/projects/dev/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/iut/ProjectNDI.vue'
@@ -6,8 +6,8 @@ import ProjectPoursuiteEtude from '@/components/projects/iut/ProjectPoursuiteEtu
 import ProjectTrains from '@/components/projects/iut/ProjectTrains.vue'
 import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
-import ViewAbout from '@/views/ViewAbout.vue';
-import ViewArchives from '@/views/ViewArchives.vue';
+import ViewAbout from '@/views/ViewAbout.vue'
+import ViewArchives from '@/views/ViewArchives.vue'
 
 const routes = [
   // views
@@ -57,12 +57,11 @@ const routes = [
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: ViewError,
-    props: { errorType: '404' }
+    props: { errorType: '404' },
   },
 ]
 
 const router = createRouter({
-
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 
@@ -75,7 +74,7 @@ const router = createRouter({
       }
     }
     return { top: 0 }
-  }
+  },
 })
 
 // error handling

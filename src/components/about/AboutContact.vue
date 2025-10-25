@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AboutLinks from './AboutSocialLinks.vue';
+import AboutLinks from './AboutSocialLinks.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import AboutLinks from './AboutSocialLinks.vue';
     <div class="conteneur">
       <h2>Contact</h2>
       <p>Si mon profil correspond à ce que vous recherchez, contactez-moi !</p>
-      <AboutLinks/>
+      <AboutLinks />
     </div>
   </section>
 </template>

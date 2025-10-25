@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import type { PropType } from "vue";
-import type { RouteLocationAsRelativeGeneric } from "vue-router";
+import type { PropType } from 'vue'
+import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 
 defineProps({
   title: {
     type: String,
     required: true,
   },
-  showMoreInfoLink:{
+  showMoreInfoLink: {
     type: Boolean,
     required: true,
   },
-  moreInfoLink:{
+  moreInfoLink: {
     type: Object as PropType<RouteLocationAsRelativeGeneric>,
     required: true,
   },
@@ -25,17 +25,17 @@ defineProps({
 <template>
   <!-- PROJECT CARD -->
   <div class="projet-card">
-
-    <h3>{{title}}</h3>
+    <h3>{{ title }}</h3>
     <p>
       <slot name="description"></slot>
     </p>
     <p>
-      <b>Technologies:</b> <slot name="techs"></slot>
+      <b>Technologies:</b>
+      <slot name="techs"></slot>
     </p>
 
     <div class="projet-liens">
-      <router-link v-if="showMoreInfoLink" :to=moreInfoLink>À Propos</router-link>
+      <router-link v-if="showMoreInfoLink" :to="moreInfoLink">À Propos</router-link>
       <a :href="websiteLink" target="_blank">Voir</a>
     </div>
   </div>
