@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
 <!-- FUTUR -->
 <section class="future">
@@ -23,6 +19,3 @@
     </div>
   </section>
 </template>
-
-<style scoped>
-</style>

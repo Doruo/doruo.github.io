@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <!-- BIO -->
   <section id="biographie" class="biographie">
@@ -31,6 +27,3 @@
     </div>
   </section>
 </template>
-
-<style scoped>
-</style>

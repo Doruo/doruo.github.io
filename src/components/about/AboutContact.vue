@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AboutLinks from './AboutLinks.vue';
+import AboutLinks from './AboutSocialLinks.vue';
 </script>
 
 <template>
@@ -11,8 +11,4 @@ import AboutLinks from './AboutLinks.vue';
       <AboutLinks/>
     </div>
   </section>
-
 </template>
-
-<style scoped>
-</style>
