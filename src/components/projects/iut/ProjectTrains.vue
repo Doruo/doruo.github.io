@@ -13,6 +13,7 @@ import partie3 from '@/assets/img/projets/trains/trains_partie2.webp'
 import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
+import SkillItem from '@/components/skills/SkillItem.vue'
 </script>
 
 <template>

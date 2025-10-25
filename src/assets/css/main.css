@@ -146,6 +146,7 @@ section{
   position: relative;
   overflow: hidden;
   border: 1px solid var(--border-color);
+  align-content: center;
 }
 
 .projet-card h1{

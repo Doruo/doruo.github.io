@@ -13,6 +13,7 @@ import sujet from '@/assets/pdf/lancement_SAE3A_poursuiteEtudes.pdf'
 import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
+import SkillItem from '@/components/skills/SkillItem.vue'
 
 </script>
 
