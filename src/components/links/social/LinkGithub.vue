@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Pictures } from '@/data/Pictures';
-import LinkItem from './abstract/LinkItem.vue';
+import LinkItem from '@/components/links/abstract/LinkItem.vue';
 
 defineProps({
   link: {
@@ -14,7 +14,7 @@ defineProps({
   <LinkItem>
     <template #link-img>
       <a :href="link">
-          <img alt="mail" :src=Pictures.GRAVATAR>
+          <img alt="mail" :src=Pictures.GITHUB>
       </a>
     </template>
   </LinkItem>

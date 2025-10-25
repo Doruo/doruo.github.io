@@ -12,9 +12,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a>
-        <img alt="JSON" :src=Pictures.JSON>
-      </a>
+      <img alt="JSON" :src=Pictures.JSON>
     </template>
     <template #title>JSON</template>
     <template #description>{{ description }}</template>

@@ -12,9 +12,7 @@ defineProps({
 <template>
   <SkillItem>
     <template #link-image>
-      <a href="">
-        <img alt="MVC" :src=Pictures.MVC>
-      </a>
+      <img alt="MVC" :src=Pictures.MVC>
     </template>
     <template #title>Architecture MVC</template>
     <template #description>{{ description }}</template>

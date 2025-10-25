@@ -1,6 +1,21 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
+import { Links } from '@/data/Links'
+import SkillGit from '@/components/skills/tools/SkillGit.vue'
+import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
+import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
+import SkillMvc from '@/components/skills/tools/SkillMvc.vue'
+import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
+import SkillJS from '@/components/skills/frontend/SkillJS.vue'
+import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
+import SkillMySql from '@/components/skills/database/SkillMySql.vue'
+import SkillAPI from '@/components/skills/backend/SkillAPI.vue'
+import SkillJSON from '@/components/skills/tools/SkillJSON.vue'
+
+import LinkGithub from '@/components/links/social/LinkGithub.vue'
+
 import ranni from '@/assets/images/projets/eldenbuild/eldenring_ranni.webp'
 import accueil from '@/assets/images/projets/eldenbuild/eldenbuild_accueil.webp'
 import build from '@/assets/images/projets/eldenbuild/eldenbuild_build.webp'
@@ -8,21 +23,6 @@ import equipement from '@/assets/images/projets/eldenbuild/eldenbuild_getEquipem
 import profile from '@/assets/images/projets/eldenbuild/eldenbuild_profile.webp'
 import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscription.webp'
 import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
-
-import { Links } from '@/data/Links'
-import SkillGit from '../skills/tools/SkillGit.vue'
-import SkillPHP from '../skills/backend/SkillPHP.vue'
-import SkillDocker from '../skills/tools/SkillDocker.vue'
-import SkillMvc from '../skills/tools/SkillMvc.vue'
-import SkillHTML from '../skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
-import SkillJS from '../skills/frontend/SkillJS.vue'
-import SkillOOP from '../skills/tools/SkillOOP.vue'
-import SkillMySql from '../skills/database/SkillMySql.vue'
-import SkillAPI from '../skills/backend/SkillAPI.vue'
-import SkillJSON from '../skills/tools/SkillJSON.vue'
-
-import LinkGithub from '../links/LinkGithub.vue'
 </script>
 
 <template>

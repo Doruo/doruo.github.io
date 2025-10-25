@@ -11,11 +11,11 @@ import partie2 from '@/assets/images/projets/trains/trains_partie2.webp'
 import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
 
 import { Links } from '@/data/Links'
-import SkillOOP from '../skills/tools/SkillOOP.vue'
-import SkillJava from '../skills/backend/SkillJava.vue'
-import SkillJavaFX from '../skills/frontend/SkillJavaFX.vue'
-import SkillSceneBuilder from '../skills/tools/SkillSceneBuilder.vue'
-import LinkGithub from '../links/LinkGithub.vue'
+import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
+import SkillJava from '@/components/skills/backend/SkillJava.vue'
+import SkillJavaFX from '@/components/skills/frontend/SkillJavaFX.vue'
+import SkillSceneBuilder from '@/components/skills/tools/SkillSceneBuilder.vue'
+import LinkGithub from '@/components/links/social/LinkGithub.vue'
 </script>
 
 <template>

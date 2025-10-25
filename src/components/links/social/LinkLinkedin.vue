@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Pictures } from '@/data/Pictures';
-import LinkItem from './abstract/LinkItem.vue';
+import LinkItem from '@/components/links/abstract/LinkItem.vue';
 
 defineProps({
   link: {

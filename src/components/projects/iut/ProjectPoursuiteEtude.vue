@@ -10,18 +10,18 @@ import diagramme from '@/assets/images/projets/poursuiteEtude/poursuite_etude_di
 import notes from '@/assets/images/projets/poursuiteEtude/poursuite_etude_notes.webp'
 
 import { Links } from '@/data/Links'
-import SkillGit from '../skills/tools/SkillGit.vue'
-import SkillDocker from '../skills/tools/SkillDocker.vue'
-import SkillMvc from '../skills/tools/SkillMvc.vue'
-import SkillLDAP from '../skills/backend/SkillLDAP.vue'
-import SkillPHP from '../skills/backend/SkillPHP.vue'
-import SkillHTML from '../skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
-import SkillOOP from '../skills/tools/SkillOOP.vue'
-import SkillPostgre from '../skills/database/SkillPostgre.vue'
-import SkillPLSql from '../skills/database/SkillPLSql.vue'
-import SkillChartJS from '../skills/tools/SkillChartJS.vue'
-import LinkGithub from '../links/LinkGithub.vue'
+import SkillGit from '@/components/skills/tools/SkillGit.vue'
+import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
+import SkillMvc from '@/components/skills/tools/SkillMvc.vue'
+import SkillLDAP from '@/components/skills/backend/SkillLDAP.vue'
+import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
+import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
+import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
+import SkillPostgre from '@/components/skills/database/SkillPostgre.vue'
+import SkillPLSql from '@/components/skills/database/SkillPLSql.vue'
+import SkillChartJS from '@/components/skills/tools/SkillChartJS.vue'
+import LinkGithub from '@/components/links/social/LinkGithub.vue'
 
 </script>
 
@@ -145,7 +145,6 @@ import LinkGithub from '../links/LinkGithub.vue'
 
     <template #liens>
       <LinkGithub :link=Links.githubPoursuiteEtudes />
-      <a href="https://webinfo.iutmontp.univ-montp2.fr/~hayem/web/controleurFrontal.php">Visiter le site</a>
     </template>
   </ProjectItem>
 </template>

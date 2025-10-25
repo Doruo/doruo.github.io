@@ -13,13 +13,13 @@ import photo5 from '@/assets/images/projets/ndi2024/ndi_photo5.webp'
 import photo6 from '@/assets/images/projets/ndi2024/ndi_photo6.webp'
 
 import { Links } from '@/data/Links'
-import SkillHTML from '../skills/frontend/SkillHTML.vue'
-import SkillBootstrap from '../skills/frontend/SkillBootstrap.vue'
-import SkillJS from '../skills/frontend/SkillJS.vue'
-import SkillNode from '../skills/backend/SkillNode.vue'
-import SkillExpress from '../skills/backend/SkillExpress.vue'
-import LinkGithub from '../links/LinkGithub.vue'
-import SkillGit from '../skills/tools/SkillGit.vue'
+import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
+import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
+import SkillJS from '@/components/skills/frontend/SkillJS.vue'
+import SkillNode from '@/components/skills/backend/SkillNode.vue'
+import SkillExpress from '@/components/skills/backend/SkillExpress.vue'
+import LinkGithub from '@/components/links/social/LinkGithub.vue'
+import SkillGit from '@/components/skills/tools/SkillGit.vue'
 </script>
 
 <template>
