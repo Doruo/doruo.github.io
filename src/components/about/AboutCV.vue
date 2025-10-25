@@ -5,6 +5,6 @@ import img from '/CV/CV-MARC-HAYE.pdf';
 
 <template>
     <h1>
-      <LinkItem :link="img" :img=img />
+      <a :href=img target="blank">Voir mon CV</a>
     </h1>
 </template>
