@@ -20,7 +20,6 @@ defineProps({
     required: true,
   },
 })
-
 </script>
 
 <template>
@@ -41,7 +40,3 @@ defineProps({
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

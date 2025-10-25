@@ -22,7 +22,6 @@ defineProps({
       <h2>{{ title }}</h2>
 
       <div class="projet-grid">
-
         <ProjectCardItem
           v-for="project in projectsCategory.projects"
           :key="project.id"
@@ -34,17 +33,9 @@ defineProps({
           <template #description>
             <span v-html="project.description"></span>
           </template>
-
-          <template #techs>
-            {{ project.techs }}
-          </template>
+          <template #techs>{{ project.techs }}</template>
         </ProjectCardItem>
-
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-
-</style>

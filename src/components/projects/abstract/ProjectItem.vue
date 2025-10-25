@@ -1,7 +1,5 @@
-
 <template>
   <!-- PROJECT ITEM -->
-
   <section class="intro">
     <!-- PROJECT INTRO -->
     <div class="contenu-intro">
@@ -37,6 +35,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-</script>
