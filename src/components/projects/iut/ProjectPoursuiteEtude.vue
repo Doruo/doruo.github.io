@@ -12,16 +12,15 @@ import notes from '@/assets/images/projets/poursuiteEtude/poursuite_etude_notes.
 import { Links } from '@/data/Links'
 import SkillGit from '@/components/skills/tools/SkillGit.vue'
 import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
-import SkillMvc from '@/components/skills/tools/SkillMvc.vue'
 import SkillLDAP from '@/components/skills/backend/SkillLDAP.vue'
 import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
 import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
 import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
-import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
 import SkillPostgre from '@/components/skills/database/SkillPostgre.vue'
 import SkillPLSql from '@/components/skills/database/SkillPLSql.vue'
 import SkillChartJS from '@/components/skills/tools/SkillChartJS.vue'
-import LinkGithub from '@/components/links/social/LinkGithub.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+import { Pictures } from '@/data/Pictures'
 
 </script>
 
@@ -82,8 +81,6 @@ import LinkGithub from '@/components/links/social/LinkGithub.vue'
 
       <SkillDocker description="Aide au deploiement de l'application"/>
 
-      <SkillMvc description="Structure globale et pattern architecturale du projet"/>
-
       <SkillLDAP description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"/>
 
       <SkillPHP description="Développement coté serveur de l'application"/>
@@ -91,8 +88,6 @@ import LinkGithub from '@/components/links/social/LinkGithub.vue'
       <SkillHTML description="Développement de l'interface utilisateur"/>
 
       <SkillBootstrap description="Mise en page de l'interface visuelle"/>
-
-      <SkillOOP description="Pattern de développement de l'application"/>
 
       <SkillPostgre description="Réalisation de la base de donnée de l'application"/>
 
@@ -144,7 +139,7 @@ import LinkGithub from '@/components/links/social/LinkGithub.vue'
     </template>
 
     <template #liens>
-      <LinkGithub :link=Links.githubPoursuiteEtudes />
+      <LinkItem :link=Links.githubPoursuiteEtudes :img=Pictures.GITHUB />
     </template>
   </ProjectItem>
 </template>

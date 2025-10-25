@@ -18,8 +18,9 @@ import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
 import SkillJS from '@/components/skills/frontend/SkillJS.vue'
 import SkillNode from '@/components/skills/backend/SkillNode.vue'
 import SkillExpress from '@/components/skills/backend/SkillExpress.vue'
-import LinkGithub from '@/components/links/social/LinkGithub.vue'
 import SkillGit from '@/components/skills/tools/SkillGit.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+import { Pictures } from '@/data/Pictures'
 </script>
 
 <template>
@@ -130,7 +131,7 @@ import SkillGit from '@/components/skills/tools/SkillGit.vue'
     </template>
 
     <template #liens>
-      <LinkGithub :link=Links.githubNdi />
+      <LinkItem :link=Links.githubNdi :img=Pictures.GITHUB />
     </template>
   </ProjectItem>
 </template>

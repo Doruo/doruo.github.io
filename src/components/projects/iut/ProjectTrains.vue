@@ -11,11 +11,11 @@ import partie2 from '@/assets/images/projets/trains/trains_partie2.webp'
 import partie3 from '@/assets/images/projets/trains/trains_partie2.webp'
 
 import { Links } from '@/data/Links'
-import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
 import SkillJava from '@/components/skills/backend/SkillJava.vue'
 import SkillJavaFX from '@/components/skills/frontend/SkillJavaFX.vue'
 import SkillSceneBuilder from '@/components/skills/tools/SkillSceneBuilder.vue'
-import LinkGithub from '@/components/links/social/LinkGithub.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+import { Pictures } from '@/data/Pictures'
 </script>
 
 <template>
@@ -68,8 +68,6 @@ import LinkGithub from '@/components/links/social/LinkGithub.vue'
     </template>
 
     <template #abilities>
-      <SkillOOP description="Pattern de développement du jeu"/>
-
       <SkillJava description="Implémentation de la logique du jeu"/>
 
       <SkillJavaFX description="Réalisation de l'interface graphique"/>
@@ -104,7 +102,7 @@ import LinkGithub from '@/components/links/social/LinkGithub.vue'
     </template>
 
     <template #liens>
-      <LinkGithub :link=Links.githubTrains />
+      <LinkItem :link=Links.githubTrains :img=Pictures.GITHUB />
       <a :href=regles>Règles du jeu</a>
     </template>
   </ProjectItem>

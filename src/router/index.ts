@@ -27,6 +27,11 @@ const routes = [
     component: ViewProjects,
   },
   {
+    path: '/about#contact',
+    name: 'contact',
+    component: ViewArchives,
+  },
+  {
     path: '/archives',
     name: 'archives',
     component: ViewArchives,

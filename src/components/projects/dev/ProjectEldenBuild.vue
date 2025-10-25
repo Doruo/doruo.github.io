@@ -5,17 +5,11 @@ import { Links } from '@/data/Links'
 import SkillGit from '@/components/skills/tools/SkillGit.vue'
 import SkillPHP from '@/components/skills/backend/SkillPHP.vue'
 import SkillDocker from '@/components/skills/tools/SkillDocker.vue'
-import SkillMvc from '@/components/skills/tools/SkillMvc.vue'
 import SkillHTML from '@/components/skills/frontend/SkillHTML.vue'
 import SkillBootstrap from '@/components/skills/frontend/SkillBootstrap.vue'
 import SkillJS from '@/components/skills/frontend/SkillJS.vue'
-import SkillOOP from '@/components/skills/tools/SkillOOP.vue'
 import SkillMySql from '@/components/skills/database/SkillMySql.vue'
 import SkillAPI from '@/components/skills/backend/SkillAPI.vue'
-import SkillJSON from '@/components/skills/tools/SkillJSON.vue'
-
-import LinkGithub from '@/components/links/social/LinkGithub.vue'
-
 import ranni from '@/assets/images/projets/eldenbuild/eldenring_ranni.webp'
 import accueil from '@/assets/images/projets/eldenbuild/eldenbuild_accueil.webp'
 import build from '@/assets/images/projets/eldenbuild/eldenbuild_build.webp'
@@ -23,6 +17,8 @@ import equipement from '@/assets/images/projets/eldenbuild/eldenbuild_getEquipem
 import profile from '@/assets/images/projets/eldenbuild/eldenbuild_profile.webp'
 import inscription from '@/assets/images/projets/eldenbuild/eldenbuild_inscription.webp'
 import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
+import LinkItem from '@/components/links/LinkItem.vue'
+import { Pictures } from '@/data/Pictures'
 </script>
 
 <template>
@@ -72,21 +68,15 @@ import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
 
       <SkillDocker description="Aide au déploiement de l'application"/>
 
-      <SkillMvc description="Structure globale et pattern architecturale du projet"/>
-
       <SkillHTML description="Développement de l'interface utilisateur"/>
 
       <SkillBootstrap description="Mise en page responsive de l'interface graphique de l'application"/>
 
       <SkillJS description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones"/>
 
-      <SkillOOP description="Pattern de développement de l'application"/>
-
       <SkillMySql description="Déploiement de la base de donnée sécurisée"/>
 
       <SkillAPI description="Norme de communication avec l'API Elden Ring"/>
-
-      <SkillJSON description="Format de données utilisées pour les requêtes HTTP faites à l'API"/>
     </template>
 
     <template #assets>
@@ -130,7 +120,7 @@ import testAPI from '@/assets/images/projets/eldenbuild/eldenbuild_testapi.webp'
     </template>
 
     <template #liens>
-      <LinkGithub :link=Links.githubEldenbuild />
+      <LinkItem :link=Links.githubEldenbuild :img=Pictures.GITHUB />
     </template>
   </ProjectItem>
 
