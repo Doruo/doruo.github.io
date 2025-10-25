@@ -25,6 +25,11 @@
   background-color: var(--primary-bg-color);
 }
 
+html{
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
 /* STRUCTURE */
 
 * {
