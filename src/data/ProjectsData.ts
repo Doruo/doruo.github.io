@@ -26,7 +26,7 @@ export class ProjectsData {
       title: "Application de Poursuite d'Etude",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: "https://webinfo.iutmontp.univ-montp2.fr/~rostaingd/sae3a-base/web/controleurFrontal.php",
+      websiteLink: Links.githubPoursuiteEtudes,
       description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: "MVC, POO, PHP, JavaScript, PL/SQL, ChartJS, LDAP",
       tags: ['main','academic']
