@@ -1,14 +1,12 @@
 <script setup lang="ts">
-  import portrait_path from '@/assets/images/portrait/portrait.webp';
-  import cv_path from '/CV/CV-MARC-HAYE.pdf';
+import AboutCV from './AboutCV.vue';
+import AboutPortrait from './AboutPortrait.vue';
 </script>
 
 <template>
   <!-- BIO -->
   <section class="intro">
-
       <div class="contenu-intro">
-
         <p>
           Etudiant à l'Université de Montpellier,
           je suis passionné par <b>l'informatique, la guitare et le sport.</b>
@@ -22,16 +20,8 @@
           mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
         </p>
 
-        <h1><a :href="cv_path">Téléchargez mon CV</a></h1>
+        <AboutCV />
     </div>
-
-    <div class="conteneur-portrait">
-      <img class="portrait" :src="portrait_path" alt="portrait">
-    </div>
+    <AboutPortrait/>
   </section>
-
 </template>
-
-<style scoped>
-
-</style>
