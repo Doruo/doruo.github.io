@@ -67,12 +67,12 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
       <SkillItem :img="Pictures.HTML" :link="Links.html" description="Développement de l'interface utilisateur" />
 
-      <SkillItem :img="Pictures.GIT" :link="Links.git" description="Mise en page responsive de l'interface graphique de l'application" />
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.bootstrap" description="Mise en page responsive de l'interface graphique de l'application" />
 
       <SkillItem :img="Pictures.JS" :link="Links.js" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
 
       <SkillItem :img="Pictures.MYSQL" :link="Links.mysql" description="Déploiement de la base de donnée sécurisée" />
-a" 
+
       <SkillItem :img="Pictures.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
