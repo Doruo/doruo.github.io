@@ -5,6 +5,7 @@ export class Links {
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
   static readonly SCODOC = 'https://scodoc.org/'
   static readonly EBITENGINE = 'https://ebitengine.org/'
+  static readonly GAME_OF_LIFE = 'https://fr.wikipedia.org/wiki/Jeu_de_la_vie'
 
   // Social
   static readonly GITHUB = 'https://github.com/doruo/'

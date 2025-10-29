@@ -56,16 +56,14 @@ export class ProjectsData {
       tags: ['game', 'academic'],
     },
     {
-      id: 'stage-itesoft',
-      title: 'Stage chez ITESOFT (CONFIDENTIEL)',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
-      description:
-        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
-        "qui effectue des exports de factures électroniques, au travers d'une API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.",
-      techs: 'NestJS, JSON, SQL',
-      tags: ['pro'],
+      id: 'my-avatar',
+      title: 'My Avatar',
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-my-avatar' },
+      websiteLink: Links.GITHUB,
+      description: 'Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.',
+      techs: 'Symfony, JS, MySQL, Twig',
+      tags: ['academic'],
     },
     {
       id: 'controverse-crypto',
@@ -85,9 +83,7 @@ export class ProjectsData {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: Links.GITHUB_ELDEN_BUILD,
-      description:
-        'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, ' +
-        'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
+      description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
       tags: ['main', 'community'],
     },
@@ -162,8 +158,7 @@ export class ProjectsData {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_MARIN_IVRE,
-      description:
-        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
+      description: 'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
       techs: 'Java',
       tags: ['game'],
     },
@@ -171,11 +166,9 @@ export class ProjectsData {
       id: 'game-of-life',
       title: "Conway's Game of Life",
       showMoreInfoLink: true,
-      moreInfoLink: { name: 'gol' },
+      moreInfoLink: { name: 'projects-gol' },
       websiteLink: Links.GITHUB_GOL,
-      description:
-        "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal." +
-        " C'est un automate cellulaire utilisé dans la recherche biologique pour simuler la vie.",
+      description: "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
       techs: 'Go, Ebitengine',
       tags: ['main', 'game'],
     },
@@ -201,14 +194,16 @@ export class ProjectsData {
       tags: ['community'],
     },
     {
-      id: 'my-avatar',
-      title: 'My Avatar',
+      id: 'stage-itesoft',
+      title: 'Stage chez ITESOFT (CONFIDENTIEL)',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB,
-      description: 'Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.',
-      techs: 'Symfony, JS, MySQL, Twig',
-      tags: ['academic'],
+      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
+      description:
+        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
+        " API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.",
+      techs: 'NestJS, JSON, SQL',
+      tags: ['pro'],
     },
   ]
 

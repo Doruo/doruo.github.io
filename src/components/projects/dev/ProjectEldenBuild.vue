@@ -43,7 +43,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript,
         les requêtes AJAX, l'architecture MVC et ses limites. L'application communique via des
-        requêtes HTTP asynchrones à une<a :href="Links.ELDEN_RING_FAN_API">fan API Elden Ring</a>.
+        requêtes HTTP asynchrones vers une <a :href="Links.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie
@@ -51,6 +51,9 @@ import SkillItem from '@/components/skills/SkillItem.vue'
         l'asynchronisme des requêtes, optimisera et améliorera son utilisation. Ce dernier pourrait
         également utiliser un système de forum en ligne où chacun pourrait débattre sur des sujets
         au thème du jeu.
+      </p>
+      <p>
+        Le jeu Elden Ring et le personnage de Ranni sont des propriétés de FromSoftware et BANDAI NAMCO INC.
       </p>
     </template>
 

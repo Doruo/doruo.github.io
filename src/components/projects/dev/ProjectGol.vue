@@ -17,14 +17,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #description>
       <p>
-        Le <a href="https://fr.wikipedia.org/wiki/Jeu_de_la_vie" target="_blank">Jeu de la vie</a>
+        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la vie</a>
         est une simulation mathématique imaginé par <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway" target="_blank">John Horton Conway</a> en 1970.
       </p>
       <p>C'est un automate cellulaire ludique utilisé dans la recherche biologique pour simuler la vie.</p>
       <p>
         Il y a une interface graphique fonctionnel sur terminal,
         et je travaille actuellement sur une implémentation en 2D avec le moteur graphique
-        <a href="https://ebitengine.org/" target="_blank">Ebitengine</a>.
+        <a :href=Links.EBITENGINE target="_blank">Ebitengine</a>.
       </p>
     </template>
 

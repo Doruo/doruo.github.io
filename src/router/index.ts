@@ -2,13 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ViewProjects from '@/views/ViewProjects.vue'
 import ProjectEldenBuild from '@/components/projects/dev/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/iut/ProjectNDI.vue'
-import ProjectPoursuiteEtude from '@/components/projects/iut/ProjectPoursuiteEtude.vue'
+import ProjectPoursuiteEtude from '@/components/projects/iut/ProjectPoursuiteEtudes.vue'
 import ProjectTrains from '@/components/projects/iut/ProjectTrains.vue'
 import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
 import ViewAbout from '@/views/ViewAbout.vue'
 import ViewArchives from '@/views/ViewArchives.vue'
 import ProjectGol from '@/components/projects/dev/ProjectGol.vue'
+import ProjectMyAvatar from '@/components/projects/iut/ProjectMyAvatar.vue'
 
 const routes = [
   // views
@@ -18,14 +19,15 @@ const routes = [
   { path: '/archives', name: 'archives', component: ViewArchives },
   // projects
   {
-    path: '/projects/poursuite-etude',
+    path: '/projects/poursuite-etudes',
     name: 'projects-poursuite-etude',
     component: ProjectPoursuiteEtude,
   },
   { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains },
   { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
-  { path: '/projects/nuitdelinfo', name: 'projects-ndi2024', component: ProjectNDI },
-  { path: '/projects/gameoflife', name: 'gol', component: ProjectGol },
+  { path: '/projects/nuit-de-linfo', name: 'projects-ndi2024', component: ProjectNDI },
+  { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar },
+  { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
   // error
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: ViewError, props: { errorType: '404' } },
 ]

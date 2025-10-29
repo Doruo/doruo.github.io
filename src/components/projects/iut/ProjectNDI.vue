@@ -57,9 +57,9 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <SkillItem
         :img="Pictures.GIT"
         :link="Links.GIT"
-        description="Versioning (gestion des versions) du projet, et collaboration en équipe"
+        description="Versionnage du projet"
       />
-      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Redaction des articles" />
+      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Rédaction des articles" />
       <SkillItem
         :img="Pictures.BOOTSTRAP"
         :link="Links.BOOTSTRAP"
@@ -69,11 +69,6 @@ import SkillItem from '@/components/skills/SkillItem.vue'
         :img="Pictures.JS"
         :link="Links.JS"
         description="Implémentation de l'océan naviguable"
-      />
-      <SkillItem
-        :img="Pictures.NODE"
-        :link="Links.NODE"
-        description="Réalisation du serveur HTTP"
       />
       <SkillItem
         :img="Pictures.EXPRESS"
