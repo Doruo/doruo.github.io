@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ViewProjects from '@/views/ViewProjects.vue'
 import ProjectEldenBuild from '@/components/projects/dev/ProjectEldenBuild.vue'
 import ProjectNDI from '@/components/projects/iut/ProjectNDI.vue'
@@ -8,57 +8,26 @@ import ViewHome from '@/views/ViewHome.vue'
 import ViewError from '@/views/ViewError.vue'
 import ViewAbout from '@/views/ViewAbout.vue'
 import ViewArchives from '@/views/ViewArchives.vue'
+import ProjectGol from '@/components/projects/dev/ProjectGol.vue'
 
 const routes = [
   // views
-  {
-    path: '/',
-    name: 'home',
-    component: ViewHome,
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: ViewAbout,
-  },
-  {
-    path: '/projects',
-    name: 'projects',
-    component: ViewProjects,
-  },
-  {
-    path: '/archives',
-    name: 'archives',
-    component: ViewArchives,
-  },
+  { path: '/', name: 'home', component: ViewHome },
+  { path: '/about', name: 'about', component: ViewAbout },
+  { path: '/projects', name: 'projects', component: ViewProjects },
+  { path: '/archives', name: 'archives', component: ViewArchives },
   // projects
   {
     path: '/projects/poursuite-etude',
     name: 'projects-poursuite-etude',
     component: ProjectPoursuiteEtude,
   },
-  {
-    path: '/projects/trains',
-    name: 'projects-trains',
-    component: ProjectTrains,
-  },
-  {
-    path: '/projects/elden-build',
-    name: 'projects-elden-build',
-    component: ProjectEldenBuild,
-  },
-  {
-    path: '/projects/nuitdelinfo',
-    name: 'projects-ndi2024',
-    component: ProjectNDI,
-  },
+  { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains },
+  { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
+  { path: '/projects/nuitdelinfo', name: 'projects-ndi2024', component: ProjectNDI },
+  { path: '/projects/gameoflife', name: 'gol', component: ProjectGol },
   // error
-  {
-    path: '/:pathMatch(.*)*',
-    name: 'NotFound',
-    component: ViewError,
-    props: { errorType: '404' },
-  },
+  { path: '/:pathMatch(.*)*', name: 'NotFound', component: ViewError, props: { errorType: '404' } },
 ]
 
 const router = createRouter({
@@ -67,12 +36,7 @@ const router = createRouter({
 
   // hook handling
   scrollBehavior(to) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
-    }
+    if (to.hash) return { el: to.hash, behavior: 'smooth' }
     return { top: 0 }
   },
 })

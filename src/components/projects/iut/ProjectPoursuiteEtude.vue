@@ -28,7 +28,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #description>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de
-        Montpellier-Sète, le logiciel libre <a :href="Links.scodoc">Scodoc</a> est utilisé pour
+        Montpellier-Sète, le logiciel libre <a :href="Links.SCODOC">Scodoc</a> est utilisé pour
         gérer les absences et les notes des étudiants tout au long de leur scolarité à l’IUT.
       </p>
 
@@ -54,7 +54,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
       <p>
         Mon rôle fut de concevoir, développer en équipe, et superviser le déroulement du projet, et
-        animer la mêlée (<a :href="Links.scrum">Scrum</a>) pour l'équipe dans son ensemble en
+        animer la mêlée (<a :href="Links.SCRUM">Scrum</a>) pour l'équipe dans son ensemble en
         s'assurant que le framework Scrum est respecté. Mon travail consistait à aider à devenir
         autonome grâce à des techniques comme l’auto-organisation et la résolution des conflits.
       </p>
@@ -70,49 +70,49 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #abilities>
       <SkillItem
         :img="Pictures.GIT"
-        :link="Links.git"
+        :link="Links.GIT"
         description="Versioning (gestion des versions) du projet, et collaboration en équipe"
       />
 
       <SkillItem
         :img="Pictures.DOCKER"
-        :link="Links.docker"
+        :link="Links.DOCKER"
         description="Aide au deploiement de l'application"
       />
 
       <SkillItem
         :img="Pictures.LDAP"
-        :link="Links.ldap"
+        :link="Links.LDAP"
         description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"
       />
 
       <SkillItem
         :img="Pictures.PHP"
-        :link="Links.php"
+        :link="Links.PHP"
         description="Développement coté serveur de l'application"
       />
 
       <SkillItem
         :img="Pictures.BOOTSTRAP"
-        :link="Links.bootstrap"
+        :link="Links.BOOTSTRAP"
         description="Mise en page de l'interface visuelle"
       />
 
       <SkillItem
         :img="Pictures.POSTGRE"
-        :link="Links.postgre"
+        :link="Links.POSTGRE"
         description="Base de donnée de l'application"
       />
 
       <SkillItem
         :img="Pictures.PLSQL"
-        :link="Links.plsql"
+        :link="Links.PLSQL"
         description="Fonctions et triggers dynamiques dans la base de donnée"
       />
 
       <SkillItem
         :img="Pictures.CHARTJS"
-        :link="Links.chartjs"
+        :link="Links.CHARTJS"
         description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants"
       />
     </template>
@@ -158,7 +158,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #liens>
-      <LinkItem :link="Links.githubPoursuiteEtudes" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Pictures.GITHUB" />
       <a :href="sujet" target="blank">Sujet du projet</a>
     </template>
   </ProjectItem>

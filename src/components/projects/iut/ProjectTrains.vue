@@ -45,7 +45,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
         <li>
           <p>
             <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous
-            <a :href="Links.javafx">JavaFX</a>.
+            <a :href="Links.JAVAFX">JavaFX</a>.
           </p>
         </li>
       </ul>
@@ -70,19 +70,19 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #abilities>
       <SkillItem
         :img="Pictures.JAVA"
-        :link="Links.java"
+        :link="Links.JAVA"
         description="Implémentation de la logique du jeu"
       />
 
       <SkillItem
         :img="Pictures.JAVAFX"
-        :link="Links.javafx"
+        :link="Links.JAVAFX"
         description="Réalisation de l'interface graphique"
       />
 
       <SkillItem
         :img="Pictures.SCENEBUILDER"
-        :link="Links.scenebuilder"
+        :link="Links.SCENE_BUILDER"
         description="Aide à la réalisation de l'interface graphique"
       />
     </template>
@@ -114,7 +114,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #liens>
-      <LinkItem :link="Links.githubTrains" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_TRAINS" :img="Pictures.GITHUB" />
       <a :href="regles" target="blank">Règles du jeu</a>
     </template>
   </ProjectItem>

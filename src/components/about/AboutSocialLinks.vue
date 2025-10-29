@@ -6,10 +6,10 @@ import { Pictures } from '@/data/Pictures'
 
 <template>
   <div class="social-links">
-    <LinkItem :link="Links.mail" :img="Pictures.MAIL" />
-    <LinkItem :link="Links.github" :img="Pictures.GITHUB" />
-    <LinkItem :link="Links.linkedin" :img="Pictures.LINKEDIN" />
-    <LinkItem :link="Links.gravatar" :img="Pictures.GRAVATAR" />
-    <LinkItem :link="Links.itchio" :img="Pictures.ITCHIO" />
+    <LinkItem :link="Links.MAIL" :img="Pictures.MAIL" />
+    <LinkItem :link="Links.GITHUB" :img="Pictures.GITHUB" />
+    <LinkItem :link="Links.LINKEDIN" :img="Pictures.LINKEDIN" />
+    <LinkItem :link="Links.GRAVATAR" :img="Pictures.GRAVATAR" />
+    <LinkItem :link="Links.ITCHIO" :img="Pictures.ITCHIO" />
   </div>
 </template>

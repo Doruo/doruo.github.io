@@ -30,11 +30,11 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <h3>Race For Water</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
-        <a :href="Links.ndi">Nuit de l'Info 2024</a>.
+        <a :href="Links.NDI">Nuit de l'Info 2024</a>.
       </p>
       <p>
         Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et le
-        framework <a :href="Links.express">Express.js</a>, pour la fondation Race for Water, qui a
+        framework <a :href="Links.EXPRESS">Express.js</a>, pour la fondation Race for Water, qui a
         pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
       <p>
@@ -45,7 +45,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       </p>
       <p>
         Mon rôle fut de concevoir le router et l'API REST avec
-        <a :href="Links.express">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
+        <a :href="Links.EXPRESS">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
         page web demandée. J'ai donc dû concevoir cela de façon optimisé, en utilisant les
         différentes notions vus en cours en développement web de sorte d'éviter la surcharge de
         requêtes lorsque l'utilisateur souhaite accéder aux différentes pages lorsqu'il clique sur
@@ -56,28 +56,28 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #abilities>
       <SkillItem
         :img="Pictures.GIT"
-        :link="Links.git"
+        :link="Links.GIT"
         description="Versioning (gestion des versions) du projet, et collaboration en équipe"
       />
-      <SkillItem :img="Pictures.HTML" :link="Links.html" description="Redaction des articles" />
+      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Redaction des articles" />
       <SkillItem
         :img="Pictures.BOOTSTRAP"
-        :link="Links.bootstrap"
+        :link="Links.BOOTSTRAP"
         description="Mise en page visuelle des articles"
       />
       <SkillItem
         :img="Pictures.JS"
-        :link="Links.js"
+        :link="Links.JS"
         description="Implémentation de l'océan naviguable"
       />
       <SkillItem
         :img="Pictures.NODE"
-        :link="Links.node"
+        :link="Links.NODE"
         description="Réalisation du serveur HTTP"
       />
       <SkillItem
         :img="Pictures.EXPRESS"
-        :link="Links.express"
+        :link="Links.EXPRESS"
         description="Routage et gestion des dépendances de l'API"
       />
     </template>
@@ -141,7 +141,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #liens>
-      <LinkItem :link="Links.githubNdi" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_NDI" :img="Pictures.GITHUB" />
     </template>
   </ProjectItem>
 </template>

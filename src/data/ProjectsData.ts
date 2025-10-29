@@ -25,7 +25,7 @@ export class ProjectsData {
       title: "Application de Poursuite d'Etude",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: Links.githubPoursuiteEtudes,
+      websiteLink: Links.GITHUB_POURSUITE_ETUDES,
       description:
         "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: 'PHP, JavaScript, PL/SQL, ChartJS, LDAP',
@@ -36,7 +36,7 @@ export class ProjectsData {
       title: 'Jellybot',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubJellybot,
+      websiteLink: Links.GITHUB_JELLYBOT,
       description:
         "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
         '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
@@ -48,7 +48,7 @@ export class ProjectsData {
       title: 'Jeu de plateau Trains',
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: Links.githubTrains,
+      websiteLink: Links.GITHUB_TRAINS,
       description:
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
@@ -65,7 +65,7 @@ export class ProjectsData {
         'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
         "qui effectue des exports de factures électroniques, au travers d'une API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.",
       techs: 'NestJS, JSON, SQL',
-      tags: ['academic'],
+      tags: ['pro'],
     },
     {
       id: 'controverse-crypto',
@@ -84,7 +84,7 @@ export class ProjectsData {
       title: 'Elden Build',
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: Links.githubEldenbuild,
+      websiteLink: Links.GITHUB_ELDEN_BUILD,
       description:
         'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>, ' +
         'avec requêtes asynchrones à l\'<a href="https://eldenring.fanapis.com/">API Elden Ring</a>.',
@@ -96,7 +96,7 @@ export class ProjectsData {
       title: "Nuit de l'Info 2024 - Race For Water",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: Links.githubNdi,
+      websiteLink: Links.GITHUB_NDI,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
@@ -108,7 +108,7 @@ export class ProjectsData {
       title: 'CGJ 2023 - Time Mage Tournament',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.timemagetournament,
+      websiteLink: Links.ITCHIO_TIME_MAGE_TOURNAMENT,
       description:
         'Jeu de tir 2D isométrique réalisé en 24h. ' +
         "Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l'IUT Montpellier-Sête</a>.",
@@ -140,7 +140,7 @@ export class ProjectsData {
       title: 'Mastermind',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubMastermind,
+      websiteLink: Links.GITHUB_MASTERMIND,
       description:
         'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur.',
       techs: 'Java',
@@ -151,7 +151,7 @@ export class ProjectsData {
       title: 'Sudoku',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubSudoku,
+      websiteLink: Links.GITHUB_SUDOKU,
       description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur.',
       techs: 'Java',
       tags: ['game'],
@@ -161,7 +161,7 @@ export class ProjectsData {
       title: 'Le Marin Ivre',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubMarinIvre,
+      websiteLink: Links.GITHUB_MARIN_IVRE,
       description:
         'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
       techs: 'Java',
@@ -170,9 +170,9 @@ export class ProjectsData {
     {
       id: 'game-of-life',
       title: "Conway's Game of Life",
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: Links.githubGol,
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'gol' },
+      websiteLink: Links.GITHUB_GOL,
       description:
         "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal." +
         " C'est un automate cellulaire utilisé dans la recherche biologique pour simuler la vie.",
@@ -184,7 +184,7 @@ export class ProjectsData {
       title: 'Falloutdle',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubFalloutdle,
+      websiteLink: Links.GITHUB_FALLOUTDLE,
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau perso tous les jours.",
       techs: 'Go, Web Scraping, API, JSON',
@@ -195,10 +195,20 @@ export class ProjectsData {
       title: 'Mesh',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.githubMesh,
-      description: 'Lightweight messaging app written in Go, with Peer to Peer networking',
+      websiteLink: Links.GITHUB_MESH,
+      description: 'Lightweight messaging app written in Go, with Peer to Peer networking.',
       techs: 'Go, Peer2Peer, TCP/IP, DNS',
       tags: ['community'],
+    },
+    {
+      id: 'my-avatar',
+      title: 'My Avatar',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB,
+      description: 'Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.',
+      techs: 'Symfony, JS, MySQL, Twig',
+      tags: ['academic'],
     },
   ]
 

@@ -27,7 +27,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #description>
       <p>
         Site web de gestion de build à but communautaire du jeu
-        <a :href="Links.eldenring">Elden Ring</a>.
+        <a :href="Links.ELDEN_RING">Elden Ring</a>.
       </p>
       <p>
         Un build est par définition la construction et l'évolution d'un ensemble d'équipement du
@@ -43,7 +43,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript,
         les requêtes AJAX, l'architecture MVC et ses limites. L'application communique via des
-        requêtes HTTP asynchrones à une<a :href="Links.eldenringapi">fan API Elden Ring</a>.
+        requêtes HTTP asynchrones à une<a :href="Links.ELDEN_RING_FAN_API">fan API Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie
@@ -57,43 +57,43 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #abilities>
       <SkillItem
         :img="Pictures.GIT"
-        :link="Links.git"
+        :link="Links.GIT"
         description="Versioning (gestion des versions) du projet, et collaboration en équipe"
       />
 
       <SkillItem
         :img="Pictures.PHP"
-        :link="Links.php"
+        :link="Links.PHP"
         description="Développement coté serveur de l'application"
       />
 
       <SkillItem
         :img="Pictures.DOCKER"
-        :link="Links.docker"
+        :link="Links.DOCKER"
         description="Aide au déploiement de l'application"
       />
 
       <SkillItem
         :img="Pictures.HTML"
-        :link="Links.html"
+        :link="Links.HTML"
         description="Développement de l'interface utilisateur"
       />
 
       <SkillItem
         :img="Pictures.BOOTSTRAP"
-        :link="Links.bootstrap"
+        :link="Links.BOOTSTRAP"
         description="Mise en page responsive de l'interface graphique de l'application"
       />
 
       <SkillItem
         :img="Pictures.JS"
-        :link="Links.js"
+        :link="Links.JS"
         description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones"
       />
 
       <SkillItem
         :img="Pictures.MYSQL"
-        :link="Links.mysql"
+        :link="Links.MYSQL"
         description="Déploiement de la base de donnée sécurisée"
       />
 
@@ -144,7 +144,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       </div>
     </template>
     <template #liens>
-      <LinkItem :link="Links.githubEldenbuild" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="Pictures.GITHUB" />
     </template>
   </ProjectItem>
 </template>
