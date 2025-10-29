@@ -19,14 +19,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #description>
       <p>
-        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la vie</a>
+        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la Vie</a>
         est une simulation mathématique imaginé par <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway"
           target="_blank">John Horton Conway</a> en 1970.
       </p>
       <p>C'est un automate cellulaire ludique utilisé dans la recherche biologique pour simuler la vie.</p>
       <p>
         Il y a une interface graphique fonctionnel sur terminal,
-        et je travaille actuellement sur une implémentation en 2D avec le moteur graphique
+        et je travaille actuellement sur une future implémentation graphique en 2D avec le moteur de jeu
         <a :href=Links.EBITENGINE target="_blank">Ebitengine</a>.
       </p>
     </template>
@@ -42,6 +42,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
+      <a target="_blank" :href="Links.SAMCODES_GAME_OF_LIFE">Version de Samcodes.co.uk</a>
     </template>
 
   </ProjectItem>

@@ -5,32 +5,46 @@ export class Links {
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
   static readonly SCODOC = 'https://scodoc.org/'
   static readonly EBITENGINE = 'https://ebitengine.org/'
-  static readonly GAME_OF_LIFE = 'https://fr.wikipedia.org/wiki/Jeu_de_la_vie'
+  static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
+  static readonly GRAVATAR = 'https://fr.gravatar.com/'
+  static readonly SAMCODES_GAME_OF_LIFE = 'https://www.samcodes.co.uk/project/game-of-life/'
+
+  // IUT web dev
+  static readonly LEBRETON = 'https://romainlebreton.github.io/'
+  static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
+  static readonly IUT_DEV_WEB_JS = this.LEBRETON + 'R.4.01-DeveloppementWeb-JavaScript/'
+
+  // IUT Advanced web dev
+  static readonly GASQUET = 'https://mgasquet.github.io/'
+  static readonly IUT_DEV_QUALITY = this.GASQUET + 'R304-QualiteDeveloppement/'
+  static readonly IUT_ADV_DEV_QUALITY = this.GASQUET + 'R5.A.05-ProgrammationAvancee-Web/'
+  static readonly IUT_MY_AVATAR = this.IUT_ADV_DEV_QUALITY + 'tutorials/projet1'
 
   // Social
-  static readonly GITHUB = 'https://github.com/doruo/'
-  static readonly MAIL = 'mailto:marc.antonio.haye.pro@gmail.com'
-  static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye/'
-  static readonly GRAVATAR = 'https://fr.gravatar.com/marcantoniohaye/'
-  static readonly ITCHIO = 'https://doruo.itch.io/'
+  static readonly SOCIAL_GITHUB = 'https://github.com/doruo/'
+  static readonly SOCIAL_MAIL = 'mailto:marc.antonio.haye.pro@gmail.com'
+  static readonly SOCIAL_LINKEDIN = 'https://www.linkedin.com/in/marc-haye/'
+  static readonly SOCIAL_GRAVATAR = 'https://fr.gravatar.com/marcantoniohaye/'
+  static readonly SOCIAL_ITCHIO = 'https://doruo.itch.io/'
 
   // Github
-  static readonly GITHUB_PAGES = this.GITHUB + 'doruo.github.io'
-  static readonly GITHUB_ELDEN_BUILD = this.GITHUB + 'EldenBuild'
-  static readonly GITHUB_NDI = this.GITHUB + 'NDI-2024-RaceForWater'
-  static readonly GITHUB_TRAINS = this.GITHUB + 'Trains'
-  static readonly GITHUB_MESH = this.GITHUB + 'Mesh'
-  static readonly GITHUB_MASTERMIND = this.GITHUB + 'mastermind'
-  static readonly GITHUB_FALLOUTDLE = this.GITHUB + 'falloutdle'
-  static readonly GITHUB_GOL = this.GITHUB + 'GameOfLife'
-  static readonly GITHUB_MARIN_IVRE = this.GITHUB + 'marinIvre'
-  static readonly GITHUB_SUDOKU = this.GITHUB + 'Sudoku'
-  static readonly GITHUB_JELLYBOT = this.GITHUB + 'JellyBot'
-  static readonly GITHUB_POURSUITE_ETUDES = this.GITHUB + 'PoursuiteEtudes'
+  static readonly GITHUB_PAGES = this.SOCIAL_GITHUB + 'doruo.github.io'
+  static readonly GITHUB_ELDEN_BUILD = this.SOCIAL_GITHUB + 'EldenBuild'
+  static readonly GITHUB_NDI = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'
+  static readonly GITHUB_TRAINS = this.SOCIAL_GITHUB + 'Trains'
+  static readonly GITHUB_MESH = this.SOCIAL_GITHUB + 'Mesh'
+  static readonly GITHUB_MASTERMIND = this.SOCIAL_GITHUB + 'mastermind'
+  static readonly GITHUB_FALLOUTDLE = this.SOCIAL_GITHUB + 'falloutdle'
+  static readonly GITHUB_GOL = this.SOCIAL_GITHUB + 'GameOfLife'
+  static readonly GITHUB_MARIN_IVRE = this.SOCIAL_GITHUB + 'marinIvre'
+  static readonly GITHUB_SUDOKU = this.SOCIAL_GITHUB + 'Sudoku'
+  static readonly GITHUB_JELLYBOT = this.SOCIAL_GITHUB + 'JellyBot'
+  static readonly GITHUB_POURSUITE_ETUDES = this.SOCIAL_GITHUB + 'PoursuiteEtudes'
 
   // Projects
-  static readonly ITCHIO_TIME_MAGE_TOURNAMENT = this.ITCHIO + 'time-mage-tournament'
+  static readonly ITCHIO_TIME_MAGE_TOURNAMENT = this.SOCIAL_ITCHIO + 'time-mage-tournament'
   static readonly FALLOUTDLE = 'https://falloutdle.net'
+  static readonly MY_AVATAR = 'https://webinfo.iutmontp.univ-montp2.fr/~bodiguely/my-avatar/public'
 
   // Dev
   static readonly GIT = 'https://git-scm.com/'
@@ -53,4 +67,5 @@ export class Links {
   static readonly VUEJS = 'https://vuejs.org/'
   static readonly MYSQL = 'https://www.mysql.com/fr/'
   static readonly GO = 'https://go.dev/'
+  static readonly SYMFONY = 'https://symfony.com/'
 }

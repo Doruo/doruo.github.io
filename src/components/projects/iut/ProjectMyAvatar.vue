@@ -3,7 +3,6 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
 </script>
@@ -15,20 +14,10 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #title>My Avatar</template>
-
+SYMFONY
     <template #description>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
+      <p>Application de gestion d’avatar, inspiré de <a target="_blank" :href=Links.GRAVATAR>Gravatar</a>,
+        fait avec le framework <a target="_blank" :href=Links.SYMFONY>Symfony</a>.</p>
     </template>
 
     <template #abilities>
@@ -39,11 +28,11 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-
     </template>
 
     <template #liens>
-      <LinkItem link="/" :img="Pictures.GITHUB" />
+      <a target="_blank" :href="Links.IUT_MY_AVATAR">Sujet du projet</a>
+      <a target="_blank" :href="Links.MY_AVATAR">Voir le site</a>
     </template>
   </ProjectItem>
 </template>

@@ -8,6 +8,7 @@
         sont plutôt anciens, afin qu'ils restent accessibles.
       </p>
 
+      <fieldset></fieldset>
 
       <ul>
 
