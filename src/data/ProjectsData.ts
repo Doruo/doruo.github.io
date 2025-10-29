@@ -53,7 +53,7 @@ export class ProjectsData {
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
       techs: 'Java, JavaFX',
-      tags: ['game', 'academic'],
+      tags: ['main','game', 'academic'],
     },
     {
       id: 'my-avatar',
@@ -170,7 +170,7 @@ export class ProjectsData {
       websiteLink: Links.GITHUB_GOL,
       description: "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
       techs: 'Go, Ebitengine',
-      tags: ['main', 'game'],
+      tags: ['game'],
     },
     {
       id: 'falloutdle',
@@ -193,9 +193,19 @@ export class ProjectsData {
       techs: 'Go, Peer2Peer, TCP/IP, DNS',
       tags: ['community'],
     },
+        {
+      id: 'e3cete',
+      title: 'E3Cète',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB_E3CETE,
+      description: 'Jeu de société en java, inspiré du jeu Set! .',
+      techs: 'Java',
+      tags: ['game'],
+    },
     {
       id: 'stage-itesoft',
-      title: 'Stage chez ITESOFT (CONFIDENTIEL)',
+      title: 'Stage - ITESOFT (CONFIDENTIEL)',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
@@ -243,17 +253,9 @@ export class ProjectsData {
     }
   }
 
-  public static getWebDevProjectsCategory(): ProjectCategory {
+  public static getGameProjectsCategory(): ProjectCategory {
     return {
-      id: 'web-dev',
-      title: 'Web & Applications',
-      projects: this.getProjectsByTag('web'),
-    }
-  }
-
-  public static getGameDevProjectsCategory(): ProjectCategory {
-    return {
-      id: 'game-dev',
+      id: 'game',
       title: 'Jeux',
       projects: this.getProjectsByTag('game'),
     }

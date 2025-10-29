@@ -10,19 +10,19 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
     :projectsCategory="ProjectsData.getMainProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getCompetitionProjectsCategory().title"
-    :projectsCategory="ProjectsData.getCompetitionProjectsCategory()"
-  />
-  <ProjectCards
     :title="ProjectsData.getAcademicProjectsCategory().title"
     :projectsCategory="ProjectsData.getAcademicProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getCommunityProjectsCategory().title"
-    :projectsCategory="ProjectsData.getCommunityProjectsCategory()"
+    :title="ProjectsData.getCompetitionProjectsCategory().title"
+    :projectsCategory="ProjectsData.getCompetitionProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getGameDevProjectsCategory().title"
-    :projectsCategory="ProjectsData.getGameDevProjectsCategory()"
+    :title="ProjectsData.getGameProjectsCategory().title"
+    :projectsCategory="ProjectsData.getGameProjectsCategory()"
+  />
+  <ProjectCards
+    :title="ProjectsData.getCommunityProjectsCategory().title"
+    :projectsCategory="ProjectsData.getCommunityProjectsCategory()"
   />
 </template>
