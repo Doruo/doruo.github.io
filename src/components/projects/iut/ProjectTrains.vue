@@ -2,7 +2,7 @@
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
 import logoTrains from '@/assets/img/projets/trains/logoTrains.webp'
-import regles from '@/assets/pdf/regles.pdf'
+import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 
 import init from '@/assets/img/projets/trains/trains_initialisation.webp'
 import partie1 from '@/assets/img/projets/trains/trains_partie1.webp'

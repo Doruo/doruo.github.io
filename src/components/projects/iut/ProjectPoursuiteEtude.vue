@@ -8,7 +8,8 @@ import connexion from '@/assets/img/projets/poursuiteEtude/poursuite_etude_conne
 import csv from '@/assets/img/projets/poursuiteEtude/poursuite_etude_csv.webp'
 import diagramme from '@/assets/img/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
 import notes from '@/assets/img/projets/poursuiteEtude/poursuite_etude_notes.webp'
-import sujet from '@/assets/pdf/lancement_SAE3A_poursuiteEtudes.pdf'
+
+import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf'
 
 import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'

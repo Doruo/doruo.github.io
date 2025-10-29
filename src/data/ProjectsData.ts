@@ -53,7 +53,7 @@ export class ProjectsData {
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
       techs: 'Java, JavaFX',
-      tags: ['main','game', 'academic'],
+      tags: ['game', 'academic'],
     },
     {
       id: 'stage-itesoft',

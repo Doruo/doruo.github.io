@@ -30,7 +30,7 @@ defineProps({
       <slot name="description"></slot>
     </p>
     <p>
-      <b>Technologies:</b>
+      <b>Technologies: </b>
       <slot name="techs"></slot>
     </p>
 
