@@ -58,53 +58,24 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem
-        :img="Pictures.GIT"
-        :link="Links.GIT"
-        description="Versioning (gestion des versions) du projet, et collaboration en équipe"
-      />
+      <SkillItem :img="Pictures.GIT" :link="Links.GIT"
+        description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
 
-      <SkillItem
-        :img="Pictures.PHP"
-        :link="Links.PHP"
-        description="Développement coté serveur de l'application"
-      />
+      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
 
-      <SkillItem
-        :img="Pictures.DOCKER"
-        :link="Links.DOCKER"
-        description="Aide au déploiement de l'application"
-      />
+      <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au déploiement de l'application" />
 
-      <SkillItem
-        :img="Pictures.HTML"
-        :link="Links.HTML"
-        description="Développement de l'interface utilisateur"
-      />
+      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Développement de l'interface utilisateur" />
 
-      <SkillItem
-        :img="Pictures.BOOTSTRAP"
-        :link="Links.BOOTSTRAP"
-        description="Mise en page responsive de l'interface graphique de l'application"
-      />
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP"
+        description="Mise en page responsive de l'interface graphique de l'application" />
 
-      <SkillItem
-        :img="Pictures.JS"
-        :link="Links.JS"
-        description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones"
-      />
+      <SkillItem :img="Pictures.JS" :link="Links.JS"
+        description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
 
-      <SkillItem
-        :img="Pictures.MYSQL"
-        :link="Links.MYSQL"
-        description="Déploiement de la base de donnée sécurisée"
-      />
+      <SkillItem :img="Pictures.MYSQL" :link="Links.MYSQL" description="Déploiement de la base de donnée sécurisée" />
 
-      <SkillItem
-        :img="Pictures.REST"
-        link=""
-        description="Norme de communication avec l'API Elden Ring"
-      />
+      <SkillItem :img="Pictures.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>

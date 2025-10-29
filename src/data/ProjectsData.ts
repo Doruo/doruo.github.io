@@ -34,8 +34,8 @@ export class ProjectsData {
     {
       id: 'jellybot',
       title: 'Jellybot',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-jellybot' },
       websiteLink: Links.GITHUB_JELLYBOT,
       description:
         "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
@@ -73,7 +73,7 @@ export class ProjectsData {
       websiteLink: '/IUT/A1/SAE-106/accueil.html',
       description:
         'Vitrine présentant mon travail de recherche et de rédaction ' +
-        "sur la controverse suivante: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
+        "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
       techs: 'HTML, CSS',
       tags: ['academic'],
     },

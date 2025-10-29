@@ -68,53 +68,25 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem
-        :img="Pictures.GIT"
-        :link="Links.GIT"
-        description="Versioning (gestion des versions) du projet, et collaboration en équipe"
-      />
+      <SkillItem :img="Pictures.GIT" :link="Links.GIT"
+        description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
 
-      <SkillItem
-        :img="Pictures.DOCKER"
-        :link="Links.DOCKER"
-        description="Aide au deploiement de l'application"
-      />
+      <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au deploiement de l'application" />
 
-      <SkillItem
-        :img="Pictures.LDAP"
-        :link="Links.LDAP"
-        description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète"
-      />
+      <SkillItem :img="Pictures.LDAP" :link="Links.LDAP"
+        description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
 
-      <SkillItem
-        :img="Pictures.PHP"
-        :link="Links.PHP"
-        description="Développement coté serveur de l'application"
-      />
+      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
 
-      <SkillItem
-        :img="Pictures.BOOTSTRAP"
-        :link="Links.BOOTSTRAP"
-        description="Mise en page de l'interface visuelle"
-      />
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
 
-      <SkillItem
-        :img="Pictures.POSTGRE"
-        :link="Links.POSTGRE"
-        description="Base de donnée de l'application"
-      />
+      <SkillItem :img="Pictures.POSTGRE" :link="Links.POSTGRE" description="Base de donnée de l'application" />
 
-      <SkillItem
-        :img="Pictures.PLSQL"
-        :link="Links.PLSQL"
-        description="Fonctions et triggers dynamiques dans la base de donnée"
-      />
+      <SkillItem :img="Pictures.PLSQL" :link="Links.PLSQL"
+        description="Fonctions et triggers dynamiques dans la base de donnée" />
 
-      <SkillItem
-        :img="Pictures.CHARTJS"
-        :link="Links.CHARTJS"
-        description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants"
-      />
+      <SkillItem :img="Pictures.CHARTJS" :link="Links.CHARTJS"
+        description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
     </template>
 
     <template #assets>

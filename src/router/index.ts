@@ -10,6 +10,7 @@ import ViewAbout from '@/views/ViewAbout.vue'
 import ViewArchives from '@/views/ViewArchives.vue'
 import ProjectGol from '@/components/projects/dev/ProjectGol.vue'
 import ProjectMyAvatar from '@/components/projects/iut/ProjectMyAvatar.vue'
+import ProjectJellybot from '@/components/projects/dev/ProjectJellybot.vue'
 
 const routes = [
   // views
@@ -28,6 +29,7 @@ const routes = [
   { path: '/projects/nuit-de-linfo', name: 'projects-ndi2024', component: ProjectNDI },
   { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar },
   { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
+   { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
   // error
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: ViewError, props: { errorType: '404' } },
 ]

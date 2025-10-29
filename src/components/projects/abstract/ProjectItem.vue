@@ -4,7 +4,9 @@
     <!-- PROJECT INTRO -->
     <div class="contenu-intro">
       <slot name="logo_projet"></slot>
-      <h2><slot name="title"></slot></h2>
+      <h2>
+        <slot name="title"></slot>
+      </h2>
       <slot name="description"></slot>
     </div>
   </section>

@@ -68,23 +68,12 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem
-        :img="Pictures.JAVA"
-        :link="Links.JAVA"
-        description="Implémentation de la logique du jeu"
-      />
+      <SkillItem :img="Pictures.JAVA" :link="Links.JAVA" description="Implémentation de la logique du jeu" />
 
-      <SkillItem
-        :img="Pictures.JAVAFX"
-        :link="Links.JAVAFX"
-        description="Réalisation de l'interface graphique"
-      />
+      <SkillItem :img="Pictures.JAVAFX" :link="Links.JAVAFX" description="Réalisation de l'interface graphique" />
 
-      <SkillItem
-        :img="Pictures.SCENEBUILDER"
-        :link="Links.SCENE_BUILDER"
-        description="Aide à la réalisation de l'interface graphique"
-      />
+      <SkillItem :img="Pictures.SCENEBUILDER" :link="Links.SCENE_BUILDER"
+        description="Aide à la réalisation de l'interface graphique" />
     </template>
 
     <template #assets>

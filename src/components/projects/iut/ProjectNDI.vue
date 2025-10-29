@@ -54,27 +54,10 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem
-        :img="Pictures.GIT"
-        :link="Links.GIT"
-        description="Versionnage du projet"
-      />
+      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
       <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Rédaction des articles" />
-      <SkillItem
-        :img="Pictures.BOOTSTRAP"
-        :link="Links.BOOTSTRAP"
-        description="Mise en page visuelle des articles"
-      />
-      <SkillItem
-        :img="Pictures.JS"
-        :link="Links.JS"
-        description="Implémentation de l'océan naviguable"
-      />
-      <SkillItem
-        :img="Pictures.EXPRESS"
-        :link="Links.EXPRESS"
-        description="Routage et gestion des dépendances de l'API"
-      />
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle des articles" />
+      <SkillItem :img="Pictures.EXPRESS" :link="Links.EXPRESS" description="Routage et implémentation de l'océan" />
     </template>
 
     <template #assets>

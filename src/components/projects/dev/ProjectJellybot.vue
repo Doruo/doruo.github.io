@@ -10,40 +10,32 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
 <template>
   <ProjectItem>
+
     <template #logo_projet>
       <img alt="eldenbuild_logo" :src="ranni" />
     </template>
 
-    <template #title>My Avatar</template>
+    <template #title>Jellybot</template>
 
     <template #description>
       <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
+        Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
       </p>
       <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
-      </p>
-      <p>
-        Projet web inspiré de Gravatar, fait avec le framework PHP Symfony.
+        Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !
       </p>
     </template>
 
     <template #abilities>
       <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
-      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Implémentation de Symfony" />
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle" />
-      <SkillItem :img="Pictures.JS" :link="Links.JS" description="Requêtes AJAX" />
     </template>
 
     <template #assets>
-
     </template>
 
     <template #liens>
-      <LinkItem link="/" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
     </template>
+
   </ProjectItem>
 </template>
