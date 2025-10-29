@@ -14,7 +14,7 @@ import { ProjectsData } from '@/data/ProjectsData.ts'
   />
   <section class="contact">
     <h1>
-      <router-link :to="{ name: 'projects' }">Voir plus de projets</router-link>
+      <router-link :to="{ name: 'projects' }">See more</router-link>
     </h1>
   </section>
 </template>

@@ -273,6 +273,18 @@ a,
   width: 90px;
 }
 
+/* ARCHIVES */
+.archives{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.fieldset-archives ul li{
+  margin: 6%;
+  list-style-type: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1820px) {
