@@ -17,11 +17,11 @@ defineProps({
 
 <template>
   <!-- PROJECTS CARDS -->
-  <section id="projets" class="projets">
-    <div class="contenu-projets">
+  <section class="projects">
+    <div class="projects-content">
       <h2>{{ title }}</h2>
 
-      <div class="projet-grid">
+      <div class="project-grid">
         <ProjectCardItem v-for="project in projectsCategory.projects" :key="project.id" :title="project.title"
           :show-more-info-link="project.showMoreInfoLink" :more-info-link="project.moreInfoLink"
           :website-link="project.websiteLink">

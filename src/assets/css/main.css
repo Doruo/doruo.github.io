@@ -32,7 +32,7 @@ p:not(.branding p):not(footer .conteneur p) {
   margin-bottom: 1rem;
 }
 
-.contenu-intro p {
+.intro-content p {
   text-align: justify;
 }
 
@@ -81,23 +81,23 @@ section {
 
 /* CONTAINERS */
 
-.contenu-intro,
+.intro-content,
 .conteneur,
-.contenu-projets,
-.projet-contenu-images,
-.contenu-competences {
+.projects-content,
+.project-content-images,
+.skills-content {
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .conteneur,
-.contenu-projets,
-.projet-contenu-images,
-.contenu-competences {
+.projects-content,
+.project-content-images,
+.skills-content {
   max-width: 70%;
 }
 
-.contenu-intro {
+.intro-content {
   width: 50%;
 }
 
@@ -115,23 +115,23 @@ section {
   padding: 4rem 0;
 }
 
-/* PROJETS */
+/* PROJECTS */
 
-.projets {
+.projects {
   padding: 4rem 0;
 }
 
 /* TABLEAUX */
 
-.projet-grid,
-.competences-grid {
+.project-grid,
+.skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.8rem;
   margin-top: 2rem;
 }
 
-.competences-grid {
+.skills-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
@@ -148,9 +148,9 @@ section {
 
 /* --------- */
 
-.projet-card,
-.projet-images,
-.competence-card,
+.project-card,
+.project-images,
+.skill-card,
 .error {
   border-radius: 15px;
   box-shadow: 0 10px 20px var(--box-shadow-color);
@@ -162,36 +162,36 @@ section {
   align-content: center;
 }
 
-.projet-card h1 {
+.project-card h1 {
   color: var(--h1-color);
 }
 
-.projet-card p {
+.project-card p {
   text-align: center;
 }
 
-.projet-images {
+.project-images {
   padding: 0;
   max-height: 200px;
 }
 
-.projet-images img {
+.project-images img {
   width: 100%;
   height: 100%;
 }
 
-.projet-card:hover,
-.projet-images:hover {
+.project-card:hover,
+.project-images:hover {
   transform: scale(1.04);
   box-shadow: 10px 5px 5px var(--box-shadow-color);
 }
 
-.projet-card a img:hover,
+.project-card a img:hover,
 .social-link-img:hover {
   transform: scale(1.04);
 }
 
-.projet-liens a {
+.project-links a {
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 600;
@@ -204,9 +204,9 @@ section {
   z-index: 1;
 }
 
-/* COMPETENCES */
+/* SKILLS */
 
-.competences {
+.skills {
   padding: 4rem 0;
 }
 
@@ -220,7 +220,7 @@ section {
 /* LINK */
 
 a,
-.projet-liens a {
+.project-links a {
   color: var(--primary-link-color);
   text-decoration: none;
 }
@@ -234,7 +234,7 @@ a,
 }
 
 .social-links a,
-.competences .conteneur p a,
+.skills .conteneur p a,
 .entete h1 a {
   text-decoration: none;
 }
@@ -252,7 +252,7 @@ a,
 }
 
 .social-links div a img,
-.projet-liens div a img {
+.project-links div a img {
   max-height: 80px;
   max-height: 80px;
 }
@@ -265,11 +265,11 @@ a,
   border-radius: 50%;
 }
 
-.contenu-intro img {
+.intro-content img {
   width: 35%;
 }
 
-.projet-card a img {
+.project-card a img {
   width: 90px;
 }
 
@@ -289,7 +289,7 @@ a,
 
 @media (max-width: 1820px) {
   #accueil,
-  .projets-grid {
+  .projects-grid {
     flex-direction: column;
     grid-template-columns: 1fr;
   }
@@ -309,16 +309,16 @@ a,
     padding: 20px;
   }
 
-  .contenu-intro {
+  .intro-content {
     max-width: 98%;
   }
 
-  .contenu-intro p {
+  .intro-content p {
     font-size: 1.2rem;
   }
 
-  .contenu-intro h1,
-  .contenu-intro h2 {
+  .intro-content h1,
+  .intro-content h2 {
     font-size: 2.2rem;
   }
 
@@ -336,16 +336,16 @@ a,
 
   .biographie .conteneur h2,
   .future .conteneur h2,
-  .projet-card h3,
-  .contenu-projets h2 {
+  .project-card h3,
+  .projects-content h2 {
     font-size: 2.2rem;
   }
 
   .biographie .conteneur p,
   .future .conteneur p,
   footer .conteneur p,
-  .projet-card p,
-  .projet-card a {
+  .project-card p,
+  .project-card a {
     font-size: 1.6rem;
   }
 

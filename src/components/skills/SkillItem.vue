@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <!--SKILL-->
-  <div class="projet-card">
+  <div class="skill-card">
     <a :href="link" target="_blank"><img alt="skill" :src="img" /></a>
     <p>{{ description }}</p>
   </div>

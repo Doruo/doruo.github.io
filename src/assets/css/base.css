@@ -3,12 +3,13 @@
 /* VARS */
 
 :root {
+  --main-font-family: 'Arial';
+
   --primary-bg-color: rgb(35, 38, 39);
   --primary-headers-color: #2a3a4b;
   --primary-text-color: rgb(232, 230, 227);
   --primary-link-color: rgb(160, 183, 190);
   --primary-hover-color: #aaa;
-  --main-font-family: 'Arial';
 
   --h1-color: var(--h3-color);
   --h2-color: #a6bcce;
