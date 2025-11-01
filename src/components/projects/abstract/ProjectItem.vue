@@ -23,7 +23,7 @@
 
   <section class="projects">
     <!-- PROJECT ASSETS -->
-    <div class="project-content-images">
+    <div class="project-content-image">
       <h2>Illustrations</h2>
       <slot name="assets"></slot>
     </div>
@@ -31,7 +31,7 @@
 
   <section class="contact">
     <!-- PROJECT LINKS -->
-    <div class="project-lins">
+    <div class="project-links">
       <h2>Liens</h2>
       <slot name="liens"></slot>
     </div>

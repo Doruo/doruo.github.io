@@ -90,38 +90,38 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="projet-grid">
-        <div class="projet-images">
+      <div class="project-grid">
+        <div class="project-images">
           <a :href="accueil">
             <img alt="poursuiteEtude_accueil" :src="accueil" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="connexion">
             <img alt="poursuiteEtude_connexion" :src="connexion" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="notes">
             <img alt="poursuiteEtude_notes" :src="notes" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="agregation">
             <img alt="poursuite_etude_agregation" :src="agregation" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="csv">
             <img alt="poursuiteEtude_csv" :src="csv" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="diagramme">
             <img alt="poursuite_etude_diagramme_classes" :src="diagramme" />
           </a>

@@ -77,25 +77,25 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="projet-images">
+      <div class="project-images">
         <a :href="init">
           <img alt="trains_initialisation" :src="init" />
         </a>
       </div>
 
-      <div class="projet-images">
+      <div class="project-images">
         <a :href="partie1">
           <img alt="trains_partie1" :src="partie1" />
         </a>
       </div>
 
-      <div class="projet-images">
+      <div class="project-images">
         <a :href="partie2">
           <img alt="trains_partie2" :src="partie2" />
         </a>
       </div>
 
-      <div class="projet-images">
+      <div class="project-images">
         <a :href="partie3">
           <img alt="trains_partie3" :src="partie3" />
         </a>

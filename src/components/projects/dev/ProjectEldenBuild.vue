@@ -79,38 +79,38 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="projet-grid">
-        <div class="projet-images">
+      <div class="project-grid">
+        <div class="project-images">
           <a :href="accueil">
             <img alt="eldenbuild_accueil" :src="accueil" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="inscription">
             <img alt="eldenbuild_inscription" :src="inscription" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="build">
             <img alt="eldenbuild_build" :src="build" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="testAPI">
             <img alt="eldenbuild_testapi" :src="testAPI" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="profile">
             <img alt="eldenbuild_profile" :src="profile" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="equipement">
             <img alt="eldenbuild_getEquipement" :src="equipement" />
           </a>

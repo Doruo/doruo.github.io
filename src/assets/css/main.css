@@ -84,7 +84,7 @@ section {
 .intro-content,
 .conteneur,
 .projects-content,
-.project-content-images,
+.project-content-image,
 .skills-content {
   margin: 0 auto;
   padding: 0 2rem;
@@ -92,7 +92,7 @@ section {
 
 .conteneur,
 .projects-content,
-.project-content-images,
+.project-content-image,
 .skills-content {
   max-width: 70%;
 }
@@ -181,7 +181,7 @@ section {
 }
 
 .project-card:hover,
-.project-images:hover,
+.project-content-image:hover,
 .skill-card:hover {
   transform: scale(1.04);
   box-shadow: 10px 5px 5px var(--box-shadow-color);

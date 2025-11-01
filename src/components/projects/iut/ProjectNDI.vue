@@ -61,56 +61,56 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="projet-grid">
-        <div class="projet-images">
+      <div class="project-grid">
+        <div class="project-images">
           <a :href="ocean">
             <img alt="ndi_ocean" :src="ocean" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="page">
             <img alt="ndi_page" :src="page" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photoGroupe">
             <img alt="ndi_photo_groupe" :src="photoGroupe" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo1">
             <img alt="ndi_photo1" :src="photo1" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo2">
             <img alt="ndi_photo2" :src="photo2" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo3">
             <img alt="ndi_photo3" :src="photo3" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo4">
             <img alt="ndi_photo4" :src="photo4" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo5">
             <img alt="ndi_photo5" :src="photo5" />
           </a>
         </div>
 
-        <div class="projet-images">
+        <div class="project-images">
           <a :href="photo6">
             <img alt="ndi_photo6" :src="photo6" />
           </a>
