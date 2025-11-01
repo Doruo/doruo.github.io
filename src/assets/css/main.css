@@ -181,12 +181,14 @@ section {
 }
 
 .project-card:hover,
-.project-images:hover {
+.project-images:hover,
+.skill-card:hover {
   transform: scale(1.04);
   box-shadow: 10px 5px 5px var(--box-shadow-color);
 }
 
 .project-card a img:hover,
+.skill-card a img:hover,
 .social-link-img:hover {
   transform: scale(1.04);
 }
@@ -269,7 +271,9 @@ a,
   width: 35%;
 }
 
-.project-card a img {
+.project-card a img,
+.skill-card a img
+{
   width: 90px;
 }
 
