@@ -144,9 +144,14 @@ section {
 .project-images:hover,
 .skill-card:hover,
 .project-card a img:hover,
-.skill-card a img:hover,
-.social-link-img:hover {
+.social-link-img a img:hover,
+.skill-card a img:hover{
   transform: scale(1.04);
+}
+
+.project-card:hover,
+.project-images:hover,
+.skill-card:hover {
   box-shadow: 10px 5px 5px var(--box-shadow-color);
 }
 

@@ -78,25 +78,25 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #assets>
       <div class="project-images">
-        <a :href="init">
+        <a target="_blank" :href="init">
           <img alt="trains_initialisation" :src="init" />
         </a>
       </div>
 
       <div class="project-images">
-        <a :href="partie1">
+        <a target="_blank" :href="partie1">
           <img alt="trains_partie1" :src="partie1" />
         </a>
       </div>
 
       <div class="project-images">
-        <a :href="partie2">
+        <a target="_blank" :href="partie2">
           <img alt="trains_partie2" :src="partie2" />
         </a>
       </div>
 
       <div class="project-images">
-        <a :href="partie3">
+        <a target="_blank" :href="partie3">
           <img alt="trains_partie3" :src="partie3" />
         </a>
       </div>
@@ -104,7 +104,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_TRAINS" :img="Pictures.GITHUB" />
-      <a :href="regles" target="blank">Règles du jeu</a>
+      <a target="_blank" :href="regles">Règles du jeu</a>
     </template>
   </ProjectItem>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ProjectCardItem from '@/components/projects/abstract/ProjectCardItem.vue'
-import { type ProjectCategory } from '@/data/ProjectsData.ts'
+import { type ProjectCategory } from '@/data/Projects'
 import type { PropType } from 'vue'
 
 defineProps({

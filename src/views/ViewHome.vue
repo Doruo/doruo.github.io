@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import AboutIntro from '@/components/about/AboutIntro.vue'
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
-import { ProjectsData } from '@/data/ProjectsData.ts'
+import { Projects } from '@/data/Projects'
 </script>
 
 <template>
   <!-- VIEW HOME -->
   <AboutIntro />
   <ProjectCards
-    :title="ProjectsData.getMainProjectsCategory().title"
-    :projectsCategory="ProjectsData.getMainProjectsCategory()"
+    :title="Projects.getMainProjectsCategory().title"
+    :projectsCategory="Projects.getMainProjectsCategory()"
     :show-all-projects-link="true"
   />
   <section class="contact">

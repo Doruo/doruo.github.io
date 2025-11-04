@@ -1,28 +1,28 @@
 <script setup lang="ts">
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
-import { ProjectsData } from '@/data/ProjectsData.ts'
+import { Projects } from '@/data/Projects'
 </script>
 
 <template>
   <!-- VIEW PROJECTS -->
   <ProjectCards
-    :title="ProjectsData.getMainProjectsCategory().title"
-    :projectsCategory="ProjectsData.getMainProjectsCategory()"
+    :title="Projects.getMainProjectsCategory().title"
+    :projectsCategory="Projects.getMainProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getAcademicProjectsCategory().title"
-    :projectsCategory="ProjectsData.getAcademicProjectsCategory()"
+    :title="Projects.getAcademicProjectsCategory().title"
+    :projectsCategory="Projects.getAcademicProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getCompetitionProjectsCategory().title"
-    :projectsCategory="ProjectsData.getCompetitionProjectsCategory()"
+    :title="Projects.getCompetitionProjectsCategory().title"
+    :projectsCategory="Projects.getCompetitionProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getGameProjectsCategory().title"
-    :projectsCategory="ProjectsData.getGameProjectsCategory()"
+    :title="Projects.getGameProjectsCategory().title"
+    :projectsCategory="Projects.getGameProjectsCategory()"
   />
   <ProjectCards
-    :title="ProjectsData.getCommunityProjectsCategory().title"
-    :projectsCategory="ProjectsData.getCommunityProjectsCategory()"
+    :title="Projects.getCommunityProjectsCategory().title"
+    :projectsCategory="Projects.getCommunityProjectsCategory()"
   />
 </template>

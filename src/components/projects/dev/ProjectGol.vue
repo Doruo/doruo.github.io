@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
-import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
+import gol_logo from '@/assets/img/projets/gol/gol_logo.webp'
+import gol1 from '@/assets/img/projets/gol/gol1.webp'
+import gol2 from '@/assets/img/projets/gol/gol2.webp'
+import gol3 from '@/assets/img/projets/gol/gol3.webp'
+
 import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
@@ -12,16 +16,15 @@ import SkillItem from '@/components/skills/SkillItem.vue'
   <ProjectItem>
 
     <template #logo_projet>
-      <img alt="eldenbuild_logo" :src="ranni" />
+      <img alt="gameoflife_logo" :src="gol_logo" />
     </template>
 
     <template #title>Conway's Game of Life</template>
 
     <template #description>
       <p>
-        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la Vie</a>
-        est une simulation mathématique imaginé par <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway"
-          target="_blank">John Horton Conway</a> en 1970.
+        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la Vie</a> est une simulation mathématique imaginé par
+        <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway" target="_blank">John Horton Conway</a> en 1970.
       </p>
       <p>C'est un automate cellulaire ludique utilisé dans la recherche biologique pour simuler la vie.</p>
       <p>
@@ -38,11 +41,26 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
+      <div class="project-images">
+        <a target="_blank" :href="gol1">
+          <img alt="gameoflife_game" :src="gol1" />
+        </a>
+      </div>
+      <div class="project-images">
+        <a target="_blank" :href="gol2">
+          <img alt="gameoflife_game" :src="gol2" />
+        </a>
+      </div>
+      <div class="project-images">
+        <a target="_blank" :href="gol3">
+          <img alt="gameoflife_game" :src="gol3" />
+        </a>
+      </div>
     </template>
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
-      <a target="_blank" :href="Links.SAMCODES_GAME_OF_LIFE">Version de Samcodes.co.uk</a>
+      <a target="_blank" :href="Links.SAMCODES_GAME_OF_LIFE">Version du jeu de samcodes</a>
     </template>
 
   </ProjectItem>

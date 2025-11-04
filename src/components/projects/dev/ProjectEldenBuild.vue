@@ -58,63 +58,51 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT"
-        description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-
+      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
       <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-
       <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au déploiement de l'application" />
-
       <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Développement de l'interface utilisateur" />
-
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP"
-        description="Mise en page responsive de l'interface graphique de l'application" />
-
-      <SkillItem :img="Pictures.JS" :link="Links.JS"
-        description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
-
+      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
+      <SkillItem :img="Pictures.JS" :link="Links.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
       <SkillItem :img="Pictures.MYSQL" :link="Links.MYSQL" description="Déploiement de la base de donnée sécurisée" />
-
       <SkillItem :img="Pictures.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>
-      <div class="project-grid">
-        <div class="project-images">
-          <a :href="accueil">
-            <img alt="eldenbuild_accueil" :src="accueil" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="accueil">
+          <img alt="eldenbuild_accueil" :src="accueil" />
+        </a>
+      </div>
 
-        <div class="project-images">
-          <a :href="inscription">
-            <img alt="eldenbuild_inscription" :src="inscription" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="inscription">
+          <img alt="eldenbuild_inscription" :src="inscription" />
+        </a>
+      </div>
 
-        <div class="project-images">
-          <a :href="build">
-            <img alt="eldenbuild_build" :src="build" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="build">
+          <img alt="eldenbuild_build" :src="build" />
+        </a>
+      </div>
 
-        <div class="project-images">
-          <a :href="testAPI">
-            <img alt="eldenbuild_testapi" :src="testAPI" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="testAPI">
+          <img alt="eldenbuild_testapi" :src="testAPI" />
+        </a>
+      </div>
 
-        <div class="project-images">
-          <a :href="profile">
-            <img alt="eldenbuild_profile" :src="profile" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="profile">
+          <img alt="eldenbuild_profile" :src="profile" />
+        </a>
+      </div>
 
-        <div class="project-images">
-          <a :href="equipement">
-            <img alt="eldenbuild_getEquipement" :src="equipement" />
-          </a>
-        </div>
+      <div class="project-images">
+        <a target="_blank" :href="equipement">
+          <img alt="eldenbuild_getEquipement" :src="equipement" />
+        </a>
       </div>
     </template>
     <template #liens>

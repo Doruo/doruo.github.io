@@ -25,7 +25,9 @@
     <!-- PROJECT ASSETS -->
     <div class="project-content-image">
       <h2>Illustrations</h2>
-      <slot name="assets"></slot>
+      <div class="project-grid">
+        <slot name="assets"></slot>
+      </div>
     </div>
   </section>
 

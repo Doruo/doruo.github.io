@@ -18,7 +18,7 @@ export interface ProjectCategory {
   projects: Project[]
 }
 
-export class ProjectsData {
+export class Projects {
   private static readonly allProjects: Project[] = [
     {
       id: 'poursuite-etude',
@@ -53,7 +53,7 @@ export class ProjectsData {
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
       techs: 'Java, JavaFX',
-      tags: ['main','game', 'academic'],
+      tags: ['game', 'academic'],
     },
     {
       id: 'my-avatar',
@@ -170,7 +170,7 @@ export class ProjectsData {
       websiteLink: Links.GITHUB_GOL,
       description: "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
       techs: 'Go, Ebitengine',
-      tags: ['game'],
+      tags: ['main','game'],
     },
     {
       id: 'falloutdle',

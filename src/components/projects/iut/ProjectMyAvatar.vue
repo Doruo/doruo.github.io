@@ -14,7 +14,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #title>My Avatar</template>
-SYMFONY
+
     <template #description>
       <p>Application de gestion d’avatar, inspiré de <a target="_blank" :href=Links.GRAVATAR>Gravatar</a>,
         fait avec le framework <a target="_blank" :href=Links.SYMFONY>Symfony</a>.</p>

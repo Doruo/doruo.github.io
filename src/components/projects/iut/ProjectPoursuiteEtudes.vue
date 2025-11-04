@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 
-import logoIUT from '@/assets/img/projets/IUT/logoIUT.webp'
+import logoIUT from '@/assets/img/projets/poursuiteEtude/logoIUT.webp'
 import accueil from '@/assets/img/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
 import agregation from '@/assets/img/projets/poursuiteEtude/poursuite_etude_agregation.webp'
 import connexion from '@/assets/img/projets/poursuiteEtude/poursuite_etude_connexion.webp'
@@ -68,70 +68,56 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT"
-        description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-
+      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
       <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au deploiement de l'application" />
-
-      <SkillItem :img="Pictures.LDAP" :link="Links.LDAP"
-        description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
-
+      <SkillItem :img="Pictures.LDAP" :link="Links.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
       <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-
       <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
-
       <SkillItem :img="Pictures.POSTGRE" :link="Links.POSTGRE" description="Base de donnée de l'application" />
-
-      <SkillItem :img="Pictures.PLSQL" :link="Links.PLSQL"
-        description="Fonctions et triggers dynamiques dans la base de donnée" />
-
-      <SkillItem :img="Pictures.CHARTJS" :link="Links.CHARTJS"
-        description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
+      <SkillItem :img="Pictures.PLSQL" :link="Links.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
+      <SkillItem :img="Pictures.CHARTJS" :link="Links.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
     </template>
 
     <template #assets>
-      <div class="project-grid">
         <div class="project-images">
-          <a :href="accueil">
-            <img alt="poursuiteEtude_accueil" :src="accueil" />
-          </a>
+          <a target="_blank" :href="accueil">
+            <img alt="poursuiteEtude_accueil" :src="accueil" /></a>
         </div>
 
         <div class="project-images">
-          <a :href="connexion">
+          <a target="_blank" :href="connexion">
             <img alt="poursuiteEtude_connexion" :src="connexion" />
           </a>
         </div>
 
         <div class="project-images">
-          <a :href="notes">
+          <a target="_blank" :href="notes">
             <img alt="poursuiteEtude_notes" :src="notes" />
           </a>
         </div>
 
         <div class="project-images">
-          <a :href="agregation">
+          <a target="_blank" :href="agregation">
             <img alt="poursuite_etude_agregation" :src="agregation" />
           </a>
         </div>
 
         <div class="project-images">
-          <a :href="csv">
+          <a target="_blank" :href="csv">
             <img alt="poursuiteEtude_csv" :src="csv" />
           </a>
         </div>
 
         <div class="project-images">
-          <a :href="diagramme">
+          <a target="_blank" :href="diagramme">
             <img alt="poursuite_etude_diagramme_classes" :src="diagramme" />
           </a>
         </div>
-      </div>
     </template>
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Pictures.GITHUB" />
-      <a :href="sujet" target="blank">Sujet du projet</a>
+      <a target="_blank" :href="sujet">Sujet du projet</a>
     </template>
   </ProjectItem>
 </template>
