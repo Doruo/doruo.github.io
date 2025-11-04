@@ -1,5 +1,6 @@
 export class Links {
   // Websites
+  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
   static readonly NDI = 'https://nuitdelinfo.com/'
   static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring/'
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
