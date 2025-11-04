@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import AboutCV from './AboutCV.vue'
 import AboutPortrait from './AboutPortrait.vue'
 </script>
 
 <template>
   <!-- BIO -->
   <section class="intro">
-    <div class="contenu-intro">
+    <div class="intro-content">
       <p>
         Etudiant à l'Université de Montpellier, je suis passionné par
         <b>l'informatique, la guitare et le sport.</b>
@@ -21,7 +20,7 @@ import AboutPortrait from './AboutPortrait.vue'
         serveurs webs, mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
       </p>
 
-      <AboutCV />
+      <h1><a href="/CV/CV-MARC-HAYE.pdf" target="blank">Voir mon CV</a></h1>
     </div>
     <AboutPortrait />
   </section>
