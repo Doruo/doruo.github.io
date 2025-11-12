@@ -73,7 +73,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <ProjectImageItem :link="partie3" alt="partie3" />
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_TRAINS" :img="Pictures.GITHUB" />
       <LinkItem :link="regles" alt="Règles du jeu" />
     </template>

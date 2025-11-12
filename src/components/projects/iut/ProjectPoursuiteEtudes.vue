@@ -88,7 +88,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
         <ProjectImageItem :link="diagramme" />
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Pictures.GITHUB" />
       <LinkItem :link="sujet" alt="Sujet du projet" />
     </template>

@@ -33,7 +33,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
     <template #assets>
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.IUT_MY_AVATAR" alt="Sujet du projet" />
       <LinkItem :link="Links.MY_AVATAR" alt="Voir le site" />
     </template>

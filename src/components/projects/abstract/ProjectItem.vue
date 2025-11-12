@@ -35,7 +35,7 @@
     <!-- PROJECT LINKS -->
     <div class="project-links">
       <h2>Liens</h2>
-      <slot name="liens"></slot>
+      <slot name="links"></slot>
     </div>
   </section>
 </template>

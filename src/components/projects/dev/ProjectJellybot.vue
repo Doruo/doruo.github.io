@@ -18,8 +18,19 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #title>Jellybot</template>
 
     <template #description>
-      <p>Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.</p>
-      <p>Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !</p>
+      <p>
+        Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
+      </p>
+      <p>
+        Jellyfin est un serveur multimédia.
+        Il s'agit d'un fork de Emby (anciennement Media Browser)
+        ce dernier étant devenu officiellement propriétaire en 2018.
+      </p>
+      <p>
+        Il permet de mettre sa médiathèque à disposition sur le web,
+        qu'il s'agisse de contenu vidéo (films et séries, télévision),
+        audio (musique, livres audio, podcasts)
+      </p>
     </template>
 
     <template #abilities>
@@ -29,7 +40,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #assets>
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
     </template>
 

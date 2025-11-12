@@ -74,7 +74,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <ProjectImageItem :link="photo6" alt="photo6" />
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_NDI" :img="Pictures.GITHUB" />
     </template>
   </ProjectItem>

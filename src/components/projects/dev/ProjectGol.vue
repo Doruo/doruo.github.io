@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 
 import gol_logo from '@/assets/img/projets/gol/gol_logo.webp'
 import gol1 from '@/assets/img/projets/gol/gol1.webp'
@@ -7,8 +8,9 @@ import gol2 from '@/assets/img/projets/gol/gol2.webp'
 import gol3 from '@/assets/img/projets/gol/gol3.webp'
 
 import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
+
+import LinkItem from '@/components/links/LinkItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 </script>
 
@@ -46,7 +48,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <ProjectImageItem :link="gol3" alt="gol3" />
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
       <LinkItem :link="Links.SAMCODES_GAME_OF_LIFE" alt="Version du jeu de samcodes" />
     </template>

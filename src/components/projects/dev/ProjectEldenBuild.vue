@@ -77,7 +77,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <ProjectImageItem :link="equipement" alt="equipement" />
     </template>
 
-    <template #liens>
+    <template #links>
       <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="Pictures.GITHUB" />
     </template>
 
