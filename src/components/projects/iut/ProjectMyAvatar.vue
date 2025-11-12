@@ -5,6 +5,7 @@ import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import { Links } from '@/data/Links'
 import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
 </script>
 
 <template>
@@ -16,8 +17,10 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #title>My Avatar</template>
 
     <template #description>
-      <p>Application de gestion d’avatar, inspiré de <a target="_blank" :href=Links.GRAVATAR>Gravatar</a>,
-        fait avec le framework <a target="_blank" :href=Links.SYMFONY>Symfony</a>.</p>
+      <p>
+        Application de gestion d’avatar, inspiré de <a target="_blank" :href=Links.GRAVATAR>Gravatar</a>,
+        fait avec le framework <a target="_blank" :href=Links.SYMFONY>Symfony</a>.
+      </p>
     </template>
 
     <template #abilities>
@@ -31,8 +34,8 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #liens>
-      <a target="_blank" :href="Links.IUT_MY_AVATAR">Sujet du projet</a>
-      <a target="_blank" :href="Links.MY_AVATAR">Voir le site</a>
+      <LinkItem :link="Links.IUT_MY_AVATAR" alt="Sujet du projet" />
+      <LinkItem :link="Links.MY_AVATAR" alt="Voir le site" />
     </template>
   </ProjectItem>
 </template>

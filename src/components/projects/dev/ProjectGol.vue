@@ -41,26 +41,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="project-images">
-        <a target="_blank" :href="gol1">
-          <img alt="gameoflife_game" :src="gol1" />
-        </a>
-      </div>
-      <div class="project-images">
-        <a target="_blank" :href="gol2">
-          <img alt="gameoflife_game" :src="gol2" />
-        </a>
-      </div>
-      <div class="project-images">
-        <a target="_blank" :href="gol3">
-          <img alt="gameoflife_game" :src="gol3" />
-        </a>
-      </div>
+      <ProjectImageItem :link="gol1" alt="gol1" />
+      <ProjectImageItem :link="gol2" alt="gol2" />
+      <ProjectImageItem :link="gol3" alt="gol3" />
     </template>
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
-      <a target="_blank" :href="Links.SAMCODES_GAME_OF_LIFE">Version du jeu de samcodes</a>
+      <LinkItem :link="Links.SAMCODES_GAME_OF_LIFE" alt="Version du jeu de samcodes" />
     </template>
 
   </ProjectItem>

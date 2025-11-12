@@ -13,6 +13,7 @@ import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -33,23 +34,15 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
       <ul>
         <li>
-          <p>
-            <u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.
-          </p>
+          <p><u><b>Phase 1:</b></u> développement de la mécanique du jeu en Java.</p>
         </li>
         <li>
-          <p>
-            <u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.
-          </p>
+          <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p>
-            <u><b>Phase 3:</b></u> implémentation d'une interface graphique sous
-            <a :href="Links.JAVAFX">JavaFX</a>.
-          </p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous<a :href="Links.JAVAFX">JavaFX</a>.</p>
         </li>
       </ul>
-
       <p>
         Il fait intervenir plusieurs compétences acquises durant le Semestre 2: le développement
         orienté objets, les notions de qualité de développement (tests unitaires, gestion de
@@ -69,42 +62,20 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 
     <template #abilities>
       <SkillItem :img="Pictures.JAVA" :link="Links.JAVA" description="Implémentation de la logique du jeu" />
-
       <SkillItem :img="Pictures.JAVAFX" :link="Links.JAVAFX" description="Réalisation de l'interface graphique" />
-
-      <SkillItem :img="Pictures.SCENEBUILDER" :link="Links.SCENE_BUILDER"
-        description="Aide à la réalisation de l'interface graphique" />
+      <SkillItem :img="Pictures.SCENEBUILDER" :link="Links.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
     </template>
 
     <template #assets>
-      <div class="project-images">
-        <a target="_blank" :href="init">
-          <img alt="trains_initialisation" :src="init" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="partie1">
-          <img alt="trains_partie1" :src="partie1" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="partie2">
-          <img alt="trains_partie2" :src="partie2" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="partie3">
-          <img alt="trains_partie3" :src="partie3" />
-        </a>
-      </div>
+      <ProjectImageItem :link="init" alt="init" />
+      <ProjectImageItem :link="partie1" alt="partie1" />
+      <ProjectImageItem :link="partie2" alt="partie2" />
+      <ProjectImageItem :link="partie3" alt="partie3" />
     </template>
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_TRAINS" :img="Pictures.GITHUB" />
-      <a target="_blank" :href="regles">Règles du jeu</a>
+      <LinkItem :link="regles" alt="Règles du jeu" />
     </template>
   </ProjectItem>
 </template>

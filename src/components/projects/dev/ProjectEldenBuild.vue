@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+import SkillItem from '@/components/skills/SkillItem.vue'
 
 import { Links } from '@/data/Links'
+import { Pictures } from '@/data/Pictures'
 
 import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import accueil from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
@@ -9,11 +12,8 @@ import build from '@/assets/img/projets/eldenbuild/eldenbuild_build.webp'
 import equipement from '@/assets/img/projets/eldenbuild/eldenbuild_getEquipement.webp'
 import profile from '@/assets/img/projets/eldenbuild/eldenbuild_profile.webp'
 import inscription from '@/assets/img/projets/eldenbuild/eldenbuild_inscription.webp'
-
 import testAPI from '@/assets/img/projets/eldenbuild/eldenbuild_testapi.webp'
-import LinkItem from '@/components/links/LinkItem.vue'
-import { Pictures } from '@/data/Pictures'
-import SkillItem from '@/components/skills/SkillItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -69,44 +69,17 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="project-images">
-        <a target="_blank" :href="accueil">
-          <img alt="eldenbuild_accueil" :src="accueil" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="inscription">
-          <img alt="eldenbuild_inscription" :src="inscription" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="build">
-          <img alt="eldenbuild_build" :src="build" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="testAPI">
-          <img alt="eldenbuild_testapi" :src="testAPI" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="profile">
-          <img alt="eldenbuild_profile" :src="profile" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="equipement">
-          <img alt="eldenbuild_getEquipement" :src="equipement" />
-        </a>
-      </div>
+      <ProjectImageItem :link="accueil" alt="accueil" />
+      <ProjectImageItem :link="inscription" alt="inscription" />
+      <ProjectImageItem :link="build" alt="build" />
+      <ProjectImageItem :link="profile" alt="profile" />
+      <ProjectImageItem :link="testAPI" alt="testAPI" />
+      <ProjectImageItem :link="equipement" alt="equipement" />
     </template>
+
     <template #liens>
       <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="Pictures.GITHUB" />
     </template>
+
   </ProjectItem>
 </template>

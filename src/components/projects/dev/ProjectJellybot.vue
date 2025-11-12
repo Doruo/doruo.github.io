@@ -18,12 +18,8 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     <template #title>Jellybot</template>
 
     <template #description>
-      <p>
-        Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
-      </p>
-      <p>
-        Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !
-      </p>
+      <p>Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.</p>
+      <p>Jellyfin est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !</p>
     </template>
 
     <template #abilities>

@@ -15,6 +15,7 @@ import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -23,7 +24,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <img alt="logoIUT" :src="logoIUT" />
     </template>
 
-    <template #title>Application d'avis de poursuite d'étude</template>
+    <template #title>Application d'avis de poursuite d'études</template>
 
     <template #description>
       <p>
@@ -73,51 +74,23 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <SkillItem :img="Pictures.LDAP" :link="Links.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
       <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
       <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
-      <SkillItem :img="Pictures.POSTGRE" :link="Links.POSTGRE" description="Base de donnée de l'application" />
+      <SkillItem :img="Pictures.POSTGRE" :link="Links.POSTGRE" description="Base de données de l'application" />
       <SkillItem :img="Pictures.PLSQL" :link="Links.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
       <SkillItem :img="Pictures.CHARTJS" :link="Links.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
     </template>
 
     <template #assets>
-        <div class="project-images">
-          <a target="_blank" :href="accueil">
-            <img alt="poursuiteEtude_accueil" :src="accueil" /></a>
-        </div>
-
-        <div class="project-images">
-          <a target="_blank" :href="connexion">
-            <img alt="poursuiteEtude_connexion" :src="connexion" />
-          </a>
-        </div>
-
-        <div class="project-images">
-          <a target="_blank" :href="notes">
-            <img alt="poursuiteEtude_notes" :src="notes" />
-          </a>
-        </div>
-
-        <div class="project-images">
-          <a target="_blank" :href="agregation">
-            <img alt="poursuite_etude_agregation" :src="agregation" />
-          </a>
-        </div>
-
-        <div class="project-images">
-          <a target="_blank" :href="csv">
-            <img alt="poursuiteEtude_csv" :src="csv" />
-          </a>
-        </div>
-
-        <div class="project-images">
-          <a target="_blank" :href="diagramme">
-            <img alt="poursuite_etude_diagramme_classes" :src="diagramme" />
-          </a>
-        </div>
+        <ProjectImageItem :link="accueil" />
+        <ProjectImageItem :link="connexion" />
+        <ProjectImageItem :link="notes" />
+        <ProjectImageItem :link="agregation" />
+        <ProjectImageItem :link="csv" />
+        <ProjectImageItem :link="diagramme" />
     </template>
 
     <template #liens>
       <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Pictures.GITHUB" />
-      <a target="_blank" :href="sujet">Sujet du projet</a>
+      <LinkItem :link="sujet" alt="Sujet du projet" />
     </template>
   </ProjectItem>
 </template>

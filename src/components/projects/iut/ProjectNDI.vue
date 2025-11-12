@@ -16,6 +16,7 @@ import { Links } from '@/data/Links'
 import LinkItem from '@/components/links/LinkItem.vue'
 import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -61,59 +62,16 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #assets>
-      <div class="project-images">
-        <a target="_blank" :href="ocean">
-          <img alt="ndi_ocean" :src="ocean" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="page">
-          <img alt="ndi_page" :src="page" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photoGroupe">
-          <img alt="ndi_photo_groupe" :src="photoGroupe" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo1">
-          <img alt="ndi_photo1" :src="photo1" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo2">
-          <img alt="ndi_photo2" :src="photo2" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo3">
-          <img alt="ndi_photo3" :src="photo3" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo4">
-          <img alt="ndi_photo4" :src="photo4" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo5">
-          <img alt="ndi_photo5" :src="photo5" />
-        </a>
-      </div>
-
-      <div class="project-images">
-        <a target="_blank" :href="photo6">
-          <img alt="ndi_photo6" :src="photo6" />
-        </a>
-      </div>
+      <ProjectImageItem :link="ocean" alt="Ocean" />
+      <ProjectImageItem :link="page" alt="page" />
+      <ProjectImageItem :link="photoGroupe" alt="groupe" />
+      <ProjectImageItem :link="photo1" alt="photo1" />
+      <ProjectImageItem :link="photo2" alt="photo2" />
+      <ProjectImageItem :link="photo3" alt="photo3" />
+      <ProjectImageItem :link="photo3" alt="photo3" />
+      <ProjectImageItem :link="photo4" alt="photo4" />
+      <ProjectImageItem :link="photo5" alt="photo5" />
+      <ProjectImageItem :link="photo6" alt="photo6" />
     </template>
 
     <template #liens>
