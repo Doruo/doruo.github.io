@@ -70,7 +70,9 @@ section {
 }
 
 .conteneur-portrait {
-  width: 40%;
+  position: relative;
+  right: 18%;
+  width: 28%;
 }
 
 .entete {
@@ -80,7 +82,7 @@ section {
 /* INTRO, BIO & FUTURE */
 
 .intro-content {
-  width: 50%;
+  width: 35%;
 }
 
 .intro,
@@ -126,10 +128,6 @@ section {
   color: var(--h1-color);
 }
 
-.project-card p {
-  text-align: center;
-}
-
 .project-images {
   padding: 0;
   max-height: 200px;
@@ -165,10 +163,6 @@ section {
 .contact,
 .skills {
   padding: 4rem 0;
-}
-
-.contact {
-  text-align: center;
 }
 
 /* LINK */
@@ -213,9 +207,8 @@ a,
 /* IMAGES */
 
 .portrait {
-  width: auto;
-  height: auto;
   border-radius: 50%;
+  width: 40%;
 }
 
 .intro-content img {
@@ -253,18 +246,12 @@ a,
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1820px) {
+@media (max-width: 1080px) {
 
   #accueil,
   .projects-grid {
     flex-direction: column;
     grid-template-columns: 1fr;
-  }
-
-  .portrait {
-    display: none;
-    width: 5%;
-    max-height: 2%;
   }
 
   .intro {
