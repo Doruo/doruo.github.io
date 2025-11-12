@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import AboutContact from '@/components/about/AboutContact.vue';
 import AboutIntro from '@/components/about/AboutIntro.vue'
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
 import { Projects } from '@/data/Projects'
@@ -14,7 +15,9 @@ import { Projects } from '@/data/Projects'
   />
   <section class="contact">
     <h1>
-      <router-link :to="{ name: 'projects' }">See more</router-link>
+      <router-link :to="{ name: 'projects' }">Voir plus</router-link>
     </h1>
   </section>
+
+  <AboutContact />
 </template>

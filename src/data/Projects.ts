@@ -22,7 +22,7 @@ export class Projects {
   private static readonly allProjects: Project[] = [
     {
       id: 'poursuite-etude',
-      title: "Application de Poursuite d'Etude",
+      title: "Application de Poursuite d'Etudes",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
       websiteLink: Links.GITHUB_POURSUITE_ETUDES,
@@ -61,9 +61,9 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: Links.MY_AVATAR,
-      description: 'Application de gestion d’avatar, inspiré de Gravatar, fait avec le framework PHP Symfony.',
-      techs: 'Symfony, JS, MySQL, Twig',
-      tags: ['academic'],
+      description: 'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
+      techs: 'Symfony, MySQL, JS, Twig',
+      tags: ['main','academic'],
     },
     {
       id: 'controverse-crypto',
@@ -85,7 +85,7 @@ export class Projects {
       websiteLink: Links.GITHUB_ELDEN_BUILD,
       description: 'Site web de gestion de build à but communautaire du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
-      tags: ['main', 'community'],
+      tags: ['community'],
     },
     {
       id: 'ndi-2024',
@@ -101,7 +101,7 @@ export class Projects {
     },
     {
       id: 'cgj-2023',
-      title: 'CGJ 2023 - Time Mage Tournament',
+      title: 'Code Game Jam 2023: Time Mage Tournament',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: Links.ITCHIO_TIME_MAGE_TOURNAMENT,
