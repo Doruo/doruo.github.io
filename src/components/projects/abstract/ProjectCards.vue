@@ -4,14 +4,8 @@ import { type ProjectCategory } from '@/data/Projects'
 import type { PropType } from 'vue'
 
 defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  projectsCategory: {
-    type: Object as PropType<ProjectCategory>,
-    required: true,
-  },
+  title: {type: String, required: true},
+  projectsCategory: { type: Object as PropType<ProjectCategory>, required: true},
 })
 </script>
 
