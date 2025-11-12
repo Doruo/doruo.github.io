@@ -124,6 +124,10 @@ section {
   transition: all 0.3s ease;
 }
 
+.project-card{
+  height: 100%;
+}
+
 .project-card h1 {
   color: var(--h1-color);
 }
@@ -150,7 +154,7 @@ section {
 .project-card:hover,
 .project-image:hover,
 .skill-card:hover {
-  box-shadow: 10px 5px 5px var(--box-shadow-color);
+  box-shadow: 40% var(--box-shadow-color);
 }
 
 .project-links a {

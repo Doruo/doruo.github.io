@@ -24,7 +24,9 @@ defineProps({
 
 <template>
   <!-- PROJECT CARD -->
+  <router-link :to="moreInfoLink">
   <div class="project-card">
+
     <h3>{{ title }}</h3>
     <p>
       <slot name="description"></slot>
@@ -33,10 +35,6 @@ defineProps({
       <b>Technologies: </b>
       <slot name="techs"></slot>
     </p>
-
-    <div class="project-links">
-      <router-link v-if="showMoreInfoLink" :to="moreInfoLink">À Propos</router-link>
-      <a :href="websiteLink" target="_blank">See</a>
-    </div>
   </div>
+  </router-link>
 </template>
