@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./nuxt-logo.png" width="140" alt="Rauliqbal Profile Picture"/>
+  <img src="./nuxt-logo.png" width="140" alt="Doruo Profile Picture"/>
 </div>
 
 <h1 align="center" style="font-weight: bold;">Super Portfolio 💻</h1>
@@ -42,7 +42,7 @@ Here you list all prerequisites necessary for running your project. For example:
 How to clone your project
 
 ```bash
-git clone https://github.com/Rauliqbal/super-portfolio.git --branch main
+git clone https://github.com/Doruo/super-portfolio.git --branch main
 ```
 
 <h3>Starting</h3>
@@ -71,16 +71,16 @@ Open on your browser http://localhost:3000
 <tr>
 
 <td align="center">
-<a href="https://github.com/Rauliqbal">
-<img src="https://avatars.githubusercontent.com/u/89615372?v=4" width="100px;" alt="Rauliqbal Profile Picture"/><br>
+<a href="https://github.com/Doruo">
+<img src="https://avatars.githubusercontent.com/u/89615372?v=4" width="100px;" alt="Doruo Profile Picture"/><br>
 <sub>
-<b>Rauliqbal</b>
+<b>Doruo</b>
 </sub>
 </a>
 </td>
 <td align="center">
 <a href="https://github.com/kkkfasya">
-<img src="https://avatars.githubusercontent.com/u/69980010?v=4" width="100px;" alt="Rauliqbal Profile Picture"/><br>
+<img src="https://avatars.githubusercontent.com/u/69980010?v=4" width="100px;" alt="Doruo Profile Picture"/><br>
 <sub>
 <b>kkkfasya</b>
 </sub>
@@ -94,7 +94,7 @@ Open on your browser http://localhost:3000
 
 Here you will explain how other developers can contribute to your project. For example, explaining how can create their branches, which patterns to follow and how to open an pull request
 
-1. `git clone https://github.com/Rauliqbal/super-portfolio.git`
+1. `git clone https://github.com/Doruo/super-portfolio.git`
 2. `git checkout -b feature/NAME`
 3. Follow commit patterns
 4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
@@ -106,5 +106,5 @@ Here you will explain how other developers can contribute to your project. For e
 [💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
 <div align="center">
-  <img src="./github-logo.png" height="140" alt="Rauliqbal Profile Picture"/>
+  <img src="./github-logo.png" height="140" alt="Doruo Profile Picture"/>
 </div>

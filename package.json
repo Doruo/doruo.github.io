@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
-  "author": "Rauliqbal",
+  "author": "Doruo",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
