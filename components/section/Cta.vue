@@ -36,7 +36,7 @@
         </div>
         </div>
 
-        <p class="text-sm text-white/30 text-center mt-8">&copy; Copyright <NuxtLink to="https://rauliqbal.my.id" target="_blank">Rauliqbal</NuxtLink> 2024</p>
+        <p class="text-sm text-white/30 text-center mt-8">&copy; Copyright <NuxtLink to="https://Doruo.my.id" target="_blank">Doruo</NuxtLink> 2024</p>
 
         <div
           class="absolute  bottom-0 w-60 h-[1px] z-10 bg-gradient-to-r from-[#0b50e5]/0 via-[#0b50e5] to-[#0b50e5]/0"

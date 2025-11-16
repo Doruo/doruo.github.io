@@ -1,18 +1,18 @@
 export const NAVLINKS= [
   {
-    label: 'Home',
+    label: 'Accueil',
     url: '#hero'
   },
   {
-    label : 'About',
+    label : 'À propos',
     url: '#about'
   },
   {
-    label : 'Works',
+    label : 'Réalisations',
     url: '#work'
   },
   {
-    label : 'Service',
+    label : 'Compétences',
     url: '/#service'
   },
   
@@ -25,19 +25,19 @@ export const PROFILE = {
     return `${this.firstname} ${this.lastname}`
   },
   role : 'étudiant en informatique',
-  avatar: '/images/profile.jpg'
+  avatar: '/images/profile/profile.webp'
 }
 
 export const HERO = {
   badge: 'En alternance',
   headline: `Salut, je suis ${PROFILE.firstname}. Je suis ${PROFILE.role}`,
-  subline : "I am a developer and designer who has a passion for building responsive, cool looking, and easy to visit website applications."
+  subline : "Je suis un développeur passionné par la création d'applications simples à maintenir et à utiliser."
 }
 
 export const SERVICE = {
   label: 'service',
-  headline: 'Custom design solutions for your requirements.',
-  subline: 'I specialize in crafting user-centered solutions for businesses and individuals. Let’s create something extraordinary together.',
+  headline: "Je suis un couteau suisse, prêt à s'adapter à vos besoins.",
+  subline: 'Je me spécialise dans la conception de solutions pour les entreprises et particuliers.',
   services: [
     {
       name: "Développement web",
@@ -46,13 +46,13 @@ export const SERVICE = {
       thumbnails: ''
     },
     {
-      name: "Infrastructure réseaux",
+      name: "Interface UI/UX",
       icon: 'MobileProgramming',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores!',
-      thumbnails: 'https://cdn.dribbble.com/userupload/36796487/file/original-436c64a72733941273f9fd1f4d994883.jpg?resize=752x&vertical=center'
+      thumbnails: ''
     },
     {
-      name: "UI/UX Designeur",
+      name: "Infrastructures réseaux",
       icon: 'PenTool2',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores!',
       thumbnails: ''
@@ -62,47 +62,47 @@ export const SERVICE = {
 }
 
 export const WORK = {
-  label: 'work',
-  headline: 'Custom design solutions for your requirements.',
-  subline: 'I specialize in crafting user-centered solutions for businesses and individuals. Let’s create something extraordinary together.',
+  label: 'projets',
+  headline: 'Des solutions personnalisées adaptées à vos besoins.',
+  subline: 'Je me spécialise dans la conception de solutions pour les entreprises et particuliers.',
   works: [
     {
-      name: "Cafe Street - Landing Page",
-      live_demo: '#',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
+      name: "Logiciel d'aide de poursuite d'étude",
+      live_demo: 'https://github.com/doruo/PoursuiteEtudes',
+      description: "Utilisé par l'IUT MONTPELLIER-SÊTE.",
       thumbnails: 'cafestreet-landingpage.webp',
       type: 'landing page'
     },
     {
-      name: "FurniLux",
+      name: "Elden Build",
       live_demo: '#',
       description: 'Make your home comfortable with best furniture.',
       thumbnails: 'furnilux-landingpage.webp',
       type: 'landing page'
     },
     {
-      name: "Let's Food UI Kit",
+      name: "Trains",
       live_demo: '#',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
       thumbnails: 'letsfood-landingpage.webp',
       type: 'Web Design'
     },
     {
-      name: "Creative Agency",
+      name: "Tamagotchi",
       live_demo: '#',
       description: 'This website is to improve your business as a software house and reach more customers.',
       thumbnails: 'creativeagency-landingpage.webp',
       type: 'Web Company'
     },
     {
-      name: "Login Register Design",
-      live_demo: '#',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
+      name: "Conway's Game of Life",
+      live_demo: 'https://github.com/doruo/GameOfLife',
+      description: "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
       thumbnails: 'loginregister-design.webp',
       type: 'UI Design'
     },
     {
-      name: "IRATOON - Streaming App",
+      name: "E3Cète",
       live_demo: '#',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
       thumbnails: 'iratoon-mobileapp.webp',
@@ -114,12 +114,12 @@ export const WORK = {
 export const ABOUT = {
   label: 'Laissez moi me présenter !',
   introduce: [
-    `Je suis un ${PROFILE.role} passionné. I specialize in creating seamless and visually appealing user interfaces, combining design and development to enhance user experiences.`,
-    "I love turning ideas into interactive and functional web applications. Excited to collaborate and build amazing digital products together!"
+    `Je suis un ${PROFILE.role} passionné. Je suis spécialisé dans la création d'interfaces utilisateur fluides et visuellement attrayantes, alliant conception et développement afin d'améliorer l'expérience utilisateur.`,
+    "J'adore transformer des idées en applications web interactives et fonctionnelles. Je suis impatient de collaborer et de créer ensemble des produits numériques exceptionnels !"
   ]
 }
 
 export const CTA = {
-  label: 'Let’s Build Something Great Together',
-  description: 'Need a clean, functional UI? I’m here to help bring your vision to life—simple, responsive, and user-focused.'
+  label: 'Construisons ensemble quelque chose de formidable',
+  description: "Vous avez besoin d'une structure logiciel claire, fonctionnelle et ouvert à l'expension ? Je suis là pour vous aider à concrétiser votre vision : simple, dynamique et centrée sur vos objectifs."
 }
