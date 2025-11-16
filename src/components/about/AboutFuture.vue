@@ -6,8 +6,7 @@
       <p>
         Je compte tout d'abord entamer après mes études une carrière en
         <b>développement web back-end</b>, puis envisage ensuite de prolonger mes acquis en
-        <b>systèmes réseaux</b>. Me passionant de plus en plus pour
-        <b>les sciences et les mathématiques informatiques</b>, je continuerais d'étudier, après le
+        <b>systèmes réseaux</b>. Pour approfondir mes compétences techniques, je continuerais d'étudier, après le
         BUT, de nouveau domaines scientifiques.
       </p>
 
