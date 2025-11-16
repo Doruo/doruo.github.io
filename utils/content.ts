@@ -21,6 +21,7 @@ export const NAVLINKS= [
 export const PROFILE = {
   firstname : 'Marc',
   lastname: 'Haye',
+  pseudonym: 'Doruo',
   get fullname() {
     return `${this.firstname} ${this.lastname}`
   },
@@ -31,7 +32,7 @@ export const PROFILE = {
 export const HERO = {
   badge: 'En alternance',
   headline: `Salut, je suis ${PROFILE.firstname}. Je suis ${PROFILE.role}`,
-  subline : "Je suis un développeur passionné par la création d'applications simples à maintenir et à utiliser."
+  subline : "Un développeur passionné par la création d'applications simples à maintenir et utiliser."
 }
 
 export const SERVICE = {
@@ -69,44 +70,44 @@ export const WORK = {
     {
       name: "Logiciel d'aide de poursuite d'étude",
       live_demo: 'https://github.com/doruo/PoursuiteEtudes',
-      description: "Utilisé par l'IUT MONTPELLIER-SÊTE.",
-      thumbnails: 'cafestreet-landingpage.webp',
-      type: 'landing page'
-    },
+      description: "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
+      thumbnails: 'poursuiteEtudes/poursuite_etude_accueil_responsable.webp',
+      type: 'PHP'
+    },    
     {
       name: "Elden Build",
       live_demo: '#',
-      description: 'Make your home comfortable with best furniture.',
-      thumbnails: 'furnilux-landingpage.webp',
-      type: 'landing page'
-    },
+      description: 'Site web de gestion de build à but communautaire du jeu vidéo Elden Ring.',
+      thumbnails: 'eldenbuild/eldenbuild_accueil.webp',
+      type: 'PHP'
+    }, 
     {
-      name: "Trains",
-      live_demo: '#',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
-      thumbnails: 'letsfood-landingpage.webp',
-      type: 'Web Design'
+      name: "Conway's Game of Life",
+      live_demo: 'https://github.com/doruo/GameOfLife',
+      description: "Implémentation en Go d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
+      thumbnails: 'gol/gol2.webp',
+      type: 'Automate cellulaire'
     },
     {
       name: "Tamagotchi",
       live_demo: '#',
       description: 'This website is to improve your business as a software house and reach more customers.',
-      thumbnails: 'creativeagency-landingpage.webp',
+      thumbnails: 'tamagotchis/tamagotchi-logo.webp',
       type: 'Web Company'
     },
     {
-      name: "Conway's Game of Life",
-      live_demo: 'https://github.com/doruo/GameOfLife',
-      description: "Implémentation d'un jeu de simulation mathématique de 1970, avec interface graphique sur terminal.",
-      thumbnails: 'loginregister-design.webp',
-      type: 'UI Design'
+      name: "Trains",
+      live_demo: 'https://github.com/doruo/Trains',
+      description: "Portage numérique du jeu de plateau japonais d'Hisashi Hayashi. jouable jusqu'à 4 personnes.",
+      thumbnails: 'trains/trains_partie1.webp',
+      type: 'Développement orientée objet, Java'
     },
     {
-      name: "E3Cète",
-      live_demo: '#',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cum distinctio dolores.',
-      thumbnails: 'iratoon-mobileapp.webp',
-      type: 'Mobile App'
+      name: "MyAvatar",
+      live_demo: 'https://github.com/doruo/MyAvatar',
+      description: 'Gestion d’avatar numérique, inspiré de Gravatar, réalisé avec le framework Symfony.',
+      thumbnails: '',
+      type: 'API Symfony'
     },
   ]
 }
@@ -114,7 +115,7 @@ export const WORK = {
 export const ABOUT = {
   label: 'Laissez moi me présenter !',
   introduce: [
-    `Je suis un ${PROFILE.role} passionné. Je suis spécialisé dans la création d'interfaces utilisateur fluides et visuellement attrayantes, alliant conception et développement afin d'améliorer l'expérience utilisateur.`,
+    `Je m'appelle ${PROFILE.fullname}, je suis un ${PROFILE.role} passionné et avide d'innovation technologique. Je suis spécialisé dans la création d'interfaces utilisateur fluides et visuellement attrayantes, alliant conception et développement afin d'améliorer l'expérience utilisateur.`,
     "J'adore transformer des idées en applications web interactives et fonctionnelles. Je suis impatient de collaborer et de créer ensemble des produits numériques exceptionnels !"
   ]
 }
