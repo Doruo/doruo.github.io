@@ -30,18 +30,19 @@ export class Links {
 
   // Github
   static readonly GITHUB_PAGES = this.SOCIAL_GITHUB + 'doruo.github.io'
-  static readonly GITHUB_ELDEN_BUILD = this.SOCIAL_GITHUB + 'EldenBuild'
+  static readonly GITHUB_ELDEN_BUILD = this.SOCIAL_GITHUB + 'eldenBuild'
   static readonly GITHUB_NDI = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'
-  static readonly GITHUB_TRAINS = this.SOCIAL_GITHUB + 'Trains'
-  static readonly GITHUB_MESH = this.SOCIAL_GITHUB + 'Mesh'
+  static readonly GITHUB_TRAINS = this.SOCIAL_GITHUB + 'trains'
+  static readonly GITHUB_MESH = this.SOCIAL_GITHUB + 'mesh'
   static readonly GITHUB_MASTERMIND = this.SOCIAL_GITHUB + 'mastermind'
   static readonly GITHUB_FALLOUTDLE = this.SOCIAL_GITHUB + 'falloutdle'
-  static readonly GITHUB_GOL = this.SOCIAL_GITHUB + 'GameOfLife'
+  static readonly GITHUB_GOL = this.SOCIAL_GITHUB + 'go-of-life'
   static readonly GITHUB_MARIN_IVRE = this.SOCIAL_GITHUB + 'marinIvre'
-  static readonly GITHUB_SUDOKU = this.SOCIAL_GITHUB + 'Sudoku'
-  static readonly GITHUB_JELLYBOT = this.SOCIAL_GITHUB + 'JellyBot'
+  static readonly GITHUB_SUDOKU = this.SOCIAL_GITHUB + 'sudoku'
+  static readonly GITHUB_JELLYBOT = this.SOCIAL_GITHUB + 'jellybot'
   static readonly GITHUB_POURSUITE_ETUDES = this.SOCIAL_GITHUB + 'PoursuiteEtudes'
   static readonly GITHUB_E3CETE = this.SOCIAL_GITHUB + 'E3Cete/blob/master/SAE_1_02_E3Cète.pdf'
+  static readonly GITHUB_LLM_FROM_SCRATCH = this.SOCIAL_GITHUB + 'llm-from-scratch'
 
   // Projects
   static readonly ITCHIO_TIME_MAGE_TOURNAMENT = this.SOCIAL_ITCHIO + 'time-mage-tournament'

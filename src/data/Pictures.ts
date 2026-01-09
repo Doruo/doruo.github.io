@@ -1,5 +1,6 @@
 // eldenbuild
-import eldenbuild_ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
+import eldenbuild_card from '@/assets/img/projets/eldenbuild/eldenbuild_card.webp'
+import eldenbuild_logo from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import eldenbuild_home from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
 import eldenbuild_build from '@/assets/img/projets/eldenbuild/eldenbuild_build.webp'
 import eldenbuild_equipement from '@/assets/img/projets/eldenbuild/eldenbuild_getEquipement.webp'
@@ -20,6 +21,7 @@ import ndi2024_photo6 from '@/assets/img/projets/ndi2024/ndi_photo6.webp'
 import ndi2024_photo_groupe from '@/assets/img/projets/ndi2024/ndi_photo_groupe.webp'
 
 // GOL
+import gol_card from '@/assets/img/projets/gol/gol_card.webp'
 import gol_logo from '@/assets/img/projets/gol/gol_logo.webp'
 import gol1 from '@/assets/img/projets/gol/gol1.webp'
 import gol2 from '@/assets/img/projets/gol/gol2.webp'
@@ -43,7 +45,8 @@ import trains_3 from '@/assets/img/projets/trains/trains_partie2.webp'
 
 export class Pictures {
   // eldenbuild
-  static readonly ELDENBUILD_RANNI = eldenbuild_ranni;
+  static readonly ELDENBUILD_CARD = eldenbuild_card;
+  static readonly ELDENBUILD_LOGO = eldenbuild_logo;
   static readonly ELDENBUILD_HOME = eldenbuild_home;
   static readonly ELDENBUILD_BUILD = eldenbuild_build;
   static readonly ELDENBUILD_EQUIPMENT = eldenbuild_equipement;
@@ -64,6 +67,7 @@ export class Pictures {
   static readonly NDI2024_GROUP = ndi2024_photo_groupe;
 
   // GOL
+  static readonly GOL_CARD = gol_card;
   static readonly GOL_LOGO = gol_logo;
   static readonly GOL_1 = gol1;
   static readonly GOL_2 = gol2;

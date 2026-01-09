@@ -12,7 +12,7 @@ import { Links } from '@/data/Links'
   <ProjectItem>
 
     <template #logo_projet>
-      <img :src="Pictures.ELDENBUILD_RANNI" :alt="Pictures.ELDENBUILD_RANNI" />
+      <img :src="Pictures.ELDENBUILD_LOGO" :alt="Pictures.ELDENBUILD_LOGO" />
     </template>
 
     <template #title>Jellybot</template>

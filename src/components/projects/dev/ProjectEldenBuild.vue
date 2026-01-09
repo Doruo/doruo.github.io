@@ -12,7 +12,7 @@ import { Links } from '@/data/Links'
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :alt=Pictures.ELDENBUILD_RANNI :src="Pictures.ELDENBUILD_RANNI" />
+      <img :alt=Pictures.ELDENBUILD_LOGO :src="Pictures.ELDENBUILD_LOGO" />
     </template>
 
     <template #title>Elden Build</template>
