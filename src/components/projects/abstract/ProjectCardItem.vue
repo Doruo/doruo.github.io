@@ -25,7 +25,7 @@ defineProps({
     </div>
   </router-link>
 
-  <a :href="websiteLink" v-else>
+  <a target="_blank" :href="websiteLink" v-else>
     <div class="project-card" :style="{ backgroundImage: `url(${background})` }">
       <h3>{{ title }}</h3>
       <p>
