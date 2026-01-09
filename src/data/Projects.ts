@@ -118,7 +118,7 @@ export class Projects {
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
-      techs: 'HTML,CSS, JavaScript, ExpressJS',
+      techs: 'HTML, CSS, JavaScript, ExpressJS',
       tags: ['main', 'competition'],
     },
     {
@@ -130,7 +130,7 @@ export class Projects {
       background: Pictures.NDI2024_WORK_1,
       description:
       `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
-      techs: 'HTML,CSS, JavaScript, ExpressJS',
+      techs: 'HTML, CSS, JavaScript, ExpressJS',
       tags: ['competition'],
     },
     {
@@ -187,7 +187,7 @@ export class Projects {
       background: '',
       description:
         'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur.',
-      techs: 'Java',
+      techs: 'Java, algorithmie',
       tags: ['game'],
     },
     {
@@ -198,7 +198,7 @@ export class Projects {
       websiteLink: Links.GITHUB_SUDOKU,
       background: '',
       description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur.',
-      techs: 'Java',
+      techs: 'Java, algorithmie',
       tags: ['game'],
     },
     {
@@ -243,7 +243,7 @@ export class Projects {
       websiteLink: Links.GITHUB_MESH,
       background: Pictures.MESH_CARD,
       description: 'Lightweight messaging app written in Go, with Peer to Peer networking.',
-      techs: 'Go, Peer2Peer, TCP/IP, DNS',
+      techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
     },
     {
