@@ -9,6 +9,10 @@ export class Links {
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://fr.gravatar.com/'
   static readonly SAMCODES_GAME_OF_LIFE = 'https://www.samcodes.co.uk/project/game-of-life/'
+  static readonly FAN_CLUB_CHUCK_NORRIS = 'IUT/A1/FanClubChuckNorris'
+  static readonly ESCAPE_GAME_MIND_SPIES = 'IUT/A1/SAE-EscapeGame-MindSpies'
+  static readonly ESCAPE_GAME_POST_APO = 'IUT/A1/SAE-EscapeGame-PostApo'
+  static readonly CONTROVERSE_CRYPTO = 'IUT/A1/SAE-106/accueil.html'
 
   // IUT web dev
   static readonly LEBRETON = 'https://romainlebreton.github.io/'
