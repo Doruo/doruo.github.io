@@ -37,7 +37,7 @@ export class Projects {
     {
       id: 'jellybot',
       title: 'Jellybot',
-      showMoreInfoLink: true,
+      showMoreInfoLink: false,
       moreInfoLink: { name: 'projects-jellybot' },
       websiteLink: Links.GITHUB_JELLYBOT,
       background: '',
@@ -50,7 +50,7 @@ export class Projects {
     {
       id: 'my-avatar',
       title: 'My Avatar',
-      showMoreInfoLink: true,
+      showMoreInfoLink: false,
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: Links.MY_AVATAR,
       background: '',

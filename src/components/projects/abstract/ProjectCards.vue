@@ -16,7 +16,9 @@ defineProps({
       <h2>{{ title }}</h2>
 
       <div class="project-grid">
-        <ProjectCardItem v-for="project in projectsCategory.projects"
+        <ProjectCardItem
+        v-for="project in projectsCategory.projects"
+
         :key="project.id"
         :title="project.title"
         :show-more-info-link="project.showMoreInfoLink"

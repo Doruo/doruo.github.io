@@ -13,15 +13,27 @@ defineProps({
 
 <template>
   <!-- PROJECT CARD -->
-  <router-link :to="moreInfoLink">
-  <div class="project-card" :style="{ backgroundImage: `url(${background})` }">
-    <h3>{{ title }}</h3>
-    <p>
-      <slot name="description"></slot>
-    </p>
-    <p>
-      <b>Technologies: </b> <slot name="techs"></slot>
-    </p>
-  </div>
+  <router-link :to="moreInfoLink" v-if="showMoreInfoLink">
+    <div class="project-card" :style="{ backgroundImage: `url(${background})` }">
+      <h3>{{ title }}</h3>
+      <p>
+        <slot name="description"></slot>
+      </p>
+      <p>
+        <b>Technologies: </b> <slot name="techs"></slot>
+      </p>
+    </div>
   </router-link>
+
+  <a :href="websiteLink" v-else>
+    <div class="project-card" :style="{ backgroundImage: `url(${background})` }">
+      <h3>{{ title }}</h3>
+      <p>
+        <slot name="description"></slot>
+      </p>
+      <p>
+        <b>Technologies: </b> <slot name="techs"></slot>
+      </p>
+    </div>
+  </a>
 </template>
