@@ -22,7 +22,7 @@ export class Links {
   static readonly IUT_MY_AVATAR = this.IUT_ADV_DEV_QUALITY + 'tutorials/projet1'
 
   // Social
-  static readonly SOCIAL_GITHUB = 'https://github.com/doruo'
+  static readonly SOCIAL_GITHUB = 'https://github.com/doruo/'
   static readonly SOCIAL_MAIL = 'mailto:marc.haye.pro@protonmail.com'
   static readonly SOCIAL_LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
   static readonly SOCIAL_GRAVATAR = 'https://fr.gravatar.com/marchayepro'
