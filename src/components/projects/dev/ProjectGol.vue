@@ -1,24 +1,19 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
-
-import gol_logo from '@/assets/img/projets/gol/gol_logo.webp'
-import gol1 from '@/assets/img/projets/gol/gol1.webp'
-import gol2 from '@/assets/img/projets/gol/gol2.webp'
-import gol3 from '@/assets/img/projets/gol/gol3.webp'
-
-import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
-
-import LinkItem from '@/components/links/LinkItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
 
     <template #logo_projet>
-      <img alt="gameoflife_logo" :src="gol_logo" />
+      <img :src="Pictures.GOL_LOGO" :alt="Pictures.GOL_LOGO" />
     </template>
 
     <template #title>Conway's Game of Life</template>
@@ -37,19 +32,19 @@ import SkillItem from '@/components/skills/SkillItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GO" :link="Links.GO" description="Structure du jeu" />
-      <SkillItem :img="Pictures.EBITENGINE" :link="Links.EBITENGINE" description="Interface graphique en 2D" />
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="Icons.GO" :link="Links.GO" description="Structure du jeu" />
+      <SkillItem :img="Icons.EBITENGINE" :link="Links.EBITENGINE" description="Interface graphique en 2D" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="gol1" alt="gol1" />
-      <ProjectImageItem :link="gol2" alt="gol2" />
-      <ProjectImageItem :link="gol3" alt="gol3" />
+      <ProjectImageItem :link="Pictures.GOL_1" :alt="Pictures.GOL_1" />
+      <ProjectImageItem :link="Pictures.GOL_2" :alt="Pictures.GOL_2" />
+      <ProjectImageItem :link="Pictures.GOL_3" :alt="Pictures.GOL_3" />
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_GOL" :img="Icons.GITHUB" />
       <LinkItem :link="Links.SAMCODES_GAME_OF_LIFE" alt="Version du jeu de samcodes" />
     </template>
 

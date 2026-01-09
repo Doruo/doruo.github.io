@@ -1,25 +1,21 @@
 <script setup lang="ts">
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
 
-import logoTrains from '@/assets/img/projets/trains/logoTrains.webp'
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
+
 import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 
-import init from '@/assets/img/projets/trains/trains_initialisation.webp'
-import partie1 from '@/assets/img/projets/trains/trains_partie1.webp'
-import partie2 from '@/assets/img/projets/trains/trains_partie2.webp'
-import partie3 from '@/assets/img/projets/trains/trains_partie2.webp'
-
-import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
-import { Pictures } from '@/data/Pictures'
-import SkillItem from '@/components/skills/SkillItem.vue'
-import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoTrains" :src="logoTrains" />
+      <img :src="Pictures.TRAINS_LOGO" :alt="Pictures.TRAINS_LOGO" />
     </template>
 
     <template #title>Jeu de plateau Trains</template>
@@ -61,20 +57,20 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.JAVA" :link="Links.JAVA" description="Implémentation de la logique du jeu" />
-      <SkillItem :img="Pictures.JAVAFX" :link="Links.JAVAFX" description="Réalisation de l'interface graphique" />
-      <SkillItem :img="Pictures.SCENEBUILDER" :link="Links.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
+      <SkillItem :img="Icons.JAVA" :link="Links.JAVA" description="Implémentation de la logique du jeu" />
+      <SkillItem :img="Icons.JAVAFX" :link="Links.JAVAFX" description="Réalisation de l'interface graphique" />
+      <SkillItem :img="Icons.SCENEBUILDER" :link="Links.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="init" alt="init" />
-      <ProjectImageItem :link="partie1" alt="partie1" />
-      <ProjectImageItem :link="partie2" alt="partie2" />
-      <ProjectImageItem :link="partie3" alt="partie3" />
+      <ProjectImageItem :link="Pictures.TRAINS_INIT" :alt="Pictures.TRAINS_INIT" />
+      <ProjectImageItem :link="Pictures.TRAINS_1" :alt="Pictures.TRAINS_1" />
+      <ProjectImageItem :link="Pictures.TRAINS_2" :alt="Pictures.TRAINS_2" />
+      <ProjectImageItem :link="Pictures.TRAINS_3" :alt="Pictures.TRAINS_3" />
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_TRAINS" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_TRAINS" :img="Icons.GITHUB" />
       <LinkItem :link="regles" alt="Règles du jeu" />
     </template>
   </ProjectItem>

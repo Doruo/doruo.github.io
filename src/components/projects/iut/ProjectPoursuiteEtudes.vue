@@ -1,27 +1,21 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue';
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue';
+import SkillItem from '@/components/skills/SkillItem.vue';
+import LinkItem from '@/components/links/LinkItem.vue';
 
-import logoIUT from '@/assets/img/projets/poursuiteEtude/logoIUT.webp'
-import accueil from '@/assets/img/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
-import agregation from '@/assets/img/projets/poursuiteEtude/poursuite_etude_agregation.webp'
-import connexion from '@/assets/img/projets/poursuiteEtude/poursuite_etude_connexion.webp'
-import csv from '@/assets/img/projets/poursuiteEtude/poursuite_etude_csv.webp'
-import diagramme from '@/assets/img/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
-import notes from '@/assets/img/projets/poursuiteEtude/poursuite_etude_notes.webp'
+import { Icons } from '@/data/Icons';
+import { Pictures } from '@/data/Pictures';
+import { Links } from '@/data/Links';
 
-import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf'
+import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf';
 
-import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
-import { Pictures } from '@/data/Pictures'
-import SkillItem from '@/components/skills/SkillItem.vue'
-import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" :src="logoIUT" />
+      <img alt="logoIUT" :src="Pictures.POURSUITE_ETUDES_LOGO_IUT" />
     </template>
 
     <template #title>Application d'avis de poursuite d'études</template>
@@ -69,27 +63,27 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-      <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au deploiement de l'application" />
-      <SkillItem :img="Pictures.LDAP" :link="Links.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
-      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
-      <SkillItem :img="Pictures.POSTGRE" :link="Links.POSTGRE" description="Base de données de l'application" />
-      <SkillItem :img="Pictures.PLSQL" :link="Links.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
-      <SkillItem :img="Pictures.CHARTJS" :link="Links.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="Icons.DOCKER" :link="Links.DOCKER" description="Aide au deploiement de l'application" />
+      <SkillItem :img="Icons.LDAP" :link="Links.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
+      <SkillItem :img="Icons.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
+      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
+      <SkillItem :img="Icons.POSTGRE" :link="Links.POSTGRE" description="Base de données de l'application" />
+      <SkillItem :img="Icons.PLSQL" :link="Links.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
+      <SkillItem :img="Icons.CHARTJS" :link="Links.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
     </template>
 
     <template #assets>
-        <ProjectImageItem :link="accueil" />
-        <ProjectImageItem :link="connexion" />
-        <ProjectImageItem :link="notes" />
-        <ProjectImageItem :link="agregation" />
-        <ProjectImageItem :link="csv" />
-        <ProjectImageItem :link="diagramme" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_HOME" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_CONNEXION" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_NOTES" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_AGREGATION" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_CSV" />
+        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_DIAGRAMME" />
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Icons.GITHUB" />
       <LinkItem :link="sujet" alt="Sujet du projet" />
     </template>
   </ProjectItem>

@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
-
-import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
-import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
+
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="eldenbuild_logo" :src="ranni" />
+      <img :src="Pictures.ELDENBUILD_RANNI" :alt="Pictures.ELDENBUILD_RANNI" />
     </template>
 
     <template #title>My Avatar</template>
@@ -24,10 +24,10 @@ import LinkItem from '@/components/links/LinkItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
-      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Implémentation de Symfony" />
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle" />
-      <SkillItem :img="Pictures.JS" :link="Links.JS" description="Requêtes AJAX" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="Icons.PHP" :link="Links.PHP" description="Implémentation de Symfony" />
+      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle" />
+      <SkillItem :img="Icons.JS" :link="Links.JS" description="Requêtes AJAX" />
     </template>
 
     <template #assets>

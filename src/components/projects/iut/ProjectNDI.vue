@@ -1,28 +1,18 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
-
-import logoNDI from '@/assets/img/projets/ndi2024/logo-n2i-2024.webp'
-import ocean from '@/assets/img/projets/ndi2024/ndi_ocean.webp'
-import page from '@/assets/img/projets/ndi2024/ndi_page.webp'
-import photoGroupe from '@/assets/img/projets/ndi2024/ndi_photo_groupe.webp'
-import photo1 from '@/assets/img/projets/ndi2024/ndi_photo1.webp'
-import photo2 from '@/assets/img/projets/ndi2024/ndi_photo2.webp'
-import photo3 from '@/assets/img/projets/ndi2024/ndi_photo3.webp'
-import photo4 from '@/assets/img/projets/ndi2024/ndi_photo4.webp'
-import photo5 from '@/assets/img/projets/ndi2024/ndi_photo5.webp'
-import photo6 from '@/assets/img/projets/ndi2024/ndi_photo6.webp'
-
-import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
-import { Pictures } from '@/data/Pictures'
-import SkillItem from '@/components/skills/SkillItem.vue'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi2024" :src="logoNDI" />
+      <img alt="ndi2024" :src="Pictures.NDI2024_LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2024</template>
@@ -55,26 +45,26 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
-      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Rédaction des articles" />
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle des articles" />
-      <SkillItem :img="Pictures.EXPRESS" :link="Links.EXPRESS" description="Routage et implémentation de l'océan" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="Icons.HTML" :link="Links.HTML" description="Rédaction des articles" />
+      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle des articles" />
+      <SkillItem :img="Icons.EXPRESS" :link="Links.EXPRESS" description="Routage et implémentation de l'océan" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="ocean" alt="Ocean" />
-      <ProjectImageItem :link="page" alt="page" />
-      <ProjectImageItem :link="photoGroupe" alt="groupe" />
-      <ProjectImageItem :link="photo1" alt="photo1" />
-      <ProjectImageItem :link="photo2" alt="photo2" />
-      <ProjectImageItem :link="photo3" alt="photo3" />
-      <ProjectImageItem :link="photo4" alt="photo4" />
-      <ProjectImageItem :link="photo5" alt="photo5" />
-      <ProjectImageItem :link="photo6" alt="photo6" />
+      <ProjectImageItem :link="Pictures.NDI2024_OCEAN" alt="Ocean" />
+      <ProjectImageItem :link="Pictures.NDI2024_page" alt="page" />
+      <ProjectImageItem :link="Pictures.NDI2024_GROUP" alt="groupe" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_1" alt="photo1" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_2" alt="photo2" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_3" alt="photo3" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_4" alt="photo4" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_5" alt="photo5" />
+      <ProjectImageItem :link="Pictures.NDI2024_WORK_6" alt="photo6" />
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_NDI" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_NDI" :img="Icons.GITHUB" />
     </template>
   </ProjectItem>
 </template>

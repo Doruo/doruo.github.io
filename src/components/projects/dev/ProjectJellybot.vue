@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
-
-import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
-import { Links } from '@/data/Links'
-import LinkItem from '@/components/links/LinkItem.vue'
-import { Pictures } from '@/data/Pictures'
 import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
 
     <template #logo_projet>
-      <img alt="eldenbuild_logo" :src="ranni" />
+      <img :src="Pictures.ELDENBUILD_RANNI" :alt="Pictures.ELDENBUILD_RANNI" />
     </template>
 
     <template #title>Jellybot</template>
@@ -29,19 +29,19 @@ import SkillItem from '@/components/skills/SkillItem.vue'
       <p>
         Il permet de mettre sa médiathèque à disposition sur le web,
         qu'il s'agisse de contenu vidéo (films et séries, télévision),
-        audio (musique, livres audio, podcasts)
+        audio (musique, livres audio, podcasts).
       </p>
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
     </template>
 
     <template #assets>
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_GOL" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_GOL" :img="Icons.GITHUB" />
     </template>
 
   </ProjectItem>

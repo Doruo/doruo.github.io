@@ -1,25 +1,18 @@
 <script setup lang="ts">
-import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
-import LinkItem from '@/components/links/LinkItem.vue'
-import SkillItem from '@/components/skills/SkillItem.vue'
-
-import { Links } from '@/data/Links'
-import { Pictures } from '@/data/Pictures'
-
-import ranni from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
-import accueil from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
-import build from '@/assets/img/projets/eldenbuild/eldenbuild_build.webp'
-import equipement from '@/assets/img/projets/eldenbuild/eldenbuild_getEquipement.webp'
-import profile from '@/assets/img/projets/eldenbuild/eldenbuild_profile.webp'
-import inscription from '@/assets/img/projets/eldenbuild/eldenbuild_inscription.webp'
-import testAPI from '@/assets/img/projets/eldenbuild/eldenbuild_testapi.webp'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
+import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
+import SkillItem from '@/components/skills/SkillItem.vue'
+import LinkItem from '@/components/links/LinkItem.vue'
+
+import { Icons } from '@/data/Icons'
+import { Pictures } from '@/data/Pictures'
+import { Links } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="eldenbuild_logo" :src="ranni" />
+      <img :alt=Pictures.ELDENBUILD_RANNI :src="Pictures.ELDENBUILD_RANNI" />
     </template>
 
     <template #title>Elden Build</template>
@@ -58,27 +51,27 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Pictures.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-      <SkillItem :img="Pictures.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-      <SkillItem :img="Pictures.DOCKER" :link="Links.DOCKER" description="Aide au déploiement de l'application" />
-      <SkillItem :img="Pictures.HTML" :link="Links.HTML" description="Développement de l'interface utilisateur" />
-      <SkillItem :img="Pictures.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
-      <SkillItem :img="Pictures.JS" :link="Links.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
-      <SkillItem :img="Pictures.MYSQL" :link="Links.MYSQL" description="Déploiement de la base de donnée sécurisée" />
-      <SkillItem :img="Pictures.REST" link="" description="Norme de communication avec l'API Elden Ring" />
+      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="Icons.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
+      <SkillItem :img="Icons.DOCKER" :link="Links.DOCKER" description="Aide au déploiement de l'application" />
+      <SkillItem :img="Icons.HTML" :link="Links.HTML" description="Développement de l'interface utilisateur" />
+      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
+      <SkillItem :img="Icons.JS" :link="Links.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
+      <SkillItem :img="Icons.MYSQL" :link="Links.MYSQL" description="Déploiement de la base de donnée sécurisée" />
+      <SkillItem :img="Icons.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="accueil" alt="accueil" />
-      <ProjectImageItem :link="inscription" alt="inscription" />
-      <ProjectImageItem :link="build" alt="build" />
-      <ProjectImageItem :link="profile" alt="profile" />
-      <ProjectImageItem :link="testAPI" alt="testAPI" />
-      <ProjectImageItem :link="equipement" alt="equipement" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_HOME" :alt="Pictures.ELDENBUILD_HOME" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_INSCRIPTION" :alt="Pictures.ELDENBUILD_INSCRIPTION" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_BUILD" :alt="Pictures.ELDENBUILD_BUILD" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_PROFILE" :alt="Pictures.ELDENBUILD_PROFILE" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_API_CALL" :alt="Pictures.ELDENBUILD_API_CALL" />
+      <ProjectImageItem :link="Pictures.ELDENBUILD_EQUIPMENT" :alt="Pictures.ELDENBUILD_EQUIPMENT" />
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="Pictures.GITHUB" />
+      <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="Icons.GITHUB" />
     </template>
 
   </ProjectItem>
