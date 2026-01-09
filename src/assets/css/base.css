@@ -47,8 +47,6 @@ body {
 /* HEADER */
 
 .header {
-  position: sticky;
-  top: 0;
   background-color: var(--primary-headers-color);
   color: var(--primary-text-color);
   padding: 10px 0;
