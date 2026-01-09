@@ -68,7 +68,6 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <ProjectImageItem :link="photo1" alt="photo1" />
       <ProjectImageItem :link="photo2" alt="photo2" />
       <ProjectImageItem :link="photo3" alt="photo3" />
-      <ProjectImageItem :link="photo3" alt="photo3" />
       <ProjectImageItem :link="photo4" alt="photo4" />
       <ProjectImageItem :link="photo5" alt="photo5" />
       <ProjectImageItem :link="photo6" alt="photo6" />
