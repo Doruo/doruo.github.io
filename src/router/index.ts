@@ -7,7 +7,8 @@ import ViewArchives from '@/views/ViewArchives.vue'
 import ViewProjects from '@/views/ViewProjects.vue'
 
 import ProjectEldenBuild from '@/components/projects/dev/ProjectEldenBuild.vue'
-import ProjectNDI from '@/components/projects/iut/ProjectNDI.vue'
+import ProjectNDI2024 from '@/components/projects/iut/ProjectNDI2024.vue'
+import ProjectNDI2025 from '@/components/projects/iut/ProjectNDI2025.vue'
 import ProjectPoursuiteEtude from '@/components/projects/iut/ProjectPoursuiteEtudes.vue'
 import ProjectTrains from '@/components/projects/iut/ProjectTrains.vue'
 import ProjectGol from '@/components/projects/dev/ProjectGol.vue'
@@ -24,7 +25,8 @@ const routes = [
   { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude },
   { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains },
   { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
-  { path: '/projects/nuit-de-linfo', name: 'projects-ndi2024', component: ProjectNDI },
+  { path: '/projects/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024 },
+  { path: '/projects/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025 },
   { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar },
   { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
    { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },

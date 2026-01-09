@@ -31,7 +31,6 @@ export class Links {
   // Github
   static readonly GITHUB_PAGES = this.SOCIAL_GITHUB + 'doruo.github.io'
   static readonly GITHUB_ELDEN_BUILD = this.SOCIAL_GITHUB + 'eldenBuild'
-  static readonly GITHUB_NDI = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'
   static readonly GITHUB_TRAINS = this.SOCIAL_GITHUB + 'trains'
   static readonly GITHUB_MESH = this.SOCIAL_GITHUB + 'mesh'
   static readonly GITHUB_MASTERMIND = this.SOCIAL_GITHUB + 'mastermind'
@@ -43,11 +42,14 @@ export class Links {
   static readonly GITHUB_POURSUITE_ETUDES = this.SOCIAL_GITHUB + 'PoursuiteEtudes'
   static readonly GITHUB_E3CETE = this.SOCIAL_GITHUB + 'E3Cete/blob/master/SAE_1_02_E3Cète.pdf'
   static readonly GITHUB_LLM_FROM_SCRATCH = this.SOCIAL_GITHUB + 'llm-from-scratch'
+  static readonly GITHUB_NDI2024 = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'
+  static readonly GITHUB_NDI2025 = "https://github.com/killianrms/NDI2025"
 
   // Projects
   static readonly ITCHIO_TIME_MAGE_TOURNAMENT = this.SOCIAL_ITCHIO + 'time-mage-tournament'
   static readonly FALLOUTDLE = 'https://falloutdle.net'
   static readonly MY_AVATAR = 'https://webinfo.iutmontp.univ-montp2.fr/~bodiguely/my-avatar/public'
+  static readonly NDI2025 = "https://killianrms.github.io/NDI2025"
 
   // Dev
   static readonly GIT = 'https://git-scm.com/'

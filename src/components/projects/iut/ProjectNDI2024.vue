@@ -64,7 +64,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_NDI" :img="Icons.GITHUB" />
+      <LinkItem :link="Links.GITHUB_NDI2024" :img="Icons.GITHUB" />
     </template>
   </ProjectItem>
 </template>

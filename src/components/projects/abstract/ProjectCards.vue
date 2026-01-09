@@ -23,12 +23,15 @@ defineProps({
         :more-info-link="project.moreInfoLink"
         :website-link="project.websiteLink"
         :background="project.background">
+
           <template #description>
             <span v-html="project.description"></span>
           </template>
+
           <template #techs>
             {{ project.techs }}
           </template>
+
         </ProjectCardItem>
       </div>
     </div>

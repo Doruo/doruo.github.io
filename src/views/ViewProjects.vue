@@ -10,6 +10,10 @@ import { Projects } from '@/data/Projects'
     :projectsCategory="Projects.getMainProjectsCategory()"
   />
   <ProjectCards
+    :title="Projects.getCommunityProjectsCategory().title"
+    :projectsCategory="Projects.getCommunityProjectsCategory()"
+  />
+  <ProjectCards
     :title="Projects.getAcademicProjectsCategory().title"
     :projectsCategory="Projects.getAcademicProjectsCategory()"
   />
@@ -20,9 +24,5 @@ import { Projects } from '@/data/Projects'
   <ProjectCards
     :title="Projects.getGameProjectsCategory().title"
     :projectsCategory="Projects.getGameProjectsCategory()"
-  />
-  <ProjectCards
-    :title="Projects.getCommunityProjectsCategory().title"
-    :projectsCategory="Projects.getCommunityProjectsCategory()"
   />
 </template>

@@ -41,7 +41,8 @@ import trains_logo from '@/assets/img/projets/trains/logoTrains.webp'
 import trains_init from '@/assets/img/projets/trains/trains_initialisation.webp'
 import trains_1 from '@/assets/img/projets/trains/trains_partie1.webp'
 import trains_2 from '@/assets/img/projets/trains/trains_partie2.webp'
-import trains_3 from '@/assets/img/projets/trains/trains_partie2.webp'
+import trains_3 from '@/assets/img/projets/trains/trains_partie3.webp'
+import trains_card from '@/assets/img/projets/trains/trains_card.webp'
 
 export class Pictures {
   // eldenbuild
@@ -83,6 +84,7 @@ export class Pictures {
   static readonly POURSUITE_ETUDES_NOTES = poursuite_etude_notes;
 
   // Trains
+  static readonly TRAINS_CARD = trains_card;
   static readonly TRAINS_LOGO = trains_logo;
   static readonly TRAINS_INIT = trains_init;
   static readonly TRAINS_1 = trains_1;

@@ -32,7 +32,7 @@ export class Projects {
       description:
         "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
       techs: 'PHP, JavaScript, PL/SQL, ChartJS, LDAP',
-      tags: ['main', 'academic'],
+      tags: ['main'],
     },
     {
       id: 'jellybot',
@@ -53,12 +53,12 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
       websiteLink: Links.GITHUB_TRAINS,
-      background: '',
+      background: Pictures.TRAINS_CARD,
       description:
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
       techs: 'Java, JavaFX',
-      tags: ['game', 'academic'],
+      tags: ['academic'],
     },
     {
       id: 'my-avatar',
@@ -96,19 +96,6 @@ export class Projects {
       tags: ['community'],
     },
     {
-      id: 'ndi-2024',
-      title: "Nuit de l'Info 2024 Race For Water",
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: Links.GITHUB_NDI,
-      background: Pictures.NDI2024_OCEAN,
-      description:
-        "Océan interactif fait à la main décrivant l'écosystème marin. " +
-        'Réalisé en 16h lors de la <a href="https://nuitdelinfo.com/">Nuit de l\'Info 2024</a>.',
-      techs: 'HTML,CSS, JavaScript, ExpressJS',
-      tags: ['main', 'competition'],
-    },
-    {
       id: 'cgj-2023',
       title: 'Code Game Jam 2023: Time Mage Tournament',
       showMoreInfoLink: false,
@@ -119,6 +106,31 @@ export class Projects {
         'Jeu de tir 2D isométrique réalisé en 24h. ' +
         "Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l'IUT Montpellier-Sête</a>.",
       techs: 'LUA, PICO-8',
+      tags: ['competition'],
+    },
+    {
+      id: 'ndi-2024',
+      title: "Nuit de l'Info 2024",
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-ndi2024' },
+      websiteLink: Links.GITHUB_NDI2024,
+      background: Pictures.NDI2024_OCEAN,
+      description:
+        "Océan interactif fait à la main décrivant l'écosystème marin. " +
+        'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
+      techs: 'HTML,CSS, JavaScript, ExpressJS',
+      tags: ['main', 'competition'],
+    },
+    {
+      id: 'ndi-2025',
+      title: "Nuit de l'Info 2025",
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-ndi2025' },
+      websiteLink: Links.NDI2025,
+      background: Pictures.NDI2024_WORK_1,
+      description:
+      `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
+      techs: 'HTML,CSS, JavaScript, ExpressJS',
       tags: ['competition'],
     },
     {
@@ -142,6 +154,29 @@ export class Projects {
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
       techs: 'HTML, CSS',
       tags: ['academic'],
+    },
+    {
+      id: 'llm-from-scratch',
+      title: `Modèle bigramme d'IA`,
+      showMoreInfoLink: false,
+      websiteLink: Links.GITHUB_LLM_FROM_SCRATCH,
+      moreInfoLink: { name: '' },
+      background: '',
+      description:
+        "Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.",
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['game'],
+    },
+    {
+      id: 'game-of-life',
+      title: "Conway's Game of Life",
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-gol' },
+      websiteLink: Links.GITHUB_GOL,
+      background: Pictures.GOL_CARD,
+      description: "Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.",
+      techs: 'Go, Ebitengine',
+      tags: ['main'],
     },
     {
       id: 'mastermind',
@@ -178,17 +213,6 @@ export class Projects {
       tags: ['game'],
     },
     {
-      id: 'game-of-life',
-      title: "Conway's Game of Life",
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-gol' },
-      websiteLink: Links.GITHUB_GOL,
-      background: Pictures.GOL_CARD,
-      description: "Simulation mathématique de 1970 réalisée en langage Go, avec interface graphique terminal.",
-      techs: 'Go, Ebitengine',
-      tags: ['main','game'],
-    },
-    {
       id: 'falloutdle',
       title: 'Falloutdle',
       showMoreInfoLink: false,
@@ -198,6 +222,17 @@ export class Projects {
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau perso tous les jours.",
       techs: 'Go, Web Scraping, API, JSON',
+      tags: ['game'],
+    },
+    {
+      id: 'e3cete',
+      title: 'E3Cète',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB_E3CETE,
+      background: '',
+      description: 'Jeu de société en java, inspiré du jeu Set! .',
+      techs: 'Java',
       tags: ['game'],
     },
     {
@@ -211,17 +246,6 @@ export class Projects {
       techs: 'Go, Peer2Peer, TCP/IP, DNS',
       tags: ['community'],
     },
-        {
-      id: 'e3cete',
-      title: 'E3Cète',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_E3CETE,
-      background: '',
-      description: 'Jeu de société en java, inspiré du jeu Set! .',
-      techs: 'Java',
-      tags: ['game'],
-    },
     {
       id: 'stage-itesoft',
       title: 'Stage - ITESOFT (CONFIDENTIEL)',
@@ -234,18 +258,6 @@ export class Projects {
         " API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.",
       techs: 'NestJS, JSON, SQL',
       tags: ['pro'],
-    },
-    {
-      id: 'llm-from-scratch',
-      title: `Modèle bigramme d'IA`,
-      showMoreInfoLink: false,
-      websiteLink: Links.GITHUB_LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: '',
-      description:
-        "Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.",
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['academic'],
     },
   ]
 
