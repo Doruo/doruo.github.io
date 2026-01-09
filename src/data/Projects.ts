@@ -48,19 +48,6 @@ export class Projects {
       tags: ['community'],
     },
     {
-      id: 'trains',
-      title: 'Jeu de plateau Trains',
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-trains' },
-      websiteLink: Links.GITHUB_TRAINS,
-      background: Pictures.TRAINS_CARD,
-      description:
-        'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
-        "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
-      techs: 'Java, JavaFX',
-      tags: ['academic'],
-    },
-    {
       id: 'my-avatar',
       title: 'My Avatar',
       showMoreInfoLink: true,
@@ -82,6 +69,19 @@ export class Projects {
         'Vitrine présentant mon travail de recherche et de rédaction ' +
         "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
       techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'trains',
+      title: 'Jeu de plateau Trains',
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-trains' },
+      websiteLink: Links.GITHUB_TRAINS,
+      background: Pictures.TRAINS_CARD,
+      description:
+        'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
+        "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
+      techs: 'Java, JavaFX',
       tags: ['academic'],
     },
     {
@@ -134,17 +134,6 @@ export class Projects {
       tags: ['competition'],
     },
     {
-      id: 'escape-game-mind-spies',
-      title: 'Escape game - The Mind Spies',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: '/IUT/A1/SAE-EscapeGame-MindSpies/page.html',
-      background: '',
-      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
       id: 'metro-post-apo',
       title: 'Escape game - Métro post-apocalyptique',
       showMoreInfoLink: false,
@@ -152,6 +141,17 @@ export class Projects {
       websiteLink: '/IUT/A1/SAE-EscapeGame-PostApo/index.html',
       background: '',
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'escape-game-mind-spies',
+      title: 'Escape game - The Mind Spies',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: '/IUT/A1/SAE-EscapeGame-MindSpies/page.html',
+      background: Pictures.MIND_SPIES_CARD,
+      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: 'HTML, CSS',
       tags: ['academic'],
     },
@@ -218,7 +218,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_FALLOUTDLE,
-      background: '',
+      background: Pictures.FALLOUTDLE_CARD,
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau perso tous les jours.",
       techs: 'Go, Web Scraping, API, JSON',
@@ -241,7 +241,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_MESH,
-      background: '',
+      background: Pictures.MESH_CARD,
       description: 'Lightweight messaging app written in Go, with Peer to Peer networking.',
       techs: 'Go, Peer2Peer, TCP/IP, DNS',
       tags: ['community'],

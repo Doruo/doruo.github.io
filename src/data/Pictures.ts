@@ -1,4 +1,4 @@
-// eldenbuild
+// elden build
 import eldenbuild_card from '@/assets/img/projets/eldenbuild/eldenbuild_card.webp'
 import eldenbuild_logo from '@/assets/img/projets/eldenbuild/eldenring_ranni.webp'
 import eldenbuild_home from '@/assets/img/projets/eldenbuild/eldenbuild_accueil.webp'
@@ -8,7 +8,7 @@ import eldenbuild_profile from '@/assets/img/projets/eldenbuild/eldenbuild_profi
 import eldenbuild_inscription from '@/assets/img/projets/eldenbuild/eldenbuild_inscription.webp'
 import eldenbuild_testAPI from '@/assets/img/projets/eldenbuild/eldenbuild_testapi.webp'
 
-// NDI 2024
+// ndi 2024
 import ndi2024_logo from '@/assets/img/projets/ndi2024/logo-n2i-2024.webp'
 import ndi2024_ocean from '@/assets/img/projets/ndi2024/ndi_ocean.webp'
 import ndi2024_page from '@/assets/img/projets/ndi2024/ndi_page.webp'
@@ -20,14 +20,14 @@ import ndi2024_photo5 from '@/assets/img/projets/ndi2024/ndi_photo5.webp'
 import ndi2024_photo6 from '@/assets/img/projets/ndi2024/ndi_photo6.webp'
 import ndi2024_photo_groupe from '@/assets/img/projets/ndi2024/ndi_photo_groupe.webp'
 
-// GOL
+// game of life
 import gol_card from '@/assets/img/projets/gol/gol_card.webp'
 import gol_logo from '@/assets/img/projets/gol/gol_logo.webp'
 import gol1 from '@/assets/img/projets/gol/gol1.webp'
 import gol2 from '@/assets/img/projets/gol/gol2.webp'
 import gol3 from '@/assets/img/projets/gol/gol3.webp'
 
-// Poursuite etudes
+// poursuite etudes
 import poursuite_etude_logo_iut from '@/assets/img/projets/poursuiteEtude/logoIUT.webp'
 import poursuite_etude_home from '@/assets/img/projets/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
 import poursuite_etude_agregation from '@/assets/img/projets/poursuiteEtude/poursuite_etude_agregation.webp'
@@ -36,13 +36,22 @@ import poursuite_etude_csv from '@/assets/img/projets/poursuiteEtude/poursuite_e
 import poursuite_etude_diagramme from '@/assets/img/projets/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
 import poursuite_etude_notes from '@/assets/img/projets/poursuiteEtude/poursuite_etude_notes.webp'
 
-// Trains
+// trains
 import trains_logo from '@/assets/img/projets/trains/logoTrains.webp'
 import trains_init from '@/assets/img/projets/trains/trains_initialisation.webp'
 import trains_1 from '@/assets/img/projets/trains/trains_partie1.webp'
 import trains_2 from '@/assets/img/projets/trains/trains_partie2.webp'
 import trains_3 from '@/assets/img/projets/trains/trains_partie3.webp'
 import trains_card from '@/assets/img/projets/trains/trains_card.webp'
+
+// falloutdle
+import falloutdle_card from '@/assets/img/projets/falloutdle/falloutdle_card.webp'
+
+// mesh
+import mesh_card from '@/assets/img/projets/mesh/mesh_card.webp'
+
+// mind spies
+import mind_spies_card from '@/assets/img/projets/mindspies/mind_spies_card.webp'
 
 export class Pictures {
   // eldenbuild
@@ -90,4 +99,13 @@ export class Pictures {
   static readonly TRAINS_1 = trains_1;
   static readonly TRAINS_2 = trains_2;
   static readonly TRAINS_3 = trains_3;
+
+  // Trains
+  static readonly FALLOUTDLE_CARD = falloutdle_card;
+
+  // mesh_card
+  static readonly MESH_CARD = mesh_card
+
+  // mind spies
+  static readonly MIND_SPIES_CARD = mind_spies_card
 }
