@@ -5,7 +5,7 @@ import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
 import { ToolIcons, SocialIcons } from '@/data/Icons';
-import { Pictures } from '@/data/Pictures';
+import { PoursuiteEtudesPictures } from '@/data/Pictures';
 import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
 
 import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf';
@@ -15,7 +15,7 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" :src="Pictures.POURSUITE_ETUDES_LOGO_IUT" />
+      <img alt="logoIUT" :src="PoursuiteEtudesPictures.LOGO_IUT" />
     </template>
 
     <template #title>Application d'avis de poursuite d'études</template>
@@ -74,12 +74,12 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     </template>
 
     <template #assets>
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_HOME" />
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_CONNEXION" />
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_NOTES" />
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_AGREGATION" />
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_CSV" />
-        <ProjectImageItem :link="Pictures.POURSUITE_ETUDES_DIAGRAMME" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.HOME" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.CONNEXION" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.NOTES" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.AGREGATION" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.CSV" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.DIAGRAMME" />
     </template>
 
     <template #links>

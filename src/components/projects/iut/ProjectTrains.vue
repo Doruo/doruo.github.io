@@ -5,7 +5,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { Pictures } from '@/data/Pictures'
+import { TrainsPictures } from '@/data/Pictures'
 import { GithubLinks, ToolLinks } from '@/data/Links'
 
 import regles from '/IUT/A1/SAE-Trains/regles.pdf'
@@ -15,7 +15,7 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="Pictures.TRAINS_LOGO" :alt="Pictures.TRAINS_LOGO" />
+      <img :src="TrainsPictures.LOGO" :alt="TrainsPictures.LOGO" />
     </template>
 
     <template #title>Jeu de plateau Trains</template>
@@ -63,10 +63,10 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="Pictures.TRAINS_INIT" :alt="Pictures.TRAINS_INIT" />
-      <ProjectImageItem :link="Pictures.TRAINS_1" :alt="Pictures.TRAINS_1" />
-      <ProjectImageItem :link="Pictures.TRAINS_2" :alt="Pictures.TRAINS_2" />
-      <ProjectImageItem :link="Pictures.TRAINS_3" :alt="Pictures.TRAINS_3" />
+      <ProjectImageItem :link="TrainsPictures.INIT" :alt="TrainsPictures.INIT" />
+      <ProjectImageItem :link="TrainsPictures.GAME_1" :alt="TrainsPictures.GAME_1" />
+      <ProjectImageItem :link="TrainsPictures.GAME_2" :alt="TrainsPictures.GAME_2" />
+      <ProjectImageItem :link="TrainsPictures.GAME_3" :alt="TrainsPictures.GAME_3" />
     </template>
 
     <template #links>
