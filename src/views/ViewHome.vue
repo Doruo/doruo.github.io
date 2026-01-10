@@ -1,6 +1,6 @@
 <script lang="ts" setup>
+import AboutContact from '@/components/about/AboutContact.vue';
 import AboutIntro from '@/components/about/AboutIntro.vue'
-import AboutSocialLinks from '@/components/about/AboutSocialLinks.vue';
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
 import { Projects } from '@/data/Projects'
 </script>
@@ -21,5 +21,5 @@ import { Projects } from '@/data/Projects'
     </h1>
   </section>
 
-  <AboutSocialLinks />
+  <AboutContact />
 </template>
