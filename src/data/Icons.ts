@@ -4,9 +4,8 @@ import github_path from '@/assets/img/contact/github.webp'
 import linkedin_path from '@/assets/img/contact/linkedin.webp'
 import gravatar_path from '@/assets/img/contact/gravatar.webp'
 import itchio_path from '@/assets/img/contact/itchio.webp'
-import ebitengine_path from '@/assets/img/projets/outils/ebitengine.webp'
 
-// langages
+// tools
 import git_path from '@/assets/img/projets/outils/git.webp'
 import docker_path from '@/assets/img/projets/outils/docker.webp'
 import php_path from '@/assets/img/projets/outils/php.webp'
@@ -24,6 +23,7 @@ import java_path from '@/assets/img/projets/outils/java.webp'
 import javafx_path from '@/assets/img/projets/outils/javafx.webp'
 import scenebuilder_path from '@/assets/img/projets/outils/scenebuilder.webp'
 import go_path from '@/assets/img/projets/outils/go.webp'
+import ebitengine_path from '@/assets/img/projets/outils/ebitengine.webp'
 
 // EXPORT
 export class Icons {
@@ -33,9 +33,8 @@ export class Icons {
   static readonly LINKEDIN = linkedin_path
   static readonly GRAVATAR = gravatar_path
   static readonly ITCHIO = itchio_path
-  static readonly EBITENGINE = ebitengine_path
 
-  // langages
+  // tools
   static readonly GIT = git_path
   static readonly DOCKER = docker_path
   static readonly PHP = php_path
@@ -53,4 +52,5 @@ export class Icons {
   static readonly JAVAFX = javafx_path
   static readonly SCENEBUILDER = scenebuilder_path
   static readonly GO = go_path
+  static readonly EBITENGINE = ebitengine_path
 }

@@ -58,6 +58,13 @@ import ndi2024_photo_groupe from '@/assets/img/projets/iut/ndi2024/ndi_photo_gro
 // mind spies
 import mind_spies_card from '@/assets/img/projets/iut/mindspies/mind_spies_card.webp'
 
+// e3cete
+import e3cete_card from '@/assets/img/projets/iut/e3cete/e3cete_card.webp'
+
+// chuck norris
+import chuck_norris_card from '@/assets/img/projets/iut/fanclubchucknorris/chucknorris_card.webp'
+
+
 export class Pictures {
   // eldenbuild
   static readonly ELDENBUILD_CARD = eldenbuild_card;
@@ -69,24 +76,18 @@ export class Pictures {
   static readonly ELDENBUILD_INSCRIPTION = eldenbuild_inscription;
   static readonly ELDENBUILD_API_CALL = eldenbuild_testAPI;
 
-  // NDI 2024
-  static readonly NDI2024_LOGO = ndi2024_logo;
-  static readonly NDI2024_OCEAN = ndi2024_ocean;
-  static readonly NDI2024_page = ndi2024_page;
-  static readonly NDI2024_WORK_1 = ndi2024_photo1;
-  static readonly NDI2024_WORK_2 = ndi2024_photo2;
-  static readonly NDI2024_WORK_3 = ndi2024_photo3;
-  static readonly NDI2024_WORK_4 = ndi2024_photo4;
-  static readonly NDI2024_WORK_5 = ndi2024_photo5;
-  static readonly NDI2024_WORK_6 = ndi2024_photo6;
-  static readonly NDI2024_GROUP = ndi2024_photo_groupe;
-
   // GOL
   static readonly GOL_CARD = gol_card;
   static readonly GOL_LOGO = gol_logo;
   static readonly GOL_1 = gol1;
   static readonly GOL_2 = gol2;
   static readonly GOL_3 = gol3;
+
+  // falloutdle
+  static readonly FALLOUTDLE_CARD = falloutdle_card;
+
+  // mesh
+  static readonly MESH_CARD = mesh_card
 
   // Poursuite etudes
   static readonly POURSUITE_ETUDES_LOGO_IUT = poursuite_etude_logo_iut;
@@ -105,12 +106,21 @@ export class Pictures {
   static readonly TRAINS_2 = trains_2;
   static readonly TRAINS_3 = trains_3;
 
-  // Trains
-  static readonly FALLOUTDLE_CARD = falloutdle_card;
+  // NDI 2024
+  static readonly NDI2024_LOGO = ndi2024_logo;
+  static readonly NDI2024_OCEAN = ndi2024_ocean;
+  static readonly NDI2024_page = ndi2024_page;
+  static readonly NDI2024_WORK_1 = ndi2024_photo1;
+  static readonly NDI2024_WORK_2 = ndi2024_photo2;
+  static readonly NDI2024_WORK_3 = ndi2024_photo3;
+  static readonly NDI2024_WORK_4 = ndi2024_photo4;
+  static readonly NDI2024_WORK_5 = ndi2024_photo5;
+  static readonly NDI2024_WORK_6 = ndi2024_photo6;
+  static readonly NDI2024_GROUP = ndi2024_photo_groupe;
 
-  // mesh_card
-  static readonly MESH_CARD = mesh_card
+  // e3cete
+  static readonly E3CETE_CARD = e3cete_card
 
-  // mind spies
-  static readonly MIND_SPIES_CARD = mind_spies_card
+// chuck norris
+  static readonly CHUCK_NORRIS_CARD = chuck_norris_card
 }

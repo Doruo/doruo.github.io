@@ -6,7 +6,7 @@
 
   --primary-bg-color: rgb(35, 38, 39);
   --primary-headers-color: #2a3a4b;
-  --primary-text-color: rgb(232, 230, 227);
+  --primary-text-color: white /* rgb(232, 230, 227)*/;
   --primary-link-color: rgb(130, 228, 213);
   --primary-hover-color: #aaa;
 
