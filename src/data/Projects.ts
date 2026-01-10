@@ -1,5 +1,5 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
-import { Links } from './Links'
+import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
 import { Pictures } from './Pictures'
 
 export interface Project {
@@ -27,7 +27,7 @@ export class Projects {
       title: "Application de Poursuite d'Etudes",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: Links.GITHUB_POURSUITE_ETUDES,
+      websiteLink: GithubLinks.POURSUITE_ETUDES,
       background: '',
       description:
         "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
@@ -39,7 +39,7 @@ export class Projects {
       title: 'My Avatar',
       showMoreInfoLink: false,
       moreInfoLink: { name: 'projects-my-avatar' },
-      websiteLink: Links.MY_AVATAR,
+      websiteLink: ProjectLinks.MY_AVATAR,
       background: '',
       description:
         'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
@@ -51,7 +51,7 @@ export class Projects {
       title: 'Contrôverse des Cryptomonnaies',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.CONTROVERSE_CRYPTO,
+      websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
       background: '',
       description:
         'Vitrine présentant mon travail de recherche et de rédaction ' +
@@ -64,7 +64,7 @@ export class Projects {
       title: 'Jeu de plateau Trains',
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: Links.GITHUB_TRAINS,
+      websiteLink: GithubLinks.TRAINS,
       background: Pictures.TRAINS_CARD,
       description:
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
@@ -77,7 +77,7 @@ export class Projects {
       title: 'Code Game Jam 2023: Time Mage Tournament',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.ITCHIO_TIME_MAGE_TOURNAMENT,
+      websiteLink: ProjectLinks.ITCHIO_TIME_MAGE_TOURNAMENT,
       background: '',
       description:
         'Jeu de tir 2D isométrique réalisé en 24h. ' +
@@ -90,7 +90,7 @@ export class Projects {
       title: "Nuit de l'Info 2024",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: Links.GITHUB_NDI2024,
+      websiteLink: GithubLinks.NDI2024,
       background: Pictures.NDI2024_OCEAN,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
@@ -103,7 +103,7 @@ export class Projects {
       title: "Nuit de l'Info 2025",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2025' },
-      websiteLink: Links.NDI2025,
+      websiteLink: GithubLinks.NDI2025,
       background: Pictures.NDI2024_WORK_1,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
@@ -114,7 +114,7 @@ export class Projects {
       title: 'Fan Club Chuck Norris',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.FAN_CLUB_CHUCK_NORRIS,
+      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
       background: Pictures.CHUCK_NORRIS_CARD,
       description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
       techs: 'HTML, CSS',
@@ -125,7 +125,7 @@ export class Projects {
       title: 'Escape game - Métro post-apocalyptique',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.ESCAPE_GAME_POST_APO,
+      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
       background: '',
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
       techs: 'HTML, CSS',
@@ -136,7 +136,7 @@ export class Projects {
       title: 'Escape game - The Mind Spies',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.ESCAPE_GAME_MIND_SPIES,
+      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
       background: Pictures.MIND_SPIES_CARD,
       description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: 'HTML, CSS',
@@ -147,7 +147,7 @@ export class Projects {
       title: "Conway's Game of Life",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-gol' },
-      websiteLink: Links.GITHUB_GOL,
+      websiteLink: GithubLinks.GOL,
       background: Pictures.GOL_CARD,
       description:
         'Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.',
@@ -159,7 +159,7 @@ export class Projects {
       title: 'Mastermind',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_MASTERMIND,
+      websiteLink: GithubLinks.MASTERMIND,
       background: '',
       description:
         'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur.',
@@ -171,7 +171,7 @@ export class Projects {
       title: 'Sudoku',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_SUDOKU,
+      websiteLink: GithubLinks.SUDOKU,
       background: '',
       description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
@@ -182,7 +182,7 @@ export class Projects {
       title: 'Le Marin Ivre',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_MARIN_IVRE,
+      websiteLink: GithubLinks.MARIN_IVRE,
       background: '',
       description:
         'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
@@ -194,7 +194,7 @@ export class Projects {
       title: 'E3Cète',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_E3CETE,
+      websiteLink: GithubLinks.E3CETE,
       background: Pictures.E3CETE_CARD,
       description: 'Jeu de société en Java, inspiré du jeu Set! .',
       techs: 'Java',
@@ -205,7 +205,7 @@ export class Projects {
       title: 'Flipper',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_FLIPPER_BALL,
+      websiteLink: GithubLinks.FLIPPER_BALL,
       background: '',
       description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
       techs: 'Python, numpy',
@@ -216,7 +216,7 @@ export class Projects {
       title: 'Elden Build',
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: Links.GITHUB_ELDEN_BUILD,
+      websiteLink: GithubLinks.ELDEN_BUILD,
       background: Pictures.ELDENBUILD_CARD,
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
@@ -228,7 +228,7 @@ export class Projects {
       title: 'Falloutdle',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_FALLOUTDLE,
+      websiteLink: GithubLinks.FALLOUTDLE,
       background: Pictures.FALLOUTDLE_CARD,
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours.",
@@ -240,7 +240,7 @@ export class Projects {
       title: 'Mesh',
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_MESH,
+      websiteLink: GithubLinks.MESH,
       background: Pictures.MESH_CARD,
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
       techs: 'Go, P2P, TCP/IP',
@@ -251,7 +251,7 @@ export class Projects {
       title: 'Jellybot',
       showMoreInfoLink: false,
       moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: Links.GITHUB_JELLYBOT,
+      websiteLink: GithubLinks.JELLYBOT,
       background: '',
       description:
         "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
@@ -263,7 +263,7 @@ export class Projects {
       id: 'llm-from-scratch',
       title: `Modèle bigramme d'IA`,
       showMoreInfoLink: false,
-      websiteLink: Links.GITHUB_LLM_FROM_SCRATCH,
+      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: '' },
       background: Pictures.LLM_CARD,
       description:

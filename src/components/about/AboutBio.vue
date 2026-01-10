@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Links } from '@/data/Links';
+import { IUTLinks } from '@/data/Links';
 </script>
 
 <template>
@@ -17,7 +17,7 @@ import { Links } from '@/data/Links';
         (Principe Fondamental de la Dynamique).
       </p>
       <p>
-        Afin d'approfondir mon parcours, j'intégre <a :href="Links.IUT"><b>l'IUT Montpellier-Sête</b></a>.
+        Afin d'approfondir mon parcours, j'intégre <a :href="IUTLinks.IUT"><b>l'IUT Montpellier-Sête</b></a>.
         Durant ma formation, j'ai été amené à maitriser les différentes notions du <b>développement full-stack efficace</b>.
       </p>
       <p>

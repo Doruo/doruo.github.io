@@ -5,7 +5,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { SocialIcons, ToolIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { GithubLinks, Links, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -35,7 +35,7 @@ import { GithubLinks, Links, ProjectLinks, ToolLinks, WebsiteLinks } from '@/dat
 
     <template #links>
       <LinkItem :link="GithubLinks.MY_AVATAR" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="Links.IUT_MY_AVATAR" alt="Sujet du projet" />
+      <LinkItem :link="IUTLinks.IUT_MY_AVATAR" alt="Sujet du projet" />
       <LinkItem :link="ProjectLinks.MY_AVATAR" alt="Voir le site" />
     </template>
   </ProjectItem>

@@ -27,7 +27,6 @@ import go_path from '@/assets/img/project/tools/go.webp'
 import ebitengine_path from '@/assets/img/project/tools/ebitengine.webp'
 import pdf_path from '@/assets/img/project/tools/pdf.svg'
 
-
 export class SocialIcons {
   static readonly PORTRAIT = portrait_path
   static readonly MAIL = mail_path

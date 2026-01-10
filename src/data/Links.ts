@@ -1,4 +1,6 @@
-export class Links {
+export class IUTLinks {
+  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
+
   // IUT Web dev
   static readonly LEBRETON = 'https://romainlebreton.github.io/'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
@@ -23,7 +25,6 @@ export class WebsiteLinks {
   static readonly SCODOC = 'https://scodoc.org/'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://fr.gravatar.com/'
-
 }
 
 export class SocialLinks {
