@@ -55,6 +55,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
     </template>
 
     <template #abilities>
+      <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe." />
       <SkillItem :img="ToolIcons.JAVA" :link="ToolLinks.JAVA" description="Implémentation de la logique du jeu" />
       <SkillItem :img="ToolIcons.JAVAFX" :link="ToolLinks.JAVAFX" description="Réalisation de l'interface graphique" />
       <SkillItem :img="ToolIcons.SCENEBUILDER" :link="ToolLinks.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />

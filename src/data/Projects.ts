@@ -1,6 +1,6 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
-import { EldenBuildAssets, GOLAssets, NDI2024Assets, TrainsAssets, FalloutdleAssets, ChuckNorrisAssets, MindSpiesAssets, E3CeteAssets, MeshAssets, LLMAssets } from './Assets'
+import { EldenBuildAssets, GOLAssets, NDI2024Assets, TrainsAssets, FalloutdleAssets, ChuckNorrisAssets, MindSpiesAssets, E3CeteAssets, MeshAssets, LLMAssets, NDI2025Assets } from './Assets'
 
 export interface Project {
   id: string
@@ -37,7 +37,7 @@ export class Projects {
     {
       id: 'my-avatar',
       title: 'My Avatar',
-      showMoreInfoLink: false,
+      showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: ProjectLinks.MY_AVATAR,
       background: '',
@@ -91,7 +91,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: GithubLinks.NDI2024,
-      background: NDI2024Assets.OCEAN,
+      background: NDI2024Assets.WORK_1,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
@@ -104,7 +104,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: GithubLinks.NDI2025,
-      background: NDI2024Assets.WORK_1,
+      background: NDI2025Assets.GROUP,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
       tags: ['competition'],
@@ -249,7 +249,7 @@ export class Projects {
     {
       id: 'jellybot',
       title: 'Jellybot',
-      showMoreInfoLink: false,
+      showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-jellybot' },
       websiteLink: GithubLinks.JELLYBOT,
       background: '',

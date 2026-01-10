@@ -51,6 +51,11 @@ export class NDI2024Assets{
   static readonly GROUP = new URL('@/assets/img/project/iut/ndi2024/ndi_photo_groupe.webp', import.meta.url).href;
 }
 
+export class NDI2025Assets{
+  static readonly LOGO = new URL('@/assets/img/project/iut/ndi2025/ndi2025_logo.webp', import.meta.url).href;
+  static readonly GROUP = new URL('@/assets/img/project/iut/ndi2025/ndi2025_groupe.webp', import.meta.url).href;
+}
+
 export class FalloutdleAssets {
   static readonly CARD = new URL('@/assets/img/project/perso/falloutdle/falloutdle_card.webp', import.meta.url).href;
 }

@@ -51,7 +51,7 @@ import { ToolLinks, GithubLinks, WebsiteLinks } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
       <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Développement coté serveur de l'application" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
       <SkillItem :img="ToolIcons.HTML" :link="ToolLinks.HTML" description="Développement de l'interface utilisateur" />

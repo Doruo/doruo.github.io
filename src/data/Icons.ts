@@ -9,25 +9,36 @@ export class SocialIcons {
 }
 
 export class ToolIcons {
-  static readonly GIT = new URL('@/assets/img/project/tools/git.webp', import.meta.url).href
-  static readonly DOCKER = new URL('@/assets/img/project/tools/docker.webp', import.meta.url).href
-  static readonly PHP = new URL('@/assets/img/project/tools/php.svg', import.meta.url).href
-  static readonly HTML = new URL('@/assets/img/project/tools/html.webp', import.meta.url).href
-  static readonly BOOTSTRAP = new URL('@/assets/img/project/tools/bootstrap.svg', import.meta.url).href
-  static readonly JS = new URL('@/assets/img/project/tools/js.webp', import.meta.url).href
-  static readonly MYSQL = new URL('@/assets/img/project/tools/mysql.svg', import.meta.url).href
-  static readonly REST = new URL('@/assets/img/project/tools/apirest.webp', import.meta.url).href
-  static readonly EXPRESS = new URL('@/assets/img/project/tools/express-js.webp', import.meta.url).href
+  static readonly GIT = "https://skillicons.dev/icons?i=git"
+  static readonly GITHUB = "https://techstack-generator.vercel.app/github-icon.svg"
+  static readonly GITLAB = "https://skillicons.dev/icons?i=gitlab"
 
+  static readonly HTML = "https://skillicons.dev/icons?i=html"
+  static readonly BOOTSTRAP = "https://skillicons.dev/icons?i=bootstrap"
+  static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'
+
+  static readonly JS = "https://techstack-generator.vercel.app/js-icon.svg"
+  static readonly TS = "https://techstack-generator.vercel.app/ts-icon.svg"
+  static readonly PYTHON = "https://techstack-generator.vercel.app/python-icon.svg"
+  static readonly NEXT = 'https://skillicons.dev/icons?i=next'
+
+  static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
+  static readonly JAVA = "https://techstack-generator.vercel.app/java-icon.svg"
+  static readonly JAVAFX = new URL('@/assets/img/project/tools/javafx.webp', import.meta.url).href
+  static readonly GO = "https://skillicons.dev/icons?i=go"
+  static readonly PHP = "https://skillicons.dev/icons?i=php"
+  static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
+
+  static readonly SCENEBUILDER = new URL('@/assets/img/project/tools/scenebuilder.webp', import.meta.url).href
+  static readonly CHARTJS = new URL('@/assets/img/project/tools/chartjs.svg', import.meta.url).href
+  static readonly EBITENGINE = new URL('@/assets/img/project/tools/ebitengine.webp', import.meta.url).href
+
+  static readonly POSTGRE = "https://skillicons.dev/icons?i=postgres"
+  static readonly PLSQL = new URL('@/assets/img/project/tools/plsql.svg', import.meta.url).href
+  static readonly MYSQL = "https://techstack-generator.vercel.app/mysql-icon.svg"
 
   static readonly LDAP = new URL('@/assets/img/project/tools/ldap.svg', import.meta.url).href
-  static readonly POSTGRE = new URL('@/assets/img/project/tools/postgresql.svg', import.meta.url).href
-  static readonly PLSQL = new URL('@/assets/img/project/tools/plsql.svg', import.meta.url).href
-  static readonly CHARTJS = new URL('@/assets/img/project/tools/chartjs.svg', import.meta.url).href
-  static readonly JAVA = new URL('@/assets/img/project/tools/java.svg', import.meta.url).href
-  static readonly JAVAFX = new URL('@/assets/img/project/tools/javafx.webp', import.meta.url).href
-  static readonly SCENEBUILDER = new URL('@/assets/img/project/tools/scenebuilder.webp', import.meta.url).href
-  static readonly GO = new URL('@/assets/img/project/tools/go.webp', import.meta.url).href
-  static readonly EBITENGINE = new URL('@/assets/img/project/tools/ebitengine.webp', import.meta.url).href
+  static readonly REST = "https://techstack-generator.vercel.app/restapi-icon.svg"
+  static readonly DOCKER = "https://techstack-generator.vercel.app/docker-icon.svg"
   static readonly PDF = new URL('@/assets/img/project/tools/pdf.svg', import.meta.url).href
 }

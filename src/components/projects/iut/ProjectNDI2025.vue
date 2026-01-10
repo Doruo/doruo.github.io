@@ -4,14 +4,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { NDI2024Assets } from '@/data/Assets'
+import { NDI2025Assets } from '@/data/Assets'
 import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi_logo" :src="NDI2024Assets.LOGO" />
+      <img alt="ndi_logo" :src="NDI2025Assets.LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2025</template>
@@ -24,8 +24,10 @@ import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
-      <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS" description="Routage et implémentation de l'océan" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.TS" :link="ToolLinks.TS" description="Implémentation du site et des jeux" />
+      <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface visuelle" />
+      <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />
     </template>
 
     <template #assets>

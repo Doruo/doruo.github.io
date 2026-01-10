@@ -36,7 +36,7 @@ export class SocialLinks {
 }
 
 export class GithubLinks {
-  static readonly PAGES = SocialLinks.GITHUB + 'doruo.github.io'
+  static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
   static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'eldenBuild'
   static readonly TRAINS = SocialLinks.GITHUB + 'trains'
   static readonly MESH = SocialLinks.GITHUB + 'mesh'
@@ -64,19 +64,24 @@ export class ProjectLinks {
 
 export class ToolLinks {
   static readonly GIT = 'https://git-scm.com/'
+  static readonly GITLAB = 'https://gitlab.com/'
+  static readonly GITHUB = 'https://github.com/'
+
   static readonly HTML = 'https://www.w3schools.com/html/'
   static readonly BOOTSTRAP = 'https://getbootstrap.com/'
-  static readonly EXPRESS = 'https://expressjs.com/'
+  static readonly TAILWIND = 'https://tailwindcss.com/'
+
+  static readonly TS = 'https://www.typescriptlang.org/'
   static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
   static readonly NODE = 'https://nodejs.org/'
-  static readonly CSS = 'https://git-scm.com/'
-  static readonly DOCKER = 'https://docker.com'
-  static readonly PHP = 'https://php.net'
-  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum/'
+  static readonly NEXT = 'https://nextjs.org/'
+
+  static readonly PYTHON = 'https://https://www.python.org'
   static readonly LDAP = 'https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly POSTGRE = 'https://www.postgresql.org/'
   static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
-  static readonly CHARTJS = 'https://www.chartjs.org/'
+
+  static readonly PHP = 'https://php.net'
   static readonly JAVA = 'https://dev.java'
   static readonly JAVAFX = 'https://openjfx.io/'
   static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder/'
@@ -84,5 +89,10 @@ export class ToolLinks {
   static readonly MYSQL = 'https://www.mysql.com/fr/'
   static readonly GO = 'https://go.dev/'
   static readonly SYMFONY = 'https://symfony.com/'
+  static readonly EXPRESS = 'https://expressjs.com/'
+
+  static readonly DOCKER = 'https://docker.com'
   static readonly EBITENGINE = 'https://ebitengine.org/'
+  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum/'
+  static readonly CHARTJS = 'https://www.chartjs.org/'
 }

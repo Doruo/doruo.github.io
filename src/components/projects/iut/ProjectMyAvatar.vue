@@ -4,14 +4,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { SocialIcons, ToolIcons } from '@/data/Icons'
- import { EldenBuildAssets } from '@/data/Assets'
+ import { PoursuiteEtudesAssets } from '@/data/Assets'
 import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="EldenBuildAssets.LOGO" :alt="EldenBuildAssets.LOGO" />
+      <img :src="PoursuiteEtudesAssets.LOGO_IUT" :alt="PoursuiteEtudesAssets.LOGO_IUT" />
     </template>
 
     <template #title>My Avatar</template>
@@ -21,10 +21,11 @@ import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/
         Application de gestion d’avatar, inspiré de <a target="_blank" :href=WebsiteLinks.GRAVATAR>Gravatar</a>,
         fait avec le framework <a target="_blank" :href=ToolLinks.SYMFONY>Symfony</a>.
       </p>
+      <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
+      <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Implémentation de Symfony" />
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page visuelle" />
       <SkillItem :img="ToolIcons.JS" :link="ToolLinks.JS" description="Requêtes AJAX" />

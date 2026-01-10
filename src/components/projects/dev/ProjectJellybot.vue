@@ -3,7 +3,7 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
+import { SocialIcons, ToolIcons } from '@/data/Icons'
 import { EldenBuildAssets } from '@/data/Assets'
 import { GithubLinks, ToolLinks } from '@/data/Links'
 </script>
@@ -31,10 +31,12 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
         qu'il s'agisse de contenu vidéo (films et séries, télévision),
         audio (musique, livres audio, podcasts).
       </p>
+      <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
+      <SkillItem :img="ToolIcons.PYTHON" :link="ToolLinks.PYTHON" description="Programmation du bot" />
     </template>
 
     <template #assets>
