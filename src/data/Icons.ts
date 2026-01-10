@@ -1,7 +1,7 @@
 
 export class SocialIcons {
   static readonly PORTRAIT = new URL('@/assets/img/portrait/portrait.webp', import.meta.url).href
-  static readonly MAIL = new URL('@/assets/img/portrait/portrait.webp', import.meta.url).href
+  static readonly MAIL = new URL('@/assets/img/social/mail.webp', import.meta.url).href
   static readonly GITHUB = new URL('@/assets/img/social/github.svg', import.meta.url).href
   static readonly LINKEDIN = new URL('@/assets/img/social/linkedin.webp', import.meta.url).href
   static readonly GRAVATAR = new URL('@/assets/img/social/gravatar.webp', import.meta.url).href
