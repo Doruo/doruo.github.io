@@ -25,7 +25,7 @@ export class ToolIcons {
   static readonly PLSQL = new URL('@/assets/img/project/tools/plsql.svg', import.meta.url).href
   static readonly CHARTJS = new URL('@/assets/img/project/tools/chartjs.svg', import.meta.url).href
   static readonly JAVA = new URL('@/assets/img/project/tools/java.svg', import.meta.url).href
-  static readonly JAVAFX = new URL('/assets/img/project/tools/javafx.webp', import.meta.url).href
+  static readonly JAVAFX = new URL('@/assets/img/project/tools/javafx.webp', import.meta.url).href
   static readonly SCENEBUILDER = new URL('@/assets/img/project/tools/scenebuilder.webp', import.meta.url).href
   static readonly GO = new URL('@/assets/img/project/tools/go.webp', import.meta.url).href
   static readonly EBITENGINE = new URL('@/assets/img/project/tools/ebitengine.webp', import.meta.url).href
