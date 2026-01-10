@@ -193,16 +193,15 @@ table{
 	overflow-x:scroll;
 	white-space: nowrap;
 	border-spacing:0px;
-
 }
 
-thead {
+thead, thead > tr th:first-child {
   background-color: #00AAFF;
   padding:10px 0px;
 }
 
 thead .skill{
-  backgroundcolor: #640051;
+  color: #640051;
   padding : 5px;
 }
 
@@ -213,12 +212,12 @@ table > thead > tr th:first-child, table > tbody > tr th:first-child
 	border-right:2px solid black;
 }
 
-tbody > tr:nth-child(odd)
+tbody > tr:nth-child(odd), table > tbody > tr:nth-child(odd) th:first-child
 {
 	background-color:white;
 }
 
-tbody > tr:nth-child(even)
+tbody > tr:nth-child(even), table > tbody > tr:nth-child(even) th:first-child
 {
 	background-color:#CCC;
 }
