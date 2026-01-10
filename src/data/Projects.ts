@@ -1,6 +1,6 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
-import { Pictures } from './Pictures'
+import { EldenBuildAssets, GOLAssets, NDI2024Assets, TrainsAssets, FalloutdleAssets, ChuckNorrisAssets, MindSpiesAssets, E3CeteAssets, MeshAssets, LLMAssets } from './Assets'
 
 export interface Project {
   id: string
@@ -65,7 +65,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-trains' },
       websiteLink: GithubLinks.TRAINS,
-      background: Pictures.TRAINS_CARD,
+      background: TrainsAssets.CARD,
       description:
         'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
         "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
@@ -91,7 +91,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: GithubLinks.NDI2024,
-      background: Pictures.NDI2024_OCEAN,
+      background: NDI2024Assets.OCEAN,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
@@ -104,7 +104,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: GithubLinks.NDI2025,
-      background: Pictures.NDI2024_WORK_1,
+      background: NDI2024Assets.WORK_1,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
       tags: ['competition'],
@@ -115,7 +115,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
-      background: Pictures.CHUCK_NORRIS_CARD,
+      background: ChuckNorrisAssets.CARD,
       description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -137,7 +137,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
-      background: Pictures.MIND_SPIES_CARD,
+      background: MindSpiesAssets.CARD,
       description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -148,7 +148,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-gol' },
       websiteLink: GithubLinks.GOL,
-      background: Pictures.GOL_CARD,
+      background: GOLAssets.CARD,
       description:
         'Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.',
       techs: 'Go, Ebitengine',
@@ -195,7 +195,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.E3CETE,
-      background: Pictures.E3CETE_CARD,
+      background: E3CeteAssets.CARD,
       description: 'Jeu de société en Java, inspiré du jeu Set! .',
       techs: 'Java',
       tags: ['game'],
@@ -217,7 +217,7 @@ export class Projects {
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: GithubLinks.ELDEN_BUILD,
-      background: Pictures.ELDENBUILD_CARD,
+      background: EldenBuildAssets.CARD,
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
@@ -229,7 +229,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.FALLOUTDLE,
-      background: Pictures.FALLOUTDLE_CARD,
+      background: FalloutdleAssets.CARD,
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours.",
       techs: 'Go, Web Scraping, API, JSON',
@@ -241,7 +241,7 @@ export class Projects {
       showMoreInfoLink: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MESH,
-      background: Pictures.MESH_CARD,
+      background: MeshAssets.CARD,
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
@@ -265,7 +265,7 @@ export class Projects {
       showMoreInfoLink: false,
       websiteLink: GithubLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: '' },
-      background: Pictures.LLM_CARD,
+      background: LLMAssets.CARD,
       description:
         'Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.',
       techs: 'IA, Python, PyTorch, Jupyter',

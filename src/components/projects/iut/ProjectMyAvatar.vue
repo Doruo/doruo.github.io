@@ -4,14 +4,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { SocialIcons, ToolIcons } from '@/data/Icons'
-import { Pictures } from '@/data/Pictures'
+import { Assets } from '@/data/Assets'
 import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="Pictures.ELDENBUILD_LOGO" :alt="Pictures.ELDENBUILD_LOGO" />
+      <img :src="Assets.ELDENBUILD_LOGO" :alt="Assets.ELDENBUILD_LOGO" />
     </template>
 
     <template #title>My Avatar</template>

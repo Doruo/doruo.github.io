@@ -5,7 +5,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { GOLPictures } from '@/data/Pictures'
+import { GOLAssets } from '@/data/Assets'
 import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
@@ -13,7 +13,7 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
   <ProjectItem>
 
     <template #logo_projet>
-      <img :src="GOLPictures.LOGO" :alt="GOLPictures.LOGO" />
+      <img :src="GOLAssets.LOGO" :alt="GOLAssets.LOGO" />
     </template>
 
     <template #title>Conway's Game of Life</template>
@@ -38,9 +38,9 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="GOLPictures.GAME_1" :alt="GOLPictures.GAME_1" />
-      <ProjectImageItem :link="GOLPictures.GAME_2" :alt="GOLPictures.GAME_2" />
-      <ProjectImageItem :link="GOLPictures.GAME_3" :alt="GOLPictures.GAME_3" />
+      <ProjectImageItem :link="GOLAssets.GAME_1" :alt="GOLAssets.GAME_1" />
+      <ProjectImageItem :link="GOLAssets.GAME_2" :alt="GOLAssets.GAME_2" />
+      <ProjectImageItem :link="GOLAssets.GAME_3" :alt="GOLAssets.GAME_3" />
     </template>
 
     <template #links>

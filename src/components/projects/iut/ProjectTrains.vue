@@ -5,17 +5,15 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { TrainsPictures } from '@/data/Pictures'
+import { TrainsAssets } from '@/data/Assets'
 import { GithubLinks, ToolLinks } from '@/data/Links'
-
-import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="TrainsPictures.LOGO" :alt="TrainsPictures.LOGO" />
+      <img :src="TrainsAssets.LOGO" :alt="TrainsAssets.LOGO" />
     </template>
 
     <template #title>Jeu de plateau Trains</template>
@@ -23,7 +21,7 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
     <template #description>
       <p>
         Trains est un jeu de deck building japonais Trains d'Hisashi Hayashi. Si le jeu vous
-        intéresse, vous pouvez consulter <a :href="regles">les règles</a>. Il a eu lieu dans le
+        intéresse, vous pouvez consulter <a :href="TrainsAssets.RULES">les règles</a>. Il a eu lieu dans le
         cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.
       </p>
       <p>Le projet a été réalisé en binome, et de façon incrémentale en 3 phases :</p>
@@ -63,15 +61,15 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="TrainsPictures.INIT" :alt="TrainsPictures.INIT" />
-      <ProjectImageItem :link="TrainsPictures.GAME_1" :alt="TrainsPictures.GAME_1" />
-      <ProjectImageItem :link="TrainsPictures.GAME_2" :alt="TrainsPictures.GAME_2" />
-      <ProjectImageItem :link="TrainsPictures.GAME_3" :alt="TrainsPictures.GAME_3" />
+      <ProjectImageItem :link="TrainsAssets.INIT" :alt="TrainsAssets.INIT" />
+      <ProjectImageItem :link="TrainsAssets.GAME_1" :alt="TrainsAssets.GAME_1" />
+      <ProjectImageItem :link="TrainsAssets.GAME_2" :alt="TrainsAssets.GAME_2" />
+      <ProjectImageItem :link="TrainsAssets.GAME_3" :alt="TrainsAssets.GAME_3" />
     </template>
 
     <template #links>
       <LinkItem :link="GithubLinks.TRAINS" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="regles" :img="ToolIcons.PDF" alt="REGLES" text="Règles"/>
+      <LinkItem :link="TrainsAssets.RULES" :img="ToolIcons.PDF" alt="Rules" text="Règles"/>
     </template>
   </ProjectItem>
 </template>

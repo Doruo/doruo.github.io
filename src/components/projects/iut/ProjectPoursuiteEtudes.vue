@@ -5,17 +5,15 @@ import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
 import { ToolIcons, SocialIcons } from '@/data/Icons';
-import { PoursuiteEtudesPictures } from '@/data/Pictures';
+import { PoursuiteEtudesAssets } from '@/data/Assets';
 import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
-
-import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf';
 
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" :src="PoursuiteEtudesPictures.LOGO_IUT" />
+      <img alt="logoIUT" :src="PoursuiteEtudesAssets.LOGO_IUT" />
     </template>
 
     <template #title>Application d'avis de poursuite d'études</template>
@@ -74,17 +72,17 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     </template>
 
     <template #assets>
-        <ProjectImageItem :link="PoursuiteEtudesPictures.HOME" />
-        <ProjectImageItem :link="PoursuiteEtudesPictures.CONNEXION" />
-        <ProjectImageItem :link="PoursuiteEtudesPictures.NOTES" />
-        <ProjectImageItem :link="PoursuiteEtudesPictures.AGREGATION" />
-        <ProjectImageItem :link="PoursuiteEtudesPictures.CSV" />
-        <ProjectImageItem :link="PoursuiteEtudesPictures.DIAGRAMME" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.HOME" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.CONNEXION" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.NOTES" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.AGREGATION" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.CSV" />
+        <ProjectImageItem :link="PoursuiteEtudesAssets.DIAGRAMME" />
     </template>
 
     <template #links>
       <LinkItem :link="GithubLinks.POURSUITE_ETUDES" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="sujet" alt="Sujet du projet" />
+      <LinkItem :link="PoursuiteEtudesAssets.SUBJECT" :img="ToolIcons.PDF" alt="Sujet" text="Sujet"/>
     </template>
   </ProjectItem>
 </template>
