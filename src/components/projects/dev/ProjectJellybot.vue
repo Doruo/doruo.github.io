@@ -4,7 +4,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { Assets } from '@/data/Assets'
+import { EldenBuildAssets } from '@/data/Assets'
 import { GithubLinks, ToolLinks } from '@/data/Links'
 </script>
 
@@ -12,7 +12,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
   <ProjectItem>
 
     <template #logo_projet>
-      <img :src="Assets.ELDENBUILD_LOGO" :alt="Assets.ELDENBUILD_LOGO" />
+      <img :src="EldenBuildAssets.LOGO" :alt="EldenBuildAssets.LOGO" />
     </template>
 
     <template #title>Jellybot</template>
