@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Icons } from '@/data/Icons';
+import { ToolIcons } from '@/data/Icons';
 import AboutPortrait from './AboutPortrait.vue'
 import LinkItem from '../links/LinkItem.vue';
 </script>
@@ -23,7 +23,7 @@ import LinkItem from '../links/LinkItem.vue';
       </p>
 
       <h1>
-        <LinkItem link="/CV/CV-MARC-HAYE.pdf" :img="Icons.PDF" alt="CV" text="CV"/>
+        <LinkItem link="/CV/CV-MARC-HAYE.pdf" :img="ToolIcons.PDF" alt="CV" text="CV"/>
       </h1>
     </div>
     <AboutPortrait />

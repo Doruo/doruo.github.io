@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { Links } from '@/data/Links'
+import { GithubLinks, ToolLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -34,14 +34,14 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
     </template>
 
     <template #assets>
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_GOL" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="GithubLinks.JELLYBOT" :img="SocialIcons.GITHUB" />
     </template>
 
   </ProjectItem>

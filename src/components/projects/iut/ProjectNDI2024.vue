@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { Links } from '@/data/Links'
+import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -21,11 +21,11 @@ import { Links } from '@/data/Links'
       <h3>Race For Water</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
-        <a :href="Links.NDI">Nuit de l'Info 2024</a>.
+        <a :href="WebsiteLinks.NDI">Nuit de l'Info 2024</a>.
       </p>
       <p>
         Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et le
-        framework <a :href="Links.EXPRESS">Express.js</a>, pour la fondation Race for Water, qui a
+        framework <a :href="ToolLinks.EXPRESS">Express.js</a>, pour la fondation Race for Water, qui a
         pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
       <p>
@@ -36,7 +36,7 @@ import { Links } from '@/data/Links'
       </p>
       <p>
         Mon rôle fut de concevoir le router et l'API REST avec
-        <a :href="Links.EXPRESS">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
+        <a :href="ToolLinks.EXPRESS">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
         page web demandée. J'ai donc dû concevoir cela de façon optimisé, en utilisant les
         différentes notions vus en cours en développement web de sorte d'éviter la surcharge de
         requêtes lorsque l'utilisateur souhaite accéder aux différentes pages lorsqu'il clique sur
@@ -45,10 +45,10 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
-      <SkillItem :img="Icons.HTML" :link="Links.HTML" description="Rédaction des articles" />
-      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page visuelle des articles" />
-      <SkillItem :img="Icons.EXPRESS" :link="Links.EXPRESS" description="Routage et implémentation de l'océan" />
+      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
+      <SkillItem :img="ToolIcons.HTML" :link="ToolLinks.HTML" description="Rédaction des articles" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page visuelle des articles" />
+      <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS" description="Routage et implémentation de l'océan" />
     </template>
 
     <template #assets>
@@ -64,7 +64,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_NDI2024" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="GithubLinks.NDI2024" :img="SocialIcons.GITHUB" />
     </template>
   </ProjectItem>
 </template>

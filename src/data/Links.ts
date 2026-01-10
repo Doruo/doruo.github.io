@@ -1,14 +1,4 @@
 export class Links {
-  // Websites
-  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
-  static readonly NDI = 'https://nuitdelinfo.com/'
-  static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring/'
-  static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
-  static readonly SCODOC = 'https://scodoc.org/'
-  static readonly EBITENGINE = 'https://ebitengine.org/'
-  static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
-  static readonly GRAVATAR = 'https://fr.gravatar.com/'
-
   // IUT Web dev
   static readonly LEBRETON = 'https://romainlebreton.github.io/'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
@@ -23,39 +13,55 @@ export class Links {
   static readonly IUT_DEV_QUALITY = this.GASQUET + 'R304-QualiteDeveloppement/'
   static readonly IUT_ADV_DEV_QUALITY = this.GASQUET + 'R5.A.05-ProgrammationAvancee-Web/'
   static readonly IUT_MY_AVATAR = this.IUT_ADV_DEV_QUALITY + 'tutorials/projet1'
+}
 
-  // Social
-  static readonly SOCIAL_GITHUB = 'https://github.com/doruo/'
-  static readonly SOCIAL_MAIL = 'mailto:marc.haye.pro@protonmail.com'
-  static readonly SOCIAL_LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
-  static readonly SOCIAL_GRAVATAR = 'https://fr.gravatar.com/marchayepro'
-  static readonly SOCIAL_ITCHIO = 'https://doruo.itch.io/'
+export class WebsiteLinks {
+  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
+  static readonly NDI = 'https://nuitdelinfo.com/'
+  static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring/'
+  static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
+  static readonly SCODOC = 'https://scodoc.org/'
+  static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
+  static readonly GRAVATAR = 'https://fr.gravatar.com/'
 
-  // Github
-  static readonly GITHUB_PAGES = this.SOCIAL_GITHUB + 'doruo.github.io'
-  static readonly GITHUB_ELDEN_BUILD = this.SOCIAL_GITHUB + 'eldenBuild'
-  static readonly GITHUB_TRAINS = this.SOCIAL_GITHUB + 'trains'
-  static readonly GITHUB_MESH = this.SOCIAL_GITHUB + 'mesh'
-  static readonly GITHUB_MASTERMIND = this.SOCIAL_GITHUB + 'mastermind'
-  static readonly GITHUB_FALLOUTDLE = this.SOCIAL_GITHUB + 'falloutdle'
-  static readonly GITHUB_GOL = this.SOCIAL_GITHUB + 'go-of-life'
-  static readonly GITHUB_MARIN_IVRE = this.SOCIAL_GITHUB + 'marinIvre'
-  static readonly GITHUB_SUDOKU = this.SOCIAL_GITHUB + 'sudoku'
-  static readonly GITHUB_JELLYBOT = this.SOCIAL_GITHUB + 'jellybot'
-  static readonly GITHUB_POURSUITE_ETUDES = this.SOCIAL_GITHUB + 'poursuite-etudes'
-  static readonly GITHUB_FLIPPER_BALL = this.SOCIAL_GITHUB + 'flipper-ball'
-  static readonly GITHUB_E3CETE = this.SOCIAL_GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
-  static readonly GITHUB_LLM_FROM_SCRATCH = this.SOCIAL_GITHUB + 'llm-from-scratch'
-  static readonly GITHUB_NDI2024 = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'
-  static readonly GITHUB_NDI2025 = "https://github.com/killianrms/NDI2025"
+}
 
-  // Projects
-  static readonly ITCHIO_TIME_MAGE_TOURNAMENT = this.SOCIAL_ITCHIO + 'time-mage-tournament'
+export class SocialLinks {
+  static readonly GITHUB = 'https://github.com/doruo/'
+  static readonly MAIL = 'mailto:marc.haye.pro@protonmail.com'
+  static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
+  static readonly GRAVATAR = 'https://fr.gravatar.com/marchayepro'
+  static readonly ITCHIO = 'https://doruo.itch.io/'
+}
+
+export class GithubLinks {
+  static readonly PAGES = SocialLinks.GITHUB + 'doruo.github.io'
+  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'eldenBuild'
+  static readonly TRAINS = SocialLinks.GITHUB + 'trains'
+  static readonly MESH = SocialLinks.GITHUB + 'mesh'
+  static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'
+  static readonly FALLOUTDLE = SocialLinks.GITHUB + 'falloutdle'
+  static readonly GOL = SocialLinks.GITHUB + 'go-of-life'
+  static readonly MARIN_IVRE = SocialLinks.GITHUB + 'marinIvre'
+  static readonly SUDOKU = SocialLinks.GITHUB + 'sudoku'
+  static readonly JELLYBOT = SocialLinks.GITHUB + 'jellybot'
+  static readonly POURSUITE_ETUDES = SocialLinks.GITHUB + 'poursuite-etudes'
+  static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
+  static readonly E3CETE = SocialLinks.GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
+  static readonly LLM_FROM_SCRATCH = SocialLinks.GITHUB + 'llm-from-scratch'
+  static readonly NDI2024 = SocialLinks.GITHUB + 'NDI-2024-RaceForWater'
+  static readonly NDI2025 = "https://github.com/killianrms/NDI2025"
+  static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
+}
+
+export class ProjectLinks {
+  static readonly ITCHIO_TIME_MAGE_TOURNAMENT = SocialLinks.ITCHIO + 'time-mage-tournament'
   static readonly FALLOUTDLE = 'https://falloutdle.net'
   static readonly MY_AVATAR = 'https://webinfo.iutmontp.univ-montp2.fr/~bodiguely/my-avatar/public'
   static readonly NDI2025 = "https://killianrms.github.io/NDI2025"
+}
 
-  // Dev
+export class ToolLinks {
   static readonly GIT = 'https://git-scm.com/'
   static readonly HTML = 'https://www.w3schools.com/html/'
   static readonly BOOTSTRAP = 'https://getbootstrap.com/'
@@ -77,4 +83,5 @@ export class Links {
   static readonly MYSQL = 'https://www.mysql.com/fr/'
   static readonly GO = 'https://go.dev/'
   static readonly SYMFONY = 'https://symfony.com/'
+  static readonly EBITENGINE = 'https://ebitengine.org/'
 }

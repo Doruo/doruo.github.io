@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { Links } from '@/data/Links'
+import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -20,21 +20,21 @@ import { Links } from '@/data/Links'
 
     <template #description>
       <p>
-        Le <a :href=Links.GAME_OF_LIFE target="_blank">Jeu de la Vie</a> est une simulation mathématique imaginé par
+        Le <a :href=WebsiteLinks.GAME_OF_LIFE target="_blank">Jeu de la Vie</a> est une simulation mathématique imaginé par
         <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway" target="_blank">John Horton Conway</a> en 1970.
       </p>
       <p>C'est un automate cellulaire ludique utilisé dans la recherche biologique pour simuler la vie.</p>
       <p>
         Il y a une interface graphique fonctionnel sur terminal,
         et je travaille actuellement sur une future implémentation graphique en 2D avec le moteur de jeu
-        <a :href=Links.EBITENGINE target="_blank">Ebitengine</a>.
+        <a :href=ToolLinks.EBITENGINE target="_blank">Ebitengine</a>.
       </p>
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.GO" :link="Links.GO" description="Structure du jeu" />
-      <SkillItem :img="Icons.EBITENGINE" :link="Links.EBITENGINE" description="Interface graphique en 2D" />
-      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versionnage du projet" />
+      <SkillItem :img="ToolIcons.GO" :link="ToolLinks.GO" description="Structure du jeu" />
+      <SkillItem :img="ToolIcons.EBITENGINE" :link="ToolLinks.EBITENGINE" description="Interface graphique en 2D" />
+      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versionnage du projet" />
     </template>
 
     <template #assets>
@@ -44,7 +44,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_GOL" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="GithubLinks.GOL" :img="SocialIcons.GITHUB" />
     </template>
 
   </ProjectItem>

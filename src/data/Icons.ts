@@ -37,8 +37,7 @@ export class SocialIcons {
   static readonly ITCHIO = itchio_path
 }
 
-export class Icons {
-  // tools
+export class ToolIcons {
   static readonly GIT = git_path
   static readonly DOCKER = docker_path
   static readonly PHP = php_path

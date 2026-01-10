@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue';
 import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
-import { Icons, SocialIcons } from '@/data/Icons';
+import { ToolIcons, SocialIcons } from '@/data/Icons';
 import { Pictures } from '@/data/Pictures';
-import { Links } from '@/data/Links';
+import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
 
 import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf';
 
@@ -23,7 +23,7 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     <template #description>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de
-        Montpellier-Sète, le logiciel libre <a :href="Links.SCODOC">Scodoc</a> est utilisé pour
+        Montpellier-Sète, le logiciel libre <a :href="WebsiteLinks.SCODOC">Scodoc</a> est utilisé pour
         gérer les absences et les notes des étudiants tout au long de leur scolarité à l’IUT.
       </p>
 
@@ -49,7 +49,7 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
 
       <p>
         Mon rôle fut de concevoir, développer en équipe, et superviser le déroulement du projet, et
-        animer la mêlée (<a :href="Links.SCRUM">Scrum</a>) pour l'équipe dans son ensemble en
+        animer la mêlée (<a :href="ToolLinks.SCRUM">Scrum</a>) pour l'équipe dans son ensemble en
         s'assurant que le framework Scrum est respecté. Mon travail consistait à aider à devenir
         autonome grâce à des techniques comme l’auto-organisation et la résolution des conflits.
       </p>
@@ -63,14 +63,14 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-      <SkillItem :img="Icons.DOCKER" :link="Links.DOCKER" description="Aide au deploiement de l'application" />
-      <SkillItem :img="Icons.LDAP" :link="Links.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
-      <SkillItem :img="Icons.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
-      <SkillItem :img="Icons.POSTGRE" :link="Links.POSTGRE" description="Base de données de l'application" />
-      <SkillItem :img="Icons.PLSQL" :link="Links.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
-      <SkillItem :img="Icons.CHARTJS" :link="Links.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
+      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au deploiement de l'application" />
+      <SkillItem :img="ToolIcons.LDAP" :link="ToolLinks.LDAP" description="Communication sécurisée avec le service d'annuaire de l'IUT de Montpellier-Sète" />
+      <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Développement coté serveur de l'application" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
+      <SkillItem :img="ToolIcons.POSTGRE" :link="ToolLinks.POSTGRE" description="Base de données de l'application" />
+      <SkillItem :img="ToolIcons.PLSQL" :link="ToolLinks.PLSQL" description="Fonctions et triggers dynamiques dans la base de donnée" />
+      <SkillItem :img="ToolIcons.CHARTJS" :link="ToolLinks.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />
     </template>
 
     <template #assets>
@@ -83,7 +83,7 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="GithubLinks.POURSUITE_ETUDES" :img="SocialIcons.GITHUB" />
       <LinkItem :link="sujet" alt="Sujet du projet" />
     </template>
   </ProjectItem>

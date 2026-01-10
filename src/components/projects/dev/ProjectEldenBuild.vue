@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { Links } from '@/data/Links'
+import { ToolLinks, GithubLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import { Links } from '@/data/Links'
     <template #description>
       <p>
         Site web de gestion de build à but communautaire du jeu
-        <a :href="Links.ELDEN_RING">Elden Ring</a>.
+        <a :href="WebsiteLinks.ELDEN_RING">Elden Ring</a>.
       </p>
       <p>
         Un build est par définition la construction et l'évolution d'un ensemble d'équipement du
@@ -36,7 +36,7 @@ import { Links } from '@/data/Links'
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript,
         les requêtes AJAX, l'architecture MVC et ses limites. L'application communique via des
-        requêtes HTTP asynchrones vers une <a :href="Links.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
+        requêtes HTTP asynchrones vers une <a :href="WebsiteLinks.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie
@@ -51,14 +51,14 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.GIT" :link="Links.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
-      <SkillItem :img="Icons.PHP" :link="Links.PHP" description="Développement coté serveur de l'application" />
-      <SkillItem :img="Icons.DOCKER" :link="Links.DOCKER" description="Aide au déploiement de l'application" />
-      <SkillItem :img="Icons.HTML" :link="Links.HTML" description="Développement de l'interface utilisateur" />
-      <SkillItem :img="Icons.BOOTSTRAP" :link="Links.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
-      <SkillItem :img="Icons.JS" :link="Links.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
-      <SkillItem :img="Icons.MYSQL" :link="Links.MYSQL" description="Déploiement de la base de donnée sécurisée" />
-      <SkillItem :img="Icons.REST" link="" description="Norme de communication avec l'API Elden Ring" />
+      <SkillItem :img="ToolIcons.GIT" :link="ToolLinks.GIT" description="Versioning (gestion des versions) du projet, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Développement coté serveur de l'application" />
+      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
+      <SkillItem :img="ToolIcons.HTML" :link="ToolLinks.HTML" description="Développement de l'interface utilisateur" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
+      <SkillItem :img="ToolIcons.JS" :link="ToolLinks.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
+      <SkillItem :img="ToolIcons.MYSQL" :link="ToolLinks.MYSQL" description="Déploiement de la base de donnée sécurisée" />
+      <SkillItem :img="ToolIcons.REST" link="" description="Norme de communication avec l'API Elden Ring" />
     </template>
 
     <template #assets>
@@ -71,7 +71,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_ELDEN_BUILD" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="GithubLinks.ELDEN_BUILD" :img="SocialIcons.GITHUB" />
     </template>
 
   </ProjectItem>

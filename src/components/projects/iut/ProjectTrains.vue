@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
-import { Links } from '@/data/Links'
+import { GithubLinks, ToolLinks } from '@/data/Links'
 
 import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 
@@ -36,7 +36,7 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
           <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous<a :href="Links.JAVAFX">JavaFX</a>.</p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous<a :href="ToolLinks.JAVAFX">JavaFX</a>.</p>
         </li>
       </ul>
       <p>
@@ -57,9 +57,9 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
     </template>
 
     <template #abilities>
-      <SkillItem :img="Icons.JAVA" :link="Links.JAVA" description="Implémentation de la logique du jeu" />
-      <SkillItem :img="Icons.JAVAFX" :link="Links.JAVAFX" description="Réalisation de l'interface graphique" />
-      <SkillItem :img="Icons.SCENEBUILDER" :link="Links.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
+      <SkillItem :img="ToolIcons.JAVA" :link="ToolLinks.JAVA" description="Implémentation de la logique du jeu" />
+      <SkillItem :img="ToolIcons.JAVAFX" :link="ToolLinks.JAVAFX" description="Réalisation de l'interface graphique" />
+      <SkillItem :img="ToolIcons.SCENEBUILDER" :link="ToolLinks.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
     </template>
 
     <template #assets>
@@ -70,8 +70,8 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_TRAINS" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="regles" :img="Icons.PDF" alt="REGLES" text="Règles"/>
+      <LinkItem :link="GithubLinks.TRAINS" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="regles" :img="ToolIcons.PDF" alt="REGLES" text="Règles"/>
     </template>
   </ProjectItem>
 </template>
