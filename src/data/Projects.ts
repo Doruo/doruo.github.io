@@ -30,7 +30,7 @@ export class Projects {
       websiteLink: GithubLinks.POURSUITE_ETUDES,
       background: '',
       description:
-        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
+        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
       tags: ['main'],
     },
@@ -42,7 +42,7 @@ export class Projects {
       websiteLink: ProjectLinks.MY_AVATAR,
       background: '',
       description:
-        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
       techs: 'Symfony, JavaScript, MySQL, Twig',
       tags: ['academic'],
     },
@@ -54,7 +54,7 @@ export class Projects {
       websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
       background: '',
       description:
-        'Vitrine présentant mon travail de recherche et de rédaction ' +
+        'Vitrine présentant mon travail de recherche et de rédaction' +
         "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -94,7 +94,7 @@ export class Projects {
       background: NDI2024Assets.WORK_1,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
-        'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
+        'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>',
       techs: 'ExpressJS, HTML, CSS, JavaScript',
       tags: ['main', 'competition'],
     },
@@ -152,7 +152,7 @@ export class Projects {
       description:
         'Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.',
       techs: 'Go, Ebitengine',
-      tags: ['main', 'game'],
+      tags: ['game'],
     },
     {
       id: 'mastermind',
@@ -162,7 +162,7 @@ export class Projects {
       websiteLink: GithubLinks.MASTERMIND,
       background: '',
       description:
-        'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur.',
+        'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur',
       techs: 'Java, algorithmie',
       tags: ['game'],
     },
@@ -173,7 +173,7 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.SUDOKU,
       background: '',
-      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur.',
+      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur',
       techs: 'Java, algorithmie',
       tags: ['game'],
     },
@@ -185,7 +185,7 @@ export class Projects {
       websiteLink: GithubLinks.MARIN_IVRE,
       background: '',
       description:
-        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
+        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires',
       techs: 'Java',
       tags: ['game'],
     },
@@ -196,7 +196,7 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.E3CETE,
       background: E3CeteAssets.CARD,
-      description: 'Jeu de société en Java, inspiré du jeu Set! .',
+      description: 'Jeu de société en Java, inspiré du jeu Set!',
       techs: 'Java',
       tags: ['game'],
     },
@@ -207,7 +207,7 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.FLIPPER_BALL,
       background: '',
-      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
+      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
       techs: 'Python, numpy',
       tags: ['game'],
     },
@@ -219,7 +219,7 @@ export class Projects {
       websiteLink: GithubLinks.ELDEN_BUILD,
       background: EldenBuildAssets.CARD,
       description:
-        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
+        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
       tags: ['community'],
     },
@@ -231,7 +231,7 @@ export class Projects {
       websiteLink: GithubLinks.FALLOUTDLE,
       background: FalloutdleAssets.CARD,
       description:
-        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours.",
+        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours",
       techs: 'Go, Web Scraping, API, JSON',
       tags: ['community'],
     },
@@ -242,7 +242,7 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MESH,
       background: MeshAssets.CARD,
-      description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
+      description: 'Lightweight messaging application written in Go language, with Peer to Peer networking',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
     },
@@ -261,15 +261,15 @@ export class Projects {
     },
     {
       id: 'llm-from-scratch',
-      title: `Modèle bigramme d'IA`,
+      title: `IA bigramme`,
       showMoreInfoLink: false,
       websiteLink: GithubLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: '' },
       background: LLMAssets.CARD,
       description:
-        'Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.',
+        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
       techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['tool'],
+      tags: ['main','tool'],
     },
     {
       id: 'stage-itesoft',

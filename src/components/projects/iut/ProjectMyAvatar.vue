@@ -21,6 +21,15 @@ import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/
         Application de gestion d’avatar, inspiré de <a target="_blank" :href=WebsiteLinks.GRAVATAR>Gravatar</a>,
         fait avec le framework <a target="_blank" :href=ToolLinks.SYMFONY>Symfony</a>.
       </p>
+      <p>
+        Ce service permet (en vous inscrivant) d’associer votre adresse mail à une photo de profil.
+        Ainsi, à partir de votre adresse, les différents sites web et applications peuvent charger votre image de profil
+        depuis ce service sans avoir besoin de stocker cette image de leur côté et sans demander à l’utilisateur d’uploader cette image.
+        Il suffit de faire une simple requête à Gravatar. Certains sites comme Bitbucket utilisent ce mécanisme.
+      </p>
+      <p>
+        Ainsi, n’importe quelle application manipulant l’adresse email d’un utilisateur peut facilement d’aller charger une image depuis Gravatar.
+      </p>
       <p>(PAGE EN TRAVAUX !)</p>
     </template>
 

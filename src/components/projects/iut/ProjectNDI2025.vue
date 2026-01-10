@@ -21,6 +21,7 @@ import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2025</a>.
       </p>
+      <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
     <template #abilities>
@@ -36,7 +37,7 @@ import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links
 
     <template #links>
       <LinkItem :link="GithubLinks.NDI2025" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="ProjectLinks.NDI2025" alt="Site du projet" />
+      <LinkItem :link="ProjectLinks.NDI2025" text="Site du projet"/>
     </template>
   </ProjectItem>
 </template>
