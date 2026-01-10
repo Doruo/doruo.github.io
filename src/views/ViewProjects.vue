@@ -14,12 +14,16 @@ import { Projects } from '@/data/Projects'
     :projectsCategory="Projects.getCommunityProjectsCategory()"
   />
   <ProjectCards
+    :title="Projects.getCompetitionProjectsCategory().title"
+    :projectsCategory="Projects.getCompetitionProjectsCategory()"
+  />
+  <ProjectCards
     :title="Projects.getAcademicProjectsCategory().title"
     :projectsCategory="Projects.getAcademicProjectsCategory()"
   />
   <ProjectCards
-    :title="Projects.getCompetitionProjectsCategory().title"
-    :projectsCategory="Projects.getCompetitionProjectsCategory()"
+    :title="Projects.getToolProjectsCategory().title"
+    :projectsCategory="Projects.getToolProjectsCategory()"
   />
   <ProjectCards
     :title="Projects.getGameProjectsCategory().title"

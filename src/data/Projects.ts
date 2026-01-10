@@ -31,21 +31,8 @@ export class Projects {
       background: '',
       description:
         "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique.",
-      techs: 'PHP, JavaScript, PL/SQL, ChartJS, LDAP',
+      techs: 'PHP, JavaScript, PL/SQL, LDAP',
       tags: ['main'],
-    },
-    {
-      id: 'jellybot',
-      title: 'Jellybot',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: Links.GITHUB_JELLYBOT,
-      background: '',
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: 'Python, discord.py, Jellyfin API, Discord',
-      tags: ['community'],
     },
     {
       id: 'my-avatar',
@@ -54,8 +41,9 @@ export class Projects {
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: Links.MY_AVATAR,
       background: '',
-      description: 'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
-      techs: 'Symfony, MySQL, JS, Twig',
+      description:
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
+      techs: 'Symfony, JavaScript, MySQL, Twig',
       tags: ['academic'],
     },
     {
@@ -85,17 +73,6 @@ export class Projects {
       tags: ['academic'],
     },
     {
-      id: 'elden-build',
-      title: 'Elden Build',
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: Links.GITHUB_ELDEN_BUILD,
-      background: Pictures.ELDENBUILD_CARD,
-      description: 'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
-      techs: 'PHP, JavaScript, HTML, CSS, JSON',
-      tags: ['community'],
-    },
-    {
       id: 'cgj-2023',
       title: 'Code Game Jam 2023: Time Mage Tournament',
       showMoreInfoLink: false,
@@ -118,7 +95,7 @@ export class Projects {
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
-      techs: 'HTML, CSS, JavaScript, ExpressJS',
+      techs: 'ExpressJS, HTML, CSS, JavaScript',
       tags: ['main', 'competition'],
     },
     {
@@ -128,9 +105,8 @@ export class Projects {
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: Links.NDI2025,
       background: Pictures.NDI2024_WORK_1,
-      description:
-      `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
-      techs: 'HTML, CSS, JavaScript, ExpressJS',
+      description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
+      techs: 'TypeScript',
       tags: ['competition'],
     },
     {
@@ -167,27 +143,16 @@ export class Projects {
       tags: ['academic'],
     },
     {
-      id: 'llm-from-scratch',
-      title: `Modèle bigramme d'IA`,
-      showMoreInfoLink: false,
-      websiteLink: Links.GITHUB_LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: '',
-      description:
-        "Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.",
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['game'],
-    },
-    {
       id: 'game-of-life',
       title: "Conway's Game of Life",
       showMoreInfoLink: true,
       moreInfoLink: { name: 'projects-gol' },
       websiteLink: Links.GITHUB_GOL,
       background: Pictures.GOL_CARD,
-      description: "Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.",
+      description:
+        'Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.',
       techs: 'Go, Ebitengine',
-      tags: ['main'],
+      tags: ['main', 'game'],
     },
     {
       id: 'mastermind',
@@ -219,20 +184,9 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_MARIN_IVRE,
       background: '',
-      description: 'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
-      techs: 'Java',
-      tags: ['game'],
-    },
-    {
-      id: 'falloutdle',
-      title: 'Falloutdle',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: Links.GITHUB_FALLOUTDLE,
-      background: Pictures.FALLOUTDLE_CARD,
       description:
-        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau perso tous les jours.",
-      techs: 'Go, Web Scraping, API, JSON',
+        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
+      techs: 'Java',
       tags: ['game'],
     },
     {
@@ -242,9 +196,44 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_E3CETE,
       background: Pictures.E3CETE_CARD,
-      description: 'Jeu de société en java, inspiré du jeu Set! .',
+      description: 'Jeu de société en Java, inspiré du jeu Set! .',
       techs: 'Java',
       tags: ['game'],
+    },
+    {
+      id: 'flipper',
+      title: 'Flipper',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB_FLIPPER_BALL,
+      background: '',
+      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
+      techs: 'Python, numpy',
+      tags: ['game'],
+    },
+    {
+      id: 'elden-build',
+      title: 'Elden Build',
+      showMoreInfoLink: true,
+      moreInfoLink: { name: 'projects-elden-build' },
+      websiteLink: Links.GITHUB_ELDEN_BUILD,
+      background: Pictures.ELDENBUILD_CARD,
+      description:
+        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
+      techs: 'PHP, JavaScript, HTML, CSS, JSON',
+      tags: ['community'],
+    },
+    {
+      id: 'falloutdle',
+      title: 'Falloutdle',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: Links.GITHUB_FALLOUTDLE,
+      background: Pictures.FALLOUTDLE_CARD,
+      description:
+        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours.",
+      techs: 'Go, Web Scraping, API, JSON',
+      tags: ['community'],
     },
     {
       id: 'mesh',
@@ -253,9 +242,34 @@ export class Projects {
       moreInfoLink: { name: '' },
       websiteLink: Links.GITHUB_MESH,
       background: Pictures.MESH_CARD,
-      description: 'Lightweight messaging app written in Go, with Peer to Peer networking.',
+      description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
+    },
+    {
+      id: 'jellybot',
+      title: 'Jellybot',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: Links.GITHUB_JELLYBOT,
+      background: '',
+      description:
+        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
+        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      techs: 'Python, discord.py, Jellyfin API, Discord',
+      tags: ['tool'],
+    },
+    {
+      id: 'llm-from-scratch',
+      title: `Modèle bigramme d'IA`,
+      showMoreInfoLink: false,
+      websiteLink: Links.GITHUB_LLM_FROM_SCRATCH,
+      moreInfoLink: { name: '' },
+      background: Pictures.LLM_CARD,
+      description:
+        'Modèle de langage bigramme, réalisé de A à Z en Python avec le framework PyTorch.',
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['tool'],
     },
     {
       id: 'stage-itesoft',
@@ -266,28 +280,16 @@ export class Projects {
       moreInfoLink: { name: '' },
       description:
         'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
-        " API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.",
+        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
       techs: 'NestJS, JSON, SQL',
-      tags: ['pro'],
+      tags: ['tool'],
     },
   ]
 
   // Filters
 
-  public static getProjectById(id: string): Project | undefined {
-    return this.allProjects.find((project) => project.id === id)
-  }
-
-  public static getProjectsByIds(ids: string[]): Project[] {
-    return this.allProjects.filter((project) => ids.includes(project.id))
-  }
-
   public static getProjectsByTag(tag: string): Project[] {
     return this.allProjects.filter((project) => project.tags.includes(tag))
-  }
-
-  public static getProjectsByTags(tags: string[]): Project[] {
-    return this.allProjects.filter((project) => tags.some((tag) => project.tags.includes(tag)))
   }
 
   // Main getters
@@ -302,7 +304,7 @@ export class Projects {
 
   public static getAcademicProjectsCategory(): ProjectCategory {
     return {
-      id: 'main',
+      id: 'academic',
       title: 'Académiques',
       projects: this.getProjectsByTag('academic'),
     }
@@ -326,9 +328,17 @@ export class Projects {
 
   public static getCompetitionProjectsCategory(): ProjectCategory {
     return {
-      id: 'competitions',
+      id: 'competition',
       title: 'Compétitions',
       projects: this.getProjectsByTag('competition'),
+    }
+  }
+
+  public static getToolProjectsCategory(): ProjectCategory {
+    return {
+      id: 'tools',
+      title: 'Outils',
+      projects: this.getProjectsByTag('tool'),
     }
   }
 }

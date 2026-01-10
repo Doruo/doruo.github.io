@@ -44,6 +44,7 @@ export class Links {
   static readonly GITHUB_SUDOKU = this.SOCIAL_GITHUB + 'sudoku'
   static readonly GITHUB_JELLYBOT = this.SOCIAL_GITHUB + 'jellybot'
   static readonly GITHUB_POURSUITE_ETUDES = this.SOCIAL_GITHUB + 'poursuite-etudes'
+  static readonly GITHUB_FLIPPER_BALL = this.SOCIAL_GITHUB + 'flipper-ball'
   static readonly GITHUB_E3CETE = this.SOCIAL_GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
   static readonly GITHUB_LLM_FROM_SCRATCH = this.SOCIAL_GITHUB + 'llm-from-scratch'
   static readonly GITHUB_NDI2024 = this.SOCIAL_GITHUB + 'NDI-2024-RaceForWater'

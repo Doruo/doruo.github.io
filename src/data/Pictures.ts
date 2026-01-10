@@ -16,6 +16,9 @@ import falloutdle_card from '@/assets/img/projets/perso/falloutdle/falloutdle_ca
 // mesh
 import mesh_card from '@/assets/img/projets/perso/mesh/mesh_card.webp'
 
+// llm
+import llm_card from '@/assets/img/projets/perso/llm/llm_card.webp'
+
 // game of life
 import gol_card from '@/assets/img/projets/perso/gol/gol_card.webp'
 import gol_logo from '@/assets/img/projets/perso/gol/gol_logo.webp'
@@ -89,6 +92,9 @@ export class Pictures {
   // mesh
   static readonly MESH_CARD = mesh_card
 
+  // llm
+  static readonly LLM_CARD = llm_card
+
   // Poursuite etudes
   static readonly POURSUITE_ETUDES_LOGO_IUT = poursuite_etude_logo_iut;
   static readonly POURSUITE_ETUDES_HOME = poursuite_etude_home;
@@ -118,9 +124,13 @@ export class Pictures {
   static readonly NDI2024_WORK_6 = ndi2024_photo6;
   static readonly NDI2024_GROUP = ndi2024_photo_groupe;
 
+  // mind spies
+  static readonly MIND_SPIES_CARD = mind_spies_card;
+
   // e3cete
   static readonly E3CETE_CARD = e3cete_card
 
 // chuck norris
   static readonly CHUCK_NORRIS_CARD = chuck_norris_card
+
 }
