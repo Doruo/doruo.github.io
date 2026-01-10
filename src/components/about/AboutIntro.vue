@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { Icons } from '@/data/Icons';
 import AboutPortrait from './AboutPortrait.vue'
+import LinkItem from '../links/LinkItem.vue';
 </script>
 
 <template>
@@ -20,7 +22,9 @@ import AboutPortrait from './AboutPortrait.vue'
         serveurs webs, mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
       </p>
 
-      <h1><a href="/CV/CV-MARC-HAYE.pdf" target="blank">Voir mon CV</a></h1>
+      <h1>
+        <LinkItem link="/CV/CV-MARC-HAYE.pdf" :img="Icons.PDF" alt="CV" text="CV"/>
+      </h1>
     </div>
     <AboutPortrait />
   </section>

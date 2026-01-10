@@ -1,33 +1,33 @@
-// Websites
-import mail_path from '@/assets/img/contact/mail.webp'
-import github_path from '@/assets/img/contact/github.webp'
-import linkedin_path from '@/assets/img/contact/linkedin.webp'
-import gravatar_path from '@/assets/img/contact/gravatar.webp'
-import itchio_path from '@/assets/img/contact/itchio.webp'
+// social
+import mail_path from '@/assets/img/social/mail.webp'
+import github_path from '@/assets/img/social/github.svg'
+import linkedin_path from '@/assets/img/social/linkedin.webp'
+import gravatar_path from '@/assets/img/social/gravatar.webp'
+import itchio_path from '@/assets/img/social/itchio.webp'
 
 // tools
-import git_path from '@/assets/img/projets/outils/git.webp'
-import docker_path from '@/assets/img/projets/outils/docker.webp'
-import php_path from '@/assets/img/projets/outils/php.webp'
-import html_path from '@/assets/img/projets/outils/html.webp'
-import bootstrap_path from '@/assets/img/projets/outils/bootstrap.webp'
-import js_path from '@/assets/img/projets/outils/js.webp'
-import mysql_path from '@/assets/img/projets/outils/mysql.webp'
-import rest_path from '@/assets/img/projets/outils/apirest.webp'
-import express_path from '@/assets/img/projets/outils/express-js.webp'
-import ldap_path from '@/assets/img/projets/outils/ldap.webp'
-import postgre_path from '@/assets/img/projets/outils/postgresql.webp'
-import plsql_path from '@/assets/img/projets/outils/plsql.webp'
-import chartjs_path from '@/assets/img/projets/outils/chartjs.webp'
-import java_path from '@/assets/img/projets/outils/java.webp'
-import javafx_path from '@/assets/img/projets/outils/javafx.webp'
-import scenebuilder_path from '@/assets/img/projets/outils/scenebuilder.webp'
-import go_path from '@/assets/img/projets/outils/go.webp'
-import ebitengine_path from '@/assets/img/projets/outils/ebitengine.webp'
+import git_path from '@/assets/img/project/tools/git.webp'
+import docker_path from '@/assets/img/project/tools/docker.webp'
+import php_path from '@/assets/img/project/tools/php.webp'
+import html_path from '@/assets/img/project/tools/html.webp'
+import bootstrap_path from '@/assets/img/project/tools/bootstrap.webp'
+import js_path from '@/assets/img/project/tools/js.webp'
+import mysql_path from '@/assets/img/project/tools/mysql.webp'
+import rest_path from '@/assets/img/project/tools/apirest.webp'
+import express_path from '@/assets/img/project/tools/express-js.webp'
+import ldap_path from '@/assets/img/project/tools/ldap.webp'
+import postgre_path from '@/assets/img/project/tools/postgresql.webp'
+import plsql_path from '@/assets/img/project/tools/plsql.webp'
+import chartjs_path from '@/assets/img/project/tools/chartjs.webp'
+import java_path from '@/assets/img/project/tools/java.webp'
+import javafx_path from '@/assets/img/project/tools/javafx.webp'
+import scenebuilder_path from '@/assets/img/project/tools/scenebuilder.webp'
+import go_path from '@/assets/img/project/tools/go.webp'
+import ebitengine_path from '@/assets/img/project/tools/ebitengine.webp'
+import pdf_path from '@/assets/img/project/tools/pdf.svg'
 
-// EXPORT
 export class Icons {
-  // Websites
+  // social
   static readonly MAIL = mail_path
   static readonly GITHUB = github_path
   static readonly LINKEDIN = linkedin_path
@@ -53,4 +53,5 @@ export class Icons {
   static readonly SCENEBUILDER = scenebuilder_path
   static readonly GO = go_path
   static readonly EBITENGINE = ebitengine_path
+  static readonly PDF = pdf_path
 }

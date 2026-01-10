@@ -71,7 +71,7 @@ import regles from '/IUT/A1/SAE-Trains/regles.pdf'
 
     <template #links>
       <LinkItem :link="Links.GITHUB_TRAINS" :img="Icons.GITHUB" />
-      <LinkItem :link="regles" alt="Règles du jeu" />
+      <LinkItem :link="regles" :img="Icons.PDF" alt="REGLES" text="Règles"/>
     </template>
   </ProjectItem>
 </template>

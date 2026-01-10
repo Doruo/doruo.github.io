@@ -1,71 +1,71 @@
 // PERSO
 
 // elden build
-import eldenbuild_card from '@/assets/img/projets/perso/eldenbuild/eldenbuild_card.webp'
-import eldenbuild_logo from '@/assets/img/projets/perso/eldenbuild/eldenring_ranni.webp'
-import eldenbuild_home from '@/assets/img/projets/perso/eldenbuild/eldenbuild_accueil.webp'
-import eldenbuild_build from '@/assets/img/projets/perso/eldenbuild/eldenbuild_build.webp'
-import eldenbuild_equipement from '@/assets/img/projets/perso/eldenbuild/eldenbuild_getEquipement.webp'
-import eldenbuild_profile from '@/assets/img/projets/perso/eldenbuild/eldenbuild_profile.webp'
-import eldenbuild_inscription from '@/assets/img/projets/perso/eldenbuild/eldenbuild_inscription.webp'
-import eldenbuild_testAPI from '@/assets/img/projets/perso/eldenbuild/eldenbuild_testapi.webp'
+import eldenbuild_card from '@/assets/img/project/perso/eldenbuild/eldenbuild_card.webp'
+import eldenbuild_logo from '@/assets/img/project/perso/eldenbuild/eldenring_ranni.webp'
+import eldenbuild_home from '@/assets/img/project/perso/eldenbuild/eldenbuild_accueil.webp'
+import eldenbuild_build from '@/assets/img/project/perso/eldenbuild/eldenbuild_build.webp'
+import eldenbuild_equipement from '@/assets/img/project/perso/eldenbuild/eldenbuild_getEquipement.webp'
+import eldenbuild_profile from '@/assets/img/project/perso/eldenbuild/eldenbuild_profile.webp'
+import eldenbuild_inscription from '@/assets/img/project/perso/eldenbuild/eldenbuild_inscription.webp'
+import eldenbuild_testAPI from '@/assets/img/project/perso/eldenbuild/eldenbuild_testapi.webp'
 
 // falloutdle
-import falloutdle_card from '@/assets/img/projets/perso/falloutdle/falloutdle_card.webp'
+import falloutdle_card from '@/assets/img/project/perso/falloutdle/falloutdle_card.webp'
 
 // mesh
-import mesh_card from '@/assets/img/projets/perso/mesh/mesh_card.webp'
+import mesh_card from '@/assets/img/project/perso/mesh/mesh_card.webp'
 
 // llm
-import llm_card from '@/assets/img/projets/perso/llm/llm_card.webp'
+import llm_card from '@/assets/img/project/perso/llm/llm_card.webp'
 
 // game of life
-import gol_card from '@/assets/img/projets/perso/gol/gol_card.webp'
-import gol_logo from '@/assets/img/projets/perso/gol/gol_logo.webp'
-import gol1 from '@/assets/img/projets/perso/gol/gol1.webp'
-import gol2 from '@/assets/img/projets/perso/gol/gol2.webp'
-import gol3 from '@/assets/img/projets/perso/gol/gol3.webp'
+import gol_card from '@/assets/img/project/perso/gol/gol_card.webp'
+import gol_logo from '@/assets/img/project/perso/gol/gol_logo.webp'
+import gol1 from '@/assets/img/project/perso/gol/gol1.webp'
+import gol2 from '@/assets/img/project/perso/gol/gol2.webp'
+import gol3 from '@/assets/img/project/perso/gol/gol3.webp'
 
 // IUT
 
 // poursuite etudes
-import poursuite_etude_logo_iut from '@/assets/img/projets/iut/poursuiteEtude/logoIUT.webp'
-import poursuite_etude_home from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
-import poursuite_etude_agregation from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_agregation.webp'
-import poursuite_etude_connexion from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_connexion.webp'
-import poursuite_etude_csv from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_csv.webp'
-import poursuite_etude_diagramme from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
-import poursuite_etude_notes from '@/assets/img/projets/iut/poursuiteEtude/poursuite_etude_notes.webp'
+import poursuite_etude_logo_iut from '@/assets/img/project/iut/poursuiteEtude/logoIUT.webp'
+import poursuite_etude_home from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_accueil_responsable.webp'
+import poursuite_etude_agregation from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_agregation.webp'
+import poursuite_etude_connexion from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_connexion.webp'
+import poursuite_etude_csv from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_csv.webp'
+import poursuite_etude_diagramme from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_diagramme_classes.webp'
+import poursuite_etude_notes from '@/assets/img/project/iut/poursuiteEtude/poursuite_etude_notes.webp'
 
 // trains
-import trains_logo from '@/assets/img/projets/iut/trains/logoTrains.webp'
-import trains_init from '@/assets/img/projets/iut/trains/trains_initialisation.webp'
-import trains_1 from '@/assets/img/projets/iut/trains/trains_partie1.webp'
-import trains_2 from '@/assets/img/projets/iut/trains/trains_partie2.webp'
-import trains_3 from '@/assets/img/projets/iut/trains/trains_partie3.webp'
-import trains_card from '@/assets/img/projets/iut/trains/trains_card.webp'
+import trains_logo from '@/assets/img/project/iut/trains/logoTrains.webp'
+import trains_init from '@/assets/img/project/iut/trains/trains_initialisation.webp'
+import trains_1 from '@/assets/img/project/iut/trains/trains_partie1.webp'
+import trains_2 from '@/assets/img/project/iut/trains/trains_partie2.webp'
+import trains_3 from '@/assets/img/project/iut/trains/trains_partie3.webp'
+import trains_card from '@/assets/img/project/iut/trains/trains_card.webp'
 
 
 // ndi 2024
-import ndi2024_logo from '@/assets/img/projets/iut/ndi2024/logo-n2i-2024.webp'
-import ndi2024_ocean from '@/assets/img/projets/iut/ndi2024/ndi_ocean.webp'
-import ndi2024_page from '@/assets/img/projets/iut/ndi2024/ndi_page.webp'
-import ndi2024_photo1 from '@/assets/img/projets/iut/ndi2024/ndi_photo1.webp'
-import ndi2024_photo2 from '@/assets/img/projets/iut/ndi2024/ndi_photo2.webp'
-import ndi2024_photo3 from '@/assets/img/projets/iut/ndi2024/ndi_photo3.webp'
-import ndi2024_photo4 from '@/assets/img/projets/iut/ndi2024/ndi_photo4.webp'
-import ndi2024_photo5 from '@/assets/img/projets/iut/ndi2024/ndi_photo5.webp'
-import ndi2024_photo6 from '@/assets/img/projets/iut/ndi2024/ndi_photo6.webp'
-import ndi2024_photo_groupe from '@/assets/img/projets/iut/ndi2024/ndi_photo_groupe.webp'
+import ndi2024_logo from '@/assets/img/project/iut/ndi2024/logo-n2i-2024.webp'
+import ndi2024_ocean from '@/assets/img/project/iut/ndi2024/ndi_ocean.webp'
+import ndi2024_page from '@/assets/img/project/iut/ndi2024/ndi_page.webp'
+import ndi2024_photo1 from '@/assets/img/project/iut/ndi2024/ndi_photo1.webp'
+import ndi2024_photo2 from '@/assets/img/project/iut/ndi2024/ndi_photo2.webp'
+import ndi2024_photo3 from '@/assets/img/project/iut/ndi2024/ndi_photo3.webp'
+import ndi2024_photo4 from '@/assets/img/project/iut/ndi2024/ndi_photo4.webp'
+import ndi2024_photo5 from '@/assets/img/project/iut/ndi2024/ndi_photo5.webp'
+import ndi2024_photo6 from '@/assets/img/project/iut/ndi2024/ndi_photo6.webp'
+import ndi2024_photo_groupe from '@/assets/img/project/iut/ndi2024/ndi_photo_groupe.webp'
 
 // mind spies
-import mind_spies_card from '@/assets/img/projets/iut/mindspies/mind_spies_card.webp'
+import mind_spies_card from '@/assets/img/project/iut/mindspies/mind_spies_card.webp'
 
 // e3cete
-import e3cete_card from '@/assets/img/projets/iut/e3cete/e3cete_card.webp'
+import e3cete_card from '@/assets/img/project/iut/e3cete/e3cete_card.webp'
 
 // chuck norris
-import chuck_norris_card from '@/assets/img/projets/iut/fanclubchucknorris/chucknorris_card.webp'
+import chuck_norris_card from '@/assets/img/project/iut/fanclubchucknorris/chucknorris_card.webp'
 
 
 export class Pictures {
