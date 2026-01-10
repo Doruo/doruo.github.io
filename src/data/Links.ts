@@ -8,7 +8,6 @@ export class Links {
   static readonly EBITENGINE = 'https://ebitengine.org/'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://fr.gravatar.com/'
-  static readonly SAMCODES_GAME_OF_LIFE = 'https://www.samcodes.co.uk/project/game-of-life/'
 
   // IUT Web dev
   static readonly LEBRETON = 'https://romainlebreton.github.io/'

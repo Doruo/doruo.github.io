@@ -4,7 +4,7 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons } from '@/data/Icons'
+import { Icons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
 import { Links } from '@/data/Links'
 </script>
@@ -44,8 +44,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_GOL" :img="Icons.GITHUB" />
-      <LinkItem :link="Links.SAMCODES_GAME_OF_LIFE" alt="Version du jeu de samcodes" />
+      <LinkItem :link="Links.GITHUB_GOL" :img="SocialIcons.GITHUB" />
     </template>
 
   </ProjectItem>

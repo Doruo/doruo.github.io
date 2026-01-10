@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import portrait from '@/assets/img/portrait/portrait.webp'
+import { SocialIcons } from '@/data/Icons';
+
 </script>
 
 <template>
   <div class="conteneur-portrait">
-    <img class="portrait" :src="portrait" alt="portrait" />
+    <img class="portrait" :src="SocialIcons.PORTRAIT" alt="portrait" />
   </div>
 </template>

@@ -170,7 +170,7 @@ section {
 
 /* LINK IMG */
 
-.link-img a img{
+.link-img a img:not(.social-links .link-img a img){
   max-width: 50px;
   max-height: 50px;
 }
@@ -208,12 +208,12 @@ a, .project-links a {
 
 .social-links {
   display: flex;
-  margin-top: 2rem;
+  margin: 3%;
   justify-content: center;
 }
 
 .social-links a {
-  margin: 0 1rem;
+  margin: 0 3rem;
 }
 
 .social-links div a img,

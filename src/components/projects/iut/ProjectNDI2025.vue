@@ -3,7 +3,7 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { Icons } from '@/data/Icons'
+import { Icons, SocialIcons } from '@/data/Icons'
 import { Pictures } from '@/data/Pictures'
 import { Links } from '@/data/Links'
 </script>
@@ -33,7 +33,7 @@ import { Links } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_NDI2025" :img="Icons.GITHUB" />
+      <LinkItem :link="Links.GITHUB_NDI2025" :img="SocialIcons.GITHUB" />
       <LinkItem :link="Links.NDI2025" alt="Site du projet" />
     </template>
   </ProjectItem>

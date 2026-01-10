@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import AboutBio from '@/components/about/AboutBio.vue'
+import AboutContact from '@/components/about/AboutContact.vue';
 import AboutFuture from '@/components/about/AboutFuture.vue'
 </script>
 
@@ -7,4 +8,5 @@ import AboutFuture from '@/components/about/AboutFuture.vue'
   <!-- VIEW ABOUT -->
   <AboutBio />
   <AboutFuture />
+  <AboutContact />
 </template>

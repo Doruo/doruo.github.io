@@ -1,4 +1,5 @@
 // social
+import portrait_path from '@/assets/img/portrait/portrait.webp'
 import mail_path from '@/assets/img/social/mail.webp'
 import github_path from '@/assets/img/social/github.svg'
 import linkedin_path from '@/assets/img/social/linkedin.webp'
@@ -26,14 +27,17 @@ import go_path from '@/assets/img/project/tools/go.webp'
 import ebitengine_path from '@/assets/img/project/tools/ebitengine.webp'
 import pdf_path from '@/assets/img/project/tools/pdf.svg'
 
-export class Icons {
-  // social
+
+export class SocialIcons {
+  static readonly PORTRAIT = portrait_path
   static readonly MAIL = mail_path
   static readonly GITHUB = github_path
   static readonly LINKEDIN = linkedin_path
   static readonly GRAVATAR = gravatar_path
   static readonly ITCHIO = itchio_path
+}
 
+export class Icons {
   // tools
   static readonly GIT = git_path
   static readonly DOCKER = docker_path

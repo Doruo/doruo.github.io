@@ -4,7 +4,7 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue';
 import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
-import { Icons } from '@/data/Icons';
+import { Icons, SocialIcons } from '@/data/Icons';
 import { Pictures } from '@/data/Pictures';
 import { Links } from '@/data/Links';
 
@@ -83,7 +83,7 @@ import sujet from '/IUT/A2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.p
     </template>
 
     <template #links>
-      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="Icons.GITHUB" />
+      <LinkItem :link="Links.GITHUB_POURSUITE_ETUDES" :img="SocialIcons.GITHUB" />
       <LinkItem :link="sujet" alt="Sujet du projet" />
     </template>
   </ProjectItem>
