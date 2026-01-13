@@ -4,7 +4,7 @@ import { SocialIcons } from '@/data/Icons';
 </script>
 
 <template>
-  <div class="conteneur-portrait">
+  <div class="container-portrait">
     <img class="portrait" :src="SocialIcons.PORTRAIT" alt="portrait" />
   </div>
 </template>

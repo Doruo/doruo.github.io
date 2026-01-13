@@ -2,13 +2,13 @@ export class IUTLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
 
   // IUT Web dev
-  static readonly LEBRETON = 'https://romainlebreton.github.io/'
+  static readonly LEBRETON = 'https://romainlebreton.github.io'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
-  static readonly IUT_DEV_WEB_JS = this.LEBRETON + 'R.4.01-DeveloppementWeb-JavaScript/'
-  static readonly FAN_CLUB_CHUCK_NORRIS = 'IUT/A1/FanClubChuckNorris'
-  static readonly ESCAPE_GAME_MIND_SPIES = 'IUT/A1/SAE-EscapeGame-MindSpies'
-  static readonly ESCAPE_GAME_POST_APO = 'IUT/A1/SAE-EscapeGame-PostApo'
-  static readonly CONTROVERSE_CRYPTO = 'IUT/A1/SAEControverseCrypto'
+  static readonly IUT_DEV_WEB_JS = this.LEBRETON + '/R.4.01-DeveloppementWeb-JavaScript/'
+  static readonly FAN_CLUB_CHUCK_NORRIS = '/iut/a1/FanClubChuckNorris'
+  static readonly ESCAPE_GAME_MIND_SPIES = '/iut/a1/sae-escape-game-mindspies'
+  static readonly ESCAPE_GAME_POST_APO = '/iut/a1/sae-escape-game-postapo'
+  static readonly CONTROVERSE_CRYPTO = '/iut/a1/SAEControverseCrypto'
 
   // IUT Advanced web dev
   static readonly GASQUET = 'https://mgasquet.github.io/'

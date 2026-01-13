@@ -5,7 +5,7 @@ import AboutLinks from './AboutSocialLinks.vue'
 <template>
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <div class="conteneur">
+    <div class="container">
       <h2>Mon réseau</h2>
       <p>Mon profil vous intéresse ? Je suis à l'écoute de toute opportunité !</p>
       <AboutLinks />

@@ -1,7 +1,7 @@
 <template>
   <!-- FUTUR -->
   <section class="future">
-    <div class="conteneur">
+    <div class="container">
       <h2>Objectifs Futurs</h2>
       <p>
         Je compte tout d'abord entamer après mes études une carrière en

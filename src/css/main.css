@@ -28,7 +28,7 @@
 
 /* TEXTES */
 
-p:not(.branding p):not(footer .conteneur p) {
+p:not(.branding p):not(footer .container p) {
   color: var(--primary-text-color);
   margin-bottom: 1rem;
 }
@@ -58,7 +58,7 @@ section {
 /* CONTAINERS */
 
 .intro-content,
-.conteneur,
+.container,
 .projects-content,
 .project-content-image,
 .skills-content,
@@ -67,14 +67,14 @@ section {
   padding: 0 2rem;
 }
 
-.conteneur,
+.container,
 .projects-content,
 .project-content-image,
 .skills-content {
   max-width: 70%;
 }
 
-.conteneur-portrait {
+.container-portrait {
   position: relative;
   right: 18%;
   width: 28%;
@@ -204,7 +204,7 @@ a, .project-links a {
 }
 
 .social-links a,
-.skills .conteneur p a,
+.skills .container p a,
 .entete h1 a {
   text-decoration: none;
 }
@@ -280,7 +280,7 @@ a, .project-links a {
     height: 100%;
   }
 
-  .conteneur {
+  .container {
     flex-direction: column !important;
     padding: 20px;
   }
@@ -306,25 +306,25 @@ a, .project-links a {
     font-size: 3rem;
   }
 
-  .biographie .conteneur h2,
-  .future .conteneur h2,
+  .biographie .container h2,
+  .future .container h2,
   .project-card h3,
   .projects-content h2,
   .entete p {
     font-size: 2.2rem;
   }
 
-  .biographie .conteneur p,
-  .future .conteneur p,
-  footer .conteneur p,
+  .biographie .container p,
+  .future .container p,
+  footer .container p,
   .project-card p,
   .project-card a,
-  .contact .conteneur p,
+  .contact .container p,
   .social-links a {
     font-size: 1.6rem;
   }
 
-  .contact .conteneur h2 {
+  .contact .container h2 {
     font-size: 2.6rem;
   }
 }

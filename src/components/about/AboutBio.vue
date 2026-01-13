@@ -5,7 +5,7 @@ import { IUTLinks } from '@/data/Links';
 <template>
   <!-- BIO -->
   <section id="biographie" class="biographie">
-    <div class="conteneur">
+    <div class="container">
       <h2>À propos de moi</h2>
       <p>
         Depuis très tôt dans mon enfance, je suis passionné par <b>l'informatique</b> et <b>internet</b>.
