@@ -18,7 +18,7 @@ import { IUTLinks } from '@/data/Links';
       </p>
       <p>
         Afin d'approfondir mon parcours, j'intégre <a :href="IUTLinks.IUT"><b>l'IUT Montpellier-Sête</b></a>.
-        Durant ma formation, j'ai été amené à maitriser les différentes notions du <b>développement full-stack efficace</b>.
+        Durant ma formation, j'ai été amené à maitriser les différentes notions du <b>développement</b>.
       </p>
       <p>
         D’un point de vue managériale, j'ai été amené à <b>gérer des équipes pour différents projets informatiques</b>, proposer des

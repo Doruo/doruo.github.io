@@ -15,11 +15,11 @@ import LinkItem from '../links/LinkItem.vue';
       <p>
         Souhaitant faire de l'informatique ma carrière, je suis actuellement en
         <b>3ème année de BUT informatique</b>, spécialisé dans le
-        <b> parcours Réalisation d'Application - Conception & Déploiement</b>.
+        <b> parcours Réalisation d'Application: Conception, Déploiement & Validation</b>.
       </p>
       <p>
-        J'envisage à l'avenir de continuer mes apprentissages dans le réseau et la conception de
-        serveurs webs, mon objectif professionel étant de <b>devenir développeur Full-Stack</b>.
+        J'envisage à l'avenir de continuer mes apprentissages dans le réseau et la réalisation de logiciels,
+        mon objectif professionel est de devenir <b>développeur DevOps</b>.
       </p>
 
       <h1>
