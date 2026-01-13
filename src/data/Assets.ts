@@ -1,21 +1,4 @@
-export class EldenBuildAssets {
-  static readonly CARD = new URL('@/img/projects/perso/eldenbuild/eldenbuild_card.webp', import.meta.url).href;
-  static readonly LOGO = new URL('@/img/projects/perso/eldenbuild/eldenbuild_ranni.webp', import.meta.url).href;
-  static readonly HOME = new URL('@/img/projects/perso/eldenbuild/eldenbuild_accueil.webp', import.meta.url).href;
-  static readonly BUILD = new URL('@/img/projects/perso/eldenbuild/eldenbuild_build.webp', import.meta.url).href;
-  static readonly EQUIPMENT = new URL('@/img/projects/perso/eldenbuild/eldenbuild_equipment.webp', import.meta.url).href;
-  static readonly PROFILE = new URL('@/img/projects/perso/eldenbuild/eldenbuild_profile.webp', import.meta.url).href;
-  static readonly INSCRIPTION = new URL('@/img/projects/perso/eldenbuild/eldenbuild_inscription.webp', import.meta.url).href;
-  static readonly API_CALL = new URL('@/img/projects/perso/eldenbuild/eldenbuild_testapi.webp', import.meta.url).href;
-}
-
-export class GOLAssets {
-  static readonly CARD = new URL('@/img/projects/perso/gol/gol_card.webp', import.meta.url).href;
-  static readonly LOGO = new URL('@/img/projects/perso/gol/gol_logo.webp', import.meta.url).href;
-  static readonly GAME_1 = new URL('@/img/projects/perso/gol/gol1.webp', import.meta.url).href;
-  static readonly GAME_2 = new URL('@/img/projects/perso/gol/gol2.webp', import.meta.url).href;
-  static readonly GAME_3 = new URL('@/img/projects/perso/gol/gol3.webp', import.meta.url).href;
-}
+// IUT
 
 export class PoursuiteEtudesAssets {
   static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuiteEtude/logoIUT.webp', import.meta.url).href;
@@ -38,6 +21,11 @@ export class TrainsAssets {
   static readonly RULES = new URL('/IUT/A1/SAE-Trains/regles.pdf', import.meta.url).href;
 }
 
+export class NDI2025Assets{
+  static readonly LOGO = new URL('@/img/projects/iut/ndi2025/ndi2025_logo.webp', import.meta.url).href;
+  static readonly GROUP = new URL('@/img/projects/iut/ndi2025/ndi2025_groupe.webp', import.meta.url).href;
+}
+
 export class NDI2024Assets{
   static readonly LOGO = new URL('@/img/projects/iut/ndi2024/ndi_2024_logo.webp', import.meta.url).href;
   static readonly OCEAN = new URL('@/img/projects/iut/ndi2024/ndi_ocean.webp', import.meta.url).href;
@@ -51,9 +39,44 @@ export class NDI2024Assets{
   static readonly GROUP = new URL('@/img/projects/iut/ndi2024/ndi_photo_groupe.webp', import.meta.url).href;
 }
 
-export class NDI2025Assets{
-  static readonly LOGO = new URL('@/img/projects/iut/ndi2025/ndi2025_logo.webp', import.meta.url).href;
-  static readonly GROUP = new URL('@/img/projects/iut/ndi2025/ndi2025_groupe.webp', import.meta.url).href;
+export class CGJ2023Assets{
+  static readonly CARD = new URL('@/img/projects/iut/cgj2023/cgj_2023_card.webp', import.meta.url).href;
+}
+export class MindSpiesAssets {
+  static readonly CARD = new URL('@/img/projects/iut/mindspies/mind_spies_card.webp', import.meta.url).href; ;
+}
+
+export class E3CeteAssets {
+  static readonly CARD = new URL('@/img/projects/iut/e3cete/e3cete_card.webp', import.meta.url).href;
+}
+
+export class CryptoWebsiteAssets {
+  static readonly CARD = new URL('@/img/projects/iut/crypto-website/crypto_website_card.webp', import.meta.url).href;
+}
+
+export class ChuckNorrisAssets {
+  static readonly CARD = new URL('@/img/projects/iut/fanclubchucknorris/chucknorris_card.webp', import.meta.url).href;
+}
+
+// PERSO
+
+export class EldenBuildAssets {
+  static readonly CARD = new URL('@/img/projects/perso/eldenbuild/eldenbuild_card.webp', import.meta.url).href;
+  static readonly LOGO = new URL('@/img/projects/perso/eldenbuild/eldenbuild_ranni.webp', import.meta.url).href;
+  static readonly HOME = new URL('@/img/projects/perso/eldenbuild/eldenbuild_accueil.webp', import.meta.url).href;
+  static readonly BUILD = new URL('@/img/projects/perso/eldenbuild/eldenbuild_build.webp', import.meta.url).href;
+  static readonly EQUIPMENT = new URL('@/img/projects/perso/eldenbuild/eldenbuild_equipment.webp', import.meta.url).href;
+  static readonly PROFILE = new URL('@/img/projects/perso/eldenbuild/eldenbuild_profile.webp', import.meta.url).href;
+  static readonly INSCRIPTION = new URL('@/img/projects/perso/eldenbuild/eldenbuild_inscription.webp', import.meta.url).href;
+  static readonly API_CALL = new URL('@/img/projects/perso/eldenbuild/eldenbuild_testapi.webp', import.meta.url).href;
+}
+
+export class GOLAssets {
+  static readonly CARD = new URL('@/img/projects/perso/gol/gol_card.webp', import.meta.url).href;
+  static readonly LOGO = new URL('@/img/projects/perso/gol/gol_logo.webp', import.meta.url).href;
+  static readonly GAME_1 = new URL('@/img/projects/perso/gol/gol1.webp', import.meta.url).href;
+  static readonly GAME_2 = new URL('@/img/projects/perso/gol/gol2.webp', import.meta.url).href;
+  static readonly GAME_3 = new URL('@/img/projects/perso/gol/gol3.webp', import.meta.url).href;
 }
 
 export class FalloutdleAssets {
@@ -68,14 +91,7 @@ export class LLMAssets {
   static readonly CARD = new URL('@/img/projects/perso/llm/llm_card.webp', import.meta.url).href;
 }
 
-export class MindSpiesAssets {
-  static readonly CARD = new URL('@/img/projects/iut/mindspies/mind_spies_card.webp', import.meta.url).href; ;
-}
-
-export class E3CeteAssets {
-  static readonly CARD = new URL('@/img/projects/iut/e3cete/e3cete_card.webp', import.meta.url).href;
-}
-
-export class ChuckNorrisAssets {
-  static readonly CARD = new URL('@/img/projects/iut/fanclubchucknorris/chucknorris_card.webp', import.meta.url).href;
+export class JellyBotAssets {
+  static readonly CARD = new URL('@/img/projects/perso/jellybot/jellybot_card.webp', import.meta.url).href;
+  static readonly LOGO = new URL('@/img/projects/perso/jellybot/jellyfin_logo.svg', import.meta.url).href;
 }

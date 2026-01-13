@@ -6,14 +6,15 @@ import ViewAbout from '@/views/ViewAbout.vue'
 import ViewArchives from '@/views/ViewArchives.vue'
 import ViewProjects from '@/views/ViewProjects.vue'
 
-import ProjectEldenBuild from '@/components/projects/dev/ProjectEldenBuild.vue'
 import ProjectNDI2024 from '@/components/projects/iut/ProjectNDI2024.vue'
 import ProjectNDI2025 from '@/components/projects/iut/ProjectNDI2025.vue'
 import ProjectPoursuiteEtude from '@/components/projects/iut/ProjectPoursuiteEtudes.vue'
 import ProjectTrains from '@/components/projects/iut/ProjectTrains.vue'
-import ProjectGol from '@/components/projects/dev/ProjectGol.vue'
 import ProjectMyAvatar from '@/components/projects/iut/ProjectMyAvatar.vue'
-import ProjectJellybot from '@/components/projects/dev/ProjectJellybot.vue'
+
+import ProjectEldenBuild from '@/components/projects/perso/ProjectEldenBuild.vue'
+import ProjectGol from '@/components/projects/perso/ProjectGol.vue'
+import ProjectJellybot from '@/components/projects/perso/ProjectJellybot.vue'
 
 const routes = [
   // views

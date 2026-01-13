@@ -4,7 +4,7 @@ import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 
 defineProps({
   title: {type: String, required: true},
-  showMoreInfoLink: {type: Boolean, required: true },
+  showMoreInfo: {type: Boolean, required: true },
   moreInfoLink: {type: Object as PropType<RouteLocationAsRelativeGeneric>, required: true},
   websiteLink: {type: String, required: true},
   background: {type: String, required: false},
@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <!-- PROJECT CARD -->
-  <router-link :to="moreInfoLink" v-if="showMoreInfoLink">
+  <router-link :to="moreInfoLink" v-if="showMoreInfo">
     <div class="project-card" :style="{ backgroundImage: `url(${background})` }">
       <h3>{{ title }}</h3>
       <p>

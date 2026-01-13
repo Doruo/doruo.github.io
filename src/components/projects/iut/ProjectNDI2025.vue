@@ -26,6 +26,7 @@ import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
       <SkillItem :img="ToolIcons.TS" :link="ToolLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface visuelle" />
       <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />

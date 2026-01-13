@@ -21,7 +21,7 @@ defineProps({
 
         :key="project.id"
         :title="project.title"
-        :show-more-info-link="project.showMoreInfoLink"
+        :show-more-info="project.showMoreInfo"
         :more-info-link="project.moreInfoLink"
         :website-link="project.websiteLink"
         :background="project.background">

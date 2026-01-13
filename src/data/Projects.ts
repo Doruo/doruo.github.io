@@ -1,11 +1,11 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
-import { EldenBuildAssets, GOLAssets, NDI2024Assets, TrainsAssets, FalloutdleAssets, ChuckNorrisAssets, MindSpiesAssets, E3CeteAssets, MeshAssets, LLMAssets, NDI2025Assets } from './Assets'
+import { EldenBuildAssets, GOLAssets, NDI2024Assets, TrainsAssets, FalloutdleAssets, ChuckNorrisAssets, MindSpiesAssets, E3CeteAssets, MeshAssets, LLMAssets, NDI2025Assets, JellyBotAssets, CGJ2023Assets, CryptoWebsiteAssets } from './Assets'
 
 export interface Project {
   id: string
   title: string
-  showMoreInfoLink: boolean
+  showMoreInfo: boolean
   websiteLink: string
   moreInfoLink: RouteLocationAsRelativeGeneric
   background: string
@@ -22,98 +22,53 @@ export interface ProjectCategory {
 
 export class Projects {
   private static readonly allProjects: Project[] = [
-    // /-----/ academic /-----/
+    // /-----/ tool /-----/
     {
-      id: 'poursuite-etude',
-      title: "Application de Poursuite d'Etudes",
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: GithubLinks.POURSUITE_ETUDES,
-      background: '',
-      description:
-        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
-      techs: 'PHP, JavaScript, PL/SQL, LDAP',
-      tags: ['main'],
-    },
-    {
-      id: 'my-avatar',
-      title: 'My Avatar',
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-my-avatar' },
-      websiteLink: ProjectLinks.MY_AVATAR,
-      background: '',
-      description:
-        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
-      techs: 'Symfony, JavaScript, MySQL, Twig',
-      tags: ['academic'],
-    },
-    {
-      id: 'controverse-crypto',
-      title: 'Contrôverse des Cryptomonnaies',
-      showMoreInfoLink: false,
+      id: 'llm-from-scratch',
+      title: `IA bigramme`,
+      showMoreInfo: false,
+      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
-      background: '',
+      background: LLMAssets.CARD,
       description:
-        'Vitrine présentant mon travail de recherche et de rédaction' +
-        "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
-      techs: 'HTML, CSS',
-      tags: ['academic'],
+        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['main','tool'],
     },
     {
-      id: 'trains',
-      title: 'Jeu de plateau Trains',
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-trains' },
-      websiteLink: GithubLinks.TRAINS,
-      background: TrainsAssets.CARD,
+      id: 'jellybot',
+      title: 'Jellybot',
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: GithubLinks.JELLYBOT,
+      background: JellyBotAssets.CARD,
       description:
-        'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
-        "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
-      techs: 'Java, JavaFX',
-      tags: ['academic'],
+        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
+        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      techs: 'Python, discord.py, Jellyfin API, Discord',
+      tags: ['tool'],
     },
     {
-      id: 'fan-site-chuck-norris',
-      title: 'Fan Club Chuck Norris',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
-      background: ChuckNorrisAssets.CARD,
-      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'metro-post-apo',
-      title: 'Escape game - Métro post-apocalyptique',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
+      id: 'stage-itesoft',
+      title: 'Stage - ITESOFT (CONFIDENTIEL)',
+      showMoreInfo: false,
       background: '',
-      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'escape-game-mind-spies',
-      title: 'Escape game - The Mind Spies',
-      showMoreInfoLink: false,
+      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
       moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
-      background: MindSpiesAssets.CARD,
-      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
+      description:
+        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
+        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
+      techs: 'NestJS, JSON, SQL',
+      tags: ['tool'],
     },
     // /-----/ competition /-----/
     {
       id: 'cgj-2023',
       title: 'Code Game Jam 2023: Time Mage Tournament',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ProjectLinks.ITCHIO_TIME_MAGE_TOURNAMENT,
-      background: '',
+      background: CGJ2023Assets.CARD,
       description:
         'Jeu de tir 2D isométrique réalisé en 24h. ' +
         "Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l'IUT Montpellier-Sête</a>.",
@@ -123,7 +78,7 @@ export class Projects {
     {
       id: 'ndi-2024',
       title: "Nuit de l'Info 2024",
-      showMoreInfoLink: true,
+      showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: GithubLinks.NDI2024,
       background: NDI2024Assets.WORK_1,
@@ -136,7 +91,7 @@ export class Projects {
     {
       id: 'ndi-2025',
       title: "Nuit de l'Info 2025",
-      showMoreInfoLink: true,
+      showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: GithubLinks.NDI2025,
       background: NDI2025Assets.GROUP,
@@ -144,11 +99,95 @@ export class Projects {
       techs: 'TypeScript',
       tags: ['competition'],
     },
+    // /-----/ academic /-----/
+    {
+      id: 'poursuite-etude',
+      title: "Application de Poursuite d'Etudes",
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-poursuite-etude' },
+      websiteLink: GithubLinks.POURSUITE_ETUDES,
+      background: '',
+      description:
+        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
+      techs: 'PHP, JavaScript, PL/SQL, LDAP',
+      tags: ['main'],
+    },
+    {
+      id: 'my-avatar',
+      title: 'My Avatar',
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-my-avatar' },
+      websiteLink: ProjectLinks.MY_AVATAR,
+      background: '',
+      description:
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
+      techs: 'Symfony, JavaScript, MySQL, Twig',
+      tags: ['academic'],
+    },
+    {
+      id: 'controverse-crypto',
+      title: 'Contrôverse des Cryptomonnaies',
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
+      background: CryptoWebsiteAssets.CARD,
+      description:
+        'Vitrine présentant mon travail de recherche et de rédaction' +
+        "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'trains',
+      title: 'Jeu de plateau Trains',
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-trains' },
+      websiteLink: GithubLinks.TRAINS,
+      background: TrainsAssets.CARD,
+      description:
+        'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
+        "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
+      techs: 'Java, JavaFX',
+      tags: ['academic'],
+    },
+    {
+      id: 'fan-site-chuck-norris',
+      title: 'Fan Club Chuck Norris',
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
+      background: ChuckNorrisAssets.CARD,
+      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'metro-post-apo',
+      title: 'Escape game - Métro post-apocalyptique',
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
+      background: '',
+      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'escape-game-mind-spies',
+      title: 'Escape game - The Mind Spies',
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
+      background: MindSpiesAssets.CARD,
+      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
     // /-----/ game /-----/
     {
       id: 'game-of-life',
       title: "Conway's Game of Life",
-      showMoreInfoLink: true,
+      showMoreInfo: true,
       moreInfoLink: { name: 'projects-gol' },
       websiteLink: GithubLinks.GOL,
       background: GOLAssets.CARD,
@@ -158,9 +197,20 @@ export class Projects {
       tags: ['game'],
     },
     {
+      id: 'e3cete',
+      title: 'E3Cète',
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.E3CETE,
+      background: E3CeteAssets.CARD,
+      description: 'Jeu de société en Java, inspiré du jeu Set!',
+      techs: 'Java',
+      tags: ['game'],
+    },
+    {
       id: 'mastermind',
       title: 'Mastermind',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MASTERMIND,
       background: '',
@@ -170,20 +220,9 @@ export class Projects {
       tags: ['game'],
     },
     {
-      id: 'sudoku',
-      title: 'Sudoku',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.SUDOKU,
-      background: '',
-      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur',
-      techs: 'Java, algorithmie',
-      tags: ['game'],
-    },
-    {
       id: 'marin-ivre',
       title: 'Le Marin Ivre',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MARIN_IVRE,
       background: '',
@@ -193,20 +232,20 @@ export class Projects {
       tags: ['game'],
     },
     {
-      id: 'e3cete',
-      title: 'E3Cète',
-      showMoreInfoLink: false,
+      id: 'sudoku',
+      title: 'Sudoku',
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.E3CETE,
-      background: E3CeteAssets.CARD,
-      description: 'Jeu de société en Java, inspiré du jeu Set!',
-      techs: 'Java',
+      websiteLink: GithubLinks.SUDOKU,
+      background: '',
+      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur',
+      techs: 'Java, algorithmie',
       tags: ['game'],
     },
     {
       id: 'flipper',
       title: 'Flipper',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.FLIPPER_BALL,
       background: '',
@@ -218,7 +257,7 @@ export class Projects {
     {
       id: 'elden-build',
       title: 'Elden Build',
-      showMoreInfoLink: true,
+      showMoreInfo: true,
       moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: GithubLinks.ELDEN_BUILD,
       background: EldenBuildAssets.CARD,
@@ -230,7 +269,7 @@ export class Projects {
     {
       id: 'falloutdle',
       title: 'Falloutdle',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.FALLOUTDLE,
       background: FalloutdleAssets.CARD,
@@ -242,52 +281,13 @@ export class Projects {
     {
       id: 'mesh',
       title: 'Mesh',
-      showMoreInfoLink: false,
+      showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MESH,
       background: MeshAssets.CARD,
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
-    },
-    // /-----/ tool /-----/
-    {
-      id: 'llm-from-scratch',
-      title: `IA bigramme`,
-      showMoreInfoLink: false,
-      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: LLMAssets.CARD,
-      description:
-        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['main','tool'],
-    },
-    {
-      id: 'jellybot',
-      title: 'Jellybot',
-      showMoreInfoLink: true,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: GithubLinks.JELLYBOT,
-      background: '',
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: 'Python, discord.py, Jellyfin API, Discord',
-      tags: ['tool'],
-    },
-    {
-      id: 'stage-itesoft',
-      title: 'Stage - ITESOFT (CONFIDENTIEL)',
-      showMoreInfoLink: false,
-      background: '',
-      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
-      moreInfoLink: { name: '' },
-      description:
-        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
-        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
-      techs: 'NestJS, JSON, SQL',
-      tags: ['tool'],
     },
   ]
 
