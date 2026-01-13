@@ -22,6 +22,7 @@ export interface ProjectCategory {
 
 export class Projects {
   private static readonly allProjects: Project[] = [
+    // /-----/ academic /-----/
     {
       id: 'poursuite-etude',
       title: "Application de Poursuite d'Etudes",
@@ -73,6 +74,40 @@ export class Projects {
       tags: ['academic'],
     },
     {
+      id: 'fan-site-chuck-norris',
+      title: 'Fan Club Chuck Norris',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
+      background: ChuckNorrisAssets.CARD,
+      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'metro-post-apo',
+      title: 'Escape game - Métro post-apocalyptique',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
+      background: '',
+      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'escape-game-mind-spies',
+      title: 'Escape game - The Mind Spies',
+      showMoreInfoLink: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
+      background: MindSpiesAssets.CARD,
+      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    // /-----/ competition /-----/
+    {
       id: 'cgj-2023',
       title: 'Code Game Jam 2023: Time Mage Tournament',
       showMoreInfoLink: false,
@@ -109,39 +144,7 @@ export class Projects {
       techs: 'TypeScript',
       tags: ['competition'],
     },
-    {
-      id: 'fan-site-chuck-norris',
-      title: 'Fan Club Chuck Norris',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
-      background: ChuckNorrisAssets.CARD,
-      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'metro-post-apo',
-      title: 'Escape game - Métro post-apocalyptique',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
-      background: '',
-      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'escape-game-mind-spies',
-      title: 'Escape game - The Mind Spies',
-      showMoreInfoLink: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
-      background: MindSpiesAssets.CARD,
-      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
+    // /-----/ game /-----/
     {
       id: 'game-of-life',
       title: "Conway's Game of Life",
@@ -211,6 +214,7 @@ export class Projects {
       techs: 'Python, numpy',
       tags: ['game'],
     },
+    // /-----/ community /-----/
     {
       id: 'elden-build',
       title: 'Elden Build',
@@ -246,6 +250,19 @@ export class Projects {
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
     },
+    // /-----/ tool /-----/
+    {
+      id: 'llm-from-scratch',
+      title: `IA bigramme`,
+      showMoreInfoLink: false,
+      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
+      moreInfoLink: { name: '' },
+      background: LLMAssets.CARD,
+      description:
+        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['main','tool'],
+    },
     {
       id: 'jellybot',
       title: 'Jellybot',
@@ -258,18 +275,6 @@ export class Projects {
         '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
       techs: 'Python, discord.py, Jellyfin API, Discord',
       tags: ['tool'],
-    },
-    {
-      id: 'llm-from-scratch',
-      title: `IA bigramme`,
-      showMoreInfoLink: false,
-      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: LLMAssets.CARD,
-      description:
-        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['main','tool'],
     },
     {
       id: 'stage-itesoft',
