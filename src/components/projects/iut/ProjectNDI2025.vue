@@ -4,14 +4,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { NDI2025Assets } from '@/data/Assets'
+import { NDI2025Pictures } from '@/data/Pictures'
 import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi_logo" :src="NDI2025Assets.LOGO" />
+      <img alt="ndi_logo" :src="NDI2025Pictures.LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2025</template>

@@ -5,7 +5,7 @@ import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
 import { ToolIcons, SocialIcons } from '@/data/Icons';
-import { PoursuiteEtudesAssets } from '@/data/Assets';
+import { PoursuiteEtudesPictures } from '@/data/Pictures';
 import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
 
 </script>
@@ -13,7 +13,7 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" :src="PoursuiteEtudesAssets.LOGO_IUT" />
+      <img alt="logoIUT" :src="PoursuiteEtudesPictures.LOGO_IUT" />
     </template>
 
     <template #title>Application d'avis de poursuite d'études</template>
@@ -72,17 +72,17 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
     </template>
 
     <template #assets>
-        <ProjectImageItem :link="PoursuiteEtudesAssets.HOME" />
-        <ProjectImageItem :link="PoursuiteEtudesAssets.CONNEXION" />
-        <ProjectImageItem :link="PoursuiteEtudesAssets.NOTES" />
-        <ProjectImageItem :link="PoursuiteEtudesAssets.AGREGATION" />
-        <ProjectImageItem :link="PoursuiteEtudesAssets.CSV" />
-        <ProjectImageItem :link="PoursuiteEtudesAssets.DIAGRAMME" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.HOME" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.CONNEXION" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.NOTES" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.AGREGATION" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.CSV" />
+        <ProjectImageItem :link="PoursuiteEtudesPictures.DIAGRAMME" />
     </template>
 
     <template #links>
       <LinkItem :link="GithubLinks.POURSUITE_ETUDES" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="PoursuiteEtudesAssets.SUBJECT" :img="ToolIcons.PDF" alt="Sujet" text="Sujet"/>
+      <LinkItem :link="PoursuiteEtudesPictures.SUBJECT" :img="ToolIcons.PDF" alt="Sujet" text="Sujet"/>
     </template>
   </ProjectItem>
 </template>

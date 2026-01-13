@@ -5,14 +5,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { NDI2024Assets } from '@/data/Assets'
+import { NDI2024Pictures } from '@/data/Pictures'
 import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi2024" :src="NDI2024Assets.LOGO" />
+      <img alt="ndi2024" :src="NDI2024Pictures.LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2024</template>
@@ -52,15 +52,15 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="NDI2024Assets.OCEAN" alt="Ocean" />
-      <ProjectImageItem :link="NDI2024Assets.page" alt="page" />
-      <ProjectImageItem :link="NDI2024Assets.GROUP" alt="groupe" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_1" alt="photo1" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_2" alt="photo2" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_3" alt="photo3" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_4" alt="photo4" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_5" alt="photo5" />
-      <ProjectImageItem :link="NDI2024Assets.WORK_6" alt="photo6" />
+      <ProjectImageItem :link="NDI2024Pictures.OCEAN" alt="Ocean" />
+      <ProjectImageItem :link="NDI2024Pictures.PAGE" alt="page" />
+      <ProjectImageItem :link="NDI2024Pictures.GROUP" alt="groupe" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_1" alt="photo1" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_2" alt="photo2" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_3" alt="photo3" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_4" alt="photo4" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_5" alt="photo5" />
+      <ProjectImageItem :link="NDI2024Pictures.WORK_6" alt="photo6" />
     </template>
 
     <template #links>

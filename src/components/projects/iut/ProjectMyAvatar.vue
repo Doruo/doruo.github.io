@@ -4,14 +4,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { SocialIcons, ToolIcons } from '@/data/Icons'
- import { PoursuiteEtudesAssets } from '@/data/Assets'
+ import { PoursuiteEtudesPictures } from '@/data/Pictures'
 import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="PoursuiteEtudesAssets.LOGO_IUT" :alt="PoursuiteEtudesAssets.LOGO_IUT" />
+      <img :src="PoursuiteEtudesPictures.LOGO_IUT" :alt="PoursuiteEtudesPictures.LOGO_IUT" />
     </template>
 
     <template #title>My Avatar</template>

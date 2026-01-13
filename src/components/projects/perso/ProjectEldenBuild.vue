@@ -5,14 +5,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { EldenBuildAssets } from '@/data/Assets'
+import { EldenBuildPictures } from '@/data/Pictures'
 import { ToolLinks, GithubLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :alt=EldenBuildAssets.LOGO :src="EldenBuildAssets.LOGO" />
+      <img :alt=EldenBuildPictures.LOGO :src="EldenBuildPictures.LOGO" />
     </template>
 
     <template #title>Elden Build</template>
@@ -62,12 +62,12 @@ import { ToolLinks, GithubLinks, WebsiteLinks } from '@/data/Links'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="EldenBuildAssets.HOME" :alt="EldenBuildAssets.HOME" />
-      <ProjectImageItem :link="EldenBuildAssets.INSCRIPTION" :alt="EldenBuildAssets.INSCRIPTION" />
-      <ProjectImageItem :link="EldenBuildAssets.BUILD" :alt="EldenBuildAssets.BUILD" />
-      <ProjectImageItem :link="EldenBuildAssets.PROFILE" :alt="EldenBuildAssets.PROFILE" />
-      <ProjectImageItem :link="EldenBuildAssets.API_CALL" :alt="EldenBuildAssets.API_CALL" />
-      <ProjectImageItem :link="EldenBuildAssets.EQUIPMENT" :alt="EldenBuildAssets.EQUIPMENT" />
+      <ProjectImageItem :link="EldenBuildPictures.HOME" :alt="EldenBuildPictures.HOME" />
+      <ProjectImageItem :link="EldenBuildPictures.INSCRIPTION" :alt="EldenBuildPictures.INSCRIPTION" />
+      <ProjectImageItem :link="EldenBuildPictures.BUILD" :alt="EldenBuildPictures.BUILD" />
+      <ProjectImageItem :link="EldenBuildPictures.PROFILE" :alt="EldenBuildPictures.PROFILE" />
+      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
+      <ProjectImageItem :link="EldenBuildPictures.EQUIPMENT" :alt="EldenBuildPictures.EQUIPMENT" />
     </template>
 
     <template #links>

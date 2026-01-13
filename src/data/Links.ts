@@ -20,11 +20,11 @@ export class IUTLinks {
 export class WebsiteLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
   static readonly NDI = 'https://nuitdelinfo.com/ '
-  static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring'
+  static readonly ELDEN_RING = 'https://bandainamcoent.eu/elden-ring/elden-ring'
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com'
   static readonly SCODOC = 'https://scodoc.org'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
-  static readonly GRAVATAR = 'https://fr.gravatar.com/'
+  static readonly GRAVATAR = 'https://gravatar.com/'
 }
 
 export class SocialLinks {
@@ -33,7 +33,7 @@ export class SocialLinks {
 
   static readonly GITHUB = 'https://github.com/doruo/'
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
-  static readonly GRAVATAR = 'https://fr.gravatar.com/marchayepro'
+  static readonly GRAVATAR = 'https://gravatar.com/marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
 }
 
@@ -88,7 +88,7 @@ export class ToolLinks {
   static readonly JAVAFX = 'https://openjfx.io'
   static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly VUEJS = 'https://vuejs.org'
-  static readonly MYSQL = 'https://www.mysql.com/fr'
+  static readonly MYSQL = 'https://www.mysql.com/'
   static readonly GO = 'https://go.dev'
   static readonly SYMFONY = 'https://symfony.com'
   static readonly EXPRESS = 'https://expressjs.com'

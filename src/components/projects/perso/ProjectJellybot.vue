@@ -4,7 +4,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { SocialIcons, ToolIcons } from '@/data/Icons'
-import { JellyBotAssets } from '@/data/Assets'
+import { JellyBotPictures } from '@/data/Pictures'
 import { GithubLinks, ToolLinks } from '@/data/Links'
 </script>
 
@@ -12,7 +12,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
   <ProjectItem>
 
     <template #logo_projet>
-      <img :src="JellyBotAssets.LOGO" :alt="JellyBotAssets.LOGO" />
+      <img :src="JellyBotPictures.LOGO" :alt="JellyBotPictures.LOGO" />
     </template>
 
     <template #title>Jellybot</template>
