@@ -5,10 +5,10 @@ export class IUTLinks {
   static readonly LEBRETON = 'https://romainlebreton.github.io'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
   static readonly IUT_DEV_WEB_JS = this.LEBRETON + '/R.4.01-DeveloppementWeb-JavaScript/'
-  static readonly FAN_CLUB_CHUCK_NORRIS = '/iut/a1/FanClubChuckNorris'
-  static readonly ESCAPE_GAME_MIND_SPIES = '/iut/a1/sae-escape-game-mindspies'
-  static readonly ESCAPE_GAME_POST_APO = '/iut/a1/sae-escape-game-postapo'
-  static readonly CONTROVERSE_CRYPTO = '/iut/a1/SAEControverseCrypto'
+  static readonly FAN_CLUB_CHUCK_NORRIS = '/projects/a1/fan-club-chuck-norris'
+  static readonly ESCAPE_GAME_MIND_SPIES = '/projects/a1/sae-escape-game-mindspies'
+  static readonly ESCAPE_GAME_POST_APO = '/projects/a1/sae-escape-game-postapo'
+  static readonly CONTROVERSE_CRYPTO = '/projects/a1/sae-controverse-crypto'
 
   // IUT Advanced web dev
   static readonly GASQUET = 'https://mgasquet.github.io/'
@@ -19,17 +19,19 @@ export class IUTLinks {
 
 export class WebsiteLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
-  static readonly NDI = 'https://nuitdelinfo.com/'
-  static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring/'
-  static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com/'
-  static readonly SCODOC = 'https://scodoc.org/'
+  static readonly NDI = 'https://nuitdelinfo.com/ '
+  static readonly ELDEN_RING = 'https://fr.bandainamcoent.eu/elden-ring/elden-ring'
+  static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com'
+  static readonly SCODOC = 'https://scodoc.org'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://fr.gravatar.com/'
 }
 
 export class SocialLinks {
+  private static readonly mail= "marc.haye.pro@protonmail.com"
+  static readonly MAIL = 'mailto:' + this.mail;
+
   static readonly GITHUB = 'https://github.com/doruo/'
-  static readonly MAIL = 'mailto:marc.haye.pro@protonmail.com'
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
   static readonly GRAVATAR = 'https://fr.gravatar.com/marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
@@ -63,36 +65,36 @@ export class ProjectLinks {
 }
 
 export class ToolLinks {
-  static readonly GIT = 'https://git-scm.com/'
-  static readonly GITLAB = 'https://gitlab.com/'
-  static readonly GITHUB = 'https://github.com/'
+  static readonly GIT = 'https://git-scm.com'
+  static readonly GITLAB = 'https://gitlab.com'
+  static readonly GITHUB = 'https://github.com'
 
-  static readonly HTML = 'https://www.w3schools.com/html/'
-  static readonly BOOTSTRAP = 'https://getbootstrap.com/'
-  static readonly TAILWIND = 'https://tailwindcss.com/'
+  static readonly HTML = 'https://www.w3schools.com/html'
+  static readonly BOOTSTRAP = 'https://getbootstrap.com'
+  static readonly TAILWIND = 'https://tailwindcss.com'
 
-  static readonly TS = 'https://www.typescriptlang.org/'
+  static readonly TS = 'https://www.typescriptlang.org'
   static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
-  static readonly NODE = 'https://nodejs.org/'
-  static readonly NEXT = 'https://nextjs.org/'
+  static readonly NODE = 'https://nodejs.org'
+  static readonly NEXT = 'https://nextjs.org'
 
   static readonly PYTHON = 'https://https://www.python.org'
   static readonly LDAP = 'https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
-  static readonly POSTGRE = 'https://www.postgresql.org/'
+  static readonly POSTGRE = 'https://www.postgresql.org'
   static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
 
   static readonly PHP = 'https://php.net'
   static readonly JAVA = 'https://dev.java'
-  static readonly JAVAFX = 'https://openjfx.io/'
-  static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder/'
-  static readonly VUEJS = 'https://vuejs.org/'
-  static readonly MYSQL = 'https://www.mysql.com/fr/'
-  static readonly GO = 'https://go.dev/'
-  static readonly SYMFONY = 'https://symfony.com/'
-  static readonly EXPRESS = 'https://expressjs.com/'
+  static readonly JAVAFX = 'https://openjfx.io'
+  static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
+  static readonly VUEJS = 'https://vuejs.org'
+  static readonly MYSQL = 'https://www.mysql.com/fr'
+  static readonly GO = 'https://go.dev'
+  static readonly SYMFONY = 'https://symfony.com'
+  static readonly EXPRESS = 'https://expressjs.com'
 
   static readonly DOCKER = 'https://docker.com'
-  static readonly EBITENGINE = 'https://ebitengine.org/'
-  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum/'
-  static readonly CHARTJS = 'https://www.chartjs.org/'
+  static readonly EBITENGINE = 'https://ebitengine.org'
+  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
+  static readonly CHARTJS = 'https://www.chartjs.org'
 }

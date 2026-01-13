@@ -8,7 +8,7 @@ export class PoursuiteEtudesAssets {
   static readonly CSV = new URL('@/img/projects/iut/poursuiteEtude/poursuite_etude_csv.webp', import.meta.url).href;
   static readonly DIAGRAMME = new URL('@/img/projects/iut/poursuiteEtude/poursuite_etude_diagramme_classes.webp', import.meta.url).href;
   static readonly NOTES = new URL('@/img/projects/iut/poursuiteEtude/poursuite_etude_notes.webp', import.meta.url).href;
-  static readonly SUBJECT = new URL('/iut/a2/SAE-Poursuite-Etude/lancement_SAE3A_poursuiteEtudes.pdf', import.meta.url).href;
+  static readonly SUBJECT = new URL('/projects/a2/sae-poursuite-etude/lancement_SAE3A_poursuiteEtudes.pdf', import.meta.url).href;
 }
 
 export class TrainsAssets {
@@ -18,7 +18,7 @@ export class TrainsAssets {
   static readonly GAME_1 = new URL('@/img/projects/iut/trains/trains_partie1.webp', import.meta.url).href;
   static readonly GAME_2 = new URL('@/img/projects/iut/trains/trains_partie2.webp', import.meta.url).href;
   static readonly GAME_3 = new URL('@/img/projects/iut/trains/trains_partie3.webp', import.meta.url).href;
-  static readonly RULES = new URL('/iut/a1/SAE-Trains/regles.pdf', import.meta.url).href;
+  static readonly RULES = new URL('/projects/a1/sae-trains/regles.pdf', import.meta.url).href;
 }
 
 export class NDI2025Assets{
