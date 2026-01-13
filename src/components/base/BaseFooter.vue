@@ -9,7 +9,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
       <li>Made in <a :href="ToolLinks.VUEJS">Vue.js</a></li>
       <li><router-link :to="{ name: 'archives' }">Archives</router-link></li>
       <li><a :href="GithubLinks.PORTFOLIO">Code source</a></li>
-      <li>&copy; 2024 - 2026 | Work In Progress</li>
+      <li>&copy; 2024 - 2026 Marc Haye | Tous droits réservés</li>
     </ul>
   </footer>
 </template>
