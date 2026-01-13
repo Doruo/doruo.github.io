@@ -1,11 +1,11 @@
 
 export class SocialIcons {
-  static readonly PORTRAIT = new URL('/img/portrait/portrait.webp', import.meta.url).href
-  static readonly MAIL = new URL('/img/social/mail.webp', import.meta.url).href
-  static readonly GITHUB = new URL('/img/social/github.svg', import.meta.url).href
-  static readonly LINKEDIN = new URL('/img/social/linkedin.webp', import.meta.url).href
-  static readonly GRAVATAR = new URL('/img/social/gravatar.webp', import.meta.url).href
-  static readonly ITCHIO = new URL('/img/social/itchio.webp', import.meta.url).href
+  static readonly PORTRAIT = new URL('@/img/portrait/portrait.webp', import.meta.url).href
+  static readonly MAIL = new URL('@/img/social/mail.webp', import.meta.url).href
+  static readonly GITHUB = new URL('@/img/social/github.svg', import.meta.url).href
+  static readonly LINKEDIN = new URL('@/img/social/linkedin.webp', import.meta.url).href
+  static readonly GRAVATAR = new URL('@/img/social/gravatar.webp', import.meta.url).href
+  static readonly ITCHIO = new URL('@/img/social/itchio.webp', import.meta.url).href
 }
 
 export class ToolIcons {
@@ -24,21 +24,21 @@ export class ToolIcons {
 
   static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
   static readonly JAVA = "https://techstack-generator.vercel.app/java-icon.svg"
-  static readonly JAVAFX = new URL('/img/projects/tools/javafx.webp', import.meta.url).href
+  static readonly JAVAFX = new URL('@/img/projects/tools/javafx.webp', import.meta.url).href
   static readonly GO = "https://skillicons.dev/icons?i=go"
   static readonly PHP = "https://skillicons.dev/icons?i=php"
   static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
 
-  static readonly SCENEBUILDER = new URL('/img/projects/tools/scenebuilder.webp', import.meta.url).href
-  static readonly CHARTJS = new URL('/img/projects/tools/chartjs.svg', import.meta.url).href
-  static readonly EBITENGINE = new URL('/img/projects/tools/ebitengine.webp', import.meta.url).href
+  static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href
+  static readonly CHARTJS = new URL('@/img/projects/tools/chartjs.svg', import.meta.url).href
+  static readonly EBITENGINE = new URL('@/img/projects/tools/ebitengine.webp', import.meta.url).href
 
   static readonly POSTGRE = "https://skillicons.dev/icons?i=postgres"
-  static readonly PLSQL = new URL('/img/projects/tools/plsql.svg', import.meta.url).href
+  static readonly PLSQL = new URL('@/img/projects/tools/plsql.svg', import.meta.url).href
   static readonly MYSQL = "https://techstack-generator.vercel.app/mysql-icon.svg"
 
-  static readonly LDAP = new URL('/img/projects/tools/ldap.svg', import.meta.url).href
+  static readonly LDAP = new URL('@/img/projects/tools/ldap.svg', import.meta.url).href
   static readonly REST = "https://techstack-generator.vercel.app/restapi-icon.svg"
   static readonly DOCKER = "https://techstack-generator.vercel.app/docker-icon.svg"
-  static readonly PDF = new URL('/img/projects/tools/pdf.svg', import.meta.url).href
+  static readonly PDF = new URL('@/img/projects/tools/pdf.svg', import.meta.url).href
 }
