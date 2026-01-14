@@ -65,7 +65,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
       <SkillItem :img="ToolIcons.LDAP" :link="ToolLinks.LDAP" description="Authentification sécurisée avec le service d'annuaire de l'Université de Montpellier" />
       <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Développement coté serveur de l'application" />
-      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface utilisateur" />
       <SkillItem :img="ToolIcons.POSTGRE" :link="ToolLinks.POSTGRE" description="Stockage de données sécurisé pour l'application" />
       <SkillItem :img="ToolIcons.PLSQL" :link="ToolLinks.PLSQL" description="Fonctions et 'triggers' dynamiques pour la base de données" />
       <SkillItem :img="ToolIcons.CHARTJS" :link="ToolLinks.CHARTJS" description="Graphiques comparatifs (Radar Chart) et médianes des résultats des étudiants" />

@@ -36,7 +36,7 @@ import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteL
     <template #abilities>
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Implémentation de Symfony" />
-      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page visuelle" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface" />
       <SkillItem :img="LanguageIcons.JS" :link="LanguageLinks.JS" description="Requêtes AJAX" />
     </template>
 

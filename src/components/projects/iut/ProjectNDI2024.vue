@@ -47,7 +47,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS" description="Routage et implémentation de l'océan" />
-      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page visuelle des articles" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface des articles" />
       <SkillItem :img="LanguageIcons.HTML" :link="LanguageLinks.HTML" description="Rédaction des articles" />
     </template>
 
