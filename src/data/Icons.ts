@@ -26,10 +26,7 @@ export class ToolIcons {
   static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'
 
   static readonly NEXT = 'https://skillicons.dev/icons?i=next'
-
   static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
-  static readonly JAVAFX = new URL('@/img/projects/tools/javafx.webp', import.meta.url).href
-
   static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
 
   static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href

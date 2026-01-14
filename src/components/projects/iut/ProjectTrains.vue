@@ -34,7 +34,7 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
           <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="ToolIcons.JAVAFX">JavaFX</a>.</p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="ToolLinks.JAVAFX">JavaFX</a>.</p>
         </li>
       </ul>
       <p>
@@ -57,7 +57,6 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     <template #abilities>
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe." />
       <SkillItem :img="LanguageIcons.JAVA" :link="LanguageLinks.JAVA" description="Implémentation de la logique du jeu" />
-      <SkillItem :img="ToolIcons.JAVAFX" :link="ToolLinks.JAVAFX" description="Réalisation de l'interface graphique" />
       <SkillItem :img="ToolIcons.SCENEBUILDER" :link="ToolLinks.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
     </template>
 
