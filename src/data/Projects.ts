@@ -1,6 +1,6 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
-import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures } from './Pictures'
+import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures } from './Pictures'
 
 export interface Project {
   id: string
@@ -36,19 +36,6 @@ export class Projects {
       tags: ['main','tool'],
     },
     {
-      id: 'jellybot',
-      title: 'Jellybot',
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: GithubLinks.JELLYBOT,
-      background: JellyBotPictures.CARD,
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: 'Python, discord.py, Jellyfin API, Discord',
-      tags: ['tool'],
-    },
-    {
       id: 'stage-itesoft',
       title: 'Stage - ITESOFT (CONFIDENTIEL)',
       showMoreInfo: false,
@@ -59,6 +46,19 @@ export class Projects {
         'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
         ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
       techs: 'NestJS, JSON, SQL',
+      tags: ['tool'],
+    },
+    {
+      id: 'jellybot',
+      title: 'Jellybot',
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: GithubLinks.JELLYBOT,
+      background: JellyBotPictures.CARD,
+      description:
+        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
+        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      techs: 'Python, discord.py, Jellyfin API, Discord',
       tags: ['tool'],
     },
     // /-----/ competition /-----/
@@ -167,7 +167,7 @@ export class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
-      background: '',
+      background: PostApoPictures.CARD,
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
       techs: 'HTML, CSS',
       tags: ['academic'],

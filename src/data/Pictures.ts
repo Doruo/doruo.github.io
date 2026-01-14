@@ -43,8 +43,12 @@ export class CGJ2023Pictures{
   static readonly CARD = new URL('@/img/projects/iut/cgj2023/card.webp', import.meta.url).href;
 }
 
+export class PostApoPictures {
+  static readonly CARD = new URL('@/img/projects/iut/escape-game-postapo/card.webp', import.meta.url).href; ;
+}
+
 export class MindSpiesPictures {
-  static readonly CARD = new URL('@/img/projects/iut/mind-spies/card.webp', import.meta.url).href; ;
+  static readonly CARD = new URL('@/img/projects/iut/escape-game-mindspies/card.webp', import.meta.url).href; ;
 }
 
 export class E3CetePictures {

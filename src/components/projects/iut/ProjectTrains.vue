@@ -34,7 +34,7 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
           <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="LanguageLinks.JAVAFX">JavaFX</a>.</p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="ToolIcons.JAVAFX">JavaFX</a>.</p>
         </li>
       </ul>
       <p>
