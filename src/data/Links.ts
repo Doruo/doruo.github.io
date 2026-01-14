@@ -66,7 +66,6 @@ export class ProjectLinks {
 }
 
 export class LanguageLinks {
-  static readonly HTML = 'https://www.w3schools.com/html'
   static readonly TS = 'https://www.typescriptlang.org'
   static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
   static readonly PYTHON = 'https://https://www.python.org'

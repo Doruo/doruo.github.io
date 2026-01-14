@@ -22,8 +22,7 @@ export class TrainsPictures {
   static readonly LOGO = new URL('@/img/projects/iut/trains/logo.webp', import.meta.url).href;
   static readonly INIT = new URL('@/img/projects/iut/trains/init.webp', import.meta.url).href;
   static readonly GAME_1 = new URL('@/img/projects/iut/trains/game1.webp', import.meta.url).href;
-  static readonly GAME_2 = new URL('@/img/projects/iut/trains/game1.webp', import.meta.url).href;
-  static readonly GAME_3 = new URL('@/img/projects/iut/trains/game1.webp', import.meta.url).href;
+  static readonly GAME_2 = new URL('@/img/projects/iut/trains/game2.webp', import.meta.url).href;
   static readonly RULES = new URL('/projects/trains/rules.pdf', import.meta.url).href;
 }
 

@@ -64,7 +64,7 @@ export class Projects {
     // /-----/ competition /-----/
     {
       id: 'cgj-2023',
-      title: 'Code Game Jam 2023: Time Mage Tournament',
+      title: 'Code Game Jam 2023',
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ProjectLinks.ITCHIO_TIME_MAGE_TOURNAMENT,

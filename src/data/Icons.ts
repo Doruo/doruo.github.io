@@ -9,7 +9,6 @@ export class SocialIcons {
 }
 
 export class LanguageIcons {
-  static readonly HTML = "https://skillicons.dev/icons?i=html"
   static readonly JS = "https://techstack-generator.vercel.app/js-icon.svg"
   static readonly TS = "https://techstack-generator.vercel.app/ts-icon.svg"
   static readonly PYTHON = "https://techstack-generator.vercel.app/python-icon.svg"

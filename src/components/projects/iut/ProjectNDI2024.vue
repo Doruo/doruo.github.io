@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { NDI2024Pictures } from '@/data/Pictures'
-import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -48,7 +48,6 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS" description="Routage et implémentation de l'océan" />
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface des articles" />
-      <SkillItem :img="LanguageIcons.HTML" :link="LanguageLinks.HTML" description="Rédaction des articles" />
     </template>
 
     <template #assets>
