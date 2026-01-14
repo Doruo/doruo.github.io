@@ -6,10 +6,10 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
   <!--FOOTER-->
   <footer>
     <ul>
-      <li>Made in <a :href="ToolLinks.VUEJS">Vue.js</a></li>
       <li><router-link :to="{ name: 'archives' }">Archives</router-link></li>
-      <li><a :href="GithubLinks.PORTFOLIO">Code source</a></li>
-      <li>&copy; 2024 - 2026 Marc Haye | Tous droits réservés</li>
+      <li><a :href="GithubLinks.PORTFOLIO">Source Code</a></li>
+      <li>100% Human made with <a :href="ToolLinks.VUEJS">Vue.js</a></li>
+      <li>&copy; 2024 - 2026 Marc Haye | All Rights Reserved</li>
     </ul>
   </footer>
 </template>
