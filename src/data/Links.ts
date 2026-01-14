@@ -25,6 +25,7 @@ export class WebsiteLinks {
   static readonly SCODOC = 'https://scodoc.org'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://gravatar.com/'
+  static readonly BITBUCKET = 'https://bitbucket.org/'
 }
 
 export class SocialLinks {

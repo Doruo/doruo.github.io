@@ -10,8 +10,8 @@ defineProps({
 <template>
   <!--LINK-->
   <div class="link-img">
-    <a :href="link" target="_blank">
-      <img :alt="alt" :src="img"/>
+    <a  :href="link" target="_blank">
+      <img :alt="alt" :src="img"  />
       {{text}}
     </a>
   </div>

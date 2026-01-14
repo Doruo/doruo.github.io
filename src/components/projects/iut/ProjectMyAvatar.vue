@@ -4,8 +4,9 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
- import { PoursuiteEtudesPictures } from '@/data/Pictures'
+ import { MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
 import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -22,15 +23,14 @@ import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteL
         fait avec le framework <a target="_blank" :href=ToolLinks.SYMFONY>Symfony</a>.
       </p>
       <p>
-        Ce service permet (en vous inscrivant) d’associer votre adresse mail à une photo de profil.
+        Ce service permet, en vous inscrivant, d’associer votre adresse mail à une photo de profil.
         Ainsi, à partir de votre adresse, les différents sites web et applications peuvent charger votre image de profil
         depuis ce service sans avoir besoin de stocker cette image de leur côté et sans demander à l’utilisateur d’uploader cette image.
-        Il suffit de faire une simple requête à Gravatar. Certains sites comme Bitbucket utilisent ce mécanisme.
+        Il suffit de faire une simple requête au site. Certains sites comme <a target="_blank" :href=WebsiteLinks.BITBUCKET>Bitbucket</a> utilisent ce mécanisme.
       </p>
       <p>
-        Ainsi, n’importe quelle application manipulant l’adresse email d’un utilisateur peut facilement d’aller charger une image depuis Gravatar.
+        Ainsi, n’importe quelle application manipulant l’adresse email d’un utilisateur peut facilement d’aller charger une image depuis My Avatar.
       </p>
-      <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
     <template #abilities>
@@ -40,12 +40,15 @@ import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteL
     </template>
 
     <template #assets>
+      <ProjectImageItem :link="MyAvatarPictures.SIGNUP" alt="signup" />
+      <ProjectImageItem :link="MyAvatarPictures.PROFILE" alt="profile" />
+      <ProjectImageItem :link="MyAvatarPictures.ADMIN" alt="admin" />
     </template>
 
     <template #links>
       <LinkItem :link="GithubLinks.MY_AVATAR" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="IUTLinks.IUT_MY_AVATAR" alt="Sujet du projet" />
-      <LinkItem :link="ProjectLinks.MY_AVATAR" alt="Voir le site" />
+      <LinkItem :link="ProjectLinks.MY_AVATAR" text="Voir le site" />
+      <LinkItem :link="IUTLinks.IUT_MY_AVATAR" text="Sujet du projet" />
     </template>
   </ProjectItem>
 </template>

@@ -11,6 +11,12 @@ export class PoursuiteEtudesPictures {
   static readonly SUBJECT = new URL('/projects/poursuite-etude/subject.pdf', import.meta.url).href;
 }
 
+export class MyAvatarPictures {
+  static readonly SIGNUP = new URL('@/img/projects/iut/my-avatar/signup.webp', import.meta.url).href;
+  static readonly PROFILE = new URL('@/img/projects/iut/my-avatar/profile.webp', import.meta.url).href;
+  static readonly ADMIN = new URL('@/img/projects/iut/my-avatar/admin.webp', import.meta.url).href;
+}
+
 export class TrainsPictures {
   static readonly CARD = "https://jeuresume.wordpress.com/wp-content/uploads/2017/08/trainsjr-a.jpg";
   static readonly LOGO = new URL('@/img/projects/iut/trains/logo.webp', import.meta.url).href;
