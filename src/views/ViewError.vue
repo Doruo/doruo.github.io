@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <!-- VIEW ERROR -->
   <div class="error">
