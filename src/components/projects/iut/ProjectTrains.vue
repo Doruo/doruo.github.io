@@ -62,10 +62,9 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="TrainsPictures.INIT" :alt="TrainsPictures.INIT" />
       <ProjectImageItem :link="TrainsPictures.GAME_1" :alt="TrainsPictures.GAME_1" />
       <ProjectImageItem :link="TrainsPictures.GAME_2" :alt="TrainsPictures.GAME_2" />
-      <ProjectImageItem :link="TrainsPictures.GAME_3" :alt="TrainsPictures.GAME_3" />
+      <ProjectImageItem :link="TrainsPictures.INIT" :alt="TrainsPictures.INIT" />
     </template>
 
     <template #links>
