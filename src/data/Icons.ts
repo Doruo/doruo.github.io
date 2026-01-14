@@ -8,25 +8,29 @@ export class SocialIcons {
   static readonly ITCHIO = new URL('@/img/social/itchio.webp', import.meta.url).href
 }
 
+export class LanguageIcons {
+  static readonly HTML = "https://skillicons.dev/icons?i=html"
+  static readonly JS = "https://techstack-generator.vercel.app/js-icon.svg"
+  static readonly TS = "https://techstack-generator.vercel.app/ts-icon.svg"
+  static readonly PYTHON = "https://techstack-generator.vercel.app/python-icon.svg"
+  static readonly JAVA = "https://techstack-generator.vercel.app/java-icon.svg"
+  static readonly GO = "https://skillicons.dev/icons?i=go"
+  static readonly PHP = "https://skillicons.dev/icons?i=php"
+ }
+
 export class ToolIcons {
   static readonly GIT = "https://skillicons.dev/icons?i=git"
   static readonly GITHUB = "https://techstack-generator.vercel.app/github-icon.svg"
   static readonly GITLAB = "https://skillicons.dev/icons?i=gitlab"
 
-  static readonly HTML = "https://skillicons.dev/icons?i=html"
   static readonly BOOTSTRAP = "https://skillicons.dev/icons?i=bootstrap"
   static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'
 
-  static readonly JS = "https://techstack-generator.vercel.app/js-icon.svg"
-  static readonly TS = "https://techstack-generator.vercel.app/ts-icon.svg"
-  static readonly PYTHON = "https://techstack-generator.vercel.app/python-icon.svg"
   static readonly NEXT = 'https://skillicons.dev/icons?i=next'
 
   static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
-  static readonly JAVA = "https://techstack-generator.vercel.app/java-icon.svg"
   static readonly JAVAFX = new URL('@/img/projects/tools/javafx.webp', import.meta.url).href
-  static readonly GO = "https://skillicons.dev/icons?i=go"
-  static readonly PHP = "https://skillicons.dev/icons?i=php"
+
   static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
 
   static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href

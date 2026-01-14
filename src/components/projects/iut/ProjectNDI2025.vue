@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { NDI2025Pictures } from '@/data/Pictures'
-import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -27,7 +27,7 @@ import { GithubLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
-      <SkillItem :img="ToolIcons.TS" :link="ToolLinks.TS" description="Implémentation du site et des jeux" />
+      <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface visuelle" />
       <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />
     </template>

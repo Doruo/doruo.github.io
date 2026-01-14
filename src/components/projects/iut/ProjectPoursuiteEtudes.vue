@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue';
 import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
-import { ToolIcons, SocialIcons } from '@/data/Icons';
+import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons';
 import { PoursuiteEtudesPictures } from '@/data/Pictures';
-import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
+import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
 
 </script>
 
@@ -64,7 +64,7 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions du projet, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
       <SkillItem :img="ToolIcons.LDAP" :link="ToolLinks.LDAP" description="Authentification sécurisée avec le service d'annuaire de l'Université de Montpellier" />
-      <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Développement coté serveur de l'application" />
+      <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Développement coté serveur de l'application" />
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface visuelle" />
       <SkillItem :img="ToolIcons.POSTGRE" :link="ToolLinks.POSTGRE" description="Stockage de données sécurisé pour l'application" />
       <SkillItem :img="ToolIcons.PLSQL" :link="ToolLinks.PLSQL" description="Fonctions et 'triggers' dynamiques pour la base de données" />

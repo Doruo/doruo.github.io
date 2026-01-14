@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { GameOfLifePictures } from '@/data/Pictures'
-import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -33,7 +33,7 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
-      <SkillItem :img="ToolIcons.GO" :link="ToolLinks.GO" description="Structure du jeu" />
+      <SkillItem :img="LanguageIcons.GO" :link="LanguageLinks.GO" description="Structure du jeu" />
       <SkillItem :img="ToolIcons.EBITENGINE" :link="ToolLinks.EBITENGINE" description="Interface graphique en 2D" />
     </template>
 

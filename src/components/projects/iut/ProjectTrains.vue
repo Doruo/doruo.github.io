@@ -4,9 +4,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
+import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { TrainsPictures } from '@/data/Pictures'
-import { GithubLinks, ToolLinks } from '@/data/Links'
+import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
 
 </script>
 
@@ -34,7 +34,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
           <p><u><b>Phase 2:</b></u> mise en œuvre des algorithmes de graphes.</p>
         </li>
         <li>
-          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="ToolLinks.JAVAFX">JavaFX</a>.</p>
+          <p><u><b>Phase 3:</b></u> implémentation d'une interface graphique sous <a :href="LanguageLinks.JAVAFX">JavaFX</a>.</p>
         </li>
       </ul>
       <p>
@@ -56,7 +56,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe." />
-      <SkillItem :img="ToolIcons.JAVA" :link="ToolLinks.JAVA" description="Implémentation de la logique du jeu" />
+      <SkillItem :img="LanguageIcons.JAVA" :link="LanguageLinks.JAVA" description="Implémentation de la logique du jeu" />
       <SkillItem :img="ToolIcons.JAVAFX" :link="ToolLinks.JAVAFX" description="Réalisation de l'interface graphique" />
       <SkillItem :img="ToolIcons.SCENEBUILDER" :link="ToolLinks.SCENE_BUILDER" description="Aide à la réalisation de l'interface graphique" />
     </template>

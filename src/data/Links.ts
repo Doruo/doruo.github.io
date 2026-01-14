@@ -64,32 +64,35 @@ export class ProjectLinks {
   static readonly NDI2025 = "https://killianrms.github.io/NDI2025"
 }
 
+export class LanguageLinks {
+  static readonly HTML = 'https://www.w3schools.com/html'
+  static readonly TS = 'https://www.typescriptlang.org'
+  static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
+  static readonly PYTHON = 'https://https://www.python.org'
+  static readonly PHP = 'https://php.net'
+  static readonly JAVA = 'https://dev.java'
+  static readonly GO = 'https://go.dev'
+}
+
 export class ToolLinks {
   static readonly GIT = 'https://git-scm.com'
   static readonly GITLAB = 'https://gitlab.com'
   static readonly GITHUB = 'https://github.com'
 
-  static readonly HTML = 'https://www.w3schools.com/html'
   static readonly BOOTSTRAP = 'https://getbootstrap.com'
   static readonly TAILWIND = 'https://tailwindcss.com'
 
-  static readonly TS = 'https://www.typescriptlang.org'
-  static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
   static readonly NODE = 'https://nodejs.org'
   static readonly NEXT = 'https://nextjs.org'
 
-  static readonly PYTHON = 'https://https://www.python.org'
   static readonly LDAP = 'https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly POSTGRE = 'https://www.postgresql.org'
   static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
 
-  static readonly PHP = 'https://php.net'
-  static readonly JAVA = 'https://dev.java'
   static readonly JAVAFX = 'https://openjfx.io'
   static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly VUEJS = 'https://vuejs.org'
   static readonly MYSQL = 'https://www.mysql.com/'
-  static readonly GO = 'https://go.dev'
   static readonly SYMFONY = 'https://symfony.com'
   static readonly EXPRESS = 'https://expressjs.com'
 

@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { SocialIcons, ToolIcons } from '@/data/Icons'
+import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
  import { PoursuiteEtudesPictures } from '@/data/Pictures'
-import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -35,9 +35,9 @@ import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe" />
-      <SkillItem :img="ToolIcons.PHP" :link="ToolLinks.PHP" description="Implémentation de Symfony" />
+      <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Implémentation de Symfony" />
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page visuelle" />
-      <SkillItem :img="ToolIcons.JS" :link="ToolLinks.JS" description="Requêtes AJAX" />
+      <SkillItem :img="LanguageIcons.JS" :link="LanguageLinks.JS" description="Requêtes AJAX" />
     </template>
 
     <template #assets>

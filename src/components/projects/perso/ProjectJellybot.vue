@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { SocialIcons, ToolIcons } from '@/data/Icons'
+import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
 import { JellyBotPictures } from '@/data/Pictures'
-import { GithubLinks, ToolLinks } from '@/data/Links'
+import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -36,7 +36,7 @@ import { GithubLinks, ToolLinks } from '@/data/Links'
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
-      <SkillItem :img="ToolIcons.PYTHON" :link="ToolLinks.PYTHON" description="Programmation du bot" />
+      <SkillItem :img="LanguageIcons.PYTHON" :link="LanguageLinks.PYTHON" description="Programmation du bot" />
     </template>
 
     <template #assets>
