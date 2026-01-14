@@ -54,11 +54,11 @@ import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Link
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
       <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Développement coté serveur de l'application" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
-      <SkillItem :img="LanguageIcons.HTML" :link="LanguageLinks.HTML" description="Développement de l'interface utilisateur" />
-      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
       <SkillItem :img="LanguageIcons.JS" :link="LanguageLinks.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
       <SkillItem :img="ToolIcons.MYSQL" :link="ToolLinks.MYSQL" description="Déploiement de la base de donnée sécurisée" />
       <SkillItem :img="ToolIcons.REST" link="" description="Norme de communication avec l'API Elden Ring" />
+      <SkillItem :img="LanguageIcons.HTML" :link="LanguageLinks.HTML" description="Développement de l'interface utilisateur" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
     </template>
 
     <template #assets>
