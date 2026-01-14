@@ -13,8 +13,8 @@
         </legend>
         <h2>2e Année</h2>
         <ul>
-          <li><a target="_blank" href="/projects/a2/portfolio/HAYE_Q2_Portfolio_BUT_INFO_Annee2.html">Portfolio - 2e Année</a></li>
-          <li><a target="_blank" href="/projects/a2/DevWebS4/indexDevWebS4.html">Développement Web - JavaScript</a></li>
+          <li><a target="_blank" href="/portfolio">Portfolio - 2e Année</a></li>
+          <li><a target="_blank" href="/projects/a2/DevWebS4">Développement Web - JavaScript</a></li>
         </ul>
         <h2>3e Année</h2>
         <ul>
