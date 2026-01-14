@@ -14,7 +14,7 @@ function videVilles(){
 }
 
 function requeteAJAX(stringVille,callback) {
-    let url = "http://marchaye.freeboxos.fr/A2/DevWebS4/TD/TD5/src/php/requeteVille.php?ville=" + encodeURIComponent(stringVille);
+    let url = "https://marchaye.fr/projects/tds-dev-web/TD/TD4/src/php/requeteVille.php?ville=" + encodeURIComponent(stringVille);
     let requete = new XMLHttpRequest();
     requete.open("GET", url, true);
     requete.addEventListener("load", function () {
