@@ -18,7 +18,7 @@
         <h2>2e Année</h2>
         <ul>
           <li><a target="_blank" href="/portfolio">Portfolio - 2e Année</a></li>
-          <li><a target="_blank" href="/projects/a2/DevWebS4">Développement Web - JavaScript & Async</a></li>
+          <li><a target="_blank" href="/projects/a2/tds-dev-web">Développement Web - JavaScript & Async</a></li>
         </ul>
         <h2>3e Année</h2>
         <ul>

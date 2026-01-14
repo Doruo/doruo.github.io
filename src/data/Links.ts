@@ -5,10 +5,10 @@ export class IUTLinks {
   static readonly LEBRETON = 'https://romainlebreton.github.io'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
   static readonly IUT_DEV_WEB_JS = this.LEBRETON + '/R.4.01-DeveloppementWeb-JavaScript/'
-  static readonly FAN_CLUB_CHUCK_NORRIS = '/projects/a1/fan-club-chuck-norris'
-  static readonly ESCAPE_GAME_MIND_SPIES = '/projects/a1/sae-escape-game-mindspies'
-  static readonly ESCAPE_GAME_POST_APO = '/projects/a1/sae-escape-game-postapo'
-  static readonly CONTROVERSE_CRYPTO = '/projects/a1/sae-controverse-crypto'
+  static readonly FAN_CLUB_CHUCK_NORRIS = '/projects/fan-club-chuck-norris'
+  static readonly ESCAPE_GAME_MIND_SPIES = '/projects/escape-game-mindspies'
+  static readonly ESCAPE_GAME_POST_APO = '/projects/escape-game-postapo'
+  static readonly CONTROVERSE_CRYPTO = '/projects/controverse-crypto'
 
   // IUT Advanced web dev
   static readonly GASQUET = 'https://mgasquet.github.io/'
