@@ -2,7 +2,7 @@
 lang: fr
 ---
 
-# ![](ressources/logo.jpeg) R.4.01 Développement Web - JavaScript
+# ![](img/icones/logo.jpeg) R.4.01 Développement Web - JavaScript
 
 ### IUT Montpellier-Sète – Département Informatique
 
@@ -225,7 +225,7 @@ Vous allez créer deux effets différents de succession d’images.
 
    Ceci permet de créer une variable `chb` de type **timer**. Réactualisez la page. L’instruction précédente lance en boucle la fonction `changeBanniereV1` à intervalles réguliers de 6000 ms.
 
-6. Coupez l’ensemble de votre script, qui commence à être imposant, et collez-le dans un fichier `script_td1.js` du répertoire `public_html/JS/TD/TD1/src/js`. Incorporez la balise suivante dans le *HTML* dans la balise `<head>`, ce qui permettra d’insérer l’ensemble du script :
+6. Coupez l’ensemble de votre script, qui commence à être imposant, et collez-le dans un fichier `script_td1.js` du répertoire `public_html/JS/TD/TD1/js`. Incorporez la balise suivante dans le *HTML* dans la balise `<head>`, ce qui permettra d’insérer l’ensemble du script :
 
    ```html
    <script defer type="text/javascript" src="js/script_td1.js"></script>
