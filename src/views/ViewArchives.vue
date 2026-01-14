@@ -11,10 +11,14 @@
         <legend>
           <h2>IUT</h2>
         </legend>
+        <h2>1e Année</h2>
+        <ul>
+          <li><a target="_blank" href="/portfolio/HAYE_S5_Portfolio_BUT_INFO_Annee1.pdf">Portfolio - 1e Année</a></li>
+        </ul>
         <h2>2e Année</h2>
         <ul>
           <li><a target="_blank" href="/portfolio">Portfolio - 2e Année</a></li>
-          <li><a target="_blank" href="/projects/a2/DevWebS4">Développement Web - JavaScript</a></li>
+          <li><a target="_blank" href="/projects/a2/DevWebS4">Développement Web - JavaScript & Async</a></li>
         </ul>
         <h2>3e Année</h2>
         <ul>
