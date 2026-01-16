@@ -35,9 +35,9 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
-      <PortraitItem :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
-      <PortraitItem :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
+      <PortraitItem name="Mattéo Benhalima" :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
+      <PortraitItem name="Hicham Ferhani" :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
+      <PortraitItem name="Yann Bodiguel" :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
     </template>
 
     <template #abilities>
