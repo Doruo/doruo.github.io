@@ -159,7 +159,9 @@ section {
 .skill-card:hover,
 .project-card a img:hover,
 .link-img a img:hover,
-.skill-card a img:hover{
+.skill-card a img:hover,
+.portrait:hover
+{
   transform: scale(1.04);
 }
 
