@@ -7,7 +7,7 @@ import AboutLinks from './AboutSocialLinks.vue'
   <section id="contact" class="contact">
     <div class="container">
       <h2>Mon réseau</h2>
-      <p>Mon profil vous intéresse ? Je suis à l'écoute de toute opportunité !</p>
+      <p>Mon profil vous intéresse ? Je suis à votre écoute pour toute opportunité !</p>
       <AboutLinks />
     </div>
   </section>

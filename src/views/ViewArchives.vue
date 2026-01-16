@@ -6,6 +6,9 @@
       <p>
         J'archive ici mes réalisations qui n'ont pas de page dédié, afin qu'ils restent accessibles.
       </p>
+      <p>
+        (PAGE EN TRAVAUX!)
+      </p>
 
       <fieldset class="fieldset-archives">
         <legend>
