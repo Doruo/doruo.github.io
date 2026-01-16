@@ -6,10 +6,8 @@
       <p>
         J'archive ici mes réalisations qui n'ont pas de page dédié, afin qu'ils restent accessibles.
       </p>
-      <p>
-        (PAGE EN TRAVAUX!)
-      </p>
 
+      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <fieldset class="fieldset-archives">
         <legend>
           <h2>IUT</h2>

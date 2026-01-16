@@ -36,13 +36,17 @@ export class IUTLinks {
 
 export class WebsiteLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
-  static readonly NDI = 'https://nuitdelinfo.com/ '
   static readonly ELDEN_RING = 'https://bandainamcoent.eu/elden-ring/elden-ring'
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com'
   static readonly SCODOC = 'https://scodoc.org'
   static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://gravatar.com/'
   static readonly BITBUCKET = 'https://bitbucket.org/'
+
+  static readonly NDI = 'https://nuitdelinfo.com/'
+  static readonly NDI_CHALLENGES = this.NDI + "inscription/defis/liste"
+  static readonly NDI_2024_SUBJECT = this.NDI + "materiel_communication/2024/La%20Nuit%20de%20l’Info%202024.pdf"
+  static readonly NDI_2025_SUBJECT = this.NDI + 'materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf'
 }
 
 export class SocialLinks {
@@ -58,7 +62,7 @@ export class SocialLinks {
 
 export class GithubLinks {
   static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
-  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'eldenBuild'
+  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'elden-build'
   static readonly TRAINS = SocialLinks.GITHUB + 'trains'
   static readonly MESH = SocialLinks.GITHUB + 'mesh'
   static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'

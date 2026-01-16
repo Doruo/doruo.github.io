@@ -19,7 +19,7 @@ import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Link
 
     <template #description>
       <p>
-        Site web de gestion de build à but communautaire du jeu
+        Site web de gestion de build à but communautaire du jeu vidéo
         <a :href="WebsiteLinks.ELDEN_RING">Elden Ring</a>.
       </p>
       <p>
@@ -36,7 +36,7 @@ import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Link
       <p>
         Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript,
         les requêtes AJAX, l'architecture MVC et ses limites. L'application communique via des
-        requêtes HTTP asynchrones vers une <a :href="WebsiteLinks.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
+        requêtes HTTP asynchrones vers une <a target="_blank" :href="WebsiteLinks.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
       </p>
       <p>
         Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie

@@ -19,6 +19,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
     <template #title>Conway's Game of Life</template>
 
     <template #description>
+      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
         Le <a :href=WebsiteLinks.GAME_OF_LIFE target="_blank">Jeu de la Vie</a> est une simulation mathématique imaginé par
         <a href="https://fr.wikipedia.org/wiki/John_Horton_Conway" target="_blank">John Horton Conway</a> en 1970.

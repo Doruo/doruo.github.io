@@ -18,6 +18,7 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     <template #title>Jellybot</template>
 
     <template #description>
+      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
         Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
       </p>
@@ -31,7 +32,6 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
         qu'il s'agisse de contenu vidéo (films et séries, télévision),
         comme audio (musique, livres audio, podcasts).
       </p>
-      <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
     <template #abilities>

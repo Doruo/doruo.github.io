@@ -19,6 +19,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     <template #title>My Avatar</template>
 
     <template #description>
+      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
         Application de gestion d’avatar, inspiré de <a target="_blank" :href=WebsiteLinks.GRAVATAR>Gravatar</a>,
         fait avec le framework <a target="_blank" :href=ToolLinks.SYMFONY>Symfony</a>.

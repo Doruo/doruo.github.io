@@ -16,10 +16,8 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
       <img alt="logo ndi 2024" :src="NDI2024Pictures.LOGO" />
     </template>
 
-    <template #title>NUIT DE L'INFO 2024</template>
-
     <template #description>
-      <h3>Race For Water</h3>
+      <h2>Race For Water</h2>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2024</a>.
@@ -73,6 +71,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
 
     <template #links>
       <LinkItem :link="GithubLinks.NDI2024" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="WebsiteLinks.NDI_2024_SUBJECT" :img="ToolIcons.PDF" text="Sujet" />
     </template>
   </ProjectItem>
 </template>
