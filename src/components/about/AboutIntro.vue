@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ToolIcons } from '@/data/Icons';
-import AboutPortrait from './AboutPortrait.vue'
 import LinkItem from '../links/LinkItem.vue';
+import PortraitItem from '../portraits/PortraitItem.vue';
+import { CollaboratorLinks, SocialLinks, WebsiteLinks } from '@/data/Links';
+import { CollaboratorPictures } from '@/data/Pictures';
 </script>
 
 <template>
@@ -9,7 +11,7 @@ import LinkItem from '../links/LinkItem.vue';
   <section class="intro">
     <div class="intro-content">
       <p>
-        Etudiant à l'Université de Montpellier, je suis passionné par
+        Etudiant à <a :href=WebsiteLinks.IUT>l'Université de Montpellier</a>, je suis passionné par
         <b>l'informatique, la guitare et le sport.</b>
       </p>
       <p>
@@ -23,9 +25,9 @@ import LinkItem from '../links/LinkItem.vue';
       </p>
 
       <h1>
-        <LinkItem link="/CV/CV-MARC-HAYE.pdf" :img="ToolIcons.PDF" alt="CV" text="CV"/>
+        <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV"/>
       </h1>
     </div>
-    <AboutPortrait />
+    <PortraitItem :link="CollaboratorLinks.MARC_HAYE" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"/>
   </section>
 </template>

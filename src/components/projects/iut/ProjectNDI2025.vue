@@ -4,14 +4,15 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
-import { NDI2025Pictures } from '@/data/Pictures'
-import { GithubLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { CollaboratorPictures, NDI2025Pictures } from '@/data/Pictures'
+import { CollaboratorLinks, GithubLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import PortraitItem from '@/components/portraits/PortraitItem.vue'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi_logo" :src="NDI2025Pictures.LOGO" />
+      <img alt="logo ndi 2025" :src="NDI2025Pictures.LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2025</template>
@@ -24,16 +25,19 @@ import { GithubLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } fro
       <p>(PAGE EN TRAVAUX !)</p>
     </template>
 
+    <template #collaborators>
+      <PortraitItem :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN_BONS"/>
+      <PortraitItem :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL_NICOLAS"/>
+      <PortraitItem :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL_RIVAS"/>
+      <PortraitItem :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN_RAMUS"/>
+    </template>
+
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
       <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface utilisateur" />
       <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />
-    </template>
-
-    <template #assets>
-
     </template>
 
     <template #links>

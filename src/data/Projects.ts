@@ -37,7 +37,7 @@ export class Projects {
     },
     {
       id: 'stage-itesoft',
-      title: 'Stage - ITESOFT (CONFIDENTIEL)',
+      title: 'Stage ITESOFT (confidentiel)',
       showMoreInfo: false,
       background: '',
       websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',

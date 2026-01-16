@@ -5,8 +5,9 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
-import { TrainsPictures } from '@/data/Pictures'
-import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
+import { CollaboratorPictures, TrainsPictures } from '@/data/Pictures'
+import { CollaboratorLinks, GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
+import PortraitItem from '@/components/portraits/PortraitItem.vue'
 
 </script>
 
@@ -52,6 +53,10 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
         afin de déterminer en temps réel et de façon efficace le chemin le plus court pour
         l'ordinateur.
       </p>
+    </template>
+
+    <template #collaborators>
+      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
     </template>
 
     <template #abilities>

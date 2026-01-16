@@ -23,12 +23,13 @@ const routes = [
   { path: '/projects', name: 'projects', component: ViewProjects },
   { path: '/archives', name: 'archives', component: ViewArchives },
   // projects
-  { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude },
-  { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains },
+  { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude, props: { group: true }
+  },
+  { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains, props: { group: true } },
   { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
-  { path: '/projects/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024 },
-  { path: '/projects/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025 },
-  { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar },
+  { path: '/projects/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024, props: { group: true } },
+  { path: '/projects/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025, props: { group: true } },
+  { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar, props: { group: true } },
   { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
    { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
   // error

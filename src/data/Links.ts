@@ -1,3 +1,20 @@
+export class CollaboratorLinks {
+  static readonly MARC_HAYE = "https://www.linkedin.com/in/marc-haye/"
+  static readonly PAULO_MOREIRA = "https://www.linkedin.com/in/paulo-moreira-pereira/"
+  static readonly REMI_SOULIER = "https://www.linkedin.com/in/remi-soulier/"
+  static readonly PACO_GILLET = "https://www.linkedin.com/in/paco-gillet/"
+  static readonly HICHAM_FERHANI = "https://www.linkedin.com/in/hicham-ferhani/"
+  static readonly EVAN_NUNES = "https://www.linkedin.com/in/evan-nunes/"
+  static readonly ESTEBAN_REMOND = "https://www.linkedin.com/in/esteban-rémond/"
+  static readonly DAMIEN_ROSTAING = "https://www.linkedin.com/in/damien-rostaing/"
+  static readonly MAEL_NICOLAS = "https://www.linkedin.com/in/maël-nicolas-95b2742ab/"
+  static readonly YANN_BODIGUEL = "https://www.linkedin.com/in/green-jacket/"
+  static readonly MATTEO_BENHALIMA = "https://www.linkedin.com/in/matt%C3%A9o-benhalima/"
+  static readonly RAPHAEL_RIVAS = "https://www.linkedin.com/in/raphaelrivas/"
+  static readonly KILLIAN_RAMUS = "https://www.linkedin.com/in/killianrms/"
+  static readonly CYPRIEN_BONS = "https://www.linkedin.com/in/cyprien-bons/"
+}
+
 export class IUTLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
 
@@ -31,6 +48,7 @@ export class WebsiteLinks {
 export class SocialLinks {
   private static readonly mail= "marc.haye.pro@protonmail.com"
   static readonly MAIL = 'mailto:' + this.mail;
+  static readonly CV = "/CV/CV-MARC-HAYE.pdf";
 
   static readonly GITHUB = 'https://github.com/doruo/'
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'

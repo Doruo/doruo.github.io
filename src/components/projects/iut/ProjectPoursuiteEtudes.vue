@@ -5,8 +5,9 @@ import SkillItem from '@/components/skills/SkillItem.vue';
 import LinkItem from '@/components/links/LinkItem.vue';
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons';
-import { PoursuiteEtudesPictures } from '@/data/Pictures';
-import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
+import { CollaboratorPictures, PoursuiteEtudesPictures } from '@/data/Pictures';
+import { CollaboratorLinks, GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links';
+import PortraitItem from '@/components/portraits/PortraitItem.vue';
 
 </script>
 
@@ -58,6 +59,13 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
         developpement, à faire en sorte que l’équipe soit alignée sur le modèle
         <a target="_blank" :href=ToolLinks.SCRUM>Scrum</a>.
       </p>
+    </template>
+
+    <template #collaborators>
+      <PortraitItem :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
+      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
+      <PortraitItem :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
     </template>
 
     <template #abilities>

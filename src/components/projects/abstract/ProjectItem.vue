@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps({
+  group: { type: Boolean, required: false, },
+})
+</script>
+
 <template>
   <!-- PROJECT ITEM -->
   <section class="intro">
@@ -8,6 +14,16 @@
         <slot name="title"></slot>
       </h2>
       <slot name="description"></slot>
+    </div>
+  </section>
+
+  <section class="projects" v-if="group">
+    <!-- PROJECT COLLABORATORS -->
+    <div class="project-content-image">
+      <h2>Collaborateurs</h2>
+      <div class="collaborators-grid">
+        <slot name="collaborators"></slot>
+      </div>
     </div>
   </section>
 

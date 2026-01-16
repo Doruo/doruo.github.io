@@ -242,6 +242,20 @@ a, .project-links a {
   width: 90px;
 }
 
+/* COLLABORATORS */
+
+.collaborators-grid {
+  width: 100%;
+  margin-left: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborators-grid .container-portrait {
+  width: 50%;
+}
+
 /* ARCHIVES */
 
 .archives {

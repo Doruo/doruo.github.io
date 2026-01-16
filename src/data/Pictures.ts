@@ -1,3 +1,20 @@
+export class CollaboratorPictures {
+  static readonly MARC_HAYE = new URL('@/img/portrait/marc_haye.webp', import.meta.url).href
+  static readonly PAULO_MOREIRA = "https://media.licdn.com/dms/image/v2/D4E03AQGO4pv8x4WSHA/profile-displayphoto-shrink_200_200/B4EZTGdTInGYAY-/0/1738496358237?e=1770249600&v=beta&t=PWVHNJK57-SYW42UyyomOfPlY-4nDLEYw1Z3eo0Kxl4"
+  static readonly REMI_SOULIER = "https://media.licdn.com/dms/image/v2/D5603AQFCmtUH-_C3WQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707395744974?e=1770249600&v=beta&t=Knnl7RWyFq5GZt3Ce2w9MK2mBfPltWiUf_tn_lKv1uU"
+  static readonly PACO_GILLET = "https://media.licdn.com/dms/image/v2/D4E35AQGr1GtS2lLWzg/profile-framedphoto-shrink_100_100/B4EZnjfySxIoAk-/0/1760458385085?e=1769191200&v=beta&t=H7lN_SxB7zdhz2V1Bf1Z0wWCybjGY1soSC6iyzeWbAg"
+  static readonly HICHAM_FERHANI = "https://media.licdn.com/dms/image/v2/D4E03AQHaSUhu-WFCZQ/profile-displayphoto-scale_100_100/B4EZueMj.qHcAg-/0/1767885652753?e=1770249600&v=beta&t=OiCu-BqqCBGCdfZSHzZc7OY7DzE2v8I3wMXz6vCfpEg"
+  static readonly EVAN_NUNES = "https://media.licdn.com/dms/image/v2/D4E35AQFNIlRoyL8AyA/profile-framedphoto-shrink_100_100/B4EZaF8ORDHEAk-/0/1746003879314?e=1769191200&v=beta&t=4KYEa9rEMQwwJ8A1SzU7bRA2zGgF-RJWXUfVkDcY578"
+  static readonly ESTEBAN_REMOND = "https://media.licdn.com/dms/image/v2/D4E03AQGKUBL3BZkyvg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1730112997744?e=1770249600&v=beta&t=lyh0u1nS8T66YStsCwR8Y84XDidu-Ly90jWtCcVlM8E"
+  static readonly DAMIEN_ROSTAING = "https://media.licdn.com/dms/image/v2/D4E35AQEd7kDyVGHFdg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1733823732780?e=1769191200&v=beta&t=ITbd20ZQreNFWYe_o8Yfc_W_HH9lXHPGwxzWMsxprHo"
+  static readonly MAEL_NICOLAS = "https://media.licdn.com/dms/image/v2/D5603AQEuLEqgoWFp2g/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732012483624?e=1770249600&v=beta&t=MK0Shno-RoxDBdLNSEHS1b87ET8EDUQxN5PbL27N_tc"
+  static readonly YANN_BODIGUEL = "https://media.licdn.com/dms/image/v2/D5635AQGmigQxpjCQOA/profile-framedphoto-shrink_100_100/B56ZXsK4R_HQAo-/0/1743424030152?e=1769191200&v=beta&t=rZdC3OJy32XzOJnQIvSd0qDOhrcmXDshtIqUeBoKuJI"
+  static readonly MATTEO_BENHALIMA = "https://media.licdn.com/dms/image/v2/D4D35AQEg7jcT3ZOlfg/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1731590734920?e=1769191200&v=beta&t=Cz26IMx9kkJKjptl5Wbr6X5hJyrPMlydkKnNzO8ULcM"
+  static readonly RAPHAEL_RIVAS = "https://media.licdn.com/dms/image/v2/D5603AQHsPymzhW0tRg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1731370738284?e=1770249600&v=beta&t=aqnZ0gfycWTAqszyxREI6945w4SoTxGAt75NWfQsqE4"
+  static readonly KILLIAN_RAMUS = "https://media.licdn.com/dms/image/v2/D5603AQH2urcHa0Y6Cw/profile-displayphoto-scale_100_100/B56ZkVHaXJHQAg-/0/1756995889662?e=1770249600&v=beta&t=EYaPaXi5pEu9e_DVilB39yHN6ZaoEqXcP9hheamsmTQ"
+  static readonly CYPRIEN_BONS = "https://media.licdn.com/dms/image/v2/D4E03AQH36XoiIQC81Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728916319659?e=1770249600&v=beta&t=lRFZlMmlzZuJeIzxLCu0JkbLkdWywnCARWCQ751MGtQ"
+}
+
 // IUT
 
 export class PoursuiteEtudesPictures {

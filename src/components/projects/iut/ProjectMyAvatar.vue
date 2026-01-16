@@ -4,9 +4,10 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
- import { MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
-import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+ import { CollaboratorPictures, MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
+import { CollaboratorLinks, GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
+import PortraitItem from '@/components/portraits/PortraitItem.vue'
 </script>
 
 <template>
@@ -31,6 +32,12 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <p>
         Ainsi, n’importe quelle application manipulant l’adresse email d’un utilisateur peut facilement d’aller charger une image depuis My Avatar.
       </p>
+    </template>
+
+    <template #collaborators>
+      <PortraitItem :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
+      <PortraitItem :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
+      <PortraitItem :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
     </template>
 
     <template #abilities>

@@ -5,14 +5,15 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { NDI2024Pictures } from '@/data/Pictures'
-import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { CollaboratorPictures, NDI2024Pictures } from '@/data/Pictures'
+import { CollaboratorLinks, GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import PortraitItem from '@/components/portraits/PortraitItem.vue'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="ndi2024" :src="NDI2024Pictures.LOGO" />
+      <img alt="logo ndi 2024" :src="NDI2024Pictures.LOGO" />
     </template>
 
     <template #title>NUIT DE L'INFO 2024</template>
@@ -42,6 +43,14 @@ import { GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
         requêtes lorsque l'utilisateur souhaite accéder aux différentes pages lorsqu'il clique sur
         les différents organes.
       </p>
+    </template>
+
+    <template #collaborators>
+      <PortraitItem :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
+      <PortraitItem :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
+      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
+      <PortraitItem :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
     </template>
 
     <template #abilities>
