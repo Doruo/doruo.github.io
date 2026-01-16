@@ -26,10 +26,10 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN_BONS"/>
-      <PortraitItem :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL_NICOLAS"/>
-      <PortraitItem :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL_RIVAS"/>
-      <PortraitItem :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN_RAMUS"/>
+      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN_BONS"/>
+      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL_NICOLAS"/>
+      <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL_RIVAS"/>
+      <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN_RAMUS"/>
     </template>
 
     <template #abilities>

@@ -46,11 +46,11 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
-      <PortraitItem :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
-      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
-      <PortraitItem :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
-      <PortraitItem :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
+      <PortraitItem name="Mattéo Benhalima" :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
+      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
+      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem name="Paulo Moreira" :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
+      <PortraitItem name="Yann Bodiguel" :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
     </template>
 
     <template #abilities>

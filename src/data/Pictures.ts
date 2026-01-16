@@ -1,5 +1,5 @@
 export class CollaboratorPictures {
-  static readonly MARC_HAYE = new URL('@/img/portrait/marc_haye.webp', import.meta.url).href
+  static readonly MARC_HAYE = "https://media.licdn.com/dms/image/v2/D5603AQEqlAc8Opa0qQ/profile-displayphoto-scale_200_200/B56ZkVLEA0G4Ac-/0/1756996846294?e=1770249600&v=beta&t=FojCUVQGnU_s-HTNv5vLbkRtmm7W3AtxstXM2QkdjKc"
   static readonly PAULO_MOREIRA = "https://media.licdn.com/dms/image/v2/D4E03AQGO4pv8x4WSHA/profile-displayphoto-shrink_200_200/B4EZTGdTInGYAY-/0/1738496358237?e=1770249600&v=beta&t=PWVHNJK57-SYW42UyyomOfPlY-4nDLEYw1Z3eo0Kxl4"
   static readonly REMI_SOULIER = "https://media.licdn.com/dms/image/v2/D5603AQFCmtUH-_C3WQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707395744974?e=1770249600&v=beta&t=Knnl7RWyFq5GZt3Ce2w9MK2mBfPltWiUf_tn_lKv1uU"
   static readonly PACO_GILLET = "https://media.licdn.com/dms/image/v2/D4E35AQGr1GtS2lLWzg/profile-framedphoto-shrink_100_100/B4EZnjfySxIoAk-/0/1760458385085?e=1769191200&v=beta&t=H7lN_SxB7zdhz2V1Bf1Z0wWCybjGY1soSC6iyzeWbAg"

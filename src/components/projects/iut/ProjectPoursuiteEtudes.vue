@@ -62,10 +62,10 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue';
     </template>
 
     <template #collaborators>
-      <PortraitItem :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
-      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
-      <PortraitItem :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
-      <PortraitItem :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
+      <PortraitItem name="Paulo Moreira" :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
+      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
+      <PortraitItem name="Hicham Ferhani" :link="CollaboratorLinks.HICHAM_FERHANI" :img="CollaboratorPictures.HICHAM_FERHANI" alt="HICHAM_FERHANI"/>
     </template>
 
     <template #abilities>

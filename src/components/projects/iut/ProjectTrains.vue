@@ -56,7 +56,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
     </template>
 
     <template #abilities>
