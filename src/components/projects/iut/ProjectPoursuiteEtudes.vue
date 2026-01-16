@@ -13,7 +13,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logoIUT" :src="PoursuiteEtudesPictures.LOGO_IUT" />
+      <img alt="logo_iut" :src="PoursuiteEtudesPictures.LOGO_IUT" />
     </template>
 
     <template #title>Application d'avis de poursuite d'études</template>
@@ -21,7 +21,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
     <template #description>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de
-        Montpellier-Sète, le logiciel libre <a :href="WebsiteLinks.SCODOC">Scodoc</a> est utilisé pour
+        Montpellier-Sète, le logiciel libre <a target="_blank" :href="WebsiteLinks.SCODOC">Scodoc</a> est utilisé pour
         gérer les absences et les notes des étudiants tout au long de leur scolarité à l’IUT.
       </p>
 
@@ -47,7 +47,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
 
       <p>
         Mon rôle fut de concevoir, développer en équipe, et superviser le déroulement du projet, et
-        animer la mêlée (<a :href="ToolLinks.SCRUM">Scrum</a>) pour l'équipe dans son ensemble en
+        animer la mêlée (<a target="_blank" :href="ToolLinks.SCRUM">Scrum</a>) pour l'équipe dans son ensemble en
         s'assurant que le framework Scrum est respecté. Mon travail consistait à aider à devenir
         autonome grâce à des techniques comme l’auto-organisation et la résolution des conflits.
       </p>
@@ -56,7 +56,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
         Contrairement à un chef de projet traditionnel dont l’objectif est de maintenir l’équipe et
         le projet sur la bonne voie, mon but consiste ici, en plus d'avoir contribué au
         developpement, à faire en sorte que l’équipe soit alignée sur le modèle
-        <a href="https://chef-de-projet.fr/methodologie-scrum/">Scrum</a>.
+        <a target="_blank" :href=ToolLinks.SCRUM>Scrum</a>.
       </p>
     </template>
 

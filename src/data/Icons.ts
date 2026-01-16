@@ -27,7 +27,9 @@ export class ToolIcons {
 
   static readonly NEXT = 'https://skillicons.dev/icons?i=next'
   static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
+
   static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
+  static readonly TWIG = "https://twig.symfony.com/images/logo.md.png"
 
   static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href
   static readonly CHARTJS = new URL('@/img/projects/tools/chartjs.svg', import.meta.url).href

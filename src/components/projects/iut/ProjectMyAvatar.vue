@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { SocialIcons, ToolIcons } from '@/data/Icons'
+import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
  import { MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
-import { GithubLinks, IUTLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
@@ -36,7 +36,11 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     <template #abilities>
       <SkillItem :img="ToolIcons.GITLAB" :link="ToolLinks.GITLAB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.SYMFONY" :link="ToolLinks.SYMFONY" description="Développement de l'API" />
-      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Aide au déploiement de l'application" />
+      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation de l'application" />
+
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Visuel de l'interface" />
+      <SkillItem :img="LanguageIcons.JS" :link="LanguageLinks.JS" description="Asynchronisme de l'interface" />
+      <SkillItem :img="ToolIcons.TWIG" :link="ToolLinks.TWIG" description="Pages dynamiques et sécurisées" />
     </template>
 
     <template #assets>

@@ -67,10 +67,10 @@ export class ProjectLinks {
 
 export class LanguageLinks {
   static readonly TS = 'https://www.typescriptlang.org'
-  static readonly JS = 'https://developer.mozilla.org/fr/docs/Web/JavaScript'
-  static readonly PYTHON = 'https://https://www.python.org'
-  static readonly PHP = 'https://php.net'
-  static readonly JAVA = 'https://dev.java'
+  static readonly JS = 'https://web.dev/javascript'
+  static readonly PYTHON = 'https://www.python.org'
+  static readonly PHP = 'https://www.php.net/releases/8.5/en.php'
+  static readonly JAVA = 'https://www.java.com/'
   static readonly GO = 'https://go.dev'
 }
 
@@ -85,15 +85,18 @@ export class ToolLinks {
   static readonly NODE = 'https://nodejs.org'
   static readonly NEXT = 'https://nextjs.org'
 
-  static readonly LDAP = 'https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
+  static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly POSTGRE = 'https://www.postgresql.org'
   static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
 
   static readonly JAVAFX = 'https://openjfx.io'
   static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly VUEJS = 'https://vuejs.org'
-  static readonly MYSQL = 'https://www.mysql.com/'
+  static readonly MYSQL = 'https://www.mysql.com'
+
   static readonly SYMFONY = 'https://symfony.com'
+  static readonly TWIG = 'https://twig.symfony.com/'
+
   static readonly EXPRESS = 'https://expressjs.com'
 
   static readonly DOCKER = 'https://docker.com'
