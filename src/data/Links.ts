@@ -1,18 +1,19 @@
 export class CollaboratorLinks {
-  static readonly MARC_HAYE = "https://www.linkedin.com/in/marc-haye/"
-  static readonly PAULO_MOREIRA = "https://www.linkedin.com/in/paulo-moreira-pereira/"
-  static readonly REMI_SOULIER = "https://www.linkedin.com/in/remi-soulier/"
-  static readonly PACO_GILLET = "https://www.linkedin.com/in/paco-gillet/"
-  static readonly HICHAM_FERHANI = "https://www.linkedin.com/in/hicham-ferhani/"
-  static readonly EVAN_NUNES = "https://www.linkedin.com/in/evan-nunes/"
-  static readonly ESTEBAN_REMOND = "https://www.linkedin.com/in/esteban-rémond/"
-  static readonly DAMIEN_ROSTAING = "https://www.linkedin.com/in/damien-rostaing/"
-  static readonly MAEL_NICOLAS = "https://www.linkedin.com/in/maël-nicolas-95b2742ab/"
-  static readonly YANN_BODIGUEL = "https://www.linkedin.com/in/green-jacket/"
-  static readonly MATTEO_BENHALIMA = "https://www.linkedin.com/in/matt%C3%A9o-benhalima/"
-  static readonly RAPHAEL_RIVAS = "https://www.linkedin.com/in/raphaelrivas/"
-  static readonly KILLIAN_RAMUS = "https://www.linkedin.com/in/killianrms/"
-  static readonly CYPRIEN_BONS = "https://www.linkedin.com/in/cyprien-bons/"
+  private static readonly linkedin = "https://www.linkedin.com/in/"
+
+  static readonly PAULO_MOREIRA = this.linkedin +"paulo-moreira-pereira"
+  static readonly REMI_SOULIER = this.linkedin + "remi-soulier"
+  static readonly PACO_GILLET = this.linkedin + "paco-gillet"
+  static readonly HICHAM_FERHANI = this.linkedin + "hicham-ferhani"
+  static readonly EVAN_NUNES = this.linkedin + "evan-nunes"
+  static readonly ESTEBAN_REMOND = this.linkedin + "esteban-rémond"
+  static readonly DAMIEN_ROSTAING = this.linkedin +"damien-rostaing"
+  static readonly MAEL_NICOLAS = this.linkedin +"maël-nicolas-95b2742ab"
+  static readonly YANN_BODIGUEL = this.linkedin +"green-jacket"
+  static readonly MATTEO_BENHALIMA = this.linkedin +"matt%C3%A9o-benhalima"
+  static readonly RAPHAEL_RIVAS = this.linkedin +"raphaelrivas"
+  static readonly KILLIAN_RAMUS = this.linkedin +"killianrms"
+  static readonly CYPRIEN_BONS = this.linkedin +"cyprien-bons"
 }
 
 export class IUTLinks {
@@ -61,23 +62,26 @@ export class SocialLinks {
 }
 
 export class GithubLinks {
+  // iut
   static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
-  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'elden-build'
+  static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
+  static readonly POURSUITE_ETUDES = SocialLinks.GITHUB + 'poursuite-etudes'
   static readonly TRAINS = SocialLinks.GITHUB + 'trains'
-  static readonly MESH = SocialLinks.GITHUB + 'mesh'
-  static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'
-  static readonly FALLOUTDLE = SocialLinks.GITHUB + 'falloutdle'
-  static readonly GOL = SocialLinks.GITHUB + 'go-of-life'
+  static readonly AVENTURIERS_DU_RAIL = SocialLinks.GITHUB + 'aventuriers-du-rail'
   static readonly MARIN_IVRE = SocialLinks.GITHUB + 'marinIvre'
   static readonly SUDOKU = SocialLinks.GITHUB + 'sudoku'
-  static readonly JELLYBOT = SocialLinks.GITHUB + 'jellybot'
-  static readonly POURSUITE_ETUDES = SocialLinks.GITHUB + 'poursuite-etudes'
-  static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
+  static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'
   static readonly E3CETE = SocialLinks.GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
-  static readonly LLM_FROM_SCRATCH = SocialLinks.GITHUB + 'llm-from-scratch'
   static readonly NDI2024 = SocialLinks.GITHUB + 'NDI-2024-RaceForWater'
   static readonly NDI2025 = "https://github.com/killianrms/NDI2025"
-  static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
+  // perso
+  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'elden-build'
+  static readonly MESH = SocialLinks.GITHUB + 'mesh'
+  static readonly FALLOUTDLE = SocialLinks.GITHUB + 'falloutdle'
+  static readonly GOL = SocialLinks.GITHUB + 'go-of-life'
+  static readonly JELLYBOT = SocialLinks.GITHUB + 'jellybot'
+  static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
+  static readonly LLM_FROM_SCRATCH = SocialLinks.GITHUB + 'llm-from-scratch'
 }
 
 export class ProjectLinks {
@@ -105,24 +109,23 @@ export class ToolLinks {
   static readonly TAILWIND = 'https://tailwindcss.com'
 
   static readonly NODE = 'https://nodejs.org'
+  static readonly EXPRESS = 'https://expressjs.com'
   static readonly NEXT = 'https://nextjs.org'
-
-  static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
-  static readonly POSTGRE = 'https://www.postgresql.org'
-  static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
-
-  static readonly JAVAFX = 'https://openjfx.io'
-  static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly VUEJS = 'https://vuejs.org'
-  static readonly MYSQL = 'https://www.mysql.com'
 
   static readonly SYMFONY = 'https://symfony.com'
   static readonly TWIG = 'https://twig.symfony.com/'
 
-  static readonly EXPRESS = 'https://expressjs.com'
+  static readonly POSTGRE = 'https://www.postgresql.org'
+  static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
+  static readonly MYSQL = 'https://www.mysql.com'
 
+  static readonly JAVAFX = 'https://openjfx.io'
+  static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly DOCKER = 'https://docker.com'
   static readonly EBITENGINE = 'https://ebitengine.org'
-  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
   static readonly CHARTJS = 'https://www.chartjs.org'
+
+  static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
+  static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
 }

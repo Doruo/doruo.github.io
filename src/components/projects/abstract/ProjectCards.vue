@@ -17,7 +17,7 @@ defineProps({
 
       <div class="project-grid">
         <ProjectCardItem
-        v-for="project in projectsCategory.projects"
+        v-for="project in projectsCategory.projects" v-show="project.show"
 
         :key="project.id"
         :title="project.title"

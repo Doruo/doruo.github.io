@@ -2,7 +2,7 @@
 import { ToolIcons } from '@/data/Icons';
 import LinkItem from '../links/LinkItem.vue';
 import PortraitItem from '../portraits/PortraitItem.vue';
-import { CollaboratorLinks, SocialLinks, WebsiteLinks } from '@/data/Links';
+import { SocialLinks, WebsiteLinks } from '@/data/Links';
 import { CollaboratorPictures } from '@/data/Pictures';
 </script>
 
@@ -28,6 +28,6 @@ import { CollaboratorPictures } from '@/data/Pictures';
         <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV"/>
       </h1>
     </div>
-    <PortraitItem :link="CollaboratorLinks.MARC_HAYE" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"/>
+    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"/>
   </section>
 </template>

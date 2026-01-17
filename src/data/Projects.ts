@@ -1,10 +1,11 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
-import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures } from './Pictures'
+import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures, AventuriersDuRailPictures } from './Pictures'
 
 export interface Project {
   id: string
   title: string
+  show: boolean
   showMoreInfo: boolean
   websiteLink: string
   moreInfoLink: RouteLocationAsRelativeGeneric
@@ -22,49 +23,11 @@ export interface ProjectCategory {
 
 export class Projects {
   private static readonly allProjects: Project[] = [
-    // /-----/ tool /-----/
-    {
-      id: 'llm-from-scratch',
-      title: `IA bigramme`,
-      showMoreInfo: false,
-      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: LlmPictures.CARD,
-      description:
-        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['main','tool'],
-    },
-    {
-      id: 'stage-itesoft',
-      title: 'Stage ITESOFT (confidentiel)',
-      showMoreInfo: false,
-      background: '',
-      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
-      moreInfoLink: { name: '' },
-      description:
-        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
-        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
-      techs: 'NestJS, JSON, SQL',
-      tags: ['tool'],
-    },
-    {
-      id: 'jellybot',
-      title: 'Jellybot',
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: GithubLinks.JELLYBOT,
-      background: JellyBotPictures.CARD,
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: 'Python, discord.py, Jellyfin API, Discord',
-      tags: ['tool'],
-    },
     // /-----/ competition /-----/
     {
       id: 'cgj-2023',
       title: 'Code Game Jam 2023',
+      show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ProjectLinks.ITCHIO_TIME_MAGE_TOURNAMENT,
@@ -78,6 +41,7 @@ export class Projects {
     {
       id: 'ndi-2024',
       title: "Nuit de l'Info 2024",
+      show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: GithubLinks.NDI2024,
@@ -91,6 +55,7 @@ export class Projects {
     {
       id: 'ndi-2025',
       title: "Nuit de l'Info 2025",
+      show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: GithubLinks.NDI2025,
@@ -99,164 +64,11 @@ export class Projects {
       techs: 'TypeScript',
       tags: ['competition'],
     },
-    // /-----/ academic /-----/
-    {
-      id: 'poursuite-etude',
-      title: "Application de Poursuite d'Etudes",
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: GithubLinks.POURSUITE_ETUDES,
-      background: '',
-      description:
-        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
-      techs: 'PHP, JavaScript, PL/SQL, LDAP',
-      tags: ['academic'],
-    },
-    {
-      id: 'my-avatar',
-      title: 'My Avatar',
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-my-avatar' },
-      websiteLink: ProjectLinks.MY_AVATAR,
-      background: '',
-      description:
-        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
-      techs: 'Symfony, JavaScript, MySQL, Twig',
-      tags: ['main'],
-    },
-    {
-      id: 'controverse-crypto',
-      title: 'Contrôverse des Cryptomonnaies',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
-      background: CryptoWebsitePictures.CARD,
-      description:
-        'Vitrine présentant mon travail de recherche et de rédaction' +
-        "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'trains',
-      title: 'Jeu de plateau Trains',
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-trains' },
-      websiteLink: GithubLinks.TRAINS,
-      background: TrainsPictures.CARD,
-      description:
-        'Portage numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
-        "Trains d'Hisashi Hayashi</a>, jouable jusqu'à 4 joueurs.",
-      techs: 'Java, JavaFX',
-      tags: ['academic'],
-    },
-    {
-      id: 'fan-site-chuck-norris',
-      title: 'Fan Club Chuck Norris',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
-      background: ChuckNorrisPictures.CARD,
-      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'metro-post-apo',
-      title: 'Escape game - Métro post-apocalyptique',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
-      background: PostApoPictures.CARD,
-      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    {
-      id: 'escape-game-mind-spies',
-      title: 'Escape game - The Mind Spies',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
-      background: MindSpiesPictures.CARD,
-      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
-      techs: 'HTML, CSS',
-      tags: ['academic'],
-    },
-    // /-----/ game /-----/
-    {
-      id: 'game-of-life',
-      title: "Conway's Game of Life",
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-gol' },
-      websiteLink: GithubLinks.GOL,
-      background: GameOfLifePictures.CARD,
-      description:
-        'Simulation mathématique de 1970, réalisé en langage Go, avec interface graphique terminal.',
-      techs: 'Go, Ebitengine',
-      tags: ['game'],
-    },
-    {
-      id: 'e3cete',
-      title: 'E3Cète',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.E3CETE,
-      background: E3CetePictures.CARD,
-      description: 'Jeu de société en Java, inspiré du jeu Set!',
-      techs: 'Java',
-      tags: ['game'],
-    },
-    {
-      id: 'mastermind',
-      title: 'Mastermind',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.MASTERMIND,
-      background: '',
-      description:
-        'Implémentation du jeu mastermind en Java, jouable à deux ou seul contre un ordinateur',
-      techs: 'Java, algorithmie',
-      tags: ['game'],
-    },
-    {
-      id: 'marin-ivre',
-      title: 'Le Marin Ivre',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.MARIN_IVRE,
-      background: '',
-      description:
-        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires',
-      techs: 'Java',
-      tags: ['game'],
-    },
-    {
-      id: 'sudoku',
-      title: 'Sudoku',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.SUDOKU,
-      background: '',
-      description: 'Implémentation du sudoku en Java, jouable à deux ou seul contre un ordinateur',
-      techs: 'Java, algorithmie',
-      tags: ['game'],
-    },
-    {
-      id: 'flipper',
-      title: 'Flipper',
-      showMoreInfo: false,
-      moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.FLIPPER_BALL,
-      background: '',
-      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
-      techs: 'Python, numpy',
-      tags: ['game'],
-    },
-    // /-----/ community /-----/
+        // /-----/ community /-----/
     {
       id: 'elden-build',
       title: 'Elden Build',
+      show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: GithubLinks.ELDEN_BUILD,
@@ -269,6 +81,7 @@ export class Projects {
     {
       id: 'falloutdle',
       title: 'Falloutdle',
+      show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.FALLOUTDLE,
@@ -281,6 +94,7 @@ export class Projects {
     {
       id: 'mesh',
       title: 'Mesh',
+      show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: GithubLinks.MESH,
@@ -288,6 +102,229 @@ export class Projects {
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
+    },
+    // /-----/ academic /-----/
+    {
+      id: 'my-avatar',
+      title: 'My Avatar',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-my-avatar' },
+      websiteLink: ProjectLinks.MY_AVATAR,
+      background: '',
+      description:
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
+      techs: 'Symfony, JavaScript, MySQL, Twig',
+      tags: ['main', 'academic'],
+    },
+    {
+      id: 'poursuite-etude',
+      title: "Application de Poursuite d'Etudes",
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-poursuite-etude' },
+      websiteLink: GithubLinks.POURSUITE_ETUDES,
+      background: '',
+      description:
+        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
+      techs: 'PHP, JavaScript, PL/SQL, LDAP',
+      tags: ['academic'],
+    },
+    {
+      id: 'controverse-crypto',
+      title: 'Contrôverse des Cryptomonnaies',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
+      background: CryptoWebsitePictures.CARD,
+      description:
+        'Vitrine présentant mon travail de recherche et de rédaction ' +
+        "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'fan-site-chuck-norris',
+      title: 'Fan Club Chuck Norris',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
+      background: ChuckNorrisPictures.CARD,
+      description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'metro-post-apo',
+      title: 'Escape game - Métro post-apocalyptique',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
+      background: PostApoPictures.CARD,
+      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    {
+      id: 'escape-game-mind-spies',
+      title: 'Escape game - The Mind Spies',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
+      background: MindSpiesPictures.CARD,
+      description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
+      techs: 'HTML, CSS',
+      tags: ['academic'],
+    },
+    // /-----/ game /-----/
+    {
+      id: 'game-of-life',
+      title: "Conway's Game of Life",
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-gol' },
+      websiteLink: GithubLinks.GOL,
+      background: GameOfLifePictures.CARD,
+      description:
+        `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal`,
+      techs: 'Go, Ebitengine',
+      tags: ['game'],
+    },
+    {
+      id: 'trains',
+      title: 'Jeu de plateau Trains',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-trains' },
+      websiteLink: GithubLinks.TRAINS,
+      background: TrainsPictures.CARD,
+      description:
+        'Réalisation numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
+        "Trains d'Hisashi Hayashi</a> en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
+      techs: 'Java, JavaFX',
+      tags: ['game'],
+    },
+    {
+      id: 'aventuriers-du-rail',
+      title: 'Les Aventuriers du Rail',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.AVENTURIERS_DU_RAIL,
+      background: AventuriersDuRailPictures.CARD,
+      description:
+        "Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde) " +
+        "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
+      techs: 'Java, JavaFX',
+      tags: ['game'],
+    },
+    {
+      id: 'e3cete',
+      title: 'E3Cète',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.E3CETE,
+      background: E3CetePictures.CARD,
+      description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur`,
+      techs: 'Java',
+      tags: ['game'],
+    },
+    {
+      id: 'sudoku',
+      title: 'Sudoku',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.SUDOKU,
+      background: '',
+      description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur',
+      techs: 'Java, algorithmie',
+      tags: ['game'],
+    },
+    {
+      id: 'mastermind',
+      title: 'Mastermind',
+      show: true,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.MASTERMIND,
+      background: '',
+      description:
+        'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur',
+      techs: 'Java, algorithmie',
+      tags: ['game'],
+    },
+    {
+      id: 'marin-ivre',
+      title: 'Le Marin Ivre',
+      show: false,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.MARIN_IVRE,
+      background: '',
+      description:
+        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires',
+      techs: 'Java',
+      tags: ['game'],
+    },
+    {
+      id: 'flipper',
+      title: 'Flipper',
+      show: false,
+      showMoreInfo: false,
+      moreInfoLink: { name: '' },
+      websiteLink: GithubLinks.FLIPPER_BALL,
+      background: '',
+      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
+      techs: 'Python, numpy',
+      tags: ['game'],
+    },
+    // /-----/ tool /-----/
+    {
+      id: 'llm-from-scratch',
+      title: `IA bigramme`,
+       show: true,
+      showMoreInfo: false,
+      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
+      moreInfoLink: { name: '' },
+      background: LlmPictures.CARD,
+      description:
+        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['main','tool'],
+    },
+    {
+      id: 'stage-itesoft',
+      title: 'Stage ITESOFT (confidentiel)',
+      show: true,
+      showMoreInfo: false,
+      background: '',
+      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
+      moreInfoLink: { name: '' },
+      description:
+        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
+        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
+      techs: 'NestJS, JSON, SQL',
+      tags: ['tool'],
+    },
+    {
+      id: 'jellybot',
+      title: 'Jellybot',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: GithubLinks.JELLYBOT,
+      background: JellyBotPictures.CARD,
+      description:
+        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
+        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      techs: 'Python, discord.py, Jellyfin API, Discord',
+      tags: ['tool'],
     },
   ]
 

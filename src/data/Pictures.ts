@@ -43,6 +43,10 @@ export class TrainsPictures {
   static readonly RULES = new URL('/projects/trains/rules.pdf', import.meta.url).href;
 }
 
+export class AventuriersDuRailPictures {
+  static readonly CARD = "https://i0.wp.com/www.teamboardgame.com/wp-content/uploads/2022/09/Ticket-to-Ride-Ghost-Train-3.jpg?fit=920%2C613&ssl=1";
+}
+
 export class NDI2025Pictures {
   static readonly LOGO = new URL('@/img/projects/iut/ndi/2025/logo.webp', import.meta.url).href;
   static readonly GROUP = new URL('@/img/projects/iut/ndi/2025/groupe.webp', import.meta.url).href;
