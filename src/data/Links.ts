@@ -97,6 +97,7 @@ export class LanguageLinks {
   static readonly PYTHON = 'https://www.python.org'
   static readonly PHP = 'https://www.php.net/releases/8.5/en.php'
   static readonly JAVA = 'https://www.java.com/'
+  static readonly JAVAFX = 'https://openjfx.io'
   static readonly GO = 'https://go.dev'
 }
 
@@ -120,7 +121,6 @@ export class ToolLinks {
   static readonly PLSQL = 'https://www.oracle.com/fr/database/technologies/appdev/plsql.html'
   static readonly MYSQL = 'https://www.mysql.com'
 
-  static readonly JAVAFX = 'https://openjfx.io'
   static readonly SCENE_BUILDER = 'https://gluonhq.com/products/scene-builder'
   static readonly DOCKER = 'https://docker.com'
   static readonly EBITENGINE = 'https://ebitengine.org'

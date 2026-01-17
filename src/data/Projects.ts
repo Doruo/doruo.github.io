@@ -23,6 +23,48 @@ export interface ProjectCategory {
 
 export class Projects {
   private static readonly allProjects: Project[] = [
+    // /-----/ tool /-----/
+    {
+      id: 'llm-from-scratch',
+      title: `IA bigramme`,
+       show: true,
+      showMoreInfo: false,
+      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
+      moreInfoLink: { name: '' },
+      background: LlmPictures.CARD,
+      description:
+        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
+      techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['main','tool'],
+    },
+    {
+      id: 'stage-itesoft',
+      title: 'Stage ITESOFT (confidentiel)',
+      show: true,
+      showMoreInfo: false,
+      background: '',
+      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
+      moreInfoLink: { name: '' },
+      description:
+        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
+        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
+      techs: 'NestJS, JSON, SQL',
+      tags: ['tool'],
+    },
+    {
+      id: 'jellybot',
+      title: 'Jellybot',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: GithubLinks.JELLYBOT,
+      background: JellyBotPictures.CARD,
+      description:
+        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
+        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      techs: 'Python, discord.py, Jellyfin API, Discord',
+      tags: ['tool'],
+    },
     // /-----/ competition /-----/
     {
       id: 'cgj-2023',
@@ -203,8 +245,8 @@ export class Projects {
       websiteLink: GithubLinks.TRAINS,
       background: TrainsPictures.CARD,
       description:
-        'Réalisation numérique du jeu de plateau japonais <a href=https://boardgamegeek.com/boardgame/121408/trains>' +
-        "Trains d'Hisashi Hayashi</a> en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
+        'Réalisation numérique du jeu de plateau japonais ' +
+        "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
       techs: 'Java, JavaFX',
       tags: ['game'],
     },
@@ -283,48 +325,6 @@ export class Projects {
       description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
       techs: 'Python, numpy',
       tags: ['game'],
-    },
-    // /-----/ tool /-----/
-    {
-      id: 'llm-from-scratch',
-      title: `IA bigramme`,
-       show: true,
-      showMoreInfo: false,
-      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
-      background: LlmPictures.CARD,
-      description:
-        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
-      techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['main','tool'],
-    },
-    {
-      id: 'stage-itesoft',
-      title: 'Stage ITESOFT (confidentiel)',
-      show: true,
-      showMoreInfo: false,
-      background: '',
-      websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',
-      moreInfoLink: { name: '' },
-      description:
-        'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
-        ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
-      techs: 'NestJS, JSON, SQL',
-      tags: ['tool'],
-    },
-    {
-      id: 'jellybot',
-      title: 'Jellybot',
-      show: true,
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: GithubLinks.JELLYBOT,
-      background: JellyBotPictures.CARD,
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
-      techs: 'Python, discord.py, Jellyfin API, Discord',
-      tags: ['tool'],
     },
   ]
 

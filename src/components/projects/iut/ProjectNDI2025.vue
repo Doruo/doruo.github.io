@@ -17,7 +17,6 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
 
     <template #description>
       <h2>Numérique Inclusif, Responsable et Durable</h2>
-      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2025</a>.
@@ -44,6 +43,20 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
         d’agir aux équipes éducatives et en renforçant leur
         autonomie technologique.
       </p>
+      <p>
+        Avec Cyprien Bons, j'ai réalisé pour ce projet un
+        <a target="_blank" href="https://killianrms.github.io/NDI2025/password-game">Password game</a>,
+        pour le défi "Simplifier pour mieux vivre".
+        Le but est de créer un mot de passe sécurisé tout
+        en passant tous les tests et les nombreuses pop-ups
+        pour rendre l'expérience insupportable !
+      </p>
+      <p>
+        J'ai également partiellement aidé à la réalisation de
+        <a target="_blank" href="https://github.com/Mael-Nicolas/SafeLink">SafeLink</a>,
+        une extension de navigateur, permettant de détecter si un lien
+        sur votre page web est sécurisé ou non, pour le défi "La Ligue des Extensions".
+      </p>
     </template>
 
     <template #collaborators>
@@ -54,8 +67,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
-        description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
       <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface utilisateur" />
