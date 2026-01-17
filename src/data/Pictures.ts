@@ -18,14 +18,14 @@ export class CollaboratorPictures {
 // IUT
 
 export class PoursuiteEtudesPictures {
-  static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuite-etude/logo_iut.webp', import.meta.url).href;
-  static readonly HOME = new URL('@/img/projects/iut/poursuite-etude/home_admin.webp', import.meta.url).href;
-  static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etude/agregation.webp', import.meta.url).href;
-  static readonly CONNEXION = new URL('@/img/projects/iut/poursuite-etude/sign_in.webp', import.meta.url).href;
-  static readonly CSV = new URL('@/img/projects/iut/poursuite-etude/csv.webp', import.meta.url).href;
-  static readonly DIAGRAMME = new URL('@/img/projects/iut/poursuite-etude/structure.webp', import.meta.url).href;
-  static readonly NOTES = new URL('@/img/projects/iut/poursuite-etude/notes.webp', import.meta.url).href;
-  static readonly SUBJECT = new URL('/projects/poursuite-etude/subject.pdf', import.meta.url).href;
+  static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuite-etudes/logo_iut.webp', import.meta.url).href;
+  static readonly HOME = new URL('@/img/projects/iut/poursuite-etudes/home.webp', import.meta.url).href;
+  static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etudes/agregation.webp', import.meta.url).href;
+  static readonly CONNEXION = new URL('@/img/projects/iut/poursuite-etudes/sign_in.webp', import.meta.url).href;
+  static readonly NOTES = new URL('@/img/projects/iut/poursuite-etudes/notes.webp', import.meta.url).href;
+  static readonly DETAILS = "https://evannunes.fr/style/img/etude7.png";
+  static readonly CSV = "https://evannunes.fr/style/img/etude8.png";
+  static readonly SUBJECT = new URL('/projects/poursuite-etudes/subject.pdf', import.meta.url).href;
 }
 
 export class MyAvatarPictures {

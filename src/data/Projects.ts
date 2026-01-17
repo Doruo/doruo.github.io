@@ -106,7 +106,7 @@ export class Projects {
       techs: 'TypeScript',
       tags: ['competition'],
     },
-        // /-----/ community /-----/
+    // /-----/ community /-----/
     {
       id: 'elden-build',
       title: 'Elden Build',
@@ -147,19 +147,6 @@ export class Projects {
     },
     // /-----/ academic /-----/
     {
-      id: 'my-avatar',
-      title: 'My Avatar',
-      show: true,
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-my-avatar' },
-      websiteLink: ProjectLinks.MY_AVATAR,
-      background: '',
-      description:
-        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
-      techs: 'Symfony, JavaScript, MySQL, Twig',
-      tags: ['main', 'academic'],
-    },
-    {
       id: 'poursuite-etude',
       title: "Application de Poursuite d'Etudes",
       show: true,
@@ -171,6 +158,19 @@ export class Projects {
         "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
       tags: ['academic'],
+    },
+    {
+      id: 'my-avatar',
+      title: 'My Avatar',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-my-avatar' },
+      websiteLink: ProjectLinks.MY_AVATAR,
+      background: '',
+      description:
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
+      techs: 'Symfony, JavaScript, MySQL, Twig',
+      tags: ['main', 'academic'],
     },
     {
       id: 'controverse-crypto',
