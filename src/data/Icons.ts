@@ -18,7 +18,7 @@ export class LanguageIcons {
   static readonly JAVA = "https://techstack-generator.vercel.app/java-icon.svg"
   static readonly GO = "https://skillicons.dev/icons?i=go"
   static readonly PHP = "https://skillicons.dev/icons?i=php"
- }
+}
 
 export class ToolIcons {
   static readonly GIT = "https://skillicons.dev/icons?i=git"
@@ -48,6 +48,7 @@ export class ToolIcons {
   static readonly DOCKER = "https://techstack-generator.vercel.app/docker-icon.svg"
   static readonly PDF = new URL('@/img/projects/tools/pdf.svg', import.meta.url).href
 
+  static readonly AI = new URL('@/img/projects/tools/ai.svg', import.meta.url).href
   static readonly ANACONDA = "https://skillicons.dev/icons?i=anaconda"
   static readonly PYTORCH = "https://skillicons.dev/icons?i=pytorch"
   static readonly JUPYTER = "https://skillicons.dev/icons?i=jupyter"

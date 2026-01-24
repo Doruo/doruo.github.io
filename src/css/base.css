@@ -56,6 +56,7 @@ body {
 /* FOOTER */
 
 footer {
+  display: flex;
   position: static;
   bottom: 0px;
   width: 100%;
@@ -70,12 +71,17 @@ footer {
   margin: auto;
 }
 
-footer div ul li {
+.footer-text{
+  width: 100%;
+}
+
+.footer-text ul li {
   color: white;
   list-style-type: none;
 }
 
 .footer-social {
+  width: 100%;
   display: flex;
   gap: 8px;
 }
