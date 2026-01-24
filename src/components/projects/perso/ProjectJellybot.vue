@@ -23,8 +23,8 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
         Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
       </p>
       <p>
-        Jellyfin est un serveur multimédia open-source.
-        Il s'agit d'un fork de <a href="https://emby.media/">Emby</a> (anciennement Media Browser),
+        <a target="_blank" href="https://jellyfin.org/">Emby</a>Jellyfin est un serveur multimédia open-source.
+        Il s'agit d'un fork de <a target="_blank" href="https://emby.media/">Emby</a> (anciennement Media Browser),
         étant devenu officiellement propriétaire en 2018.
       </p>
       <p>
@@ -37,9 +37,7 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
       <SkillItem :img="LanguageIcons.PYTHON" :link="LanguageLinks.PYTHON" description="Programmation du bot" />
-    </template>
-
-    <template #assets>
+      <SkillItem :img="ToolIcons.BOTS" :link="ToolLinks.BOTS" description="Intégration dans Discord" />
     </template>
 
     <template #links>

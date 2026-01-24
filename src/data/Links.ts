@@ -128,6 +128,7 @@ export class ToolLinks {
   static readonly DOCKER = 'https://docker.com'
   static readonly EBITENGINE = 'https://ebitengine.org'
   static readonly CHARTJS = 'https://www.chartjs.org'
+  static readonly BOTS = 'https://discord.com/developers'
 
   static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
