@@ -15,24 +15,31 @@ import ProjectMyAvatar from '@/components/projects/iut/ProjectMyAvatar.vue'
 import ProjectEldenBuild from '@/components/projects/perso/ProjectEldenBuild.vue'
 import ProjectGol from '@/components/projects/perso/ProjectGol.vue'
 import ProjectJellybot from '@/components/projects/perso/ProjectJellybot.vue'
+import ProjectLLMBigram from '@/components/projects/perso/ProjectLLMBigram.vue'
 
 const routes = [
-  // views
+  // Main views
   { path: '/', name: 'home', component: ViewHome },
   { path: '/about', name: 'about', component: ViewAbout },
   { path: '/projects', name: 'projects', component: ViewProjects },
   { path: '/archives', name: 'archives', component: ViewArchives },
-  // projects
-  { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude, props: { group: true }
-  },
+
+  // Projects
+
+  // IUT
+  { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude, props: { group: true } },
   { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains, props: { group: true } },
-  { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
   { path: '/projects/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024, props: { group: true } },
   { path: '/projects/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025, props: { group: true } },
+
+  // PERSO
+  { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
   { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar, props: { group: true } },
   { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
-   { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
-  // error
+  { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
+  { path: '/projects/llm-bigram', name: 'projects-llm-bigram', component: ProjectLLMBigram },
+
+  // Error
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: ViewError, props: { errorType: '404' } },
 ]
 

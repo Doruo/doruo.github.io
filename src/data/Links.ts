@@ -61,6 +61,7 @@ export class SocialLinks {
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
   static readonly GRAVATAR = 'https://gravatar.com/marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
+  static readonly DEVTO = 'https://dev.to/doruo'
 }
 
 export class GithubLinks {
@@ -130,4 +131,8 @@ export class ToolLinks {
 
   static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
+
+  static readonly ANACONDA = 'https://www.anaconda.com/'
+  static readonly PYTORCH = 'https://pytorch.org/'
+  static readonly JUPYTER = 'https://jupyter.org/'
 }

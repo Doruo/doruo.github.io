@@ -4,7 +4,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
- import { CollaboratorPictures, MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
+import { CollaboratorPictures, MyAvatarPictures, PoursuiteEtudesPictures } from '@/data/Pictures'
 import { CollaboratorLinks, GithubLinks, IUTLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'

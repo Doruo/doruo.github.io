@@ -65,9 +65,17 @@ footer {
   text-align: center;
   background-color: var(--primary-headers-color);
   color: var(--primary-font-color);
+
+  padding: 20px 40px;
+  margin: auto;
 }
 
-footer ul li {
+footer div ul li {
   color: white;
   list-style-type: none;
+}
+
+.footer-social {
+  display: flex;
+  gap: 8px;
 }

@@ -1,9 +1,14 @@
 export class SocialIcons {
   static readonly MAIL = new URL('@/img/social/mail.webp', import.meta.url).href
-  static readonly GITHUB = new URL('@/img/social/github.svg', import.meta.url).href
   static readonly LINKEDIN = new URL('@/img/social/linkedin.webp', import.meta.url).href
   static readonly GRAVATAR = new URL('@/img/social/gravatar.webp', import.meta.url).href
   static readonly ITCHIO = new URL('@/img/social/itchio.webp', import.meta.url).href
+  static readonly GITHUB = new URL('@/img/social/github.svg', import.meta.url).href
+
+  // Footer
+  static readonly FOOTER_DEVTO = "https://skillicons.dev/icons?i=devto"
+  static readonly FOOTER_GITHUB = "https://skillicons.dev/icons?i=github"
+  static readonly FOOTER_LINKEDIN = "https://skillicons.dev/icons?i=linkedin"
 }
 
 export class LanguageIcons {
@@ -42,4 +47,8 @@ export class ToolIcons {
   static readonly REST = "https://techstack-generator.vercel.app/restapi-icon.svg"
   static readonly DOCKER = "https://techstack-generator.vercel.app/docker-icon.svg"
   static readonly PDF = new URL('@/img/projects/tools/pdf.svg', import.meta.url).href
+
+  static readonly ANACONDA = "https://skillicons.dev/icons?i=anaconda"
+  static readonly PYTORCH = "https://skillicons.dev/icons?i=pytorch"
+  static readonly JUPYTER = "https://skillicons.dev/icons?i=jupyter"
 }

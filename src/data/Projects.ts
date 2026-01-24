@@ -27,10 +27,10 @@ export class Projects {
     {
       id: 'llm-from-scratch',
       title: `IA bigramme`,
-       show: true,
-      showMoreInfo: false,
+      show: true,
+      showMoreInfo: true,
       websiteLink: GithubLinks.LLM_FROM_SCRATCH,
-      moreInfoLink: { name: '' },
+      moreInfoLink: { name: 'projects-llm-bigram' },
       background: LlmPictures.CARD,
       description:
         'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
