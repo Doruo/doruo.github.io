@@ -45,12 +45,12 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
         autonomie technologique.
       </p>
       <p>
-        Avec Cyprien Bons, j'ai réalisé pour ce projet un
-        <a target="_blank" href="https://killianrms.github.io/NDI2025/password-game">Password game</a>,
+        Avec <a target="_blank" :href="CollaboratorLinks.CYPRIEN_BONS">Cyprien Bons</a>, j'ai réalisé pour ce projet un
+        <a target="_blank" href="https://killianrms.github.io/NDI2025/password-game">Password Game</a>,
         pour le défi "Simplifier pour mieux vivre".
         Le but est de créer un mot de passe sécurisé tout
         en passant tous les tests et les nombreuses pop-ups
-        pour rendre l'expérience insupportable !
+        qui rendent l'expérience insupportable !
       </p>
       <p>
         J'ai également partiellement aidé à la réalisation de
@@ -65,7 +65,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL NICOLAS" />
       <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
       <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
-      <PortraitItem name="Galdric desert" :link="CollaboratorLinks.GALDRIC_DESERT" :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
+      <PortraitItem name="Galdric Desert" :link="CollaboratorLinks.GALDRIC_DESERT" :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
       <PortraitItem name="Nicolas Lyfong" :link="CollaboratorLinks.NICOLAS_LYFONG" :img="CollaboratorPictures.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
     </template>
 
@@ -88,9 +88,9 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 
     <template #links>
       <LinkItem :link="GithubLinks.NDI2025" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="ProjectLinks.NDI2025" text="Notre site" />
-      <LinkItem :link="WebsiteLinks.NDI_2025_SUBJECT" text="Sujet de la compétition" />
+      <LinkItem :link="WebsiteLinks.NDI_2025_SUBJECT" :img="ToolIcons.PDF" text="Sujet" />
       <LinkItem :link="WebsiteLinks.NDI_CHALLENGES" text="Liste des défis" />
+      <LinkItem :link="ProjectLinks.NDI2025" text="Notre site" />
     </template>
   </ProjectItem>
 </template>
