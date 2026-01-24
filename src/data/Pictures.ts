@@ -13,6 +13,8 @@ export class CollaboratorPictures {
   static readonly RAPHAEL_RIVAS = "https://media.licdn.com/dms/image/v2/D5603AQHsPymzhW0tRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731370738329?e=1770249600&v=beta&t=D2n95rPk_CCXAOfLgB901tZALt9lhAR0m3bpfAta624"
   static readonly KILLIAN_RAMUS = "https://media.licdn.com/dms/image/v2/D5603AQH2urcHa0Y6Cw/profile-displayphoto-crop_800_800/B56ZkVHaXJHQAM-/0/1756995889569?e=1770249600&v=beta&t=CX3ljby7qQDYdYix_GQP2N5rftYf5oZSqnNdYCIs8cA"
   static readonly CYPRIEN_BONS = "https://media.licdn.com/dms/image/v2/D4E03AQH36XoiIQC81Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728916319659?e=1770249600&v=beta&t=lRFZlMmlzZuJeIzxLCu0JkbLkdWywnCARWCQ751MGtQ"
+  static readonly GALDRIC_DESERT = "https://media.licdn.com/dms/image/v2/D4E03AQE-VHDUn2ceqQ/profile-displayphoto-crop_800_800/B4EZp9JXlrIIAI-/0/1763036200782?e=1770854400&v=beta&t=ZHOKOUZ6LpuiHctKQXoeVQ_o_U_85aIR2as5Db_ZXDc"
+  static readonly NICOLAS_LYFONG = "https://media.licdn.com/dms/image/v2/D5635AQGl5g2CaTAhrg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1731589291098?e=1769857200&v=beta&t=O_H4YU6DcGaR5kNLNe2QShcg6Odwqh0xDopx0Dz8kA4"
 }
 
 // IUT
@@ -50,6 +52,12 @@ export class AventuriersDuRailPictures {
 export class NDI2025Pictures {
   static readonly LOGO = new URL('@/img/projects/iut/ndi/2025/logo.webp', import.meta.url).href;
   static readonly GROUP = new URL('@/img/projects/iut/ndi/2025/groupe.webp', import.meta.url).href;
+
+  static readonly HOME = new URL('@/img/projects/iut/ndi/2025/home.webp', import.meta.url).href;
+  static readonly SIMULATOR = new URL('@/img/projects/iut/ndi/2025/simulator.webp', import.meta.url).href;
+  static readonly TEST = new URL('@/img/projects/iut/ndi/2025/test.webp', import.meta.url).href;
+  static readonly PASSWORD = new URL('@/img/projects/iut/ndi/2025/password.webp', import.meta.url).href;
+  static readonly AI = new URL('@/img/projects/iut/ndi/2025/ai.webp', import.meta.url).href;
 }
 
 export class NDI2024Pictures{

@@ -7,6 +7,7 @@ import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { CollaboratorPictures, NDI2025Pictures } from '@/data/Pictures'
 import { CollaboratorLinks, GithubLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
@@ -60,10 +61,12 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN_BONS" />
-      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL_NICOLAS" />
-      <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL_RIVAS" />
-      <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN_RAMUS" />
+      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN BONS" />
+      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL NICOLAS" />
+      <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
+      <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
+      <PortraitItem name="Galdric desert" :link="CollaboratorLinks.GALDRIC_DESERT" :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
+      <PortraitItem name="Nicolas Lyfong" :link="CollaboratorLinks.NICOLAS_LYFONG" :img="CollaboratorPictures.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
     </template>
 
     <template #abilities>
@@ -72,6 +75,15 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
       <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface utilisateur" />
       <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />
+    </template>
+
+    <template #assets>
+      <ProjectImageItem :link="NDI2025Pictures.GROUP" alt="group" />
+      <ProjectImageItem :link="NDI2025Pictures.HOME" alt="home" />
+      <ProjectImageItem :link="NDI2025Pictures.SIMULATOR" alt="simulator" />
+      <ProjectImageItem :link="NDI2025Pictures.TEST" alt="test" />
+      <ProjectImageItem :link="NDI2025Pictures.PASSWORD" alt="password" />
+      <ProjectImageItem :link="NDI2025Pictures.AI" alt="ai chat" />
     </template>
 
     <template #links>

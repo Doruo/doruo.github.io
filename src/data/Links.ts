@@ -10,10 +10,12 @@ export class CollaboratorLinks {
   static readonly DAMIEN_ROSTAING = this.linkedin +"damien-rostaing"
   static readonly MAEL_NICOLAS = this.linkedin +"maël-nicolas-95b2742ab"
   static readonly YANN_BODIGUEL = this.linkedin +"green-jacket"
-  static readonly MATTEO_BENHALIMA = this.linkedin +"matt%C3%A9o-benhalima"
+  static readonly MATTEO_BENHALIMA = this.linkedin +"mattéo-benhalima"
   static readonly RAPHAEL_RIVAS = this.linkedin +"raphaelrivas"
   static readonly KILLIAN_RAMUS = this.linkedin +"killianrms"
   static readonly CYPRIEN_BONS = this.linkedin +"cyprien-bons"
+  static readonly GALDRIC_DESERT = this.linkedin +"galdric-desert-caparros-5869ab2aa"
+  static readonly NICOLAS_LYFONG = this.linkedin +"nicolas-lyfoung"
 }
 
 export class IUTLinks {
