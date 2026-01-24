@@ -12,8 +12,6 @@
         <li>|</li>
         <li><router-link :to="{ name: 'projects' }">Projets</router-link></li>
         <li>|</li>
-        <li><router-link :to="{ name: 'archives' }">Archives</router-link></li>
-        <li>|</li>
         <li><router-link to="/#contact">Contact</router-link></li>
       </ul>
     </nav>

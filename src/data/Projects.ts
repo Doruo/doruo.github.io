@@ -92,7 +92,7 @@ export class Projects {
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>',
       techs: 'ExpressJS, HTML, CSS, JavaScript',
-      tags: ['main', 'competition'],
+      tags: ['competition'],
     },
     {
       id: 'ndi-2025',
@@ -104,7 +104,7 @@ export class Projects {
       background: NDI2025Pictures.GROUP,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
-      tags: ['competition'],
+      tags: ['main', 'competition'],
     },
     // /-----/ community /-----/
     {
