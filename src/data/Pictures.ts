@@ -25,8 +25,8 @@ export class PoursuiteEtudesPictures {
   static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etudes/agregation.webp', import.meta.url).href;
   static readonly CONNEXION = new URL('@/img/projects/iut/poursuite-etudes/sign_in.webp', import.meta.url).href;
   static readonly NOTES = new URL('@/img/projects/iut/poursuite-etudes/notes.webp', import.meta.url).href;
-  static readonly DETAILS = "https://evannunes.fr/style/img/etude7.png";
-  static readonly CSV = "https://evannunes.fr/style/img/etude8.png";
+  static readonly DETAILS = new URL('@/img/projects/iut/poursuite-etudes/details.webp', import.meta.url).href;
+  static readonly CSV = new URL('@/img/projects/iut/poursuite-etudes/csv.webp', import.meta.url).href;
   static readonly SUBJECT = new URL('/projects/poursuite-etudes/subject.pdf', import.meta.url).href;
 }
 
