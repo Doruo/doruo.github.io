@@ -35,7 +35,7 @@ export class Projects {
       description:
         'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
       techs: 'IA, Python, PyTorch, Jupyter',
-      tags: ['main','tool'],
+      tags: ['tool'],
     },
     {
       id: 'stage-itesoft',
@@ -118,7 +118,7 @@ export class Projects {
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
-      tags: ['community'],
+      tags: ['main','community'],
     },
     {
       id: 'falloutdle',
