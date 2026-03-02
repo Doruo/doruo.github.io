@@ -43,7 +43,7 @@ export class ToolIcons {
   static readonly PLSQL = new URL('@/img/projects/tools/plsql.svg', import.meta.url).href
   static readonly MYSQL = "https://techstack-generator.vercel.app/mysql-icon.svg"
 
-  static readonly AGILE = "https://stssoftware.ch/wp-content/uploads/2022/09/Image-1.svg"
+  static readonly AGILE = new URL('@/img/projects/tools/scrum.webp', import.meta.url).href
   static readonly LDAP = new URL('@/img/projects/tools/ldap.svg', import.meta.url).href
   static readonly REST = "https://techstack-generator.vercel.app/restapi-icon.svg"
   static readonly DOCKER = "https://techstack-generator.vercel.app/docker-icon.svg"
