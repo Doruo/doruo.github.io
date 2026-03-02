@@ -118,7 +118,7 @@ export class Projects {
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
-      tags: ['main','community'],
+      tags: ['main', 'community'],
     },
     {
       id: 'falloutdle',
@@ -155,9 +155,9 @@ export class Projects {
       websiteLink: GithubLinks.POURSUITE_ETUDES,
       background: '',
       description:
-        "Logiciel d'aide à la décision de la poursuite d'étude des étudiants diplômés du BUT Informatique",
+        "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
-      tags: ['academic'],
+      tags: ['main', 'academic'],
     },
     {
       id: 'my-avatar',
@@ -170,7 +170,7 @@ export class Projects {
       description:
         'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
       techs: 'Symfony, JavaScript, MySQL, Twig',
-      tags: ['main', 'academic'],
+      tags: ['academic'],
     },
     {
       id: 'controverse-crypto',
@@ -339,7 +339,7 @@ export class Projects {
   public static getMainProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: 'Principaux projets',
+      title: 'Projets mis en avant',
       projects: this.getProjectsByTag('main'),
     }
   }
