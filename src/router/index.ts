@@ -25,18 +25,18 @@ const mainRoutes = [
 ]
 
 const academicProjectRoutes = [
-  { path: '/projects/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude, props: { group: true } },
-  { path: '/projects/trains', name: 'projects-trains', component: ProjectTrains, props: { group: true } },
-  { path: '/projects/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024, props: { group: true } },
-  { path: '/projects/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025, props: { group: true } },
+  { path: '/poursuite-etudes', name: 'projects-poursuite-etude', component: ProjectPoursuiteEtude, props: { group: true } },
+  { path: '/trains', name: 'projects-trains', component: ProjectTrains, props: { group: true } },
+  { path: '/nuit-de-linfo-2024', name: 'projects-ndi2024', component: ProjectNDI2024, props: { group: true } },
+  { path: '/nuit-de-linfo-2025', name: 'projects-ndi2025', component: ProjectNDI2025, props: { group: true } },
 ];
 
 const personnalProjectRoutes = [
-  { path: '/projects/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
-  { path: '/projects/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar, props: { group: true } },
-  { path: '/projects/game-of-life', name: 'projects-gol', component: ProjectGol },
-  { path: '/projects/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
-  { path: '/projects/llm-bigram', name: 'projects-llm-bigram', component: ProjectLLMBigram },
+  { path: '/elden-build', name: 'projects-elden-build', component: ProjectEldenBuild },
+  { path: '/my-avatar', name: 'projects-my-avatar', component: ProjectMyAvatar, props: { group: true } },
+  { path: '/game-of-life', name: 'projects-gol', component: ProjectGol },
+  { path: '/jellybot', name: 'projects-jellybot', component: ProjectJellybot },
+  { path: '/llm-bigram', name: 'projects-llm-bigram', component: ProjectLLMBigram },
 ];
 
 const projectRoutes = [
