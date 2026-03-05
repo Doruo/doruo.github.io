@@ -1,4 +1,4 @@
-# Marc Haye - Portfolio
+# Portfolio
 
 [Website](https://marchaye.fr)
 
