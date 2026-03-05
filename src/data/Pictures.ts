@@ -27,7 +27,8 @@ export class PoursuiteEtudesPictures {
   static readonly NOTES = new URL('@/img/projects/iut/poursuite-etudes/notes.webp', import.meta.url).href;
   static readonly DETAILS = new URL('@/img/projects/iut/poursuite-etudes/details.webp', import.meta.url).href;
   static readonly CSV = new URL('@/img/projects/iut/poursuite-etudes/csv.webp', import.meta.url).href;
-  static readonly SUBJECT = new URL('/projects/poursuite-etudes/subject.pdf', import.meta.url).href;
+
+  static readonly SUBJECT = new URL('/poursuite-etudes/subject.pdf', import.meta.url).href;
 }
 
 export class MyAvatarPictures {
@@ -42,7 +43,7 @@ export class TrainsPictures {
   static readonly INIT = new URL('@/img/projects/iut/trains/init.webp', import.meta.url).href;
   static readonly GAME_1 = new URL('@/img/projects/iut/trains/game1.webp', import.meta.url).href;
   static readonly GAME_2 = new URL('@/img/projects/iut/trains/game2.webp', import.meta.url).href;
-  static readonly RULES = new URL('/projects/trains/rules.pdf', import.meta.url).href;
+  static readonly RULES = new URL('/trains/rules.pdf', import.meta.url).href;
 }
 
 export class AventuriersDuRailPictures {

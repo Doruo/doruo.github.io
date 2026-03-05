@@ -21,16 +21,18 @@ export class CollaboratorLinks {
 export class IUTLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
 
-  // IUT Web dev
+  // IUT 1st grade web dev
   static readonly LEBRETON = 'https://romainlebreton.github.io'
   static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
   static readonly IUT_DEV_WEB_JS = this.LEBRETON + '/R.4.01-DeveloppementWeb-JavaScript/'
+
+  // IUT 1st grade websites
   static readonly FAN_CLUB_CHUCK_NORRIS = '/fan-club-chuck-norris'
   static readonly ESCAPE_GAME_MIND_SPIES = '/escape-game-mindspies'
   static readonly ESCAPE_GAME_POST_APO = '/escape-game-postapo'
   static readonly CONTROVERSE_CRYPTO = '/controverse-crypto'
 
-  // IUT Advanced web dev
+  // IUT 3rd grade advanced web dev
   static readonly GASQUET = 'https://mgasquet.github.io/'
   static readonly IUT_DEV_QUALITY = this.GASQUET + 'R304-QualiteDeveloppement/'
   static readonly IUT_ADV_DEV_QUALITY = this.GASQUET + 'R5.A.05-ProgrammationAvancee-Web/'
