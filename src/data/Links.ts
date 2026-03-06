@@ -60,13 +60,14 @@ export class SocialLinks {
   static readonly CV = "/CV/CV-MARC-HAYE.pdf";
 
   static readonly GITHUB = 'https://github.com/doruo/'
+  static readonly CODEBERG = 'https://codeberg.org/doruo/'
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
   static readonly GRAVATAR = 'https://gravatar.com/marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
   static readonly DEVTO = 'https://dev.to/doruo'
 }
 
-export class GithubLinks {
+export class ForgeLinks {
   // iut
   static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
   static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
@@ -79,14 +80,15 @@ export class GithubLinks {
   static readonly E3CETE = SocialLinks.GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
   static readonly NDI2024 = SocialLinks.GITHUB + 'NDI-2024-RaceForWater'
   static readonly NDI2025 = "https://github.com/killianrms/NDI2025"
+
   // perso
-  static readonly ELDEN_BUILD = SocialLinks.GITHUB + 'elden-build'
-  static readonly MESH = SocialLinks.GITHUB + 'mesh'
+  static readonly ELDEN_BUILD = SocialLinks.CODEBERG + 'elden-build'
+  static readonly MESH = SocialLinks.CODEBERG + 'mesh'
   static readonly FALLOUTDLE = SocialLinks.GITHUB + 'falloutdle'
-  static readonly GOL = SocialLinks.GITHUB + 'go-of-life'
+  static readonly GOL = SocialLinks.CODEBERG + 'go-of-life'
   static readonly JELLYBOT = SocialLinks.GITHUB + 'jellybot'
   static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
-  static readonly LLM_FROM_SCRATCH = SocialLinks.GITHUB + 'llm-from-scratch'
+  static readonly LLM_FROM_SCRATCH = SocialLinks.CODEBERG + 'llm-from-scratch'
 }
 
 export class ProjectLinks {
@@ -110,6 +112,7 @@ export class ToolLinks {
   static readonly GIT = 'https://git-scm.com'
   static readonly GITLAB = 'https://gitlab.com'
   static readonly GITHUB = 'https://github.com'
+  static readonly CODEBERG = 'https://codeberg.org'
 
   static readonly BOOTSTRAP = 'https://getbootstrap.com'
   static readonly TAILWIND = 'https://tailwindcss.com'

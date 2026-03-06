@@ -6,7 +6,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { EldenBuildPictures } from '@/data/Pictures'
-import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Links'
+import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -51,7 +51,7 @@ import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Link
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
+      <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
       <SkillItem :img="LanguageIcons.PHP" :link="LanguageLinks.PHP" description="Développement coté serveur de l'application" />
       <SkillItem :img="LanguageIcons.JS" :link="LanguageLinks.JS" description="Animations, dynamisme de l'interface, et réalisation des requêtes HTTP asychrones" />
       <SkillItem :img="ToolIcons.MYSQL" :link="ToolLinks.MYSQL" description="Déploiement de la base de donnée sécurisée" />
@@ -69,7 +69,7 @@ import { ToolLinks, GithubLinks, WebsiteLinks, LanguageLinks } from '@/data/Link
     </template>
 
     <template #links>
-      <LinkItem :link="GithubLinks.ELDEN_BUILD" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.ELDEN_BUILD" :img="SocialIcons.CODEBERG" />
     </template>
 
   </ProjectItem>

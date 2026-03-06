@@ -4,7 +4,7 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { ToolLinks, GithubLinks } from '@/data/Links'
+import { ToolLinks, ForgeLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -44,7 +44,7 @@ import { ToolLinks, GithubLinks } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
+      <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
       <SkillItem :img="ToolIcons.ANACONDA" :link="ToolLinks.ANACONDA" description="Distribution Python et gestion des packages" />
       <SkillItem :img="ToolIcons.PYTORCH" :link="ToolLinks.PYTORCH" description="Développement du modèle de langage" />
     </template>
@@ -53,7 +53,7 @@ import { ToolLinks, GithubLinks } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="GithubLinks.LLM_FROM_SCRATCH" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.LLM_FROM_SCRATCH" :img="SocialIcons.CODEBERG" />
     </template>
 
   </ProjectItem>

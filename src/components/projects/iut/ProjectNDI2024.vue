@@ -6,7 +6,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons } from '@/data/Icons'
 import { CollaboratorPictures, NDI2024Pictures } from '@/data/Pictures'
-import { CollaboratorLinks, GithubLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { CollaboratorLinks, ForgeLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'
 </script>
 
@@ -70,7 +70,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #links>
-      <LinkItem :link="GithubLinks.NDI2024" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.NDI2024" :img="SocialIcons.GITHUB" />
       <LinkItem :link="WebsiteLinks.NDI_2024_SUBJECT" :img="ToolIcons.PDF" text="Sujet" />
     </template>
   </ProjectItem>

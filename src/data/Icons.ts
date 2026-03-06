@@ -3,10 +3,13 @@ export class SocialIcons {
   static readonly LINKEDIN = new URL('@/img/social/linkedin.webp', import.meta.url).href
   static readonly GRAVATAR = new URL('@/img/social/gravatar.webp', import.meta.url).href
   static readonly ITCHIO = new URL('@/img/social/itchio.webp', import.meta.url).href
+
+  static readonly CODEBERG = new URL('@/img/social/codeberg.svg', import.meta.url).href
   static readonly GITHUB = new URL('@/img/social/github.svg', import.meta.url).href
 
   // Footer
   static readonly FOOTER_DEVTO = "https://skillicons.dev/icons?i=devto"
+  static readonly FOOTER_CODEBERG = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/codeberg.svg"
   static readonly FOOTER_GITHUB = "https://skillicons.dev/icons?i=github"
   static readonly FOOTER_LINKEDIN = "https://skillicons.dev/icons?i=linkedin"
 }
@@ -22,8 +25,9 @@ export class LanguageIcons {
 
 export class ToolIcons {
   static readonly GIT = "https://skillicons.dev/icons?i=git"
-  static readonly GITHUB = "https://techstack-generator.vercel.app/github-icon.svg"
   static readonly GITLAB = "https://skillicons.dev/icons?i=gitlab"
+  static readonly GITHUB = "https://techstack-generator.vercel.app/github-icon.svg"
+  static readonly CODEBERG = new URL('@/img/social/codeberg.svg', import.meta.url).href
 
   static readonly BOOTSTRAP = "https://skillicons.dev/icons?i=bootstrap"
   static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'

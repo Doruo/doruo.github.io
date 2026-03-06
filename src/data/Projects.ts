@@ -1,5 +1,5 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
-import { GithubLinks, IUTLinks, ProjectLinks } from './Links'
+import { ForgeLinks, IUTLinks, ProjectLinks } from './Links'
 import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures, AventuriersDuRailPictures } from './Pictures'
 
 export interface Project {
@@ -29,7 +29,7 @@ export class Projects {
       title: `IA bigramme`,
       show: true,
       showMoreInfo: true,
-      websiteLink: GithubLinks.LLM_FROM_SCRATCH,
+      websiteLink: ForgeLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: 'projects-llm-bigram' },
       background: LlmPictures.CARD,
       description:
@@ -57,7 +57,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: GithubLinks.JELLYBOT,
+      websiteLink: ForgeLinks.JELLYBOT,
       background: JellyBotPictures.CARD,
       description:
         "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
@@ -86,7 +86,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2024' },
-      websiteLink: GithubLinks.NDI2024,
+      websiteLink: ForgeLinks.NDI2024,
       background: NDI2024Pictures.WORK_1,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
@@ -100,7 +100,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2025' },
-      websiteLink: GithubLinks.NDI2025,
+      websiteLink: ForgeLinks.NDI2025,
       background: NDI2025Pictures.GROUP,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
@@ -113,7 +113,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-elden-build' },
-      websiteLink: GithubLinks.ELDEN_BUILD,
+      websiteLink: ForgeLinks.ELDEN_BUILD,
       background: EldenBuildPictures.CARD,
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>',
@@ -126,7 +126,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.FALLOUTDLE,
+      websiteLink: ForgeLinks.FALLOUTDLE,
       background: FalloutdlePictures.CARD,
       description:
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours",
@@ -139,7 +139,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.MESH,
+      websiteLink: ForgeLinks.MESH,
       background: MeshPictures.CARD,
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking',
       techs: 'Go, P2P, TCP/IP',
@@ -152,7 +152,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
-      websiteLink: GithubLinks.POURSUITE_ETUDES,
+      websiteLink: ForgeLinks.POURSUITE_ETUDES,
       background: '',
       description:
         "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier",
@@ -229,7 +229,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-gol' },
-      websiteLink: GithubLinks.GOL,
+      websiteLink: ForgeLinks.GOL,
       background: GameOfLifePictures.CARD,
       description:
         `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal`,
@@ -242,7 +242,7 @@ export class Projects {
       show: true,
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-trains' },
-      websiteLink: GithubLinks.TRAINS,
+      websiteLink: ForgeLinks.TRAINS,
       background: TrainsPictures.CARD,
       description:
         'Réalisation numérique du jeu de plateau japonais ' +
@@ -256,7 +256,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.AVENTURIERS_DU_RAIL,
+      websiteLink: ForgeLinks.AVENTURIERS_DU_RAIL,
       background: AventuriersDuRailPictures.CARD,
       description:
         "Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde) " +
@@ -270,7 +270,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.E3CETE,
+      websiteLink: ForgeLinks.E3CETE,
       background: E3CetePictures.CARD,
       description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur`,
       techs: 'Java',
@@ -282,7 +282,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.SUDOKU,
+      websiteLink: ForgeLinks.SUDOKU,
       background: '',
       description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur',
       techs: 'Java, algorithmie',
@@ -294,7 +294,7 @@ export class Projects {
       show: true,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.MASTERMIND,
+      websiteLink: ForgeLinks.MASTERMIND,
       background: '',
       description:
         'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur',
@@ -307,7 +307,7 @@ export class Projects {
       show: false,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.MARIN_IVRE,
+      websiteLink: ForgeLinks.MARIN_IVRE,
       background: '',
       description:
         'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires',
@@ -320,7 +320,7 @@ export class Projects {
       show: false,
       showMoreInfo: false,
       moreInfoLink: { name: '' },
-      websiteLink: GithubLinks.FLIPPER_BALL,
+      websiteLink: ForgeLinks.FLIPPER_BALL,
       background: '',
       description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
       techs: 'Python, numpy',

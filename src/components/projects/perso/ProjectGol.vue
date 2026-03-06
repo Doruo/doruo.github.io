@@ -6,7 +6,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
 import { GameOfLifePictures } from '@/data/Pictures'
-import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { ForgeLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -33,7 +33,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
+      <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
       <SkillItem :img="LanguageIcons.GO" :link="LanguageLinks.GO" description="Structure du jeu" />
       <SkillItem :img="ToolIcons.EBITENGINE" :link="ToolLinks.EBITENGINE" description="Interface graphique en 2D" />
     </template>
@@ -45,7 +45,7 @@ import { GithubLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Link
     </template>
 
     <template #links>
-      <LinkItem :link="GithubLinks.GOL" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.GOL" :img="SocialIcons.CODEBERG" />
     </template>
 
   </ProjectItem>

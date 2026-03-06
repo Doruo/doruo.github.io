@@ -5,7 +5,7 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
 import { JellyBotPictures } from '@/data/Pictures'
-import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
+import { ForgeLinks, LanguageLinks, ToolLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -41,7 +41,7 @@ import { GithubLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     </template>
 
     <template #links>
-      <LinkItem :link="GithubLinks.JELLYBOT" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.JELLYBOT" :img="SocialIcons.GITHUB" />
     </template>
 
   </ProjectItem>
