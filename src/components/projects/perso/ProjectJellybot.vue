@@ -35,13 +35,13 @@ import { ForgeLinks, LanguageLinks, ToolLinks } from '@/data/Links'
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions du projet" />
+      <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
       <SkillItem :img="LanguageIcons.PYTHON" :link="LanguageLinks.PYTHON" description="Programmation du bot" />
       <SkillItem :img="ToolIcons.BOTS" :link="ToolLinks.BOTS" description="Intégration dans Discord" />
     </template>
 
     <template #links>
-      <LinkItem :link="ForgeLinks.JELLYBOT" :img="SocialIcons.GITHUB" />
+      <LinkItem :link="ForgeLinks.JELLYBOT" :img="SocialIcons.CODEBERG" />
     </template>
 
   </ProjectItem>

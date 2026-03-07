@@ -71,9 +71,9 @@ export class ForgeLinks {
   // iut
   static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
   static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
-  static readonly POURSUITE_ETUDES = SocialLinks.GITHUB + 'poursuite-etudes'
+  static readonly POURSUITE_ETUDES = SocialLinks.CODEBERG + 'poursuite-etudes'
   static readonly TRAINS = SocialLinks.GITHUB + 'trains'
-  static readonly AVENTURIERS_DU_RAIL = SocialLinks.GITHUB + 'aventuriers-du-rail'
+  static readonly AVENTURIERS_DU_RAIL = SocialLinks.CODEBERG + 'aventuriers-du-rail'
   static readonly MARIN_IVRE = SocialLinks.GITHUB + 'marinIvre'
   static readonly SUDOKU = SocialLinks.GITHUB + 'sudoku'
   static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'
@@ -84,9 +84,9 @@ export class ForgeLinks {
   // perso
   static readonly ELDEN_BUILD = SocialLinks.CODEBERG + 'elden-build'
   static readonly MESH = SocialLinks.CODEBERG + 'mesh'
-  static readonly FALLOUTDLE = SocialLinks.GITHUB + 'falloutdle'
+  static readonly FALLOUTDLE = SocialLinks.CODEBERG + 'falloutdle'
   static readonly GOL = SocialLinks.CODEBERG + 'go-of-life'
-  static readonly JELLYBOT = SocialLinks.GITHUB + 'jellybot'
+  static readonly JELLYBOT = SocialLinks.CODEBERG + 'jellybot'
   static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
   static readonly LLM_FROM_SCRATCH = SocialLinks.CODEBERG + 'llm-from-scratch'
 }
