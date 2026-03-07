@@ -20,9 +20,10 @@ import { CollaboratorPictures } from '@/data/Pictures';
         <b> parcours Réalisation d'Application: Conception, Déploiement & Validation</b>.
       </p>
       <p>
-        J'envisage à l'avenir de continuer mes apprentissages dans le réseau et la réalisation de logiciels,
-        mon objectif professionel est de devenir <b>développeur DevOps</b>.
-      </p>
+        Au quotidien je me tourne vers l'avenir, un internet libre, décentralisé et bienveillant.
+        Mon parcours informatique est engagé, anti-<a target="blank" href="https://fr.wikipedia.org/wiki/GAFAM">GAFAM</a>
+        et <a target="blank" href="https://en.wikipedia.org/wiki/DeGoogle">DeGooglisé</a>.
+     </p>
 
       <h1>
         <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV"/>
