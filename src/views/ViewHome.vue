@@ -2,7 +2,7 @@
 import AboutContact from '@/components/about/AboutContact.vue';
 import AboutIntro from '@/components/about/AboutIntro.vue'
 import ProjectCards from '@/components/projects/abstract/ProjectCards.vue'
-import { Projects } from '@/data/Projects'
+import Projects from '@/data/Projects'
 </script>
 
 <template>

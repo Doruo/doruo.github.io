@@ -2,7 +2,7 @@ import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { ForgeLinks, IUTLinks, ProjectLinks } from './Links'
 import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures, AventuriersDuRailPictures } from './Pictures'
 
-export interface Project {
+interface Project {
   id: string
   title: string
   show: boolean
@@ -15,13 +15,13 @@ export interface Project {
   tags: string[]
 }
 
-export interface ProjectCategory {
+interface ProjectCategory {
   id: string
   title: string
   projects: Project[]
 }
 
-export class Projects {
+export default class Projects {
   private static readonly allProjects: Project[] = [
     // /-----/ tool /-----/
     {
