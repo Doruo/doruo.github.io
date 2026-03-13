@@ -1,6 +1,23 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { ForgeLinks, IUTLinks, ProjectLinks } from './Links'
-import { EldenBuildPictures, GameOfLifePictures, NDI2024Pictures, TrainsPictures, FalloutdlePictures, ChuckNorrisPictures, MindSpiesPictures, E3CetePictures, MeshPictures, LlmPictures, NDI2025Pictures, JellyBotPictures, CGJ2023Pictures, CryptoWebsitePictures, PostApoPictures, AventuriersDuRailPictures } from './Pictures'
+import { 
+  AventuriersDuRailPictures, 
+  CGJ2023Pictures, 
+  ChuckNorrisPictures, 
+  CryptoWebsitePictures, 
+  E3CetePictures, 
+  EldenBuildPictures, 
+  FalloutdlePictures, 
+  GameOfLifePictures, 
+  JellyBotPictures, 
+  LlmPictures, 
+  MeshPictures, 
+  MindSpiesPictures, 
+  NDI2024Pictures, 
+  NDI2025Pictures, 
+  PostApoPictures, 
+  TrainsPictures 
+} from './Pictures'
 
 interface Project {
   id: string
@@ -328,20 +345,23 @@ export default class Projects {
     },
   ]
 
+
   // Filters
 
   public static getProjectsByTag(tag: string): Project[] {
-    return this.allProjects.filter((project) => project.tags.includes(tag))
+    return this.allProjects.filter((project) => project.tags.includes(tag));
   }
 
   // Main getters
+
+  public static getAllProjects(): Project[] { return this.allProjects; }
 
   public static getMainProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
       title: 'Projets mis en avant',
       projects: this.getProjectsByTag('main'),
-    }
+    };
   }
 
   public static getAcademicProjectsCategory(): ProjectCategory {
@@ -349,7 +369,7 @@ export default class Projects {
       id: 'academic',
       title: 'Académiques',
       projects: this.getProjectsByTag('academic'),
-    }
+    };
   }
 
   public static getGameProjectsCategory(): ProjectCategory {
@@ -357,7 +377,7 @@ export default class Projects {
       id: 'game',
       title: 'Jeux',
       projects: this.getProjectsByTag('game'),
-    }
+    };
   }
 
   public static getCommunityProjectsCategory(): ProjectCategory {
@@ -365,7 +385,7 @@ export default class Projects {
       id: 'community',
       title: 'Communautaires',
       projects: this.getProjectsByTag('community'),
-    }
+    };
   }
 
   public static getCompetitionProjectsCategory(): ProjectCategory {
@@ -373,7 +393,7 @@ export default class Projects {
       id: 'competition',
       title: 'Compétitions',
       projects: this.getProjectsByTag('competition'),
-    }
+    };
   }
 
   public static getToolProjectsCategory(): ProjectCategory {
@@ -381,6 +401,6 @@ export default class Projects {
       id: 'tools',
       title: 'Outils',
       projects: this.getProjectsByTag('tool'),
-    }
+    };
   }
 }
