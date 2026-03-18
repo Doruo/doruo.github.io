@@ -32,7 +32,7 @@ interface Project {
   tags: string[]
 }
 
-interface ProjectCategory {
+export interface ProjectCategory {
   id: string
   title: string
   projects: Project[]
@@ -49,15 +49,27 @@ export default class Projects {
       websiteLink: ForgeLinks.LLM_FROM_SCRATCH,
       moreInfoLink: { name: 'projects-llm-bigram' },
       background: LlmPictures.CARD,
-      description:
-        'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch',
+      description: 'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch.',
       techs: 'IA, Python, PyTorch, Jupyter',
+      tags: ['tool'],
+    },
+    {
+      id: 'anime-sama-downloader',
+      title: 'Anime-Sama Downloader',
+      show: true,
+      showMoreInfo: false,
+      background: '',
+      websiteLink: ForgeLinks.ANIME_SAMA_DOWNLOADER,
+      moreInfoLink: { name: '' },
+      description: `Outil de téléchargement automatique d'`+
+      `épisodes d'un anime, à l'aide de robots web anonymes.`,
+      techs: 'Typescript, Puppeteer',
       tags: ['tool'],
     },
     {
       id: 'stage-itesoft',
       title: 'Stage ITESOFT (confidentiel)',
-      show: true,
+      show: false,
       showMoreInfo: false,
       background: '',
       websiteLink: 'https://www.itesoft.com/fr/besoins/dematerialisation-factures/',

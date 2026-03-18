@@ -89,6 +89,7 @@ export class ForgeLinks {
   static readonly JELLYBOT = SocialLinks.CODEBERG + 'jellybot'
   static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
   static readonly LLM_FROM_SCRATCH = SocialLinks.CODEBERG + 'llm-from-scratch'
+  static readonly ANIME_SAMA_DOWNLOADER = "https://github.com/Fire0902/anime-sama-downloader"
 }
 
 export class ProjectLinks {
