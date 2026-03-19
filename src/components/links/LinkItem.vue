@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps({
-  img: { type: String, required: false, },
   link: { type: String, required: true, },
+  img: { type: String, required: false, },
   alt: { type: String, required: false, },
   text: { type: String, required: false, },
 })

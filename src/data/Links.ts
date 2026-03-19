@@ -143,3 +143,8 @@ export class ToolLinks {
   static readonly PYTORCH = 'https://pytorch.org/'
   static readonly JUPYTER = 'https://jupyter.org/'
 }
+
+export class AlterLinks {
+  static readonly OPEN_ALTER = 'https://openalternative.co/alternatives'
+  static readonly FAIREPHONE_6 = 'https://shop.fairphone.com/fr/the-fairphone-gen-6'
+}

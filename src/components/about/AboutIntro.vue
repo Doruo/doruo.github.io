@@ -22,7 +22,7 @@ import { CollaboratorPictures } from '@/data/Pictures';
       <p>
         Au quotidien je me tourne vers l'avenir, un internet libre, décentralisé et bienveillant.
         Mon parcours informatique est engagé, anti-<a target="blank" href="https://fr.wikipedia.org/wiki/GAFAM">GAFAM</a>
-        et <a target="blank" href="https://en.wikipedia.org/wiki/DeGoogle">DeGooglisé</a>.
+        et <router-link :to="{ name: 'degoogle' }">DeGooglisé</router-link>.
      </p>
 
       <h1>

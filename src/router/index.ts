@@ -16,11 +16,13 @@ import ProjectEldenBuild from '@/components/projects/perso/ProjectEldenBuild.vue
 import ProjectGol from '@/components/projects/perso/ProjectGol.vue';
 import ProjectJellybot from '@/components/projects/perso/ProjectJellybot.vue';
 import ProjectLLMBigram from '@/components/projects/perso/ProjectLLMBigram.vue';
+import ViewDegoogle from '@/views/ViewDegoogle.vue';
 
 const mainRoutes = [
   { path: '/', name: 'home', component: ViewHome },
   { path: '/about', name: 'about', component: ViewAbout },
   { path: '/projects', name: 'projects', component: ViewProjects },
+  { path: '/degoogle', name: 'degoogle', component: ViewDegoogle },
   { path: '/archives', name: 'archives', component: ViewArchives },
 ]
 
