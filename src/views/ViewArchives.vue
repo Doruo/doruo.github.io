@@ -3,11 +3,11 @@
   <section>
     <div class="container archives">
       <h2>Archives</h2>
+      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
         J'archive ici mes réalisations qui n'ont pas de page dédié, afin qu'ils restent accessibles.
       </p>
 
-      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <fieldset class="fieldset-archives">
         <legend>
           <h2>IUT</h2>
