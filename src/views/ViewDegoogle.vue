@@ -7,7 +7,6 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
   <!-- VIEW DEGOOGLE -->
   <section class="intro">
     <div class="intro-content">
-        <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
         <div>
             <h1>C'est quoi "DeGoogle" ?</h1>
             <p>
@@ -41,17 +40,21 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
 
         <div>
             <h1>Qu'est-ce que le FOSS (Free and Open-Source Software) ?</h1>
-            <p>
-                Selon une description faite par le courriel <a :href=AlterLinks.TUTA target="blank">Tuta</a>: 
-            </p>
             <p>            
                 Le FOSS, acronyme de Free and Open-Source Software, 
                 désigne les logiciels qui sont à la fois libres et à code source ouvert. 
+            </p>
+            <p>
                 Ce type de logiciel permet aux utilisateurs d’accéder au code source, de le modifier, 
                 de l’utiliser à toute fin et de le redistribuer librement, 
                 sous certaines conditions définies par la licence libre. 
-                Les logiciels FOSS offrent de nombreux avantages aussi bien pour les utilisateurs que pour les développeurs et les entreprises. En voici quelques-uns :
-
+            </p>
+            <p>
+                Les logiciels FOSS offrent de nombreux avantages aussi bien 
+                pour les utilisateurs que pour les développeurs et les entreprises. 
+                En voici quelques-uns :
+            </p>
+            <p>
                 <ul>
                     <li>
                         <b>Accès au code source</b> : La possibilité de consulter et de modifier le code est un atout majeur, 

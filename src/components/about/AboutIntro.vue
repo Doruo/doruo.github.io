@@ -12,7 +12,7 @@ import { CollaboratorPictures } from '@/data/Pictures';
     <div class="intro-content">
       <p>
         Etudiant à <a :href=WebsiteLinks.IUT>l'Université de Montpellier</a>, je suis passionné par
-        <b>l'informatique, la guitare et le sport.</b>
+        <b>l'informatique, la musique et le sport.</b>
       </p>
       <p>
         Souhaitant faire de l'informatique ma carrière, je suis actuellement en
