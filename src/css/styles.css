@@ -175,6 +175,12 @@ section {
   text-transform: uppercase;
 }
 
+/* DETAILS */
+
+details ul {
+  position:absolute;
+}
+
 /* LINK IMG */
 
 .link-img a img:not(.social-links .link-img a img){
