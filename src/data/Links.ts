@@ -147,4 +147,22 @@ export class ToolLinks {
 export class AlterLinks {
   static readonly OPEN_ALTER = 'https://openalternative.co/alternatives'
   static readonly FAIREPHONE_6 = 'https://shop.fairphone.com/fr/the-fairphone-gen-6'
+
+  static readonly TOR = 'https://www.torproject.org/'
+  static readonly BRAVE = 'https://brave.com/fr/'
+  static readonly LADYBIRD = 'https://ladybird.org/'
+
+  static readonly FREETUBE = 'https://freetubeapp.io/'
+  static readonly ODYSEE = 'https://odysee.com/'
+
+  static readonly RHYTHMBOX = 'https://doc.ubuntu-fr.org/rhythmbox'
+  static readonly DOPAMINE = 'https://digimezzo.github.io/site/'
+  static readonly NAVIDROME = 'https://www.navidrome.org/'
+
+  static readonly STOAT = 'https://stoat.chat/'
+  static readonly REDDIT = 'https://www.reddit.com/'
+  
+  static readonly PROTON_MAIL = 'https://proton.me/mail'
+  static readonly TUTA = 'https://tuta.com/'
+  
 }
