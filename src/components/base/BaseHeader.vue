@@ -8,9 +8,13 @@
       </div>
 
       <ul class="nav-links">
-        <li><router-link :to="{ name: 'about' }">À Propos</router-link></li>
+        <li><router-link :to="{ name: 'about' }">Bio</router-link></li>
         <li>|</li>
-        <li><router-link :to="{ name: 'projects' }">Réalisations</router-link></li>
+        <li><router-link :to="{ name: 'projects' }">Projets</router-link></li>
+        <li>|</li>
+        <li><router-link :to="{ name: 'degoogle' }">DeGoogle</router-link></li>
+        <li>|</li>
+        <li><router-link :to="{ name: 'archives' }">Archives</router-link></li>
         <li>|</li>
         <li><router-link to="/#contact">Contact</router-link></li>
       </ul>
