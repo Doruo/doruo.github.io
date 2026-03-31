@@ -292,14 +292,9 @@ a, .project-links a {
 
 @media (max-width: 1080px) {
 
-  #accueil,
-  .projects-grid {
+  #accueil {
     flex-direction: column;
     grid-template-columns: 1fr;
-  }
-
-  .intro {
-    height: 100%;
   }
 
   .container {
@@ -307,18 +302,26 @@ a, .project-links a {
     padding: 20px;
   }
 
+  /* INTRO */
+
+  .intro {
+    height: 100%;
+  }
+
   .intro-content {
-    max-width: 98%;
+    width: auto;
   }
 
   .intro-content p {
-    font-size: 1.2rem;
+    font-size: 1.95rem;
   }
 
   .intro-content h1,
   .intro-content h2 {
     font-size: 2.2rem;
   }
+
+  /* ENTETE */
 
   .entete {
     max-width: 100%;
@@ -327,6 +330,33 @@ a, .project-links a {
   .entete h1 {
     font-size: 3rem;
   }
+
+  .nav-links {
+    width: auto;
+  }
+
+  .nav-links li a, .branding {
+    font-size: 1.9rem;
+  }
+
+  /* PORTRAITS */
+
+  .intro-content img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 25%;
+    font-size: 2rem;
+  }
+
+  .intro .container-portrait a .portrait {
+    display: none;
+  }
+
+  .collaborators-grid .container-portrait a .portrait {
+    width: 115%;
+  }
+
+  /* CONTENU */
 
   .biographie .container h2,
   .future .container h2,
@@ -345,7 +375,25 @@ a, .project-links a {
     font-size: 1.6rem;
   }
 
+  /* PROJECT CARDS */
+
+  .project-grid{
+    display: block;
+  }
+
+  .project-card{
+    width: 90%;
+  }
+
+  /* CONTACT */
+
   .contact .container h2 {
     font-size: 2.6rem;
+  }
+
+  /* FOOTER */
+
+  .footer-text{
+    display: none;
   }
 }
