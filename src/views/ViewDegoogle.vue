@@ -80,7 +80,10 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
                     </li>
                 </ul>
             </p>
+            <p>Voici ma plateforme de référence pour trouver facilement des alternatives open source à tous nos outils du quotidien: <a :href=AlterLinks.OPEN_ALTER target="blank">openalternative.co</a>.</p>
         </div>
+
+        <!-- 
 
         <div>
             <h1>Mes alternatives</h1>
@@ -162,6 +165,8 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
                 <li><p>GOG</p></li>
             </ul>
         </div>
+
+        -->
     </div>
   </section>
 </template>
