@@ -5,7 +5,9 @@
 
   --primary-bg-color: rgb(35, 38, 39);
   --primary-headers-color: #2a3a4b;
-  --primary-text-color: white /* rgb(232, 230, 227)*/;
+  --primary-text-color: white
+    /* rgb(232, 230, 227)*/
+  ;
   --primary-link-color: rgb(130, 228, 213);
   --primary-hover-color: #aaa;
 
@@ -70,7 +72,7 @@ footer {
   margin: auto;
 }
 
-.footer-text{
+.footer-text {
   width: 100%;
 }
 
@@ -103,7 +105,8 @@ footer {
   width: 30%;
 }
 
-.nav-links li a, .branding{
+.nav-links li a,
+.branding {
   text-shadow: 4px 4px 4px #000000;
 }
 
@@ -217,7 +220,7 @@ section {
   transition: all 0.3s ease;
 }
 
-.project-card{
+.project-card {
   width: 110%;
   height: 100%;
 
@@ -248,8 +251,7 @@ section {
 .project-card a img:hover,
 .link-img a img:hover,
 .skill-card a img:hover,
-.portrait:hover
-{
+.portrait:hover {
   transform: scale(1.04);
 }
 
@@ -266,12 +268,12 @@ section {
 /* DETAILS */
 
 details ul {
-  position:absolute;
+  position: absolute;
 }
 
 /* LINK IMG */
 
-.link-img a img:not(.social-links .link-img a img){
+.link-img a img:not(.social-links .link-img a img) {
   max-width: 60px;
   max-height: 60px;
 }
@@ -286,7 +288,8 @@ details ul {
 
 /* LINK */
 
-a, .project-links a {
+a,
+.project-links a {
   color: var(--primary-link-color);
   text-decoration: none;
 }
@@ -376,9 +379,9 @@ a, .project-links a {
   color: var(--primary-text-color);
 }
 
-/* MEDIA QUERIES */
+/* --------- MEDIA QUERIES --------- */
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 
   #accueil {
     flex-direction: column;
@@ -423,7 +426,8 @@ a, .project-links a {
     width: auto;
   }
 
-  .nav-links li a, .branding {
+  .nav-links li a,
+  .branding {
     font-size: 1.9rem;
   }
 
@@ -450,6 +454,7 @@ a, .project-links a {
   .future .container h2,
   .project-card h3,
   .projects-content h2,
+  h2,
   .entete p {
     font-size: 2.2rem;
   }
@@ -459,17 +464,19 @@ a, .project-links a {
   .project-card p,
   .project-card a,
   .contact .container p,
-  .social-links a {
-    font-size: 1.6rem;
+  .skill-card p,
+  .social-links a,
+  .container-portrait a div {
+    font-size: 1.9rem;
   }
 
   /* PROJECT CARDS */
 
-  .project-grid{
+  .project-grid {
     display: block;
   }
 
-  .project-card{
+  .project-card {
     width: 90%;
   }
 
@@ -481,7 +488,7 @@ a, .project-links a {
 
   /* FOOTER */
 
-  .footer-text{
+  .footer-text {
     display: none;
   }
 }
