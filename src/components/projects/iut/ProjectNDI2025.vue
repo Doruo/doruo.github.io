@@ -16,8 +16,9 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <img alt="logo ndi 2025" :src="NDI2025Pictures.LOGO" />
     </template>
 
+    <template #title>Numérique Inclusif, Responsable et Durable</template>
+
     <template #description>
-      <h2>Numérique Inclusif, Responsable et Durable</h2>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2025</a>.
@@ -61,16 +62,23 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS" alt="CYPRIEN BONS" />
-      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS" alt="MAEL NICOLAS" />
-      <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS" :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
-      <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS" :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
-      <PortraitItem name="Galdric Desert" :link="CollaboratorLinks.GALDRIC_DESERT" :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
-      <PortraitItem name="Nicolas Lyfong" :link="CollaboratorLinks.NICOLAS_LYFONG" :img="CollaboratorPictures.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
+      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS"
+        alt="CYPRIEN BONS" />
+      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS"
+        alt="MAEL NICOLAS" />
+      <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS"
+        :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
+      <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS"
+        :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
+      <PortraitItem name="Galdric Desert" :link="CollaboratorLinks.GALDRIC_DESERT"
+        :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
+      <PortraitItem name="Nicolas Lyfong" :link="CollaboratorLinks.NICOLAS_LYFONG"
+        :img="CollaboratorPictures.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
+        description="Gestion des versions, et collaboration en équipe" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
       <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
       <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface utilisateur" />

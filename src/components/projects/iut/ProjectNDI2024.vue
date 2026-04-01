@@ -16,8 +16,9 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
       <img alt="logo ndi 2024" :src="NDI2024Pictures.LOGO" />
     </template>
 
+    <template #title>Race For Water</template>
+
     <template #description>
-      <h2>Race For Water</h2>
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2024</a>.
@@ -44,17 +45,25 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem name="Mattéo Benhalima" :link="CollaboratorLinks.MATTEO_BENHALIMA" :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA"/>
-      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES" alt="EVAN_NUNES"/>
-      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
-      <PortraitItem name="Paulo Moreira" :link="CollaboratorLinks.PAULO_MOREIRA" :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA"/>
-      <PortraitItem name="Yann Bodiguel" :link="CollaboratorLinks.YANN_BODIGUEL" :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL"/>
+      <PortraitItem name="Mattéo Benhalima" :link="CollaboratorLinks.MATTEO_BENHALIMA"
+        :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA" />
+      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES"
+        alt="EVAN_NUNES" />
+      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING"
+        :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING" />
+      <PortraitItem name="Paulo Moreira" :link="CollaboratorLinks.PAULO_MOREIRA"
+        :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA" />
+      <PortraitItem name="Yann Bodiguel" :link="CollaboratorLinks.YANN_BODIGUEL"
+        :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL" />
     </template>
 
     <template #abilities>
-      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB" description="Gestion des versions, et collaboration en équipe" />
-      <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS" description="Routage et implémentation de l'océan" />
-      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page de l'interface des articles" />
+      <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
+        description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS"
+        description="Routage et implémentation de l'océan" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP"
+        description="Mise en page de l'interface des articles" />
     </template>
 
     <template #assets>
