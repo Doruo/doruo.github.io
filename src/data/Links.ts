@@ -57,7 +57,7 @@ export class WebsiteLinks {
 export class SocialLinks {
   private static readonly mail= "marc.haye.pro@protonmail.com"
   static readonly MAIL = 'mailto:' + this.mail;
-  static readonly CV = "/CV/CV-MARC-HAYE.pdf";
+  static readonly CV = "/CV.pdf";
 
   static readonly GITHUB = 'https://github.com/doruo/'
   static readonly CODEBERG = 'https://codeberg.org/doruo/'
