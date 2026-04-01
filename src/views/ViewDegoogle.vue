@@ -4,86 +4,90 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
 </script>
 
 <template>
-  <!-- VIEW DEGOOGLE -->
-  <section class="intro">
-    <div class="intro-content">
-        <div>
-            <h1>C'est quoi "DeGoogle" ?</h1>
-            <p>
-                Selon une description faite par le courriel <a :href=AlterLinks.TUTA target="blank">Tuta</a>: 
-            </p>
-            <p>            
-                "À mesure que les gens prennent conscience de la manière dont Google
-                réalise d’énormes profits grâce à des tactiques qui portent atteinte à la vie privée, 
-                un nouveau mouvement a vu le jour : le “de-Googling” (dégooglisation). 
-            </p>
-            <p>
-                Mais que signifie “dégoogliser” ? 
-            </p>
-            <p>
-                Le <a href="https://degooglisons-internet.org/" target="blank">“dégooglisme”</a> consiste à remplacer les applications et les services de Google 
-                par de meilleures solutions, généralement plus confidentielles et plus sûres. 
-            </p>
-            <p>
-                Dans le monde entier, les gens choisissent de quitter Google en raison des préoccupations 
-                croissantes en matière de protection de la vie privée, des risques associés au géant de la technologie 
-                et de l’enfermement dans son écosystème."
-            </p>
-            <p>
-                Plus largement, ce mouvement peut également englober tout effort de remplacer les GAFAM.
-            </p>
-            <p>            
-                Je m'efforce à trouver et comparer différentes alternatives libres et open source (FOSS),
-                qui pourrait remplacer tous nos outils du quotidien et se libérer des chaines de la Silicon Valley.
-            </p>    
-        </div>
+    <!-- VIEW DEGOOGLE -->
+    <section class="intro">
+        <div class="intro-content">
+            <div>
+                <h1>C'est quoi "DeGoogle" ?</h1>
+                <p>
+                    Selon une description faite par le courriel <a :href=AlterLinks.TUTA target="blank">Tuta</a>:
+                </p>
+                <p>
+                    "À mesure que les gens prennent conscience de la manière dont Google
+                    réalise d’énormes profits grâce à des tactiques qui portent atteinte à la vie privée,
+                    un nouveau mouvement a vu le jour : le “de-Googling” (dégooglisation).
+                </p>
+                <p>
+                    Mais que signifie “dégoogliser” ?
+                </p>
+                <p>
+                    Le <a href="https://degooglisons-internet.org/" target="blank">“dégooglisme”</a> consiste à
+                    remplacer les applications et les services de Google
+                    par de meilleures solutions, généralement plus confidentielles et plus sûres.
+                </p>
+                <p>
+                    Dans le monde entier, les gens choisissent de quitter Google en raison des préoccupations
+                    croissantes en matière de protection de la vie privée, des risques associés au géant de la
+                    technologie
+                    et de l’enfermement dans son écosystème."
+                </p>
+                <p>
+                    Plus largement, ce mouvement peut également englober tout effort de remplacer les GAFAM.
+                </p>
+                <p>
+                    Je m'efforce à trouver et comparer différentes alternatives libres et open source (FOSS),
+                    qui pourrait remplacer tous nos outils du quotidien et se libérer des chaines de la Silicon Valley.
+                </p>
+            </div>
 
-        <div>
-            <h1>Qu'est-ce que le FOSS (Free and Open-Source Software) ?</h1>
-            <p>            
-                Le FOSS, acronyme de Free and Open-Source Software, 
-                désigne les logiciels qui sont à la fois libres et à code source ouvert. 
-            </p>
-            <p>
-                Ce type de logiciel permet aux utilisateurs d’accéder au code source, de le modifier, 
-                de l’utiliser à toute fin et de le redistribuer librement, 
-                sous certaines conditions définies par la licence libre. 
-            </p>
-            <p>
-                Les logiciels FOSS offrent de nombreux avantages aussi bien 
-                pour les utilisateurs que pour les développeurs et les entreprises. 
-                En voici quelques-uns :
-            </p>
-            <p>
+            <div>
+                <h1>Qu'est-ce que le FOSS (Free and Open-Source Software) ?</h1>
+                <p>
+                    Le FOSS, acronyme de Free and Open-Source Software,
+                    désigne les logiciels qui sont à la fois libres et à code source ouvert.
+                </p>
+                <p>
+                    Ce type de logiciel permet aux utilisateurs d’accéder au code source, de le modifier,
+                    de l’utiliser à toute fin et de le redistribuer librement,
+                    sous certaines conditions définies par la licence libre.
+                </p>
+                <p>
+                    Les logiciels FOSS offrent de nombreux avantages aussi bien
+                    pour les utilisateurs que pour les développeurs et les entreprises.
+                    En voici quelques-uns :
+                </p>
+
                 <ul>
                     <li>
-                        <b>Accès au code source</b> : La possibilité de consulter et de modifier le code est un atout majeur, 
+                        <b>Accès au code source</b> : La possibilité de consulter et de modifier le code est un atout
+                        majeur,
                         surtout pour les développeurs qui souhaitent personnaliser les outils selon leurs besoins.
                     </li>
                     <br>
                     <li>
-                        <b>Amélioration continue</b> : Grâce à un modèle de développement collaboratif, 
-                        les logiciels open-source sont souvent plus sûrs et évoluent rapidement 
+                        <b>Amélioration continue</b> : Grâce à un modèle de développement collaboratif,
+                        les logiciels open-source sont souvent plus sûrs et évoluent rapidement
                         grâce aux contributions d’une vaste communauté.
                     </li>
                     <br>
                     <li>
-                        <b>Indépendance vis-à-vis des éditeurs</b> : Utiliser un logiciel libre évite 
-                        d’être dépendant des entreprises qui possèdent le code propriétaire, 
+                        <b>Indépendance vis-à-vis des éditeurs</b> : Utiliser un logiciel libre évite
+                        d’être dépendant des entreprises qui possèdent le code propriétaire,
                         offrant ainsi plus de flexibilité pour les utilisateurs.
                     </li>
                     <br>
                     <li>
-                        <b>Coût réduit</b> : Même si le libre ne signifie pas toujours gratuit, 
-                        de nombreux logiciels FOSS sont accessibles gratuitement, 
+                        <b>Coût réduit</b> : Même si le libre ne signifie pas toujours gratuit,
+                        de nombreux logiciels FOSS sont accessibles gratuitement,
                         réduisant ainsi les coûts pour les entreprises et les particuliers.
                     </li>
                 </ul>
-            </p>
-            <p>Voici ma plateforme de référence pour trouver facilement des alternatives open source à tous nos outils du quotidien: <a :href=AlterLinks.OPEN_ALTER target="blank">openalternative.co</a>.</p>
-        </div>
 
-        <!-- 
+                <p>Voici ma plateforme de référence pour trouver facilement des alternatives open source à tous nos
+                    outils du quotidien: <a :href=AlterLinks.OPEN_ALTER target="blank">openalternative.co</a>.</p>
+            </div>
+
+            <!-- 
 
         <div>
             <h1>Mes alternatives</h1>
@@ -167,6 +171,6 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
         </div>
 
         -->
-    </div>
-  </section>
+        </div>
+    </section>
 </template>
