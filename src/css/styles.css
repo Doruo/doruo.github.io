@@ -40,8 +40,8 @@
   --max-w: 1100px;
   --max-w-narrow: 680px;
   --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 28px;
+  --radius-md: 15px;
+  --radius-lg: 15%;
 
   /* Motion */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -374,6 +374,7 @@ section {
     box-shadow var(--duration-lg) var(--ease-out);
 }
 
+.main-portrait:hover, 
 .portrait:hover {
   transform: scale(1.025) rotate(-1deg);
   box-shadow: 0 0 80px rgba(100, 220, 200, 0.18), var(--shadow-card);
