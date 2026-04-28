@@ -63,6 +63,12 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Mise en page responsive de l'interface graphique de l'application" />
     </template>
 
+    <template #assets-concept>      
+      <ProjectImageItem :link="EldenBuildPictures.DATABASE" :alt="EldenBuildPictures.DATABASE" />
+      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
+      <ProjectImageItem :link="EldenBuildPictures.NODE" :alt="EldenBuildPictures.NODE" />
+    </template>
+
     <template #assets>
       <ProjectImageItem :link="EldenBuildPictures.HOME" :alt="EldenBuildPictures.HOME" />
       <ProjectImageItem :link="EldenBuildPictures.EQUIPMENT" :alt="EldenBuildPictures.EQUIPMENT" />
@@ -70,12 +76,6 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
 
       <ProjectImageItem :link="EldenBuildPictures.PROFILE" :alt="EldenBuildPictures.PROFILE" />
       <ProjectImageItem :link="EldenBuildPictures.SIGNUP" :alt="EldenBuildPictures.SIGNUP" />
-    </template>
-
-    <template #assets-concept>      
-      <ProjectImageItem :link="EldenBuildPictures.DATABASE" :alt="EldenBuildPictures.DATABASE" />
-      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
-      <ProjectImageItem :link="EldenBuildPictures.NODE" :alt="EldenBuildPictures.NODE" />
     </template>
 
     <template #links>

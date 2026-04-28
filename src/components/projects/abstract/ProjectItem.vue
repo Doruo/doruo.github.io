@@ -38,18 +38,6 @@ defineProps({
   </section>
 
   <section class="projects">
-    <!-- PROJECT ASSETS VISUALS-->
-    <div class="project-content-image">
-
-      <h2>Visuel</h2>
-      <div class="project-grid">
-        <slot name="assets"></slot>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="projects">
     <!-- PROJECT ASSETS CONCEPTION -->
     <div class="project-content-image">
 
@@ -58,6 +46,17 @@ defineProps({
         <slot name="assets-concept"></slot>
       </div>
 
+    </div>
+  </section>
+  
+  <section class="projects">
+    <!-- PROJECT ASSETS VISUALS-->
+    <div class="project-content-image">
+
+      <h2>Visuel</h2>
+      <div class="project-grid">
+        <slot name="assets"></slot>
+      </div>
     </div>
   </section>
 

@@ -119,7 +119,7 @@ export class EldenBuildPictures {
   static readonly PROFILE = new URL('@/img/projects/perso/elden-build/profile.webp', import.meta.url).href;
   static readonly SIGNUP = new URL('@/img/projects/perso/elden-build/signup.webp', import.meta.url).href;
 
-  static readonly EQUIPMENT = new URL('@/img/projects/perso/elden-build/equipmen.webp', import.meta.url).href;
+  static readonly EQUIPMENT = new URL('@/img/projects/perso/elden-build/testapi.webp', import.meta.url).href;
   static readonly DATABASE = new URL('@/img/projects/perso/elden-build/database.webp', import.meta.url).href;
 }
 
