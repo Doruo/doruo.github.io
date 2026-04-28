@@ -65,11 +65,17 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
 
     <template #assets>
       <ProjectImageItem :link="EldenBuildPictures.HOME" :alt="EldenBuildPictures.HOME" />
-      <ProjectImageItem :link="EldenBuildPictures.INSCRIPTION" :alt="EldenBuildPictures.INSCRIPTION" />
-      <ProjectImageItem :link="EldenBuildPictures.PROFILE" :alt="EldenBuildPictures.PROFILE" />
-      <ProjectImageItem :link="EldenBuildPictures.BUILD" :alt="EldenBuildPictures.BUILD" />
-      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
       <ProjectImageItem :link="EldenBuildPictures.EQUIPMENT" :alt="EldenBuildPictures.EQUIPMENT" />
+      <ProjectImageItem :link="EldenBuildPictures.BUILD" :alt="EldenBuildPictures.BUILD" />
+
+      <ProjectImageItem :link="EldenBuildPictures.PROFILE" :alt="EldenBuildPictures.PROFILE" />
+      <ProjectImageItem :link="EldenBuildPictures.SIGNUP" :alt="EldenBuildPictures.SIGNUP" />
+    </template>
+
+    <template #assets-concept>      
+      <ProjectImageItem :link="EldenBuildPictures.DATABASE" :alt="EldenBuildPictures.DATABASE" />
+      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
+      <ProjectImageItem :link="EldenBuildPictures.NODE" :alt="EldenBuildPictures.NODE" />
     </template>
 
     <template #links>

@@ -110,12 +110,17 @@ export class ChuckNorrisPictures {
 export class EldenBuildPictures {
   static readonly CARD = new URL('@/img/projects/perso/elden-build/card.webp', import.meta.url).href;
   static readonly LOGO = new URL('@/img/projects/perso/elden-build/ranni.webp', import.meta.url).href;
-  static readonly HOME = new URL('@/img/projects/perso/elden-build/home.webp', import.meta.url).href;
+
   static readonly BUILD = new URL('@/img/projects/perso/elden-build/build.webp', import.meta.url).href;
-  static readonly EQUIPMENT = new URL('@/img/projects/perso/elden-build/equipment.webp', import.meta.url).href;
+  static readonly API_CALL = new URL('@/img/projects/perso/elden-build/api_equipment.webp', import.meta.url).href;
+  static readonly NODE = new URL('@/img/projects/perso/elden-build/node.webp', import.meta.url).href;
+
+  static readonly HOME = new URL('@/img/projects/perso/elden-build/home.webp', import.meta.url).href;
   static readonly PROFILE = new URL('@/img/projects/perso/elden-build/profile.webp', import.meta.url).href;
-  static readonly INSCRIPTION = new URL('@/img/projects/perso/elden-build/signup.webp', import.meta.url).href;
-  static readonly API_CALL = new URL('@/img/projects/perso/elden-build/testapi.webp', import.meta.url).href;
+  static readonly SIGNUP = new URL('@/img/projects/perso/elden-build/signup.webp', import.meta.url).href;
+
+  static readonly EQUIPMENT = new URL('@/img/projects/perso/elden-build/equipmen.webp', import.meta.url).href;
+  static readonly DATABASE = new URL('@/img/projects/perso/elden-build/database.webp', import.meta.url).href;
 }
 
 export class GameOfLifePictures {

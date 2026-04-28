@@ -38,7 +38,7 @@ defineProps({
   </section>
 
   <section class="projects">
-    <!-- PROJECT ASSETS -->
+    <!-- PROJECT ASSETS VISUALS-->
     <div class="project-content-image">
 
       <h2>Visuel</h2>
@@ -50,7 +50,7 @@ defineProps({
   </section>
 
   <section class="projects">
-    <!-- PROJECT ASSETS -->
+    <!-- PROJECT ASSETS CONCEPTION -->
     <div class="project-content-image">
 
       <h2>Conception</h2>
