@@ -29,6 +29,6 @@ import { CollaboratorPictures } from '@/data/Pictures';
         <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV"/>
       </h1>
     </div>
-    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"/>
+    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro" :isMain="true"/>
   </section>
 </template>
