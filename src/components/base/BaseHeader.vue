@@ -4,7 +4,7 @@
     <nav class="nav">
       <div class="branding">
         <h1><router-link :to="{ name: 'home' }">Marc Haye</router-link></h1>
-        <h4>> Étudiant en Informatique</h4>
+        <h4>Étudiant en Informatique</h4>
       </div>
 
       <ul class="nav-links">
@@ -13,6 +13,8 @@
         <li><router-link :to="{ name: 'projects' }">Projets</router-link></li>
         <li>|</li>
         <li><router-link to="/#contact">Contact</router-link></li>
+        
+        <!--
         <li>|</li>
         <li>
           <details>
@@ -23,6 +25,7 @@
             </ul>
           </details>
         </li>
+        -->
       </ul>
     </nav>
   </header>
