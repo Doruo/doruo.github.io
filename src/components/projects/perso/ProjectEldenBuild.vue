@@ -19,34 +19,38 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
 
     <template #description>
       <p>
-        Site web de gestion de build à but communautaire du jeu vidéo
+        Durant la fin de ma première année d'études, j'ai conçu dans mon temps libre 
+        <b>Elden Build</b> :
+        un site web de gestion de build à but communautaire du jeu vidéo
         <a :href="WebsiteLinks.ELDEN_RING">Elden Ring</a>.
       </p>
+      
       <p>
-        Un build est par définition la construction et l'évolution d'un ensemble d'équipement du
-        personnage incarné par le joueur. Entre choix (et évolution) des compétences, répartition
-        des points d'expérience, bonus, armes, et autres avantages.
+        Un build est un ensemble d'équipements utilisables dans le jeu: armes, armures, 
+        compétences, points d'expérience, etc.
       </p>
+      
       <p>
-        Le but du site Elden Build était principalement d'en faire une plateforme vivante, et
-        entretenue par la communauté internationale du jeu (d'où l'entièreté du site en anglais). Il
-        y a actuellement très peu voir pas de site web existant réellement dédié pour créer des
+        Le concept du site est une plateforme vivante et
+        entretenue par la communauté internationale du jeu. 
+      </p>
+      
+      <p>     
+        Il y a actuellement très peu voir pas de site web existant réellement dédié pour créer des
         ensembles d'équipements au thème du jeu, malgré son immense communauté à travers le monde.
       </p>
+
       <p>
-        Le projet, étant incomplet, était plus un exercice amusant pour comprendre PHP, JavaScript,
-        les requêtes AJAX, l'architecture MVC et ses limites. L'application communique via des
-        requêtes HTTP asynchrones vers une <a target="_blank" :href="WebsiteLinks.ELDEN_RING_FAN_API">fan API d'Elden Ring</a>.
+        Le projet, étant incomplet, était plus un défi personnel pour comprendre PHP, JavaScript,
+        les requêtes AJAX, et l'architecture MVC. 
+        L'application communique en temps réel avec une <a target="_blank" :href="WebsiteLinks.ELDEN_RING_FAN_API">API</a>.
       </p>
       <p>
-        Je compte peut-être à l'avenir refaire un projet similaire, mais en concevant la partie
-        serveur avec Node.JS, ce qui facilitera l'amélioration du projet, l'optimisation de
-        l'asynchronisme des requêtes, optimisera et améliorera son utilisation. Ce dernier pourrait
-        également utiliser un système de forum en ligne où chacun pourrait débattre sur des sujets
-        au thème du jeu.
+        Je compte peut-être à l'avenir reconstruit le projet avec Node.JS, 
+        et implémenter un forum en ligne où chacun pourrait débattre autour du jeu.
       </p>
       <p>
-        Le jeu Elden Ring et le personnage de Ranni sont des propriétés de FromSoftware et BANDAI NAMCO INC.
+        Le jeu Elden Ring est propriété exclusive de FromSoftware et BANDAI NAMCO INC.
       </p>
     </template>
 
