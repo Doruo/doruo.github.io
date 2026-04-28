@@ -1,22 +1,25 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { ForgeLinks, IUTLinks, ProjectLinks } from './Links'
-import { 
-  AventuriersDuRailPictures, 
-  CGJ2023Pictures, 
-  ChuckNorrisPictures, 
-  CryptoWebsitePictures, 
-  E3CetePictures, 
-  EldenBuildPictures, 
-  FalloutdlePictures, 
-  GameOfLifePictures, 
-  JellyBotPictures, 
-  LlmPictures, 
-  MeshPictures, 
-  MindSpiesPictures, 
-  NDI2024Pictures, 
-  NDI2025Pictures, 
-  PostApoPictures, 
-  TrainsPictures 
+import {
+  AventuriersDuRailPictures,
+  CGJ2023Pictures,
+  ChuckNorrisPictures,
+  CryptoWebsitePictures,
+  E3CetePictures,
+  EldenBuildPictures,
+  FalloutdlePictures,
+  GameOfLifePictures,
+  JellyBotPictures,
+  LlmPictures,
+  MeshPictures,
+  MindSpiesPictures,
+  MyAvatarPictures,
+  NDI2024Pictures,
+  NDI2025Pictures,
+  PostApoPictures,
+  PoursuiteEtudesPictures,
+  SudokuPictures,
+  TrainsPictures
 } from './Pictures'
 
 interface Project {
@@ -61,8 +64,8 @@ export default class Projects {
       background: '',
       websiteLink: ForgeLinks.ANIME_SAMA_DOWNLOADER,
       moreInfoLink: { name: '' },
-      description: `Outil de téléchargement automatique d'`+
-      `épisodes d'un anime, à l'aide de robots web anonymes.`,
+      description: `Outil de téléchargement automatique d'` +
+        `épisodes d'un anime, à l'aide de robots web anonymes.`,
       techs: 'Typescript, Puppeteer',
       tags: ['tool'],
     },
@@ -88,9 +91,7 @@ export default class Projects {
       moreInfoLink: { name: 'projects-jellybot' },
       websiteLink: ForgeLinks.JELLYBOT,
       background: JellyBotPictures.CARD,
-      description:
-        "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus. " +
-        '<a href=https://jellyfin.org/>Jellyfin</a> est un logiciel de serveur multimédia sous licence libre que vous pouvez héberger chez vous !',
+      description: "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.",
       techs: 'Python, discord.py, Jellyfin API, Discord',
       tags: ['tool'],
     },
@@ -145,7 +146,7 @@ export default class Projects {
       websiteLink: ForgeLinks.ELDEN_BUILD,
       background: EldenBuildPictures.CARD,
       description:
-        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>',
+        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
       tags: ['main', 'community'],
     },
@@ -158,7 +159,7 @@ export default class Projects {
       websiteLink: ForgeLinks.FALLOUTDLE,
       background: FalloutdlePictures.CARD,
       description:
-        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours",
+        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours !",
       techs: 'Go, Web Scraping, API, JSON',
       tags: ['community'],
     },
@@ -170,7 +171,7 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.MESH,
       background: MeshPictures.CARD,
-      description: 'Lightweight messaging application written in Go language, with Peer to Peer networking',
+      description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
     },
@@ -182,9 +183,9 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
       websiteLink: ForgeLinks.POURSUITE_ETUDES,
-      background: '',
+      background: PoursuiteEtudesPictures.CARD,
       description:
-        "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier",
+        "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier.",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
       tags: ['main', 'academic'],
     },
@@ -195,9 +196,9 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: ProjectLinks.MY_AVATAR,
-      background: '',
+      background: MyAvatarPictures.CARD,
       description:
-        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony',
+        'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
       techs: 'Symfony, JavaScript, MySQL, Twig',
       tags: ['academic'],
     },
@@ -261,7 +262,7 @@ export default class Projects {
       websiteLink: ForgeLinks.GOL,
       background: GameOfLifePictures.CARD,
       description:
-        `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal`,
+        `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal.`,
       techs: 'Go, Ebitengine',
       tags: ['game'],
     },
@@ -275,7 +276,7 @@ export default class Projects {
       background: TrainsPictures.CARD,
       description:
         'Réalisation numérique du jeu de plateau japonais ' +
-        "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
+        "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
       techs: 'Java, JavaFX',
       tags: ['game'],
     },
@@ -289,7 +290,7 @@ export default class Projects {
       background: AventuriersDuRailPictures.CARD,
       description:
         "Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde) " +
-        "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur",
+        "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
       techs: 'Java, JavaFX',
       tags: ['game'],
     },
@@ -301,7 +302,7 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.E3CETE,
       background: E3CetePictures.CARD,
-      description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur`,
+      description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur.`,
       techs: 'Java',
       tags: ['game'],
     },
@@ -312,8 +313,8 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.SUDOKU,
-      background: '',
-      description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur',
+      background: SudokuPictures.CARD,
+      description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
       tags: ['game'],
     },
@@ -326,7 +327,7 @@ export default class Projects {
       websiteLink: ForgeLinks.MASTERMIND,
       background: '',
       description:
-        'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur',
+        'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
       tags: ['game'],
     },
@@ -339,7 +340,7 @@ export default class Projects {
       websiteLink: ForgeLinks.MARIN_IVRE,
       background: '',
       description:
-        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires',
+        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
       techs: 'Java',
       tags: ['game'],
     },
@@ -351,7 +352,7 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.FLIPPER_BALL,
       background: '',
-      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python`,
+      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
       techs: 'Python, numpy',
       tags: ['game'],
     },

@@ -20,6 +20,8 @@ export class CollaboratorPictures {
 // IUT
 
 export class PoursuiteEtudesPictures {
+  static readonly CARD = new URL('@/img/projects/iut/poursuite-etudes/card.webp', import.meta.url).href;
+
   static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuite-etudes/logo_iut.webp', import.meta.url).href;
   static readonly HOME = new URL('@/img/projects/iut/poursuite-etudes/home.webp', import.meta.url).href;
   static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etudes/agregation.webp', import.meta.url).href;
@@ -31,7 +33,12 @@ export class PoursuiteEtudesPictures {
   static readonly SUBJECT = new URL('/poursuite-etudes/subject.pdf', import.meta.url).href;
 }
 
+export class SudokuPictures {
+  static readonly CARD = new URL('@/img/projects/iut/sudoku/card.svg', import.meta.url).href;
+}
+
 export class MyAvatarPictures {
+  static readonly CARD = new URL('@/img/projects/iut/my-avatar/card.svg', import.meta.url).href;
   static readonly SIGNUP = new URL('@/img/projects/iut/my-avatar/signup.webp', import.meta.url).href;
   static readonly PROFILE = new URL('@/img/projects/iut/my-avatar/profile.webp', import.meta.url).href;
   static readonly ADMIN = new URL('@/img/projects/iut/my-avatar/admin.webp', import.meta.url).href;
