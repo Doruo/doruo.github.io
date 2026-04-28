@@ -34,7 +34,13 @@ import { CollaboratorPictures } from '@/data/Pictures';
       </h1>
 
     </div>
-    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"
-      :isMain="true" />
+
+    <PortraitItem
+      :link="SocialLinks.LINKEDIN"
+      :img="CollaboratorPictures.MARC_HAYE"
+      alt="portrait intro"
+      :isMain="true"
+    />
+
   </section>
 </template>
