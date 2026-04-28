@@ -10,25 +10,31 @@ import { CollaboratorPictures } from '@/data/Pictures';
   <!-- BIO -->
   <section class="intro">
     <div class="intro-content">
+
       <p>
-        Etudiant à <a :href=WebsiteLinks.IUT>l'Université de Montpellier</a>, je suis passionné par
+        Etudiant à l'<a :href=WebsiteLinks.IUT>Université de Montpellier</a>, je suis passionné par
         <b>l'informatique, la musique et le sport.</b>
       </p>
+
       <p>
         Souhaitant faire de l'informatique ma carrière, je suis actuellement en
         <b>3ème année de BUT informatique</b>, spécialisé dans le
         <b> parcours Réalisation d'Application: Conception, Déploiement & Validation</b>.
       </p>
+
       <p>
         Au quotidien je me tourne vers l'avenir, un internet libre, décentralisé et bienveillant.
-        Mon parcours informatique est engagé, anti-<a target="blank" href="https://fr.wikipedia.org/wiki/GAFAM">GAFAM</a>
+        Mon parcours informatique est engagé, anti-<a target="blank"
+          href="https://fr.wikipedia.org/wiki/GAFAM">GAFAM</a>
         et <router-link :to="{ name: 'degoogle' }">DeGooglisé</router-link>.
-     </p>
+      </p>
 
       <h1>
-        <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV"/>
+        <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV" />
       </h1>
+
     </div>
-    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro" :isMain="true"/>
+    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"
+      :isMain="true" />
   </section>
 </template>
