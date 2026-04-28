@@ -11,9 +11,11 @@ import { CollaboratorPictures } from '@/data/Pictures';
   <section class="intro">
     <div class="intro-content">
 
+      <h1>Hello !</h1>
       <p>
-        Etudiant à l'<a :href=WebsiteLinks.IUT>Université de Montpellier</a>, je suis passionné par
-        <b>l'informatique, la musique et le sport.</b>
+        Etudiant à l'<a :href=WebsiteLinks.IUT target="blank">Université de Montpellier</a>,
+        alternant chez <a :href=WebsiteLinks.ITESOFT target="blank">ITESOFT</a>,
+        je suis passionné par <b>l'informatique, la musique et le sport.</b>
       </p>
 
       <p>
@@ -29,18 +31,16 @@ import { CollaboratorPictures } from '@/data/Pictures';
         et <router-link :to="{ name: 'degoogle' }">DeGooglisé</router-link>.
       </p>
 
-      <h1>
-        <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" text="CV" />
-      </h1>
+      <h2>
+        Voir mon CV:
+      </h2>
+
+      <LinkItem :link="SocialLinks.CV" :img="ToolIcons.PDF" alt="CV" />
 
     </div>
 
-    <PortraitItem
-      :link="SocialLinks.LINKEDIN"
-      :img="CollaboratorPictures.MARC_HAYE"
-      alt="portrait intro"
-      :isMain="true"
-    />
+    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"
+      :isMain="true" />
 
   </section>
 </template>
