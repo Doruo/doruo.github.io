@@ -1,5 +1,5 @@
 export class SocialIcons {
-  static readonly MAIL = new URL('@/img/social/mail.webp', import.meta.url).href
+  static readonly MAIL = new URL('@/img/social/mail.svg', import.meta.url).href
   static readonly LINKEDIN = new URL('@/img/social/linkedin.webp', import.meta.url).href
   static readonly GRAVATAR = new URL('@/img/social/gravatar.webp', import.meta.url).href
   static readonly ITCHIO = new URL('@/img/social/itchio.webp', import.meta.url).href
