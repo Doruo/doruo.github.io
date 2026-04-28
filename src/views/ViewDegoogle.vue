@@ -41,7 +41,7 @@ import { AlterLinks, ToolLinks } from '@/data/Links';
             </div>
 
             <div>
-                <h1>Qu'est-ce que le FOSS (Free and Open-Source Software) ?</h1>
+                <h1>Qu'est-ce que le FOSS ?</h1>
                 <p>
                     Le FOSS, acronyme de Free and Open-Source Software,
                     désigne les logiciels qui sont à la fois libres et à code source ouvert.
