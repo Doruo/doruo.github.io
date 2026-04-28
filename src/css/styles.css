@@ -364,7 +364,7 @@ section {
 }
 
 .main-portrait {
-  width: 90%;
+  width: 70%;
   border-radius: var(--radius-lg);
   display: block;
   border: 1px solid var(--clr-border);
