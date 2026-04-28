@@ -41,6 +41,8 @@ export class IUTLinks {
 
 export class WebsiteLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
+  static readonly ITESOFT = "https://www.itesoft.com"
+
   static readonly ELDEN_RING = 'https://bandainamcoent.eu/elden-ring/elden-ring'
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com'
   static readonly SCODOC = 'https://scodoc.org'
