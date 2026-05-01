@@ -22,9 +22,9 @@ export class IUTLinks {
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
 
   // IUT 1st grade web dev
-  static readonly LEBRETON = 'https://romainlebreton.github.io'
-  static readonly IUT_DEV_SAE_105 = this.LEBRETON + '/R1.02-DeveloppementInterfacesWeb/SAE_105.html'
-  static readonly IUT_DEV_WEB_JS = this.LEBRETON + '/R.4.01-DeveloppementWeb-JavaScript/'
+  static readonly LEBRETON = 'https://romainlebreton.github.io/'
+  static readonly IUT_DEV_SAE_105 = this.LEBRETON + 'R1.02-DeveloppementInterfacesWeb/SAE_105.html'
+  static readonly IUT_DEV_WEB_JS = this.LEBRETON + 'R.4.01-DeveloppementWeb-JavaScript/'
 
   // IUT 1st grade websites
   static readonly FAN_CLUB_CHUCK_NORRIS = '/fan-club-chuck-norris'
@@ -40,25 +40,30 @@ export class IUTLinks {
 }
 
 export class WebsiteLinks {
-  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr'
-  static readonly ITESOFT = "https://www.itesoft.com"
+  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
+  static readonly ITESOFT = "https://www.itesoft.com/"
 
   static readonly ELDEN_RING = 'https://bandainamcoent.eu/elden-ring/elden-ring'
   static readonly ELDEN_RING_FAN_API = 'https://eldenring.fanapis.com'
   static readonly SCODOC = 'https://scodoc.org'
-  static readonly GAME_OF_LIFE = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
+  static readonly GOL = 'https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life'
   static readonly GRAVATAR = 'https://gravatar.com/'
   static readonly BITBUCKET = 'https://bitbucket.org/'
+
+  static readonly TRAINS = 'https://boardgamegeek.com/boardgame/121408/trains'
 
   static readonly NDI = 'https://nuitdelinfo.com/'
   static readonly NDI_CHALLENGES = this.NDI + "inscription/defis/liste"
   static readonly NDI_2024_SUBJECT = this.NDI + "materiel_communication/2024/La%20Nuit%20de%20l’Info%202024.pdf"
   static readonly NDI_2025_SUBJECT = this.NDI + 'materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf'
+
+  static readonly CONWAY = 'https://fr.wikipedia.org/wiki/John_Horton_Conway'
 }
 
 export class SocialLinks {
-  private static readonly mail= "marc.haye.pro@protonmail.com"
+  private static readonly mail = "marc.haye.pro@protonmail.com"
   static readonly MAIL = 'mailto:' + this.mail;
+
   static readonly CV = "/CV.pdf";
 
   static readonly GITHUB = 'https://github.com/doruo/'
@@ -70,7 +75,7 @@ export class SocialLinks {
 }
 
 export class ForgeLinks {
-  // iut
+  // iut ---------------------------------------------------------------------------------------
   static readonly PORTFOLIO = SocialLinks.GITHUB + 'doruo.github.io'
   static readonly MY_AVATAR = SocialLinks.GITHUB + 'my-avatar'
   static readonly POURSUITE_ETUDES = SocialLinks.CODEBERG + 'poursuite-etudes'
@@ -83,7 +88,7 @@ export class ForgeLinks {
   static readonly NDI2024 = SocialLinks.GITHUB + 'NDI-2024-RaceForWater'
   static readonly NDI2025 = "https://github.com/killianrms/NDI2025"
 
-  // perso
+  // perso ---------------------------------------------------------------------------------------
   static readonly ELDEN_BUILD = SocialLinks.CODEBERG + 'elden-build'
   static readonly MESH = SocialLinks.CODEBERG + 'mesh'
   static readonly FALLOUTDLE = SocialLinks.CODEBERG + 'falloutdle'
@@ -102,8 +107,8 @@ export class ProjectLinks {
 }
 
 export class LanguageLinks {
-  static readonly TS = 'https://www.typescriptlang.org'
   static readonly JS = 'https://web.dev/javascript'
+  static readonly TS = 'https://www.typescriptlang.org'
   static readonly PYTHON = 'https://www.python.org'
   static readonly PHP = 'https://www.php.net/releases/8.5/en.php'
   static readonly JAVA = 'https://www.java.com/'
@@ -112,20 +117,13 @@ export class LanguageLinks {
 }
 
 export class ToolLinks {
-  static readonly GIT = 'https://git-scm.com'
-  static readonly GITLAB = 'https://gitlab.com'
-  static readonly GITHUB = 'https://github.com'
+  static readonly GIT =      'https://git-scm.com'
+  static readonly GITLAB =   'https://gitlab.com'
+  static readonly GITHUB =   'https://github.com'
   static readonly CODEBERG = 'https://codeberg.org'
 
   static readonly BOOTSTRAP = 'https://getbootstrap.com'
-  static readonly TAILWIND = 'https://tailwindcss.com'
-
   static readonly NODE = 'https://nodejs.org'
-  static readonly EXPRESS = 'https://expressjs.com'
-  static readonly NEXT = 'https://nextjs.org'
-  static readonly VUEJS = 'https://vuejs.org'
-
-  static readonly SYMFONY = 'https://symfony.com'
   static readonly TWIG = 'https://twig.symfony.com/'
 
   static readonly POSTGRE = 'https://www.postgresql.org'
@@ -141,11 +139,21 @@ export class ToolLinks {
   static readonly LDAP = 'https://wikipedia.org/wiki/Lightweight_Directory_Access_Protocol'
   static readonly SCRUM = 'https://chef-de-projet.fr/methodologie-scrum'
 
-  static readonly ANACONDA = 'https://www.anaconda.com/'
-  static readonly PYTORCH = 'https://pytorch.org/'
   static readonly JUPYTER = 'https://jupyter.org/'
 }
 
+export class FrameworkLinks {
+  static readonly ANACONDA = 'https://www.anaconda.com'
+  static readonly PYTORCH = 'https://pytorch.org/'
+  static readonly SYMFONY = 'https://symfony.com'
+
+  static readonly TAILWIND = 'https://tailwindcss.com'
+  static readonly EXPRESS = 'https://expressjs.com'
+  static readonly NEXTJS = 'https://nextjs.org'
+  static readonly VUEJS = 'https://vuejs.org'
+}
+
+// Alternatives
 export class AlterLinks {
   static readonly OPEN_ALTER = 'https://openalternative.co/alternatives'
   static readonly FAIREPHONE_6 = 'https://shop.fairphone.com/fr/the-fairphone-gen-6'
@@ -166,5 +174,4 @@ export class AlterLinks {
   
   static readonly PROTON_MAIL = 'https://proton.me/mail'
   static readonly TUTA = 'https://tuta.com/'
-  
 }
