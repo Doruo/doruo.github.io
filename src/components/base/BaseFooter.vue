@@ -8,15 +8,14 @@ import { SocialIcons } from '@/data/Icons';
   <!--FOOTER-->
   <footer>
     <div class="footer-social">
-      <LinkItem :link="SocialLinks.GITHUB" :img="SocialIcons.FOOTER_GITHUB" />
+      <LinkItem :link="ForgeLinks.PORTFOLIO" :img="SocialIcons.FOOTER_GITHUB" />
       <LinkItem :link="SocialLinks.LINKEDIN" :img="SocialIcons.FOOTER_LINKEDIN" />
       <LinkItem :link="SocialLinks.DEVTO" :img="SocialIcons.FOOTER_DEVTO" />
     </div>
     <div class="footer-text">
       <ul>
-        <li><a :href="ForgeLinks.PORTFOLIO" target="_blank">Source Code</a></li>
+        <li>&copy; 2024-2026 | All Rights Reserved</li>
         <li>🦊 Made with <a :href="FrameworkLinks.VUEJS" target="_blank">Vue.js</a></li>
-        <li>&copy; 2024-2026 Marc Haye | All Rights Reserved</li>
       </ul>
     </div>
   </footer>
