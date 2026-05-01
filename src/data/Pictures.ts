@@ -1,4 +1,4 @@
-export class CollaboratorPictures {
+export class CollaboratorsImg {
   static readonly MARC_HAYE = new URL('@/img/collaborators/marc-haye.webp', import.meta.url).href;
   static readonly PAULO_MOREIRA = new URL('@/img/collaborators/paulo-moreira.webp', import.meta.url).href;
   static readonly REMI_SOULIER = new URL('@/img/collaborators/remi-soulier.webp', import.meta.url).href;
@@ -19,32 +19,38 @@ export class CollaboratorPictures {
 
 // IUT
 
-export class PoursuiteEtudesPictures {
-  static readonly CARD = new URL('@/img/projects/iut/poursuite-etudes/card.webp', import.meta.url).href;
+export class PoursuiteEtudesImg {
+  static readonly CARD = new URL('@/img/projects/iut/poursuite-etudes/result/card.webp', import.meta.url).href;
 
-  static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuite-etudes/logo_iut.webp', import.meta.url).href;
-  static readonly HOME = new URL('@/img/projects/iut/poursuite-etudes/home.webp', import.meta.url).href;
-  static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etudes/agregation.webp', import.meta.url).href;
-  static readonly CONNEXION = new URL('@/img/projects/iut/poursuite-etudes/sign_in.webp', import.meta.url).href;
-  static readonly NOTES = new URL('@/img/projects/iut/poursuite-etudes/notes.webp', import.meta.url).href;
-  static readonly DETAILS = new URL('@/img/projects/iut/poursuite-etudes/details.webp', import.meta.url).href;
-  static readonly CSV = new URL('@/img/projects/iut/poursuite-etudes/csv.webp', import.meta.url).href;
+  // concept
+  static readonly CASE_DIAGRAM = new URL('@/img/projects/iut/poursuite-etudes/concept/case-diagram.webp', import.meta.url).href;
+  static readonly CLASS_DIAGRAM = new URL('@/img/projects/iut/poursuite-etudes/concept/class-diagram.webp', import.meta.url).href;
+  static readonly DATABASE = new URL('@/img/projects/iut/poursuite-etudes/concept/database.webp', import.meta.url).href;
+
+  // result
+  static readonly LOGO_IUT = new URL('@/img/projects/iut/poursuite-etudes/result/logo_iut.webp', import.meta.url).href;
+  static readonly HOME = new URL('@/img/projects/iut/poursuite-etudes/result/home.webp', import.meta.url).href;
+  static readonly AGREGATION = new URL('@/img/projects/iut/poursuite-etudes/result/agregation.webp', import.meta.url).href;
+  static readonly CONNEXION = new URL('@/img/projects/iut/poursuite-etudes/result/sign_in.webp', import.meta.url).href;
+  static readonly NOTES = new URL('@/img/projects/iut/poursuite-etudes/result/notes.webp', import.meta.url).href;
+  static readonly DETAILS = new URL('@/img/projects/iut/poursuite-etudes/result/details.webp', import.meta.url).href;
+  static readonly CSV = new URL('@/img/projects/iut/poursuite-etudes/result/csv.webp', import.meta.url).href;
 
   static readonly SUBJECT = new URL('/poursuite-etudes/subject.pdf', import.meta.url).href;
 }
 
-export class SudokuPictures {
+export class SudokuImg {
   static readonly CARD = new URL('@/img/projects/iut/sudoku/card.svg', import.meta.url).href;
 }
 
-export class MyAvatarPictures {
+export class MyAvatarImg {
   static readonly CARD = new URL('@/img/projects/iut/my-avatar/card.svg', import.meta.url).href;
   static readonly SIGNUP = new URL('@/img/projects/iut/my-avatar/signup.webp', import.meta.url).href;
   static readonly PROFILE = new URL('@/img/projects/iut/my-avatar/profile.webp', import.meta.url).href;
   static readonly ADMIN = new URL('@/img/projects/iut/my-avatar/admin.webp', import.meta.url).href;
 }
 
-export class TrainsPictures {
+export class TrainsImg {
   static readonly CARD = "https://jeuresume.wordpress.com/wp-content/uploads/2017/08/trainsjr-a.jpg";
   static readonly LOGO = new URL('@/img/projects/iut/trains/logo.webp', import.meta.url).href;
   static readonly INIT = new URL('@/img/projects/iut/trains/init.webp', import.meta.url).href;
@@ -53,11 +59,11 @@ export class TrainsPictures {
   static readonly RULES = new URL('/trains/rules.pdf', import.meta.url).href;
 }
 
-export class AventuriersDuRailPictures {
+export class TicketToRideImg {
   static readonly CARD = "https://i0.wp.com/www.teamboardgame.com/wp-content/uploads/2022/09/Ticket-to-Ride-Ghost-Train-3.jpg?fit=920%2C613&ssl=1";
 }
 
-export class NDI2025Pictures {
+export class NDI2025Img {
   static readonly LOGO = new URL('@/img/projects/iut/ndi/2025/logo.webp', import.meta.url).href;
   static readonly GROUP = new URL('@/img/projects/iut/ndi/2025/groupe.webp', import.meta.url).href;
 
@@ -68,7 +74,7 @@ export class NDI2025Pictures {
   static readonly AI = new URL('@/img/projects/iut/ndi/2025/ai.webp', import.meta.url).href;
 }
 
-export class NDI2024Pictures{
+export class NDI2024Img{
   static readonly LOGO = new URL('@/img/projects/iut/ndi/2024/logo.webp', import.meta.url).href;
   static readonly PAGE = new URL('@/img/projects/iut/ndi/2024/page.webp', import.meta.url).href;
   static readonly OCEAN = new URL('@/img/projects/iut/ndi/2024/ocean.webp', import.meta.url).href;
@@ -81,33 +87,33 @@ export class NDI2024Pictures{
   static readonly GROUP = new URL('@/img/projects/iut/ndi/2024/groupe.webp', import.meta.url).href;
 }
 
-export class CGJ2023Pictures{
+export class CGJ2023Img{
   static readonly CARD = new URL('@/img/projects/iut/cgj2023/card.webp', import.meta.url).href;
 }
 
-export class PostApoPictures {
+export class PostApoImg {
   static readonly CARD = new URL('@/img/projects/iut/escape-game-postapo/card.webp', import.meta.url).href; ;
 }
 
-export class MindSpiesPictures {
+export class MindSpiesImg {
   static readonly CARD = new URL('@/img/projects/iut/escape-game-mindspies/card.webp', import.meta.url).href; ;
 }
 
-export class E3CetePictures {
+export class E3CeteImg {
   static readonly CARD = new URL('@/img/projects/iut/e3cete/card.webp', import.meta.url).href;
 }
 
-export class CryptoWebsitePictures {
+export class CryptoImg {
   static readonly CARD = new URL('@/img/projects/iut/crypto-website/card.webp', import.meta.url).href;
 }
 
-export class ChuckNorrisPictures {
+export class ChuckNorrisImg {
   static readonly CARD = new URL('@/img/projects/iut/fan-club-chuck-norris/card.webp', import.meta.url).href;
 }
 
 // PERSO
 
-export class EldenBuildPictures {
+export class EldenBuildImg {
   static readonly CARD = new URL('@/img/projects/perso/elden-build/card.webp', import.meta.url).href;
   static readonly LOGO = new URL('@/img/projects/perso/elden-build/ranni.webp', import.meta.url).href;
 
@@ -123,7 +129,7 @@ export class EldenBuildPictures {
   static readonly DATABASE = new URL('@/img/projects/perso/elden-build/database.webp', import.meta.url).href;
 }
 
-export class GameOfLifePictures {
+export class GameOfLifeImg {
   static readonly CARD = new URL('@/img/projects/perso/gol/card.webp', import.meta.url).href;
   static readonly LOGO = new URL('@/img/projects/perso/gol/logo.webp', import.meta.url).href;
   static readonly GAME_1 = new URL('@/img/projects/perso/gol/game1.webp', import.meta.url).href;
