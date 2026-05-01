@@ -27,11 +27,14 @@ interface Project {
   title: string
   show: boolean
   showMoreInfo: boolean
+
   websiteLink: string
-  moreInfoLink: RouteLocationAsRelativeGeneric
-  background: string
+  moreInfoLink?: RouteLocationAsRelativeGeneric
+  background?: string
+
   description?: string
   techs?: string
+  period?: string
   tags: string[]
 }
 
@@ -45,6 +48,19 @@ export default class Projects {
   private static readonly allProjects: Project[] = [
     // /-----/ tool /-----/
     {
+      id: 'jellybot',
+      title: 'Jellybot',
+      show: true,
+      showMoreInfo: true,
+      moreInfoLink: { name: 'projects-jellybot' },
+      websiteLink: ForgeLinks.JELLYBOT,
+      background: JellyBotPictures.CARD,
+      description: "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.",
+      techs: 'Python, discord.py, Jellyfin API, Discord',
+      period: '',
+      tags: ['tool'],
+    },
+    {
       id: 'llm-from-scratch',
       title: `IA bigramme`,
       show: true,
@@ -54,6 +70,7 @@ export default class Projects {
       background: LlmPictures.CARD,
       description: 'Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch.',
       techs: 'IA, Python, PyTorch, Jupyter',
+      period: '',
       tags: ['tool'],
     },
     {
@@ -67,6 +84,7 @@ export default class Projects {
       description: `Outil de téléchargement automatique d'` +
         `épisodes d'un anime, à l'aide de robots web anonymes.`,
       techs: 'Typescript, Puppeteer',
+      period: '',
       tags: ['tool'],
     },
     {
@@ -81,18 +99,7 @@ export default class Projects {
         'Outil de réversibilité de processus métiers réalisé pour <a href="https://www.itesoft.com">ITESOFT</a>, ' +
         ' API REST réalisée en TypeScript avec <a href=https://nestjs.com/>NestJS</a>.',
       techs: 'NestJS, JSON, SQL',
-      tags: ['tool'],
-    },
-    {
-      id: 'jellybot',
-      title: 'Jellybot',
-      show: true,
-      showMoreInfo: true,
-      moreInfoLink: { name: 'projects-jellybot' },
-      websiteLink: ForgeLinks.JELLYBOT,
-      background: JellyBotPictures.CARD,
-      description: "Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.",
-      techs: 'Python, discord.py, Jellyfin API, Discord',
+      period: '',
       tags: ['tool'],
     },
     // /-----/ competition /-----/
@@ -109,6 +116,7 @@ export default class Projects {
         "Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l'IUT Montpellier-Sête</a>.",
       techs: 'LUA, PICO-8',
       tags: ['competition'],
+      period: '',
     },
     {
       id: 'ndi-2024',
@@ -123,6 +131,7 @@ export default class Projects {
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>',
       techs: 'ExpressJS, HTML, CSS, JavaScript',
       tags: ['competition'],
+      period: '',
     },
     {
       id: 'ndi-2025',
@@ -135,6 +144,7 @@ export default class Projects {
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
       tags: ['main', 'competition'],
+      period: '',
     },
     // /-----/ community /-----/
     {
@@ -149,6 +159,7 @@ export default class Projects {
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
       tags: ['main', 'community'],
+      period: '',
     },
     {
       id: 'falloutdle',
@@ -162,6 +173,7 @@ export default class Projects {
         "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours !",
       techs: 'Go, Web Scraping, API, JSON',
       tags: ['community'],
+      period: '',
     },
     {
       id: 'mesh',
@@ -174,6 +186,7 @@ export default class Projects {
       description: 'Lightweight messaging application written in Go language, with Peer to Peer networking.',
       techs: 'Go, P2P, TCP/IP',
       tags: ['community'],
+      period: '',
     },
     // /-----/ academic /-----/
     {
@@ -188,6 +201,7 @@ export default class Projects {
         "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier.",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
       tags: ['main', 'academic'],
+      period: '',
     },
     {
       id: 'my-avatar',
@@ -201,6 +215,7 @@ export default class Projects {
         'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
       techs: 'Symfony, JavaScript, MySQL, Twig',
       tags: ['academic'],
+      period: '',
     },
     {
       id: 'controverse-crypto',
@@ -215,6 +230,7 @@ export default class Projects {
         "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
       techs: 'HTML, CSS',
       tags: ['academic'],
+      period: '',
     },
     {
       id: 'fan-site-chuck-norris',
@@ -227,6 +243,7 @@ export default class Projects {
       description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
       techs: 'HTML, CSS',
       tags: ['academic'],
+      period: '',
     },
     {
       id: 'metro-post-apo',
@@ -239,6 +256,7 @@ export default class Projects {
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
       techs: 'HTML, CSS',
       tags: ['academic'],
+      period: '',
     },
     {
       id: 'escape-game-mind-spies',
@@ -251,6 +269,7 @@ export default class Projects {
       description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: 'HTML, CSS',
       tags: ['academic'],
+      period: '',
     },
     // /-----/ game /-----/
     {
@@ -265,6 +284,7 @@ export default class Projects {
         `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal.`,
       techs: 'Go, Ebitengine',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'trains',
@@ -279,6 +299,7 @@ export default class Projects {
         "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
       techs: 'Java, JavaFX',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'aventuriers-du-rail',
@@ -293,6 +314,7 @@ export default class Projects {
         "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
       techs: 'Java, JavaFX',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'e3cete',
@@ -305,6 +327,7 @@ export default class Projects {
       description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur.`,
       techs: 'Java',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'sudoku',
@@ -317,6 +340,7 @@ export default class Projects {
       description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'mastermind',
@@ -330,6 +354,7 @@ export default class Projects {
         'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'marin-ivre',
@@ -343,6 +368,7 @@ export default class Projects {
         'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
       techs: 'Java',
       tags: ['game'],
+      period: '',
     },
     {
       id: 'flipper',
@@ -355,6 +381,7 @@ export default class Projects {
       description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
       techs: 'Python, numpy',
       tags: ['game'],
+      period: '',
     },
   ]
 
