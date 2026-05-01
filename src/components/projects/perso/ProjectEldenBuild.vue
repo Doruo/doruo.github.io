@@ -5,14 +5,14 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
-import { EldenBuildPictures } from '@/data/Pictures'
+import { EldenBuildImg } from '@/data/Pictures'
 import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :alt=EldenBuildPictures.LOGO :src="EldenBuildPictures.LOGO" />
+      <img :alt=EldenBuildImg.LOGO :src="EldenBuildImg.LOGO" />
     </template>
 
     <template #title>Elden Build</template>
@@ -64,18 +64,18 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
     </template>
 
     <template #assets-concept>      
-      <ProjectImageItem :link="EldenBuildPictures.DATABASE" :alt="EldenBuildPictures.DATABASE" />
-      <ProjectImageItem :link="EldenBuildPictures.API_CALL" :alt="EldenBuildPictures.API_CALL" />
-      <ProjectImageItem :link="EldenBuildPictures.NODE" :alt="EldenBuildPictures.NODE" />
+      <ProjectImageItem :link="EldenBuildImg.DATABASE" :alt="EldenBuildImg.DATABASE" />
+      <ProjectImageItem :link="EldenBuildImg.API_CALL" :alt="EldenBuildImg.API_CALL" />
+      <ProjectImageItem :link="EldenBuildImg.NODE" :alt="EldenBuildImg.NODE" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="EldenBuildPictures.HOME" :alt="EldenBuildPictures.HOME" />
-      <ProjectImageItem :link="EldenBuildPictures.EQUIPMENT" :alt="EldenBuildPictures.EQUIPMENT" />
-      <ProjectImageItem :link="EldenBuildPictures.BUILD" :alt="EldenBuildPictures.BUILD" />
+      <ProjectImageItem :link="EldenBuildImg.HOME" :alt="EldenBuildImg.HOME" />
+      <ProjectImageItem :link="EldenBuildImg.EQUIPMENT" :alt="EldenBuildImg.EQUIPMENT" />
+      <ProjectImageItem :link="EldenBuildImg.BUILD" :alt="EldenBuildImg.BUILD" />
 
-      <ProjectImageItem :link="EldenBuildPictures.PROFILE" :alt="EldenBuildPictures.PROFILE" />
-      <ProjectImageItem :link="EldenBuildPictures.SIGNUP" :alt="EldenBuildPictures.SIGNUP" />
+      <ProjectImageItem :link="EldenBuildImg.PROFILE" :alt="EldenBuildImg.PROFILE" />
+      <ProjectImageItem :link="EldenBuildImg.SIGNUP" :alt="EldenBuildImg.SIGNUP" />
     </template>
 
     <template #links>

@@ -4,7 +4,7 @@
     <nav class="nav">
       <div class="branding">
         <h1><router-link :to="{ name: 'home' }">Marc Haye</router-link></h1>
-        <h4>Étudiant en Informatique</h4>
+        <h4>Alternant en Informatique</h4>
       </div>
 
       <ul class="nav-links">

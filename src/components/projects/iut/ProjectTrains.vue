@@ -5,8 +5,8 @@ import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
 import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
-import { CollaboratorPictures, TrainsPictures } from '@/data/Pictures'
-import { CollaboratorLinks, ForgeLinks, LanguageLinks, ToolLinks } from '@/data/Links'
+import { CollaboratorsImg, TrainsImg } from '@/data/Pictures'
+import { CollaboratorLinks, ForgeLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'
 
 </script>
@@ -14,14 +14,14 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img :src="TrainsPictures.LOGO" :alt="TrainsPictures.LOGO" />
+      <img :src="TrainsImg.LOGO" :alt="TrainsImg.LOGO" />
     </template>
 
     <template #title>Jeu de plateau Trains</template>
 
     <template #description>
       <p>
-        <a href=https://boardgamegeek.com/boardgame/121408/trains>Trains</a> est un jeu de deck building japonais d'Hisashi Hayashi. Il a eu lieu dans le
+        <a :href=WebsiteLinks.TRAINS target="blank">Trains</a> est un jeu de deck building japonais d'Hisashi Hayashi. Il a eu lieu dans le
         cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.
       </p>
       <p>Le projet a été réalisé en binome, et de façon incrémentale en 3 phases :</p>
@@ -38,7 +38,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
         </li>
       </ul>
       <p>
-        Si le jeu vous intéresse, vous pouvez consulter <a :href="TrainsPictures.RULES">les règles</a>.
+        Si le jeu vous intéresse, vous pouvez consulter <a :href="TrainsImg.RULES">les règles</a>.
         Il fait intervenir plusieurs compétences acquises durant le Semestre 2: le développement
         orienté-objet, les notions de qualité de développement (tests unitaires, gestion de
         version, travail en équipe), les algorithmes de graphes et les interfaces homme-machine.
@@ -56,7 +56,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
+      <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING" :img="CollaboratorsImg.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING"/>
     </template>
 
     <template #abilities>
@@ -66,14 +66,14 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="TrainsPictures.GAME_1" :alt="TrainsPictures.GAME_1" />
-      <ProjectImageItem :link="TrainsPictures.GAME_2" :alt="TrainsPictures.GAME_2" />
-      <ProjectImageItem :link="TrainsPictures.INIT" :alt="TrainsPictures.INIT" />
+      <ProjectImageItem :link="TrainsImg.GAME_1" :alt="TrainsImg.GAME_1" />
+      <ProjectImageItem :link="TrainsImg.GAME_2" :alt="TrainsImg.GAME_2" />
+      <ProjectImageItem :link="TrainsImg.INIT" :alt="TrainsImg.INIT" />
     </template>
 
     <template #links>
       <LinkItem :link="ForgeLinks.TRAINS" :img="SocialIcons.GITHUB" />
-      <LinkItem :link="TrainsPictures.RULES" :img="ToolIcons.PDF" alt="Rules" text="Règles"/>
+      <LinkItem :link="TrainsImg.RULES" :img="ToolIcons.PDF" alt="Rules" text="Règles"/>
     </template>
   </ProjectItem>
 </template>

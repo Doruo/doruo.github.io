@@ -17,9 +17,9 @@ defineProps({
     </div>
   </section>
 
-  <section class="collaborators" v-if="group">
+  <section class="collaborators skills" v-if="group">
     <!-- PROJECT COLLABORATORS -->
-    <div class="collaborators-content">
+    <div class="collaborators-content skills-content">
       <h2>Mon équipe</h2>
       <div class="collaborators-grid">
         <slot name="collaborators"></slot>
@@ -53,7 +53,7 @@ defineProps({
     <!-- PROJECT ASSETS VISUALS-->
     <div class="project-content-image">
 
-      <h2>Visuel</h2>
+      <h2>Résultat</h2>
       <div class="project-grid">
         <slot name="assets"></slot>
       </div>

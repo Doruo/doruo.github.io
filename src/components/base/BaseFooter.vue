@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ForgeLinks, SocialLinks, ToolLinks } from '@/data/Links'
+import { ForgeLinks, FrameworkLinks, SocialLinks, ToolLinks } from '@/data/Links'
 import LinkItem from '../links/LinkItem.vue';
 import { SocialIcons } from '@/data/Icons';
 </script>
@@ -15,7 +15,7 @@ import { SocialIcons } from '@/data/Icons';
     <div class="footer-text">
       <ul>
         <li><a :href="ForgeLinks.PORTFOLIO" target="_blank">Source Code</a></li>
-        <li>🦊 Made with <a :href="ToolLinks.VUEJS" target="_blank">Vue.js</a></li>
+        <li>🦊 Made with <a :href="FrameworkLinks.VUEJS" target="_blank">Vue.js</a></li>
         <li>&copy; 2024-2026 Marc Haye | All Rights Reserved</li>
       </ul>
     </div>

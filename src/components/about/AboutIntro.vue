@@ -3,7 +3,7 @@ import { ToolIcons } from '@/data/Icons';
 import LinkItem from '../links/LinkItem.vue';
 import PortraitItem from '../portraits/PortraitItem.vue';
 import { SocialLinks, WebsiteLinks } from '@/data/Links';
-import { CollaboratorPictures } from '@/data/Pictures';
+import { CollaboratorsImg } from '@/data/Pictures';
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import { CollaboratorPictures } from '@/data/Pictures';
       <h1>Hello !</h1>
       <p>
         Etudiant à l'<a :href=WebsiteLinks.IUT target="blank">Université de Montpellier</a>,
-        alternant chez <a :href=WebsiteLinks.ITESOFT target="blank">ITESOFT</a>,
+        et alternant à <a :href=WebsiteLinks.ITESOFT target="blank">ITESOFT</a>,
         je suis passionné par <b>l'informatique, la musique et le sport.</b>
       </p>
 
@@ -39,7 +39,7 @@ import { CollaboratorPictures } from '@/data/Pictures';
 
     </div>
 
-    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorPictures.MARC_HAYE" alt="portrait intro"
+    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorsImg.MARC_HAYE" alt="portrait intro"
       :isMain="true" />
 
   </section>

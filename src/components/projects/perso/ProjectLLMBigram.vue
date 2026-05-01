@@ -3,8 +3,8 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { ToolLinks, ForgeLinks } from '@/data/Links'
+import { ToolIcons, SocialIcons, FrameworkIcons } from '@/data/Icons'
+import { ToolLinks, ForgeLinks, FrameworkLinks } from '@/data/Links'
 </script>
 
 <template>
@@ -29,7 +29,7 @@ import { ToolLinks, ForgeLinks } from '@/data/Links'
       </p>
       <p>
         J'ai pus également découvrir la librarie
-        <a target="_blank" :href="ToolLinks.ANACONDA">Pytorch</a>,
+        <a target="_blank" :href="FrameworkLinks.ANACONDA">Pytorch</a>,
         un outil puissant pour automatiser les calculs,
         faciliter l'entrainement du modèle,
         et optimiser les margues d'erreurs.
@@ -45,8 +45,8 @@ import { ToolLinks, ForgeLinks } from '@/data/Links'
 
     <template #abilities>
       <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
-      <SkillItem :img="ToolIcons.ANACONDA" :link="ToolLinks.ANACONDA" description="Distribution Python et gestion des packages" />
-      <SkillItem :img="ToolIcons.PYTORCH" :link="ToolLinks.PYTORCH" description="Développement du modèle de langage" />
+      <SkillItem :img="ToolIcons.ANACONDA" :link="FrameworkLinks.ANACONDA" description="Distribution Python et gestion des packages" />
+      <SkillItem :img="FrameworkIcons.PYTORCH" :link="FrameworkLinks.PYTORCH" description="Développement du modèle de langage" />
     </template>
 
     <template #assets>

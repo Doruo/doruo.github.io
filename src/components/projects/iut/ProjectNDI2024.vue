@@ -4,16 +4,16 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons } from '@/data/Icons'
-import { CollaboratorPictures, NDI2024Pictures } from '@/data/Pictures'
-import { CollaboratorLinks, ForgeLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { ToolIcons, SocialIcons, FrameworkIcons } from '@/data/Icons'
+import { CollaboratorsImg, NDI2024Img } from '@/data/Pictures'
+import { CollaboratorLinks, ForgeLinks, FrameworkLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'
 </script>
 
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logo ndi 2024" :src="NDI2024Pictures.LOGO" />
+      <img alt="logo ndi 2024" :src="NDI2024Img.LOGO" />
     </template>
 
     <template #title>Race For Water</template>
@@ -25,7 +25,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
       </p>
       <p>
         Nous avons réalisé avec mon équipe une application ludique, faite avec Node.js et le
-        framework <a :href="ToolLinks.EXPRESS">Express.js</a>, pour la fondation Race for Water, qui a
+        framework <a :href="FrameworkLinks.EXPRESS">Express.js</a>, pour la fondation Race for Water, qui a
         pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique.
       </p>
       <p>
@@ -36,7 +36,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
       </p>
       <p>
         Mon rôle fut de concevoir le router et l'API REST avec
-        <a :href="ToolLinks.EXPRESS">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
+        <a :href="FrameworkLinks.EXPRESS">Express.js</a>, chargé de récupérer les réquêtes et de renvoyer la
         page web demandée. J'ai donc dû concevoir cela de façon optimisé, en utilisant les
         différentes notions vus en cours en développement web de sorte d'éviter la surcharge de
         requêtes lorsque l'utilisateur souhaite accéder aux différentes pages lorsqu'il clique sur
@@ -46,36 +46,36 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
 
     <template #collaborators>
       <PortraitItem name="Mattéo Benhalima" :link="CollaboratorLinks.MATTEO_BENHALIMA"
-        :img="CollaboratorPictures.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA" />
-      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorPictures.EVAN_NUNES"
+        :img="CollaboratorsImg.MATTEO_BENHALIMA" alt="MATTEO_BENHALIMA" />
+      <PortraitItem name="Evan Nunes" :link="CollaboratorLinks.EVAN_NUNES" :img="CollaboratorsImg.EVAN_NUNES"
         alt="EVAN_NUNES" />
       <PortraitItem name="Damien Rostaing" :link="CollaboratorLinks.DAMIEN_ROSTAING"
-        :img="CollaboratorPictures.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING" />
+        :img="CollaboratorsImg.DAMIEN_ROSTAING" alt="DAMIEN_ROSTAING" />
       <PortraitItem name="Paulo Moreira" :link="CollaboratorLinks.PAULO_MOREIRA"
-        :img="CollaboratorPictures.PAULO_MOREIRA" alt="PAULO_MOREIRA" />
+        :img="CollaboratorsImg.PAULO_MOREIRA" alt="PAULO_MOREIRA" />
       <PortraitItem name="Yann Bodiguel" :link="CollaboratorLinks.YANN_BODIGUEL"
-        :img="CollaboratorPictures.YANN_BODIGUEL" alt="YANN_BODIGUEL" />
+        :img="CollaboratorsImg.YANN_BODIGUEL" alt="YANN_BODIGUEL" />
     </template>
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
         description="Gestion des versions, et collaboration en équipe" />
-      <SkillItem :img="ToolIcons.EXPRESS" :link="ToolLinks.EXPRESS"
+      <SkillItem :img="FrameworkIcons.EXPRESS" :link="FrameworkLinks.EXPRESS"
         description="Routage et implémentation de l'océan" />
       <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP"
         description="Mise en page de l'interface des articles" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="NDI2024Pictures.OCEAN" alt="Ocean" />
-      <ProjectImageItem :link="NDI2024Pictures.PAGE" alt="page" />
-      <ProjectImageItem :link="NDI2024Pictures.GROUP" alt="groupe" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_1" alt="photo1" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_2" alt="photo2" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_3" alt="photo3" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_4" alt="photo4" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_5" alt="photo5" />
-      <ProjectImageItem :link="NDI2024Pictures.WORK_6" alt="photo6" />
+      <ProjectImageItem :link="NDI2024Img.OCEAN" alt="Ocean" />
+      <ProjectImageItem :link="NDI2024Img.PAGE" alt="page" />
+      <ProjectImageItem :link="NDI2024Img.GROUP" alt="groupe" />
+      <ProjectImageItem :link="NDI2024Img.WORK_1" alt="photo1" />
+      <ProjectImageItem :link="NDI2024Img.WORK_2" alt="photo2" />
+      <ProjectImageItem :link="NDI2024Img.WORK_3" alt="photo3" />
+      <ProjectImageItem :link="NDI2024Img.WORK_4" alt="photo4" />
+      <ProjectImageItem :link="NDI2024Img.WORK_5" alt="photo5" />
+      <ProjectImageItem :link="NDI2024Img.WORK_6" alt="photo6" />
     </template>
 
     <template #links>

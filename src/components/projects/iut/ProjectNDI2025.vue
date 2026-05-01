@@ -3,9 +3,9 @@ import ProjectItem from '@/components/projects/abstract/ProjectItem.vue'
 import SkillItem from '@/components/skills/SkillItem.vue'
 import LinkItem from '@/components/links/LinkItem.vue'
 
-import { ToolIcons, SocialIcons, LanguageIcons } from '@/data/Icons'
-import { CollaboratorPictures, NDI2025Pictures } from '@/data/Pictures'
-import { CollaboratorLinks, ForgeLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import { ToolIcons, SocialIcons, LanguageIcons, FrameworkIcons } from '@/data/Icons'
+import { CollaboratorsImg, NDI2025Img } from '@/data/Pictures'
+import { CollaboratorLinks, ForgeLinks, FrameworkLinks, LanguageLinks, ProjectLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
 import PortraitItem from '@/components/portraits/PortraitItem.vue'
 import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
@@ -13,7 +13,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 <template>
   <ProjectItem>
     <template #logo_projet>
-      <img alt="logo ndi 2025" :src="NDI2025Pictures.LOGO" />
+      <img alt="logo ndi 2025" :src="NDI2025Img.LOGO" />
     </template>
 
     <template #title>Numérique Inclusif, Responsable et Durable</template>
@@ -62,43 +62,44 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #collaborators>
-      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorPictures.CYPRIEN_BONS"
+      <PortraitItem name="Cyprien Bons" :link="CollaboratorLinks.CYPRIEN_BONS" :img="CollaboratorsImg.CYPRIEN_BONS"
         alt="CYPRIEN BONS" />
-      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorPictures.MAEL_NICOLAS"
+      <PortraitItem name="Maël Nicolas" :link="CollaboratorLinks.MAEL_NICOLAS" :img="CollaboratorsImg.MAEL_NICOLAS"
         alt="MAEL NICOLAS" />
       <PortraitItem name="Raphaël Rivas" :link="CollaboratorLinks.RAPHAEL_RIVAS"
-        :img="CollaboratorPictures.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
+        :img="CollaboratorsImg.RAPHAEL_RIVAS" alt="RAPHAEL RIVAS" />
       <PortraitItem name="Killian Ramus" :link="CollaboratorLinks.KILLIAN_RAMUS"
-        :img="CollaboratorPictures.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
+        :img="CollaboratorsImg.KILLIAN_RAMUS" alt="KILLIAN RAMUS" />
       <PortraitItem name="Galdric Desert" :link="CollaboratorLinks.GALDRIC_DESERT"
-        :img="CollaboratorPictures.GALDRIC_DESERT" alt="GALDRIC DESERT" />
+        :img="CollaboratorsImg.GALDRIC_DESERT" alt="GALDRIC DESERT" />
       <PortraitItem name="Nicolas Lyfong" :link="CollaboratorLinks.NICOLAS_LYFONG"
-        :img="CollaboratorPictures.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
+        :img="CollaboratorsImg.NICOLAS_LYFONG" alt="NICOLAS LYFONG" />
     </template>
 
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
         description="Gestion des versions, et collaboration en équipe" />
+      <SkillItem :img="FrameworkIcons.NEXTJS" :link="FrameworkLinks.NEXTJS" description="Réalisation de l'interface utilisateur" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
-      <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation du site et des jeux" />
-      <SkillItem :img="ToolIcons.NEXT" :link="ToolLinks.NEXT" description="Réalisation de l'interface utilisateur" />
-      <SkillItem :img="ToolIcons.TAILWIND" :link="ToolLinks.TAILWIND" description="Mise en page du site" />
+      <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation des jeux" />
+      <SkillItem :img="FrameworkIcons.TAILWIND" :link="FrameworkLinks.TAILWIND" description="Mise en page du site" />
+      <SkillItem :img="ToolIcons.BOOTSTRAP" :link="ToolLinks.BOOTSTRAP" description="Réactivité du site" />
     </template>
 
     <template #assets>
-      <ProjectImageItem :link="NDI2025Pictures.GROUP" alt="group" />
-      <ProjectImageItem :link="NDI2025Pictures.HOME" alt="home" />
-      <ProjectImageItem :link="NDI2025Pictures.SIMULATOR" alt="simulator" />
-      <ProjectImageItem :link="NDI2025Pictures.TEST" alt="test" />
-      <ProjectImageItem :link="NDI2025Pictures.PASSWORD" alt="password" />
-      <ProjectImageItem :link="NDI2025Pictures.AI" alt="ai chat" />
+      <ProjectImageItem :link="NDI2025Img.GROUP" alt="group" />
+      <ProjectImageItem :link="NDI2025Img.HOME" alt="home" />
+      <ProjectImageItem :link="NDI2025Img.SIMULATOR" alt="simulator" />
+      <ProjectImageItem :link="NDI2025Img.TEST" alt="test" />
+      <ProjectImageItem :link="NDI2025Img.PASSWORD" alt="password" />
+      <ProjectImageItem :link="NDI2025Img.AI" alt="ai chat" />
     </template>
 
     <template #links>
       <LinkItem :link="ForgeLinks.NDI2025" :img="SocialIcons.GITHUB" />
       <LinkItem :link="WebsiteLinks.NDI_2025_SUBJECT" :img="ToolIcons.PDF" text="Sujet" />
-      <LinkItem :link="WebsiteLinks.NDI_CHALLENGES" text="Liste des défis" />
       <LinkItem :link="ProjectLinks.NDI2025" text="Notre site" />
+      <LinkItem :link="WebsiteLinks.NDI_CHALLENGES" text="Liste des défis" />
     </template>
   </ProjectItem>
 </template>
