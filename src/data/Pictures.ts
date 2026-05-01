@@ -154,7 +154,8 @@ export class JellyBotPictures {
   static readonly LOGO = new URL('@/img/projects/perso/jellybot/logo.svg', import.meta.url).href;
 
   // concept
-  static readonly DEV = new URL('@/img/projects/perso/jellybot/concept/dev.webp', import.meta.url).href;
+  static readonly CODE = new URL('@/img/projects/perso/jellybot/concept/code.webp', import.meta.url).href;
+  static readonly DEV_PAGE = new URL('@/img/projects/perso/jellybot/concept/dev.webp', import.meta.url).href;
   static readonly WEB = new URL('@/img/projects/perso/jellybot/concept/web.webp', import.meta.url).href;
   // result
   static readonly CHAT = new URL('@/img/projects/perso/jellybot/result/chat.webp', import.meta.url).href;
