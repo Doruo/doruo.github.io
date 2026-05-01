@@ -56,8 +56,8 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 
     <template #assets>
       <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.CHAT" />
-      <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.CHAT2" />
-      <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.SUGGESS" />
+      <ProjectImageItem :link="JellyBotPictures.CHAT2" :alt="JellyBotPictures.CHAT2" />
+      <ProjectImageItem :link="JellyBotPictures.SUGGESS" :alt="JellyBotPictures.SUGGESS" />
     </template>
 
     <template #links>
