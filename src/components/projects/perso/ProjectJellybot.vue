@@ -5,32 +5,41 @@ import LinkItem from '@/components/links/LinkItem.vue'
 
 import { LanguageIcons, SocialIcons, ToolIcons } from '@/data/Icons'
 import { JellyBotPictures } from '@/data/Pictures'
-import { ForgeLinks, LanguageLinks, ToolLinks } from '@/data/Links'
+import { ForgeLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links'
+import ProjectImageItem from '../abstract/ProjectImageItem.vue'
 </script>
 
 <template>
   <ProjectItem>
 
     <template #logo_projet>
-      <img :src="JellyBotPictures.LOGO" :alt="JellyBotPictures.LOGO" />
+      <img :src="JellyBotPictures.CARD" :alt="JellyBotPictures.CARD" />
     </template>
 
     <template #title>Jellybot</template>
 
     <template #description>
-      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
       <p>
-        Bot discord qui notifie le statut d'un serveur Jellyfin et de ses nouveaux contenus.
-      </p>
-      <p>
-        <a target="_blank" href="https://jellyfin.org/">Emby</a>Jellyfin est un serveur multimédia open-source.
-        Il s'agit d'un fork de <a target="_blank" href="https://emby.media/">Emby</a> (anciennement Media Browser),
+        <a target="blank" :href="WebsiteLinks.JELLYFIN">Jellyfin</a> 
+        est un serveur multimédia open-source.
+        Il s'agit d'un fork de <a target="blank" :href="WebsiteLinks.EMBY">Emby</a> 
+        (anciennement Media Browser),
         étant devenu officiellement propriétaire en 2018.
       </p>
       <p>
         Il permet de mettre sa médiathèque à disposition sur le web,
         qu'il s'agisse de contenu vidéo (films et séries, télévision),
         comme audio (musique, livres audio, podcasts).
+      </p>      
+      <p>
+        Hébergant moi même un 
+        <a target="blank" :href="WebsiteLinks.JELLYFIN_SERVER">serveur Jellyfin</a>,
+        je communique régulièrement sur la plateforme Discord avec mon 
+        entourage pour regarder des films ou des séries.
+      </p>
+      <p>
+        J'avais donc besoin d'un robot qui peut accéder à Discord, et nous communiquer dans
+        notre chat textuel le statut du serveur ainsi que l'arrivée nouveaux contenus.
       </p>
     </template>
 
@@ -40,7 +49,19 @@ import { ForgeLinks, LanguageLinks, ToolLinks } from '@/data/Links'
       <SkillItem :img="ToolIcons.BOTS" :link="ToolLinks.BOTS" description="Intégration dans Discord" />
     </template>
 
+    <template #assets-concept>      
+      <ProjectImageItem :link="JellyBotPictures.WEB" :alt="JellyBotPictures.WEB" />
+      <ProjectImageItem :link="JellyBotPictures.DEV" :alt="JellyBotPictures.DEV" />
+    </template>
+
+    <template #assets>
+      <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.CHAT" />
+      <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.CHAT2" />
+      <ProjectImageItem :link="JellyBotPictures.CHAT" :alt="JellyBotPictures.SUGGESS" />
+    </template>
+
     <template #links>
+      <LinkItem :link="WebsiteLinks.JELLYFIN" text="Site de Jellyfin"/>
       <LinkItem :link="ForgeLinks.JELLYBOT" :img="SocialIcons.CODEBERG" />
     </template>
 
