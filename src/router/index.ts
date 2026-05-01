@@ -5,7 +5,7 @@ import ViewError from '@/views/ViewError.vue';
 import ViewAbout from '@/views/ViewAbout.vue';
 import ViewArchives from '@/views/ViewArchives.vue';
 import ViewProjects from '@/views/ViewProjects.vue';
-import ViewApprentissage from '@/views/ViewApprentissage.vue';
+import ViewApprentissages from '@/views/ViewApprentissages.vue';
 
 import ProjectNDI2024 from '@/components/projects/iut/ProjectNDI2024.vue';
 import ProjectNDI2025 from '@/components/projects/iut/ProjectNDI2025.vue';
@@ -25,7 +25,7 @@ const mainRoutes = [
   { path: '/projects', name: 'projects', component: ViewProjects },
   { path: '/degoogle', name: 'degoogle', component: ViewDegoogle },
   { path: '/archives', name: 'archives', component: ViewArchives },
-  { path: '/apprentissages', name: 'apprentissages', component: ViewApprentissage},
+  { path: '/apprentissages', name: 'apprentissages', component: ViewApprentissages},
 ]
 
 const academicProjectRoutes = [
