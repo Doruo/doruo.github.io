@@ -7,6 +7,8 @@ export class SocialIcons {
   static readonly CODEBERG = new URL('@/img/social/codeberg.svg', import.meta.url).href
   static readonly GITHUB = new URL('@/img/social/github.svg', import.meta.url).href
 
+  static readonly DRYOTTERS = new URL('@/img/social/dry_otters.webp', import.meta.url).href
+
   // Footer
   static readonly FOOTER_DEVTO = "https://skillicons.dev/icons?i=devto"
   static readonly FOOTER_CODEBERG = "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/codeberg.svg"
