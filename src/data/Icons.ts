@@ -30,12 +30,7 @@ export class ToolIcons {
   static readonly CODEBERG = new URL('@/img/social/codeberg.svg', import.meta.url).href
 
   static readonly BOOTSTRAP = "https://skillicons.dev/icons?i=bootstrap"
-  static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'
 
-  static readonly NEXT = 'https://skillicons.dev/icons?i=next'
-  static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
-
-  static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
   static readonly TWIG = "https://twig.symfony.com/images/logo.md.png"
 
   static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href
@@ -55,6 +50,14 @@ export class ToolIcons {
 
   static readonly AI = new URL('@/img/projects/tools/ai.svg', import.meta.url).href
   static readonly ANACONDA = "https://skillicons.dev/icons?i=anaconda"
-  static readonly PYTORCH = "https://skillicons.dev/icons?i=pytorch"
   static readonly JUPYTER = "https://skillicons.dev/icons?i=jupyter"
+}
+
+export class FrameworkIcons {
+  static readonly NEXTJS = 'https://skillicons.dev/icons?i=next'
+  static readonly TAILWIND = 'https://skillicons.dev/icons?i=tailwind'
+  static readonly EXPRESS = "https://skillicons.dev/icons?i=express"
+
+  static readonly PYTORCH = "https://skillicons.dev/icons?i=pytorch"
+  static readonly SYMFONY = "https://skillicons.dev/icons?i=symfony"
 }
