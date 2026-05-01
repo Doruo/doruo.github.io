@@ -58,6 +58,10 @@ export class WebsiteLinks {
   static readonly NDI_2025_SUBJECT = this.NDI + 'materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf'
 
   static readonly CONWAY = 'https://fr.wikipedia.org/wiki/John_Horton_Conway'
+
+  static readonly JELLYFIN = 'https://jellyfin.org/'
+  static readonly JELLYFIN_SERVER = 'https://jellyfin.doruo.online'
+  static readonly EMBY = 'https://emby.media/'
 }
 
 export class SocialLinks {

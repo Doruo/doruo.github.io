@@ -151,5 +151,13 @@ export class LlmPictures {
 
 export class JellyBotPictures {
   static readonly CARD = new URL('@/img/projects/perso/jellybot/card.webp', import.meta.url).href;
-  static readonly LOGO = new URL('@/img/projects/perso/jellybot/jellyfin_logo.svg', import.meta.url).href;
+  static readonly LOGO = new URL('@/img/projects/perso/jellybot/logo.svg', import.meta.url).href;
+
+  // concept
+  static readonly DEV = new URL('@/img/projects/perso/jellybot/concept/dev.webp', import.meta.url).href;
+  static readonly WEB = new URL('@/img/projects/perso/jellybot/concept/web.webp', import.meta.url).href;
+  // result
+  static readonly CHAT = new URL('@/img/projects/perso/jellybot/result/chat.webp', import.meta.url).href;
+  static readonly CHAT2 = new URL('@/img/projects/perso/jellybot/result/chat2.webp', import.meta.url).href;
+  static readonly SUGGESS = new URL('@/img/projects/perso/jellybot/result/suggestions.webp', import.meta.url).href;
 }
