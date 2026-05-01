@@ -36,7 +36,8 @@ export class ToolIcons {
   static readonly SCENEBUILDER = new URL('@/img/projects/tools/scenebuilder.webp', import.meta.url).href
   static readonly CHARTJS = new URL('@/img/projects/tools/chartjs.svg', import.meta.url).href
   static readonly EBITENGINE = new URL('@/img/projects/tools/ebitengine.webp', import.meta.url).href
-  static readonly BOTS = "https://skillicons.dev/icons?i=bots"
+  static readonly DISCORDPY = new URL('@/img/projects/tools/discordpy.webp', import.meta.url).href
+  static readonly DISCORD_BOTS = "https://skillicons.dev/icons?i=bots"
 
   static readonly POSTGRE = "https://skillicons.dev/icons?i=postgres"
   static readonly PLSQL = new URL('@/img/projects/tools/plsql.svg', import.meta.url).href

@@ -44,14 +44,19 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     </template>
 
     <template #abilities>
+      <SkillItem :img="LanguageIcons.PYTHON" :link="LanguageLinks.PYTHON" description="Programmation du robot" />
+      <SkillItem :img="ToolIcons.DISCORDPY" :link="ToolLinks.DISCORD_PY" description="Communication avec l'API Discord" />
+      <SkillItem :img="JellyBotPictures.CARD" :link="WebsiteLinks.JELLYFIN" description="Routage du serveur Jellyfin" />
+
+      <SkillItem :img="ToolIcons.DISCORD_BOTS" :link="ToolLinks.DISCORD_BOTS" description="Intégration de l'application dans Discord" />
       <SkillItem :img="ToolIcons.CODEBERG" :link="ToolLinks.CODEBERG" description="Gestion des versions du projet" />
-      <SkillItem :img="LanguageIcons.PYTHON" :link="LanguageLinks.PYTHON" description="Programmation du bot" />
-      <SkillItem :img="ToolIcons.BOTS" :link="ToolLinks.BOTS" description="Intégration dans Discord" />
+      <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
     </template>
 
     <template #assets-concept>      
       <ProjectImageItem :link="JellyBotPictures.WEB" :alt="JellyBotPictures.WEB" />
-      <ProjectImageItem :link="JellyBotPictures.DEV" :alt="JellyBotPictures.DEV" />
+      <ProjectImageItem :link="JellyBotPictures.CODE" :alt="JellyBotPictures.CODE" />
+      <ProjectImageItem :link="JellyBotPictures.DEV_PAGE" :alt="JellyBotPictures.DEV_PAGE" />
     </template>
 
     <template #assets>
