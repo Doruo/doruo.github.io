@@ -1,25 +1,25 @@
 import type { RouteLocationAsRelativeGeneric } from 'vue-router'
 import { ForgeLinks, IUTLinks, ProjectLinks } from './Links'
 import {
-  AventuriersDuRailPictures,
-  CGJ2023Pictures,
-  ChuckNorrisPictures,
-  CryptoWebsitePictures,
-  E3CetePictures,
-  EldenBuildPictures,
+  TicketToRideImg,
+  CGJ2023Img,
+  ChuckNorrisImg,
+  CryptoImg,
+  E3CeteImg,
+  EldenBuildImg,
   FalloutdlePictures,
-  GameOfLifePictures,
+  GameOfLifeImg,
   JellyBotPictures,
   LlmPictures,
   MeshPictures,
-  MindSpiesPictures,
-  MyAvatarPictures,
-  NDI2024Pictures,
-  NDI2025Pictures,
-  PostApoPictures,
-  PoursuiteEtudesPictures,
-  SudokuPictures,
-  TrainsPictures
+  MindSpiesImg,
+  MyAvatarImg,
+  NDI2024Img,
+  NDI2025Img,
+  PostApoImg,
+  PoursuiteEtudesImg,
+  SudokuImg,
+  TrainsImg
 } from './Pictures'
 
 interface Project {
@@ -103,7 +103,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ProjectLinks.ITCHIO_TIME_MAGE_TOURNAMENT,
-      background: CGJ2023Pictures.CARD,
+      background: CGJ2023Img.CARD,
       description:
         'Jeu de tir 2D isométrique réalisé en 24h. ' +
         "Gagnant du Prix Design de la <a href=https://codegamejam.extragames.fr/>Code Game Jam de l'IUT Montpellier-Sête</a>.",
@@ -117,7 +117,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2024' },
       websiteLink: ForgeLinks.NDI2024,
-      background: NDI2024Pictures.WORK_1,
+      background: NDI2024Img.WORK_1,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
         'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>',
@@ -131,7 +131,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-ndi2025' },
       websiteLink: ForgeLinks.NDI2025,
-      background: NDI2025Pictures.GROUP,
+      background: NDI2025Img.GROUP,
       description: `Site interactif réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2025/LaNuitDeLInfo2025-Sujet.pdf">Nuit de l\'Info 2025</a>.`,
       techs: 'TypeScript',
       tags: ['main', 'competition'],
@@ -144,7 +144,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-elden-build' },
       websiteLink: ForgeLinks.ELDEN_BUILD,
-      background: EldenBuildPictures.CARD,
+      background: EldenBuildImg.CARD,
       description:
         'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
@@ -183,7 +183,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-poursuite-etude' },
       websiteLink: ForgeLinks.POURSUITE_ETUDES,
-      background: PoursuiteEtudesPictures.CARD,
+      background: PoursuiteEtudesImg.CARD,
       description:
         "Logiciel d'aide aux poursuites d'études des diplômés à l'IUT Montpellier.",
       techs: 'PHP, JavaScript, PL/SQL, LDAP',
@@ -196,7 +196,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-my-avatar' },
       websiteLink: ProjectLinks.MY_AVATAR,
-      background: MyAvatarPictures.CARD,
+      background: MyAvatarImg.CARD,
       description:
         'Application de gestion d’avatar, inspiré de Gravatar, réalisé avec le framework Symfony.',
       techs: 'Symfony, JavaScript, MySQL, Twig',
@@ -209,7 +209,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.CONTROVERSE_CRYPTO,
-      background: CryptoWebsitePictures.CARD,
+      background: CryptoImg.CARD,
       description:
         'Vitrine présentant mon travail de recherche et de rédaction ' +
         "sur la controverse: 'Les crypto-monnaies peuvent-elles être écologiques ?'",
@@ -223,7 +223,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.FAN_CLUB_CHUCK_NORRIS,
-      background: ChuckNorrisPictures.CARD,
+      background: ChuckNorrisImg.CARD,
       description: 'Site web non officiel du fan-club de Chuck Norris. Mon tout premier site web.',
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -235,7 +235,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
-      background: PostApoPictures.CARD,
+      background: PostApoImg.CARD,
       description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -247,7 +247,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.ESCAPE_GAME_MIND_SPIES,
-      background: MindSpiesPictures.CARD,
+      background: MindSpiesImg.CARD,
       description: 'Vitrine d\'un escape game fictif de science fiction \"The Mind Spies\".',
       techs: 'HTML, CSS',
       tags: ['academic'],
@@ -260,7 +260,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-gol' },
       websiteLink: ForgeLinks.GOL,
-      background: GameOfLifePictures.CARD,
+      background: GameOfLifeImg.CARD,
       description:
         `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal.`,
       techs: 'Go, Ebitengine',
@@ -273,7 +273,7 @@ export default class Projects {
       showMoreInfo: true,
       moreInfoLink: { name: 'projects-trains' },
       websiteLink: ForgeLinks.TRAINS,
-      background: TrainsPictures.CARD,
+      background: TrainsImg.CARD,
       description:
         'Réalisation numérique du jeu de plateau japonais ' +
         "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
@@ -287,7 +287,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.AVENTURIERS_DU_RAIL,
-      background: AventuriersDuRailPictures.CARD,
+      background: TicketToRideImg.CARD,
       description:
         "Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde) " +
         "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
@@ -301,7 +301,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.E3CETE,
-      background: E3CetePictures.CARD,
+      background: E3CeteImg.CARD,
       description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur.`,
       techs: 'Java',
       tags: ['game'],
@@ -313,7 +313,7 @@ export default class Projects {
       showMoreInfo: false,
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.SUDOKU,
-      background: SudokuPictures.CARD,
+      background: SudokuImg.CARD,
       description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur.',
       techs: 'Java, algorithmie',
       tags: ['game'],
@@ -372,7 +372,7 @@ export default class Projects {
   public static getMainProjectsCategory(): ProjectCategory {
     return {
       id: 'main',
-      title: 'Projets mis en avant',
+      title: 'Projets Vedettes',
       projects: this.getProjectsByTag('main'),
     };
   }
