@@ -108,8 +108,8 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue';
     </template>
 
     <template #links>
-      <LinkItem :link="ForgeLinks.POURSUITE_ETUDES" :img="SocialIcons.CODEBERG" />
       <LinkItem :link="PoursuiteEtudesImg.SUBJECT" :img="ToolIcons.PDF" alt="Sujet" text="Sujet" />
+      <LinkItem :link="ForgeLinks.POURSUITE_ETUDES" :img="SocialIcons.CODEBERG" />
     </template>
   </ProjectItem>
 </template>

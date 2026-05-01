@@ -66,16 +66,20 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
         description="Mise en page de l'interface des articles" />
     </template>
 
-    <template #assets>
-      <ProjectImageItem :link="NDI2024Img.OCEAN" alt="Ocean" />
-      <ProjectImageItem :link="NDI2024Img.PAGE" alt="page" />
-      <ProjectImageItem :link="NDI2024Img.GROUP" alt="groupe" />
+    <template #assets-concept>
       <ProjectImageItem :link="NDI2024Img.WORK_1" alt="photo1" />
       <ProjectImageItem :link="NDI2024Img.WORK_2" alt="photo2" />
       <ProjectImageItem :link="NDI2024Img.WORK_3" alt="photo3" />
       <ProjectImageItem :link="NDI2024Img.WORK_4" alt="photo4" />
       <ProjectImageItem :link="NDI2024Img.WORK_5" alt="photo5" />
       <ProjectImageItem :link="NDI2024Img.WORK_6" alt="photo6" />
+    </template>
+
+    <template #assets>
+      <ProjectImageItem :link="NDI2024Img.OCEAN" alt="Ocean" />
+      <ProjectImageItem :link="NDI2024Img.PAGE" alt="page" />
+      <ProjectImageItem :link="NDI2024Img.GROUP" alt="groupe" />
+
     </template>
 
     <template #links>
