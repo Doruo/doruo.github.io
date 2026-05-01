@@ -20,6 +20,8 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     <template #title>Jeu de plateau Trains</template>
 
     <template #description>
+      <h3>Période: Décembre 2023 - Juin 2024</h3>
+
       <p>
         <a :href=WebsiteLinks.TRAINS target="blank">Trains</a> est un jeu de deck building japonais d'Hisashi Hayashi. Il a eu lieu dans le
         cadre des Situations d'Apprentissage et Évaluation de l'IUT Montpellier-Sête.

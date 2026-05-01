@@ -19,6 +19,8 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     <template #title>Race For Water</template>
 
     <template #description>
+      <h3>Période: Décembre 2024</h3>
+
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2024</a>.

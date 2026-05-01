@@ -20,6 +20,7 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue';
     <template #title>Application de poursuite d'études</template>
 
     <template #description>
+      <h3>Période: Septembre - Décembre 2024</h3>
       <p>
         Dans le contexte du suivi de la scolarité au département informatique de l’IUT de
         Montpellier-Sète, le logiciel libre <a target="_blank" :href="WebsiteLinks.SCODOC">Scodoc</a>

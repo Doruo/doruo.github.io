@@ -19,6 +19,8 @@ import { ForgeLinks, LanguageLinks, ToolLinks, WebsiteLinks } from '@/data/Links
     <template #title>Conway's Game of Life</template>
 
     <template #description>
+      <h3>Période: Octobre 2025 - Janvier 2026</h3>
+      
       <p>
         Le <a :href=WebsiteLinks.GOL target="_blank">Jeu de la Vie</a> est une simulation mathématique imaginé par
         <a :href=WebsiteLinks.CONWAY target="_blank">John Horton Conway</a> en 1970.

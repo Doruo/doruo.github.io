@@ -19,6 +19,8 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     <template #title>Numérique Inclusif, Responsable et Durable</template>
 
     <template #description>
+      <h3>Période: Décembre 2025</h3>
+
       <p>
         Application réalisée en 16h lors de l'évenement nationale de la
         <a :href="WebsiteLinks.NDI">Nuit de l'Info 2025</a>.

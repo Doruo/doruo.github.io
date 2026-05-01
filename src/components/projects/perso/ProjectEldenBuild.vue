@@ -18,6 +18,8 @@ import { ToolLinks, ForgeLinks, WebsiteLinks, LanguageLinks } from '@/data/Links
     <template #title>Elden Build</template>
 
     <template #description>
+      <h3>Période: Juin 2024</h3>
+      
       <p>
         Durant la fin de ma première année d'études, j'ai conçu dans mon temps libre 
         <b>Elden Build</b> :

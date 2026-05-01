@@ -165,7 +165,7 @@
             <div class="traces">
               <span class="trace-label">Traces associées</span>
               <div class="trace-list">
-                <span class="trace-item">Dockerfile API export</span>
+                <span class="trace-item">Conteneurisation de l'API en local</span>
                 <span class="trace-item">docker-compose dev/prod</span>
                 <span class="trace-item">Échanges avec équipe SaaSOps ITESOFT</span>
               </div>

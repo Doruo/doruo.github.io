@@ -19,6 +19,8 @@ import PortraitItem from '@/components/portraits/PortraitItem.vue'
     <template #title>My Avatar</template>
 
     <template #description>
+      <h3>Période: Octobre - Novembre 2025</h3>
+
       <p>
         Application de gestion d’avatar, inspiré de <a target="_blank" :href=WebsiteLinks.GRAVATAR>Gravatar</a>,
         fait avec le framework <a target="_blank" :href=FrameworkLinks.SYMFONY>Symfony</a>.

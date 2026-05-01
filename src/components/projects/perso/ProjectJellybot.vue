@@ -19,6 +19,8 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     <template #title>Jellybot</template>
 
     <template #description>
+      <h3>Période: Janvier 2025</h3>
+
       <p>
         <a target="blank" :href="WebsiteLinks.JELLYFIN">Jellyfin</a> 
         est un serveur multimédia open-source.
@@ -40,6 +42,14 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <p>
         J'avais donc besoin d'un robot qui peut accéder à Discord, et nous communiquer dans
         notre chat textuel le statut du serveur ainsi que l'arrivée nouveaux contenus.
+      </p>
+      <p>
+        J'ai développé le robot en Python, et utilise discord.py, 
+        une librairie qui permet de faire communiquer le robot
+        avec l'API Discord. 
+      </p>
+      <p>
+        J'ai ensuite concu une application sur Discord pour intégrer le robot dans notre chat textuel.
       </p>
     </template>
 

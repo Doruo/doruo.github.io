@@ -16,7 +16,8 @@ import { ToolLinks, ForgeLinks, FrameworkLinks } from '@/data/Links'
     <template #title>LLM Bigramme</template>
 
     <template #description>
-      <h3>🚧 PAGE EN TRAVAUX 🚧</h3>
+      <h2>🚧 PAGE EN TRAVAUX 🚧</h2>
+      <h3>Période: Décembre 2025</h3>
       <p>
         Modèle de langage bigramme, IA réalisé de A à Z en Python avec le framework PyTorch.
       </p>
