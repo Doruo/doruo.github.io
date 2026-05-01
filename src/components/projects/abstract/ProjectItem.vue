@@ -31,7 +31,7 @@ defineProps({
     <!-- PROJECT ASSETS CONCEPTION -->
     <div class="project-content-image">
 
-      <h2>Conception</h2>
+      <h2>Réalisation</h2>
       <div class="project-grid">
         <slot name="assets-concept"></slot>
       </div>
