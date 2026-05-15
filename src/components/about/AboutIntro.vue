@@ -13,9 +13,9 @@ import { CollaboratorsImg } from '@/data/Pictures';
 
       <h1>Hello !</h1>
       <p>
-        Etudiant à l'<a :href=WebsiteLinks.IUT target="blank">Université de Montpellier</a>,
+        Je suis étudiant à l'<a :href=WebsiteLinks.IUT target="blank">Université de Montpellier</a>,
         et alternant à <a :href=WebsiteLinks.ITESOFT target="blank">ITESOFT</a>,
-        je suis passionné par <b>l'informatique, la musique et le sport.</b>
+        et passionné par <b>l'informatique, la musique et le sport.</b>
       </p>
 
       <p>
@@ -39,8 +39,12 @@ import { CollaboratorsImg } from '@/data/Pictures';
 
     </div>
 
-    <PortraitItem :link="SocialLinks.LINKEDIN" :img="CollaboratorsImg.MARC_HAYE" alt="portrait intro"
-      :isMain="true" />
+    <PortraitItem 
+      :link="SocialLinks.LINKEDIN"
+      :img="CollaboratorsImg.MARC_HAYE"
+      :isMain="true" 
+      alt="portrait intro"
+    />
 
   </section>
 </template>
