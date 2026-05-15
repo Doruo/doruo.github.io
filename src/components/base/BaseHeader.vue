@@ -12,22 +12,7 @@
         <li>|</li>
         <li><router-link :to="{ name: 'projects' }">Projets</router-link></li>
         <li>|</li>
-        <li><router-link to="/apprentissages">Apprentissages</router-link></li>
-        <li>|</li>
         <li><router-link to="/#contact">Contact</router-link></li>
-        
-        <!--
-        <li>|</li>
-        <li>
-          <details>
-            <summary>Autres</summary>
-            <ul>
-              <li><router-link :to="{ name: 'degoogle' }">DeGoogle</router-link></li>
-              <li><router-link :to="{ name: 'archives' }">Archives</router-link></li>
-            </ul>
-          </details>
-        </li>
-        -->
       </ul>
     </nav>
   </header>
