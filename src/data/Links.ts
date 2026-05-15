@@ -1,45 +1,8 @@
-export class CollaboratorLinks {
-  private static readonly linkedin = "https://www.linkedin.com/in"
-
-  static readonly PAULO_MOREIRA = "https://moreirap-p.github.io/Portfolio"
-  static readonly REMI_SOULIER = this.linkedin + "remi-soulier"
-  static readonly PACO_GILLET = this.linkedin + "paco-gillet"
-  static readonly HICHAM_FERHANI = "https://hichamferhani.fr"
-  static readonly EVAN_NUNES = "https://evannunes.fr"
-  static readonly ESTEBAN_REMOND = this.linkedin + "esteban-rémond"
-  static readonly DAMIEN_ROSTAING = "https://portfolio.rostaing.dev"
-  static readonly MAEL_NICOLAS = this.linkedin +"maël-nicolas-95b2742ab"
-  static readonly YANN_BODIGUEL = this.linkedin +"green-jacket"
-  static readonly MATTEO_BENHALIMA = "https://ng-48.github.io/portfolio/presentationDeSoi.html"
-  static readonly RAPHAEL_RIVAS = this.linkedin +"raphaelrivas"
-  static readonly KILLIAN_RAMUS = "https://killianrms.com"
-  static readonly CYPRIEN_BONS = this.linkedin +"cyprien-bons"
-  static readonly GALDRIC_DESERT = this.linkedin +"galdric-desert-caparros-5869ab2aa"
-  static readonly NICOLAS_LYFONG = this.linkedin +"nicolas-lyfoung"
-}
-
-export class IUTLinks {
-  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
-
-  // IUT 1st grade web dev
-  static readonly LEBRETON = 'https://romainlebreton.github.io/'
-  static readonly IUT_DEV_SAE_105 = this.LEBRETON + 'R1.02-DeveloppementInterfacesWeb/SAE_105.html'
-  static readonly IUT_DEV_WEB_JS = this.LEBRETON + 'R.4.01-DeveloppementWeb-JavaScript/'
-
-  // IUT 1st grade websites
-  static readonly FAN_CLUB_CHUCK_NORRIS = '/fan-club-chuck-norris'
-  static readonly ESCAPE_GAME_MIND_SPIES = '/escape-game-mindspies'
-  static readonly ESCAPE_GAME_POST_APO = '/escape-game-postapo'
-  static readonly CONTROVERSE_CRYPTO = '/controverse-crypto'
-
-  // IUT 3rd grade advanced web dev
-  static readonly GASQUET = 'https://mgasquet.github.io/'
-  static readonly IUT_DEV_QUALITY = this.GASQUET + 'R304-QualiteDeveloppement/'
-  static readonly IUT_ADV_DEV_QUALITY = this.GASQUET + 'R5.A.05-ProgrammationAvancee-Web/'
-  static readonly IUT_MY_AVATAR = this.IUT_ADV_DEV_QUALITY + 'tutorials/projet1'
-}
-
 export class WebsiteLinks {
+  static readonly GITHUB = 'https://github.com/'
+  static readonly CODEBERG = 'https://codeberg.org/'
+  static readonly LINKEDIN = 'https://www.linkedin.com/in'
+
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
   static readonly ITESOFT = "https://www.itesoft.com/"
 
@@ -64,14 +27,53 @@ export class WebsiteLinks {
   static readonly EMBY = 'https://emby.media/'
 }
 
+export class CollaboratorLinks {
+  static readonly PAULO_MOREIRA = "https://moreirap-p.github.io/Portfolio"
+  static readonly REMI_SOULIER = "https://remisoulier.fr"
+  static readonly PACO_GILLET = WebsiteLinks.LINKEDIN + "paco-gillet"
+  static readonly HICHAM_FERHANI = "https://hichamferhani.fr"
+  static readonly EVAN_NUNES = "https://evannunes.fr"
+  static readonly ESTEBAN_REMOND = "https://estebanremond.github.io/portfolio"
+  static readonly DAMIEN_ROSTAING = "https://portfolio.rostaing.dev"
+  static readonly MAEL_NICOLAS = WebsiteLinks.LINKEDIN +"maël-nicolas-95b2742ab"
+  static readonly YANN_BODIGUEL = "https://greenjacketboy.github.io"
+  static readonly MATTEO_BENHALIMA = "https://ng-48.github.io/portfolio/presentationDeSoi.html"
+  static readonly RAPHAEL_RIVAS = WebsiteLinks.LINKEDIN +"raphaelrivas"
+  static readonly KILLIAN_RAMUS = "https://killianrms.com"
+  static readonly CYPRIEN_BONS = WebsiteLinks.LINKEDIN +"cyprien-bons"
+  static readonly GALDRIC_DESERT = WebsiteLinks.LINKEDIN +"galdric-desert-caparros-5869ab2aa"
+  static readonly NICOLAS_LYFONG = WebsiteLinks.LINKEDIN +"nicolas-lyfoung"
+}
+
+export class IUTLinks {
+  static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
+
+  // IUT 1st grade web dev
+  static readonly LEBRETON = 'https://romainlebreton.github.io/'
+  static readonly IUT_DEV_SAE_105 = this.LEBRETON + 'R1.02-DeveloppementInterfacesWeb/SAE_105.html'
+  static readonly IUT_DEV_WEB_JS = this.LEBRETON + 'R.4.01-DeveloppementWeb-JavaScript/'
+
+  // IUT 1st grade websites
+  static readonly FAN_CLUB_CHUCK_NORRIS = '/fan-club-chuck-norris'
+  static readonly ESCAPE_GAME_MIND_SPIES = '/escape-game-mindspies'
+  static readonly ESCAPE_GAME_POST_APO = '/escape-game-postapo'
+  static readonly CONTROVERSE_CRYPTO = '/controverse-crypto'
+
+  // IUT 3rd grade advanced web dev
+  static readonly GASQUET = 'https://mgasquet.github.io/'
+  static readonly IUT_DEV_QUALITY = this.GASQUET + 'R304-QualiteDeveloppement/'
+  static readonly IUT_ADV_DEV_QUALITY = this.GASQUET + 'R5.A.05-ProgrammationAvancee-Web/'
+  static readonly IUT_MY_AVATAR = this.IUT_ADV_DEV_QUALITY + 'tutorials/projet1'
+}
+
 export class SocialLinks {
   private static readonly mail = "marc.haye.pro@protonmail.com"
   static readonly MAIL = 'mailto:' + this.mail;
 
   static readonly CV = "/CV.pdf";
 
-  static readonly GITHUB = 'https://github.com/doruo/'
-  static readonly CODEBERG = 'https://codeberg.org/doruo/'
+  static readonly GITHUB = WebsiteLinks.GITHUB + 'doruo/'
+  static readonly CODEBERG = WebsiteLinks.CODEBERG + 'doruo/'
   static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
   static readonly GRAVATAR = 'https://gravatar.com/marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
@@ -154,8 +156,8 @@ export class FrameworkLinks {
 
   static readonly TAILWIND = 'https://tailwindcss.com'
   static readonly EXPRESS = 'https://expressjs.com'
-  static readonly NEXTJS = 'https://nextjs.org'
-  static readonly VUEJS = 'https://vuejs.org'
+  static readonly NEXT = 'https://nextjs.org'
+  static readonly VUE = 'https://vuejs.org'
 }
 
 // Alternatives
@@ -179,4 +181,16 @@ export class AlterLinks {
   
   static readonly PROTON_MAIL = 'https://proton.me/mail'
   static readonly TUTA = 'https://tuta.com/'
+}
+
+export class MusicLinks {
+  // Hard Rock
+  static readonly QUEEN = 'https://www.queenvault.com/Queen'
+  static readonly KISS = 'https://www.kissonline.com'
+  static readonly ACE_FREHLEY = 'https://www.acefrehley.com'
+
+  // Blues
+  static readonly RORY_GALLAGHER = 'https://rorygallagher.com'
+  static readonly JIMI_HENDRIX = 'https://www.jimihendrix.com'
+  static readonly SRV = 'https://www.levoyageur.ch/blog-posts/stevie-ray-vaughan'
 }
