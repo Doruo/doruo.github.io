@@ -1,7 +1,8 @@
 export class WebsiteLinks {
   static readonly GITHUB = 'https://github.com/'
   static readonly CODEBERG = 'https://codeberg.org/'
-  static readonly LINKEDIN = 'https://www.linkedin.com/in'
+  static readonly LINKEDIN = 'https://www.linkedin.com/in/'
+  static readonly DISCORD = 'https://discord.com/'
 
   static readonly IUT = 'https://iut-montpellier-sete.edu.umontpellier.fr/'
   static readonly ITESOFT = "https://www.itesoft.com/"
@@ -74,8 +75,8 @@ export class SocialLinks {
 
   static readonly GITHUB = WebsiteLinks.GITHUB + 'doruo/'
   static readonly CODEBERG = WebsiteLinks.CODEBERG + 'doruo/'
-  static readonly LINKEDIN = 'https://www.linkedin.com/in/marc-haye'
-  static readonly GRAVATAR = 'https://gravatar.com/marchayepro'
+  static readonly LINKEDIN = WebsiteLinks.LINKEDIN + 'marc-haye'
+  static readonly GRAVATAR = WebsiteLinks.GRAVATAR + 'marchayepro'
   static readonly ITCHIO = 'https://doruo.itch.io/'
   static readonly DEVTO = 'https://dev.to/doruo'
 }
@@ -92,7 +93,7 @@ export class ForgeLinks {
   static readonly MASTERMIND = SocialLinks.GITHUB + 'mastermind'
   static readonly E3CETE = SocialLinks.GITHUB + 'e3cete/blob/master/SAE_1_02_E3Cète.pdf'
   static readonly NDI2024 = SocialLinks.GITHUB + 'NDI-2024-RaceForWater'
-  static readonly NDI2025 = "https://github.com/killianrms/NDI2025"
+  static readonly NDI2025 = WebsiteLinks.GITHUB + "killianrms/NDI2025"
 
   // perso ---------------------------------------------------------------------------------------
   static readonly ELDEN_BUILD = SocialLinks.CODEBERG + 'elden-build'
@@ -102,7 +103,7 @@ export class ForgeLinks {
   static readonly JELLYBOT = SocialLinks.CODEBERG + 'jellybot'
   static readonly FLIPPER_BALL = SocialLinks.GITHUB + 'flipper-ball'
   static readonly LLM_FROM_SCRATCH = SocialLinks.CODEBERG + 'llm-from-scratch'
-  static readonly ANIME_SAMA_DOWNLOADER = "https://github.com/Fire0902/anime-sama-downloader"
+  static readonly ANIME_SAMA_DOWNLOADER = WebsiteLinks.GITHUB + "Fire0902/anime-sama-downloader"
 }
 
 export class ProjectLinks {
