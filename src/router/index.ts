@@ -1,10 +1,11 @@
-import { createRouter, createMemoryHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 import ViewHome from '@/views/ViewHome.vue';
 import ViewError from '@/views/ViewError.vue';
 import ViewAbout from '@/views/ViewAbout.vue';
 import ViewArchives from '@/views/ViewArchives.vue';
 import ViewProjects from '@/views/ViewProjects.vue';
+import ViewDegoogle from '@/views/ViewDegoogle.vue';
 import ViewApprentissages from '@/views/ViewApprentissages.vue';
 
 import ProjectNDI2024 from '@/components/projects/iut/ProjectNDI2024.vue';
@@ -17,15 +18,11 @@ import ProjectEldenBuild from '@/components/projects/perso/ProjectEldenBuild.vue
 import ProjectGol from '@/components/projects/perso/ProjectGol.vue';
 import ProjectJellybot from '@/components/projects/perso/ProjectJellybot.vue';
 import ProjectLLMBigram from '@/components/projects/perso/ProjectLLMBigram.vue';
-import ViewDegoogle from '@/views/ViewDegoogle.vue';
 
 const mainRoutes = [
   { path: '/', name: 'home', component: ViewHome },
-  { path: '/about', name: 'about', component: ViewAbout },
-  { path: '/projects', name: 'projects', component: ViewProjects },
-  { path: '/degoogle', name: 'degoogle', component: ViewDegoogle },
-  { path: '/archives', name: 'archives', component: ViewArchives },
-  { path: '/apprentissages', name: 'apprentissages', component: ViewApprentissages},
+  { path: '/bio', name: 'about', component: ViewAbout },
+  { path: '/projets', name: 'projects', component: ViewProjects },
 ]
 
 const academicProjectRoutes = [
@@ -48,16 +45,23 @@ const projectRoutes = [
   ...personnalProjectRoutes,
 ];
 
+const otherRoutes = [
+  { path: '/degoogle', name: 'degoogle', component: ViewDegoogle },
+  { path: '/archives', name: 'archives', component: ViewArchives },
+  { path: '/apprentissages', name: 'apprentissages', component: ViewApprentissages },
+]
+
 const errorRoute = { path: '/:pathMatch(.*)*', name: 'NotFound', component: ViewError, props: { errorType: '404' } };
 
 const routes = [
   ...mainRoutes,
   ...projectRoutes,
+  ...otherRoutes,
   errorRoute,
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 
   // hook handling
