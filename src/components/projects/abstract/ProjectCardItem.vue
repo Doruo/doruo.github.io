@@ -20,7 +20,7 @@ defineProps({
         <slot name="description"></slot>
       </p>
       <p>
-        <b><u>Technologies</u> :</b> <slot name="techs"></slot>
+        <b><u>Compétences</u> :</b> <slot name="techs"></slot>
       </p>
     </div>
   </router-link>
@@ -32,7 +32,7 @@ defineProps({
         <slot name="description"></slot>
       </p>
       <p>
-        <b><u>Technologies</u> :</b> <slot name="techs"></slot>
+        <b><u>Compétences</u> :</b> <slot name="techs"></slot>
       </p>
     </div>
   </a>
