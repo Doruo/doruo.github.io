@@ -81,7 +81,7 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
     <template #abilities>
       <SkillItem :img="ToolIcons.GITHUB" :link="ToolLinks.GITHUB"
         description="Gestion des versions, et collaboration en équipe" />
-      <SkillItem :img="FrameworkIcons.NEXTJS" :link="FrameworkLinks.NEXTJS" description="Réalisation de l'interface utilisateur" />
+      <SkillItem :img="FrameworkIcons.NEXTJS" :link="FrameworkLinks.NEXT" description="Réalisation de l'interface utilisateur" />
       <SkillItem :img="ToolIcons.DOCKER" :link="ToolLinks.DOCKER" description="Conteneurisation du projet" />
       <SkillItem :img="LanguageIcons.TS" :link="LanguageLinks.TS" description="Implémentation des jeux" />
       <SkillItem :img="FrameworkIcons.TAILWIND" :link="FrameworkLinks.TAILWIND" description="Mise en page du site" />
