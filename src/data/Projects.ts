@@ -29,11 +29,11 @@ interface Project {
   showMoreInfo: boolean
 
   websiteLink: string
-  moreInfoLink?: RouteLocationAsRelativeGeneric
-  background?: string
+  moreInfoLink: RouteLocationAsRelativeGeneric
+  background: string
 
   description?: string
-  techs?: string
+  techs: string
   period?: string
   tags: string[]
 }
@@ -128,7 +128,7 @@ export default class Projects {
       background: NDI2024Img.WORK_1,
       description:
         "Océan interactif fait à la main décrivant l'écosystème marin. " +
-        'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>',
+        'Réalisé en 16h lors de la <a href="https://www.nuitdelinfo.com/materiel_communication/2024/La%20Nuit%20de%20l%E2%80%99Info%202024.pdf">Nuit de l\'Info 2024</a>.',
       techs: 'ExpressJS, HTML, CSS, JavaScript',
       tags: ['competition'],
       period: '',
@@ -156,7 +156,8 @@ export default class Projects {
       websiteLink: ForgeLinks.ELDEN_BUILD,
       background: EldenBuildImg.CARD,
       description:
-        'Site web communautaire de gestion de build du jeu vidéo <a href=https://bandainamcoent.eu/elden-ring/elden-ring>Elden Ring</a>.',
+        'Site web communautaire de gestion de build du jeu vidéo ' +
+        '<a href=https://bandainamcoent.eu/elden-ring/elden-ring target="blank">Elden Ring</a>.',
       techs: 'PHP, JavaScript, HTML, CSS, JSON',
       tags: ['main', 'community'],
       period: '',
@@ -170,7 +171,8 @@ export default class Projects {
       websiteLink: ForgeLinks.FALLOUTDLE,
       background: FalloutdlePictures.CARD,
       description:
-        "Jeu web inspiré de Wordle dans l'univers de Fallout. Devinez un nouveau personnage tous les jours !",
+        "Jeu web inspiré de Wordle dans l'univers de Fallout." + 
+        "Devinez un nouveau personnage tous les jours !",
       techs: 'Go, Web Scraping, API, JSON',
       tags: ['community'],
       period: '',
@@ -253,7 +255,9 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: IUTLinks.ESCAPE_GAME_POST_APO,
       background: PostApoImg.CARD,
-      description: "Vitrine d'un escape game dans un métro post-apocalyptique.",
+      description: "Vitrine d'un escape game fictif dans un métro post-apocalyptique." +
+      " Réalisé principalement par " +
+      "<a href='https://remisoulier.fr' target='blank'>Rémi Soulier</a>.",
       techs: 'HTML, CSS',
       tags: ['academic'],
       period: '',
@@ -281,7 +285,8 @@ export default class Projects {
       websiteLink: ForgeLinks.GOL,
       background: GameOfLifeImg.CARD,
       description:
-        `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. Réalisé en langage Go, avec interface graphique terminal.`,
+        `Implémentation d'une simulation mathématique du Jeu de la Vie de 1970. ` +
+        `Réalisé en langage Go, avec interface graphique terminal.`,
       techs: 'Go, Ebitengine',
       tags: ['game'],
       period: '',
@@ -296,7 +301,7 @@ export default class Projects {
       background: TrainsImg.CARD,
       description:
         'Réalisation numérique du jeu de plateau japonais ' +
-        "d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
+        `d'Hisashi Hayashi en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.`,
       techs: 'Java, JavaFX',
       tags: ['game'],
       period: '',
@@ -310,8 +315,8 @@ export default class Projects {
       websiteLink: ForgeLinks.AVENTURIERS_DU_RAIL,
       background: TicketToRideImg.CARD,
       description:
-        "Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde) " +
-        "en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.",
+        `Réalisation numérique du jeu de plateau Les Aventuriers du Rail (Autour du Monde)` +
+        ` en Java, jouable de 2 à 4 joueurs, ou seul contre un ordinateur.`,
       techs: 'Java, JavaFX',
       tags: ['game'],
       period: '',
@@ -324,7 +329,8 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.E3CETE,
       background: E3CeteImg.CARD,
-      description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!. Jouable à deux, ou seul contre un ordinateur.`,
+      description: `Réalisation numérique d'un jeu de société en Java, inspiré du jeu Set!.`+ 
+      `Jouable à deux, ou seul contre un ordinateur.`,
       techs: 'Java',
       tags: ['game'],
       period: '',
@@ -337,7 +343,9 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.SUDOKU,
       background: SudokuImg.CARD,
-      description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur.',
+      description: 'Implémentation du sudoku en Java. Jouable à deux ou seul contre un ordinateur.' +
+        " Réalisé avec " +
+        "<a href='https://estebanremond.github.io/portfolio' target='blank'>Esteban Remond</a>.",
       techs: 'Java, algorithmie',
       tags: ['game'],
       period: '',
@@ -351,7 +359,9 @@ export default class Projects {
       websiteLink: ForgeLinks.MASTERMIND,
       background: '',
       description:
-        'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur.',
+        'Implémentation du jeu mastermind en Java, jouable à deux, ou seul contre un ordinateur.' +
+        " Réalisé avec " +
+        "<a href='https://remisoulier.fr' target='blank'>Rémi Soulier</a>.",
       techs: 'Java, algorithmie',
       tags: ['game'],
       period: '',
@@ -365,7 +375,8 @@ export default class Projects {
       websiteLink: ForgeLinks.MARIN_IVRE,
       background: '',
       description:
-        'Mon premier jeu en Java, avec interface graphique sur terminal. Réalisé au tout début de mes études universitaires.',
+        'Mon premier jeu en Java, avec interface graphique sur terminal.' +
+        'Réalisé au tout début de mes études universitaires.',
       techs: 'Java',
       tags: ['game'],
       period: '',
@@ -378,7 +389,8 @@ export default class Projects {
       moreInfoLink: { name: '' },
       websiteLink: ForgeLinks.FLIPPER_BALL,
       background: '',
-      description: `Simulation mathématique de géométrie analytique d'une boule de flipper, réalisée en Python.`,
+      description: `Simulation mathématique de géométrie analytique d'une boule de flipper,"+
+        "réalisée en Python.`,
       techs: 'Python, numpy',
       tags: ['game'],
       period: '',
