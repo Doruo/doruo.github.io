@@ -36,15 +36,18 @@ import ProjectImageItem from '../abstract/ProjectImageItem.vue'
       <p>
         Hébergant moi même un 
         <a target="blank" :href="WebsiteLinks.JELLYFIN_SERVER">serveur Jellyfin</a>,
-        je communique régulièrement sur la plateforme Discord avec mon 
-        entourage pour regarder des films ou des séries.
+        je communique régulièrement sur la plateforme 
+        <a target="blank" :href="WebsiteLinks.DISCORD">Discord</a> 
+        avec mes amis pour regarder des films ou des séries.
       </p>
       <p>
         J'avais donc besoin d'un robot qui peut accéder à Discord, et nous communiquer dans
         notre chat textuel le statut du serveur ainsi que l'arrivée nouveaux contenus.
       </p>
       <p>
-        J'ai développé le robot en Python, et utilise discord.py, 
+        J'ai développé le robot en 
+        <a target="blank" :href="LanguageLinks.PYTHON">Python</a>, 
+        et utilise <a target="blank" :href="ToolLinks.DISCORD_PY">discord.py</a>, 
         une librairie qui permet de faire communiquer le robot
         avec l'API Discord. 
       </p>
