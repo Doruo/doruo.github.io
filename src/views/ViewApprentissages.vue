@@ -98,7 +98,7 @@
               <div class="trace-list">
                 <span class="trace-item">API d'export ITESOFT (NestJS)</span>
                 <span class="trace-item">Documentation architecture interne</span>
-                <span class="trace-item">Projet GameCritics</span>
+                <span class="trace-item">Projet API de site de critique</span>
               </div>
             </div>
           </div>
@@ -204,8 +204,10 @@
             <p>
               En alternance, rester à jour sur les évolutions de NestJS,
               des pratiques API REST et des nouveautés Docker n'est pas optionnel:
+            </p>
+            <p>
               l'équipe attend qu'on sache de quoi on parle lors des revues techniques.
-              J'ai mis en place une routine de veille (newsletters techniques,
+              J'ai mis en place une routine de veille technologique (newsletters techniques,
               suivi de changelogs, lectures ponctuelles de RFC) et j'ai commencé à en partager les points saillants lors
               de nos réunions d'équipe hebdomadaires.
             </p>
@@ -226,6 +228,8 @@
               Travailler chez ITESOFT, éditeur de logiciels spécialisé dans la dématérialisation,
               donne une perspective assez concrète sur ce que
               l'innovation numérique représente économiquement.
+            </p>
+            <p>
               La question de la facturation électronique obligatoire (réforme 2026) a été
               un sujet de discussion fréquent, directement lié à notre produit.
               J'ai commencé à comprendre comment les décisions techniques s'articulent
@@ -249,7 +253,10 @@
               participé activement
               à l'introduction de Postman comme outil de test standardisé au sein de l'équipe — rédaction de collections
               partagées, documentation
-              des endpoints, formation informelle d'un collègue. Ce n'est pas de la conduite du changement à grande
+              des endpoints, formation informelle d'un collègue. 
+            </p>
+            <p>
+              Ce n'est pas de la conduite du changement à grande
               échelle, mais c'est une première
               expérience concrète de ce que ça demande.
             </p>
@@ -269,17 +276,19 @@
             <p>
               Dans les projets académiques comme en entreprise, j'ai eu à me positionner dans des dynamiques de groupe
               diverses.
-              En SAÉ, j'ai tenu le rôle de référent technique sur plusieurs projets — organiser les sprints, faire le
+              Dans le projet d'API de site de critique, j'ai tenu le rôle de référent technique sur plusieurs projets — organiser les sprints, faire le
               lien entre les besoins
               exprimés et ce qui est faisable techniquement, et gérer les inévitables frictions quand les deadlines
               approchent.
+            </p>
+            <p>
               L'alternance a renforcé cette dimension : les réunions de suivi, les estimations de charge et les
               arbitrages font partie du quotidien.
             </p>
             <div class="traces">
               <span class="trace-label">Traces associées</span>
               <div class="trace-list">
-                <span class="trace-item">Gestion de sprint en SAÉ S5</span>
+                <span class="trace-item">API de site de critique</span>
                 <span class="trace-item">Suivi projet ITESOFT: AzureDevOps,</span>
                 <span class="trace-item">Compte-rendus de réunions</span>
               </div>
@@ -320,10 +329,14 @@
               conformité
               avec la facturation électronique obligatoire — une réforme qui touche des milliers d'entreprises
               françaises.
+            </p>
+            <p>
               Comprendre pourquoi ce projet existait, quelles contraintes légales il devait respecter (normes Factur-X,
               Peppol…)
               et quel impact son bon fonctionnement avait sur les clients finaux, c'est quelque chose que j'ai intégré
               progressivement.
+            </p>
+            <p>
               Je ne prétends pas maîtriser l'analyse d'impact dans toute sa complexité, mais j'ai appris à ne pas coder
               dans le vide.
             </p>
@@ -331,7 +344,7 @@
               <span class="trace-label">Traces associées</span>
               <div class="trace-list">
                 <span class="trace-item">Contexte réglementaire facturation électronique</span>
-                <span class="trace-item">Spécifications fonctionnelles API export</span>
+                <span class="trace-item">TPs d'éco-conception</span>
               </div>
             </div>
           </div>
@@ -346,6 +359,8 @@
               identifier les points
               d'entrée et les dépendances, et s'assurer que les nouvelles fonctionnalités ne venaient pas perturber ce
               qui tournait déjà en production.
+            </p>
+            <p>
               La phase de tests avec Postman a été cruciale pour valider que l'intégration était propre avant de pousser
               en staging.
             </p>
@@ -354,7 +369,7 @@
               <div class="trace-list">
                 <span class="trace-item">Tests d'intégration Postman</span>
                 <span class="trace-item">Schéma d'architecture SI ITESOFT</span>
-                <span class="trace-item">API branchée sur pipeline ITESOFT</span>
+                <span class="trace-item">Intégrations avec les pipeline Gitlab de ITESOFT</span>
               </div>
             </div>
           </div>
@@ -368,14 +383,17 @@
               J'ai contribué à des évolutions du système existant — ajout de nouveaux formats d'export, modification du
               schéma
               de données pour intégrer de nouveaux champs client — mais toujours dans le cadre d'un travail d'équipe.
+            </p>
+            <p>
               C'est une compétence que je considère partiellement acquise : je sais participer à l'adaptation d'un SI,
-              mais la conception et le pilotage global restent encore à construire.
+              mais la conception et le pilotage global (monitoring) restent encore à construire.
             </p>
             <div class="traces">
               <span class="trace-label">Traces associées</span>
               <div class="trace-list">
                 <span class="trace-item">Évolutions formats export (JSON, XML, PDF)</span>
                 <span class="trace-item">Modifications schéma base de données</span>
+                <span class="trace-item">TPs de Maintenance applicative</span>
               </div>
             </div>
           </div>
@@ -397,7 +415,7 @@
           et à comprendre le contexte dans lequel je travaillais.
         </p>
         <p>
-          L'alternance chez ITESOFT a cristallisé beaucoup de choses : travailler sur un vrai produit, avec de vraies
+          L'alternance chez ITESOFT m'a appris beaucoup de choses : travailler sur un vrai produit, avec de vraies
           contraintes
           et de vraies personnes, c'est une expérience qu'aucun projet académique ne peut tout à fait reproduire.
           Le fait de devoir expliquer mes décisions techniques à des collègues plus expérimentés m'a plus appris que
@@ -405,9 +423,8 @@
         </p>
         <p>
           Il reste des zones grises — des compétences que j'ai commencé à travailler sans les avoir vraiment
-          solidifiées.
-          C'est honnête de le reconnaître, et c'est précisément l'intérêt de cet exercice : savoir ce qu'on maîtrise,
-          et savoir ce qu'on a encore à faire.
+          solidifiées. Je compte désormais continuer mes études en école d'ingénieur, 
+          sinon dans le réseau ou la cybersécurité pour être polyvalent et découvrir de nouveaux domaines.
         </p>
       </div>
     </section>
